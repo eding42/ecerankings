@@ -147,6 +147,15 @@ class Stages(unittest.TestCase):
         self.assertTrue(gates["paper_specific_affiliations"]["pass"])
         self.assertFalse(gates["institution_resolution"]["pass"])
 
+    def test_classified_noncredit_counts_only_adjudicated_rows_without_id(self):
+        amap = {"Google DeepMind": {"status": "manual", "institution_id": "", "institution_type": "company"},
+                "Some Lab": {"status": "unmatched", "institution_id": ""},
+                "MIT": {"status": "manual", "institution_id": "I63966007"}}
+        self.assertTrue(harvest_ml.classified_noncredit(["Google DeepMind"], amap))
+        self.assertFalse(harvest_ml.classified_noncredit(["Some Lab"], amap))
+        self.assertFalse(harvest_ml.classified_noncredit(["Google DeepMind", "Unknown"], amap))
+        self.assertFalse(harvest_ml.classified_noncredit([], amap))
+
     def test_enrich_resume_skips_queried_dois_and_failed_batch_is_not_negative(self):
         harvest_ml.append_jsonl(self.ed.discovery_path, {"paper_key": "iclr:1999:aaa111", "status": "ok", "arxiv_doi": "10.48550/arxiv.1"})
         with patch.object(harvest_ml.OAClient, "batch", side_effect=harvest_ml.RefreshError("429")):

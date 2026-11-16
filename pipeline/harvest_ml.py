@@ -40,7 +40,7 @@ import pdf_affiliations  # noqa: E402
 import pdf_verify  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-MAILTO = "eding2019@gmail.com"
+MAILTO = os.environ.get("OPENALEX_MAILTO", os.environ.get("MAILTO", "admin@ecerankings.org"))
 USER_AGENT = f"ecerankings-harvest-ml/1.0 (mailto:{MAILTO})"
 DEFAULT_STAGE_ROOT = ROOT / ".tmp" / "ml-harvest"
 DEFAULT_MANIFEST = ROOT / "data" / "refresh" / "ml-harvest-2026-10-29.json"
@@ -57,6 +57,13 @@ PDF_TEXT_ACCURACY_MIN = 0.98
 # images); "partial" papers go to the review queue instead.
 PDF_ACCEPT = {"high"}
 PDF_WORKERS = 4
+# Reviewed outcomes for papers whose page image disagreed with the publisher
+# record (byline or document) or lost an author. Durable, unlike the staging
+# tree, so a rebuild replays the same decisions. See resolve_checks().
+RESOLUTIONS_PATH = ROOT / "data" / "refresh" / "ml-discrepancy-resolutions.jsonl"
+BYLINE_RESOLUTIONS = {"same_people", "different_people"}
+SOURCE_RESOLUTIONS = {"same_paper", "different_document"}
+AUTHOR_RESOLUTIONS = {"present", "absent"}
 
 # S2 hits only supply an identifier, but a wrong identifier would import the
 # wrong paper's affiliations, so the bar is higher than OpenAlex's 0.88 title
@@ -622,6 +629,7 @@ class Edition:
         self.pdf_fetch_path = self.dir / "pdf-fetch.jsonl"
         self.pdf_extract_path = self.dir / "pdf-extract.jsonl"
         self.pdf_verify_path = self.dir / "pdf-verify.jsonl"
+        self.resolutions_path = RESOLUTIONS_PATH
         self.pdf_text_dir = self.dir / "pdf-text"
         self.works_path = self.cache_dir / "works.jsonl"
 
@@ -643,7 +651,7 @@ class Edition:
             return f"{sha256_file(self.membership_path)}:extractor-v{pdf_affiliations.EXTRACTOR_VERSION}"
         if stage == "build":
             return ":".join(str(sha256_file(p)) for p in (self.membership_path, self.discovery_path, self.openalex_path,
-                                                         self.pdf_extract_path, self.pdf_verify_path)) + f":prefer_pdf={self.prefer_pdf}"
+                                                         self.pdf_extract_path, self.pdf_verify_path, self.resolutions_path)) + f":prefer_pdf={self.prefer_pdf}"
         return sha256_file(self.works_path)
 
     def is_done(self, stage):
@@ -1160,7 +1168,10 @@ def build_row(ed, member, disc, oa, pdf=None, verify=None):
                                 sum(bool(a.get("institutions")) for a in o[1]["authorships"])), reverse=True)
     chosen = options[0] if options else None
     aligned = {i: j for i, j in chosen[2]} if chosen else {}
-    pdf_ok = bool(pdf) and pdf.get("confidence") in PDF_ACCEPT and len(pdf.get("affiliations") or []) == len(member["authors"])
+    withheld = bool((verify or {}).get("pdf_withheld"))
+    pdf_ok = (bool(pdf) and not withheld and (not verify or verify.get("image_ok")) and not (verify or {}).get("source_discrepancy")
+              and pdf.get("confidence") in PDF_ACCEPT
+              and len(pdf.get("affiliations") or []) == len(member["authors"]))
     authorships, conflicts = [], []
     for i, name in enumerate(member["authors"]):
         oa_author = chosen[1]["authorships"][aligned[i]] if i in aligned else None
@@ -1168,13 +1179,18 @@ def build_row(ed, member, disc, oa, pdf=None, verify=None):
         oa_has = bool(oa_author and (oa_author.get("institutions") or oa_author.get("raw_affiliations")))
         pdf_values = list(pdf["affiliations"][i]) if pdf_ok else []
         pdf_label = "publisher-pdf"
-        if verify and verify.get("image_ok") and i < len(verify["authors"]):
+        if verify and verify.get("image_ok") and not withheld and not verify.get("source_discrepancy") and i < len(verify["authors"]):
             # The page image overrides the text parser: it is the same
             # document, read the way a person reads it.
             check = verify["authors"][i]
-            if check["verdict"] in ("wrong", "missing") and check["page_affiliations"]:
+            if check.get("resolved_affiliations"):
+                pdf_values, pdf_label = list(check["resolved_affiliations"]), "publisher-pdf-image"
+            elif check["verdict"] in ("wrong", "missing") and check["page_affiliations"]:
                 pdf_values, pdf_label = list(check["page_affiliations"]), "publisher-pdf-image"
-            elif check["verdict"] == "absent":
+            elif check["verdict"] in ("absent", "unclear", "not_found"):
+                # Do not credit a PDF extraction that the image review could
+                # not confirm. An independently matched OpenAlex record may
+                # still supply the affiliation below.
                 pdf_values = []
         if oa_has and pdf_values:
             oa_strings = list(oa_author.get("raw_affiliations") or []) + [x.get("display_name") or "" for x in oa_author.get("institutions") or []]
@@ -1199,6 +1215,9 @@ def build_row(ed, member, disc, oa, pdf=None, verify=None):
     if verify:
         evidence["pdf_image_check"] = {"kind": verify.get("kind"), "model": verify.get("model"),
                                        "image_ok": verify.get("image_ok"),
+                                       "byline_discrepancy": verify.get("byline_discrepancy", False),
+                                       "source_discrepancy": verify.get("source_discrepancy", False),
+                                       "pdf_withheld": withheld, "resolution": verify.get("resolution"),
                                        "verdicts": [a["verdict"] for a in verify["authors"]]}
     if conflicts:
         evidence["pdf_openalex_conflicts"] = conflicts
@@ -1226,7 +1245,7 @@ def stage_build(ed):
     disc = {r["paper_key"]: r for r in read_jsonl(ed.discovery_path)}
     oa = {r["key"]: r for r in read_jsonl(ed.openalex_path)}
     pdfs = {r["paper_key"]: r for r in read_jsonl(ed.pdf_extract_path)}
-    checks = {r["paper_key"]: r for r in read_jsonl(ed.pdf_verify_path)}
+    checks = load_checks(ed)
     tracks = set(ed.config["include_tracks"])
     included, excluded = [], []
     for member in members:
@@ -1257,11 +1276,77 @@ def load_affiliation_map():
     return aggregate.load_affiliation_map(), aggregate.resolve_raw_affiliations
 
 
+def classified_noncredit(raws, affil_map):
+    """True when every raw string has an adjudicated manual row without an
+    institution id: the string was judged and deliberately credits nothing."""
+    rows = [affil_map.get(r) for r in raws]
+    return bool(rows) and all(isinstance(r, dict) and r.get("status") == "manual"
+                              and not (r.get("institution_id") or "").strip() for r in rows)
+
+
+def load_resolutions(path=None):
+    """paper_key -> reviewed resolution; later lines win."""
+    out = {}
+    for rec in read_jsonl(Path(path or RESOLUTIONS_PATH)):
+        if rec.get("byline") not in BYLINE_RESOLUTIONS | {None}:
+            raise HarvestError(f"{rec.get('paper_key')}: unknown byline resolution {rec.get('byline')!r}")
+        if rec.get("source") not in SOURCE_RESOLUTIONS | {None}:
+            raise HarvestError(f"{rec.get('paper_key')}: unknown source resolution {rec.get('source')!r}")
+        for idx, a in (rec.get("authors") or {}).items():
+            if a.get("resolution") not in AUTHOR_RESOLUTIONS:
+                raise HarvestError(f"{rec.get('paper_key')}: unknown author resolution {a!r}")
+            if a["resolution"] == "present" and not [x for x in a.get("page_affiliations") or [] if str(x).strip()]:
+                raise HarvestError(f"{rec.get('paper_key')}: author {idx} present without page_affiliations")
+        if not (rec.get("evidence") or "").strip():
+            raise HarvestError(f"{rec.get('paper_key')}: resolution without evidence")
+        out[rec["paper_key"]] = rec
+    return out
+
+
+def resolve_checks(rows, resolutions):
+    """Apply reviewed resolutions to image-check rows, without touching the
+    verdicts the extractor-accuracy sample is scored on.
+
+    same_people / same_paper clear the flag. different_people /
+    different_document clear it but withhold the paper's PDF evidence, so the
+    publisher byline keeps its OpenAlex evidence only. A not_found author
+    resolved "present" carries the page affiliations the reviewer read; "absent"
+    stays uncredited but is no longer an open question.
+    """
+    out = {}
+    for key, row in rows.items():
+        rec = resolutions.get(key)
+        if not rec:
+            out[key] = row
+            continue
+        row = json.loads(json.dumps(row))
+        if row.get("byline_discrepancy") and rec.get("byline"):
+            row["byline_discrepancy"] = False
+            row["pdf_withheld"] = row.get("pdf_withheld") or rec["byline"] == "different_people"
+        if row.get("source_discrepancy") and rec.get("source"):
+            row["source_discrepancy"] = False
+            row["pdf_withheld"] = row.get("pdf_withheld") or rec["source"] == "different_document"
+        for idx, a in (rec.get("authors") or {}).items():
+            i = int(idx)
+            if i < len(row["authors"]) and row["authors"][i]["verdict"] == "not_found":
+                row["authors"][i]["resolution"] = a["resolution"]
+                if a["resolution"] == "present":
+                    row["authors"][i]["resolved_affiliations"] = [x.strip() for x in a["page_affiliations"] if str(x).strip()]
+        row["resolution"] = {"decided_by": rec.get("decided_by"), "evidence": rec.get("evidence")}
+        out[key] = row
+    return out
+
+
+def load_checks(ed):
+    rows = {r["paper_key"]: r for r in read_jsonl(ed.pdf_verify_path)}
+    return resolve_checks(rows, load_resolutions(ed.resolutions_path))
+
+
 def compute_gates(ed, works):
     cfg = ed.config
     affil_map, resolve = load_affiliation_map()
     slots = with_aff = with_inst = with_edu = 0
-    map_resolved = pdf_slots = pdf_resolved = 0
+    map_resolved = pdf_slots = pdf_resolved = with_classified = 0
     papers_full = papers_any = byline_mismatch = 0
     leaks = bad_scope = 0
     for w in works:
@@ -1280,11 +1365,15 @@ def compute_gates(ed, works):
                     # map only when institutions is empty; mirror that here.
                     insts = resolve(a.get("raw_affiliations") or [], affil_map)
                     map_resolved += bool(insts)
+                # An adjudicated non-university string (a manual row with no
+                # institution id, e.g. a company) is a decision, not a gap.
+                classified = bool(insts) or classified_noncredit(a.get("raw_affiliations") or [], affil_map)
                 with_inst += bool(insts)
+                with_classified += classified
                 with_edu += any(i.get("type") == "education" for i in insts)
                 if a.get("affiliation_source") in ("publisher-pdf", "publisher-pdf-image"):
                     pdf_slots += 1
-                    pdf_resolved += bool(insts)
+                    pdf_resolved += classified
         papers_full += bool(auths) and covered == len(auths)
         papers_any += covered > 0
         byline_mismatch += any("byline_mismatch" in r["reasons"] for r in w["evidence"]["rejected"]) and not w["evidence"].get("source")
@@ -1316,18 +1405,25 @@ def compute_gates(ed, works):
         "papers": n, "papers_fully_covered": papers_full, "papers_any_coverage": papers_any,
         "threshold": GATES["author_slot_affiliation_min"], "pass": aff_rate >= GATES["author_slot_affiliation_min"],
     }
-    res_rate = with_inst / with_aff if with_aff else 0.0
+    res_rate = with_classified / with_aff if with_aff else 0.0
     gates["institution_resolution"] = {
         "slots_with_affiliation": with_aff, "slots_with_institution": with_inst, "slots_with_education_institution": with_edu,
+        "slots_resolved_or_classified_noncredit": with_classified,
         "resolved_via_affiliation_map": map_resolved, "pdf_slots": pdf_slots, "pdf_slots_resolved": pdf_resolved,
         "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv." if pdf_slots > pdf_resolved else None,
         "rate": round(res_rate, 4), "threshold": GATES["institution_resolution_min"],
         "pass": res_rate >= GATES["institution_resolution_min"],
     }
     dup = (ed.state.get("build") or {}).get("counts", {}).get("duplicate_work_keys", 0)
+    checks = load_checks(ed)
+    pdf_not_found = sum(a.get("verdict") == "not_found" and not a.get("resolution") for r in checks.values()
+                        for a in r.get("authors", []))
+    pdf_discrepancies = sum(bool(r.get("byline_discrepancy")) for r in checks.values())
     gates["byline_integrity"] = {"papers_without_evidence_due_to_byline_mismatch": byline_mismatch,
+                                 "pdf_author_slots_not_found": pdf_not_found,
+                                 "pdf_byline_discrepancy_papers": pdf_discrepancies,
                                  "empty_bylines": sum(not w["authorships"] for w in works),
-                                 "pass": all(w["authorships"] for w in works)}
+                                 "pass": all(w["authorships"] for w in works) and pdf_not_found == 0 and pdf_discrepancies == 0}
     gates["scope_purity"] = {"duplicate_work_keys": dup, "pass": dup == 0 and bad_scope == 0,
                              "audit_sample": str(ed.dir / "audit-sample.jsonl")}
     gates["profile_leakage"] = {"author_slots_with_profile_or_unknown_source": leaks, "pass": leaks == 0}
@@ -1342,19 +1438,22 @@ def compute_gates(ed, works):
         "slots_from_image": sum(a.get("affiliation_source") == "publisher-pdf-image" for w in works for a in w["authorships"]),
         # Informational: conflicts and the review queue need human review but
         # do not by themselves block the edition.
-        "pass": True,
+        "source_discrepancy_papers": sum(bool(r.get("source_discrepancy")) for r in checks.values()),
+        "pass": not any(r.get("source_discrepancy") for r in checks.values()),
     }
-    rows = {r["paper_key"]: r for r in read_jsonl(ed.pdf_verify_path)}
+    rows = load_checks(ed)
     accuracy, correct, wrong = pdf_verify.sample_accuracy(rows)
+    sample_complete, sample_expected = pdf_verify.sample_complete(ed, rows)
     gates["pdf_verification"] = {
         "sample_papers_checked": sum(1 for r in rows.values() if r["kind"] == "sample"),
+        "sample_papers_expected": sample_expected, "sample_complete": sample_complete,
         "extractor_slots_correct": correct, "extractor_slots_wrong": wrong,
         "extractor_accuracy": round(accuracy, 4) if accuracy is not None else None,
         "threshold": PDF_TEXT_ACCURACY_MIN,
         "review_papers_read_from_image": sum(1 for r in rows.values() if r["kind"] == "review"),
         "conflict_papers_checked": sum(1 for r in rows.values() if r["kind"] == "conflict"),
         "judge_model": sorted({r.get("model") for r in rows.values() if r.get("model")}),
-        "pass": accuracy is not None and accuracy >= PDF_TEXT_ACCURACY_MIN,
+        "pass": sample_complete and accuracy is not None and accuracy >= PDF_TEXT_ACCURACY_MIN,
         "note": None if accuracy is not None else "Image verification not run: --stage verify-prep, then the verify-pdf-affiliations skill, then --stage verify-apply",
     }
     return gates

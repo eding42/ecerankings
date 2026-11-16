@@ -61,6 +61,22 @@ one complete draft per paper. The parent checks batch identity, every author's
 name/index/order, and image accuracy before accepting results. Draft completion
 alone is not proof of affiliation accuracy. Preserve incomplete attempts and
 unclear marks for review.
+Preparation records the full selected sample in `pdf-verify/selection.json`,
+including papers omitted by a pilot limit or rendering failure. The accuracy
+gate requires that selection to be fully reviewed; older preparations without
+the selection file must be prepared again before the gate can pass.
+An `unclear` or `not_found` image verdict suppresses that author's unconfirmed
+PDF extraction, and `not_found` also prevents the byline gate from passing.
+For a PDF with an extra author or another material difference from the publisher
+byline, record `byline_discrepancy: true` on the paper's result and explain it
+in `notes`; this blocks both the byline gate and, for a sample paper, sample
+completion until the discrepancy is resolved.
+Use `source_discrepancy: true` for an unresolved mismatch suggesting the PDF
+may be the wrong publication. The build quarantines that PDF's evidence and
+the PDF evidence gate fails pending reconciliation.
+A verdict judges the extraction its batch carried. After an extractor-version
+change, rerun the pdf stage and `verify-prep`, then have the sample judged
+again; until then `gates` reports the previous extractor's accuracy.
 
 ```sh
 python3 pipeline/harvest_ml.py --venue iclr --year 2025 --stage verify-apply
@@ -71,6 +87,21 @@ python3 pipeline/harvest_ml.py --venue iclr --year 2025 --stage gates
 Resolve new strings through the adjudication workflow, replay earlier decisions
 after normalization, and rerun map QA. Do not edit historical author credit from
 knowledge of an author's current employer.
+
+## Resolve discrepancies
+
+Image checks that flag a byline or document discrepancy, or an author not found
+on the page, are resolved in `data/refresh/ml-discrepancy-resolutions.jsonl`
+(durable; the staging tree is not). One record per paper: `byline`
+(`same_people` | `different_people`), `source` (`same_paper` |
+`different_document`), `authors` (`{"<index>": {"resolution": "present",
+"page_affiliations": [...]} | {"resolution": "absent"}}`), `evidence`,
+`decided_by`. `different_people` and `different_document` withhold the paper's
+PDF evidence; the extractor-accuracy sample is scored on the original verdicts.
+
+The institution-resolution gate counts a string adjudicated as non-university
+(a manual map row without an institution id) as resolved: it was decided, and it
+deliberately credits nobody. `unresolved` decisions still count against it.
 
 ## Acceptance
 

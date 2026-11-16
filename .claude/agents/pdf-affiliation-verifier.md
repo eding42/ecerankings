@@ -146,6 +146,13 @@ Each saved paper's `result` has this shape (the example shows one task):
 ```
 
 - `image_ok: false` means the image doesn't show the author block, for example a wrong crop. In that case every verdict is `unclear`.
+- Set `byline_discrepancy: true` on the paper result when the PDF has an extra
+  author or another material difference from the publisher byline; explain the
+  difference in `notes`. Ordering alone or a verified name variant does not
+  constitute a discrepancy. Preserve the publisher's slots and order.
+- Set `source_discrepancy: true` if the PDF title or content raises an
+  unresolved concern that it may be the wrong publication; explain why in
+  `notes`. The pipeline quarantines PDF evidence for such papers.
 - `page_affiliations` always holds what the page says. It is `[]` for `absent`, `not_found`, and `unclear`.
 - Use `notes` only for what a reviewer needs, such as "the byline prints Xinrun Du, the listing says Xeron Du".
 - Preserve the literal `raw_marks` in each saved author answer (`""` for shared

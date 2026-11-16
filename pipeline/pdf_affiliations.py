@@ -19,6 +19,9 @@ Two layouts cover ICLR-style headers:
             affiliation list keyed by the same marks ("1 Tencent AI Lab 2 Peking
             University"). pdftotext often puts a mark on its own line above the
             text it labels.
+            Variants read: marks lifted onto the line above the names,
+            "1." keys, marks at the end of each entry, a legend set in two
+            columns, and one institution printed once below keyed departments.
 
 Each result carries a confidence: "high" when every byline author is anchored
 and has at least one affiliation, "partial" when some are, "none" otherwise.
@@ -32,11 +35,12 @@ import unicodedata
 
 PDFTOTEXT = "pdftotext"
 # Bump when extraction logic changes; harvest_ml re-extracts stored text.
-EXTRACTOR_VERSION = 2
+EXTRACTOR_VERSION = 3
 
 _ABSTRACT = re.compile(r"^\s*A\s*B\s*S\s*T\s*R\s*A\s*C\s*T\b", re.I)
-_EMAIL = re.compile(r"@|\{[^}]*\}\s*@|^\s*e-?mail", re.I)
-_NOISE = re.compile(r"(equal contribution|corresponding author|project page|code is available|https?://|github\.com|work done|denotes|∗ ?equal)", re.I)
+# Any "@" marks an address line, except an all-caps name such as "CNRS@CREATE".
+_EMAIL = re.compile(r"@(?![A-Z]{2,}(?![\w.]))|^\s*[eE]-?mail")
+_NOISE = re.compile(r"(equal contribution|corresponding author|project page|code is available|https?://|github\.com|work done|denotes|∗ ?equal|contributed equally|equally contribut|project lead|\bintern(?:ship)?\b|correspondence)", re.I)
 # Superscript marks as pdftotext renders them. 'B' is the envelope glyph that
 # many templates use for corresponding authors; it never labels an affiliation.
 _SYMBOLS = "†‡§¶*∗♣♠♡♢♦♥⋆★☆◦•‖#°♯♮♭↿⇂⊥⊤⊣⊢∇△▽◇◆□■○●⋄⊕⊗※¤"
@@ -46,7 +50,19 @@ _SYM = re.escape(_SYMBOLS)
 _MARK_TOKEN = re.compile(r"\d{1,2}|([" + _SYM + r"])\1*|B(?![A-Za-z])")
 _MARK = r"(?:\d{1,2}|[" + _SYM + r"]+|B(?![A-Za-z]))"
 _MARK_RUN = re.compile(r"^[\s,]*(" + _MARK + r"(?:[\s,]*" + _MARK + r")*)")
-_AFFIL_MARK = re.compile(r"(?:(?<=\s)|^)(\d{1,2}|([" + _SYM + r"])\2*)\s+(?=[A-Z])")
+# A legend entry's mark: "1 Tencent", "1. Shanghai", "† École". Capitals
+# include accented ones.
+_AFFIL_MARK = re.compile(r"(?:(?<=\s)|^)(\d{1,2}|([" + _SYM + r"])\2*)[.)]?\s+(?=[A-ZÀ-ÖØ-Þ])")
+# One whitespace-free run of marks ("1,2†"), as on a line of lifted superscripts.
+_MARK_GROUP = re.compile(r"^" + _MARK + r"(?:,?" + _MARK + r")*,?$")
+_DANGLING_MARK = re.compile(r"\s(\d{1,2}|([" + _SYM + r"])\2*)\s*$")
+_TRAILING_MARK = re.compile(r"(?<=[^\W\d_).])\s?(\d{1,2}|[" + _SYM + r"])(?:\s*[,;&]\s*|\s+|$)")
+_SUBUNIT = re.compile(r"(?:graduate\s+)?(?:departments?|depts?|schools?|faculty|division|college|institute\s+(?:for|of)|"
+                      r"cent(?:er|re)|lab(?:oratory)?|program(?:me)?|group)\b", re.I)
+_ORG = re.compile(r"universi|institut|college|academy|polytechni|\b[eé]cole\b|\bhochschule\b", re.I)
+_CONJ = re.compile(r"\s+(?:&|and)\s+(?=[A-ZÀ-ÖØ-Þ])")
+_FIELD = re.compile(r"(?:science|engineering|architecture|mathematics|statistics|physics|chemistry|biology|"
+                    r"informatics|medicine|economics|linguistics|psychology)s?$", re.I)
 _SEGMENT_GAP = re.compile(r"\s{3,}")
 
 
@@ -144,55 +160,215 @@ def _clean_affiliation(text):
     # Marks of the next entry left dangling at the end ("...of China 1 3").
     text = re.sub(r"(?:[\s,]+(?:\d{1,2}|[" + _SYM + r"]+))+$", "", text).strip(" ,;.")
     text = re.sub(r"^(and|&)\s+", "", text, flags=re.I)
+    text = re.sub(r"[\s,]+(and|&)$", "", text, flags=re.I).strip(" ,;.")
     return text
 
 
-def parse_markers(lines, authors, found):
-    """Superscript layout. Returns {author_index: [affiliation, ...]} or None."""
-    located = [f for f in found if f]
-    if not located:
-        return None
-    last_name_line = max(f[0] for f in located)
-    marks_by_author = {}
+def _marks_above(lines, found, inline):
+    """Marks that pdftotext lifted onto the line above the names.
+
+    "    1      1,2†     3" over "Zecheng Li , Wengang Zhou , Hezhen Hu": one
+    group per author on the name line that has no mark of its own, in order.
+    Returns {author_index: marks text}.
+    """
+    out = {}
+    by_line = {}
+    for k, f in enumerate(found):
+        if f and not inline.get(k):
+            by_line.setdefault(f[0], []).append(k)
+    for li, ks in by_line.items():
+        groups = lines[li - 1].split() if li else []
+        if len(groups) == len(ks) and all(_MARK_GROUP.match(g) for g in groups):
+            out.update(zip(ks, groups))
+    return out
+
+
+def _author_marks(lines, found):
+    def marks(text):
+        m = _MARK_RUN.match(text)
+        return [t.group(0) for t in _MARK_TOKEN.finditer(m.group(1)) if t.group(0) != "B"] if m else []
+
+    inline = {}
     for k, f in enumerate(found):
         if not f:
             continue
         li, _, end = f
-        tail = lines[li][end:]
         # The PDF byline may carry name tokens the listing omits before the
-        # marks ("Dung Nguyen Manh†"); skip up to two of them.
-        tail = re.sub(r"^(?:\s*[A-Z][\w.'’-]*(?=[\s\d" + _SYM + r",]|$)){0,2}", "", tail)
-        m = _MARK_RUN.match(tail)
-        marks = [t.group(0) for t in _MARK_TOKEN.finditer(m.group(1)) if t.group(0) != "B"] if m else []
-        marks_by_author[k] = marks
-    if sum(1 for v in marks_by_author.values() if v) < max(1, len(located) // 2):
-        return None
-    body, blanks = [], 0
-    for line in lines[last_name_line + 1:]:
+        # marks ("Dung Nguyen Manh†"); skip up to two of them. Letters only:
+        # a mark glued to the token ("Feng1,2") is not part of the name.
+        tail = re.sub(r"^(?:\s*[A-Z](?:[^\W\d_]|[.'’-])*(?=[\s\d" + _SYM + r",]|$)){0,2}", "", lines[li][end:])
+        inline[k] = marks(tail)
+    for k, text in _marks_above(lines, found, inline).items():
+        inline[k] = marks(text)
+    return inline
+
+
+def _legend(lines, start, name_lines, used):
+    """Read the keyed affiliation list below line `start`.
+
+    Returns (entries, last_line). An entry is {"mark", "parts", "col", "own",
+    "noise"}: `parts` is its text in reading order, `own` the unmarked full
+    lines that followed it. Columns matter twice: a mark alone on a line labels
+    the text that starts under it, and a row of unmarked text under a row of
+    entries continues each entry above it.
+    """
+    entries, row, pending = [], [], []
+    blanks, last, muted, row_line, seen_text = 0, start, False, None, False
+    numbered = any(m.isdigit() for m in used)
+
+    def is_mark(mark):
+        # A number is a key only where the names carry numbers; otherwise it
+        # is part of an address ("21 Nanyang Link", "1 Create Way").
+        return numbered or not mark.isdigit()
+
+    for li in range(start + 1, len(lines)):
+        line = lines[li]
         if not line.strip():
             blanks += 1
             # A wide gap after the affiliation list ends the author block;
             # what follows is a teaser figure or its caption.
-            if blanks >= 2 and any(body):
+            if blanks >= 2 and seen_text:
                 break
-            if body and body[-1] != "":
-                body.append("")
             continue
         blanks = 0
-        if _EMAIL.search(line) or _NOISE.search(line):
+        if li in name_lines:
+            # A later group of authors starts its own block.
+            if entries:
+                break
             continue
-        body.append(line.strip())
-    text = " ".join(x for x in body if x)
-    text = " " + text
-    hits = list(_AFFIL_MARK.finditer(text))
+        if _EMAIL.search(line):
+            continue
+        seen_text = True
+        tokens = line.split()
+        if all(_MARK_GROUP.match(t) for t in tokens):
+            pending = [(_MARK_TOKEN.match(t).group(0), line.find(t)) for t in tokens
+                       if _MARK_TOKEN.match(t).group(0) != "B"]
+            continue
+        # A mark left at the end of a line labels the text below it.
+        dangling = _DANGLING_MARK.search(line)
+        if dangling:
+            line = line[:dangling.start()]
+        segs = segments(line)
+        starts = []
+        for mark, col in pending if segs else ():
+            seg = min(segs, key=lambda s: (s[0] < col - 2, abs(s[0] - col)))
+            starts.append((seg[0], seg[0], mark))
+        pending = []
+        for hit in _AFFIL_MARK.finditer(line):
+            if is_mark(hit.group(1)):
+                starts.append((hit.start(), hit.end(), hit.group(1)))
+        starts.sort()
+        lead = line[:starts[0][0]] if starts else line
+        if lead.strip():
+            if _NOISE.search(lead):
+                muted = True
+            elif muted or not entries:
+                pass
+            elif not starts and len(segs) >= 2 and len(segs) == len(row) and row_line == li - 1:
+                for (_, _, text), entry in zip(segs, row):
+                    entry["parts"].append(", " + text)
+            else:
+                entries[-1]["parts"].append(" " + lead.strip())
+                if not starts:
+                    entries[-1]["own"].append(lead.strip())
+            last = li
+        fresh = []
+        for n, (_, begin, mark) in enumerate(starts):
+            stop = starts[n + 1][0] if n + 1 < len(starts) else len(line)
+            text = line[begin:stop].strip()
+            # Footnotes share lines ("5 CIFAR, ∗ Equal contribution † Project
+            # lead"): everything from the first one on is not an affiliation.
+            noise = bool(_NOISE.search(text)) or bool(fresh and fresh[-1]["noise"])
+            fresh.append({"mark": mark, "parts": [text], "col": begin, "own": [], "noise": noise})
+        if fresh:
+            entries.extend(fresh)
+            row, row_line, muted, last = fresh, li, fresh[-1]["noise"], li
+        if dangling and is_mark(dangling.group(1)):
+            pending = [(dangling.group(1), dangling.start(1))]
+        elif dangling and entries and not muted:
+            entries[-1]["parts"].append(dangling.group(0).rstrip())
+    return entries, last
+
+
+def _trailing_legend(lines, start, name_lines, used):
+    """A legend that carries each mark at the end of its text.
+
+    "..., Adelaide, AU1" per line, or "KAIST1 , Polymerize2 , AITRICS3" in a
+    row. Every piece must end in a mark some name uses, or nothing is read. A
+    repeated mark continues its entry ("EECS1 , Psychiatry2 / DGIST1 ,
+    Stanford University2").
+    """
+    entries, last = {}, start
+    for li in range(start + 1, len(lines)):
+        line = lines[li].strip()
+        if li in name_lines or not line or _EMAIL.search(line) or _NOISE.search(line):
+            if entries:
+                break
+            continue
+        pieces = _TRAILING_MARK.split(line)
+        if len(pieces) < 3 or pieces[-1].strip() or not all(m in used for m in pieces[1::2]):
+            if entries:
+                break
+            return [], start
+        for text, mark in zip(pieces[0::2], pieces[1::2]):
+            entries.setdefault(mark, []).append(text.strip(" ,;"))
+        last = li
+    return [{"mark": mark, "parts": [", ".join(parts)], "col": 0, "own": [], "noise": False}
+            for mark, parts in entries.items()], last
+
+
+def _share_parent(entries):
+    """Give every sub-unit the institution printed once below the list.
+
+    "1 Architecture 2 Computer Science 3 Civil Engineering / Princeton
+    University": the unmarked last line belongs to all three, not to "3".
+    Only when every keyed entry is a bare sub-unit, so a wrapped final entry
+    ("2 Shanghai AI / Laboratory") is left alone.
+    """
+    if len(entries) < 2 or not entries[-1]["own"] or any(e["own"] for e in entries[:-1]):
+        return
+    last = entries[-1]
+    head = "".join(last["parts"][:len(last["parts"]) - len(last["own"])])
+    heads = ["".join(e["parts"]) for e in entries[:-1]] + [head]
+    if not all(_bare_subunit(h) for h in heads) or _SUBUNIT.match(last["own"][0]) or not _ORG.search(last["own"][0]):
+        return
+    parent = ", ".join(last["own"])
+    for entry, text in zip(entries, heads):
+        entry["parts"] = [_clean_affiliation(text) + ", " + parent]
+
+
+def _bare_subunit(text):
+    text = _clean_affiliation(text)
+    if re.search(r"[,;]\s*$", text) or "," in text:
+        return False
+    return bool(_SUBUNIT.match(text)) or bool(_FIELD.search(text) and not _ORG.search(text))
+
+
+def parse_markers(lines, authors, found):
+    """Superscript layout. Returns ({author_index: [affiliation, ...]}, last
+    legend line) or (None, None)."""
+    located = [f for f in found if f]
+    if not located:
+        return None, None
+    marks_by_author = _author_marks(lines, found)
+    marked = [k for k, v in marks_by_author.items() if v]
+    if len(marked) < max(1, len(located) // 2):
+        return None, None
+    name_lines = {f[0] for f in located}
+    start = max(found[k][0] for k in marked) if marked else max(f[0] for f in located)
+    used = {m for marks in marks_by_author.values() for m in marks}
+    entries, last = _legend(lines, start, name_lines, used)
+    entries = [e for e in entries if not e["noise"]]
+    if not entries:
+        entries, last = _trailing_legend(lines, start, name_lines, used)
+    _share_parent(entries)
     affiliations = {}
-    for n, hit in enumerate(hits):
-        stop = hits[n + 1].start() if n + 1 < len(hits) else len(text)
-        mark, value = hit.group(1), _clean_affiliation(text[hit.end():stop].split(";")[0])
+    for entry in entries:
+        value = _clean_affiliation("".join(entry["parts"]).split(";")[0])
         if value and len(value) > 2:
-            affiliations.setdefault(mark, value)
+            affiliations.setdefault(entry["mark"], value)
     if not affiliations:
-        return None
+        return None, None
     result = {}
     for k, marks in marks_by_author.items():
         values = [affiliations[m] for m in marks if m in affiliations]
@@ -202,7 +378,7 @@ def parse_markers(lines, authors, found):
     if not result and len(affiliations) == 1:
         only = next(iter(affiliations.values()))
         result = {k: [only] for k in marks_by_author}
-    return result
+    return result, last
 
 
 def parse_columns(lines, authors, found):
@@ -241,9 +417,48 @@ def parse_columns(lines, authors, found):
             if _NOISE.search(text):
                 continue
             collected.append(text)
-        if collected:
-            result[k] = [_clean_affiliation(", ".join(collected))]
+        # A block that opens with a bare mark, or holds several, is a keyed
+        # list the marker parser could not read, not this author's own lines.
+        bare = [bool(_MARK_GROUP.match(t)) for t in collected]
+        if collected and (bare[0] or sum(bare) > 1):
+            continue
+        values = [v for v in (_clean_affiliation(v) for v in _split_block(collected)) if v]
+        if values:
+            result[k] = values
     return result
+
+
+def _split_block(block_lines):
+    """One author's block of lines -> its affiliations.
+
+    The lines read as one affiliation ("Department of Computer Science /
+    Goethe University Frankfurt") unless a conjunction introduces another
+    institution: "& University of Bristol" on its own line, or "FAIR at Meta
+    and Carnegie Mellon University". Stacked lines without one stay together:
+    "Kempner Institute / Harvard University" is a single place.
+    """
+    out = []
+    for line in block_lines:
+        pieces = [line]
+        m = _CONJ.search(line)
+        if m and _standalone(line[:m.start()].split(",")[-1], named=False) and _standalone(line[m.end():].split(",")[0]):
+            pieces = [line[:m.start()], line[m.end():]]
+        lead = re.match(r"(?:&|and)\s+", pieces[0])
+        if out and not (lead and _standalone(pieces[0][lead.end():].split(",")[0])):
+            out[-1] += ", " + pieces.pop(0)
+        out.extend(pieces)
+    return out
+
+
+def _standalone(text, named=True):
+    """Is this an institution by itself, not a sub-unit or a fragment of a name?
+
+    `named` also requires a word such as University or Institute.
+    """
+    text = text.strip()
+    if not text or not text[0].isupper() or _SUBUNIT.match(text):
+        return False
+    return bool(_ORG.search(text)) or not named
 
 
 def extract(text, authors):
@@ -266,9 +481,14 @@ def extract(text, authors):
     if not out["anchored"]:
         out["reason"] = "no byline author found on page"
         return out
-    mapping, layout = parse_markers(lines, authors, found), "markers"
+    (mapping, legend_end), layout = parse_markers(lines, authors, found), "markers"
     if not mapping:
         mapping, layout = parse_columns(lines, authors, found), "columns"
+    elif any(f and f[0] > legend_end and k not in mapping for k, f in enumerate(found)):
+        # A block of authors below the keyed list carries its own affiliation
+        # lines ("See-Kiong Ng & Bryan Low / Department of ...").
+        below = parse_columns(lines, authors, [f if f and f[0] > legend_end else None for f in found])
+        mapping.update({k: v for k, v in below.items() if k not in mapping})
     out["layout"] = layout
     for k, values in (mapping or {}).items():
         # A stray mark or digit is not an affiliation.
