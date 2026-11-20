@@ -36,10 +36,11 @@ python3 pipeline/harvest_ml.py --venue <v> --year <y> --stage verify-status
 
 `verify-status` lists the pending batches with their kinds. A batch is pending when no result file of the same name exists.
 
-New crops render from the source PDF at 300 DPI. Resolution is part of the
+New crops render from the source PDF at 600 DPI by default. Resolution is part of the
 image filename and batch identity, so old low-resolution crops/results are not
-silently reused. For ambiguous superscripts, make a focused 300 DPI author-block
+silently reused. For ambiguous superscripts, make a focused 600 DPI author-block
 crop from the original PDF and rerun that paper; enlarging the existing PNG
+
 does not restore glyph detail. The verifier records literal author marks and
 the printed institution legend before mapping affiliations. Keep this evidence
 in the draft checkpoint for the orchestrator's image spot-check.

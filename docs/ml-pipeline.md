@@ -103,6 +103,17 @@ The institution-resolution gate counts a string adjudicated as non-university
 (a manual map row without an institution id) as resolved: it was decided, and it
 deliberately credits nobody. `unresolved` decisions still count against it.
 
+## Credit policy decisions (user, 2026-11-19)
+
+- A string that states no institution ("Independent Researcher", "Unaffiliated",
+  "None", a freelance-journalist byline) is recorded as non-credit (`noneducation`).
+- Only printed affiliation text earns credit. A logo alone does not.
+- A role or footnote mark ("Core Authors (MBZUAI)") names a role, not a workplace,
+  and earns no credit.
+- A string naming two or more universities, or a joint lab, stays `unresolved`
+  (or `needs-policy`) until map rows can carry several institutions; credit would
+  then split evenly, as `PLAN.md` already specifies for multi-affiliation authors.
+
 ## Acceptance
 
 An edition stays `staged` unless every gate passes: membership discrepancy at

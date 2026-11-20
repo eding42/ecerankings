@@ -100,6 +100,12 @@ Do not read other runs' verdicts or modify files outside `output_dir`.
      from an adjacent block, even when the blocks share other lines. Record the
      block position and its literal lines in checkpoint notes or an audit field.
    - An author can have several affiliations.
+   - Distinguish affiliations printed for the paper from later addresses. Do not
+     add a footnote or parenthetical labelled "now at", "current affiliation",
+     or "current address" as a publication-time affiliation. Preserve the
+     literal wording in notes. If the page gives only a later address, or a
+     work-done statement and a later address with no unambiguous paper-time
+     affiliation, mark the author `unclear` and record the evidence for review.
    - If small glyphs remain ambiguous, mark that author `unclear` and note that
      a focused crop from the source PDF is needed. Do not guess or enlarge an
      already low-resolution image and treat it as new evidence.
@@ -123,6 +129,11 @@ Do not read other runs' verdicts or modify files outside `output_dir`.
 | `absent` | The page gives this author no affiliation. |
 | `not_found` | The author isn't on the image. |
 | `unclear` | The image doesn't let you tell. |
+
+If the parser's extracted string includes a later-address clause, use `wrong`
+and provide the paper-time affiliation without that clause, even if the
+institution itself otherwise matches. A `correct` verdict retains the parser's
+original string in the build, including that later address.
 
 ## Never
 

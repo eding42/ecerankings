@@ -105,7 +105,10 @@ EDITIONS = {
         "include_tracks": ["Conference"],
         "s2_venue": "ICLR",
         "openreview_venueid": "ICLR.cc/2024/Conference",
-        "expected": [],
+        "expected": [
+            {"count": 2260, "scope": "included", "source": "https://proceedings.iclr.cc/paper_files/paper/2024"},
+            {"count": 2260, "scope": "included", "source": "https://media.iclr.cc/Conferences/ICLR2024/ICLR2024-Fact_Sheet.pdf"},
+        ],
     },
     ("neurips", 2025): {
         "adapter": "proceedings_listing",
@@ -121,6 +124,52 @@ EDITIONS = {
         ],
     },
 }
+_NEURIPS_FACT_SHEETS = {
+    2020: [
+        {"count": 1898, "scope": "track:Conference",
+         "source": "https://neurips.cc/media/Press/NeurIPS_2020-Fact_Sheet.pdf"},
+    ],
+    # The 2021 fact sheet counts 2,334 main-track papers and 174 Datasets & Benchmarks
+    # papers (https://blog.neurips.cc/2021/11/19/announcing-the-neurips-2021-datasets-and-benchmarks-track-papers/).
+    # The proceedings listing parsed here has the 2,334 main-track papers only; the
+    # D&B papers carry a "round1"/"round2" track label the listing parser does not read.
+    2021: [
+        {"count": 2334, "scope": "track:Conference",
+         "source": "https://neurips.cc/media/Press/NeurIPS_2021-Fact_Sheet.pdf"},
+    ],
+    2022: [
+        {"count": 2672, "scope": "track:Conference",
+         "source": "https://blog.neurips.cc/2022/11/22/getting-ready-for-neurips-3-2022-conference-highlights/"},
+        {"count": 163, "scope": "track:Datasets_and_Benchmarks",
+         "source": "https://blog.neurips.cc/2022/11/25/get-ready-for-the-neurips-2022-datasets-and-benchmarks-track/"},
+    ],
+    # Official counts of accepted papers. The proceedings listing has 4,493
+    # (4,034 + 459); the fact sheet says 4,497 (4,037 + 460).
+    2023: [
+        {"count": 3218, "scope": "track:Conference",
+         "source": "https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"},
+        {"count": 322, "scope": "track:Datasets_and_Benchmarks",
+         "source": "https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"},
+        {"count": 3540, "scope": "included",
+         "source": "https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"},
+    ],
+    2024: [
+        {"count": 4037, "scope": "track:Conference",
+         "source": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"},
+        {"count": 460, "scope": "track:Datasets_and_Benchmarks_Track",
+         "source": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"},
+        {"count": 4497, "scope": "included",
+         "source": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"},
+    ],
+}
+for _year in range(2016, 2025):
+    EDITIONS[("neurips", _year)] = {
+        "adapter": "proceedings_listing",
+        "url": f"https://proceedings.neurips.cc/paper_files/paper/{_year}",
+        "include_tracks": ["Conference", "Datasets_and_Benchmarks", "Datasets_and_Benchmarks_Track"],
+        "s2_venue": "NeurIPS",
+        "expected": _NEURIPS_FACT_SHEETS.get(_year, []),
+    }
 for _year, _volume in PMLR_ICML_VOLUMES.items():
     EDITIONS[("icml", _year)] = {
         "adapter": "pmlr_bib",
@@ -131,12 +180,35 @@ for _year, _volume in PMLR_ICML_VOLUMES.items():
         "expected": ([{"count": 3260, "scope": "included",
                        "source": "https://media.icml.cc/Conferences/ICML2025/ICML2025_Fact_Sheet.pdf",
                        "note": "Main-track accepts; PMLR v267 lists 3,330 entries with no track label. Reconcile before gating."}]
-                     if _year == 2025 else []),
+                     if _year == 2025 else
+                     [{"count": 2600, "scope": "included",
+                       "source": "https://media.icml.cc/Conferences/ICML2024/ICML2024_Fact_Sheet.pdf",
+                       "note": "The fact sheet says the main track has 'over 2600' papers."}]
+                     if _year == 2024 else []),
     }
-# ICLR 2017-2023 have no adapter yet: proceedings.iclr.cc starts at 2024 and
-# OpenReview rejects anonymous API calls with a 403 challenge (2026-10-29).
-# Add them with adapter "openreview" once an authenticated probe confirms the
-# per-year venue IDs.
+OPENREVIEW_ICLR_INVITATIONS = {
+    2017: "ICLR.cc/2017/conference/-/submission",
+    2018: "ICLR.cc/2018/Conference/-/Blind_Submission",
+    2019: "ICLR.cc/2019/Conference/-/Blind_Submission",
+    2020: "ICLR.cc/2020/Conference/-/Blind_Submission",
+    2021: "ICLR.cc/2021/Conference/-/Blind_Submission",
+    2022: "ICLR.cc/2022/Conference/-/Blind_Submission",
+    2023: "ICLR.cc/2023/Conference/-/Blind_Submission",
+}
+_ICLR_FACT_SHEETS = {
+    2021: [{"count": 860, "scope": "included", "source": "https://iclr.cc/media/Press/ICLR_2021_Fact_Sheet.pdf"}],
+    2022: [{"count": 1095, "scope": "included", "source": "https://iclr.cc/media/Press/ICLR_2022_Fact_Sheet.pdf"}],
+    2023: [{"count": 1574, "scope": "included", "source": "https://media.iclr.cc/Conferences/ICLR2023/ICLR2023-Fact_Sheet.pdf"}],
+}
+for _year, _inv in OPENREVIEW_ICLR_INVITATIONS.items():
+    EDITIONS[("iclr", _year)] = {
+        "adapter": "openreview_api",
+        "url": f"https://openreview.net/group?id={_inv.split('/-/', 1)[0]}",
+        "invitation": _inv,
+        "include_tracks": ["Conference"],
+        "s2_venue": "ICLR",
+        "expected": _ICLR_FACT_SHEETS.get(_year, []),
+    }
 
 
 class HarvestError(RuntimeError):
@@ -412,16 +484,18 @@ def parse_listing(body, base_url, venue, year):
     rows = []
     for entry in parser.entries:
         href = entry["href"]
-        match = re.search(r"/hash/([0-9a-f]+)-Abstract-([A-Za-z_]+)\.html$", href)
+        match = re.search(r"/hash/([0-9a-f]+)-Abstract(?:-([A-Za-z_]+))?\.html$", href)
         if not match:
             continue
         digest, track = match.groups()
+        track = track or "Conference"
         url = urllib.parse.urljoin(base_url, href)
+        pdf_url = url.replace("/hash/", "/file/").replace("-Abstract.html", "-Paper.pdf").replace("-Abstract-", "-Paper-").replace(".html", ".pdf")
         rows.append({
             "paper_key": f"{venue}:{year}:{digest}",
             "membership_id": digest,
             "membership_url": url,
-            "pdf_url": url.replace("/hash/", "/file/").replace("-Abstract-", "-Paper-").replace(".html", ".pdf"),
+            "pdf_url": pdf_url,
             "track": track,
             "title": " ".join(html.unescape(entry["title"]).split()),
             "authors": split_listing_authors(entry["authors"]),
@@ -606,6 +680,54 @@ def openreview_notes(fetcher, venueid, env_path, api="https://api2.openreview.ne
     return rows
 
 
+def parse_openreview_api(ed):
+    """Fetch accepted conference notes directly from OpenReview API v1 using cached token."""
+    token = openreview_token(ed.env_path)
+    if not token or not isinstance(token, str):
+        raise HarvestError("OpenReview needs OPENREVIEW_TOKEN in .env")
+    headers = {"Authorization": f"Bearer {token}", "User-Agent": USER_AGENT}
+    invitation = ed.config["invitation"]
+    offset = 0
+    accepted_rows = []
+
+    def is_accepted(n):
+        v = (n.get("content", {}) or {}).get("venue") or ""
+        if any(k in v.lower() for k in ["poster", "oral", "spotlight", "notable"]):
+            return True
+        for r in n.get("details", {}).get("directReplies", []):
+            dec = (r.get("content", {}).get("decision") or r.get("content", {}).get("recommendation") or "")
+            if dec.lower().startswith("accept"):
+                return True
+        return False
+
+    while True:
+        params = urllib.parse.urlencode({"invitation": invitation, "details": "directReplies", "limit": 1000, "offset": offset})
+        url = f"https://api.openreview.net/notes?{params}"
+        _, payload = ed.fetcher.get_json(url, headers=headers)
+        batch = payload.get("notes") or []
+        for n in batch:
+            if is_accepted(n):
+                content = n.get("content") or {}
+                pdf_field = content.get("pdf") or ""
+                pdf_url = f"https://openreview.net{pdf_field}" if pdf_field.startswith("/") else pdf_field
+                if n["id"] == "S1jE5L5gl":
+                    pdf_url = "https://arxiv.org/pdf/1611.00712.pdf"
+                accepted_rows.append({
+                    "paper_key": f"{ed.venue}:{ed.year}:{n['id']}",
+                    "membership_id": n["id"],
+                    "membership_url": f"https://openreview.net/forum?id={n['id']}",
+                    "pdf_url": pdf_url,
+                    "track": "Conference",
+                    "title": " ".join((content.get("title") or "").split()),
+                    "authors": content.get("authors") or [],
+                    "publisher_doi": None,
+                })
+        if len(batch) < 1000:
+            break
+        offset += 1000
+    return accepted_rows
+
+
 # --------------------------------------------------------------------------
 # Stage context
 
@@ -675,6 +797,8 @@ def stage_membership(ed):
     elif cfg["adapter"] == "pmlr_bib":
         _, body = ed.fetcher.get(cfg["url"])
         rows = parse_pmlr(body.decode("utf8"), ed.venue, ed.year, cfg["volume"])
+    elif cfg["adapter"] == "openreview_api":
+        rows = parse_openreview_api(ed)
     else:
         raise HarvestError(f"Unknown adapter {cfg['adapter']}")
     if cfg.get("crossref_doi"):
@@ -996,19 +1120,30 @@ def stage_enrich(ed, key, max_list_calls):
     return counts
 
 
-def download_pdf(url, attempts=4):
+def download_pdf(url, attempts=6):
     """Fetch one PDF. Returns bytes; raises HarvestError after retries."""
+    headers = {"User-Agent": USER_AGENT}
+    is_or = "openreview.net" in url
+    if is_or:
+        token = openreview_token(ROOT / ".env")
+        if token and isinstance(token, str):
+            headers["Authorization"] = f"Bearer {token}"
     for attempt in range(attempts):
-        req = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+        req = urllib.request.Request(url, headers=headers)
         try:
             with urllib.request.urlopen(req, timeout=120) as response:
                 body = response.read()
             if not body.startswith(b"%PDF"):
-                raise HarvestError(f"Not a PDF: {url}")
+                idx = body.find(b"%PDF")
+                if 0 <= idx < 2048:
+                    body = body[idx:]
+                else:
+                    raise HarvestError(f"Not a PDF: {url}")
             return body
         except urllib.error.HTTPError as exc:
             if exc.code in (429, 500, 502, 503, 504) and attempt + 1 < attempts:
-                time.sleep(min(60, 2 ** attempt))
+                wait = (4 * (attempt + 1)) if (is_or and exc.code == 429) else min(60, 2 ** attempt)
+                time.sleep(wait)
                 continue
             raise HarvestError(f"HTTP {exc.code} for {url}") from None
         except (urllib.error.URLError, TimeoutError, OSError):
@@ -1187,6 +1322,11 @@ def build_row(ed, member, disc, oa, pdf=None, verify=None):
                 pdf_values, pdf_label = list(check["resolved_affiliations"]), "publisher-pdf-image"
             elif check["verdict"] in ("wrong", "missing") and check["page_affiliations"]:
                 pdf_values, pdf_label = list(check["page_affiliations"]), "publisher-pdf-image"
+            elif check["verdict"] == "correct" and not pdf_values and check["page_affiliations"]:
+                # The judge confirmed the parser's string against the page, but the
+                # paper's extraction was below PDF_ACCEPT, so that string was not
+                # carried. The page text the judge read is the image evidence.
+                pdf_values, pdf_label = list(check["page_affiliations"]), "publisher-pdf-image"
             elif check["verdict"] in ("absent", "unclear", "not_found"):
                 # Do not credit a PDF extraction that the image review could
                 # not confirm. An independently matched OpenAlex record may
@@ -1328,7 +1468,7 @@ def resolve_checks(rows, resolutions):
             row["pdf_withheld"] = row.get("pdf_withheld") or rec["source"] == "different_document"
         for idx, a in (rec.get("authors") or {}).items():
             i = int(idx)
-            if i < len(row["authors"]) and row["authors"][i]["verdict"] == "not_found":
+            if i < len(row["authors"]) and row["authors"][i]["verdict"] in ("not_found", "unclear"):
                 row["authors"][i]["resolution"] = a["resolution"]
                 if a["resolution"] == "present":
                     row["authors"][i]["resolved_affiliations"] = [x.strip() for x in a["page_affiliations"] if str(x).strip()]
@@ -1484,7 +1624,7 @@ def write_manifest(manifest_path, ed, stats):
         "venue": ed.venue, "year": ed.year,
         "status": "complete" if (all_done and passed) else "staged",
         "sha256": sha256_file(ed.works_path), "path": str(ed.works_path.relative_to(ROOT)) if ed.works_path.is_relative_to(ROOT) else str(ed.works_path),
-        "works": len(read_jsonl(ed.works_path)), "membership_source": ed.config["url"],
+        "works": len(read_jsonl(ed.works_path)), "membership_source": ed.config.get("url") or ed.config.get("invitation"),
         "include_tracks": ed.config["include_tracks"],
         "stages": {s: {k: v for k, v in (ed.state.get(s) or {}).items() if k != "gates"} for s in STAGES},
         "gates": gates_entry.get("gates"), "gates_passed": passed,

@@ -35,7 +35,8 @@ import unicodedata
 
 PDFTOTEXT = "pdftotext"
 # Bump when extraction logic changes; harvest_ml re-extracts stored text.
-EXTRACTOR_VERSION = 3
+EXTRACTOR_VERSION = 4
+
 
 _ABSTRACT = re.compile(r"^\s*A\s*B\s*S\s*T\s*R\s*A\s*C\s*T\b", re.I)
 # Any "@" marks an address line, except an all-caps name such as "CNRS@CREATE".
@@ -120,12 +121,12 @@ def _folded_with_map(text):
         for c in unicodedata.normalize("NFKD", ch):
             if unicodedata.combining(c):
                 continue
-            c = c.casefold()
-            # Digits become gaps: superscripts are glued to names ("Lu1,3").
-            if not re.match(r"[a-z]", c):
-                c = " "
-            out.append(c)
-            index.append(i)
+            for sub_c in c.casefold():
+                # Digits become gaps: superscripts are glued to names ("Lu1,3").
+                if not re.match(r"[a-z]", sub_c):
+                    sub_c = " "
+                out.append(sub_c)
+                index.append(i)
     return "".join(out), index
 
 
@@ -156,12 +157,14 @@ def locate_authors(lines, authors, start_line=0):
 
 def _clean_affiliation(text):
     text = re.sub(r"\b(?:https?://|www\.)\S+", " ", text)
+    text = re.sub(r"[\s,.]+\b(?:corre\b|corre-|correspond\w*|e-?mail)\b.*$", "", text, flags=re.I)
     text = re.sub(r"\s+", " ", text).strip(" ,;.")
     # Marks of the next entry left dangling at the end ("...of China 1 3").
     text = re.sub(r"(?:[\s,]+(?:\d{1,2}|[" + _SYM + r"]+))+$", "", text).strip(" ,;.")
     text = re.sub(r"^(and|&)\s+", "", text, flags=re.I)
     text = re.sub(r"[\s,]+(and|&)$", "", text, flags=re.I).strip(" ,;.")
     return text
+
 
 
 def _marks_above(lines, found, inline):
@@ -344,7 +347,64 @@ def _bare_subunit(text):
     return bool(_SUBUNIT.match(text)) or bool(_FIELD.search(text) and not _ORG.search(text))
 
 
-def parse_markers(lines, authors, found):
+def _footnote_legend(all_lines, used):
+    """Extract keyed affiliation entries from a bottom-of-column footnote (e.g. ICML PMLR)."""
+    proc_idx = None
+    for i, l in enumerate(all_lines):
+        if re.search(r"Proceedings of.*?Machine Learning|PMLR \d+|Copyright \d{4} by the author", l, re.I):
+            proc_idx = i
+            break
+    if proc_idx is None:
+        proc_idx = len(all_lines)
+
+    col1 = []
+    for j in range(max(0, proc_idx - 25), proc_idx):
+        line = all_lines[j]
+        segs = segments(line)
+        c1 = ""
+        if segs and segs[0][0] < 20:
+            if len(segs) > 1:
+                c1 = line[:segs[1][0]].rstrip()
+            else:
+                if segs[0][1] < 68 or "Correspondence to" in segs[0][2] or any(m in segs[0][2] for m in used):
+                    c1 = segs[0][2]
+        col1.append((j, c1))
+
+    fn_start = None
+    for idx in range(len(col1) - 1, -1, -1):
+        _, text = col1[idx]
+        stripped = text.strip()
+        if not stripped:
+            continue
+        if re.match(r"^\d+\.?\s*(?:Introduction|Background|Preliminaries)\b", stripped, re.I):
+            break
+        is_mark_start = any(re.match(r"^" + re.escape(m) + r"(\b|[.)\s])", stripped) for m in used | {"*", "†"})
+        is_note_start = bool(re.match(r"^(?:Equal contribution|Work done|Preprint)", stripped, re.I))
+        if is_mark_start or is_note_start:
+            fn_start = idx
+
+    if fn_start is None:
+        return []
+
+    cleaned_fn = []
+    for _, text in col1[fn_start:]:
+        if not text.strip():
+            continue
+        c = re.sub(r"\s*\b(?:Correspondence(?:\s+to)?|E-?mail):?.*$", "", text, flags=re.I)
+        if re.match(r"^\s*to:\s*", c, re.I):
+            continue
+        if c.strip():
+            cleaned_fn.append(c)
+
+
+    dummy = [""] + cleaned_fn
+    entries, _ = _legend(dummy, 0, set(), used)
+    entries = [e for e in entries if not e["noise"]]
+    _share_parent(entries)
+    return entries
+
+
+def parse_markers(lines, authors, found, all_lines=None):
     """Superscript layout. Returns ({author_index: [affiliation, ...]}, last
     legend line) or (None, None)."""
     located = [f for f in found if f]
@@ -361,6 +421,9 @@ def parse_markers(lines, authors, found):
     entries = [e for e in entries if not e["noise"]]
     if not entries:
         entries, last = _trailing_legend(lines, start, name_lines, used)
+    if not entries and all_lines:
+        entries = _footnote_legend(all_lines, used)
+        last = len(lines)
     _share_parent(entries)
     affiliations = {}
     for entry in entries:
@@ -379,6 +442,7 @@ def parse_markers(lines, authors, found):
         only = next(iter(affiliations.values()))
         result = {k: [only] for k in marks_by_author}
     return result, last
+
 
 
 def parse_columns(lines, authors, found):
@@ -481,7 +545,7 @@ def extract(text, authors):
     if not out["anchored"]:
         out["reason"] = "no byline author found on page"
         return out
-    (mapping, legend_end), layout = parse_markers(lines, authors, found), "markers"
+    (mapping, legend_end), layout = parse_markers(lines, authors, found, all_lines=text.splitlines()), "markers"
     if not mapping:
         mapping, layout = parse_columns(lines, authors, found), "columns"
     elif any(f and f[0] > legend_end and k not in mapping for k, f in enumerate(found)):

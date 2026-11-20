@@ -21,8 +21,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = ".agents/skills/verify-pdf-affiliations/SKILL.md"
 DEFAULT_BATCH = 15
 DEFAULT_SAMPLE = 200
-RENDER_DPI = 300
+RENDER_DPI = 600
 VERDICTS = ("correct", "wrong", "missing", "absent", "not_found", "unclear")
+
 
 class VerifyError(RuntimeError):
     pass

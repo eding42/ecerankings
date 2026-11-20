@@ -244,6 +244,26 @@ class Verify(unittest.TestCase):
         built = harvest_ml.build_row(self.ed, m, None, {}, pdf, unreadable)
         self.assertTrue(all(not a["raw_affiliations"] for a in built["authorships"]))
 
+    def test_correct_verdict_credits_page_text_when_extraction_was_not_accepted(self):
+        m = self.members[0]
+        verification = {"image_ok": True, "authors": [
+            {"verdict": "correct", "page_affiliations": ["Aalto University"]},
+            {"verdict": "correct", "page_affiliations": ["Federal Institute of Ceará"]},
+        ]}
+        partial = {"confidence": "partial", "affiliations": [["Aalto University"], ["Federal Institute of Ceará"]]}
+        built = harvest_ml.build_row(self.ed, m, None, {}, partial, verification)
+        self.assertEqual([a["raw_affiliations"] for a in built["authorships"]],
+                         [["Aalto University"], ["Federal Institute of Ceará"]])
+        self.assertTrue(all(a["affiliation_source"] == "publisher-pdf-image" for a in built["authorships"]))
+        # An accepted extraction keeps its own string and source.
+        high = {"confidence": "high", "affiliations": [["Aalto University"], ["Federal Institute of Ceará"]]}
+        built = harvest_ml.build_row(self.ed, m, None, {}, high, verification)
+        self.assertTrue(all(a["affiliation_source"] == "publisher-pdf" for a in built["authorships"]))
+        # A correct verdict with no page text credits nothing from a partial extraction.
+        empty = {"image_ok": True, "authors": [{"verdict": "correct", "page_affiliations": []}] * 2}
+        built = harvest_ml.build_row(self.ed, m, None, {}, partial, empty)
+        self.assertTrue(all(not a["raw_affiliations"] for a in built["authorships"]))
+
     def test_not_found_pdf_author_fails_byline_gate(self):
         self.write_batches()
         self.write_subagent_results()

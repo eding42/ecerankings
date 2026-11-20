@@ -71,6 +71,15 @@ class Checkpoints(unittest.TestCase):
         self.save()
         self.assertEqual(self.check()["state"], "work")
 
+    def test_wrong_parser_affiliation_without_page_affiliation(self):
+        author = self.saved["result"]["authors"][1]
+        author.update(verdict="wrong", page_affiliations=[])
+        self.save()
+        self.assertEqual(self.check()["state"], "done")
+        self.saved["result"]["authors"][0].update(verdict="wrong", page_affiliations=[])
+        self.save()
+        self.assertEqual(self.check()["state"], "work")
+
 
 if __name__ == "__main__":
     unittest.main()

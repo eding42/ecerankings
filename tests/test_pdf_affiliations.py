@@ -345,6 +345,45 @@ class Extract(unittest.TestCase):
         self.assertEqual(r["affiliations"], [[], []])
         self.assertNotEqual(r["confidence"], "high")
 
+    def test_icml_footnote_layout(self):
+        footnote_doc = """
+          Revisiting Character-level Adversarial Attacks for Language Models
+
+
+            Elias Abad Rocamora 1 Yongtao Wu 1 Fanghui Liu 2 Grigorios Chrysos 3 Volkan Cevher 1
+
+
+                          Abstract
+       Adversarial attacks in Natural Language Process-
+       ing apply perturbations in the character or token
+       levels. Token-level attacks, gaining prominence.
+
+1. Introduction
+Language Models (LMs) have rapidly become the go-to                  The application of adversarial attacks in LMs is not straight-
+tools for Natural Language Processing (NLP) tasks.                   forward due to algorithmic constraints.
+
+   1
+     LIONS, École Polytechnique Fédérale de Lausanne, Switzer-       where only input-output access to the model is assumed.
+land 2 Department of Computer Science, University of Warwick,
+United Kingdom 3 Department of Electrical and Computer Engi-
+neering, University of Wisconsin-Madison, USA. Correspondence
+to: Yongtao Wu <yongtao.wu@epfl.ch>.
+
+Proceedings of the 41 st International Conference on Machine
+Learning, Vienna, Austria. PMLR 235, 2024. Copyright 2024 by
+the author(s).
+"""
+        authors = ["Elias Abad Rocamora", "Yongtao Wu", "Fanghui Liu", "Grigorios Chrysos", "Volkan Cevher"]
+        r = pa.extract(footnote_doc, authors)
+        self.assertEqual(r["confidence"], "high")
+        self.assertEqual(r["layout"], "markers")
+        self.assertIn("École Polytechnique Fédérale de Lausanne", r["affiliations"][0][0])
+        self.assertIn("École Polytechnique Fédérale de Lausanne", r["affiliations"][1][0])
+        self.assertIn("University of Warwick", r["affiliations"][2][0])
+        self.assertIn("University of Wisconsin-Madison", r["affiliations"][3][0])
+        self.assertIn("École Polytechnique Fédérale de Lausanne", r["affiliations"][4][0])
+
 
 if __name__ == "__main__":
     unittest.main()
+
