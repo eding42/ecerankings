@@ -35,13 +35,16 @@ import unicodedata
 
 PDFTOTEXT = "pdftotext"
 # Bump when extraction logic changes; harvest_ml re-extracts stored text.
-EXTRACTOR_VERSION = 4
+EXTRACTOR_VERSION = 5
 
 
 _ABSTRACT = re.compile(r"^\s*A\s*B\s*S\s*T\s*R\s*A\s*C\s*T\b", re.I)
 # Any "@" marks an address line, except an all-caps name such as "CNRS@CREATE".
 _EMAIL = re.compile(r"@(?![A-Z]{2,}(?![\w.]))|^\s*[eE]-?mail")
 _NOISE = re.compile(r"(equal contribution|corresponding author|project page|code is available|https?://|github\.com|work done|denotes|∗ ?equal|contributed equally|equally contribut|project lead|\bintern(?:ship)?\b|correspondence)", re.I)
+# "∗ Alphabetical order" under the byline is a footnote about the names, not an
+# affiliation; as the whole text of a legend entry it labels nothing.
+_ORDER_NOTE = re.compile(r"^\W*(?:authors? (?:are )?(?:listed )?(?:in )?)?alphabetical(?:ly)?(?: order)?\W*$", re.I)
 # Superscript marks as pdftotext renders them. 'B' is the envelope glyph that
 # many templates use for corresponding authors; it never labels an affiliation.
 _SYMBOLS = "†‡§¶*∗♣♠♡♢♦♥⋆★☆◦•‖#°♯♮♭↿⇂⊥⊤⊣⊢∇△▽◇◆□■○●⋄⊕⊗※¤"
@@ -418,7 +421,7 @@ def parse_markers(lines, authors, found, all_lines=None):
     start = max(found[k][0] for k in marked) if marked else max(f[0] for f in located)
     used = {m for marks in marks_by_author.values() for m in marks}
     entries, last = _legend(lines, start, name_lines, used)
-    entries = [e for e in entries if not e["noise"]]
+    entries = [e for e in entries if not e["noise"] and not _ORDER_NOTE.match("".join(e["parts"]))]
     if not entries:
         entries, last = _trailing_legend(lines, start, name_lines, used)
     if not entries and all_lines:

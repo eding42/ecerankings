@@ -184,7 +184,11 @@ for _year, _volume in PMLR_ICML_VOLUMES.items():
                      [{"count": 2600, "scope": "included",
                        "source": "https://media.icml.cc/Conferences/ICML2024/ICML2024_Fact_Sheet.pdf",
                        "note": "The fact sheet says the main track has 'over 2600' papers."}]
-                     if _year == 2024 else []),
+                     if _year == 2024 else
+                     [{"count": 1184, "scope": "included",
+                       "source": "https://icml.cc/Conferences/2021/AcceptedPapersInitial",
+                       "note": "The conference's accepted-papers page reports '(1184 events)'; Mila's announcement gives the same 1,184 of 5,513 submissions."}]
+                     if _year == 2021 else []),
     }
 OPENREVIEW_ICLR_INVITATIONS = {
     2017: "ICLR.cc/2017/conference/-/submission",

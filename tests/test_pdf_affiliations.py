@@ -384,6 +384,13 @@ the author(s).
         self.assertIn("École Polytechnique Fédérale de Lausanne", r["affiliations"][4][0])
 
 
+class OrderNoteIsNotAnAffiliationTest(unittest.TestCase):
+    def test_order_note_matches_only_as_the_whole_entry(self):
+        for note in ("Alphabetical order", "Authors listed in alphabetical order.", "authors are in alphabetical order"):
+            self.assertTrue(pa._ORDER_NOTE.match(note), note)
+        for real in ("EPFL, Switzerland. Alphabetical order.", "Alphabetical University"):
+            self.assertFalse(pa._ORDER_NOTE.match(real), real)
+
+
 if __name__ == "__main__":
     unittest.main()
-
