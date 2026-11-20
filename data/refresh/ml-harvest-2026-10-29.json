@@ -5,10 +5,1307 @@
     "institution_resolution_min": 0.95,
     "membership_unexplained_diff_max": 0.01
   },
-  "generated_at": "2026-11-15T12:35:13Z",
+  "generated_at": "2026-11-19T23:40:24Z",
   "membership_semantics": "Rows come only from the publisher's official edition list; track filter applied at build.",
   "provider": "harvest_ml.py",
   "results": [
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 792,
+          "pdf_slots_resolved": 785,
+          "rate": 0.9912,
+          "resolved_via_affiliation_map": 701,
+          "slots_resolved_or_classified_noncredit": 785,
+          "slots_with_affiliation": 792,
+          "slots_with_education_institution": 475,
+          "slots_with_institution": 701,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 798,
+          "papers": 198,
+          "papers_any_coverage": 196,
+          "papers_fully_covered": 196,
+          "pass": true,
+          "rate": 0.9925,
+          "slots_with_affiliation": 792,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 174,
+            "none": 7,
+            "partial": 17
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 198,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 24,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2017/pdf-review.jsonl",
+          "slots_from_image": 149,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9829,
+          "extractor_slots_correct": 172,
+          "extractor_slots_wrong": 3,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 24,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2017/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2017/conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2017/works.jsonl",
+      "sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 198,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 6,
+            "slot_source:publisher-pdf": 643,
+            "slot_source:publisher-pdf-image": 149,
+            "works": 198
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:17Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:5c83342ab830b2260a136660e4e6c836df65580e8a2b2928c818e9a83fd6026d:None:4cbf0656821d3a011a467ec1e3eb357ab7b76c70513c4e6fac693341cd08b8ee:3c11e34d0c42081b20ee6efd287abb9eff09c73bc8420c85584581b0179c935f:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:00Z",
+          "gates_passed": false,
+          "input_sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57"
+        },
+        "membership": {
+          "counts": {
+            "included": 198,
+            "publisher_doi": 0,
+            "rows": 198,
+            "track:Conference": 198
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:23:56Z",
+          "input_sha256": "5c7986851158a9ce5749f05071f13a94841cd63f1cad71903d070f97bce08f05"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 196,
+            "confidence:high": 174,
+            "confidence:none": 7,
+            "confidence:partial": 17,
+            "extracted": 198,
+            "fetched_download": 2,
+            "layout:columns": 153,
+            "layout:markers": 45,
+            "papers": 198,
+            "review_queue": 24
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:24:26Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 198,
+      "year": 2017
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 1386,
+          "pdf_slots_resolved": 1362,
+          "rate": 0.9827,
+          "resolved_via_affiliation_map": 1187,
+          "slots_resolved_or_classified_noncredit": 1362,
+          "slots_with_affiliation": 1386,
+          "slots_with_education_institution": 822,
+          "slots_with_institution": 1187,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 1418,
+          "papers": 337,
+          "papers_any_coverage": 332,
+          "papers_fully_covered": 330,
+          "pass": true,
+          "rate": 0.9774,
+          "slots_with_affiliation": 1386,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 281,
+            "none": 14,
+            "partial": 42
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 337,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 56,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2018/pdf-review.jsonl",
+          "slots_from_image": 303,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.943,
+          "extractor_slots_correct": 182,
+          "extractor_slots_wrong": 11,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 56,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2018/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2018/Conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2018/works.jsonl",
+      "sha256": "ff8e929cbec4880f8d2751c80ec600bc885e5cb3e649dabd9396f38a68f4bb74",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 337,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 32,
+            "slot_source:publisher-pdf": 1083,
+            "slot_source:publisher-pdf-image": 303,
+            "works": 337
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:18Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:None:None:fec1adb885f285c8cbfb88a82a1aa0b6d4a83baf59216a9f4f938a5e9d885026:132952b7333ed9a66ec8c2fc62ff0f6b681e14e87ec65eff76facd62ad81db31:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "ff8e929cbec4880f8d2751c80ec600bc885e5cb3e649dabd9396f38a68f4bb74"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:01Z",
+          "gates_passed": false,
+          "input_sha256": "ff8e929cbec4880f8d2751c80ec600bc885e5cb3e649dabd9396f38a68f4bb74"
+        },
+        "membership": {
+          "counts": {
+            "included": 337,
+            "publisher_doi": 0,
+            "rows": 337,
+            "track:Conference": 337
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:33:59Z",
+          "input_sha256": "6f0cf671e0fccd9d53d9d11f252e055f4e2f01c517d9e0533aa061fcee9a9447"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 21,
+            "confidence:high": 281,
+            "confidence:none": 14,
+            "confidence:partial": 42,
+            "extracted": 337,
+            "fetched_download": 312,
+            "fetched_local": 4,
+            "layout:None": 3,
+            "layout:columns": 252,
+            "layout:markers": 82,
+            "papers": 337,
+            "review_queue": 56
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:38:37Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 337,
+      "year": 2018
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 2108,
+          "pdf_slots_resolved": 2075,
+          "rate": 0.9843,
+          "resolved_via_affiliation_map": 1871,
+          "slots_resolved_or_classified_noncredit": 2075,
+          "slots_with_affiliation": 2108,
+          "slots_with_education_institution": 1352,
+          "slots_with_institution": 1871,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 2145,
+          "papers": 502,
+          "papers_any_coverage": 495,
+          "papers_fully_covered": 493,
+          "pass": true,
+          "rate": 0.9828,
+          "slots_with_affiliation": 2108,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 416,
+            "none": 25,
+            "partial": 61
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 502,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 86,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2019/pdf-review.jsonl",
+          "slots_from_image": 497,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9598,
+          "extractor_slots_correct": 191,
+          "extractor_slots_wrong": 8,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 86,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2019/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2019/Conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2019/works.jsonl",
+      "sha256": "4690831afca64a755fb41d3e811a9b08e30e39d3d66af15795d645aa9a55e6b7",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 502,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 37,
+            "slot_source:publisher-pdf": 1611,
+            "slot_source:publisher-pdf-image": 497,
+            "works": 502
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:19Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:None:None:e02ae18a32ffb6db7da172ad16a06e6915d31a727641c2756e955ed344a2ece9:26ee1dff0564fa27f315667e2b049d529dba75f9094546abd27d811563e86a71:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "4690831afca64a755fb41d3e811a9b08e30e39d3d66af15795d645aa9a55e6b7"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:01Z",
+          "gates_passed": false,
+          "input_sha256": "4690831afca64a755fb41d3e811a9b08e30e39d3d66af15795d645aa9a55e6b7"
+        },
+        "membership": {
+          "counts": {
+            "included": 502,
+            "publisher_doi": 0,
+            "rows": 502,
+            "track:Conference": 502
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:29:57Z",
+          "input_sha256": "fb33e973cb074d30b1e8e5a8823632645d2e91d8fd997f4413bf7d3bcce85ed5"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 501,
+            "confidence:high": 416,
+            "confidence:none": 25,
+            "confidence:partial": 61,
+            "extracted": 502,
+            "fetched_download": 1,
+            "layout:None": 7,
+            "layout:columns": 362,
+            "layout:markers": 133,
+            "papers": 502,
+            "review_queue": 86
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:34:49Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 502,
+      "year": 2019
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 3028,
+          "pdf_slots_resolved": 2912,
+          "rate": 0.9617,
+          "resolved_via_affiliation_map": 2619,
+          "slots_resolved_or_classified_noncredit": 2912,
+          "slots_with_affiliation": 3028,
+          "slots_with_education_institution": 1890,
+          "slots_with_institution": 2619,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 3045,
+          "papers": 687,
+          "papers_any_coverage": 686,
+          "papers_fully_covered": 680,
+          "pass": true,
+          "rate": 0.9944,
+          "slots_with_affiliation": 3028,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 576,
+            "none": 27,
+            "partial": 84
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 687,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 111,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2020/pdf-review.jsonl",
+          "slots_from_image": 645,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9952,
+          "extractor_slots_correct": 207,
+          "extractor_slots_wrong": 1,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 111,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2020/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2020/Conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2020/works.jsonl",
+      "sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 687,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 17,
+            "slot_source:publisher-pdf": 2383,
+            "slot_source:publisher-pdf-image": 645,
+            "works": 687
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:19Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:None:None:aabdf07a33b70a120a702939ad87e57eafbe1a96238621d512ccc89865a8db3f:10880622d3200d44c1d0582abefad836d3e2cec0e031a327eb9bfb80edfd8035:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:02Z",
+          "gates_passed": false,
+          "input_sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18"
+        },
+        "membership": {
+          "counts": {
+            "included": 687,
+            "publisher_doi": 0,
+            "rows": 687,
+            "track:Conference": 687
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:24:36Z",
+          "input_sha256": "c0328d4fb6f642250f9fee9ed87bfc9c7b8e118c96f5b6e4a9e20c8e84b4f0d3"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 686,
+            "confidence:high": 576,
+            "confidence:none": 27,
+            "confidence:partial": 84,
+            "extracted": 687,
+            "fetched_download": 1,
+            "layout:None": 5,
+            "layout:columns": 466,
+            "layout:markers": 216,
+            "papers": 687,
+            "review_queue": 111
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:34:44Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 687,
+      "year": 2020
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 3772,
+          "pdf_slots_resolved": 3626,
+          "rate": 0.9613,
+          "resolved_via_affiliation_map": 3248,
+          "slots_resolved_or_classified_noncredit": 3626,
+          "slots_with_affiliation": 3772,
+          "slots_with_education_institution": 2440,
+          "slots_with_institution": 3248,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 860,
+              "diff": -1,
+              "have": 859,
+              "rel_diff": 0.00116,
+              "scope": "included",
+              "source": "https://iclr.cc/media/Press/ICLR_2021_Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 3830,
+          "papers": 859,
+          "papers_any_coverage": 848,
+          "papers_fully_covered": 844,
+          "pass": true,
+          "rate": 0.9849,
+          "slots_with_affiliation": 3772,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 719,
+            "none": 44,
+            "partial": 96
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 859,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 140,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2021/pdf-review.jsonl",
+          "slots_from_image": 733,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9769,
+          "extractor_slots_correct": 211,
+          "extractor_slots_wrong": 5,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 140,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2021/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2021/Conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2021/works.jsonl",
+      "sha256": "f5ae3715a70c780a636ced40c517624aea74833f87f0e09d4ca213f48b76f4c2",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 859,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 58,
+            "slot_source:publisher-pdf": 3039,
+            "slot_source:publisher-pdf-image": 733,
+            "works": 859
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:20Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:None:None:c2e44977463816be0f2df1ca8a5751e8f1361a190cf530a3cc6d2ebdff6339a2:e3c05121f951dcf10aa2c80e8661893a99234b394317cdb4c1dbaf50ae54a23c:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "f5ae3715a70c780a636ced40c517624aea74833f87f0e09d4ca213f48b76f4c2"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:03Z",
+          "gates_passed": false,
+          "input_sha256": "f5ae3715a70c780a636ced40c517624aea74833f87f0e09d4ca213f48b76f4c2"
+        },
+        "membership": {
+          "counts": {
+            "included": 859,
+            "publisher_doi": 0,
+            "rows": 859,
+            "track:Conference": 859
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:38:46Z",
+          "input_sha256": "1708c1bb9365b863ccbffb85e04cb2df3d0d1486f6d905abaf1cb0b4cb13aa03"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 857,
+            "confidence:high": 719,
+            "confidence:none": 44,
+            "confidence:partial": 96,
+            "extracted": 859,
+            "fetched_download": 2,
+            "layout:None": 9,
+            "layout:columns": 560,
+            "layout:markers": 290,
+            "papers": 859,
+            "review_queue": 140
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:47:11Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 859,
+      "year": 2021
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 4989,
+          "pdf_slots_resolved": 4784,
+          "rate": 0.9589,
+          "resolved_via_affiliation_map": 4349,
+          "slots_resolved_or_classified_noncredit": 4784,
+          "slots_with_affiliation": 4989,
+          "slots_with_education_institution": 3337,
+          "slots_with_institution": 4349,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 1095,
+              "diff": -1,
+              "have": 1094,
+              "rel_diff": 0.00091,
+              "scope": "included",
+              "source": "https://iclr.cc/media/Press/ICLR_2022_Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 5115,
+          "papers": 1094,
+          "papers_any_coverage": 1075,
+          "papers_fully_covered": 1069,
+          "pass": true,
+          "rate": 0.9754,
+          "slots_with_affiliation": 4989,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 903,
+            "none": 55,
+            "partial": 136
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1094,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 191,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2022/pdf-review.jsonl",
+          "slots_from_image": 1032,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9865,
+          "extractor_slots_correct": 219,
+          "extractor_slots_wrong": 3,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 191,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2022/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2022/Conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2022/works.jsonl",
+      "sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1094,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 126,
+            "slot_source:publisher-pdf": 3957,
+            "slot_source:publisher-pdf-image": 1032,
+            "works": 1094
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:21Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:None:None:be9aca1bb692017ecd5091e8ba175427e62eb7ef933c9bfae21c22de9ea5fffd:74dd186e4fd06ec6fdde0d1c587e04ec1e905549fbf966b5df4ac31bee08a243:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:04Z",
+          "gates_passed": true,
+          "input_sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c"
+        },
+        "membership": {
+          "counts": {
+            "included": 1094,
+            "publisher_doi": 0,
+            "rows": 1094,
+            "track:Conference": 1094
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:47:22Z",
+          "input_sha256": "e2e710736b21f8e94170967bbc383c36b5c62354a81924a8205111ac2557946c"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 931,
+            "confidence:high": 903,
+            "confidence:none": 55,
+            "confidence:partial": 136,
+            "extracted": 1094,
+            "fetched_download": 150,
+            "fetched_local": 13,
+            "layout:None": 10,
+            "layout:columns": 617,
+            "layout:markers": 467,
+            "papers": 1094,
+            "review_queue": 191
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:59:14Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 1094,
+      "year": 2022
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 7502,
+          "pdf_slots_resolved": 7203,
+          "rate": 0.9601,
+          "resolved_via_affiliation_map": 6416,
+          "slots_resolved_or_classified_noncredit": 7203,
+          "slots_with_affiliation": 7502,
+          "slots_with_education_institution": 5074,
+          "slots_with_institution": 6416,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 1574,
+              "diff": -1,
+              "have": 1573,
+              "rel_diff": 0.00064,
+              "scope": "included",
+              "source": "https://media.iclr.cc/Conferences/ICLR2023/ICLR2023-Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 7605,
+          "papers": 1573,
+          "papers_any_coverage": 1553,
+          "papers_fully_covered": 1540,
+          "pass": true,
+          "rate": 0.9865,
+          "slots_with_affiliation": 7502,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1339,
+            "none": 70,
+            "partial": 164
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1573,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 234,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2023/pdf-review.jsonl",
+          "slots_from_image": 1356,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 237,
+          "extractor_slots_wrong": 0,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 234,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2023/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://openreview.net/group?id=ICLR.cc/2023/Conference",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2023/works.jsonl",
+      "sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1573,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 103,
+            "slot_source:publisher-pdf": 6146,
+            "slot_source:publisher-pdf-image": 1356,
+            "works": 1573
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:22Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:None:None:df9c276171ab1edff4f114e4889ae641c5b8ab18aaf23b00e7296d299f8cbc9d:f74175f9b5a928823c966f86bad4b280e8de6c6f76841adf9c677ccb104daddb:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:04Z",
+          "gates_passed": true,
+          "input_sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee"
+        },
+        "membership": {
+          "counts": {
+            "included": 1573,
+            "publisher_doi": 0,
+            "rows": 1573,
+            "track:Conference": 1573
+          },
+          "done": true,
+          "finished_at": "2026-11-16T03:59:27Z",
+          "input_sha256": "ea590ac0812e6a5ccb8fd2abf4c386adf37faa457ea998fcf54e260fbdc8a140"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 1306,
+            "confidence:high": 1339,
+            "confidence:none": 70,
+            "confidence:partial": 164,
+            "extracted": 1573,
+            "fetched_download": 267,
+            "layout:None": 11,
+            "layout:columns": 767,
+            "layout:markers": 795,
+            "papers": 1573,
+            "review_queue": 234
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:12:16Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 1573,
+      "year": 2023
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 6,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 11858,
+          "pdf_slots_resolved": 11409,
+          "rate": 0.9622,
+          "resolved_via_affiliation_map": 10165,
+          "slots_resolved_or_classified_noncredit": 11422,
+          "slots_with_affiliation": 11871,
+          "slots_with_education_institution": 8412,
+          "slots_with_institution": 10171,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 2260,
+              "diff": 0,
+              "have": 2260,
+              "rel_diff": 0.0,
+              "scope": "included",
+              "source": "https://proceedings.iclr.cc/paper_files/paper/2024"
+            },
+            {
+              "count": 2260,
+              "diff": 0,
+              "have": 2260,
+              "rel_diff": 0.0,
+              "scope": "included",
+              "source": "https://media.iclr.cc/Conferences/ICLR2024/ICLR2024-Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 11998,
+          "papers": 2260,
+          "papers_any_coverage": 2248,
+          "papers_fully_covered": 2205,
+          "pass": true,
+          "rate": 0.9894,
+          "slots_with_affiliation": 11871,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1886,
+            "none": 98,
+            "partial": 276
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 2260,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 27,
+          "prefer_pdf": true,
+          "review_queue": 374,
+          "review_queue_path": ".tmp/ml-harvest-600/iclr/2024/pdf-review.jsonl",
+          "slots_from_image": 2340,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 13,
+          "extractor_accuracy": 0.9844,
+          "extractor_slots_correct": 253,
+          "extractor_slots_wrong": 4,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 374,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/iclr/2024/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.iclr.cc/paper_files/paper/2024",
+      "path": ".tmp/ml-harvest-600/cache/iclr/2024/works.jsonl",
+      "sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 2191,
+            "evidence:openalex-arxiv-doi": 69,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 27,
+            "rejected_candidates": 7,
+            "slot_source:none": 127,
+            "slot_source:openalex-arxiv-doi": 13,
+            "slot_source:publisher-pdf": 9518,
+            "slot_source:publisher-pdf-image": 2340,
+            "works": 2260
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:10Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:35fdb92b60834cb2032e4b7c089d8b84b10ebd9c281b01673e3d52a5a3b40ebc:5acf0d01283e4615d7605d7874a767645dbd1363bb3c3ffdad6e9fdc5a05bbad:4fe1b5ff1fe38bf91ee63e4367abbefcd0edda66ea63680b4b17250b3bc9c4c2:3649c4d9a3a9e7a47313007236e4be75bc59acc5d7e7d85a20549557f5d10164:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0"
+        },
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "arxiv_api_errors": 2,
+            "none:arxiv-api": 3,
+            "ok:arxiv-api": 1,
+            "ok:legacy-s2-cache": 496,
+            "ok:openalex-title": 76,
+            "ok:s2-bulk": 13,
+            "openalex_title_calls": 10,
+            "openalex_title_deferred_by_cap": 1651,
+            "papers": 2260,
+            "with_identifier": 586
+          },
+          "done": false,
+          "finished_at": "2026-11-16T02:05:55Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a"
+        },
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:05Z",
+          "gates_passed": true,
+          "input_sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0"
+        },
+        "membership": {
+          "counts": {
+            "included": 2260,
+            "publisher_doi": 0,
+            "rows": 2260,
+            "track:Conference": 2260
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:14:02Z",
+          "input_sha256": "009b85e722755af7ed6f993783ffaba8ba6129fd6f3b4e7334ba89add5c008ae"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 70,
+            "confidence:high": 1886,
+            "confidence:none": 98,
+            "confidence:partial": 276,
+            "extracted": 2260,
+            "fetched_download": 1830,
+            "fetched_local": 360,
+            "layout:None": 10,
+            "layout:columns": 940,
+            "layout:markers": 1310,
+            "papers": 2260,
+            "review_queue": 374
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:22:19Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "iclr",
+      "works": 2260,
+      "year": 2024
+    },
     {
       "gates": {
         "byline_integrity": {
@@ -21,14 +1318,14 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 18717,
-          "pdf_slots_resolved": 17896,
-          "rate": 0.9568,
-          "resolved_via_affiliation_map": 16328,
-          "slots_resolved_or_classified_noncredit": 18909,
-          "slots_with_affiliation": 19762,
-          "slots_with_education_institution": 14244,
-          "slots_with_institution": 17311,
+          "pdf_slots": 20433,
+          "pdf_slots_resolved": 19722,
+          "rate": 0.9648,
+          "resolved_via_affiliation_map": 17383,
+          "slots_resolved_or_classified_noncredit": 19918,
+          "slots_with_affiliation": 20645,
+          "slots_with_education_institution": 14869,
+          "slots_with_institution": 17573,
           "threshold": 0.95
         },
         "membership": {
@@ -58,11 +1355,11 @@
         "paper_specific_affiliations": {
           "author_slots": 21270,
           "papers": 3703,
-          "papers_any_coverage": 3651,
-          "papers_fully_covered": 3406,
+          "papers_any_coverage": 3661,
+          "papers_fully_covered": 3621,
           "pass": true,
-          "rate": 0.9291,
-          "slots_with_affiliation": 19762,
+          "rate": 0.9706,
+          "slots_with_affiliation": 20645,
           "threshold": 0.9
         },
         "pdf_evidence": {
@@ -76,18 +1373,18 @@
           ],
           "papers_extracted": 3703,
           "pass": true,
-          "pdf_openalex_conflict_slots": 744,
+          "pdf_openalex_conflict_slots": 820,
           "prefer_pdf": true,
           "review_queue": 593,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2025/pdf-review.jsonl",
-          "slots_from_image": 1971,
+          "slots_from_image": 3688,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 200,
-          "extractor_accuracy": 0.9983,
-          "extractor_slots_correct": 1151,
-          "extractor_slots_wrong": 2,
+          "extractor_accuracy": 0.9974,
+          "extractor_slots_correct": 1150,
+          "extractor_slots_wrong": 3,
           "judge_model": [
             "claude-haiku-5-5"
           ],
@@ -116,7 +1413,7 @@
       ],
       "membership_source": "https://proceedings.iclr.cc/paper_files/paper/2025",
       "path": ".tmp/ml-harvest-600/cache/iclr/2025/works.jsonl",
-      "sha256": "437e149f9260f1d148dd92ce6f9d22b03bf4bf57141c2a0559eb4c6ee875fbe3",
+      "sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e",
       "stages": {
         "build": {
           "counts": {
@@ -125,19 +1422,18 @@
             "evidence:openalex-arxiv-doi": 2465,
             "evidence:openalex-title-match": 40,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 744,
+            "pdf_openalex_conflict_slots": 820,
             "rejected_candidates": 310,
-            "slot_source:none": 1508,
-            "slot_source:openalex-arxiv-doi": 1039,
-            "slot_source:openalex-title-match": 6,
-            "slot_source:publisher-pdf": 16746,
-            "slot_source:publisher-pdf-image": 1971,
+            "slot_source:none": 625,
+            "slot_source:openalex-arxiv-doi": 212,
+            "slot_source:publisher-pdf": 16745,
+            "slot_source:publisher-pdf-image": 3688,
             "works": 3703
           },
           "done": true,
-          "finished_at": "2026-11-15T12:35:09Z",
-          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06:43d9b50a8c6bf1b7a691e5d50fffec36cb237c03040a57de11e032d7c33aa439:471772a7626497c66043bc528857e5509d8815d13bcc3635e91189d6816705e9:0ea5ab35bba3f9e6292a715457aa6121e5b955671ecdb1888c1e34847dc43434:0022a803bf25a68a16baae14e30e1516c11db75f7066baee7ba778239afc47f9:prefer_pdf=True",
-          "sha256": "437e149f9260f1d148dd92ce6f9d22b03bf4bf57141c2a0559eb4c6ee875fbe3"
+          "finished_at": "2026-11-19T23:31:25Z",
+          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06:43d9b50a8c6bf1b7a691e5d50fffec36cb237c03040a57de11e032d7c33aa439:471772a7626497c66043bc528857e5509d8815d13bcc3635e91189d6816705e9:74ac00b869e9775e3fac61b4595ddb22fea664d7b0c4db3c8f9353eb21db0eab:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e"
         },
         "discover": {},
         "enrich": {},
@@ -146,9 +1442,9 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-15T12:35:13Z",
+          "finished_at": "2026-11-19T23:40:06Z",
           "gates_passed": true,
-          "input_sha256": "437e149f9260f1d148dd92ce6f9d22b03bf4bf57141c2a0559eb4c6ee875fbe3"
+          "input_sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e"
         },
         "membership": {},
         "pdf": {
@@ -172,6 +1468,3244 @@
       "status": "staged",
       "venue": "iclr",
       "works": 3703,
+      "year": 2025
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 1108,
+          "pdf_slots_resolved": 1072,
+          "rate": 0.9675,
+          "resolved_via_affiliation_map": 935,
+          "slots_resolved_or_classified_noncredit": 1072,
+          "slots_with_affiliation": 1108,
+          "slots_with_education_institution": 788,
+          "slots_with_institution": 935,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 1153,
+          "papers": 322,
+          "papers_any_coverage": 312,
+          "papers_fully_covered": 311,
+          "pass": true,
+          "rate": 0.961,
+          "slots_with_affiliation": 1108,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 157,
+            "none": 13,
+            "partial": 152
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 322,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 165,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2016/pdf-review.jsonl",
+          "slots_from_image": 635,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9563,
+          "extractor_slots_correct": 153,
+          "extractor_slots_wrong": 7,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 165,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2016/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v48/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2016/works.jsonl",
+      "sha256": "ab8dd1da2a15f35415bbc82cc5577072451feeef59e9810fe203c88f392fe5fb",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 322,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 45,
+            "slot_source:publisher-pdf": 473,
+            "slot_source:publisher-pdf-image": 635,
+            "works": 322
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:26Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:None:None:b13651fb705ae03b4f72f3cd60350f7d80dae67f5e4e82204e5f5f0ee7afcf26:8b507ba6ffc0d26d9fe7d6bf0eb0857df8e847a473a21ccc6d23d20d7d2fff9a:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "ab8dd1da2a15f35415bbc82cc5577072451feeef59e9810fe203c88f392fe5fb"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:07Z",
+          "gates_passed": false,
+          "input_sha256": "ab8dd1da2a15f35415bbc82cc5577072451feeef59e9810fe203c88f392fe5fb"
+        },
+        "membership": {
+          "counts": {
+            "included": 322,
+            "publisher_doi": 0,
+            "rows": 322,
+            "track:Conference": 322
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:57:27Z",
+          "input_sha256": "fe064127a024b44d00b8423a8ed825504b0d8403be09777c4de2a01e3b06a5ef"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 322,
+            "confidence:high": 157,
+            "confidence:none": 13,
+            "confidence:partial": 152,
+            "extracted": 322,
+            "layout:columns": 259,
+            "layout:markers": 63,
+            "papers": 322,
+            "review_queue": 165
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:19:56Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 322,
+      "year": 2016
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 1567,
+          "pdf_slots_resolved": 1509,
+          "rate": 0.963,
+          "resolved_via_affiliation_map": 1391,
+          "slots_resolved_or_classified_noncredit": 1509,
+          "slots_with_affiliation": 1567,
+          "slots_with_education_institution": 1064,
+          "slots_with_institution": 1391,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 1588,
+          "papers": 434,
+          "papers_any_coverage": 430,
+          "papers_fully_covered": 427,
+          "pass": true,
+          "rate": 0.9868,
+          "slots_with_affiliation": 1567,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 384,
+            "none": 20,
+            "partial": 30
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 434,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 50,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2017/pdf-review.jsonl",
+          "slots_from_image": 207,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9636,
+          "extractor_slots_correct": 159,
+          "extractor_slots_wrong": 6,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 46,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2017/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v70/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2017/works.jsonl",
+      "sha256": "75dbcfa7e1e7110c0d6d2161b69c54e597d4fa889fc01cd9bd9759354dd87416",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 434,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 21,
+            "slot_source:publisher-pdf": 1360,
+            "slot_source:publisher-pdf-image": 207,
+            "works": 434
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:27Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:None:None:e611727352d8f01b3a5f7a6b3f326fb8565bf7dcf246883e2cc39f68d47a2ed4:775da3b5e0734824bd5425f511ac4c0ef51cf50d2e610584502c5dc574762911:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "75dbcfa7e1e7110c0d6d2161b69c54e597d4fa889fc01cd9bd9759354dd87416"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:08Z",
+          "gates_passed": false,
+          "input_sha256": "75dbcfa7e1e7110c0d6d2161b69c54e597d4fa889fc01cd9bd9759354dd87416"
+        },
+        "membership": {
+          "counts": {
+            "included": 434,
+            "publisher_doi": 0,
+            "rows": 434,
+            "track:Conference": 434
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:56:57Z",
+          "input_sha256": "28fdf46026eb6eeaad76771f7007971a992d1301fbe582409c0088a557aaa88e"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 434,
+            "confidence:high": 384,
+            "confidence:none": 20,
+            "confidence:partial": 30,
+            "extracted": 434,
+            "layout:columns": 20,
+            "layout:markers": 414,
+            "papers": 434,
+            "review_queue": 50
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:19:57Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 434,
+      "year": 2017
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 2295,
+          "pdf_slots_resolved": 2202,
+          "rate": 0.9595,
+          "resolved_via_affiliation_map": 2101,
+          "slots_resolved_or_classified_noncredit": 2202,
+          "slots_with_affiliation": 2295,
+          "slots_with_education_institution": 1601,
+          "slots_with_institution": 2101,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 2312,
+          "papers": 620,
+          "papers_any_coverage": 618,
+          "papers_fully_covered": 614,
+          "pass": true,
+          "rate": 0.9926,
+          "slots_with_affiliation": 2295,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 513,
+            "none": 18,
+            "partial": 89
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 620,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 107,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2018/pdf-review.jsonl",
+          "slots_from_image": 470,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9731,
+          "extractor_slots_correct": 181,
+          "extractor_slots_wrong": 5,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 107,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2018/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v80/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2018/works.jsonl",
+      "sha256": "4005c521bf506d9b83ba936034a30aa15d7b0b631f6ed9992297b37ff9407720",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 620,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 17,
+            "slot_source:publisher-pdf": 1825,
+            "slot_source:publisher-pdf-image": 470,
+            "works": 620
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:27Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:None:None:7d6497c388b0dca027c91407216ffcd4d7473d9074b856e694f156c35039a462:b938839e7fb026f3d6b2d25cef1aea23f4931782d3fb7d4da95194971436d925:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "4005c521bf506d9b83ba936034a30aa15d7b0b631f6ed9992297b37ff9407720"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:09Z",
+          "gates_passed": false,
+          "input_sha256": "4005c521bf506d9b83ba936034a30aa15d7b0b631f6ed9992297b37ff9407720"
+        },
+        "membership": {
+          "counts": {
+            "included": 620,
+            "publisher_doi": 0,
+            "rows": 620,
+            "track:Conference": 620
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:56:16Z",
+          "input_sha256": "6b62860f735ed1ea97c63b7e595e94a5a1d70fcc58ec47b195dd819947077c6f"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 620,
+            "confidence:high": 513,
+            "confidence:none": 18,
+            "confidence:partial": 89,
+            "extracted": 620,
+            "layout:columns": 18,
+            "layout:markers": 602,
+            "papers": 620,
+            "review_queue": 107
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:19:58Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 620,
+      "year": 2018
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 2891,
+          "pdf_slots_resolved": 2771,
+          "rate": 0.9585,
+          "resolved_via_affiliation_map": 2615,
+          "slots_resolved_or_classified_noncredit": 2771,
+          "slots_with_affiliation": 2891,
+          "slots_with_education_institution": 1988,
+          "slots_with_institution": 2615,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 2893,
+          "papers": 773,
+          "papers_any_coverage": 773,
+          "papers_fully_covered": 771,
+          "pass": true,
+          "rate": 0.9993,
+          "slots_with_affiliation": 2891,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 641,
+            "none": 26,
+            "partial": 106
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 773,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 132,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2019/pdf-review.jsonl",
+          "slots_from_image": 621,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9429,
+          "extractor_slots_correct": 165,
+          "extractor_slots_wrong": 10,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 132,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2019/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v97/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2019/works.jsonl",
+      "sha256": "38f5a9d0631d0775dceb9d63b0d1268af82ebefa224c33924ad108980806e834",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 773,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 2,
+            "slot_source:publisher-pdf": 2270,
+            "slot_source:publisher-pdf-image": 621,
+            "works": 773
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:28Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:None:None:769b8a2681ef91b3bb01b9f385198c53f90abc1bd828fc2006330141210e0e94:58fd266fd7f7a90b59bcfd64a6847cd971eb12c66d03bdfaaeb781ff61a880aa:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "38f5a9d0631d0775dceb9d63b0d1268af82ebefa224c33924ad108980806e834"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:10Z",
+          "gates_passed": false,
+          "input_sha256": "38f5a9d0631d0775dceb9d63b0d1268af82ebefa224c33924ad108980806e834"
+        },
+        "membership": {
+          "counts": {
+            "included": 773,
+            "publisher_doi": 0,
+            "rows": 773,
+            "track:Conference": 773
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:55:35Z",
+          "input_sha256": "cd976e2cb55747ac511cffcfa8742276cc7e57d1e5637c136e94a4d759f16735"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 773,
+            "confidence:high": 641,
+            "confidence:none": 26,
+            "confidence:partial": 106,
+            "extracted": 773,
+            "layout:None": 2,
+            "layout:columns": 24,
+            "layout:markers": 747,
+            "papers": 773,
+            "review_queue": 132
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:19:59Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 773,
+      "year": 2019
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 4217,
+          "pdf_slots_resolved": 4042,
+          "rate": 0.9585,
+          "resolved_via_affiliation_map": 3831,
+          "slots_resolved_or_classified_noncredit": 4042,
+          "slots_with_affiliation": 4217,
+          "slots_with_education_institution": 2996,
+          "slots_with_institution": 3831,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 4226,
+          "papers": 1084,
+          "papers_any_coverage": 1082,
+          "papers_fully_covered": 1079,
+          "pass": true,
+          "rate": 0.9979,
+          "slots_with_affiliation": 4217,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 947,
+            "none": 31,
+            "partial": 106
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1084,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 137,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2020/pdf-review.jsonl",
+          "slots_from_image": 617,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9724,
+          "extractor_slots_correct": 176,
+          "extractor_slots_wrong": 5,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 137,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2020/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v119/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2020/works.jsonl",
+      "sha256": "bc301af53e1ab3f60615bcc65a0ba0bb62b21b32bc300346c604b870e0e64a92",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1084,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 9,
+            "slot_source:publisher-pdf": 3600,
+            "slot_source:publisher-pdf-image": 617,
+            "works": 1084
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:29Z",
+          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:None:None:f80ca203df4f623059b4ac2b63d986639b9127e559d36df2a1f23bcfc452cad9:cc110bc13fb31878b44a926feaaf8bace56851a1fd35b4fa47227d576d4a2666:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "bc301af53e1ab3f60615bcc65a0ba0bb62b21b32bc300346c604b870e0e64a92"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:10Z",
+          "gates_passed": false,
+          "input_sha256": "bc301af53e1ab3f60615bcc65a0ba0bb62b21b32bc300346c604b870e0e64a92"
+        },
+        "membership": {
+          "counts": {
+            "included": 1084,
+            "publisher_doi": 0,
+            "rows": 1084,
+            "track:Conference": 1084
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:54:29Z",
+          "input_sha256": "a589e369f46f6be326ab64ac6f1185e387e8b9fb3d1e16ac4698c5cbe1a01590"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 1084,
+            "confidence:high": 947,
+            "confidence:none": 31,
+            "confidence:partial": 106,
+            "extracted": 1084,
+            "layout:columns": 32,
+            "layout:markers": 1052,
+            "papers": 1084,
+            "review_queue": 137
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:20:00Z",
+          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 1084,
+      "year": 2020
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 4834,
+          "pdf_slots_resolved": 4638,
+          "rate": 0.9595,
+          "resolved_via_affiliation_map": 4414,
+          "slots_resolved_or_classified_noncredit": 4638,
+          "slots_with_affiliation": 4834,
+          "slots_with_education_institution": 3429,
+          "slots_with_institution": 4414,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 4843,
+          "papers": 1183,
+          "papers_any_coverage": 1182,
+          "papers_fully_covered": 1174,
+          "pass": true,
+          "rate": 0.9981,
+          "slots_with_affiliation": 4834,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1026,
+            "none": 25,
+            "partial": 132
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1183,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 157,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2021/pdf-review.jsonl",
+          "slots_from_image": 749,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9851,
+          "extractor_slots_correct": 199,
+          "extractor_slots_wrong": 3,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 157,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2021/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v139/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2021/works.jsonl",
+      "sha256": "248e2a5696511caf0df1a3fe61c252e48b00dd62e8402997dcd639c99ed9e859",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1183,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 9,
+            "slot_source:publisher-pdf": 4085,
+            "slot_source:publisher-pdf-image": 749,
+            "works": 1183
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:30Z",
+          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:None:None:2dd45531f752100d2bd302464077d11692f853b79a28ee73b2922778df533eb0:b174d4554696e8c7770b7a405c572df24ba5a85a94b45fff0e299e0ad960753e:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "248e2a5696511caf0df1a3fe61c252e48b00dd62e8402997dcd639c99ed9e859"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:11Z",
+          "gates_passed": false,
+          "input_sha256": "248e2a5696511caf0df1a3fe61c252e48b00dd62e8402997dcd639c99ed9e859"
+        },
+        "membership": {
+          "counts": {
+            "included": 1183,
+            "publisher_doi": 0,
+            "rows": 1183,
+            "track:Conference": 1183
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:53:12Z",
+          "input_sha256": "457b0b2724690e1042d7513c1483106a40bb30a7727fdef60fe6bca424d527ba"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 1183,
+            "confidence:high": 1026,
+            "confidence:none": 25,
+            "confidence:partial": 132,
+            "extracted": 1183,
+            "layout:columns": 31,
+            "layout:markers": 1152,
+            "papers": 1183,
+            "review_queue": 157
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:20:02Z",
+          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 1183,
+      "year": 2021
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 5336,
+          "pdf_slots_resolved": 5111,
+          "rate": 0.9578,
+          "resolved_via_affiliation_map": 4810,
+          "slots_resolved_or_classified_noncredit": 5111,
+          "slots_with_affiliation": 5336,
+          "slots_with_education_institution": 3882,
+          "slots_with_institution": 4810,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 5373,
+          "papers": 1233,
+          "papers_any_coverage": 1232,
+          "papers_fully_covered": 1224,
+          "pass": true,
+          "rate": 0.9931,
+          "slots_with_affiliation": 5336,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1071,
+            "none": 37,
+            "partial": 125
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1233,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 162,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2022/pdf-review.jsonl",
+          "slots_from_image": 832,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9182,
+          "extractor_slots_correct": 202,
+          "extractor_slots_wrong": 18,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 162,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2022/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v162/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2022/works.jsonl",
+      "sha256": "b40a0e088816169c0b5a7da3ebd405f6fb974ea498da9a09694eb58c42739895",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1233,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 37,
+            "slot_source:publisher-pdf": 4504,
+            "slot_source:publisher-pdf-image": 832,
+            "works": 1233
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:31Z",
+          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:None:None:df19f5f6bf3324201afcbe317bdf824e06e560cb23bb15e6bfd72859e318e35b:33d6a5ba691c8dc5a1233a1032da05ebcedf5ac3f3dcab118efb2b5f709ddcd2:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "b40a0e088816169c0b5a7da3ebd405f6fb974ea498da9a09694eb58c42739895"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:12Z",
+          "gates_passed": false,
+          "input_sha256": "b40a0e088816169c0b5a7da3ebd405f6fb974ea498da9a09694eb58c42739895"
+        },
+        "membership": {
+          "counts": {
+            "included": 1233,
+            "publisher_doi": 0,
+            "rows": 1233,
+            "track:Conference": 1233
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:50:57Z",
+          "input_sha256": "75d13d822558ab75f9f08b192636276265315bbaba783d49ff061e7240306a1d"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 1233,
+            "confidence:high": 1071,
+            "confidence:none": 37,
+            "confidence:partial": 125,
+            "extracted": 1233,
+            "layout:None": 1,
+            "layout:columns": 40,
+            "layout:markers": 1192,
+            "papers": 1233,
+            "review_queue": 162
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:20:03Z",
+          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 1233,
+      "year": 2022
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 8074,
+          "pdf_slots_resolved": 7754,
+          "rate": 0.9604,
+          "resolved_via_affiliation_map": 7253,
+          "slots_resolved_or_classified_noncredit": 7754,
+          "slots_with_affiliation": 8074,
+          "slots_with_education_institution": 5782,
+          "slots_with_institution": 7253,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 8121,
+          "papers": 1828,
+          "papers_any_coverage": 1824,
+          "papers_fully_covered": 1807,
+          "pass": true,
+          "rate": 0.9942,
+          "slots_with_affiliation": 8074,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1604,
+            "none": 79,
+            "partial": 145
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1828,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 224,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2023/pdf-review.jsonl",
+          "slots_from_image": 1197,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9652,
+          "extractor_slots_correct": 194,
+          "extractor_slots_wrong": 7,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 224,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2023/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v202/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2023/works.jsonl",
+      "sha256": "7a81fef4c71467b96482b1912c63fccc867d65dc6ebcd1f5c4ba1973e93dd70e",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1828,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 47,
+            "slot_source:publisher-pdf": 6877,
+            "slot_source:publisher-pdf-image": 1197,
+            "works": 1828
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:32Z",
+          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:None:None:79e60b0d5b3790a03029d3033e7a9bf0f78a580799672bb5fd50cb19c8541cd6:24cabea0f8e9b97cbfdc944c3cb49d0e0f2f8c95b1d2ec8e803d5925cae611f4:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "7a81fef4c71467b96482b1912c63fccc867d65dc6ebcd1f5c4ba1973e93dd70e"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:13Z",
+          "gates_passed": false,
+          "input_sha256": "7a81fef4c71467b96482b1912c63fccc867d65dc6ebcd1f5c4ba1973e93dd70e"
+        },
+        "membership": {
+          "counts": {
+            "included": 1828,
+            "publisher_doi": 0,
+            "rows": 1828,
+            "track:Conference": 1828
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:49:20Z",
+          "input_sha256": "c9aa81dbbe958938fde3b2102930e7cfb7a0e255a81835b31de0dd29cad8da89"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 1828,
+            "confidence:high": 1604,
+            "confidence:none": 79,
+            "confidence:partial": 145,
+            "extracted": 1828,
+            "layout:None": 3,
+            "layout:columns": 84,
+            "layout:markers": 1741,
+            "papers": 1828,
+            "review_queue": 224
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:20:06Z",
+          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 1828,
+      "year": 2023
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 13026,
+          "pdf_slots_resolved": 12478,
+          "rate": 0.9579,
+          "resolved_via_affiliation_map": 11710,
+          "slots_resolved_or_classified_noncredit": 12478,
+          "slots_with_affiliation": 13026,
+          "slots_with_education_institution": 9728,
+          "slots_with_institution": 11710,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 2600,
+              "diff": 10,
+              "have": 2610,
+              "note": "The fact sheet says the main track has 'over 2600' papers.",
+              "rel_diff": 0.00385,
+              "scope": "included",
+              "source": "https://media.icml.cc/Conferences/ICML2024/ICML2024_Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 13050,
+          "papers": 2610,
+          "papers_any_coverage": 2610,
+          "papers_fully_covered": 2591,
+          "pass": true,
+          "rate": 0.9982,
+          "slots_with_affiliation": 13026,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 2313,
+            "none": 80,
+            "partial": 217
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 2610,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 297,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2024/pdf-review.jsonl",
+          "slots_from_image": 1834,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9714,
+          "extractor_slots_correct": 272,
+          "extractor_slots_wrong": 8,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 297,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2024/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v235/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2024/works.jsonl",
+      "sha256": "42d121634c14af658dbd4c370432e5e3a2f204c0f47b4adf424388f51ed085f9",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 2610,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 24,
+            "slot_source:publisher-pdf": 11192,
+            "slot_source:publisher-pdf-image": 1834,
+            "works": 2610
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:33Z",
+          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:None:None:39fc74967486aff22dbaf18f1038eb391c3102f0ca2384c03921058a6cc7f089:f7d7fa5f21ea9e813256b2c03d760b9dd2e53e54af36d73ebf3d5f1fc4d3f1b2:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "42d121634c14af658dbd4c370432e5e3a2f204c0f47b4adf424388f51ed085f9"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:14Z",
+          "gates_passed": false,
+          "input_sha256": "42d121634c14af658dbd4c370432e5e3a2f204c0f47b4adf424388f51ed085f9"
+        },
+        "membership": {
+          "counts": {
+            "included": 2610,
+            "publisher_doi": 0,
+            "rows": 2610,
+            "track:Conference": 2610
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:46:49Z",
+          "input_sha256": "ad2bd1f00cfbcc60db1d665ef75ee240e094872f9e29db059f92201e5731be03"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 2610,
+            "confidence:high": 2313,
+            "confidence:none": 80,
+            "confidence:partial": 217,
+            "extracted": 2610,
+            "layout:columns": 85,
+            "layout:markers": 2525,
+            "papers": 2610,
+            "review_queue": 297
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:19:51Z",
+          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 2610,
+      "year": 2024
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 17431,
+          "pdf_slots_resolved": 16691,
+          "rate": 0.9575,
+          "resolved_via_affiliation_map": 15281,
+          "slots_resolved_or_classified_noncredit": 16691,
+          "slots_with_affiliation": 17431,
+          "slots_with_education_institution": 12812,
+          "slots_with_institution": 15281,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 3260,
+              "diff": 70,
+              "have": 3330,
+              "note": "Main-track accepts; PMLR v267 lists 3,330 entries with no track label. Reconcile before gating.",
+              "rel_diff": 0.02147,
+              "scope": "included",
+              "source": "https://media.icml.cc/Conferences/ICML2025/ICML2025_Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 17537,
+          "papers": 3330,
+          "papers_any_coverage": 3324,
+          "papers_fully_covered": 3297,
+          "pass": true,
+          "rate": 0.994,
+          "slots_with_affiliation": 17431,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 2892,
+            "none": 119,
+            "partial": 319
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 3330,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 438,
+          "review_queue_path": ".tmp/ml-harvest-600/icml/2025/pdf-review.jsonl",
+          "slots_from_image": 2736,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.908,
+          "extractor_slots_correct": 237,
+          "extractor_slots_wrong": 24,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 438,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/icml/2025/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://proceedings.mlr.press/v267/assets/bib/bibliography.bib",
+      "path": ".tmp/ml-harvest-600/cache/icml/2025/works.jsonl",
+      "sha256": "859156567fa751f5502867bf1fc101fe26ec07eb93b95bef2aa3a42f89eefdca",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 3330,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 106,
+            "slot_source:publisher-pdf": 14695,
+            "slot_source:publisher-pdf-image": 2736,
+            "works": 3330
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:34Z",
+          "input_sha256": "1edc882aab1f0578ada7153458f85d6590ab1be10dd9d08f2a93181eeb3ecc2f:None:None:5471231324dd308dd6e807b773f245501b8e295a12ac83b2f209c11d2bdc9114:1242def4621883f2e2e185763ffb6ae210f20fb94a18123a2efd95ac2dfe4134:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "859156567fa751f5502867bf1fc101fe26ec07eb93b95bef2aa3a42f89eefdca"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:15Z",
+          "gates_passed": false,
+          "input_sha256": "859156567fa751f5502867bf1fc101fe26ec07eb93b95bef2aa3a42f89eefdca"
+        },
+        "membership": {
+          "counts": {
+            "included": 3330,
+            "publisher_doi": 0,
+            "rows": 3330,
+            "track:Conference": 3330
+          },
+          "done": true,
+          "finished_at": "2026-11-16T01:56:42Z",
+          "input_sha256": "6671d8771fa161f3b5e9680449e6b72d1e12725f8fb19623a822da6fa7ba5c8f"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 3330,
+            "confidence:high": 2892,
+            "confidence:none": 119,
+            "confidence:partial": 319,
+            "extracted": 3330,
+            "layout:None": 3,
+            "layout:columns": 118,
+            "layout:markers": 3209,
+            "papers": 3330,
+            "review_queue": 438
+          },
+          "done": true,
+          "finished_at": "2026-11-16T04:20:10Z",
+          "input_sha256": "1edc882aab1f0578ada7153458f85d6590ab1be10dd9d08f2a93181eeb3ecc2f:extractor-v4"
+        }
+      },
+      "status": "staged",
+      "venue": "icml",
+      "works": 3330,
+      "year": 2025
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 1,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": false,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 1888,
+          "pdf_slots_resolved": 1806,
+          "rate": 0.9566,
+          "resolved_via_affiliation_map": 1712,
+          "slots_resolved_or_classified_noncredit": 1806,
+          "slots_with_affiliation": 1888,
+          "slots_with_education_institution": 1423,
+          "slots_with_institution": 1712,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 1952,
+          "papers": 569,
+          "papers_any_coverage": 562,
+          "papers_fully_covered": 540,
+          "pass": true,
+          "rate": 0.9672,
+          "slots_with_affiliation": 1888,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 424,
+            "none": 40,
+            "partial": 105
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 569,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 145,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2016/pdf-review.jsonl",
+          "slots_from_image": 578,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9178,
+          "extractor_slots_correct": 134,
+          "extractor_slots_wrong": 12,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 145,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2016/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2016",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2016/works.jsonl",
+      "sha256": "b28b971fa3d9b1b3897185b76afba00bf2e2ef5c901fb3c408f5b5fc44c487dd",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 569,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 64,
+            "slot_source:publisher-pdf": 1310,
+            "slot_source:publisher-pdf-image": 578,
+            "works": 569
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:35Z",
+          "input_sha256": "0234af7f2b382888a3b46de84f5e5fa8b3c2a2dbdf5cc31c691491f6c38d57bb:None:None:fe91e3dc80e0e323b2a763806616fe483b15bbf63a72756fa5b2c0d353c6ddce:63544cc699062f6bfff3d910237e1179ffdda48fa94e83cf56d48aa9fb67f5b6:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "b28b971fa3d9b1b3897185b76afba00bf2e2ef5c901fb3c408f5b5fc44c487dd"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:16Z",
+          "gates_passed": false,
+          "input_sha256": "b28b971fa3d9b1b3897185b76afba00bf2e2ef5c901fb3c408f5b5fc44c487dd"
+        },
+        "membership": {
+          "counts": {
+            "empty_byline": 1,
+            "included": 569,
+            "publisher_doi": 0,
+            "rows": 569,
+            "track:Conference": 569
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:41Z",
+          "input_sha256": "705c73ac0e05955d7d40c8421b55d15b67633d318bb2fa8bc9200d8e172d8a39"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 424,
+            "confidence:none": 40,
+            "confidence:partial": 105,
+            "extracted": 569,
+            "fetched_download": 569,
+            "layout:None": 6,
+            "layout:columns": 461,
+            "layout:markers": 102,
+            "papers": 569,
+            "review_queue": 145
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:50Z",
+          "input_sha256": "0234af7f2b382888a3b46de84f5e5fa8b3c2a2dbdf5cc31c691491f6c38d57bb:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 569,
+      "year": 2016
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 1,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": false,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 2457,
+          "pdf_slots_resolved": 2370,
+          "rate": 0.9646,
+          "resolved_via_affiliation_map": 2215,
+          "slots_resolved_or_classified_noncredit": 2370,
+          "slots_with_affiliation": 2457,
+          "slots_with_education_institution": 1759,
+          "slots_with_institution": 2215,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 2496,
+          "papers": 679,
+          "papers_any_coverage": 674,
+          "papers_fully_covered": 663,
+          "pass": true,
+          "rate": 0.9844,
+          "slots_with_affiliation": 2457,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 552,
+            "none": 41,
+            "partial": 86
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 679,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 127,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2017/pdf-review.jsonl",
+          "slots_from_image": 554,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9661,
+          "extractor_slots_correct": 171,
+          "extractor_slots_wrong": 6,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": false,
+          "review_papers_read_from_image": 127,
+          "sample_complete": false,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2017/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2017",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2017/works.jsonl",
+      "sha256": "76220532175d95870e145b27fa8ac426a8c6cebab709ab290f128e07df508229",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 679,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 39,
+            "slot_source:publisher-pdf": 1903,
+            "slot_source:publisher-pdf-image": 554,
+            "works": 679
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:36Z",
+          "input_sha256": "e5b6ff4b27b6bba6289111cc8944c6f6172328e7c134b460ee297b3c65db4600:None:None:ba2c7fb0f93ce24fa4a7426b370ad6775178d961886aab18674c1e0836b99f33:14f249fa08ce9ac01d48f4ecfceda7c0bab030b7da1c90dcf1521d8725f17ffd:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "76220532175d95870e145b27fa8ac426a8c6cebab709ab290f128e07df508229"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:16Z",
+          "gates_passed": false,
+          "input_sha256": "76220532175d95870e145b27fa8ac426a8c6cebab709ab290f128e07df508229"
+        },
+        "membership": {
+          "counts": {
+            "empty_byline": 1,
+            "included": 679,
+            "publisher_doi": 0,
+            "rows": 679,
+            "track:Conference": 679
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:30Z",
+          "input_sha256": "21ec4b1079c3772df895b1fc89d2e7d3caabe07cdfef992b8214834cc3a821df"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 552,
+            "confidence:none": 41,
+            "confidence:partial": 86,
+            "extracted": 679,
+            "fetched_download": 679,
+            "layout:None": 4,
+            "layout:columns": 548,
+            "layout:markers": 127,
+            "papers": 679,
+            "review_queue": 127
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:41Z",
+          "input_sha256": "e5b6ff4b27b6bba6289111cc8944c6f6172328e7c134b460ee297b3c65db4600:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 679,
+      "year": 2017
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 1,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": false,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 3808,
+          "pdf_slots_resolved": 3665,
+          "rate": 0.9624,
+          "resolved_via_affiliation_map": 3410,
+          "slots_resolved_or_classified_noncredit": 3665,
+          "slots_with_affiliation": 3808,
+          "slots_with_education_institution": 2790,
+          "slots_with_institution": 3410,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 3827,
+          "papers": 1009,
+          "papers_any_coverage": 1007,
+          "papers_fully_covered": 996,
+          "pass": true,
+          "rate": 0.995,
+          "slots_with_affiliation": 3808,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 818,
+            "none": 44,
+            "partial": 147
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1009,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 191,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2018/pdf-review.jsonl",
+          "slots_from_image": 847,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9894,
+          "extractor_slots_correct": 186,
+          "extractor_slots_wrong": 2,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 191,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2018/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2018",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2018/works.jsonl",
+      "sha256": "ac9f1f85b8944b897e4284864971e4e281749239adfdd96dff15b4bd504b5ac9",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1009,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 19,
+            "slot_source:publisher-pdf": 2961,
+            "slot_source:publisher-pdf-image": 847,
+            "works": 1009
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:36Z",
+          "input_sha256": "efa4de6b649e2ac69c2f1d79767bec7aa9041274066e97aeb916504bc4952eb6:None:None:116c7a172f04298ff7124f7f5d18182da565164abb5768eb773f4ba48aa66693:42be6036351796acfa08ffee6c26d52dda4f1b66ff1429fc054551a7035993e9:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "ac9f1f85b8944b897e4284864971e4e281749239adfdd96dff15b4bd504b5ac9"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:17Z",
+          "gates_passed": false,
+          "input_sha256": "ac9f1f85b8944b897e4284864971e4e281749239adfdd96dff15b4bd504b5ac9"
+        },
+        "membership": {
+          "counts": {
+            "empty_byline": 1,
+            "included": 1009,
+            "publisher_doi": 0,
+            "rows": 1009,
+            "track:Conference": 1009
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:12Z",
+          "input_sha256": "4c1b5449e9a785d7ae0ba7302fc53ee7de3ac45207dfb9d9c51fe7601e717959"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 818,
+            "confidence:none": 44,
+            "confidence:partial": 147,
+            "extracted": 1009,
+            "fetched_download": 1009,
+            "layout:None": 3,
+            "layout:columns": 780,
+            "layout:markers": 226,
+            "papers": 1009,
+            "review_queue": 191
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:29Z",
+          "input_sha256": "efa4de6b649e2ac69c2f1d79767bec7aa9041274066e97aeb916504bc4952eb6:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 1009,
+      "year": 2018
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 1,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": false,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 5499,
+          "pdf_slots_resolved": 5289,
+          "rate": 0.9618,
+          "resolved_via_affiliation_map": 4890,
+          "slots_resolved_or_classified_noncredit": 5289,
+          "slots_with_affiliation": 5499,
+          "slots_with_education_institution": 3934,
+          "slots_with_institution": 4890,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [],
+          "note": "No included-track anchor configured; membership cannot pass.",
+          "pass": false,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 5568,
+          "papers": 1428,
+          "papers_any_coverage": 1419,
+          "papers_fully_covered": 1406,
+          "pass": true,
+          "rate": 0.9876,
+          "slots_with_affiliation": 5499,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1137,
+            "none": 81,
+            "partial": 210
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1428,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 291,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2019/pdf-review.jsonl",
+          "slots_from_image": 1346,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9943,
+          "extractor_slots_correct": 174,
+          "extractor_slots_wrong": 1,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 291,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2019/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": false,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2019",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2019/works.jsonl",
+      "sha256": "ae94081426d958d9b8ed6ecde4482cef3fcf3c377ac9a94b71e0f9b433564002",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1428,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 69,
+            "slot_source:publisher-pdf": 4153,
+            "slot_source:publisher-pdf-image": 1346,
+            "works": 1428
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:37Z",
+          "input_sha256": "e27594ff3b89e4615d7725373517ec3ddf7113dbd5fb0e9dbaae92a4bc1b09cd:None:None:0bb4f374fa13e56e49ea1645977ed93d6cd5da90ac025ae5d274613b195cf431:7780bef1d176b9136e0a214ebc049275ec9f3cb49b761259e8daf5e7ffa86a06:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "ae94081426d958d9b8ed6ecde4482cef3fcf3c377ac9a94b71e0f9b433564002"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:18Z",
+          "gates_passed": false,
+          "input_sha256": "ae94081426d958d9b8ed6ecde4482cef3fcf3c377ac9a94b71e0f9b433564002"
+        },
+        "membership": {
+          "counts": {
+            "empty_byline": 1,
+            "included": 1428,
+            "publisher_doi": 0,
+            "rows": 1428,
+            "track:Conference": 1428
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:42:42Z",
+          "input_sha256": "ae50a4405843be3ab2658ef074baf924c03de2c4aa4ae8635c1e5da6ac5ce89f"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 1137,
+            "confidence:none": 81,
+            "confidence:partial": 210,
+            "extracted": 1428,
+            "fetched_download": 1428,
+            "layout:None": 6,
+            "layout:columns": 1127,
+            "layout:markers": 295,
+            "papers": 1428,
+            "review_queue": 291
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:43:11Z",
+          "input_sha256": "e27594ff3b89e4615d7725373517ec3ddf7113dbd5fb0e9dbaae92a4bc1b09cd:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 1428,
+      "year": 2019
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 7726,
+          "pdf_slots_resolved": 7434,
+          "rate": 0.9622,
+          "resolved_via_affiliation_map": 6832,
+          "slots_resolved_or_classified_noncredit": 7434,
+          "slots_with_affiliation": 7726,
+          "slots_with_education_institution": 5486,
+          "slots_with_institution": 6832,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 1898,
+              "diff": 0,
+              "have": 1898,
+              "rel_diff": 0.0,
+              "scope": "track:Conference",
+              "source": "https://neurips.cc/media/Press/NeurIPS_2020-Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 7791,
+          "papers": 1898,
+          "papers_any_coverage": 1895,
+          "papers_fully_covered": 1872,
+          "pass": true,
+          "rate": 0.9917,
+          "slots_with_affiliation": 7726,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 1567,
+            "none": 86,
+            "partial": 245
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 1898,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 331,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2020/pdf-review.jsonl",
+          "slots_from_image": 1648,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9847,
+          "extractor_slots_correct": 193,
+          "extractor_slots_wrong": 3,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 331,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2020/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2020",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2020/works.jsonl",
+      "sha256": "46085bcddf21d3c7e6a30e675487d52776016878ffca8b890a99dcf3bbd003ce",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 1898,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 65,
+            "slot_source:publisher-pdf": 6078,
+            "slot_source:publisher-pdf-image": 1648,
+            "works": 1898
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:38Z",
+          "input_sha256": "8db59694dd2cb3835314eb17767199ada0937ab4260d9e4793026fcb8106a9ed:None:None:3662f8e82183c5b57817cb4b14044a1b1d1d4c9256fea8c0ea1cccd7a992597a:239b3f180c70ec8a6beba48d4218c725353501ad269c30e9be93715632178bf2:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "46085bcddf21d3c7e6a30e675487d52776016878ffca8b890a99dcf3bbd003ce"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:19Z",
+          "gates_passed": true,
+          "input_sha256": "46085bcddf21d3c7e6a30e675487d52776016878ffca8b890a99dcf3bbd003ce"
+        },
+        "membership": {
+          "counts": {
+            "included": 1898,
+            "publisher_doi": 0,
+            "rows": 1898,
+            "track:Conference": 1898
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:41:58Z",
+          "input_sha256": "2625dd8e4f09420106360ee1ae19352f8b8d44d56f59646edc9bf76aba3553f9"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 1567,
+            "confidence:none": 86,
+            "confidence:partial": 245,
+            "extracted": 1898,
+            "fetched_download": 1898,
+            "layout:None": 6,
+            "layout:columns": 1432,
+            "layout:markers": 460,
+            "papers": 1898,
+            "review_queue": 331
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:42:41Z",
+          "input_sha256": "8db59694dd2cb3835314eb17767199ada0937ab4260d9e4793026fcb8106a9ed:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 1898,
+      "year": 2020
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 9907,
+          "pdf_slots_resolved": 9517,
+          "rate": 0.9606,
+          "resolved_via_affiliation_map": 8785,
+          "slots_resolved_or_classified_noncredit": 9517,
+          "slots_with_affiliation": 9907,
+          "slots_with_education_institution": 7144,
+          "slots_with_institution": 8785,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 2334,
+              "diff": 0,
+              "have": 2334,
+              "rel_diff": 0.0,
+              "scope": "track:Conference",
+              "source": "https://neurips.cc/media/Press/NeurIPS_2021-Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 9932,
+          "papers": 2334,
+          "papers_any_coverage": 2332,
+          "papers_fully_covered": 2318,
+          "pass": true,
+          "rate": 0.9975,
+          "slots_with_affiliation": 9907,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 2003,
+            "none": 89,
+            "partial": 242
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 2334,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 331,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2021/pdf-review.jsonl",
+          "slots_from_image": 1687,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 211,
+          "extractor_slots_wrong": 0,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 331,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2021/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2021",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2021/works.jsonl",
+      "sha256": "937984f61022fc9ec75fbcbf67230dc7ef75fe76b54218eade34708adda49572",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 2334,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 25,
+            "slot_source:publisher-pdf": 8220,
+            "slot_source:publisher-pdf-image": 1687,
+            "works": 2334
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:39Z",
+          "input_sha256": "7ad14f32867f3ca5ae78fd43d5354f7b2053c42b1aef9490e7837362c0b451ec:None:None:bfe9f90de238be4f34331a0b430825a2953d162ea021da71fc8283f4318f3041:d08f2b138d73f93a770e2f67e47cd9ad5dde1d914c8931a953c163b77cf3e7eb:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "937984f61022fc9ec75fbcbf67230dc7ef75fe76b54218eade34708adda49572"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:20Z",
+          "gates_passed": true,
+          "input_sha256": "937984f61022fc9ec75fbcbf67230dc7ef75fe76b54218eade34708adda49572"
+        },
+        "membership": {
+          "counts": {
+            "included": 2334,
+            "publisher_doi": 0,
+            "rows": 2334,
+            "track:Conference": 2334
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:40:52Z",
+          "input_sha256": "368e873250506c0dbc961ece186ff78387bcf4914fecef2e0f85c68da1af4c4f"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 2003,
+            "confidence:none": 89,
+            "confidence:partial": 242,
+            "extracted": 2334,
+            "fetched_download": 2334,
+            "layout:None": 16,
+            "layout:columns": 1638,
+            "layout:markers": 680,
+            "papers": 2334,
+            "review_queue": 331
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:41:52Z",
+          "input_sha256": "7ad14f32867f3ca5ae78fd43d5354f7b2053c42b1aef9490e7837362c0b451ec:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 2334,
+      "year": 2021
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 13102,
+          "pdf_slots_resolved": 12598,
+          "rate": 0.9615,
+          "resolved_via_affiliation_map": 11517,
+          "slots_resolved_or_classified_noncredit": 12598,
+          "slots_with_affiliation": 13102,
+          "slots_with_education_institution": 9470,
+          "slots_with_institution": 11517,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 2672,
+              "diff": -1,
+              "have": 2671,
+              "rel_diff": 0.00037,
+              "scope": "track:Conference",
+              "source": "https://blog.neurips.cc/2022/11/22/getting-ready-for-neurips-3-2022-conference-highlights/"
+            },
+            {
+              "count": 163,
+              "diff": 0,
+              "have": 163,
+              "rel_diff": 0.0,
+              "scope": "track:Datasets_and_Benchmarks",
+              "source": "https://blog.neurips.cc/2022/11/25/get-ready-for-the-neurips-2022-datasets-and-benchmarks-track/"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 13190,
+          "papers": 2834,
+          "papers_any_coverage": 2828,
+          "papers_fully_covered": 2798,
+          "pass": true,
+          "rate": 0.9933,
+          "slots_with_affiliation": 13102,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 2375,
+            "none": 112,
+            "partial": 347
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 2834,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 459,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2022/pdf-review.jsonl",
+          "slots_from_image": 2618,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9952,
+          "extractor_slots_correct": 209,
+          "extractor_slots_wrong": 1,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 459,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2022/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2022",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2022/works.jsonl",
+      "sha256": "378125b8ec4ee1f9db6833f634e7188db064d0c7681caa3c27af5571b98155e7",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 2834,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 88,
+            "slot_source:publisher-pdf": 10484,
+            "slot_source:publisher-pdf-image": 2618,
+            "works": 2834
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:40Z",
+          "input_sha256": "3c0e1bb8768b344fe59093ed9a3f97312a1979bf019901fd13eed3e54d77104e:None:None:c0b4e7bb57d79710d0f99e5398da2d926cbf25f004570afc9b840234cd06a7bc:a26e539ea5fa2995a222ad2dbbbdfc40d56328fbe962ae638b02d1673b78dfd4:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "378125b8ec4ee1f9db6833f634e7188db064d0c7681caa3c27af5571b98155e7"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:21Z",
+          "gates_passed": true,
+          "input_sha256": "378125b8ec4ee1f9db6833f634e7188db064d0c7681caa3c27af5571b98155e7"
+        },
+        "membership": {
+          "counts": {
+            "included": 2834,
+            "publisher_doi": 0,
+            "rows": 2834,
+            "track:Conference": 2671,
+            "track:Datasets_and_Benchmarks": 163
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:39:28Z",
+          "input_sha256": "f05d5f428accaadd92dba7ae9f2d73ea53e8da382ee6e12587e32c49edde0955"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 2375,
+            "confidence:none": 112,
+            "confidence:partial": 347,
+            "extracted": 2834,
+            "fetched_download": 2834,
+            "layout:None": 18,
+            "layout:columns": 1841,
+            "layout:markers": 975,
+            "papers": 2834,
+            "review_queue": 459
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:40:51Z",
+          "input_sha256": "3c0e1bb8768b344fe59093ed9a3f97312a1979bf019901fd13eed3e54d77104e:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 2834,
+      "year": 2022
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 17578,
+          "pdf_slots_resolved": 16894,
+          "rate": 0.9611,
+          "resolved_via_affiliation_map": 15451,
+          "slots_resolved_or_classified_noncredit": 16894,
+          "slots_with_affiliation": 17578,
+          "slots_with_education_institution": 12900,
+          "slots_with_institution": 15451,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 3218,
+              "diff": 0,
+              "have": 3218,
+              "rel_diff": 0.0,
+              "scope": "track:Conference",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"
+            },
+            {
+              "count": 322,
+              "diff": 0,
+              "have": 322,
+              "rel_diff": 0.0,
+              "scope": "track:Datasets_and_Benchmarks",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"
+            },
+            {
+              "count": 3540,
+              "diff": 0,
+              "have": 3540,
+              "rel_diff": 0.0,
+              "scope": "included",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2023/NeurIPS2023-Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 17711,
+          "papers": 3540,
+          "papers_any_coverage": 3532,
+          "papers_fully_covered": 3489,
+          "pass": true,
+          "rate": 0.9925,
+          "slots_with_affiliation": 17578,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 2963,
+            "none": 113,
+            "partial": 464
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 3540,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 577,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2023/pdf-review.jsonl",
+          "slots_from_image": 3565,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9955,
+          "extractor_slots_correct": 223,
+          "extractor_slots_wrong": 1,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 577,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2023/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2023",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2023/works.jsonl",
+      "sha256": "46fa69ba39a790b638faa171c3e195acd6289cbd69da9cb4c7bda08b8920a56a",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 3540,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 133,
+            "slot_source:publisher-pdf": 14013,
+            "slot_source:publisher-pdf-image": 3565,
+            "works": 3540
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:41Z",
+          "input_sha256": "089d237eacd79e60c5fe3828fecf707c56982c037070e0127822164d56759430:None:None:c7cf865a07fefd25cbe581f510f087bcc408a43876464824c9cccf22b5adc772:e6b1f09c7bbe18cf548589467b271d5be6c01d0db03ff38d376b818ae2715159:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "46fa69ba39a790b638faa171c3e195acd6289cbd69da9cb4c7bda08b8920a56a"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:22Z",
+          "gates_passed": true,
+          "input_sha256": "46fa69ba39a790b638faa171c3e195acd6289cbd69da9cb4c7bda08b8920a56a"
+        },
+        "membership": {
+          "counts": {
+            "included": 3540,
+            "publisher_doi": 0,
+            "rows": 3540,
+            "track:Conference": 3218,
+            "track:Datasets_and_Benchmarks": 322
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:36:09Z",
+          "input_sha256": "725da7b0cd60260aafe81b4ce09f99adf42e0839e462741bfef8f228cf41775e"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 0,
+            "confidence:high": 2963,
+            "confidence:none": 113,
+            "confidence:partial": 464,
+            "extracted": 3540,
+            "fetched_download": 3540,
+            "layout:None": 8,
+            "layout:columns": 2093,
+            "layout:markers": 1439,
+            "papers": 3540,
+            "review_queue": 577
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:39:02Z",
+          "input_sha256": "089d237eacd79e60c5fe3828fecf707c56982c037070e0127822164d56759430:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 3540,
+      "year": 2023
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 24619,
+          "pdf_slots_resolved": 23814,
+          "rate": 0.9673,
+          "resolved_via_affiliation_map": 21968,
+          "slots_resolved_or_classified_noncredit": 23814,
+          "slots_with_affiliation": 24619,
+          "slots_with_education_institution": 18775,
+          "slots_with_institution": 21968,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 4037,
+              "diff": -3,
+              "have": 4034,
+              "rel_diff": 0.00074,
+              "scope": "track:Conference",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"
+            },
+            {
+              "count": 460,
+              "diff": -1,
+              "have": 459,
+              "rel_diff": 0.00217,
+              "scope": "track:Datasets_and_Benchmarks_Track",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"
+            },
+            {
+              "count": 4497,
+              "diff": -4,
+              "have": 4493,
+              "rel_diff": 0.00089,
+              "scope": "included",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2024/NeurIPS2024-Fact_Sheet.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 24840,
+          "papers": 4493,
+          "papers_any_coverage": 4486,
+          "papers_fully_covered": 4435,
+          "pass": true,
+          "rate": 0.9911,
+          "slots_with_affiliation": 24619,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 3883,
+            "none": 134,
+            "partial": 476
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 4493,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 610,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2024/pdf-review.jsonl",
+          "slots_from_image": 4229,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 0,
+          "extractor_accuracy": 0.9958,
+          "extractor_slots_correct": 238,
+          "extractor_slots_wrong": 1,
+          "judge_model": [
+            "claude-haiku-5-5",
+            "claude-haiku-5-5+claude-sonnet-5-5",
+            "claude-haiku-5-5+claude-sonnet-5-5+gemini-3.8-flash",
+            "claude-sonnet-5-5+gemini-3.8-flash",
+            "gemini-3.8-flash"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 610,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2024/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2024",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2024/works.jsonl",
+      "sha256": "004578947afe69233fa68565e138b3304cf5f4ff6b6a44a74c3129d4a055f0d3",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 4493,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 0,
+            "slot_source:none": 221,
+            "slot_source:publisher-pdf": 20390,
+            "slot_source:publisher-pdf-image": 4229,
+            "works": 4493
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:43Z",
+          "input_sha256": "d3e1ceedb923cd023dbd7bb3bc17d360bbb9c8166b97325cbd1c716d894bb2e8:None:None:9f0fe149f654d2554557ca07a74717a05c441c3ff0d1630162c92a071e74951a:aad50f10f6042626b993411af779ae4fee46165623ba8b3eecba3de1f11583e1:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "004578947afe69233fa68565e138b3304cf5f4ff6b6a44a74c3129d4a055f0d3"
+        },
+        "discover": {},
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:23Z",
+          "gates_passed": true,
+          "input_sha256": "004578947afe69233fa68565e138b3304cf5f4ff6b6a44a74c3129d4a055f0d3"
+        },
+        "membership": {
+          "counts": {
+            "included": 4493,
+            "publisher_doi": 0,
+            "rows": 4493,
+            "track:Conference": 4034,
+            "track:Datasets_and_Benchmarks_Track": 459
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:30:32Z",
+          "input_sha256": "92d5b7385213cc6c86829e0904ce19c37034cb9b1c3a9dd7d77c5f5d90ae396c"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 2059,
+            "confidence:high": 3883,
+            "confidence:none": 134,
+            "confidence:partial": 476,
+            "extracted": 4493,
+            "fetched_download": 2431,
+            "fetched_local": 3,
+            "layout:None": 12,
+            "layout:columns": 2290,
+            "layout:markers": 2191,
+            "papers": 4493,
+            "review_queue": 610
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:36:01Z",
+          "input_sha256": "d3e1ceedb923cd023dbd7bb3bc17d360bbb9c8166b97325cbd1c716d894bb2e8:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 4493,
+      "year": 2024
+    },
+    {
+      "gates": {
+        "byline_integrity": {
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 33646,
+          "pdf_slots_resolved": 32504,
+          "rate": 0.9661,
+          "resolved_via_affiliation_map": 29604,
+          "slots_resolved_or_classified_noncredit": 32504,
+          "slots_with_affiliation": 33646,
+          "slots_with_education_institution": 25633,
+          "slots_with_institution": 29604,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchors": [
+            {
+              "count": 5290,
+              "diff": -4,
+              "have": 5286,
+              "rel_diff": 0.00076,
+              "scope": "track:Conference",
+              "source": "https://media.neurips.cc/Conferences/NeurIPS2025/press/NeurIPS2025-Fact_Sheet.pdf"
+            },
+            {
+              "count": 5823,
+              "diff": 0,
+              "have": 5823,
+              "rel_diff": 0.0,
+              "scope": "all",
+              "source": "https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 33943,
+          "papers": 5783,
+          "papers_any_coverage": 5768,
+          "papers_fully_covered": 5667,
+          "pass": true,
+          "rate": 0.9913,
+          "slots_with_affiliation": 33646,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 4804,
+            "none": 155,
+            "partial": 824
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 5783,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 55,
+          "prefer_pdf": true,
+          "review_queue": 979,
+          "review_queue_path": ".tmp/ml-harvest-600/neurips/2025/pdf-review.jsonl",
+          "slots_from_image": 7247,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 27,
+          "extractor_accuracy": 0.9852,
+          "extractor_slots_correct": 266,
+          "extractor_slots_wrong": 4,
+          "judge_model": [
+            "claude-haiku-5-5",
+            "claude-haiku-5-5+claude-sonnet-5-5",
+            "claude-sonnet-5-5+gemini-3.8-flash",
+            "gemini-3.8-flash"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 979,
+          "sample_complete": true,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": ".tmp/ml-harvest-600/neurips/2025/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference",
+        "Datasets_and_Benchmarks_Track"
+      ],
+      "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2025/vol38-main-conference",
+      "path": ".tmp/ml-harvest-600/cache/neurips/2025/works.jsonl",
+      "sha256": "70031f30efdbbef6617dc705ab493f0d0b4e783a0215305dac8c5dbe2a99cddc",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 5734,
+            "evidence:openalex-publisher-doi": 49,
+            "excluded_track_rows": 40,
+            "pdf_openalex_conflict_slots": 55,
+            "rejected_candidates": 0,
+            "slot_source:none": 297,
+            "slot_source:publisher-pdf": 26399,
+            "slot_source:publisher-pdf-image": 7247,
+            "works": 5783
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:31:44Z",
+          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20:fb3743b7e47e17df9961f86fc48eeb917bdd06ab0873bb290120aeb91da84a86:f761303f863a6fd83ea533a98a56dc38d0abc7335ab36bb4567b875ea0e7d6cc:b3453c69790244edf21208afc717fda701941a4045780695b82f825d66470652:841a43cfef423b8176bbca9deaccb2d68fc435bad09758e1436f20ccb66a4571:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:prefer_pdf=True",
+          "sha256": "70031f30efdbbef6617dc705ab493f0d0b4e783a0215305dac8c5dbe2a99cddc"
+        },
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 1,
+            "ok:legacy-s2-cache": 2057,
+            "ok:openalex-title": 49,
+            "ok:s2-bulk": 1952,
+            "openalex_title_calls": 5,
+            "openalex_title_deferred_by_cap": 1724,
+            "papers": 5783,
+            "with_identifier": 4058
+          },
+          "done": false,
+          "finished_at": "2026-11-16T01:58:10Z",
+          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20"
+        },
+        "enrich": {},
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-19T23:40:24Z",
+          "gates_passed": true,
+          "input_sha256": "70031f30efdbbef6617dc705ab493f0d0b4e783a0215305dac8c5dbe2a99cddc"
+        },
+        "membership": {
+          "counts": {
+            "included": 5783,
+            "publisher_doi": 5822,
+            "rows": 5823,
+            "track:Conference": 5286,
+            "track:Datasets_and_Benchmarks_Track": 497,
+            "track:Position_Paper_Track": 40
+          },
+          "done": true,
+          "finished_at": "2026-11-16T01:56:31Z",
+          "input_sha256": "a8f245c9e28eea2fca79301a634e91d7765bef93f6eadd1f20047e5bf905a5e2"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 336,
+            "confidence:high": 4804,
+            "confidence:none": 155,
+            "confidence:partial": 824,
+            "extracted": 5783,
+            "fetched_download": 5447,
+            "layout:None": 17,
+            "layout:columns": 2567,
+            "layout:markers": 3199,
+            "papers": 5783,
+            "review_queue": 979
+          },
+          "done": true,
+          "finished_at": "2026-11-16T02:30:28Z",
+          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20:extractor-v3"
+        }
+      },
+      "status": "staged",
+      "venue": "neurips",
+      "works": 5783,
       "year": 2025
     }
   ],
