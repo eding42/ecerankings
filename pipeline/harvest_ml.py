@@ -61,6 +61,9 @@ PDF_WORKERS = 4
 # record (byline or document) or lost an author. Durable, unlike the staging
 # tree, so a rebuild replays the same decisions. See resolve_checks().
 RESOLUTIONS_PATH = ROOT / "data" / "refresh" / "ml-discrepancy-resolutions.jsonl"
+# Papers whose official listing prints no authors. They stay members, earn no credit
+# (aggregate skips empty bylines) and do not block byline_integrity.
+AUTHORLESS_PATH = ROOT / "data" / "refresh" / "ml-authorless-papers.jsonl"
 BYLINE_RESOLUTIONS = {"same_people", "different_people"}
 SOURCE_RESOLUTIONS = {"same_paper", "different_document"}
 AUTHOR_RESOLUTIONS = {"present", "absent"}
@@ -756,6 +759,7 @@ class Edition:
         self.pdf_extract_path = self.dir / "pdf-extract.jsonl"
         self.pdf_verify_path = self.dir / "pdf-verify.jsonl"
         self.resolutions_path = RESOLUTIONS_PATH
+        self.authorless_path = AUTHORLESS_PATH
         self.pdf_text_dir = self.dir / "pdf-text"
         self.works_path = self.cache_dir / "works.jsonl"
 
@@ -777,7 +781,8 @@ class Edition:
             return f"{sha256_file(self.membership_path)}:extractor-v{pdf_affiliations.EXTRACTOR_VERSION}"
         if stage == "build":
             return ":".join(str(sha256_file(p)) for p in (self.membership_path, self.discovery_path, self.openalex_path,
-                                                         self.pdf_extract_path, self.pdf_verify_path, self.resolutions_path)) + f":prefer_pdf={self.prefer_pdf}"
+                                                         self.pdf_extract_path, self.pdf_verify_path, self.resolutions_path,
+                                                         self.authorless_path)) + f":prefer_pdf={self.prefer_pdf}"
         return sha256_file(self.works_path)
 
     def is_done(self, stage):
@@ -1447,6 +1452,16 @@ def load_resolutions(path=None):
     return out
 
 
+def load_authorless(path=None):
+    """paper_key -> documented exception for a paper whose official listing has no authors."""
+    out = {}
+    for rec in read_jsonl(Path(path or AUTHORLESS_PATH)):
+        if not (rec.get("evidence") or "").strip() or not (rec.get("decided_by") or "").strip():
+            raise HarvestError(f"{rec.get('paper_key')}: author-less exception needs evidence and decided_by")
+        out[rec["paper_key"]] = rec
+    return out
+
+
 def resolve_checks(rows, resolutions):
     """Apply reviewed resolutions to image-check rows, without touching the
     verdicts the extractor-accuracy sample is scored on.
@@ -1563,11 +1578,14 @@ def compute_gates(ed, works):
     pdf_not_found = sum(a.get("verdict") == "not_found" and not a.get("resolution") for r in checks.values()
                         for a in r.get("authors", []))
     pdf_discrepancies = sum(bool(r.get("byline_discrepancy")) for r in checks.values())
+    authorless = load_authorless(ed.authorless_path)
+    undocumented_empty = [w for w in works if not w["authorships"] and w["id"] not in authorless]
     gates["byline_integrity"] = {"papers_without_evidence_due_to_byline_mismatch": byline_mismatch,
                                  "pdf_author_slots_not_found": pdf_not_found,
                                  "pdf_byline_discrepancy_papers": pdf_discrepancies,
-                                 "empty_bylines": sum(not w["authorships"] for w in works),
-                                 "pass": all(w["authorships"] for w in works) and pdf_not_found == 0 and pdf_discrepancies == 0}
+                                 "empty_bylines": len(undocumented_empty),
+                                 "documented_authorless_papers": sum(not w["authorships"] and w["id"] in authorless for w in works),
+                                 "pass": not undocumented_empty and pdf_not_found == 0 and pdf_discrepancies == 0}
     gates["scope_purity"] = {"duplicate_work_keys": dup, "pass": dup == 0 and bad_scope == 0,
                              "audit_sample": str(ed.dir / "audit-sample.jsonl")}
     gates["profile_leakage"] = {"author_slots_with_profile_or_unknown_source": leaks, "pass": leaks == 0}

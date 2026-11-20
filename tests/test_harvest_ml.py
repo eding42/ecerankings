@@ -259,5 +259,23 @@ class PdfStage(unittest.TestCase):
         self.assertEqual(harvest_ml.read_jsonl(self.ed.pdf_extract_path), [])
 
 
+class AuthorlessExceptions(unittest.TestCase):
+    def test_exception_needs_evidence_and_a_decider(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "authorless.jsonl"
+            path.write_text(json.dumps({"paper_key": "neurips:2018:x", "evidence": "listing has no authors",
+                                        "decided_by": "user"}) + "\n", encoding="utf8")
+            self.assertIn("neurips:2018:x", harvest_ml.load_authorless(path))
+            path.write_text(json.dumps({"paper_key": "neurips:2018:x", "evidence": "", "decided_by": "user"}) + "\n",
+                            encoding="utf8")
+            with self.assertRaises(harvest_ml.HarvestError):
+                harvest_ml.load_authorless(path)
+
+    def test_shipped_exceptions_are_documented(self):
+        records = harvest_ml.load_authorless()
+        self.assertEqual(len(records), 4)
+        self.assertTrue(all(key.startswith("neurips:") for key in records))
+
+
 if __name__ == "__main__":
     unittest.main()

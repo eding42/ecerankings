@@ -114,6 +114,16 @@ deliberately credits nobody. `unresolved` decisions still count against it.
   (or `needs-policy`) until map rows can carry several institutions; credit would
   then split evenly, as `PLAN.md` already specifies for multi-affiliation authors.
 
+- Northeastern University: a string with no location is credited to Northeastern
+  University (US); a string printing a China location is credited to Northeastern
+  University (Shenyang, CN).
+- A paper whose official listing prints no authors (NeurIPS 2016 `5d616dd3...`,
+  2017 `861dc9bd...`, 2018 `959a557f...`, 2019 `08040837...`) is a documented
+  exception in `data/refresh/ml-authorless-papers.jsonl` (user, 2026-11-20). It
+  stays a member, earns no credit, and does not block `byline_integrity`. The
+  gate reports `documented_authorless_papers`; any other empty byline still fails.
+  A publisher-first byline is never taken from the PDF.
+
 ## Acceptance
 
 An edition stays `staged` unless every gate passes: membership discrepancy at
