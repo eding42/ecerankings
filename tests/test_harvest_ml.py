@@ -170,6 +170,17 @@ class Stages(unittest.TestCase):
         self.assertEqual(batch.call_count, 1)
         self.assertEqual(harvest_ml.read_jsonl(self.ed.openalex_path)[0]["key"], "10.48550/arxiv.1")
 
+    def test_membership_without_a_count_passes_but_a_wrong_count_fails(self):
+        harvest_ml.stage_build(self.ed)
+        cfg = harvest_ml.EDITIONS[("iclr", 1999)]
+        cfg["expected"] = []
+        gates, _ = harvest_ml.stage_gates(self.ed)
+        self.assertTrue(gates["membership"]["pass"])
+        self.assertFalse(gates["membership"]["anchored"])
+        cfg["expected"] = [{"count": 5, "scope": "included", "source": "t"}]
+        gates, _ = harvest_ml.stage_gates(self.ed)
+        self.assertFalse(gates["membership"]["pass"])
+
     def test_gates_fail_below_threshold_and_status_stays_staged(self):
         harvest_ml.stage_build(self.ed)
         gates, passed = harvest_ml.stage_gates(self.ed)

@@ -392,5 +392,165 @@ class OrderNoteIsNotAnAffiliationTest(unittest.TestCase):
             self.assertFalse(pa._ORDER_NOTE.match(real), real)
 
 
+class KeyedLegendLayoutsTest(unittest.TestCase):
+    def test_question_mark_is_an_unrendered_symbol_mark(self):
+        # pdftotext prints '?' for a symbol it cannot map (ICLR 2021 ChipNet).
+        text = ("Rishabh Tiwari†‡∗ , Udbhav Bamba†‡∗ and Deepak K. Gupta†?∗\n"
+                " †\n   Transmute AI Research, The Netherlands\n"
+                " ‡\n   Indian Institute of Technology, ISM Dhanbad, India\n"
+                " ?\n   Informatics Institute, University of Amsterdam, The Netherlands\n\n\nAbstract\n")
+        got = pa.extract(text, ["Rishabh Tiwari", "Udbhav Bamba", "Deepak K. Gupta"])["affiliations"]
+        self.assertEqual(got[0], ["Transmute AI Research, The Netherlands", "Indian Institute of Technology, ISM Dhanbad, India"])
+        self.assertEqual(got[2], ["Transmute AI Research, The Netherlands",
+                                  "Informatics Institute, University of Amsterdam, The Netherlands"])
+
+    def test_each_name_group_reads_its_own_legend(self):
+        # names, legend, names, legend (ICML 2016 kanagawa16).
+        text = ("Heishiro Kanagawa†        KANAGAWA@TITECH.AC.JP\n"
+                "Taiji Suzuki†,‡           SUZUKI@TITECH.AC.JP\n"
+                "†\n  Tokyo Institute of Technology, Tokyo, JAPAN\n"
+                "‡\n  PRESTO, Japan Science and Technological Agency (JST), JAPAN\n"
+                "Hayato Kobayashi?         HAKOBAYA@YAHOO-CORP.JP\n"
+                "?\n  Yahoo Japan Corporation, Tokyo, JAPAN\n\n\nAbstract\n")
+        got = pa.extract(text, ["Heishiro Kanagawa", "Taiji Suzuki", "Hayato Kobayashi"])["affiliations"]
+        self.assertEqual(got, [["Tokyo Institute of Technology, Tokyo, JAPAN"],
+                               ["Tokyo Institute of Technology, Tokyo, JAPAN",
+                                "PRESTO, Japan Science and Technological Agency (JST), JAPAN"],
+                               ["Yahoo Japan Corporation, Tokyo, JAPAN"]])
+
+    def test_footer_tails_and_line_breaks_are_cleaned(self):
+        clean = pa._clean_affiliation
+        self.assertEqual(clean("Amazon AGI, United States. Cor- Proceedings of the 42 nd International Conference on Machine"),
+                         "Amazon AGI, United States")
+        self.assertEqual(clean("UC Irvine, USA. Correspon-"), "UC Irvine, USA")
+        self.assertEqual(clean("National University of Singapore. Proceedings of the"), "National University of Singapore")
+        self.assertEqual(clean("McGill Univer- sity, Montréal"), "McGill University, Montréal")
+        self.assertEqual(clean("Institute of Bio- and Geosciences"), "Institute of Bio- and Geosciences")
+        self.assertEqual(clean("Cornell University"), "Cornell University")
+        self.assertEqual(clean("{dipankar.das,naveen.k.mellempudi"), "")
+
+    def test_mark_ranges_expand(self):
+        text = ("David Klindt * 1-3 , Matthias Bethge 1,2,4-5\n"
+                "              1\n                 Centre A, University of X\n"
+                "      2\n        Center B, University of X\n"
+                "                3\n                   Institute C, University of X\n"
+                "                  4\n                    Institute D, University of X\n"
+                "               5\n                   Institute E, Y\n\n\nAbstract\n")
+        got = pa.extract(text, ["David Klindt", "Matthias Bethge"])["affiliations"]
+        self.assertEqual(len(got[0]), 3)
+        self.assertEqual(len(got[1]), 4)
+
+    def test_glued_single_digit_marks_and_bracketed_keys(self):
+        text = ("Erin Grant12 , Chelsea Finn12 , Thomas Griffiths13\n"
+                " 1\n   Berkeley AI Research (BAIR), University of California, Berkeley\n"
+                " 2\n   Department of EECS, University of California, Berkeley\n"
+                " 3\n   Department of Psychology, University of California, Berkeley\n\n\nAbstract\n")
+        got = pa.extract(text, ["Erin Grant", "Chelsea Finn", "Thomas Griffiths"])["affiliations"]
+        self.assertEqual(got[2], ["Berkeley AI Research (BAIR), University of California, Berkeley",
+                                  "Department of Psychology, University of California, Berkeley"])
+        text = (" Christopher Roth[1],[2] , and Ila Fiete[2],[3]\n"
+                " [1] Department of Physics, University of Texas at Austin\n"
+                " [2] Department of Neuroscience, University of Texas at Austin\n"
+                " [3] OpenAI, San Francisco CA\n\n\nAbstract\n")
+        got = pa.extract(text, ["Christopher Roth", "Ila Fiete"])["affiliations"]
+        self.assertEqual(got[1], ["Department of Neuroscience, University of Texas at Austin", "OpenAI, San Francisco CA"])
+
+    def test_pmlr_footnote_marks_over_a_run_together_line(self):
+        lines = ["ent grocery stores, and people take outdoor exercises at          To address these issues, we propose THIS-ODE, a novel de-",
+                 "   1                                          2",
+                 "    School of Computing, University of Utah Scientific Comput-    composition model of temporal high-order interactions. Our",
+                 "ing and Imaging (SCI) Institute, University of Utah. Correspon-   model can fully leverage continuous timestamps, flexibly",
+                 "dence to: Shandian Zhe <zhe@cs.utah.edu>.                         capture all kinds of complex temporal dynamics within the",
+                 "                                                                  interactions, and encode nonlinear temporal relationships",
+                 "Proceedings of the 39 th International Conference on Machine      of the participant objects into their representations.",
+                 "Learning, Baltimore, Maryland, USA, PMLR 162, 2022. Copy-"]
+        entries = pa._footnote_legend(lines, {"1", "2"})
+        got = {e["mark"]: pa._clean_affiliation("".join(e["parts"])) for e in entries}
+        self.assertEqual(got["1"], "School of Computing, University of Utah")
+        self.assertTrue(got["2"].startswith("Scientific Computing and Imaging (SCI) Institute, University of Utah"))
+
+    def test_pmlr_footnote_skips_a_section_number_over_body_text(self):
+        text = ("Tighter Bounds\n\n    Tom Rainforth 1 Adam Kosiorek 1 2\n\n\n"
+                "                          Abstract                       We provide evidence\n"
+                "      We provide theoretical and empirical evidence\n\n"
+                "1\n"
+                "Variational bounds provide tractable and state-of-the-art ob-\n"
+                "jectives for training deep generative models (Kingma &\n"
+                "Welling, 2014; Rezende et al., 2014). Typically taking the\n\n"
+                "1\n"
+                "      Department of Statistics, University of Oxford 2 Department\n"
+                "of Engineering, University of Oxford. Correspondence to: Tom\n\n"
+                "Proceedings of the 35 th International Conference on Machine\n")
+        got = pa.extract(text, ["Tom Rainforth", "Adam Kosiorek"])["affiliations"]
+        self.assertEqual(got[0], ["Department of Statistics, University of Oxford"])
+        self.assertEqual(got[1], ["Department of Statistics, University of Oxford",
+                                  "Department of Engineering, University of Oxford"])
+
+    def test_work_was_done_footnote_is_noise(self):
+        self.assertTrue(pa._NOISE.search("Part of his work was done before joining Tencent"))
+
+    def test_pmlr_key_printed_under_its_text_and_raised_first_line(self):
+        # ICML 2022 kirchmeyer22a: "1" is raised over the first line, which
+        # starts a little in; "2" sits on its own line under "Criteo".
+        lines = [" Generalizing to New Physical Systems", "", "                     Matthieu Kirchmeyer 1 2 * Yuan Yin 1 *",
+                 "                     Jeremie Dona Rakotomamonjy 2 3", "", "", "x",
+                 "   *",
+                 "    Equal contribution  1",
+                 "                         CNRS-ISIR, Sorbonne University,          tions change with initial conditions",
+                 "Paris, France Criteo AI Lab, Paris, France 3 Universite de",
+                 "              2",
+                 "",
+                 "Rouen, LITIS, France. Correspondence to: Matthieu Kirch-          Thus any ML framework",
+                 "meyer <matthieu.kirchmeyer@sorbonne-universite.fr>, Yuan          consider other assumptions.",
+                 "Proceedings of the 39 th International Conference on Machine      a different distribution.",
+                 "Learning, Baltimore, Maryland, USA, PMLR 162, 2022. Copy-"]
+        entries = pa._footnote_legend(lines, {"1", "2", "3"})
+        got = {e["mark"]: pa._clean_affiliation("".join(e["parts"])) for e in entries}
+        self.assertEqual(got["1"], "CNRS-ISIR, Sorbonne University, Paris, France")
+        self.assertEqual(got["2"], "Criteo AI Lab, Paris, France")
+
+    def test_one_centred_stack_under_several_names_is_shared(self):
+        text = ("    How Deep is the Feature Analysis\n\n\n"
+                "                       Sven Eberhardt∗         Jonah Cader∗         Thomas Serre\n"
+                "                       Department of Cognitive Linguistic & Psychological Sciences\n"
+                "                                   Brown Institute for Brain Sciences\n"
+                "                                         Brown University\n"
+                "                                        Providence, RI 02818\n"
+                "                          {sven2,jonah_cader,thomas_serre}@brown.edu\n\n\n"
+                "                                                 Abstract\n")
+        got = pa.extract(text, ["Sven Eberhardt", "Jonah Cader", "Thomas Serre"])["affiliations"]
+        one = ["Department of Cognitive Linguistic & Psychological Sciences, Brown Institute for Brain Sciences, "
+               "Brown University, Providence, RI 02818"]
+        self.assertEqual(got, [one, one, one])
+
+    def test_keyed_list_is_not_a_shared_stack(self):
+        text = ("   A Title\n\n Yixiang Shan, Zhengbang Zhu, Ting Long\n"
+                " 1\n   Jilin University, 2 Shanghai Jiao Tong University\n\n\nAbstract\n")
+        self.assertIsNone(pa._shared_block(text.split("\n"), [(3, 1, 14), (3, 16, 30)]))
+
+    def test_legend_columns_continue_under_their_own_entry(self):
+        text = ("Contextual semibandits via supervised learning oracles\n\n"
+                "       Akshay Krishnamurthy†             Alekh Agarwal‡                 Miroslav Dudík‡\n"
+                "       akshay@cs.umass.edu            alekha@microsoft.com           mdudik@microsoft.com\n"
+                "            †\n"
+                "                College of Information and Computer Sciences         ‡\n"
+                "                                                                         Microsoft Research\n"
+                "                 University of Massachusetts, Amherst, MA                 New York, NY\n\n\n"
+                "                                              Abstract\n")
+        got = pa.extract(text, ["Akshay Krishnamurthy", "Alekh Agarwal", "Miroslav Dudik"])["affiliations"]
+        self.assertEqual(got[0], ["College of Information and Computer Sciences, University of Massachusetts, Amherst, MA"])
+        self.assertEqual(got[1], ["Microsoft Research, New York, NY"])
+        self.assertEqual(got[2], ["Microsoft Research, New York, NY"])
+
+    def test_up_arrow_is_a_symbol_mark(self):
+        text = ("Coevolutionary Latent Feature Processes\n\n"
+                "       Yichen Wang⇧ , Nan Du⇤ , Rakshit Trivedi⇧ , Le Song⇧\n"
+                "                  ⇤\n                    Google Research\n"
+                "           ⇧\n             College of Computing, Georgia Institute of Technology\n\n\nAbstract\n")
+        got = pa.extract(text, ["Yichen Wang", "Nan Du", "Rakshit Trivedi", "Le Song"])["affiliations"]
+        self.assertEqual(got[1], ["Google Research"])
+        self.assertEqual(got[0], ["College of Computing, Georgia Institute of Technology"])
+
+
 if __name__ == "__main__":
     unittest.main()

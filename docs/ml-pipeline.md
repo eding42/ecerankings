@@ -127,7 +127,10 @@ deliberately credits nobody. `unresolved` decisions still count against it.
 ## Acceptance
 
 An edition stays `staged` unless every gate passes: membership discrepancy at
-most 1%, paper-specific affiliation coverage at least 90%, institution resolution
+most 1% against every official count the edition has (as for other venues, an
+official count proves the source on recent editions; an older edition from the
+same source with no published count passes and is reported `anchored: false`;
+user, 2026-11-20), paper-specific affiliation coverage at least 90%, institution resolution
 at least 95%, and extractor accuracy at least 98% on the designated image sample.
 Byline integrity, track purity, and zero profile-affiliation leakage are also
 required. Do not change thresholds or the sample to make a run pass.

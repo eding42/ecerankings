@@ -35,19 +35,20 @@ import unicodedata
 
 PDFTOTEXT = "pdftotext"
 # Bump when extraction logic changes; harvest_ml re-extracts stored text.
-EXTRACTOR_VERSION = 5
+EXTRACTOR_VERSION = 8
 
 
 _ABSTRACT = re.compile(r"^\s*A\s*B\s*S\s*T\s*R\s*A\s*C\s*T\b", re.I)
 # Any "@" marks an address line, except an all-caps name such as "CNRS@CREATE".
 _EMAIL = re.compile(r"@(?![A-Z]{2,}(?![\w.]))|^\s*[eE]-?mail")
-_NOISE = re.compile(r"(equal contribution|corresponding author|project page|code is available|https?://|github\.com|work done|denotes|∗ ?equal|contributed equally|equally contribut|project lead|\bintern(?:ship)?\b|correspondence)", re.I)
+_NOISE = re.compile(r"(equal contribution|corresponding author|project page|code is available|https?://|github\.com|work (?:\w+ ){0,2}(?:done|carried out|performed|conducted)|denotes|∗ ?equal|contributed equally|equally contribut|project lead|\bintern(?:ship)?\b|correspondence|advisory capacity)", re.I)
 # "∗ Alphabetical order" under the byline is a footnote about the names, not an
 # affiliation; as the whole text of a legend entry it labels nothing.
+_CITATION = re.compile(r"\bet al\.|\([A-Z][^()]{0,80}?,? (?:19|20)\d\d[a-z]?[;),]")
 _ORDER_NOTE = re.compile(r"^\W*(?:authors? (?:are )?(?:listed )?(?:in )?)?alphabetical(?:ly)?(?: order)?\W*$", re.I)
 # Superscript marks as pdftotext renders them. 'B' is the envelope glyph that
 # many templates use for corresponding authors; it never labels an affiliation.
-_SYMBOLS = "†‡§¶*∗♣♠♡♢♦♥⋆★☆◦•‖#°♯♮♭↿⇂⊥⊤⊣⊢∇△▽◇◆□■○●⋄⊕⊗※¤"
+_SYMBOLS = "?⇤⇧†‡§¶*∗♣♠♡♢♦♥⋆★☆◦•‖#°♯♮♭↿⇂⊥⊤⊣⊢∇△▽◇◆□■○●⋄⊕⊗※¤"
 _SYM = re.escape(_SYMBOLS)
 # A repeated symbol is its own mark: "††" labels a different affiliation
 # from "†". Matched with finditer; group(0) is the whole mark.
@@ -56,6 +57,7 @@ _MARK = r"(?:\d{1,2}|[" + _SYM + r"]+|B(?![A-Za-z]))"
 _MARK_RUN = re.compile(r"^[\s,]*(" + _MARK + r"(?:[\s,]*" + _MARK + r")*)")
 # A legend entry's mark: "1 Tencent", "1. Shanghai", "† École". Capitals
 # include accented ones.
+_AFFIL_MARK_BRACKETED = re.compile(r"(?:(?<=\s)|^)\[?(\d{1,2}|([" + _SYM + r"])\2*)\]?[.)]?\s+(?=[A-ZÀ-ÖØ-Þ])")
 _AFFIL_MARK = re.compile(r"(?:(?<=\s)|^)(\d{1,2}|([" + _SYM + r"])\2*)[.)]?\s+(?=[A-ZÀ-ÖØ-Þ])")
 # One whitespace-free run of marks ("1,2†"), as on a line of lifted superscripts.
 _MARK_GROUP = re.compile(r"^" + _MARK + r"(?:,?" + _MARK + r")*,?$")
@@ -64,6 +66,7 @@ _TRAILING_MARK = re.compile(r"(?<=[^\W\d_).])\s?(\d{1,2}|[" + _SYM + r"])(?:\s*[
 _SUBUNIT = re.compile(r"(?:graduate\s+)?(?:departments?|depts?|schools?|faculty|division|college|institute\s+(?:for|of)|"
                       r"cent(?:er|re)|lab(?:oratory)?|program(?:me)?|group)\b", re.I)
 _ORG = re.compile(r"universi|institut|college|academy|polytechni|\b[eé]cole\b|\bhochschule\b", re.I)
+_UNIV = re.compile(r"universi|\\bcollege\\b|[eé]cole\\b|polytechni|hochschule", re.I)
 _CONJ = re.compile(r"\s+(?:&|and)\s+(?=[A-ZÀ-ÖØ-Þ])")
 _FIELD = re.compile(r"(?:science|engineering|architecture|mathematics|statistics|physics|chemistry|biology|"
                     r"informatics|medicine|economics|linguistics|psychology)s?$", re.I)
@@ -159,8 +162,17 @@ def locate_authors(lines, authors, start_line=0):
 
 
 def _clean_affiliation(text):
+    # An email group's local parts ("{dipankar.das,naveen.k") are not a place.
+    if text.lstrip().startswith("{"):
+        return ""
     text = re.sub(r"\b(?:https?://|www\.)\S+", " ", text)
     text = re.sub(r"[\s,.]+\b(?:corre\b|corre-|correspond\w*|e-?mail)\b.*$", "", text, flags=re.I)
+    # A word broken across lines in a two-column footnote ("Univer- sity").
+    text = re.sub(r"(?<=[a-zà-ÿ])- (?=[a-zà-ÿ])(?!(?:and|or|und|et)\b)", "", text)
+    # PMLR's first-page footer runs on after the last footnote entry.
+    text = re.sub(r"[\s,.]*\bProceedings of the(?: \d+\s*(?:st|nd|rd|th)\b.*)?$", "", text, flags=re.I)
+    # ...and a "Correspondence to" broken at the line end ("USA. Cor-").
+    text = re.sub(r"[\s,.]+cor\w*-$", "", text, flags=re.I)
     text = re.sub(r"\s+", " ", text).strip(" ,;.")
     # Marks of the next entry left dangling at the end ("...of China 1 3").
     text = re.sub(r"(?:[\s,]+(?:\d{1,2}|[" + _SYM + r"]+))+$", "", text).strip(" ,;.")
@@ -191,6 +203,16 @@ def _marks_above(lines, found, inline):
 
 def _author_marks(lines, found):
     def marks(text):
+        # A range of numeric marks ("1-3", "4–6") names every mark in it;
+        # only the marks before the next word are this author's.
+        cut = re.search(r"[A-Za-z]", text)
+        head, rest = (text[:cut.start()], text[cut.start():]) if cut else (text, "")
+        head = re.sub(r"(\d{1,2})\s*[-–]\s*(\d{1,2})(?!\d)",
+                      lambda r: ",".join(str(i) for i in range(int(r.group(1)), int(r.group(2)) + 1))
+                      if 0 < int(r.group(2)) - int(r.group(1)) < 10 else r.group(0), head)
+        # Bracketed keys: "[1],[2]".
+        head = re.sub(r"\[(\d{1,2})\]", r"\1", head)
+        text = head + rest
         m = _MARK_RUN.match(text)
         return [t.group(0) for t in _MARK_TOKEN.finditer(m.group(1)) if t.group(0) != "B"] if m else []
 
@@ -209,7 +231,7 @@ def _author_marks(lines, found):
     return inline
 
 
-def _legend(lines, start, name_lines, used):
+def _legend(lines, start, name_lines, used, brackets=True):
     """Read the keyed affiliation list below line `start`.
 
     Returns (entries, last_line). An entry is {"mark", "parts", "col", "own",
@@ -256,11 +278,22 @@ def _legend(lines, start, name_lines, used):
             line = line[:dangling.start()]
         segs = segments(line)
         starts = []
+        first_col = min((c for _, c in pending), default=None)
         for mark, col in pending if segs else ():
+            inside = None if brackets or col == first_col else next(
+                (sg for sg in segs if sg[0] + 10 < col < sg[1]), None)
+            if inside:
+                # The mark sits over the middle of a run-together line
+                # ("School of Computing, Utah Scientific Computing"): the
+                # entry starts at the word under it.
+                bounds = [q for q in range(inside[0] + 1, inside[1]) if line[q - 1] == " " and line[q] != " "]
+                q = min(bounds, key=lambda b: abs(b - col)) if bounds else inside[0]
+                starts.append((q, q, mark))
+                continue
             seg = min(segs, key=lambda s: (s[0] < col - 2, abs(s[0] - col)))
             starts.append((seg[0], seg[0], mark))
         pending = []
-        for hit in _AFFIL_MARK.finditer(line):
+        for hit in (_AFFIL_MARK_BRACKETED if brackets else _AFFIL_MARK).finditer(line):
             if is_mark(hit.group(1)):
                 starts.append((hit.start(), hit.end(), hit.group(1)))
         starts.sort()
@@ -273,6 +306,11 @@ def _legend(lines, start, name_lines, used):
             elif not starts and len(segs) >= 2 and len(segs) == len(row) and row_line == li - 1:
                 for (_, _, text), entry in zip(segs, row):
                     entry["parts"].append(", " + text)
+            elif not starts and len(segs) >= 2 and _under_entries(segs, entries):
+                # Several columns of continuation, each under the entry whose
+                # text starts at the same column.
+                for sg, entry in _under_entries(segs, entries):
+                    entry["parts"].append(", " + sg[2])
             else:
                 entries[-1]["parts"].append(" " + lead.strip())
                 if not starts:
@@ -294,6 +332,22 @@ def _legend(lines, start, name_lines, used):
         elif dangling and entries and not muted:
             entries[-1]["parts"].append(dangling.group(0).rstrip())
     return entries, last
+
+
+def _under_entries(segs, entries):
+    """Pair each text segment with the one entry that starts at its column
+    (within 3), or return None unless every segment finds its own entry."""
+    pairs, taken = [], set()
+    for sg in segs:
+        # Prose, not a figure label or stray glyph.
+        if not re.match(r"[A-Z][A-Za-z]*[ ,]", sg[2] + " ") or len(re.findall(r"[A-Za-z]", sg[2])) < 6 or _NOISE.search(sg[2]):
+            return None
+        near = [e for e in entries if abs(e["col"] - sg[0]) <= 3 and id(e) not in taken]
+        if len(near) != 1:
+            return None
+        taken.add(id(near[0]))
+        pairs.append((sg, near[0]))
+    return pairs
 
 
 def _trailing_legend(lines, start, name_lines, used):
@@ -357,6 +411,7 @@ def _footnote_legend(all_lines, used):
         if re.search(r"Proceedings of.*?Machine Learning|PMLR \d+|Copyright \d{4} by the author", l, re.I):
             proc_idx = i
             break
+    pmlr = proc_idx is not None
     if proc_idx is None:
         proc_idx = len(all_lines)
 
@@ -367,10 +422,23 @@ def _footnote_legend(all_lines, used):
         c1 = ""
         if segs and segs[0][0] < 20:
             if len(segs) > 1:
-                c1 = line[:segs[1][0]].rstrip()
+                # Everything in the left column; the right column starts
+                # past its middle.
+                right = next((sg[0] for sg in segs[1:] if sg[0] >= 60), None)
+                c1 = (line[:right] if right is not None else line).rstrip() if pmlr else line[:segs[1][0]].rstrip()
             else:
                 if segs[0][1] < 68 or "Correspondence to" in segs[0][2] or any(m in segs[0][2] for m in used):
                     c1 = segs[0][2]
+        # A lone mark over the middle of the left column keys the text below.
+        if pmlr and not c1 and segs and segs[0][0] < 60 and _MARK_GROUP.match(segs[0][2]):
+            c1 = line[:segs[0][1]]
+        # The first line of a footnote entry can start a little past the left
+        # margin when the key above it is raised (key on the line above, at
+        # the column where the entry's text begins).
+        if pmlr and not c1 and segs and 20 <= segs[0][0] < 40 and j > 0:
+            above = [(w.start(), w.group()) for w in re.finditer(r"\S+", all_lines[j - 1]) if w.start() < 40]
+            if above and above[-1][1] in used and segs[0][0] - 4 <= above[-1][0] <= segs[0][0]:
+                c1 = segs[0][2] if len(segs) == 1 else line[:segs[1][0]].rstrip()
         col1.append((j, c1))
 
     fn_start = None
@@ -381,13 +449,50 @@ def _footnote_legend(all_lines, used):
             continue
         if re.match(r"^\d+\.?\s*(?:Introduction|Background|Preliminaries)\b", stripped, re.I):
             break
+        # The heading's number and word can fall in different column segments.
+        if pmlr and re.match(r"^\s*\d+\.?\s+(?:Introduction|Background|Preliminaries|Related Work|Motivation)\b",
+                             all_lines[col1[idx][0]], re.I):
+            break
         is_mark_start = any(re.match(r"^" + re.escape(m) + r"(\b|[.)\s])", stripped) for m in used | {"*", "†"})
         is_note_start = bool(re.match(r"^(?:Equal contribution|Work done|Preprint)", stripped, re.I))
+        # A numbered list item ("2. Z should be ...") above the footnote is
+        # body text.
+        if pmlr and fn_start is not None and re.match(r"^\d+\.\s+\S", stripped):
+            break
         if is_mark_start or is_note_start:
+            # A start whose text runs into citations is a section number over
+            # body text ("1" of "1. Introduction"), not the footnote.
+            if fn_start is not None and _CITATION.search(" ".join(t for _, t in col1[idx:fn_start])):
+                break
             fn_start = idx
 
     if fn_start is None:
         return []
+
+    # A key printed on its own line right under the text it labels sits at the
+    # column where that text's first word starts; put it back before the word.
+    if pmlr:
+        for n in range(fn_start + 1, len(col1)):
+            j, text = col1[n]
+            pj, ptext = col1[n - 1]
+            if not text.strip() or j != pj + 1 or not ptext.strip():
+                continue
+            segs = segments(all_lines[j])
+            if len(segs) != 1 or segs[0][2].strip() not in used:
+                continue
+            col = segs[0][0]
+            # A mark just above the start of the next line keys that line.
+            nxt = all_lines[j + 1] if j + 1 < len(all_lines) else ""
+            below = next((all_lines[jj] for jj, t in col1[n + 1:n + 4] if t.strip()), "")
+            if (any(col - 1 <= w.start() <= col + 5 for w in re.finditer(r"\S+", nxt))
+                    or col - 1 <= len(below) - len(below.lstrip()) <= col + 5):
+                continue
+            at = next((c for c in (col, col - 1, col + 1)
+                       if 0 < c < len(ptext) and ptext[c:c + 1].strip() and ptext[c - 1:c] == " "), None)
+            if at is None:
+                continue
+            col1[n - 1] = (pj, ptext[:at] + segs[0][2].strip() + " " + ptext[at:])
+            col1[n] = (j, "")
 
     cleaned_fn = []
     for _, text in col1[fn_start:]:
@@ -401,32 +506,68 @@ def _footnote_legend(all_lines, used):
 
 
     dummy = [""] + cleaned_fn
-    entries, _ = _legend(dummy, 0, set(), used)
+    # Bracketed numbers at the page bottom are citations, not keys.
+    entries, _ = _legend(dummy, 0, set(), used, brackets=False)
     entries = [e for e in entries if not e["noise"]]
     _share_parent(entries)
     return entries
 
 
-def parse_markers(lines, authors, found, all_lines=None):
+def _name_groups(lines, found):
+    """Split the located authors where a keyed legend sits between two name
+    lines: a line holding only a mark, followed by unmarked text.
+    Returns a list of sets of author indices."""
+    name_lines = sorted({f[0] for f in found if f})
+    groups, current = [], {name_lines[0]}
+    for a, b in zip(name_lines, name_lines[1:]):
+        between = [lines[i] for i in range(a + 1, b) if lines[i].strip()]
+        legend = any(all(_MARK_GROUP.match(x) for x in t.split()) and n + 1 < len(between)
+                     and not _EMAIL.search(between[n + 1]) for n, t in enumerate(between))
+        if legend:
+            groups.append(current); current = set()
+        current.add(b)
+    groups.append(current)
+    return [{k for k, f in enumerate(found) if f and f[0] in g} for g in groups]
+
+
+def parse_markers(lines, authors, found, all_lines=None, _stops=None):
     """Superscript layout. Returns ({author_index: [affiliation, ...]}, last
     legend line) or (None, None)."""
     located = [f for f in found if f]
     if not located:
         return None, None
+    groups = _name_groups(lines, found) if _stops is None else [set()]
+    if len(groups) > 1:
+        # Each group of names keys its own legend, printed under it
+        # (names, legend, names, legend). Read them one at a time; an author
+        # whose group has no legend of its own falls back to the whole-block
+        # reading.
+        stops = {f[0] for f in located}
+        result, last = parse_markers(lines, authors, found, all_lines, stops)
+        result, last = dict(result or {}), last
+        for ks in groups:
+            part, end = parse_markers(lines, authors, [f if k in ks else None for k, f in enumerate(found)],
+                                      all_lines, stops)
+            if part:
+                result.update(part)
+                last = max(last or 0, end)
+        return (result, last) if result else (None, None)
     marks_by_author = _author_marks(lines, found)
     marked = [k for k, v in marks_by_author.items() if v]
     if len(marked) < max(1, len(located) // 2):
         return None, None
-    name_lines = {f[0] for f in located}
+    name_lines = {f[0] for f in located} | (_stops or set())
     start = max(found[k][0] for k in marked) if marked else max(f[0] for f in located)
     used = {m for marks in marks_by_author.values() for m in marks}
     entries, last = _legend(lines, start, name_lines, used)
     entries = [e for e in entries if not e["noise"] and not _ORDER_NOTE.match("".join(e["parts"]))]
     if not entries:
         entries, last = _trailing_legend(lines, start, name_lines, used)
+    from_footnote = False
     if not entries and all_lines:
         entries = _footnote_legend(all_lines, used)
         last = len(lines)
+        from_footnote = True
     _share_parent(entries)
     affiliations = {}
     for entry in entries:
@@ -437,11 +578,19 @@ def parse_markers(lines, authors, found, all_lines=None):
         return None, None
     result = {}
     for k, marks in marks_by_author.items():
+        # Superscripts set without a separator ("Grant12") are one key per
+        # digit when the legend has no key "12".
+        marks = [d for m in marks for d in (m if m.isdigit() and len(m) > 1 and m not in affiliations
+                                             and not any(len(a) > 1 and a.isdigit() for a in affiliations)
+                                             and all(c in affiliations for c in m) else [m])]
         values = [affiliations[m] for m in marks if m in affiliations]
         if values:
             result[k] = list(dict.fromkeys(values))
-    # One affiliation, no marks on names: everyone shares it.
-    if not result and len(affiliations) == 1:
+    # One affiliation, no marks on names: everyone shares it. Not from a
+    # page-bottom footnote, where an unkeyed line is usually body text.
+    lone = next(iter(affiliations))
+    if (not result and len(affiliations) == 1 and not from_footnote
+            and not (lone.isdigit() and any(m.isdigit() for m in used))):
         only = next(iter(affiliations.values()))
         result = {k: [only] for k in marks_by_author}
     return result, last
@@ -492,7 +641,51 @@ def parse_columns(lines, authors, found):
         values = [v for v in (_clean_affiliation(v) for v in _split_block(collected)) if v]
         if values:
             result[k] = values
+    shared = _shared_block(lines, found)
+    if shared:
+        result = {k: list(shared) for k, f in enumerate(found) if f}
     return result
+
+
+def _shared_block(lines, found):
+    """Several names on one line over a single centred stack of lines, one
+    of which reaches under every name: the stack is everyone's affiliation.
+    Returns its (single) affiliation or None."""
+    located = [f for f in found if f]
+    if len(located) < 2 or len({f[0] for f in located}) != 1:
+        return None
+    li = located[0][0]
+    spans = []
+    for _, start, _ in located:
+        seg = next(((s, e) for s, e, _ in segments(lines[li]) if s <= start < e + 1), None)
+        if not seg:
+            return None
+        spans.append(seg)
+    collected, widest = [], []
+    for lj in range(li + 1, min(len(lines), li + 9)):
+        line = lines[lj]
+        if not line.strip():
+            if collected:
+                break
+            continue
+        segs = segments(line)
+        text = " ".join(t for _, _, t in segs)
+        if _EMAIL.search(text):
+            break
+        if len(segs) != 1:
+            return None
+        if _NOISE.search(text):
+            continue
+        # A keyed list ("1 Jilin University, 2 Shanghai ...") is not a shared stack.
+        if re.match(r"\s*(?:\d{1,2}|[*†‡§¶⋆])(?:\s|$)", text) or re.search(r"\s\d{1,2}\s+[A-Z]", text):
+            return None
+        collected.append(text)
+        s0, e0, _ = segs[0]
+        widest.append(all(s0 <= e and e0 >= s for s, e in spans))
+    if not collected or not any(widest):
+        return None
+    values = [v for v in (_clean_affiliation(v) for v in _split_block(collected)) if v]
+    return values if len(values) == 1 else None
 
 
 def _split_block(block_lines):
@@ -511,7 +704,12 @@ def _split_block(block_lines):
         if m and _standalone(line[:m.start()].split(",")[-1], named=False) and _standalone(line[m.end():].split(",")[0]):
             pieces = [line[:m.start()], line[m.end():]]
         lead = re.match(r"(?:&|and)\s+", pieces[0])
-        if out and not (lead and _standalone(pieces[0][lead.end():].split(",")[0])):
+        # A line that names a university under a line that already does is
+        # a second affiliation ("Dept. of EECS, UC Berkeley" / "Dept. of
+        # Psychology, UC Berkeley"), not a continuation.
+        stacked = (out and _UNIV.search(out[-1]) and _UNIV.search(pieces[0]) and "," in pieces[0]
+                   and not re.match(r"\s*University Park\b", pieces[0]))
+        if out and not stacked and not (lead and _standalone(pieces[0][lead.end():].split(",")[0])):
             out[-1] += ", " + pieces.pop(0)
         out.extend(pieces)
     return out

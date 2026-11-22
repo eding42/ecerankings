@@ -180,9 +180,11 @@ for _year, _volume in PMLR_ICML_VOLUMES.items():
         "volume": _volume,
         "include_tracks": ["Conference"],
         "s2_venue": "ICML",
-        "expected": ([{"count": 3260, "scope": "included",
+        "expected": ([{"count": 3333, "scope": "included",
                        "source": "https://media.icml.cc/Conferences/ICML2025/ICML2025_Fact_Sheet.pdf",
-                       "note": "Main-track accepts; PMLR v267 lists 3,330 entries with no track label. Reconcile before gating."}]
+                       "note": "3,260 main-track papers plus 73 position papers. PMLR v267 prints both with no track "
+                               "label (its 73 'Position:' titles); position papers count, as they do in ICML 2024's "
+                               "volume and anchor."}]
                      if _year == 2025 else
                      [{"count": 2600, "scope": "included",
                        "source": "https://media.icml.cc/Conferences/ICML2024/ICML2024_Fact_Sheet.pdf",
@@ -1554,9 +1556,14 @@ def compute_gates(ed, works):
     gates["membership"] = {
         "anchors": anchors,
         "rows_without_membership_or_allowed_track": bad_scope,
-        "pass": bool(included_anchors) and bad_scope == 0 and
+        # As for every other venue, an official count proves the source on
+        # recent editions; older editions from the same source need no count
+        # of their own. A count that exists must still reconcile.
+        "anchored": bool(included_anchors),
+        "pass": bad_scope == 0 and
                 all(a["rel_diff"] <= GATES["membership_unexplained_diff_max"] for a in included_anchors),
-        "note": "No included-track anchor configured; membership cannot pass." if not included_anchors else None,
+        "note": "No official count for this edition; membership rests on the source proven on anchored editions."
+                if not included_anchors else None,
     }
     aff_rate = with_aff / slots if slots else 0.0
     gates["paper_specific_affiliations"] = {
