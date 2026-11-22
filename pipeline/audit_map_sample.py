@@ -242,7 +242,7 @@ def cmd_draw(args):
     index = adjudication.load_index()
     with open(MAP_CSV, newline="", encoding="utf8") as handle:
         rows = list(csv.DictReader(handle))
-    _, share = adjudication.string_weights([os.path.join(REPO_ROOT, "cache")])
+    _, share = adjudication.string_weights(args.cache_dir or [os.path.join(REPO_ROOT, "cache")])
     sample, pool_sizes = draw_sample(rows, share, index, args.size, args.seed)
     out = args.out or os.path.join(DEFAULT_OUT, f"seed-{args.seed}")
     batches = write_sample(out, sample, {"seed": args.seed, "size": args.size, "pools": pool_sizes,
@@ -263,7 +263,7 @@ def cmd_score(args):
     missing = len(sample["items"]) - len(outcomes)
     with open(MAP_CSV, newline="", encoding="utf8") as handle:
         rows = list(csv.DictReader(handle))
-    _, share = adjudication.string_weights([os.path.join(REPO_ROOT, "cache")])
+    _, share = adjudication.string_weights(args.cache_dir or [os.path.join(REPO_ROOT, "cache")])
     credited_total = sum(share.get(r["raw_affiliation"], 0.0) for r in rows if accepted_education(r))
     report, failing = render_report(sample, per_stratum, outcomes, args.seed, credited_total, args.max_error)
     os.makedirs(REPORT_DIR, exist_ok=True)
@@ -298,9 +298,13 @@ def main():
     d.add_argument("--seed", type=int, required=True)
     d.add_argument("--size", type=int, default=300)
     d.add_argument("--out")
+    d.add_argument("--cache-dir", action="append",
+                   help="weight strings by the credit in this cache (repeatable; default: cache/). "
+                        "A staged cache audits the strings a candidate adds.")
     s = sub.add_parser("score")
     s.add_argument("--seed", type=int, required=True)
     s.add_argument("--out")
+    s.add_argument("--cache-dir", action="append", help="same cache(s) the sample was drawn from")
     s.add_argument("--max-error", type=float, default=MAX_ERROR_DEFAULT)
     s.add_argument("decisions", nargs="*", help="decision JSON files or globs (default: <out>/decisions-*.json)")
     args = parser.parse_args()

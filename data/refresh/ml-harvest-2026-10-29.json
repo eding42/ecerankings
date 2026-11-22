@@ -5,7 +5,7 @@
     "institution_resolution_min": 0.95,
     "membership_unexplained_diff_max": 0.01
   },
-  "generated_at": "2026-11-21T18:33:41Z",
+  "generated_at": "2026-11-22T20:46:40Z",
   "membership_semantics": "Rows come only from the publisher's official edition list; track filter applied at build.",
   "provider": "harvest_ml.py",
   "results": [
@@ -14,7 +14,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 7,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -23,11 +23,11 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 792,
-          "pdf_slots_resolved": 785,
-          "rate": 0.9912,
-          "resolved_via_affiliation_map": 701,
+          "pdf_slots_resolved": 783,
+          "rate": 0.9887,
+          "resolved_via_affiliation_map": 699,
           "slots_resolved_or_classified_noncredit": 785,
-          "slots_with_affiliation": 792,
+          "slots_with_affiliation": 794,
           "slots_with_education_institution": 475,
           "slots_with_institution": 701,
           "threshold": 0.95
@@ -42,17 +42,17 @@
         "paper_specific_affiliations": {
           "author_slots": 798,
           "papers": 198,
-          "papers_any_coverage": 196,
-          "papers_fully_covered": 196,
+          "papers_any_coverage": 197,
+          "papers_fully_covered": 197,
           "pass": true,
-          "rate": 0.9925,
-          "slots_with_affiliation": 792,
+          "rate": 0.995,
+          "slots_with_affiliation": 794,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 174,
-            "none": 7,
+            "high": 173,
+            "none": 8,
             "partial": 17
           },
           "credited_confidence_levels": [
@@ -60,24 +60,24 @@
           ],
           "papers_extracted": 198,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 82,
           "prefer_pdf": true,
-          "review_queue": 24,
+          "review_queue": 25,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2017/pdf-review.jsonl",
-          "slots_from_image": 149,
+          "slots_from_image": 151,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9829,
-          "extractor_slots_correct": 172,
+          "conflict_papers_checked": 15,
+          "extractor_accuracy": 0.9835,
+          "extractor_slots_correct": 179,
           "extractor_slots_wrong": 3,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 24,
+          "review_papers_read_from_image": 25,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -100,35 +100,62 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2017/conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2017/works.jsonl",
-      "sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57",
+      "sha256": "11307b72757fd29d53dc097047180902424377b139cf4759f139f093f681fd23",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 198,
+            "evidence:none": 12,
+            "evidence:openalex-arxiv-doi": 161,
+            "evidence:openalex-title-match": 25,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 6,
-            "slot_source:publisher-pdf": 643,
-            "slot_source:publisher-pdf-image": 149,
+            "pdf_openalex_conflict_slots": 82,
+            "rejected_candidates": 11,
+            "slot_source:none": 4,
+            "slot_source:openalex-arxiv-doi": 2,
+            "slot_source:publisher-pdf": 641,
+            "slot_source:publisher-pdf-image": 151,
             "works": 198
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:30Z",
-          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:5c83342ab830b2260a136660e4e6c836df65580e8a2b2928c818e9a83fd6026d:None:4cbf0656821d3a011a467ec1e3eb357ab7b76c70513c4e6fac693341cd08b8ee:3c11e34d0c42081b20ee6efd287abb9eff09c73bc8420c85584581b0179c935f:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57"
+          "finished_at": "2026-11-22T20:46:30Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:c4736d1cd8c60e609f5cb8eb3cc1aa46ac3626a172927efc33ba0f84a058f22a:bf5e8b3b5786c0df2ae257f4bc2d2830ea83b1b1ee04c1592ad3700db2c32717:a477ac12cab5a27a970e9ada89911f25ffb7905f9be9b1348fad1fdfd8d1d09c:f4b787ede3b226d75160ab5dfbaa5c655e16dc1d4f47944d2e8086b47a1ef19c:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "11307b72757fd29d53dc097047180902424377b139cf4759f139f093f681fd23"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 39,
+            "none:arxiv-api": 2,
+            "ok:openalex-title": 157,
+            "openalex_title_calls": 16,
+            "papers": 198,
+            "with_identifier": 196
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:33:09Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1"
+        },
+        "enrich": {
+          "counts": {
+            "doi_ok": 39,
+            "dois_already_queried": 0,
+            "dois_wanted": 39,
+            "list_calls": 1,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:33:10Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:c4736d1cd8c60e609f5cb8eb3cc1aa46ac3626a172927efc33ba0f84a058f22a"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:31Z",
+          "finished_at": "2026-11-22T20:46:31Z",
           "gates_passed": true,
-          "input_sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57"
+          "input_sha256": "11307b72757fd29d53dc097047180902424377b139cf4759f139f093f681fd23"
         },
         "membership": {
           "counts": {
@@ -144,21 +171,21 @@
         "pdf": {
           "counts": {
             "already_fetched": 198,
-            "confidence:high": 174,
-            "confidence:none": 7,
+            "confidence:high": 173,
+            "confidence:none": 8,
             "confidence:partial": 17,
             "extracted": 198,
-            "layout:columns": 153,
-            "layout:markers": 45,
+            "layout:columns": 152,
+            "layout:markers": 46,
             "papers": 198,
-            "review_queue": 24
+            "review_queue": 25
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:09Z",
-          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:extractor-v5"
+          "finished_at": "2026-11-22T19:59:15Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 198,
       "year": 2017
@@ -168,7 +195,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 18,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -178,12 +205,12 @@
           "pass": true,
           "pdf_slots": 1381,
           "pdf_slots_resolved": 1357,
-          "rate": 0.9826,
+          "rate": 0.9829,
           "resolved_via_affiliation_map": 1182,
-          "slots_resolved_or_classified_noncredit": 1357,
-          "slots_with_affiliation": 1381,
-          "slots_with_education_institution": 817,
-          "slots_with_institution": 1182,
+          "slots_resolved_or_classified_noncredit": 1377,
+          "slots_with_affiliation": 1401,
+          "slots_with_education_institution": 825,
+          "slots_with_institution": 1202,
           "threshold": 0.95
         },
         "membership": {
@@ -196,11 +223,11 @@
         "paper_specific_affiliations": {
           "author_slots": 1418,
           "papers": 337,
-          "papers_any_coverage": 331,
-          "papers_fully_covered": 329,
+          "papers_any_coverage": 334,
+          "papers_fully_covered": 333,
           "pass": true,
-          "rate": 0.9739,
-          "slots_with_affiliation": 1381,
+          "rate": 0.988,
+          "slots_with_affiliation": 1401,
           "threshold": 0.9
         },
         "pdf_evidence": {
@@ -214,7 +241,7 @@
           ],
           "papers_extracted": 337,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 160,
           "prefer_pdf": true,
           "review_queue": 53,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2018/pdf-review.jsonl",
@@ -254,35 +281,66 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2018/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2018/works.jsonl",
-      "sha256": "920582147a4b338538e0f2580fed12cfd83e5371c63e37ace7b2fd0b885c6f75",
+      "sha256": "023c4bf96bebe5249dd0412087bab92c50b8b9b914d30b34e08b88df419cb534",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 337,
+            "evidence:none": 37,
+            "evidence:openalex-arxiv-doi": 255,
+            "evidence:openalex-title-match": 45,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 37,
+            "pdf_openalex_conflict_slots": 160,
+            "rejected_candidates": 30,
+            "slot_source:none": 17,
+            "slot_source:openalex-arxiv-doi": 14,
+            "slot_source:openalex-title-match": 6,
             "slot_source:publisher-pdf": 1104,
             "slot_source:publisher-pdf-image": 277,
             "works": 337
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:40Z",
-          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:None:None:44799c678786c3e490af075111b204a05f74555f5323009a81a9083c9348dd20:90e7e0d595150b7711109a60293610f67839aa500c85b6c4e025f066dd095be1:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "920582147a4b338538e0f2580fed12cfd83e5371c63e37ace7b2fd0b885c6f75"
+          "finished_at": "2026-11-22T20:46:31Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:3effedae2289dbebd4af2c2cee79be224bf1d113064ec49b4f1855e1081f4b0e:665a8dff6ea76dfc61523ceb900f1ad2849d78e2e182c8486ad417d8a7142fd6:44799c678786c3e490af075111b204a05f74555f5323009a81a9083c9348dd20:90e7e0d595150b7711109a60293610f67839aa500c85b6c4e025f066dd095be1:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "023c4bf96bebe5249dd0412087bab92c50b8b9b914d30b34e08b88df419cb534"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 10,
+            "ok:arxiv-api": 2,
+            "ok:openalex-title": 227,
+            "ok:s2-bulk": 98,
+            "openalex_title_calls": 24,
+            "papers": 337,
+            "with_identifier": 327
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:33:55Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 2,
+            "doi_ok": 98,
+            "dois_already_queried": 0,
+            "dois_wanted": 100,
+            "list_calls": 1,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:33:55Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:3effedae2289dbebd4af2c2cee79be224bf1d113064ec49b4f1855e1081f4b0e"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:40Z",
+          "finished_at": "2026-11-22T20:46:32Z",
           "gates_passed": true,
-          "input_sha256": "920582147a4b338538e0f2580fed12cfd83e5371c63e37ace7b2fd0b885c6f75"
+          "input_sha256": "023c4bf96bebe5249dd0412087bab92c50b8b9b914d30b34e08b88df419cb534"
         },
         "membership": {
           "counts": {
@@ -313,7 +371,7 @@
           "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 337,
       "year": 2018
@@ -323,7 +381,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 23,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -333,12 +391,12 @@
           "pass": true,
           "pdf_slots": 2095,
           "pdf_slots_resolved": 2063,
-          "rate": 0.9847,
+          "rate": 0.9849,
           "resolved_via_affiliation_map": 1857,
-          "slots_resolved_or_classified_noncredit": 2063,
-          "slots_with_affiliation": 2095,
-          "slots_with_education_institution": 1345,
-          "slots_with_institution": 1857,
+          "slots_resolved_or_classified_noncredit": 2094,
+          "slots_with_affiliation": 2126,
+          "slots_with_education_institution": 1367,
+          "slots_with_institution": 1888,
           "threshold": 0.95
         },
         "membership": {
@@ -351,11 +409,11 @@
         "paper_specific_affiliations": {
           "author_slots": 2145,
           "papers": 502,
-          "papers_any_coverage": 492,
-          "papers_fully_covered": 490,
+          "papers_any_coverage": 498,
+          "papers_fully_covered": 495,
           "pass": true,
-          "rate": 0.9767,
-          "slots_with_affiliation": 2095,
+          "rate": 0.9911,
+          "slots_with_affiliation": 2126,
           "threshold": 0.9
         },
         "pdf_evidence": {
@@ -369,7 +427,7 @@
           ],
           "papers_extracted": 502,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 190,
           "prefer_pdf": true,
           "review_queue": 80,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2019/pdf-review.jsonl",
@@ -409,35 +467,65 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2019/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2019/works.jsonl",
-      "sha256": "744308d8e6ce68d12bd0c32207eb695b1db786e38e77601db51c53964a33a706",
+      "sha256": "d3897be2b404e5bdc9aeee6fd07165b24e43b026b3b4bb94015e41c479f494d1",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 502,
+            "evidence:none": 56,
+            "evidence:openalex-arxiv-doi": 367,
+            "evidence:openalex-title-match": 79,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 50,
+            "pdf_openalex_conflict_slots": 190,
+            "rejected_candidates": 37,
+            "slot_source:none": 19,
+            "slot_source:openalex-arxiv-doi": 31,
             "slot_source:publisher-pdf": 1654,
             "slot_source:publisher-pdf-image": 441,
             "works": 502
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:40Z",
-          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:None:None:4352b4d37cce5617b09c42c87df40049b737e3dd572932352099f7789deaedfb:3982a58893370dd205499858a80bd1338e3b96f5d6531c84f482dd0712293175:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "744308d8e6ce68d12bd0c32207eb695b1db786e38e77601db51c53964a33a706"
+          "finished_at": "2026-11-22T20:46:32Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:24821abda38e4a3bf5b03684ca111b09956019e85b4253de10ae5b1f987c6ae7:affe7c8ea1ed0cc5167b69f8fd9cf1faa3a56fc30961a524cdb0fe9ec5ce4327:4352b4d37cce5617b09c42c87df40049b737e3dd572932352099f7789deaedfb:3982a58893370dd205499858a80bd1338e3b96f5d6531c84f482dd0712293175:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "d3897be2b404e5bdc9aeee6fd07165b24e43b026b3b4bb94015e41c479f494d1"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 16,
+            "ok:arxiv-api": 5,
+            "ok:openalex-title": 363,
+            "ok:s2-bulk": 118,
+            "openalex_title_calls": 39,
+            "papers": 502,
+            "with_identifier": 486
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:34:52Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 8,
+            "doi_ok": 115,
+            "dois_already_queried": 0,
+            "dois_wanted": 123,
+            "list_calls": 2,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:34:53Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:24821abda38e4a3bf5b03684ca111b09956019e85b4253de10ae5b1f987c6ae7"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:41Z",
+          "finished_at": "2026-11-22T20:46:33Z",
           "gates_passed": true,
-          "input_sha256": "744308d8e6ce68d12bd0c32207eb695b1db786e38e77601db51c53964a33a706"
+          "input_sha256": "d3897be2b404e5bdc9aeee6fd07165b24e43b026b3b4bb94015e41c479f494d1"
         },
         "membership": {
           "counts": {
@@ -468,7 +556,7 @@
           "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 502,
       "year": 2019
@@ -478,7 +566,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 33,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -487,13 +575,13 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 3028,
-          "pdf_slots_resolved": 2912,
-          "rate": 0.9617,
-          "resolved_via_affiliation_map": 2619,
-          "slots_resolved_or_classified_noncredit": 2912,
-          "slots_with_affiliation": 3028,
-          "slots_with_education_institution": 1890,
-          "slots_with_institution": 2619,
+          "pdf_slots_resolved": 2914,
+          "rate": 0.9625,
+          "resolved_via_affiliation_map": 2621,
+          "slots_resolved_or_classified_noncredit": 2928,
+          "slots_with_affiliation": 3042,
+          "slots_with_education_institution": 1903,
+          "slots_with_institution": 2635,
           "threshold": 0.95
         },
         "membership": {
@@ -507,41 +595,41 @@
           "author_slots": 3045,
           "papers": 687,
           "papers_any_coverage": 686,
-          "papers_fully_covered": 680,
+          "papers_fully_covered": 686,
           "pass": true,
-          "rate": 0.9944,
-          "slots_with_affiliation": 3028,
+          "rate": 0.999,
+          "slots_with_affiliation": 3042,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 576,
-            "none": 27,
-            "partial": 84
+            "high": 583,
+            "none": 22,
+            "partial": 82
           },
           "credited_confidence_levels": [
             "high"
           ],
           "papers_extracted": 687,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 282,
           "prefer_pdf": true,
-          "review_queue": 111,
+          "review_queue": 104,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2020/pdf-review.jsonl",
-          "slots_from_image": 645,
+          "slots_from_image": 614,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9952,
-          "extractor_slots_correct": 207,
-          "extractor_slots_wrong": 1,
+          "conflict_papers_checked": 12,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 200,
+          "extractor_slots_wrong": 0,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 111,
+          "review_papers_read_from_image": 104,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -564,35 +652,67 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2020/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2020/works.jsonl",
-      "sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18",
+      "sha256": "c3659ab6e7c648689f28e8fd8328b1d4b76639c27f7118000ea46b74cea88e53",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 687,
+            "evidence:none": 77,
+            "evidence:openalex-arxiv-doi": 503,
+            "evidence:openalex-title-match": 107,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 17,
-            "slot_source:publisher-pdf": 2383,
-            "slot_source:publisher-pdf-image": 645,
+            "pdf_openalex_conflict_slots": 282,
+            "rejected_candidates": 54,
+            "slot_source:none": 3,
+            "slot_source:openalex-arxiv-doi": 12,
+            "slot_source:openalex-title-match": 2,
+            "slot_source:publisher-pdf": 2414,
+            "slot_source:publisher-pdf-image": 614,
             "works": 687
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:33Z",
-          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:None:None:aabdf07a33b70a120a702939ad87e57eafbe1a96238621d512ccc89865a8db3f:10880622d3200d44c1d0582abefad836d3e2cec0e031a327eb9bfb80edfd8035:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18"
+          "finished_at": "2026-11-22T20:46:33Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:ddb73db1f3acbdce7c01650a113e2ef0d17f323cae347b86a850c6912e5b86c9:5b590d6cd13a84f5c13892165c8299f0302365317f8e6c5dc4c4d85dd9d51de4:d4e77f9a81b42ef0da86b4a8b88ca1608ba706e5f015e90f98a725d202abe9ee:e6e7c4d4ed94dceb9ea1c1244b396aa1a511e3d024a3992718e349021d27f7d4:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "c3659ab6e7c648689f28e8fd8328b1d4b76639c27f7118000ea46b74cea88e53"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 24,
+            "ok:arxiv-api": 6,
+            "ok:legacy-s2-cache": 2,
+            "ok:openalex-title": 491,
+            "ok:s2-bulk": 164,
+            "openalex_title_calls": 53,
+            "papers": 687,
+            "with_identifier": 663
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:35:50Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 6,
+            "doi_ok": 166,
+            "dois_already_queried": 0,
+            "dois_wanted": 172,
+            "list_calls": 2,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:35:52Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:ddb73db1f3acbdce7c01650a113e2ef0d17f323cae347b86a850c6912e5b86c9"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:33Z",
+          "finished_at": "2026-11-22T20:46:34Z",
           "gates_passed": true,
-          "input_sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18"
+          "input_sha256": "c3659ab6e7c648689f28e8fd8328b1d4b76639c27f7118000ea46b74cea88e53"
         },
         "membership": {
           "counts": {
@@ -608,22 +728,22 @@
         "pdf": {
           "counts": {
             "already_fetched": 687,
-            "confidence:high": 576,
-            "confidence:none": 27,
-            "confidence:partial": 84,
+            "confidence:high": 583,
+            "confidence:none": 22,
+            "confidence:partial": 82,
             "extracted": 687,
             "layout:None": 5,
-            "layout:columns": 466,
-            "layout:markers": 216,
+            "layout:columns": 456,
+            "layout:markers": 226,
             "papers": 687,
-            "review_queue": 111
+            "review_queue": 104
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:10Z",
-          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:extractor-v5"
+          "finished_at": "2026-11-22T19:59:18Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 687,
       "year": 2020
@@ -633,7 +753,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 32,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -641,14 +761,14 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 3760,
-          "pdf_slots_resolved": 3580,
-          "rate": 0.9521,
-          "resolved_via_affiliation_map": 3204,
-          "slots_resolved_or_classified_noncredit": 3580,
-          "slots_with_affiliation": 3760,
-          "slots_with_education_institution": 2410,
-          "slots_with_institution": 3204,
+          "pdf_slots": 3772,
+          "pdf_slots_resolved": 3598,
+          "rate": 0.9544,
+          "resolved_via_affiliation_map": 3220,
+          "slots_resolved_or_classified_noncredit": 3643,
+          "slots_with_affiliation": 3817,
+          "slots_with_education_institution": 2455,
+          "slots_with_institution": 3265,
           "threshold": 0.95
         },
         "membership": {
@@ -670,43 +790,42 @@
         "paper_specific_affiliations": {
           "author_slots": 3830,
           "papers": 859,
-          "papers_any_coverage": 845,
-          "papers_fully_covered": 841,
+          "papers_any_coverage": 856,
+          "papers_fully_covered": 855,
           "pass": true,
-          "rate": 0.9817,
-          "slots_with_affiliation": 3760,
+          "rate": 0.9966,
+          "slots_with_affiliation": 3817,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 721,
+            "high": 730,
             "none": 38,
-            "partial": 100
+            "partial": 91
           },
           "credited_confidence_levels": [
             "high"
           ],
           "papers_extracted": 859,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 216,
           "prefer_pdf": true,
-          "review_queue": 138,
+          "review_queue": 129,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2021/pdf-review.jsonl",
-          "slots_from_image": 703,
+          "slots_from_image": 674,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9815,
-          "extractor_slots_correct": 212,
+          "conflict_papers_checked": 13,
+          "extractor_accuracy": 0.9805,
+          "extractor_slots_correct": 201,
           "extractor_slots_wrong": 4,
           "judge_model": [
-            "claude-haiku-5-5",
-            "claude-sonnet-5-5"
+            "claude-haiku-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 135,
+          "review_papers_read_from_image": 129,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -729,35 +848,67 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2021/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2021/works.jsonl",
-      "sha256": "1fb7dfe5fd8833bb4c08039ae886512297021fa2e33f7fe1825e061dbef919f7",
+      "sha256": "d5f2490e8ed53600568066e54f6914e358dd25e2521c74660d4d0a162ca9f377",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 859,
+            "evidence:none": 94,
+            "evidence:openalex-arxiv-doi": 667,
+            "evidence:openalex-title-match": 98,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 70,
-            "slot_source:publisher-pdf": 3057,
-            "slot_source:publisher-pdf-image": 703,
+            "pdf_openalex_conflict_slots": 216,
+            "rejected_candidates": 56,
+            "slot_source:none": 13,
+            "slot_source:openalex-arxiv-doi": 36,
+            "slot_source:openalex-title-match": 9,
+            "slot_source:publisher-pdf": 3098,
+            "slot_source:publisher-pdf-image": 674,
             "works": 859
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:34Z",
-          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:None:None:668d1183fc9601f350cb8a1b3a8dcb5fc474e61f4905d3a80676faa31015ddd2:c3d53305c8b89b5e5773f2699ee6ecda6594d530985b59bbe439ac658204cffb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "1fb7dfe5fd8833bb4c08039ae886512297021fa2e33f7fe1825e061dbef919f7"
+          "finished_at": "2026-11-22T20:46:34Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:6d4a6ec5a4bc313975c6f4d9f9f87f50771aeabfc21701e81ca98d0ea2df2500:037fcd6da855d09f8b548417d33fa4d62de667051103e0cb6d43dd307c34d3f5:817ab13c49940f9d03850cc53b58de459e826214951dc1412071daac1809d2fe:df87c3bdaab01410519ccd67f66f00cf65dd77f13aadc85e9b29f102777f0d0b:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "d5f2490e8ed53600568066e54f6914e358dd25e2521c74660d4d0a162ca9f377"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 39,
+            "ok:arxiv-api": 4,
+            "ok:legacy-s2-cache": 2,
+            "ok:openalex-title": 588,
+            "ok:s2-bulk": 226,
+            "openalex_title_calls": 64,
+            "papers": 859,
+            "with_identifier": 820
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:37:03Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 7,
+            "doi_ok": 225,
+            "dois_already_queried": 0,
+            "dois_wanted": 232,
+            "list_calls": 3,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:37:04Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:6d4a6ec5a4bc313975c6f4d9f9f87f50771aeabfc21701e81ca98d0ea2df2500"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:34Z",
+          "finished_at": "2026-11-22T20:46:35Z",
           "gates_passed": true,
-          "input_sha256": "1fb7dfe5fd8833bb4c08039ae886512297021fa2e33f7fe1825e061dbef919f7"
+          "input_sha256": "d5f2490e8ed53600568066e54f6914e358dd25e2521c74660d4d0a162ca9f377"
         },
         "membership": {
           "counts": {
@@ -767,28 +918,28 @@
             "track:Conference": 859
           },
           "done": true,
-          "finished_at": "2026-11-16T03:38:46Z",
-          "input_sha256": "1708c1bb9365b863ccbffb85e04cb2df3d0d1486f6d905abaf1cb0b4cb13aa03"
+          "finished_at": "2026-11-22T20:35:41Z",
+          "input_sha256": "e42e08b9619e23504a28df124d37f86e6a853de8c8012c6d5d9dd319d347b374"
         },
         "pdf": {
           "counts": {
             "already_fetched": 859,
-            "confidence:high": 721,
+            "confidence:high": 730,
             "confidence:none": 38,
-            "confidence:partial": 100,
+            "confidence:partial": 91,
             "extracted": 859,
             "layout:None": 9,
-            "layout:columns": 543,
-            "layout:markers": 307,
+            "layout:columns": 544,
+            "layout:markers": 306,
             "papers": 859,
-            "review_queue": 138
+            "review_queue": 129
           },
           "done": true,
-          "finished_at": "2026-11-21T02:46:39Z",
-          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:extractor-v6"
+          "finished_at": "2026-11-22T19:59:22Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 859,
       "year": 2021
@@ -798,7 +949,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 57,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -807,13 +958,13 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 4989,
-          "pdf_slots_resolved": 4784,
-          "rate": 0.9589,
-          "resolved_via_affiliation_map": 4349,
-          "slots_resolved_or_classified_noncredit": 4784,
-          "slots_with_affiliation": 4989,
-          "slots_with_education_institution": 3337,
-          "slots_with_institution": 4349,
+          "pdf_slots_resolved": 4780,
+          "rate": 0.9564,
+          "resolved_via_affiliation_map": 4347,
+          "slots_resolved_or_classified_noncredit": 4850,
+          "slots_with_affiliation": 5071,
+          "slots_with_education_institution": 3388,
+          "slots_with_institution": 4416,
           "threshold": 0.95
         },
         "membership": {
@@ -835,42 +986,42 @@
         "paper_specific_affiliations": {
           "author_slots": 5115,
           "papers": 1094,
-          "papers_any_coverage": 1075,
-          "papers_fully_covered": 1069,
+          "papers_any_coverage": 1085,
+          "papers_fully_covered": 1079,
           "pass": true,
-          "rate": 0.9754,
-          "slots_with_affiliation": 4989,
+          "rate": 0.9914,
+          "slots_with_affiliation": 5071,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 903,
-            "none": 55,
-            "partial": 136
+            "high": 919,
+            "none": 46,
+            "partial": 129
           },
           "credited_confidence_levels": [
             "high"
           ],
           "papers_extracted": 1094,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 152,
           "prefer_pdf": true,
-          "review_queue": 191,
+          "review_queue": 175,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2022/pdf-review.jsonl",
-          "slots_from_image": 1032,
+          "slots_from_image": 945,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9865,
-          "extractor_slots_correct": 219,
-          "extractor_slots_wrong": 3,
+          "conflict_papers_checked": 12,
+          "extractor_accuracy": 0.9912,
+          "extractor_slots_correct": 225,
+          "extractor_slots_wrong": 2,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 191,
+          "review_papers_read_from_image": 175,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -893,35 +1044,66 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2022/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2022/works.jsonl",
-      "sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c",
+      "sha256": "d71d7cfccdb0c25a101c46ebbb70d6f0b3fc507232faa4eb8375a4816b69f11e",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 1094,
+            "evidence:none": 328,
+            "evidence:openalex-arxiv-doi": 757,
+            "evidence:openalex-title-match": 9,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 126,
-            "slot_source:publisher-pdf": 3957,
-            "slot_source:publisher-pdf-image": 1032,
+            "pdf_openalex_conflict_slots": 152,
+            "rejected_candidates": 72,
+            "slot_source:none": 44,
+            "slot_source:openalex-arxiv-doi": 82,
+            "slot_source:publisher-pdf": 4044,
+            "slot_source:publisher-pdf-image": 945,
             "works": 1094
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:35Z",
-          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:None:None:be9aca1bb692017ecd5091e8ba175427e62eb7ef933c9bfae21c22de9ea5fffd:74dd186e4fd06ec6fdde0d1c587e04ec1e905549fbf966b5df4ac31bee08a243:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c"
+          "finished_at": "2026-11-22T20:46:35Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:b3ee3318cf807209b06c9c34d2b05b7535c6aafea7d3506c9f248c49bf8c2b5e:6d13368144edbeb55f7870dce9fc5d87874729ae3d807dd5831e844f8f2ad24d:12fae0e7364ec0e87fc0e59f10ba3266bf7253c88c048324d84f91fee7035a6c:8bd45bfe038ba3c8ba0d303362682a8663332204e9fbff3dc1b59e9606746079:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "d71d7cfccdb0c25a101c46ebbb70d6f0b3fc507232faa4eb8375a4816b69f11e"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 242,
+            "ok:arxiv-api": 7,
+            "ok:legacy-s2-cache": 159,
+            "ok:openalex-title": 551,
+            "ok:s2-bulk": 135,
+            "openalex_title_calls": 80,
+            "papers": 1094,
+            "with_identifier": 852
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:39:35Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 16,
+            "doi_ok": 285,
+            "dois_already_queried": 0,
+            "dois_wanted": 301,
+            "list_calls": 4,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:39:38Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:b3ee3318cf807209b06c9c34d2b05b7535c6aafea7d3506c9f248c49bf8c2b5e"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T08:12:21Z",
+          "finished_at": "2026-11-22T20:46:36Z",
           "gates_passed": true,
-          "input_sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c"
+          "input_sha256": "d71d7cfccdb0c25a101c46ebbb70d6f0b3fc507232faa4eb8375a4816b69f11e"
         },
         "membership": {
           "counts": {
@@ -931,28 +1113,28 @@
             "track:Conference": 1094
           },
           "done": true,
-          "finished_at": "2026-11-16T03:47:22Z",
-          "input_sha256": "e2e710736b21f8e94170967bbc383c36b5c62354a81924a8205111ac2557946c"
+          "finished_at": "2026-11-22T20:35:55Z",
+          "input_sha256": "2b3d05b7e192345ae8e9092e61a04393554d916aac568da77243e1bf73458d80"
         },
         "pdf": {
           "counts": {
             "already_fetched": 1094,
-            "confidence:high": 903,
-            "confidence:none": 55,
-            "confidence:partial": 136,
+            "confidence:high": 919,
+            "confidence:none": 46,
+            "confidence:partial": 129,
             "extracted": 1094,
             "layout:None": 10,
-            "layout:columns": 617,
-            "layout:markers": 467,
+            "layout:columns": 603,
+            "layout:markers": 481,
             "papers": 1094,
-            "review_queue": 191
+            "review_queue": 175
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:12Z",
-          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:extractor-v5"
+          "finished_at": "2026-11-22T19:59:27Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 1094,
       "year": 2022
@@ -962,7 +1144,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 63,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -971,13 +1153,13 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 7502,
-          "pdf_slots_resolved": 7204,
-          "rate": 0.9603,
-          "resolved_via_affiliation_map": 6417,
-          "slots_resolved_or_classified_noncredit": 7204,
-          "slots_with_affiliation": 7502,
-          "slots_with_education_institution": 5075,
-          "slots_with_institution": 6417,
+          "pdf_slots_resolved": 7194,
+          "rate": 0.959,
+          "resolved_via_affiliation_map": 6407,
+          "slots_resolved_or_classified_noncredit": 7227,
+          "slots_with_affiliation": 7536,
+          "slots_with_education_institution": 5094,
+          "slots_with_institution": 6437,
           "threshold": 0.95
         },
         "membership": {
@@ -999,42 +1181,42 @@
         "paper_specific_affiliations": {
           "author_slots": 7605,
           "papers": 1573,
-          "papers_any_coverage": 1553,
-          "papers_fully_covered": 1540,
+          "papers_any_coverage": 1560,
+          "papers_fully_covered": 1550,
           "pass": true,
-          "rate": 0.9865,
-          "slots_with_affiliation": 7502,
+          "rate": 0.9909,
+          "slots_with_affiliation": 7536,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 1339,
-            "none": 70,
-            "partial": 164
+            "high": 1359,
+            "none": 61,
+            "partial": 153
           },
           "credited_confidence_levels": [
             "high"
           ],
           "papers_extracted": 1573,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 357,
           "prefer_pdf": true,
-          "review_queue": 234,
+          "review_queue": 214,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2023/pdf-review.jsonl",
-          "slots_from_image": 1356,
+          "slots_from_image": 1236,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 0,
+          "conflict_papers_checked": 20,
           "extractor_accuracy": 1.0,
-          "extractor_slots_correct": 237,
+          "extractor_slots_correct": 243,
           "extractor_slots_wrong": 0,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 234,
+          "review_papers_read_from_image": 214,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -1057,35 +1239,66 @@
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2023/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2023/works.jsonl",
-      "sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee",
+      "sha256": "32d165ce60c3dfb65c0b0296277dfadd316d49bd22504a7471f4d385171eb798",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 1573,
+            "evidence:none": 433,
+            "evidence:openalex-arxiv-doi": 1128,
+            "evidence:openalex-title-match": 12,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 103,
-            "slot_source:publisher-pdf": 6146,
-            "slot_source:publisher-pdf-image": 1356,
+            "pdf_openalex_conflict_slots": 357,
+            "rejected_candidates": 90,
+            "slot_source:none": 69,
+            "slot_source:openalex-arxiv-doi": 34,
+            "slot_source:publisher-pdf": 6266,
+            "slot_source:publisher-pdf-image": 1236,
             "works": 1573
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:35Z",
-          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:None:None:df9c276171ab1edff4f114e4889ae641c5b8ab18aaf23b00e7296d299f8cbc9d:f74175f9b5a928823c966f86bad4b280e8de6c6f76841adf9c677ccb104daddb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee"
+          "finished_at": "2026-11-22T20:46:37Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:6078056c0ea1f1f90954e57823f72d342b26609c831f7c6ba0f48f16c09859e4:29f7a60380f5c5166ba8b6176de83a38e5bcae18ccb657cb7fb56807497552f5:a9f926109e2acc7d03fc1ddbb411b30249bd57f283d26708aef78b2908e14848:5bd732aa315adba5a37e21456c2d341d3f0a1475368b7f39801136325fb45eb8:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "32d165ce60c3dfb65c0b0296277dfadd316d49bd22504a7471f4d385171eb798"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 329,
+            "ok:arxiv-api": 24,
+            "ok:legacy-s2-cache": 417,
+            "ok:openalex-title": 787,
+            "ok:s2-bulk": 16,
+            "openalex_title_calls": 114,
+            "papers": 1573,
+            "with_identifier": 1244
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:43:29Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 27,
+            "doi_ok": 430,
+            "dois_already_queried": 0,
+            "dois_wanted": 457,
+            "list_calls": 5,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:43:33Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:6078056c0ea1f1f90954e57823f72d342b26609c831f7c6ba0f48f16c09859e4"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T08:12:21Z",
+          "finished_at": "2026-11-22T20:46:37Z",
           "gates_passed": true,
-          "input_sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee"
+          "input_sha256": "32d165ce60c3dfb65c0b0296277dfadd316d49bd22504a7471f4d385171eb798"
         },
         "membership": {
           "counts": {
@@ -1095,28 +1308,28 @@
             "track:Conference": 1573
           },
           "done": true,
-          "finished_at": "2026-11-16T03:59:27Z",
-          "input_sha256": "ea590ac0812e6a5ccb8fd2abf4c386adf37faa457ea998fcf54e260fbdc8a140"
+          "finished_at": "2026-11-22T20:35:56Z",
+          "input_sha256": "7b8446ec9d9a7c98e1c3c6868d148c1522d7d62b952352be972ef5f746c4380d"
         },
         "pdf": {
           "counts": {
             "already_fetched": 1573,
-            "confidence:high": 1339,
-            "confidence:none": 70,
-            "confidence:partial": 164,
+            "confidence:high": 1359,
+            "confidence:none": 61,
+            "confidence:partial": 153,
             "extracted": 1573,
             "layout:None": 11,
-            "layout:columns": 767,
-            "layout:markers": 795,
+            "layout:columns": 751,
+            "layout:markers": 811,
             "papers": 1573,
-            "review_queue": 234
+            "review_queue": 214
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:13Z",
-          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:extractor-v5"
+          "finished_at": "2026-11-22T19:59:31Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 1573,
       "year": 2023
@@ -1126,7 +1339,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 6,
+          "papers_without_evidence_due_to_byline_mismatch": 129,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -1134,14 +1347,14 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 11858,
-          "pdf_slots_resolved": 11408,
-          "rate": 0.9621,
-          "resolved_via_affiliation_map": 10164,
-          "slots_resolved_or_classified_noncredit": 11421,
-          "slots_with_affiliation": 11871,
-          "slots_with_education_institution": 8411,
-          "slots_with_institution": 10170,
+          "pdf_slots": 11856,
+          "pdf_slots_resolved": 11397,
+          "rate": 0.9612,
+          "resolved_via_affiliation_map": 10155,
+          "slots_resolved_or_classified_noncredit": 11438,
+          "slots_with_affiliation": 11900,
+          "slots_with_education_institution": 8429,
+          "slots_with_institution": 10189,
           "threshold": 0.95
         },
         "membership": {
@@ -1171,42 +1384,42 @@
         "paper_specific_affiliations": {
           "author_slots": 11998,
           "papers": 2260,
-          "papers_any_coverage": 2248,
-          "papers_fully_covered": 2205,
+          "papers_any_coverage": 2251,
+          "papers_fully_covered": 2218,
           "pass": true,
-          "rate": 0.9894,
-          "slots_with_affiliation": 11871,
+          "rate": 0.9918,
+          "slots_with_affiliation": 11900,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 1886,
-            "none": 98,
-            "partial": 276
+            "high": 1924,
+            "none": 85,
+            "partial": 251
           },
           "credited_confidence_levels": [
             "high"
           ],
           "papers_extracted": 2260,
           "pass": true,
-          "pdf_openalex_conflict_slots": 27,
+          "pdf_openalex_conflict_slots": 672,
           "prefer_pdf": true,
-          "review_queue": 374,
+          "review_queue": 336,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2024/pdf-review.jsonl",
-          "slots_from_image": 2340,
+          "slots_from_image": 2114,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 13,
-          "extractor_accuracy": 0.9844,
-          "extractor_slots_correct": 253,
-          "extractor_slots_wrong": 4,
+          "conflict_papers_checked": 120,
+          "extractor_accuracy": 0.9921,
+          "extractor_slots_correct": 252,
+          "extractor_slots_wrong": 2,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 374,
+          "review_papers_read_from_image": 336,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -1229,54 +1442,65 @@
       ],
       "membership_source": "https://proceedings.iclr.cc/paper_files/paper/2024",
       "path": ".tmp/ml-harvest-600/cache/iclr/2024/works.jsonl",
-      "sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0",
+      "sha256": "3849a3f3072d5827c27f296369c06d78cf5bf79dc9281dceac922751f53f4d70",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 2191,
-            "evidence:openalex-arxiv-doi": 69,
+            "evidence:none": 367,
+            "evidence:openalex-arxiv-doi": 1628,
+            "evidence:openalex-title-match": 265,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 27,
-            "rejected_candidates": 7,
-            "slot_source:none": 127,
-            "slot_source:openalex-arxiv-doi": 13,
-            "slot_source:publisher-pdf": 9518,
-            "slot_source:publisher-pdf-image": 2340,
+            "pdf_openalex_conflict_slots": 672,
+            "rejected_candidates": 153,
+            "slot_source:none": 98,
+            "slot_source:openalex-arxiv-doi": 43,
+            "slot_source:openalex-title-match": 1,
+            "slot_source:publisher-pdf": 9742,
+            "slot_source:publisher-pdf-image": 2114,
             "works": 2260
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:37Z",
-          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:35fdb92b60834cb2032e4b7c089d8b84b10ebd9c281b01673e3d52a5a3b40ebc:5acf0d01283e4615d7605d7874a767645dbd1363bb3c3ffdad6e9fdc5a05bbad:4fe1b5ff1fe38bf91ee63e4367abbefcd0edda66ea63680b4b17250b3bc9c4c2:3649c4d9a3a9e7a47313007236e4be75bc59acc5d7e7d85a20549557f5d10164:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0"
+          "finished_at": "2026-11-22T20:34:57Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:b4c5763999b08c18153d4b92ef387012b3019c062dc38a10110f9da699578cee:5bd6919b1a15d42ea1878555c1dbb7fbeeb8588b8a3de0f34dc65afcbeaeae00:f5d11998ad30e2921e96333c8390035064c8fdc53e024f03d95b6fd9e22d7af4:9473fbdeadd83f728b65ad842f69a593c3ac56ef15e9aeeefd38a006daebfaf2:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "3849a3f3072d5827c27f296369c06d78cf5bf79dc9281dceac922751f53f4d70"
         },
         "discover": {
           "counts": {
-            "already_resolved": 0,
-            "arxiv_api_errors": 2,
-            "none:arxiv-api": 3,
-            "ok:arxiv-api": 1,
-            "ok:legacy-s2-cache": 496,
-            "ok:openalex-title": 76,
-            "ok:s2-bulk": 13,
-            "openalex_title_calls": 10,
-            "openalex_title_deferred_by_cap": 1651,
+            "already_resolved": 589,
+            "none:arxiv-api": 157,
+            "ok:arxiv-api": 54,
+            "ok:openalex-title": 1460,
+            "openalex_title_calls": 166,
             "papers": 2260,
-            "with_identifier": 586
+            "with_identifier": 2100
           },
-          "done": false,
-          "finished_at": "2026-11-16T02:05:55Z",
+          "done": true,
+          "finished_at": "2026-11-22T19:47:57Z",
           "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a"
         },
-        "enrich": {},
+        "enrich": {
+          "counts": {
+            "doi_none": 66,
+            "doi_ok": 498,
+            "dois_already_queried": 0,
+            "dois_wanted": 564,
+            "list_calls": 6,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:48:01Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:b4c5763999b08c18153d4b92ef387012b3019c062dc38a10110f9da699578cee"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:37Z",
+          "finished_at": "2026-11-22T20:46:38Z",
           "gates_passed": true,
-          "input_sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0"
+          "input_sha256": "3849a3f3072d5827c27f296369c06d78cf5bf79dc9281dceac922751f53f4d70"
         },
         "membership": {
           "counts": {
@@ -1292,22 +1516,22 @@
         "pdf": {
           "counts": {
             "already_fetched": 2260,
-            "confidence:high": 1886,
-            "confidence:none": 98,
-            "confidence:partial": 276,
+            "confidence:high": 1924,
+            "confidence:none": 85,
+            "confidence:partial": 251,
             "extracted": 2260,
             "layout:None": 10,
-            "layout:columns": 940,
-            "layout:markers": 1310,
+            "layout:columns": 924,
+            "layout:markers": 1326,
             "papers": 2260,
-            "review_queue": 374
+            "review_queue": 336
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:15Z",
-          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:extractor-v5"
+          "finished_at": "2026-11-22T19:59:37Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 2260,
       "year": 2024
@@ -1325,14 +1549,14 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 20433,
-          "pdf_slots_resolved": 19729,
-          "rate": 0.9651,
-          "resolved_via_affiliation_map": 17390,
-          "slots_resolved_or_classified_noncredit": 19925,
-          "slots_with_affiliation": 20645,
-          "slots_with_education_institution": 14876,
-          "slots_with_institution": 17580,
+          "pdf_slots": 20461,
+          "pdf_slots_resolved": 19751,
+          "rate": 0.9643,
+          "resolved_via_affiliation_map": 17435,
+          "slots_resolved_or_classified_noncredit": 19919,
+          "slots_with_affiliation": 20657,
+          "slots_with_education_institution": 14890,
+          "slots_with_institution": 17597,
           "threshold": 0.95
         },
         "membership": {
@@ -1363,45 +1587,47 @@
         "paper_specific_affiliations": {
           "author_slots": 21270,
           "papers": 3703,
-          "papers_any_coverage": 3661,
-          "papers_fully_covered": 3621,
+          "papers_any_coverage": 3663,
+          "papers_fully_covered": 3622,
           "pass": true,
-          "rate": 0.9706,
-          "slots_with_affiliation": 20645,
+          "rate": 0.9712,
+          "slots_with_affiliation": 20657,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 3110,
-            "none": 117,
-            "partial": 476
+            "high": 3159,
+            "none": 97,
+            "partial": 447
           },
           "credited_confidence_levels": [
             "high"
           ],
           "papers_extracted": 3703,
           "pass": true,
-          "pdf_openalex_conflict_slots": 820,
+          "pdf_openalex_conflict_slots": 811,
           "prefer_pdf": true,
-          "review_queue": 593,
+          "review_queue": 544,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2025/pdf-review.jsonl",
-          "slots_from_image": 3688,
+          "slots_from_image": 3376,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
-          "conflict_papers_checked": 200,
-          "extractor_accuracy": 0.9974,
-          "extractor_slots_correct": 1150,
-          "extractor_slots_wrong": 3,
+          "conflict_papers_checked": 237,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 283,
+          "extractor_slots_wrong": 0,
           "judge_model": [
-            "claude-haiku-5-5"
+            "claude-haiku-5-5",
+            "claude-haiku-5-5+claude-sonnet-5-5",
+            "claude-sonnet-5-5"
           ],
           "note": null,
           "pass": true,
-          "review_papers_read_from_image": 593,
+          "review_papers_read_from_image": 544,
           "sample_complete": true,
-          "sample_papers_checked": 200,
-          "sample_papers_expected": 200,
+          "sample_papers_checked": 50,
+          "sample_papers_expected": 50,
           "threshold": 0.98
         },
         "profile_leakage": {
@@ -1421,7 +1647,7 @@
       ],
       "membership_source": "https://proceedings.iclr.cc/paper_files/paper/2025",
       "path": ".tmp/ml-harvest-600/cache/iclr/2025/works.jsonl",
-      "sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e",
+      "sha256": "8ea85e457bbfe35e2e65de0cb86215df35b4b72c3e840765b13abfecd5ca8c87",
       "stages": {
         "build": {
           "counts": {
@@ -1430,50 +1656,81 @@
             "evidence:openalex-arxiv-doi": 2465,
             "evidence:openalex-title-match": 40,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 820,
+            "pdf_openalex_conflict_slots": 811,
             "rejected_candidates": 310,
-            "slot_source:none": 625,
-            "slot_source:openalex-arxiv-doi": 212,
-            "slot_source:publisher-pdf": 16745,
-            "slot_source:publisher-pdf-image": 3688,
+            "slot_source:none": 613,
+            "slot_source:openalex-arxiv-doi": 196,
+            "slot_source:publisher-pdf": 17085,
+            "slot_source:publisher-pdf-image": 3376,
             "works": 3703
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:39Z",
-          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06:43d9b50a8c6bf1b7a691e5d50fffec36cb237c03040a57de11e032d7c33aa439:471772a7626497c66043bc528857e5509d8815d13bcc3635e91189d6816705e9:74ac00b869e9775e3fac61b4595ddb22fea664d7b0c4db3c8f9353eb21db0eab:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e"
+          "finished_at": "2026-11-22T20:34:59Z",
+          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06:43d9b50a8c6bf1b7a691e5d50fffec36cb237c03040a57de11e032d7c33aa439:d9d28d3a5084f0f44f1e06c470c294a0723e5c3bb4836d0bb58db7f897e2a71f:259d12f987577c98e25b9f6db52ae7216f8dcad90d340259c3eee2b71723da93:06ed254c30aef8c982f6a390f619c5a80a3e6dc2b8b7b68b5748b39a91dfd0fa:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "8ea85e457bbfe35e2e65de0cb86215df35b4b72c3e840765b13abfecd5ca8c87"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 3703,
+            "openalex_title_calls": 0,
+            "papers": 3703,
+            "with_identifier": 3012
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:48:05Z",
+          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9"
+        },
+        "enrich": {
+          "counts": {
+            "dois_already_queried": 847,
+            "dois_wanted": 847,
+            "list_calls": 0,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:48:06Z",
+          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T08:12:24Z",
+          "finished_at": "2026-11-22T20:46:40Z",
           "gates_passed": true,
-          "input_sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e"
+          "input_sha256": "8ea85e457bbfe35e2e65de0cb86215df35b4b72c3e840765b13abfecd5ca8c87"
         },
-        "membership": {},
+        "membership": {
+          "counts": {
+            "included": 3703,
+            "rows": 3703,
+            "track:Conference": 3703
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:35:23Z",
+          "input_sha256": "0c3e6662d40fc89ba3396c1a8562656659269f9693bb88d7549077b49dcca36b",
+          "note": "recorded from the existing membership.jsonl; not refetched"
+        },
         "pdf": {
           "counts": {
             "already_fetched": 3703,
-            "confidence:high": 3110,
-            "confidence:none": 117,
-            "confidence:partial": 476,
+            "confidence:high": 3159,
+            "confidence:none": 97,
+            "confidence:partial": 447,
             "extracted": 3703,
             "layout:None": 13,
-            "layout:columns": 1424,
-            "layout:markers": 2266,
+            "layout:columns": 1394,
+            "layout:markers": 2296,
             "papers": 3703,
-            "review_queue": 593
+            "review_queue": 544
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:18Z",
-          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:extractor-v5"
+          "finished_at": "2026-11-22T20:01:53Z",
+          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "iclr",
       "works": 3703,
       "year": 2025
@@ -1483,7 +1740,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 22,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -1493,12 +1750,12 @@
           "pass": true,
           "pdf_slots": 1109,
           "pdf_slots_resolved": 1067,
-          "rate": 0.9621,
+          "rate": 0.9627,
           "resolved_via_affiliation_map": 930,
-          "slots_resolved_or_classified_noncredit": 1067,
-          "slots_with_affiliation": 1109,
-          "slots_with_education_institution": 783,
-          "slots_with_institution": 930,
+          "slots_resolved_or_classified_noncredit": 1109,
+          "slots_with_affiliation": 1152,
+          "slots_with_education_institution": 809,
+          "slots_with_institution": 972,
           "threshold": 0.95
         },
         "membership": {
@@ -1511,11 +1768,11 @@
         "paper_specific_affiliations": {
           "author_slots": 1153,
           "papers": 322,
-          "papers_any_coverage": 312,
-          "papers_fully_covered": 312,
+          "papers_any_coverage": 322,
+          "papers_fully_covered": 321,
           "pass": true,
-          "rate": 0.9618,
-          "slots_with_affiliation": 1109,
+          "rate": 0.9991,
+          "slots_with_affiliation": 1152,
           "threshold": 0.9
         },
         "pdf_evidence": {
@@ -1529,7 +1786,7 @@
           ],
           "papers_extracted": 322,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 12,
           "prefer_pdf": true,
           "review_queue": 157,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2016/pdf-review.jsonl",
@@ -1569,35 +1826,67 @@
       ],
       "membership_source": "https://proceedings.mlr.press/v48/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2016/works.jsonl",
-      "sha256": "56df52676f677dc148bfb133fa35c934016d691496c1336b8c5ec2ab475a8cef",
+      "sha256": "b2baeab2f9277df03529817f0b3f6d33a518afa04174629f13e3993b23f7f7c0",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 322,
+            "evidence:none": 59,
+            "evidence:openalex-arxiv-doi": 172,
+            "evidence:openalex-title-match": 91,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 44,
+            "pdf_openalex_conflict_slots": 12,
+            "rejected_candidates": 32,
+            "slot_source:none": 1,
+            "slot_source:openalex-arxiv-doi": 20,
+            "slot_source:openalex-title-match": 23,
             "slot_source:publisher-pdf": 514,
             "slot_source:publisher-pdf-image": 595,
             "works": 322
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:32Z",
-          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:None:None:d879b121461568146c6158942145a6f25f31d1d86872809687d15580ea2ed85f:b6c25650c4222edceb8e2af1e5f30ffbc2c17ec14e59f663a7c08749efca1aef:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "56df52676f677dc148bfb133fa35c934016d691496c1336b8c5ec2ab475a8cef"
+          "finished_at": "2026-11-22T19:32:34Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:6baf1576df88ab51f77c2ea52e73ca5dc341d04a0b07be318c4991a169e014fe:95b8031030489b7ce95c42e39575a1d9588f3b3d7df9545ca9be83fe5257bd3a:d879b121461568146c6158942145a6f25f31d1d86872809687d15580ea2ed85f:b6c25650c4222edceb8e2af1e5f30ffbc2c17ec14e59f663a7c08749efca1aef:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "b2baeab2f9277df03529817f0b3f6d33a518afa04174629f13e3993b23f7f7c0"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 25,
+            "ok:arxiv-api": 1,
+            "ok:legacy-s2-cache": 1,
+            "ok:openalex-title": 152,
+            "ok:s2-bulk": 143,
+            "openalex_title_calls": 18,
+            "papers": 322,
+            "with_identifier": 297
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:32:31Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 3,
+            "doi_ok": 142,
+            "dois_already_queried": 0,
+            "dois_wanted": 145,
+            "list_calls": 2,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:32:32Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:6baf1576df88ab51f77c2ea52e73ca5dc341d04a0b07be318c4991a169e014fe"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:33Z",
+          "finished_at": "2026-11-22T19:32:35Z",
           "gates_passed": true,
-          "input_sha256": "56df52676f677dc148bfb133fa35c934016d691496c1336b8c5ec2ab475a8cef"
+          "input_sha256": "b2baeab2f9277df03529817f0b3f6d33a518afa04174629f13e3993b23f7f7c0"
         },
         "membership": {
           "counts": {
@@ -1627,7 +1916,7 @@
           "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "icml",
       "works": 322,
       "year": 2016
@@ -1637,7 +1926,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 16,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -1647,12 +1936,12 @@
           "pass": true,
           "pdf_slots": 1578,
           "pdf_slots_resolved": 1507,
-          "rate": 0.955,
+          "rate": 0.9551,
           "resolved_via_affiliation_map": 1385,
-          "slots_resolved_or_classified_noncredit": 1507,
-          "slots_with_affiliation": 1578,
-          "slots_with_education_institution": 1083,
-          "slots_with_institution": 1385,
+          "slots_resolved_or_classified_noncredit": 1511,
+          "slots_with_affiliation": 1582,
+          "slots_with_education_institution": 1087,
+          "slots_with_institution": 1389,
           "threshold": 0.95
         },
         "membership": {
@@ -1666,10 +1955,10 @@
           "author_slots": 1588,
           "papers": 434,
           "papers_any_coverage": 434,
-          "papers_fully_covered": 431,
+          "papers_fully_covered": 432,
           "pass": true,
-          "rate": 0.9937,
-          "slots_with_affiliation": 1578,
+          "rate": 0.9962,
+          "slots_with_affiliation": 1582,
           "threshold": 0.9
         },
         "pdf_evidence": {
@@ -1683,7 +1972,7 @@
           ],
           "papers_extracted": 434,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 106,
           "prefer_pdf": true,
           "review_queue": 46,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2017/pdf-review.jsonl",
@@ -1723,35 +2012,65 @@
       ],
       "membership_source": "https://proceedings.mlr.press/v70/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2017/works.jsonl",
-      "sha256": "1373f9b94ca7a29a8773bce23888513f6bfeda08d1abf8bb8effa5f02c87dc08",
+      "sha256": "8adaccd4b0aceb21427006cbbba3651c03403f5dd8d146dd7daa4a112eb0651c",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 434,
+            "evidence:none": 40,
+            "evidence:openalex-arxiv-doi": 278,
+            "evidence:openalex-title-match": 116,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 10,
+            "pdf_openalex_conflict_slots": 106,
+            "rejected_candidates": 28,
+            "slot_source:none": 6,
+            "slot_source:openalex-arxiv-doi": 4,
             "slot_source:publisher-pdf": 1376,
             "slot_source:publisher-pdf-image": 202,
             "works": 434
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:33Z",
-          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:None:None:a9b3fdaf34d1d91187ebe5359e2b6a813cefeaed9db97c664954b5d34efa5d5e:7e789ec0827f6d7afb948bcb6c9dcd91bc93005e6fd421863a5a2b56eedb1d12:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "1373f9b94ca7a29a8773bce23888513f6bfeda08d1abf8bb8effa5f02c87dc08"
+          "finished_at": "2026-11-22T19:48:41Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:80ba4860ba0455f61ff116a720d81392f7375c7a3bc7b9011f724fc55ce322f9:ab578eeac61e78b46ffb71e7e1bac8ff3aedf156aaedffe93994d90dbda34259:a9b3fdaf34d1d91187ebe5359e2b6a813cefeaed9db97c664954b5d34efa5d5e:7e789ec0827f6d7afb948bcb6c9dcd91bc93005e6fd421863a5a2b56eedb1d12:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "8adaccd4b0aceb21427006cbbba3651c03403f5dd8d146dd7daa4a112eb0651c"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 13,
+            "ok:arxiv-api": 2,
+            "ok:openalex-title": 211,
+            "ok:s2-bulk": 208,
+            "openalex_title_calls": 23,
+            "papers": 434,
+            "with_identifier": 421
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:48:39Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 3,
+            "doi_ok": 207,
+            "dois_already_queried": 0,
+            "dois_wanted": 210,
+            "list_calls": 3,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:48:41Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:80ba4860ba0455f61ff116a720d81392f7375c7a3bc7b9011f724fc55ce322f9"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:34Z",
+          "finished_at": "2026-11-22T19:48:42Z",
           "gates_passed": true,
-          "input_sha256": "1373f9b94ca7a29a8773bce23888513f6bfeda08d1abf8bb8effa5f02c87dc08"
+          "input_sha256": "8adaccd4b0aceb21427006cbbba3651c03403f5dd8d146dd7daa4a112eb0651c"
         },
         "membership": {
           "counts": {
@@ -1781,7 +2100,7 @@
           "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "icml",
       "works": 434,
       "year": 2017
@@ -1791,7 +2110,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 47,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -1801,12 +2120,12 @@
           "pass": true,
           "pdf_slots": 2294,
           "pdf_slots_resolved": 2230,
-          "rate": 0.9721,
+          "rate": 0.9722,
           "resolved_via_affiliation_map": 2135,
-          "slots_resolved_or_classified_noncredit": 2230,
-          "slots_with_affiliation": 2294,
-          "slots_with_education_institution": 1641,
-          "slots_with_institution": 2135,
+          "slots_resolved_or_classified_noncredit": 2239,
+          "slots_with_affiliation": 2303,
+          "slots_with_education_institution": 1643,
+          "slots_with_institution": 2144,
           "threshold": 0.95
         },
         "membership": {
@@ -1819,11 +2138,11 @@
         "paper_specific_affiliations": {
           "author_slots": 2312,
           "papers": 620,
-          "papers_any_coverage": 618,
-          "papers_fully_covered": 613,
+          "papers_any_coverage": 619,
+          "papers_fully_covered": 616,
           "pass": true,
-          "rate": 0.9922,
-          "slots_with_affiliation": 2294,
+          "rate": 0.9961,
+          "slots_with_affiliation": 2303,
           "threshold": 0.9
         },
         "pdf_evidence": {
@@ -1837,7 +2156,7 @@
           ],
           "papers_extracted": 620,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 208,
           "prefer_pdf": true,
           "review_queue": 98,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2018/pdf-review.jsonl",
@@ -1877,35 +2196,66 @@
       ],
       "membership_source": "https://proceedings.mlr.press/v80/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2018/works.jsonl",
-      "sha256": "ca22c730c932f0baa957dd9b296f41898f30b638fa0d71c236648972f8e02215",
+      "sha256": "1bffe0f24c6223b0427afca556dd117957f598b8f8f4a6c1217833b14aea59a2",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 620,
+            "evidence:none": 95,
+            "evidence:openalex-arxiv-doi": 406,
+            "evidence:openalex-title-match": 119,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
-            "slot_source:none": 18,
+            "pdf_openalex_conflict_slots": 208,
+            "rejected_candidates": 59,
+            "slot_source:none": 9,
+            "slot_source:openalex-arxiv-doi": 9,
             "slot_source:publisher-pdf": 1864,
             "slot_source:publisher-pdf-image": 430,
             "works": 620
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:34Z",
-          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:None:None:addc00e3011b420f2f71349b30a4ecf88419cc7a59583cfe6a2ff4955ce9393d:5476b5855d878e7d730de89fb745c1ead188cd39fe809d1fc28abf7c323bd0cb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "ca22c730c932f0baa957dd9b296f41898f30b638fa0d71c236648972f8e02215"
+          "finished_at": "2026-11-22T19:49:16Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:c9c6d84047766f3fae160911e1887f0feb2871aa3f74bbef97cfc6b0e7d1d56b:77e3d0a13e5de3ffe4383b1238170f04079ce176f7a0001bb1c071f710d17a14:addc00e3011b420f2f71349b30a4ecf88419cc7a59583cfe6a2ff4955ce9393d:5476b5855d878e7d730de89fb745c1ead188cd39fe809d1fc28abf7c323bd0cb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "1bffe0f24c6223b0427afca556dd117957f598b8f8f4a6c1217833b14aea59a2"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 23,
+            "ok:arxiv-api": 1,
+            "ok:legacy-s2-cache": 1,
+            "ok:openalex-title": 231,
+            "ok:s2-bulk": 364,
+            "openalex_title_calls": 26,
+            "papers": 620,
+            "with_identifier": 597
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:49:13Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 15,
+            "doi_ok": 351,
+            "dois_already_queried": 0,
+            "dois_wanted": 366,
+            "list_calls": 4,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:49:15Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:c9c6d84047766f3fae160911e1887f0feb2871aa3f74bbef97cfc6b0e7d1d56b"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:35Z",
+          "finished_at": "2026-11-22T19:49:16Z",
           "gates_passed": true,
-          "input_sha256": "ca22c730c932f0baa957dd9b296f41898f30b638fa0d71c236648972f8e02215"
+          "input_sha256": "1bffe0f24c6223b0427afca556dd117957f598b8f8f4a6c1217833b14aea59a2"
         },
         "membership": {
           "counts": {
@@ -1935,7 +2285,7 @@
           "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "icml",
       "works": 620,
       "year": 2018
@@ -1945,7 +2295,7 @@
         "byline_integrity": {
           "documented_authorless_papers": 0,
           "empty_bylines": 0,
-          "papers_without_evidence_due_to_byline_mismatch": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 73,
           "pass": true,
           "pdf_author_slots_not_found": 0,
           "pdf_byline_discrepancy_papers": 0
@@ -1991,7 +2341,7 @@
           ],
           "papers_extracted": 773,
           "pass": true,
-          "pdf_openalex_conflict_slots": 0,
+          "pdf_openalex_conflict_slots": 275,
           "prefer_pdf": true,
           "review_queue": 121,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2019/pdf-review.jsonl",
@@ -2031,35 +2381,65 @@
       ],
       "membership_source": "https://proceedings.mlr.press/v97/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2019/works.jsonl",
-      "sha256": "1aaeea71b027fe44963e389806a6ff8a2cc4e768b0d18559fd3be94a7370742e",
+      "sha256": "ba2c5e5a4863a909346df5ded88e9950fef8d21079802fc09e1a89df55af9b43",
       "stages": {
         "build": {
           "counts": {
             "duplicate_work_keys": 0,
-            "evidence:none": 773,
+            "evidence:none": 125,
+            "evidence:openalex-arxiv-doi": 486,
+            "evidence:openalex-title-match": 162,
             "excluded_track_rows": 0,
-            "pdf_openalex_conflict_slots": 0,
-            "rejected_candidates": 0,
+            "pdf_openalex_conflict_slots": 275,
+            "rejected_candidates": 97,
             "slot_source:none": 2,
             "slot_source:publisher-pdf": 2337,
             "slot_source:publisher-pdf-image": 554,
             "works": 773
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:35Z",
-          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:None:None:b85fd51e5b5040c62c00ea843aa4647737572aec8c3a98ed2c974587a466b691:406e47b0ce6b3715b3f36fa86bcfa89f96721907b2668c93894f0d9d4e3edc99:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "1aaeea71b027fe44963e389806a6ff8a2cc4e768b0d18559fd3be94a7370742e"
+          "finished_at": "2026-11-22T19:50:09Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:aa308fd7344dad602a6d3e29d044217f8ec22fdb4e61cbcfa20e83e5a8feeb19:a897d10e73bf1c256a49859e5696712308f10f580afc5c2d5028fb64e2e1e54f:b85fd51e5b5040c62c00ea843aa4647737572aec8c3a98ed2c974587a466b691:406e47b0ce6b3715b3f36fa86bcfa89f96721907b2668c93894f0d9d4e3edc99:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "ba2c5e5a4863a909346df5ded88e9950fef8d21079802fc09e1a89df55af9b43"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 26,
+            "ok:arxiv-api": 3,
+            "ok:legacy-s2-cache": 3,
+            "ok:openalex-title": 351,
+            "ok:s2-bulk": 390,
+            "openalex_title_calls": 38,
+            "papers": 773,
+            "with_identifier": 747
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:50:06Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 11,
+            "doi_ok": 385,
+            "dois_already_queried": 0,
+            "dois_wanted": 396,
+            "list_calls": 4,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T19:50:08Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:aa308fd7344dad602a6d3e29d044217f8ec22fdb4e61cbcfa20e83e5a8feeb19"
+        },
         "gates": {
           "counts": {
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T18:33:36Z",
+          "finished_at": "2026-11-22T19:50:09Z",
           "gates_passed": true,
-          "input_sha256": "1aaeea71b027fe44963e389806a6ff8a2cc4e768b0d18559fd3be94a7370742e"
+          "input_sha256": "ba2c5e5a4863a909346df5ded88e9950fef8d21079802fc09e1a89df55af9b43"
         },
         "membership": {
           "counts": {
@@ -2090,7 +2470,7 @@
           "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:extractor-v8"
         }
       },
-      "status": "staged",
+      "status": "complete",
       "venue": "icml",
       "works": 773,
       "year": 2019
@@ -2206,8 +2586,34 @@
           "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:None:None:7e1cfb487f3919c6b7a9f65ccc9dc78b259b7ff974e1059885c33c9180cd09cf:979fe8826b61de72f97df06acc08af5982bdfbdd3b4526b2df0ba1bac0dd6d4d:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "32585c71aa2c8e8cd003be4505c766849c16318270af792f13833680398240ae"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 675,
+            "none:arxiv-api": 72,
+            "ok:arxiv-api": 2,
+            "ok:openalex-title": 335,
+            "openalex_title_calls": 40,
+            "papers": 1084,
+            "with_identifier": 1012
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:12:34Z",
+          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 14,
+            "doi_ok": 593,
+            "dois_already_queried": 0,
+            "dois_wanted": 607,
+            "list_calls": 8,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:12:38Z",
+          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:5583fdbdf245ba011445c13dfdd50b3c2f6dde137fa2e0cb4bd5e4765f76f1f4"
+        },
         "gates": {
           "counts": {
             "passed": 1
@@ -2370,8 +2776,36 @@
           "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:None:None:2dd45531f752100d2bd302464077d11692f853b79a28ee73b2922778df533eb0:b174d4554696e8c7770b7a405c572df24ba5a85a94b45fff0e299e0ad960753e:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "248e2a5696511caf0df1a3fe61c252e48b00dd62e8402997dcd639c99ed9e859"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 91,
+            "ok:arxiv-api": 6,
+            "ok:legacy-s2-cache": 1,
+            "ok:openalex-title": 440,
+            "ok:s2-bulk": 645,
+            "openalex_title_calls": 54,
+            "papers": 1183,
+            "with_identifier": 1092
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:14:15Z",
+          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 16,
+            "doi_ok": 636,
+            "dois_already_queried": 0,
+            "dois_wanted": 652,
+            "list_calls": 7,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:14:21Z",
+          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:67c4bb1f95860de5a1f0550749a2523b800721f0e06bfa89f7c9faf0c4a597b6"
+        },
         "gates": {
           "counts": {
             "passed": 1
@@ -2389,24 +2823,24 @@
             "track:Conference": 1183
           },
           "done": true,
-          "finished_at": "2026-11-16T02:53:12Z",
-          "input_sha256": "457b0b2724690e1042d7513c1483106a40bb30a7727fdef60fe6bca424d527ba"
+          "finished_at": "2026-11-22T20:35:56Z",
+          "input_sha256": "2a5b6930ad2f73c06e3e1780fab5e91f661050ec935f2897956ede43ce76fcf4"
         },
         "pdf": {
           "counts": {
             "already_fetched": 1183,
-            "confidence:high": 1026,
-            "confidence:none": 25,
-            "confidence:partial": 132,
+            "confidence:high": 1044,
+            "confidence:none": 24,
+            "confidence:partial": 115,
             "extracted": 1183,
-            "layout:columns": 31,
-            "layout:markers": 1152,
+            "layout:columns": 30,
+            "layout:markers": 1153,
             "papers": 1183,
-            "review_queue": 157
+            "review_queue": 139
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:23Z",
-          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:extractor-v5"
+          "finished_at": "2026-11-22T20:37:03Z",
+          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:extractor-v8"
         }
       },
       "status": "staged",
@@ -2524,8 +2958,36 @@
           "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:None:None:4aa9eda8f55090dc4c0925d10e1114377caee0db459368c497fc430993b5b2e1:627e52cc24e2c4518fb57a5bfb0765d9e7291c0c11ca26d204acc8696914fa96:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "765a836ecdc1fadb7365f87ae24a262da261856238fba457e557d3162f5f1c9f"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 234,
+            "ok:arxiv-api": 13,
+            "ok:legacy-s2-cache": 426,
+            "ok:openalex-title": 288,
+            "ok:s2-bulk": 272,
+            "openalex_title_calls": 54,
+            "papers": 1233,
+            "with_identifier": 999
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:16:57Z",
+          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 30,
+            "doi_ok": 681,
+            "dois_already_queried": 0,
+            "dois_wanted": 711,
+            "list_calls": 8,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:17:04Z",
+          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:7b71817e59be65182aa0e005fa5e9979195913ce0281af58f8bcb540ce5d201c"
+        },
         "gates": {
           "counts": {
             "passed": 1
@@ -2679,8 +3141,36 @@
           "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:None:None:de4dad4424ab4b1b67f7d2125f07f754ca0e946e368f6d3d0d41f0f2e804b74a:6aab880dd34fd627ba23f70705e2241d11a07f33f495541d612bf16c2a2ebd41:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "3f60943d38066f63cd242b81b5499d74c871e8d6d827a7dd6e213d048498f617"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "none:arxiv-api": 306,
+            "ok:arxiv-api": 14,
+            "ok:legacy-s2-cache": 1021,
+            "ok:openalex-title": 417,
+            "ok:s2-bulk": 70,
+            "openalex_title_calls": 74,
+            "papers": 1828,
+            "with_identifier": 1522
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:20:09Z",
+          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 48,
+            "doi_ok": 1057,
+            "dois_already_queried": 0,
+            "dois_wanted": 1105,
+            "list_calls": 12,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:20:19Z",
+          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:25ac54a09685ff1e040c3bf2d20db31a421293a898eedff8bf33763c2b9572e7"
+        },
         "gates": {
           "counts": {
             "passed": 1
@@ -2844,8 +3334,37 @@
           "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:None:None:be838fe89033f768971c6e0140f04162e9b1715ffb920c4de219b73a6710585e:02df9a33655bdf35ceede4e969be0816d5c61e1c37b670a072d537ee916d2e9e:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "c8a0026983b8804b9fe47b5b5ce517613a734c00b222130aa756f52c59d3d99b"
         },
-        "discover": {},
-        "enrich": {},
+        "discover": {
+          "counts": {
+            "already_resolved": 0,
+            "arxiv_api_errors": 5,
+            "none:arxiv-api": 474,
+            "ok:arxiv-api": 28,
+            "ok:legacy-s2-cache": 1400,
+            "ok:openalex-title": 535,
+            "ok:s2-bulk": 123,
+            "openalex_title_calls": 109,
+            "papers": 2610,
+            "with_identifier": 2086
+          },
+          "done": false,
+          "finished_at": "2026-11-22T20:31:30Z",
+          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4"
+        },
+        "enrich": {
+          "counts": {
+            "doi_none": 84,
+            "doi_ok": 1467,
+            "dois_already_queried": 0,
+            "dois_wanted": 1551,
+            "list_calls": 16,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-22T20:31:40Z",
+          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:710850f490bc57bfcafd1d3be9c85b86171ad695e37f4a26dcdc0e01c00c0a8b"
+        },
         "gates": {
           "counts": {
             "passed": 1
@@ -2863,24 +3382,24 @@
             "track:Conference": 2610
           },
           "done": true,
-          "finished_at": "2026-11-16T02:46:49Z",
-          "input_sha256": "ad2bd1f00cfbcc60db1d665ef75ee240e094872f9e29db059f92201e5731be03"
+          "finished_at": "2026-11-22T20:35:57Z",
+          "input_sha256": "215275185063347266ebb2fbdd9f96bf47672fd8e1fae9b2029f070b432e038e"
         },
         "pdf": {
           "counts": {
             "already_fetched": 2610,
-            "confidence:high": 2313,
-            "confidence:none": 80,
-            "confidence:partial": 217,
+            "confidence:high": 2325,
+            "confidence:none": 79,
+            "confidence:partial": 206,
             "extracted": 2610,
-            "layout:columns": 85,
-            "layout:markers": 2525,
+            "layout:columns": 83,
+            "layout:markers": 2527,
             "papers": 2610,
-            "review_queue": 297
+            "review_queue": 285
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:28Z",
-          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:extractor-v5"
+          "finished_at": "2026-11-22T20:37:14Z",
+          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:extractor-v8"
         }
       },
       "status": "staged",
@@ -3507,19 +4026,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 1009,
-            "confidence:high": 818,
-            "confidence:none": 44,
-            "confidence:partial": 147,
+            "confidence:high": 837,
+            "confidence:none": 37,
+            "confidence:partial": 135,
             "extracted": 1009,
             "layout:None": 3,
-            "layout:columns": 780,
-            "layout:markers": 226,
+            "layout:columns": 768,
+            "layout:markers": 238,
             "papers": 1009,
-            "review_queue": 191
+            "review_queue": 172
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:34Z",
-          "input_sha256": "efa4de6b649e2ac69c2f1d79767bec7aa9041274066e97aeb916504bc4952eb6:extractor-v5"
+          "finished_at": "2026-11-22T20:37:26Z",
+          "input_sha256": "efa4de6b649e2ac69c2f1d79767bec7aa9041274066e97aeb916504bc4952eb6:extractor-v8"
         }
       },
       "status": "staged",
@@ -3646,7 +4165,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-21T07:46:34Z",
+          "finished_at": "2026-11-21T08:12:19Z",
           "gates_passed": true,
           "input_sha256": "ae94081426d958d9b8ed6ecde4482cef3fcf3c377ac9a94b71e0f9b433564002"
         },
@@ -3665,19 +4184,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 1428,
-            "confidence:high": 1137,
-            "confidence:none": 81,
-            "confidence:partial": 210,
+            "confidence:high": 1158,
+            "confidence:none": 69,
+            "confidence:partial": 201,
             "extracted": 1428,
             "layout:None": 6,
-            "layout:columns": 1127,
-            "layout:markers": 295,
+            "layout:columns": 1104,
+            "layout:markers": 318,
             "papers": 1428,
-            "review_queue": 291
+            "review_queue": 270
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:35Z",
-          "input_sha256": "e27594ff3b89e4615d7725373517ec3ddf7113dbd5fb0e9dbaae92a4bc1b09cd:extractor-v5"
+          "finished_at": "2026-11-22T20:37:31Z",
+          "input_sha256": "e27594ff3b89e4615d7725373517ec3ddf7113dbd5fb0e9dbaae92a4bc1b09cd:extractor-v8"
         }
       },
       "status": "staged",
@@ -3825,25 +4344,25 @@
             "track:Conference": 1898
           },
           "done": true,
-          "finished_at": "2026-11-16T02:41:58Z",
-          "input_sha256": "2625dd8e4f09420106360ee1ae19352f8b8d44d56f59646edc9bf76aba3553f9"
+          "finished_at": "2026-11-22T20:35:57Z",
+          "input_sha256": "bbdc974e9002a00e1c49eaf2355310b26ca51fc41563496bec30cfebb3dcfa4d"
         },
         "pdf": {
           "counts": {
             "already_fetched": 1898,
-            "confidence:high": 1567,
-            "confidence:none": 86,
-            "confidence:partial": 245,
+            "confidence:high": 1590,
+            "confidence:none": 74,
+            "confidence:partial": 234,
             "extracted": 1898,
             "layout:None": 6,
-            "layout:columns": 1432,
-            "layout:markers": 460,
+            "layout:columns": 1403,
+            "layout:markers": 489,
             "papers": 1898,
-            "review_queue": 331
+            "review_queue": 308
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:36Z",
-          "input_sha256": "8db59694dd2cb3835314eb17767199ada0937ab4260d9e4793026fcb8106a9ed:extractor-v5"
+          "finished_at": "2026-11-22T20:37:40Z",
+          "input_sha256": "8db59694dd2cb3835314eb17767199ada0937ab4260d9e4793026fcb8106a9ed:extractor-v8"
         }
       },
       "status": "staged",
@@ -3991,25 +4510,25 @@
             "track:Conference": 2334
           },
           "done": true,
-          "finished_at": "2026-11-16T02:40:52Z",
-          "input_sha256": "368e873250506c0dbc961ece186ff78387bcf4914fecef2e0f85c68da1af4c4f"
+          "finished_at": "2026-11-22T20:35:57Z",
+          "input_sha256": "159dd0a612e6bab7f8465825e2c748a09ea1c86a1f1cefa45fdd7c67ace0e1b3"
         },
         "pdf": {
           "counts": {
             "already_fetched": 2334,
-            "confidence:high": 2003,
-            "confidence:none": 89,
-            "confidence:partial": 242,
+            "confidence:high": 2032,
+            "confidence:none": 73,
+            "confidence:partial": 229,
             "extracted": 2334,
             "layout:None": 16,
-            "layout:columns": 1638,
-            "layout:markers": 680,
+            "layout:columns": 1604,
+            "layout:markers": 714,
             "papers": 2334,
-            "review_queue": 331
+            "review_queue": 302
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:38Z",
-          "input_sha256": "7ad14f32867f3ca5ae78fd43d5354f7b2053c42b1aef9490e7837362c0b451ec:extractor-v5"
+          "finished_at": "2026-11-22T20:37:50Z",
+          "input_sha256": "7ad14f32867f3ca5ae78fd43d5354f7b2053c42b1aef9490e7837362c0b451ec:extractor-v8"
         }
       },
       "status": "staged",
@@ -4166,25 +4685,25 @@
             "track:Datasets_and_Benchmarks": 163
           },
           "done": true,
-          "finished_at": "2026-11-16T02:39:28Z",
-          "input_sha256": "f05d5f428accaadd92dba7ae9f2d73ea53e8da382ee6e12587e32c49edde0955"
+          "finished_at": "2026-11-22T20:35:57Z",
+          "input_sha256": "29365911b1dbf5fd06ada75e67a2ae77fbd791718e05eca6be6fabf29ffde026"
         },
         "pdf": {
           "counts": {
             "already_fetched": 2834,
-            "confidence:high": 2375,
-            "confidence:none": 112,
-            "confidence:partial": 347,
+            "confidence:high": 2420,
+            "confidence:none": 95,
+            "confidence:partial": 319,
             "extracted": 2834,
             "layout:None": 18,
-            "layout:columns": 1841,
-            "layout:markers": 975,
+            "layout:columns": 1806,
+            "layout:markers": 1010,
             "papers": 2834,
-            "review_queue": 459
+            "review_queue": 414
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:40Z",
-          "input_sha256": "3c0e1bb8768b344fe59093ed9a3f97312a1979bf019901fd13eed3e54d77104e:extractor-v5"
+          "finished_at": "2026-11-22T20:38:02Z",
+          "input_sha256": "3c0e1bb8768b344fe59093ed9a3f97312a1979bf019901fd13eed3e54d77104e:extractor-v8"
         }
       },
       "status": "staged",
@@ -4349,25 +4868,25 @@
             "track:Datasets_and_Benchmarks": 322
           },
           "done": true,
-          "finished_at": "2026-11-16T02:36:09Z",
-          "input_sha256": "725da7b0cd60260aafe81b4ce09f99adf42e0839e462741bfef8f228cf41775e"
+          "finished_at": "2026-11-22T20:35:58Z",
+          "input_sha256": "27080b582df5c16b948fe513324a92a7b9c58acb3bd5b9c9722c260c5c4c9cb0"
         },
         "pdf": {
           "counts": {
             "already_fetched": 3540,
-            "confidence:high": 2963,
-            "confidence:none": 113,
-            "confidence:partial": 464,
+            "confidence:high": 3007,
+            "confidence:none": 90,
+            "confidence:partial": 443,
             "extracted": 3540,
             "layout:None": 8,
-            "layout:columns": 2093,
-            "layout:markers": 1439,
+            "layout:columns": 2050,
+            "layout:markers": 1482,
             "papers": 3540,
-            "review_queue": 577
+            "review_queue": 533
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:43Z",
-          "input_sha256": "089d237eacd79e60c5fe3828fecf707c56982c037070e0127822164d56759430:extractor-v5"
+          "finished_at": "2026-11-22T20:38:15Z",
+          "input_sha256": "089d237eacd79e60c5fe3828fecf707c56982c037070e0127822164d56759430:extractor-v8"
         }
       },
       "status": "staged",
@@ -4536,25 +5055,25 @@
             "track:Datasets_and_Benchmarks_Track": 459
           },
           "done": true,
-          "finished_at": "2026-11-16T02:30:32Z",
-          "input_sha256": "92d5b7385213cc6c86829e0904ce19c37034cb9b1c3a9dd7d77c5f5d90ae396c"
+          "finished_at": "2026-11-22T20:35:58Z",
+          "input_sha256": "670188131c743e811455ddd4a181dbd1470f236b8c23b5fa2d50a8467cd735fa"
         },
         "pdf": {
           "counts": {
             "already_fetched": 4493,
-            "confidence:high": 3883,
-            "confidence:none": 134,
-            "confidence:partial": 476,
+            "confidence:high": 3943,
+            "confidence:none": 107,
+            "confidence:partial": 443,
             "extracted": 4493,
             "layout:None": 12,
-            "layout:columns": 2290,
-            "layout:markers": 2191,
+            "layout:columns": 2236,
+            "layout:markers": 2245,
             "papers": 4493,
-            "review_queue": 610
+            "review_queue": 550
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:47Z",
-          "input_sha256": "d3e1ceedb923cd023dbd7bb3bc17d360bbb9c8166b97325cbd1c716d894bb2e8:extractor-v5"
+          "finished_at": "2026-11-22T20:38:31Z",
+          "input_sha256": "d3e1ceedb923cd023dbd7bb3bc17d360bbb9c8166b97325cbd1c716d894bb2e8:extractor-v8"
         }
       },
       "status": "staged",
@@ -4736,19 +5255,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 5783,
-            "confidence:high": 4804,
-            "confidence:none": 155,
-            "confidence:partial": 824,
+            "confidence:high": 4850,
+            "confidence:none": 126,
+            "confidence:partial": 807,
             "extracted": 5783,
             "layout:None": 17,
-            "layout:columns": 2567,
-            "layout:markers": 3199,
+            "layout:columns": 2494,
+            "layout:markers": 3272,
             "papers": 5783,
-            "review_queue": 979
+            "review_queue": 933
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:52Z",
-          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20:extractor-v5"
+          "finished_at": "2026-11-22T20:38:55Z",
+          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20:extractor-v8"
         }
       },
       "status": "staged",
