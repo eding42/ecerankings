@@ -5,7 +5,7 @@
     "institution_resolution_min": 0.95,
     "membership_unexplained_diff_max": 0.01
   },
-  "generated_at": "2026-11-20T21:14:27Z",
+  "generated_at": "2026-11-21T18:33:41Z",
   "membership_semantics": "Rows come only from the publisher's official edition list; track filter applied at build.",
   "provider": "harvest_ml.py",
   "results": [
@@ -33,9 +33,10 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
@@ -92,7 +93,7 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
@@ -114,19 +115,19 @@
             "works": 198
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:58Z",
-          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:5c83342ab830b2260a136660e4e6c836df65580e8a2b2928c818e9a83fd6026d:None:4cbf0656821d3a011a467ec1e3eb357ab7b76c70513c4e6fac693341cd08b8ee:3c11e34d0c42081b20ee6efd287abb9eff09c73bc8420c85584581b0179c935f:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:30Z",
+          "input_sha256": "0f6e9576f27e16e5375fd992309a527d389c3283237c52bc7639cef7b3e411b1:5c83342ab830b2260a136660e4e6c836df65580e8a2b2928c818e9a83fd6026d:None:4cbf0656821d3a011a467ec1e3eb357ab7b76c70513c4e6fac693341cd08b8ee:3c11e34d0c42081b20ee6efd287abb9eff09c73bc8420c85584581b0179c935f:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:59Z",
-          "gates_passed": false,
+          "finished_at": "2026-11-21T07:46:31Z",
+          "gates_passed": true,
           "input_sha256": "53f03d0e93a817874884b566e3418baf66afa741aea979fb8f321014f4591b57"
         },
         "membership": {
@@ -175,37 +176,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 1386,
-          "pdf_slots_resolved": 1362,
-          "rate": 0.9827,
-          "resolved_via_affiliation_map": 1187,
-          "slots_resolved_or_classified_noncredit": 1362,
-          "slots_with_affiliation": 1386,
-          "slots_with_education_institution": 822,
-          "slots_with_institution": 1187,
+          "pdf_slots": 1381,
+          "pdf_slots_resolved": 1357,
+          "rate": 0.9826,
+          "resolved_via_affiliation_map": 1182,
+          "slots_resolved_or_classified_noncredit": 1357,
+          "slots_with_affiliation": 1381,
+          "slots_with_education_institution": 817,
+          "slots_with_institution": 1182,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 1418,
           "papers": 337,
-          "papers_any_coverage": 332,
-          "papers_fully_covered": 330,
+          "papers_any_coverage": 331,
+          "papers_fully_covered": 329,
           "pass": true,
-          "rate": 0.9774,
-          "slots_with_affiliation": 1386,
+          "rate": 0.9739,
+          "slots_with_affiliation": 1381,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 281,
+            "high": 284,
             "none": 14,
-            "partial": 42
+            "partial": 39
           },
           "credited_confidence_levels": [
             "high"
@@ -214,22 +216,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 56,
+          "review_queue": 53,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2018/pdf-review.jsonl",
-          "slots_from_image": 303,
+          "slots_from_image": 277,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.943,
-          "extractor_slots_correct": 182,
-          "extractor_slots_wrong": 11,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 184,
+          "extractor_slots_wrong": 0,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 56,
+          "pass": true,
+          "review_papers_read_from_image": 52,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -245,14 +247,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2018/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2018/works.jsonl",
-      "sha256": "ff8e929cbec4880f8d2751c80ec600bc885e5cb3e649dabd9396f38a68f4bb74",
+      "sha256": "920582147a4b338538e0f2580fed12cfd83e5371c63e37ace7b2fd0b885c6f75",
       "stages": {
         "build": {
           "counts": {
@@ -261,26 +263,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 32,
-            "slot_source:publisher-pdf": 1083,
-            "slot_source:publisher-pdf-image": 303,
+            "slot_source:none": 37,
+            "slot_source:publisher-pdf": 1104,
+            "slot_source:publisher-pdf-image": 277,
             "works": 337
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:59Z",
-          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:None:None:fec1adb885f285c8cbfb88a82a1aa0b6d4a83baf59216a9f4f938a5e9d885026:132952b7333ed9a66ec8c2fc62ff0f6b681e14e87ec65eff76facd62ad81db31:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "ff8e929cbec4880f8d2751c80ec600bc885e5cb3e649dabd9396f38a68f4bb74"
+          "finished_at": "2026-11-21T18:33:40Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:None:None:44799c678786c3e490af075111b204a05f74555f5323009a81a9083c9348dd20:90e7e0d595150b7711109a60293610f67839aa500c85b6c4e025f066dd095be1:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "920582147a4b338538e0f2580fed12cfd83e5371c63e37ace7b2fd0b885c6f75"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:00Z",
-          "gates_passed": false,
-          "input_sha256": "ff8e929cbec4880f8d2751c80ec600bc885e5cb3e649dabd9396f38a68f4bb74"
+          "finished_at": "2026-11-21T18:33:40Z",
+          "gates_passed": true,
+          "input_sha256": "920582147a4b338538e0f2580fed12cfd83e5371c63e37ace7b2fd0b885c6f75"
         },
         "membership": {
           "counts": {
@@ -296,19 +298,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 337,
-            "confidence:high": 281,
+            "confidence:high": 284,
             "confidence:none": 14,
-            "confidence:partial": 42,
+            "confidence:partial": 39,
             "extracted": 337,
             "layout:None": 3,
-            "layout:columns": 252,
-            "layout:markers": 82,
+            "layout:columns": 249,
+            "layout:markers": 85,
             "papers": 337,
-            "review_queue": 56
+            "review_queue": 53
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:09Z",
-          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:extractor-v5"
+          "finished_at": "2026-11-21T18:29:42Z",
+          "input_sha256": "c76a54665d1992da7b08c9c9755b0546a40b2c70e298dd6d78440f11dc5570cd:extractor-v8"
         }
       },
       "status": "staged",
@@ -329,37 +331,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 2108,
-          "pdf_slots_resolved": 2075,
-          "rate": 0.9843,
-          "resolved_via_affiliation_map": 1871,
-          "slots_resolved_or_classified_noncredit": 2075,
-          "slots_with_affiliation": 2108,
-          "slots_with_education_institution": 1352,
-          "slots_with_institution": 1871,
+          "pdf_slots": 2095,
+          "pdf_slots_resolved": 2063,
+          "rate": 0.9847,
+          "resolved_via_affiliation_map": 1857,
+          "slots_resolved_or_classified_noncredit": 2063,
+          "slots_with_affiliation": 2095,
+          "slots_with_education_institution": 1345,
+          "slots_with_institution": 1857,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 2145,
           "papers": 502,
-          "papers_any_coverage": 495,
-          "papers_fully_covered": 493,
+          "papers_any_coverage": 492,
+          "papers_fully_covered": 490,
           "pass": true,
-          "rate": 0.9828,
-          "slots_with_affiliation": 2108,
+          "rate": 0.9767,
+          "slots_with_affiliation": 2095,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 416,
-            "none": 25,
-            "partial": 61
+            "high": 422,
+            "none": 22,
+            "partial": 58
           },
           "credited_confidence_levels": [
             "high"
@@ -368,22 +371,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 86,
+          "review_queue": 80,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2019/pdf-review.jsonl",
-          "slots_from_image": 497,
+          "slots_from_image": 441,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9598,
-          "extractor_slots_correct": 191,
-          "extractor_slots_wrong": 8,
+          "extractor_accuracy": 0.9949,
+          "extractor_slots_correct": 196,
+          "extractor_slots_wrong": 1,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 86,
+          "pass": true,
+          "review_papers_read_from_image": 77,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -399,14 +402,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2019/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2019/works.jsonl",
-      "sha256": "4690831afca64a755fb41d3e811a9b08e30e39d3d66af15795d645aa9a55e6b7",
+      "sha256": "744308d8e6ce68d12bd0c32207eb695b1db786e38e77601db51c53964a33a706",
       "stages": {
         "build": {
           "counts": {
@@ -415,26 +418,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 37,
-            "slot_source:publisher-pdf": 1611,
-            "slot_source:publisher-pdf-image": 497,
+            "slot_source:none": 50,
+            "slot_source:publisher-pdf": 1654,
+            "slot_source:publisher-pdf-image": 441,
             "works": 502
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:00Z",
-          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:None:None:e02ae18a32ffb6db7da172ad16a06e6915d31a727641c2756e955ed344a2ece9:26ee1dff0564fa27f315667e2b049d529dba75f9094546abd27d811563e86a71:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "4690831afca64a755fb41d3e811a9b08e30e39d3d66af15795d645aa9a55e6b7"
+          "finished_at": "2026-11-21T18:33:40Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:None:None:4352b4d37cce5617b09c42c87df40049b737e3dd572932352099f7789deaedfb:3982a58893370dd205499858a80bd1338e3b96f5d6531c84f482dd0712293175:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "744308d8e6ce68d12bd0c32207eb695b1db786e38e77601db51c53964a33a706"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:01Z",
-          "gates_passed": false,
-          "input_sha256": "4690831afca64a755fb41d3e811a9b08e30e39d3d66af15795d645aa9a55e6b7"
+          "finished_at": "2026-11-21T18:33:41Z",
+          "gates_passed": true,
+          "input_sha256": "744308d8e6ce68d12bd0c32207eb695b1db786e38e77601db51c53964a33a706"
         },
         "membership": {
           "counts": {
@@ -450,19 +453,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 502,
-            "confidence:high": 416,
-            "confidence:none": 25,
-            "confidence:partial": 61,
+            "confidence:high": 422,
+            "confidence:none": 22,
+            "confidence:partial": 58,
             "extracted": 502,
             "layout:None": 7,
-            "layout:columns": 362,
-            "layout:markers": 133,
+            "layout:columns": 352,
+            "layout:markers": 143,
             "papers": 502,
-            "review_queue": 86
+            "review_queue": 80
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:10Z",
-          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:extractor-v5"
+          "finished_at": "2026-11-21T18:29:44Z",
+          "input_sha256": "c506d5e8b6949e05dc74876c03844861194a25c94cde19271d5c9023e925439f:extractor-v8"
         }
       },
       "status": "staged",
@@ -494,9 +497,10 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
@@ -553,7 +557,7 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
@@ -575,19 +579,19 @@
             "works": 687
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:01Z",
-          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:None:None:aabdf07a33b70a120a702939ad87e57eafbe1a96238621d512ccc89865a8db3f:10880622d3200d44c1d0582abefad836d3e2cec0e031a327eb9bfb80edfd8035:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:33Z",
+          "input_sha256": "509e67884eefd390f30a75dfc20ac0ecc28635d616daa806f16a8dbe5a4554f9:None:None:aabdf07a33b70a120a702939ad87e57eafbe1a96238621d512ccc89865a8db3f:10880622d3200d44c1d0582abefad836d3e2cec0e031a327eb9bfb80edfd8035:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:01Z",
-          "gates_passed": false,
+          "finished_at": "2026-11-21T07:46:33Z",
+          "gates_passed": true,
           "input_sha256": "f3b281486d2a5badd7e2a4c6d51d6df4ad999046371ff66ac6adcb9e49a47f18"
         },
         "membership": {
@@ -637,17 +641,18 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 3772,
-          "pdf_slots_resolved": 3627,
-          "rate": 0.9616,
-          "resolved_via_affiliation_map": 3249,
-          "slots_resolved_or_classified_noncredit": 3627,
-          "slots_with_affiliation": 3772,
-          "slots_with_education_institution": 2441,
-          "slots_with_institution": 3249,
+          "pdf_slots": 3760,
+          "pdf_slots_resolved": 3580,
+          "rate": 0.9521,
+          "resolved_via_affiliation_map": 3204,
+          "slots_resolved_or_classified_noncredit": 3580,
+          "slots_with_affiliation": 3760,
+          "slots_with_education_institution": 2410,
+          "slots_with_institution": 3204,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 860,
@@ -665,18 +670,18 @@
         "paper_specific_affiliations": {
           "author_slots": 3830,
           "papers": 859,
-          "papers_any_coverage": 848,
-          "papers_fully_covered": 844,
+          "papers_any_coverage": 845,
+          "papers_fully_covered": 841,
           "pass": true,
-          "rate": 0.9849,
-          "slots_with_affiliation": 3772,
+          "rate": 0.9817,
+          "slots_with_affiliation": 3760,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 719,
-            "none": 44,
-            "partial": 96
+            "high": 721,
+            "none": 38,
+            "partial": 100
           },
           "credited_confidence_levels": [
             "high"
@@ -685,22 +690,23 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 140,
+          "review_queue": 138,
           "review_queue_path": ".tmp/ml-harvest-600/iclr/2021/pdf-review.jsonl",
-          "slots_from_image": 733,
+          "slots_from_image": 703,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9769,
-          "extractor_slots_correct": 211,
-          "extractor_slots_wrong": 5,
+          "extractor_accuracy": 0.9815,
+          "extractor_slots_correct": 212,
+          "extractor_slots_wrong": 4,
           "judge_model": [
-            "claude-haiku-5-5"
+            "claude-haiku-5-5",
+            "claude-sonnet-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 140,
+          "pass": true,
+          "review_papers_read_from_image": 135,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -716,14 +722,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://openreview.net/group?id=ICLR.cc/2021/Conference",
       "path": ".tmp/ml-harvest-600/cache/iclr/2021/works.jsonl",
-      "sha256": "f5ae3715a70c780a636ced40c517624aea74833f87f0e09d4ca213f48b76f4c2",
+      "sha256": "1fb7dfe5fd8833bb4c08039ae886512297021fa2e33f7fe1825e061dbef919f7",
       "stages": {
         "build": {
           "counts": {
@@ -732,26 +738,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 58,
-            "slot_source:publisher-pdf": 3039,
-            "slot_source:publisher-pdf-image": 733,
+            "slot_source:none": 70,
+            "slot_source:publisher-pdf": 3057,
+            "slot_source:publisher-pdf-image": 703,
             "works": 859
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:02Z",
-          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:None:None:c2e44977463816be0f2df1ca8a5751e8f1361a190cf530a3cc6d2ebdff6339a2:e3c05121f951dcf10aa2c80e8661893a99234b394317cdb4c1dbaf50ae54a23c:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "f5ae3715a70c780a636ced40c517624aea74833f87f0e09d4ca213f48b76f4c2"
+          "finished_at": "2026-11-21T07:46:34Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:None:None:668d1183fc9601f350cb8a1b3a8dcb5fc474e61f4905d3a80676faa31015ddd2:c3d53305c8b89b5e5773f2699ee6ecda6594d530985b59bbe439ac658204cffb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "1fb7dfe5fd8833bb4c08039ae886512297021fa2e33f7fe1825e061dbef919f7"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:02Z",
-          "gates_passed": false,
-          "input_sha256": "f5ae3715a70c780a636ced40c517624aea74833f87f0e09d4ca213f48b76f4c2"
+          "finished_at": "2026-11-21T07:46:34Z",
+          "gates_passed": true,
+          "input_sha256": "1fb7dfe5fd8833bb4c08039ae886512297021fa2e33f7fe1825e061dbef919f7"
         },
         "membership": {
           "counts": {
@@ -767,19 +773,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 859,
-            "confidence:high": 719,
-            "confidence:none": 44,
-            "confidence:partial": 96,
+            "confidence:high": 721,
+            "confidence:none": 38,
+            "confidence:partial": 100,
             "extracted": 859,
             "layout:None": 9,
-            "layout:columns": 560,
-            "layout:markers": 290,
+            "layout:columns": 543,
+            "layout:markers": 307,
             "papers": 859,
-            "review_queue": 140
+            "review_queue": 138
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:11Z",
-          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:extractor-v5"
+          "finished_at": "2026-11-21T02:46:39Z",
+          "input_sha256": "eea6cb8e2d49f59cffa159314ebce67ff582674e7cab268fb1c01367f40b0135:extractor-v6"
         }
       },
       "status": "staged",
@@ -811,6 +817,7 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 1095,
@@ -901,8 +908,8 @@
             "works": 1094
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:02Z",
-          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:None:None:be9aca1bb692017ecd5091e8ba175427e62eb7ef933c9bfae21c22de9ea5fffd:74dd186e4fd06ec6fdde0d1c587e04ec1e905549fbf966b5df4ac31bee08a243:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:35Z",
+          "input_sha256": "1b8ce26879c70919af7a299a3b0527f2e737feef6f489bd9c1af5427aff45a96:None:None:be9aca1bb692017ecd5091e8ba175427e62eb7ef933c9bfae21c22de9ea5fffd:74dd186e4fd06ec6fdde0d1c587e04ec1e905549fbf966b5df4ac31bee08a243:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c"
         },
         "discover": {},
@@ -912,7 +919,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:03Z",
+          "finished_at": "2026-11-21T08:12:21Z",
           "gates_passed": true,
           "input_sha256": "bcdcdeccbba2bd95f4fd23c0c49681a2d027ada51eb0c7b602747382d04bbf9c"
         },
@@ -964,16 +971,17 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 7502,
-          "pdf_slots_resolved": 7203,
-          "rate": 0.9601,
-          "resolved_via_affiliation_map": 6416,
-          "slots_resolved_or_classified_noncredit": 7203,
+          "pdf_slots_resolved": 7204,
+          "rate": 0.9603,
+          "resolved_via_affiliation_map": 6417,
+          "slots_resolved_or_classified_noncredit": 7204,
           "slots_with_affiliation": 7502,
-          "slots_with_education_institution": 5074,
-          "slots_with_institution": 6416,
+          "slots_with_education_institution": 5075,
+          "slots_with_institution": 6417,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 1574,
@@ -1064,8 +1072,8 @@
             "works": 1573
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:03Z",
-          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:None:None:df9c276171ab1edff4f114e4889ae641c5b8ab18aaf23b00e7296d299f8cbc9d:f74175f9b5a928823c966f86bad4b280e8de6c6f76841adf9c677ccb104daddb:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:35Z",
+          "input_sha256": "b175bbbae8865f2056f07b8e0a0fba15b080f5ad2f61efd2e75791b58b50db85:None:None:df9c276171ab1edff4f114e4889ae641c5b8ab18aaf23b00e7296d299f8cbc9d:f74175f9b5a928823c966f86bad4b280e8de6c6f76841adf9c677ccb104daddb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee"
         },
         "discover": {},
@@ -1075,7 +1083,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:04Z",
+          "finished_at": "2026-11-21T08:12:21Z",
           "gates_passed": true,
           "input_sha256": "bb34dbbf1a49330233b132beeb3a765cbabc293247b27a0b2ba834060b1c62ee"
         },
@@ -1137,6 +1145,7 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 2260,
@@ -1237,8 +1246,8 @@
             "works": 2260
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:04Z",
-          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:35fdb92b60834cb2032e4b7c089d8b84b10ebd9c281b01673e3d52a5a3b40ebc:5acf0d01283e4615d7605d7874a767645dbd1363bb3c3ffdad6e9fdc5a05bbad:4fe1b5ff1fe38bf91ee63e4367abbefcd0edda66ea63680b4b17250b3bc9c4c2:3649c4d9a3a9e7a47313007236e4be75bc59acc5d7e7d85a20549557f5d10164:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:37Z",
+          "input_sha256": "299fe59f4a80d9b4d29803ca43ae82c170c6d6df22ef42d387d6ca5af591779a:35fdb92b60834cb2032e4b7c089d8b84b10ebd9c281b01673e3d52a5a3b40ebc:5acf0d01283e4615d7605d7874a767645dbd1363bb3c3ffdad6e9fdc5a05bbad:4fe1b5ff1fe38bf91ee63e4367abbefcd0edda66ea63680b4b17250b3bc9c4c2:3649c4d9a3a9e7a47313007236e4be75bc59acc5d7e7d85a20549557f5d10164:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0"
         },
         "discover": {
@@ -1265,7 +1274,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:05Z",
+          "finished_at": "2026-11-21T07:46:37Z",
           "gates_passed": true,
           "input_sha256": "c5dc6573ed7ed3b02f7e45fe3fdc22fc475b1ad054d27ffb687bfb56e16387d0"
         },
@@ -1317,16 +1326,17 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 20433,
-          "pdf_slots_resolved": 19727,
-          "rate": 0.965,
-          "resolved_via_affiliation_map": 17388,
-          "slots_resolved_or_classified_noncredit": 19923,
+          "pdf_slots_resolved": 19729,
+          "rate": 0.9651,
+          "resolved_via_affiliation_map": 17390,
+          "slots_resolved_or_classified_noncredit": 19925,
           "slots_with_affiliation": 20645,
-          "slots_with_education_institution": 14874,
-          "slots_with_institution": 17578,
+          "slots_with_education_institution": 14876,
+          "slots_with_institution": 17580,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 3703,
@@ -1429,8 +1439,8 @@
             "works": 3703
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:06Z",
-          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06:43d9b50a8c6bf1b7a691e5d50fffec36cb237c03040a57de11e032d7c33aa439:471772a7626497c66043bc528857e5509d8815d13bcc3635e91189d6816705e9:74ac00b869e9775e3fac61b4595ddb22fea664d7b0c4db3c8f9353eb21db0eab:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:39Z",
+          "input_sha256": "1ff7a4f8989fade8cf8fd921f302dc226623139a813509c079d11f1dc86596c9:eb342199ca48b69c63cf1cdd7bb65f4643c5003605c31d0e337e8ae16635cc06:43d9b50a8c6bf1b7a691e5d50fffec36cb237c03040a57de11e032d7c33aa439:471772a7626497c66043bc528857e5509d8815d13bcc3635e91189d6816705e9:74ac00b869e9775e3fac61b4595ddb22fea664d7b0c4db3c8f9353eb21db0eab:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e"
         },
         "discover": {},
@@ -1440,7 +1450,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:07Z",
+          "finished_at": "2026-11-21T08:12:24Z",
           "gates_passed": true,
           "input_sha256": "22e3a5bb92a9ea34e9cfe12242911bc7852037cf5c8a30554938b9af65229b1e"
         },
@@ -1481,37 +1491,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 1108,
-          "pdf_slots_resolved": 1072,
-          "rate": 0.9675,
-          "resolved_via_affiliation_map": 935,
-          "slots_resolved_or_classified_noncredit": 1072,
-          "slots_with_affiliation": 1108,
-          "slots_with_education_institution": 788,
-          "slots_with_institution": 935,
+          "pdf_slots": 1109,
+          "pdf_slots_resolved": 1067,
+          "rate": 0.9621,
+          "resolved_via_affiliation_map": 930,
+          "slots_resolved_or_classified_noncredit": 1067,
+          "slots_with_affiliation": 1109,
+          "slots_with_education_institution": 783,
+          "slots_with_institution": 930,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 1153,
           "papers": 322,
           "papers_any_coverage": 312,
-          "papers_fully_covered": 311,
+          "papers_fully_covered": 312,
           "pass": true,
-          "rate": 0.961,
-          "slots_with_affiliation": 1108,
+          "rate": 0.9618,
+          "slots_with_affiliation": 1109,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 157,
+            "high": 165,
             "none": 13,
-            "partial": 152
+            "partial": 144
           },
           "credited_confidence_levels": [
             "high"
@@ -1520,22 +1531,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 165,
+          "review_queue": 157,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2016/pdf-review.jsonl",
-          "slots_from_image": 635,
+          "slots_from_image": 595,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9563,
-          "extractor_slots_correct": 153,
-          "extractor_slots_wrong": 7,
+          "extractor_accuracy": 0.9874,
+          "extractor_slots_correct": 157,
+          "extractor_slots_wrong": 2,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 165,
+          "pass": true,
+          "review_papers_read_from_image": 157,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -1551,14 +1562,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v48/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2016/works.jsonl",
-      "sha256": "ab8dd1da2a15f35415bbc82cc5577072451feeef59e9810fe203c88f392fe5fb",
+      "sha256": "56df52676f677dc148bfb133fa35c934016d691496c1336b8c5ec2ab475a8cef",
       "stages": {
         "build": {
           "counts": {
@@ -1567,26 +1578,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 45,
-            "slot_source:publisher-pdf": 473,
-            "slot_source:publisher-pdf-image": 635,
+            "slot_source:none": 44,
+            "slot_source:publisher-pdf": 514,
+            "slot_source:publisher-pdf-image": 595,
             "works": 322
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:07Z",
-          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:None:None:b13651fb705ae03b4f72f3cd60350f7d80dae67f5e4e82204e5f5f0ee7afcf26:8b507ba6ffc0d26d9fe7d6bf0eb0857df8e847a473a21ccc6d23d20d7d2fff9a:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "ab8dd1da2a15f35415bbc82cc5577072451feeef59e9810fe203c88f392fe5fb"
+          "finished_at": "2026-11-21T18:33:32Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:None:None:d879b121461568146c6158942145a6f25f31d1d86872809687d15580ea2ed85f:b6c25650c4222edceb8e2af1e5f30ffbc2c17ec14e59f663a7c08749efca1aef:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "56df52676f677dc148bfb133fa35c934016d691496c1336b8c5ec2ab475a8cef"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:08Z",
-          "gates_passed": false,
-          "input_sha256": "ab8dd1da2a15f35415bbc82cc5577072451feeef59e9810fe203c88f392fe5fb"
+          "finished_at": "2026-11-21T18:33:33Z",
+          "gates_passed": true,
+          "input_sha256": "56df52676f677dc148bfb133fa35c934016d691496c1336b8c5ec2ab475a8cef"
         },
         "membership": {
           "counts": {
@@ -1602,18 +1613,18 @@
         "pdf": {
           "counts": {
             "already_fetched": 322,
-            "confidence:high": 157,
+            "confidence:high": 165,
             "confidence:none": 13,
-            "confidence:partial": 152,
+            "confidence:partial": 144,
             "extracted": 322,
             "layout:columns": 259,
             "layout:markers": 63,
             "papers": 322,
-            "review_queue": 165
+            "review_queue": 157
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:19Z",
-          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:extractor-v5"
+          "finished_at": "2026-11-21T18:29:24Z",
+          "input_sha256": "c1631b70d29aa3fab892742b55247e4de1d50317e167fbaa02317a3ee3ee30d9:extractor-v8"
         }
       },
       "status": "staged",
@@ -1634,37 +1645,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 1567,
-          "pdf_slots_resolved": 1509,
-          "rate": 0.963,
-          "resolved_via_affiliation_map": 1391,
-          "slots_resolved_or_classified_noncredit": 1509,
-          "slots_with_affiliation": 1567,
-          "slots_with_education_institution": 1064,
-          "slots_with_institution": 1391,
+          "pdf_slots": 1578,
+          "pdf_slots_resolved": 1507,
+          "rate": 0.955,
+          "resolved_via_affiliation_map": 1385,
+          "slots_resolved_or_classified_noncredit": 1507,
+          "slots_with_affiliation": 1578,
+          "slots_with_education_institution": 1083,
+          "slots_with_institution": 1385,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 1588,
           "papers": 434,
-          "papers_any_coverage": 430,
-          "papers_fully_covered": 427,
+          "papers_any_coverage": 434,
+          "papers_fully_covered": 431,
           "pass": true,
-          "rate": 0.9868,
-          "slots_with_affiliation": 1567,
+          "rate": 0.9937,
+          "slots_with_affiliation": 1578,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 384,
-            "none": 20,
-            "partial": 30
+            "high": 388,
+            "none": 17,
+            "partial": 29
           },
           "credited_confidence_levels": [
             "high"
@@ -1673,21 +1685,21 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 50,
+          "review_queue": 46,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2017/pdf-review.jsonl",
-          "slots_from_image": 207,
+          "slots_from_image": 202,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9636,
-          "extractor_slots_correct": 159,
-          "extractor_slots_wrong": 6,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 164,
+          "extractor_slots_wrong": 0,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
+          "pass": true,
           "review_papers_read_from_image": 46,
           "sample_complete": true,
           "sample_papers_checked": 50,
@@ -1704,14 +1716,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v70/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2017/works.jsonl",
-      "sha256": "75dbcfa7e1e7110c0d6d2161b69c54e597d4fa889fc01cd9bd9759354dd87416",
+      "sha256": "1373f9b94ca7a29a8773bce23888513f6bfeda08d1abf8bb8effa5f02c87dc08",
       "stages": {
         "build": {
           "counts": {
@@ -1720,26 +1732,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 21,
-            "slot_source:publisher-pdf": 1360,
-            "slot_source:publisher-pdf-image": 207,
+            "slot_source:none": 10,
+            "slot_source:publisher-pdf": 1376,
+            "slot_source:publisher-pdf-image": 202,
             "works": 434
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:08Z",
-          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:None:None:e611727352d8f01b3a5f7a6b3f326fb8565bf7dcf246883e2cc39f68d47a2ed4:775da3b5e0734824bd5425f511ac4c0ef51cf50d2e610584502c5dc574762911:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "75dbcfa7e1e7110c0d6d2161b69c54e597d4fa889fc01cd9bd9759354dd87416"
+          "finished_at": "2026-11-21T18:33:33Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:None:None:a9b3fdaf34d1d91187ebe5359e2b6a813cefeaed9db97c664954b5d34efa5d5e:7e789ec0827f6d7afb948bcb6c9dcd91bc93005e6fd421863a5a2b56eedb1d12:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "1373f9b94ca7a29a8773bce23888513f6bfeda08d1abf8bb8effa5f02c87dc08"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:09Z",
-          "gates_passed": false,
-          "input_sha256": "75dbcfa7e1e7110c0d6d2161b69c54e597d4fa889fc01cd9bd9759354dd87416"
+          "finished_at": "2026-11-21T18:33:34Z",
+          "gates_passed": true,
+          "input_sha256": "1373f9b94ca7a29a8773bce23888513f6bfeda08d1abf8bb8effa5f02c87dc08"
         },
         "membership": {
           "counts": {
@@ -1755,18 +1767,18 @@
         "pdf": {
           "counts": {
             "already_fetched": 434,
-            "confidence:high": 384,
-            "confidence:none": 20,
-            "confidence:partial": 30,
+            "confidence:high": 388,
+            "confidence:none": 17,
+            "confidence:partial": 29,
             "extracted": 434,
-            "layout:columns": 20,
-            "layout:markers": 414,
+            "layout:columns": 17,
+            "layout:markers": 417,
             "papers": 434,
-            "review_queue": 50
+            "review_queue": 46
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:19Z",
-          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:extractor-v5"
+          "finished_at": "2026-11-21T18:29:25Z",
+          "input_sha256": "1551e9e8c1765b0d5e6fde061639c7930d6ba4adfdb4a04ddacd490e3da5ff49:extractor-v8"
         }
       },
       "status": "staged",
@@ -1787,37 +1799,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 2295,
-          "pdf_slots_resolved": 2202,
-          "rate": 0.9595,
-          "resolved_via_affiliation_map": 2101,
-          "slots_resolved_or_classified_noncredit": 2202,
-          "slots_with_affiliation": 2295,
-          "slots_with_education_institution": 1601,
-          "slots_with_institution": 2101,
+          "pdf_slots": 2294,
+          "pdf_slots_resolved": 2230,
+          "rate": 0.9721,
+          "resolved_via_affiliation_map": 2135,
+          "slots_resolved_or_classified_noncredit": 2230,
+          "slots_with_affiliation": 2294,
+          "slots_with_education_institution": 1641,
+          "slots_with_institution": 2135,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 2312,
           "papers": 620,
           "papers_any_coverage": 618,
-          "papers_fully_covered": 614,
+          "papers_fully_covered": 613,
           "pass": true,
-          "rate": 0.9926,
-          "slots_with_affiliation": 2295,
+          "rate": 0.9922,
+          "slots_with_affiliation": 2294,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 513,
+            "high": 522,
             "none": 18,
-            "partial": 89
+            "partial": 80
           },
           "credited_confidence_levels": [
             "high"
@@ -1826,22 +1839,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 107,
+          "review_queue": 98,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2018/pdf-review.jsonl",
-          "slots_from_image": 470,
+          "slots_from_image": 430,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9731,
-          "extractor_slots_correct": 181,
-          "extractor_slots_wrong": 5,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 187,
+          "extractor_slots_wrong": 0,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 107,
+          "pass": true,
+          "review_papers_read_from_image": 98,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -1857,14 +1870,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v80/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2018/works.jsonl",
-      "sha256": "4005c521bf506d9b83ba936034a30aa15d7b0b631f6ed9992297b37ff9407720",
+      "sha256": "ca22c730c932f0baa957dd9b296f41898f30b638fa0d71c236648972f8e02215",
       "stages": {
         "build": {
           "counts": {
@@ -1873,26 +1886,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 17,
-            "slot_source:publisher-pdf": 1825,
-            "slot_source:publisher-pdf-image": 470,
+            "slot_source:none": 18,
+            "slot_source:publisher-pdf": 1864,
+            "slot_source:publisher-pdf-image": 430,
             "works": 620
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:09Z",
-          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:None:None:7d6497c388b0dca027c91407216ffcd4d7473d9074b856e694f156c35039a462:b938839e7fb026f3d6b2d25cef1aea23f4931782d3fb7d4da95194971436d925:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "4005c521bf506d9b83ba936034a30aa15d7b0b631f6ed9992297b37ff9407720"
+          "finished_at": "2026-11-21T18:33:34Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:None:None:addc00e3011b420f2f71349b30a4ecf88419cc7a59583cfe6a2ff4955ce9393d:5476b5855d878e7d730de89fb745c1ead188cd39fe809d1fc28abf7c323bd0cb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "ca22c730c932f0baa957dd9b296f41898f30b638fa0d71c236648972f8e02215"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:10Z",
-          "gates_passed": false,
-          "input_sha256": "4005c521bf506d9b83ba936034a30aa15d7b0b631f6ed9992297b37ff9407720"
+          "finished_at": "2026-11-21T18:33:35Z",
+          "gates_passed": true,
+          "input_sha256": "ca22c730c932f0baa957dd9b296f41898f30b638fa0d71c236648972f8e02215"
         },
         "membership": {
           "counts": {
@@ -1908,18 +1921,18 @@
         "pdf": {
           "counts": {
             "already_fetched": 620,
-            "confidence:high": 513,
+            "confidence:high": 522,
             "confidence:none": 18,
-            "confidence:partial": 89,
+            "confidence:partial": 80,
             "extracted": 620,
             "layout:columns": 18,
             "layout:markers": 602,
             "papers": 620,
-            "review_queue": 107
+            "review_queue": 98
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:20Z",
-          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:extractor-v5"
+          "finished_at": "2026-11-21T18:29:26Z",
+          "input_sha256": "7d84d4f898b556a2d5283af43fc9cebd78377605643bbc8a9646668cd571e408:extractor-v8"
         }
       },
       "status": "staged",
@@ -1941,19 +1954,20 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 2891,
-          "pdf_slots_resolved": 2771,
-          "rate": 0.9585,
-          "resolved_via_affiliation_map": 2615,
-          "slots_resolved_or_classified_noncredit": 2771,
+          "pdf_slots_resolved": 2790,
+          "rate": 0.9651,
+          "resolved_via_affiliation_map": 2638,
+          "slots_resolved_or_classified_noncredit": 2790,
           "slots_with_affiliation": 2891,
-          "slots_with_education_institution": 1988,
-          "slots_with_institution": 2615,
+          "slots_with_education_institution": 2028,
+          "slots_with_institution": 2638,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
@@ -1968,9 +1982,9 @@
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 641,
-            "none": 26,
-            "partial": 106
+            "high": 652,
+            "none": 21,
+            "partial": 100
           },
           "credited_confidence_levels": [
             "high"
@@ -1979,22 +1993,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 132,
+          "review_queue": 121,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2019/pdf-review.jsonl",
-          "slots_from_image": 621,
+          "slots_from_image": 554,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9429,
-          "extractor_slots_correct": 165,
-          "extractor_slots_wrong": 10,
+          "extractor_accuracy": 0.9829,
+          "extractor_slots_correct": 172,
+          "extractor_slots_wrong": 3,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 132,
+          "pass": true,
+          "review_papers_read_from_image": 121,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -2010,14 +2024,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v97/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2019/works.jsonl",
-      "sha256": "38f5a9d0631d0775dceb9d63b0d1268af82ebefa224c33924ad108980806e834",
+      "sha256": "1aaeea71b027fe44963e389806a6ff8a2cc4e768b0d18559fd3be94a7370742e",
       "stages": {
         "build": {
           "counts": {
@@ -2027,25 +2041,25 @@
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
             "slot_source:none": 2,
-            "slot_source:publisher-pdf": 2270,
-            "slot_source:publisher-pdf-image": 621,
+            "slot_source:publisher-pdf": 2337,
+            "slot_source:publisher-pdf-image": 554,
             "works": 773
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:10Z",
-          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:None:None:769b8a2681ef91b3bb01b9f385198c53f90abc1bd828fc2006330141210e0e94:58fd266fd7f7a90b59bcfd64a6847cd971eb12c66d03bdfaaeb781ff61a880aa:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "38f5a9d0631d0775dceb9d63b0d1268af82ebefa224c33924ad108980806e834"
+          "finished_at": "2026-11-21T18:33:35Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:None:None:b85fd51e5b5040c62c00ea843aa4647737572aec8c3a98ed2c974587a466b691:406e47b0ce6b3715b3f36fa86bcfa89f96721907b2668c93894f0d9d4e3edc99:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "1aaeea71b027fe44963e389806a6ff8a2cc4e768b0d18559fd3be94a7370742e"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:10Z",
-          "gates_passed": false,
-          "input_sha256": "38f5a9d0631d0775dceb9d63b0d1268af82ebefa224c33924ad108980806e834"
+          "finished_at": "2026-11-21T18:33:36Z",
+          "gates_passed": true,
+          "input_sha256": "1aaeea71b027fe44963e389806a6ff8a2cc4e768b0d18559fd3be94a7370742e"
         },
         "membership": {
           "counts": {
@@ -2061,19 +2075,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 773,
-            "confidence:high": 641,
-            "confidence:none": 26,
-            "confidence:partial": 106,
+            "confidence:high": 652,
+            "confidence:none": 21,
+            "confidence:partial": 100,
             "extracted": 773,
             "layout:None": 2,
-            "layout:columns": 24,
-            "layout:markers": 747,
+            "layout:columns": 20,
+            "layout:markers": 751,
             "papers": 773,
-            "review_queue": 132
+            "review_queue": 121
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:20Z",
-          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:extractor-v5"
+          "finished_at": "2026-11-21T18:29:28Z",
+          "input_sha256": "1a04b8e52f2ee3eca630d135a30d0f484da06e50674bed73196e3a3c75a882b3:extractor-v8"
         }
       },
       "status": "staged",
@@ -2094,37 +2108,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 4217,
-          "pdf_slots_resolved": 4042,
-          "rate": 0.9585,
-          "resolved_via_affiliation_map": 3831,
-          "slots_resolved_or_classified_noncredit": 4042,
-          "slots_with_affiliation": 4217,
-          "slots_with_education_institution": 2996,
-          "slots_with_institution": 3831,
+          "pdf_slots": 4215,
+          "pdf_slots_resolved": 4073,
+          "rate": 0.9663,
+          "resolved_via_affiliation_map": 3847,
+          "slots_resolved_or_classified_noncredit": 4073,
+          "slots_with_affiliation": 4215,
+          "slots_with_education_institution": 3034,
+          "slots_with_institution": 3847,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 4226,
           "papers": 1084,
           "papers_any_coverage": 1082,
-          "papers_fully_covered": 1079,
+          "papers_fully_covered": 1077,
           "pass": true,
-          "rate": 0.9979,
-          "slots_with_affiliation": 4217,
+          "rate": 0.9974,
+          "slots_with_affiliation": 4215,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 947,
-            "none": 31,
-            "partial": 106
+            "high": 958,
+            "none": 30,
+            "partial": 96
           },
           "credited_confidence_levels": [
             "high"
@@ -2133,22 +2148,23 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 137,
+          "review_queue": 126,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2020/pdf-review.jsonl",
-          "slots_from_image": 617,
+          "slots_from_image": 558,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9724,
-          "extractor_slots_correct": 176,
-          "extractor_slots_wrong": 5,
+          "extractor_accuracy": 0.9945,
+          "extractor_slots_correct": 180,
+          "extractor_slots_wrong": 1,
           "judge_model": [
-            "claude-haiku-5-5"
+            "claude-haiku-5-5",
+            "claude-haiku-5-5+claude-haiku-5-5+claude-opus-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 137,
+          "pass": true,
+          "review_papers_read_from_image": 126,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -2164,14 +2180,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v119/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2020/works.jsonl",
-      "sha256": "bc301af53e1ab3f60615bcc65a0ba0bb62b21b32bc300346c604b870e0e64a92",
+      "sha256": "32585c71aa2c8e8cd003be4505c766849c16318270af792f13833680398240ae",
       "stages": {
         "build": {
           "counts": {
@@ -2180,26 +2196,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 9,
-            "slot_source:publisher-pdf": 3600,
-            "slot_source:publisher-pdf-image": 617,
+            "slot_source:none": 11,
+            "slot_source:publisher-pdf": 3657,
+            "slot_source:publisher-pdf-image": 558,
             "works": 1084
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:11Z",
-          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:None:None:f80ca203df4f623059b4ac2b63d986639b9127e559d36df2a1f23bcfc452cad9:cc110bc13fb31878b44a926feaaf8bace56851a1fd35b4fa47227d576d4a2666:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "bc301af53e1ab3f60615bcc65a0ba0bb62b21b32bc300346c604b870e0e64a92"
+          "finished_at": "2026-11-21T18:33:36Z",
+          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:None:None:7e1cfb487f3919c6b7a9f65ccc9dc78b259b7ff974e1059885c33c9180cd09cf:979fe8826b61de72f97df06acc08af5982bdfbdd3b4526b2df0ba1bac0dd6d4d:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "32585c71aa2c8e8cd003be4505c766849c16318270af792f13833680398240ae"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:11Z",
-          "gates_passed": false,
-          "input_sha256": "bc301af53e1ab3f60615bcc65a0ba0bb62b21b32bc300346c604b870e0e64a92"
+          "finished_at": "2026-11-21T18:33:36Z",
+          "gates_passed": true,
+          "input_sha256": "32585c71aa2c8e8cd003be4505c766849c16318270af792f13833680398240ae"
         },
         "membership": {
           "counts": {
@@ -2215,18 +2231,18 @@
         "pdf": {
           "counts": {
             "already_fetched": 1084,
-            "confidence:high": 947,
-            "confidence:none": 31,
-            "confidence:partial": 106,
+            "confidence:high": 958,
+            "confidence:none": 30,
+            "confidence:partial": 96,
             "extracted": 1084,
-            "layout:columns": 32,
-            "layout:markers": 1052,
+            "layout:columns": 33,
+            "layout:markers": 1051,
             "papers": 1084,
-            "review_queue": 137
+            "review_queue": 126
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:21Z",
-          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:extractor-v5"
+          "finished_at": "2026-11-21T18:29:30Z",
+          "input_sha256": "b58cc50728128751512826c8f12ed8f7d41e73ad238dfaf4607c7f919f075ea9:extractor-v8"
         }
       },
       "status": "staged",
@@ -2253,11 +2269,12 @@
           "resolved_via_affiliation_map": 4415,
           "slots_resolved_or_classified_noncredit": 4639,
           "slots_with_affiliation": 4834,
-          "slots_with_education_institution": 3430,
+          "slots_with_education_institution": 3431,
           "slots_with_institution": 4415,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 1184,
@@ -2349,8 +2366,8 @@
             "works": 1183
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:12Z",
-          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:None:None:2dd45531f752100d2bd302464077d11692f853b79a28ee73b2922778df533eb0:b174d4554696e8c7770b7a405c572df24ba5a85a94b45fff0e299e0ad960753e:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:35Z",
+          "input_sha256": "a975acb450c51bd15b9ba077c3ca167e3e4e6f004bad5419a011b4c1e73aac35:None:None:2dd45531f752100d2bd302464077d11692f853b79a28ee73b2922778df533eb0:b174d4554696e8c7770b7a405c572df24ba5a85a94b45fff0e299e0ad960753e:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "248e2a5696511caf0df1a3fe61c252e48b00dd62e8402997dcd639c99ed9e859"
         },
         "discover": {},
@@ -2360,7 +2377,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:12Z",
+          "finished_at": "2026-11-21T08:12:20Z",
           "gates_passed": true,
           "input_sha256": "248e2a5696511caf0df1a3fe61c252e48b00dd62e8402997dcd639c99ed9e859"
         },
@@ -2410,37 +2427,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 5336,
-          "pdf_slots_resolved": 5112,
-          "rate": 0.958,
-          "resolved_via_affiliation_map": 4811,
-          "slots_resolved_or_classified_noncredit": 5112,
-          "slots_with_affiliation": 5336,
-          "slots_with_education_institution": 3883,
-          "slots_with_institution": 4811,
+          "pdf_slots": 5335,
+          "pdf_slots_resolved": 5164,
+          "rate": 0.9679,
+          "resolved_via_affiliation_map": 4867,
+          "slots_resolved_or_classified_noncredit": 5164,
+          "slots_with_affiliation": 5335,
+          "slots_with_education_institution": 3942,
+          "slots_with_institution": 4867,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 5373,
           "papers": 1233,
           "papers_any_coverage": 1232,
-          "papers_fully_covered": 1224,
+          "papers_fully_covered": 1223,
           "pass": true,
-          "rate": 0.9931,
-          "slots_with_affiliation": 5336,
+          "rate": 0.9929,
+          "slots_with_affiliation": 5335,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 1071,
-            "none": 37,
-            "partial": 125
+            "high": 1083,
+            "none": 38,
+            "partial": 112
           },
           "credited_confidence_levels": [
             "high"
@@ -2449,22 +2467,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 162,
+          "review_queue": 150,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2022/pdf-review.jsonl",
-          "slots_from_image": 832,
+          "slots_from_image": 762,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9182,
-          "extractor_slots_correct": 202,
-          "extractor_slots_wrong": 18,
+          "extractor_accuracy": 0.9954,
+          "extractor_slots_correct": 218,
+          "extractor_slots_wrong": 1,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 162,
+          "pass": true,
+          "review_papers_read_from_image": 150,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -2480,14 +2498,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v162/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2022/works.jsonl",
-      "sha256": "b40a0e088816169c0b5a7da3ebd405f6fb974ea498da9a09694eb58c42739895",
+      "sha256": "765a836ecdc1fadb7365f87ae24a262da261856238fba457e557d3162f5f1c9f",
       "stages": {
         "build": {
           "counts": {
@@ -2496,26 +2514,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 37,
-            "slot_source:publisher-pdf": 4504,
-            "slot_source:publisher-pdf-image": 832,
+            "slot_source:none": 38,
+            "slot_source:publisher-pdf": 4573,
+            "slot_source:publisher-pdf-image": 762,
             "works": 1233
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:12Z",
-          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:None:None:df19f5f6bf3324201afcbe317bdf824e06e560cb23bb15e6bfd72859e318e35b:33d6a5ba691c8dc5a1233a1032da05ebcedf5ac3f3dcab118efb2b5f709ddcd2:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "b40a0e088816169c0b5a7da3ebd405f6fb974ea498da9a09694eb58c42739895"
+          "finished_at": "2026-11-21T18:33:31Z",
+          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:None:None:4aa9eda8f55090dc4c0925d10e1114377caee0db459368c497fc430993b5b2e1:627e52cc24e2c4518fb57a5bfb0765d9e7291c0c11ca26d204acc8696914fa96:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "765a836ecdc1fadb7365f87ae24a262da261856238fba457e557d3162f5f1c9f"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:13Z",
-          "gates_passed": false,
-          "input_sha256": "b40a0e088816169c0b5a7da3ebd405f6fb974ea498da9a09694eb58c42739895"
+          "finished_at": "2026-11-21T18:33:32Z",
+          "gates_passed": true,
+          "input_sha256": "765a836ecdc1fadb7365f87ae24a262da261856238fba457e557d3162f5f1c9f"
         },
         "membership": {
           "counts": {
@@ -2531,19 +2549,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 1233,
-            "confidence:high": 1071,
-            "confidence:none": 37,
-            "confidence:partial": 125,
+            "confidence:high": 1083,
+            "confidence:none": 38,
+            "confidence:partial": 112,
             "extracted": 1233,
             "layout:None": 1,
-            "layout:columns": 40,
-            "layout:markers": 1192,
+            "layout:columns": 41,
+            "layout:markers": 1191,
             "papers": 1233,
-            "review_queue": 162
+            "review_queue": 150
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:24Z",
-          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:extractor-v5"
+          "finished_at": "2026-11-21T18:29:22Z",
+          "input_sha256": "f12c3fe2ce4295cad86e3d269014f315b9fdefdfd40b7d9642f23f55eec8a704:extractor-v8"
         }
       },
       "status": "staged",
@@ -2564,37 +2582,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 8074,
-          "pdf_slots_resolved": 7754,
-          "rate": 0.9604,
-          "resolved_via_affiliation_map": 7253,
-          "slots_resolved_or_classified_noncredit": 7754,
-          "slots_with_affiliation": 8074,
-          "slots_with_education_institution": 5782,
-          "slots_with_institution": 7253,
+          "pdf_slots": 8072,
+          "pdf_slots_resolved": 7829,
+          "rate": 0.9699,
+          "resolved_via_affiliation_map": 7283,
+          "slots_resolved_or_classified_noncredit": 7829,
+          "slots_with_affiliation": 8072,
+          "slots_with_education_institution": 5866,
+          "slots_with_institution": 7283,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 8121,
           "papers": 1828,
           "papers_any_coverage": 1824,
-          "papers_fully_covered": 1807,
+          "papers_fully_covered": 1805,
           "pass": true,
-          "rate": 0.9942,
-          "slots_with_affiliation": 8074,
+          "rate": 0.994,
+          "slots_with_affiliation": 8072,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 1604,
-            "none": 79,
-            "partial": 145
+            "high": 1614,
+            "none": 76,
+            "partial": 138
           },
           "credited_confidence_levels": [
             "high"
@@ -2603,22 +2622,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 224,
+          "review_queue": 214,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2023/pdf-review.jsonl",
-          "slots_from_image": 1197,
+          "slots_from_image": 1142,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9652,
-          "extractor_slots_correct": 194,
-          "extractor_slots_wrong": 7,
+          "extractor_accuracy": 0.9851,
+          "extractor_slots_correct": 198,
+          "extractor_slots_wrong": 3,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 224,
+          "pass": true,
+          "review_papers_read_from_image": 214,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -2634,14 +2653,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v202/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2023/works.jsonl",
-      "sha256": "7a81fef4c71467b96482b1912c63fccc867d65dc6ebcd1f5c4ba1973e93dd70e",
+      "sha256": "3f60943d38066f63cd242b81b5499d74c871e8d6d827a7dd6e213d048498f617",
       "stages": {
         "build": {
           "counts": {
@@ -2650,26 +2669,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 47,
-            "slot_source:publisher-pdf": 6877,
-            "slot_source:publisher-pdf-image": 1197,
+            "slot_source:none": 49,
+            "slot_source:publisher-pdf": 6930,
+            "slot_source:publisher-pdf-image": 1142,
             "works": 1828
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:13Z",
-          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:None:None:79e60b0d5b3790a03029d3033e7a9bf0f78a580799672bb5fd50cb19c8541cd6:24cabea0f8e9b97cbfdc944c3cb49d0e0f2f8c95b1d2ec8e803d5925cae611f4:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "7a81fef4c71467b96482b1912c63fccc867d65dc6ebcd1f5c4ba1973e93dd70e"
+          "finished_at": "2026-11-21T18:33:37Z",
+          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:None:None:de4dad4424ab4b1b67f7d2125f07f754ca0e946e368f6d3d0d41f0f2e804b74a:6aab880dd34fd627ba23f70705e2241d11a07f33f495541d612bf16c2a2ebd41:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "3f60943d38066f63cd242b81b5499d74c871e8d6d827a7dd6e213d048498f617"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:14Z",
-          "gates_passed": false,
-          "input_sha256": "7a81fef4c71467b96482b1912c63fccc867d65dc6ebcd1f5c4ba1973e93dd70e"
+          "finished_at": "2026-11-21T18:33:37Z",
+          "gates_passed": true,
+          "input_sha256": "3f60943d38066f63cd242b81b5499d74c871e8d6d827a7dd6e213d048498f617"
         },
         "membership": {
           "counts": {
@@ -2685,19 +2704,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 1828,
-            "confidence:high": 1604,
-            "confidence:none": 79,
-            "confidence:partial": 145,
+            "confidence:high": 1614,
+            "confidence:none": 76,
+            "confidence:partial": 138,
             "extracted": 1828,
             "layout:None": 3,
-            "layout:columns": 84,
-            "layout:markers": 1741,
+            "layout:columns": 81,
+            "layout:markers": 1744,
             "papers": 1828,
-            "review_queue": 224
+            "review_queue": 214
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:26Z",
-          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:extractor-v5"
+          "finished_at": "2026-11-21T18:29:34Z",
+          "input_sha256": "d5e96f98bb98e5659c65a26d48aaa1d5205226784a2688804b9ada519d2aa993:extractor-v8"
         }
       },
       "status": "staged",
@@ -2729,6 +2748,7 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 2600,
@@ -2820,8 +2840,8 @@
             "works": 2610
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:14Z",
-          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:None:None:be838fe89033f768971c6e0140f04162e9b1715ffb920c4de219b73a6710585e:02df9a33655bdf35ceede4e969be0816d5c61e1c37b670a072d537ee916d2e9e:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:38Z",
+          "input_sha256": "93e098cc70e0229dbf8789588f7aca105420d1692e83545a1c854c4d315d75c4:None:None:be838fe89033f768971c6e0140f04162e9b1715ffb920c4de219b73a6710585e:02df9a33655bdf35ceede4e969be0816d5c61e1c37b670a072d537ee916d2e9e:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "c8a0026983b8804b9fe47b5b5ce517613a734c00b222130aa756f52c59d3d99b"
         },
         "discover": {},
@@ -2831,7 +2851,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:15Z",
+          "finished_at": "2026-11-21T08:12:23Z",
           "gates_passed": true,
           "input_sha256": "c8a0026983b8804b9fe47b5b5ce517613a734c00b222130aa756f52c59d3d99b"
         },
@@ -2881,47 +2901,48 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 17431,
-          "pdf_slots_resolved": 16693,
-          "rate": 0.9577,
-          "resolved_via_affiliation_map": 15283,
-          "slots_resolved_or_classified_noncredit": 16693,
-          "slots_with_affiliation": 17431,
-          "slots_with_education_institution": 12819,
-          "slots_with_institution": 15283,
+          "pdf_slots": 17425,
+          "pdf_slots_resolved": 16791,
+          "rate": 0.9636,
+          "resolved_via_affiliation_map": 15416,
+          "slots_resolved_or_classified_noncredit": 16791,
+          "slots_with_affiliation": 17425,
+          "slots_with_education_institution": 13004,
+          "slots_with_institution": 15416,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
-              "count": 3260,
-              "diff": 70,
+              "count": 3333,
+              "diff": -3,
               "have": 3330,
-              "note": "Main-track accepts; PMLR v267 lists 3,330 entries with no track label. Reconcile before gating.",
-              "rel_diff": 0.02147,
+              "note": "3,260 main-track papers plus 73 position papers. PMLR v267 prints both with no track label (its 73 'Position:' titles); position papers count, as they do in ICML 2024's volume and anchor.",
+              "rel_diff": 0.0009,
               "scope": "included",
               "source": "https://media.icml.cc/Conferences/ICML2025/ICML2025_Fact_Sheet.pdf"
             }
           ],
           "note": null,
-          "pass": false,
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 17537,
           "papers": 3330,
           "papers_any_coverage": 3324,
-          "papers_fully_covered": 3297,
+          "papers_fully_covered": 3292,
           "pass": true,
-          "rate": 0.994,
-          "slots_with_affiliation": 17431,
+          "rate": 0.9936,
+          "slots_with_affiliation": 17425,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 2892,
-            "none": 119,
-            "partial": 319
+            "high": 2926,
+            "none": 110,
+            "partial": 294
           },
           "credited_confidence_levels": [
             "high"
@@ -2930,22 +2951,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 438,
+          "review_queue": 404,
           "review_queue_path": ".tmp/ml-harvest-600/icml/2025/pdf-review.jsonl",
-          "slots_from_image": 2736,
+          "slots_from_image": 2525,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.908,
-          "extractor_slots_correct": 237,
-          "extractor_slots_wrong": 24,
+          "extractor_accuracy": 0.9962,
+          "extractor_slots_correct": 260,
+          "extractor_slots_wrong": 1,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 438,
+          "pass": true,
+          "review_papers_read_from_image": 404,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -2961,14 +2982,14 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference"
       ],
       "membership_source": "https://proceedings.mlr.press/v267/assets/bib/bibliography.bib",
       "path": ".tmp/ml-harvest-600/cache/icml/2025/works.jsonl",
-      "sha256": "859156567fa751f5502867bf1fc101fe26ec07eb93b95bef2aa3a42f89eefdca",
+      "sha256": "78f0dee6c6656dffc4a5b57d09851829bd2b7adfc1ad0f5e4fb5e919b0d85d56",
       "stages": {
         "build": {
           "counts": {
@@ -2977,26 +2998,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 106,
-            "slot_source:publisher-pdf": 14695,
-            "slot_source:publisher-pdf-image": 2736,
+            "slot_source:none": 112,
+            "slot_source:publisher-pdf": 14900,
+            "slot_source:publisher-pdf-image": 2525,
             "works": 3330
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:15Z",
-          "input_sha256": "1edc882aab1f0578ada7153458f85d6590ab1be10dd9d08f2a93181eeb3ecc2f:None:None:5471231324dd308dd6e807b773f245501b8e295a12ac83b2f209c11d2bdc9114:1242def4621883f2e2e185763ffb6ae210f20fb94a18123a2efd95ac2dfe4134:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "859156567fa751f5502867bf1fc101fe26ec07eb93b95bef2aa3a42f89eefdca"
+          "finished_at": "2026-11-21T18:33:38Z",
+          "input_sha256": "1edc882aab1f0578ada7153458f85d6590ab1be10dd9d08f2a93181eeb3ecc2f:None:None:6953410848706c52d3e852a913febfb6b45dadd4abacbb9cfc76d73e2eeeb22b:7afc2d9dd3de218e583b7013f32bf81f360deda2b2334a1fbe26c6a290836d5b:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "78f0dee6c6656dffc4a5b57d09851829bd2b7adfc1ad0f5e4fb5e919b0d85d56"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:16Z",
-          "gates_passed": false,
-          "input_sha256": "859156567fa751f5502867bf1fc101fe26ec07eb93b95bef2aa3a42f89eefdca"
+          "finished_at": "2026-11-21T18:33:39Z",
+          "gates_passed": true,
+          "input_sha256": "78f0dee6c6656dffc4a5b57d09851829bd2b7adfc1ad0f5e4fb5e919b0d85d56"
         },
         "membership": {
           "counts": {
@@ -3006,25 +3027,25 @@
             "track:Conference": 3330
           },
           "done": true,
-          "finished_at": "2026-11-16T01:56:42Z",
-          "input_sha256": "6671d8771fa161f3b5e9680449e6b72d1e12725f8fb19623a822da6fa7ba5c8f"
+          "finished_at": "2026-11-21T03:01:24Z",
+          "input_sha256": "72b3c0f9585d8f8a9f78f994195249288ba5f8ed42ce91eed4e30bc4165939ee"
         },
         "pdf": {
           "counts": {
             "already_fetched": 3330,
-            "confidence:high": 2892,
-            "confidence:none": 119,
-            "confidence:partial": 319,
+            "confidence:high": 2926,
+            "confidence:none": 110,
+            "confidence:partial": 294,
             "extracted": 3330,
             "layout:None": 3,
-            "layout:columns": 118,
-            "layout:markers": 3209,
+            "layout:columns": 113,
+            "layout:markers": 3214,
             "papers": 3330,
-            "review_queue": 438
+            "review_queue": 404
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:32Z",
-          "input_sha256": "1edc882aab1f0578ada7153458f85d6590ab1be10dd9d08f2a93181eeb3ecc2f:extractor-v5"
+          "finished_at": "2026-11-21T18:29:40Z",
+          "input_sha256": "1edc882aab1f0578ada7153458f85d6590ab1be10dd9d08f2a93181eeb3ecc2f:extractor-v8"
         }
       },
       "status": "staged",
@@ -3045,20 +3066,21 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 1888,
-          "pdf_slots_resolved": 1808,
-          "rate": 0.9576,
-          "resolved_via_affiliation_map": 1714,
-          "slots_resolved_or_classified_noncredit": 1808,
-          "slots_with_affiliation": 1888,
-          "slots_with_education_institution": 1425,
-          "slots_with_institution": 1714,
+          "pdf_slots": 1890,
+          "pdf_slots_resolved": 1800,
+          "rate": 0.9524,
+          "resolved_via_affiliation_map": 1706,
+          "slots_resolved_or_classified_noncredit": 1800,
+          "slots_with_affiliation": 1890,
+          "slots_with_education_institution": 1415,
+          "slots_with_institution": 1706,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
@@ -3067,15 +3089,15 @@
           "papers_any_coverage": 562,
           "papers_fully_covered": 540,
           "pass": true,
-          "rate": 0.9672,
-          "slots_with_affiliation": 1888,
+          "rate": 0.9682,
+          "slots_with_affiliation": 1890,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 424,
-            "none": 40,
-            "partial": 105
+            "high": 431,
+            "none": 38,
+            "partial": 100
           },
           "credited_confidence_levels": [
             "high"
@@ -3084,22 +3106,22 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 145,
+          "review_queue": 138,
           "review_queue_path": ".tmp/ml-harvest-600/neurips/2016/pdf-review.jsonl",
-          "slots_from_image": 578,
+          "slots_from_image": 539,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9178,
-          "extractor_slots_correct": 134,
-          "extractor_slots_wrong": 12,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 145,
+          "extractor_slots_wrong": 0,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 145,
+          "pass": true,
+          "review_papers_read_from_image": 138,
           "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
@@ -3115,7 +3137,7 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference",
@@ -3124,7 +3146,7 @@
       ],
       "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2016",
       "path": ".tmp/ml-harvest-600/cache/neurips/2016/works.jsonl",
-      "sha256": "b28b971fa3d9b1b3897185b76afba00bf2e2ef5c901fb3c408f5b5fc44c487dd",
+      "sha256": "aba4354dc875a21bd055cc264e069d5bbb94fd4968b7bdc4a8be81f325203986",
       "stages": {
         "build": {
           "counts": {
@@ -3133,26 +3155,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 64,
-            "slot_source:publisher-pdf": 1310,
-            "slot_source:publisher-pdf-image": 578,
+            "slot_source:none": 62,
+            "slot_source:publisher-pdf": 1351,
+            "slot_source:publisher-pdf-image": 539,
             "works": 569
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:22Z",
-          "input_sha256": "0234af7f2b382888a3b46de84f5e5fa8b3c2a2dbdf5cc31c691491f6c38d57bb:None:None:fe91e3dc80e0e323b2a763806616fe483b15bbf63a72756fa5b2c0d353c6ddce:63544cc699062f6bfff3d910237e1179ffdda48fa94e83cf56d48aa9fb67f5b6:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "b28b971fa3d9b1b3897185b76afba00bf2e2ef5c901fb3c408f5b5fc44c487dd"
+          "finished_at": "2026-11-21T18:33:31Z",
+          "input_sha256": "0234af7f2b382888a3b46de84f5e5fa8b3c2a2dbdf5cc31c691491f6c38d57bb:None:None:8a615de7d8bdf40bac2cdcbba299671f58fd163c7a34fb6e659446382d9c7450:93d6990059787f0b8ffebc759bbf992b0c7156dc90c883eee624db093603a6f8:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "aba4354dc875a21bd055cc264e069d5bbb94fd4968b7bdc4a8be81f325203986"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:17Z",
-          "gates_passed": false,
-          "input_sha256": "b28b971fa3d9b1b3897185b76afba00bf2e2ef5c901fb3c408f5b5fc44c487dd"
+          "finished_at": "2026-11-21T18:33:31Z",
+          "gates_passed": true,
+          "input_sha256": "aba4354dc875a21bd055cc264e069d5bbb94fd4968b7bdc4a8be81f325203986"
         },
         "membership": {
           "counts": {
@@ -3169,19 +3191,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 569,
-            "confidence:high": 424,
-            "confidence:none": 40,
-            "confidence:partial": 105,
+            "confidence:high": 431,
+            "confidence:none": 38,
+            "confidence:partial": 100,
             "extracted": 569,
             "layout:None": 6,
-            "layout:columns": 461,
-            "layout:markers": 102,
+            "layout:columns": 453,
+            "layout:markers": 110,
             "papers": 569,
-            "review_queue": 145
+            "review_queue": 138
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:32Z",
-          "input_sha256": "0234af7f2b382888a3b46de84f5e5fa8b3c2a2dbdf5cc31c691491f6c38d57bb:extractor-v5"
+          "finished_at": "2026-11-21T18:29:20Z",
+          "input_sha256": "0234af7f2b382888a3b46de84f5e5fa8b3c2a2dbdf5cc31c691491f6c38d57bb:extractor-v8"
         }
       },
       "status": "staged",
@@ -3202,37 +3224,38 @@
         "institution_resolution": {
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
-          "pdf_slots": 2457,
-          "pdf_slots_resolved": 2371,
-          "rate": 0.965,
-          "resolved_via_affiliation_map": 2216,
-          "slots_resolved_or_classified_noncredit": 2371,
-          "slots_with_affiliation": 2457,
-          "slots_with_education_institution": 1760,
-          "slots_with_institution": 2216,
+          "pdf_slots": 2461,
+          "pdf_slots_resolved": 2377,
+          "rate": 0.9659,
+          "resolved_via_affiliation_map": 2221,
+          "slots_resolved_or_classified_noncredit": 2377,
+          "slots_with_affiliation": 2461,
+          "slots_with_education_institution": 1771,
+          "slots_with_institution": 2221,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
           "author_slots": 2496,
           "papers": 679,
           "papers_any_coverage": 674,
-          "papers_fully_covered": 663,
+          "papers_fully_covered": 666,
           "pass": true,
-          "rate": 0.9844,
-          "slots_with_affiliation": 2457,
+          "rate": 0.986,
+          "slots_with_affiliation": 2461,
           "threshold": 0.9
         },
         "pdf_evidence": {
           "confidence": {
-            "high": 552,
-            "none": 41,
-            "partial": 86
+            "high": 561,
+            "none": 38,
+            "partial": 80
           },
           "credited_confidence_levels": [
             "high"
@@ -3241,23 +3264,23 @@
           "pass": true,
           "pdf_openalex_conflict_slots": 0,
           "prefer_pdf": true,
-          "review_queue": 127,
+          "review_queue": 118,
           "review_queue_path": ".tmp/ml-harvest-600/neurips/2017/pdf-review.jsonl",
-          "slots_from_image": 554,
+          "slots_from_image": 518,
           "source_discrepancy_papers": 0
         },
         "pdf_verification": {
           "conflict_papers_checked": 0,
-          "extractor_accuracy": 0.9661,
-          "extractor_slots_correct": 171,
-          "extractor_slots_wrong": 6,
+          "extractor_accuracy": 0.983,
+          "extractor_slots_correct": 173,
+          "extractor_slots_wrong": 3,
           "judge_model": [
             "claude-haiku-5-5"
           ],
           "note": null,
-          "pass": false,
-          "review_papers_read_from_image": 127,
-          "sample_complete": false,
+          "pass": true,
+          "review_papers_read_from_image": 118,
+          "sample_complete": true,
           "sample_papers_checked": 50,
           "sample_papers_expected": 50,
           "threshold": 0.98
@@ -3272,7 +3295,7 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference",
@@ -3281,7 +3304,7 @@
       ],
       "membership_source": "https://proceedings.neurips.cc/paper_files/paper/2017",
       "path": ".tmp/ml-harvest-600/cache/neurips/2017/works.jsonl",
-      "sha256": "76220532175d95870e145b27fa8ac426a8c6cebab709ab290f128e07df508229",
+      "sha256": "bd1ea391e55384807296658d108631b15355a5399136ae3939bec003a20532d4",
       "stages": {
         "build": {
           "counts": {
@@ -3290,26 +3313,26 @@
             "excluded_track_rows": 0,
             "pdf_openalex_conflict_slots": 0,
             "rejected_candidates": 0,
-            "slot_source:none": 39,
-            "slot_source:publisher-pdf": 1903,
-            "slot_source:publisher-pdf-image": 554,
+            "slot_source:none": 35,
+            "slot_source:publisher-pdf": 1943,
+            "slot_source:publisher-pdf-image": 518,
             "works": 679
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:23Z",
-          "input_sha256": "e5b6ff4b27b6bba6289111cc8944c6f6172328e7c134b460ee297b3c65db4600:None:None:ba2c7fb0f93ce24fa4a7426b370ad6775178d961886aab18674c1e0836b99f33:14f249fa08ce9ac01d48f4ecfceda7c0bab030b7da1c90dcf1521d8725f17ffd:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
-          "sha256": "76220532175d95870e145b27fa8ac426a8c6cebab709ab290f128e07df508229"
+          "finished_at": "2026-11-21T18:33:39Z",
+          "input_sha256": "e5b6ff4b27b6bba6289111cc8944c6f6172328e7c134b460ee297b3c65db4600:None:None:50e5b1a0e41ffb74a660ddbaad4ffbfa0db3f168d54381661a386c69737d51c8:4aaf1d6adf430b4612c7e5c39e7b1f436b2dce98236c9d6adf5a007ef120743b:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "bd1ea391e55384807296658d108631b15355a5399136ae3939bec003a20532d4"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:18Z",
-          "gates_passed": false,
-          "input_sha256": "76220532175d95870e145b27fa8ac426a8c6cebab709ab290f128e07df508229"
+          "finished_at": "2026-11-21T18:33:39Z",
+          "gates_passed": true,
+          "input_sha256": "bd1ea391e55384807296658d108631b15355a5399136ae3939bec003a20532d4"
         },
         "membership": {
           "counts": {
@@ -3326,19 +3349,19 @@
         "pdf": {
           "counts": {
             "already_fetched": 679,
-            "confidence:high": 552,
-            "confidence:none": 41,
-            "confidence:partial": 86,
+            "confidence:high": 561,
+            "confidence:none": 38,
+            "confidence:partial": 80,
             "extracted": 679,
             "layout:None": 4,
-            "layout:columns": 548,
-            "layout:markers": 127,
+            "layout:columns": 539,
+            "layout:markers": 136,
             "papers": 679,
-            "review_queue": 127
+            "review_queue": 118
           },
           "done": true,
-          "finished_at": "2026-11-20T21:02:33Z",
-          "input_sha256": "e5b6ff4b27b6bba6289111cc8944c6f6172328e7c134b460ee297b3c65db4600:extractor-v5"
+          "finished_at": "2026-11-21T18:29:41Z",
+          "input_sha256": "e5b6ff4b27b6bba6289111cc8944c6f6172328e7c134b460ee297b3c65db4600:extractor-v8"
         }
       },
       "status": "staged",
@@ -3370,9 +3393,10 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
@@ -3429,7 +3453,7 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference",
@@ -3453,19 +3477,19 @@
             "works": 1009
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:24Z",
-          "input_sha256": "efa4de6b649e2ac69c2f1d79767bec7aa9041274066e97aeb916504bc4952eb6:None:None:116c7a172f04298ff7124f7f5d18182da565164abb5768eb773f4ba48aa66693:42be6036351796acfa08ffee6c26d52dda4f1b66ff1429fc054551a7035993e9:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:32Z",
+          "input_sha256": "efa4de6b649e2ac69c2f1d79767bec7aa9041274066e97aeb916504bc4952eb6:None:None:116c7a172f04298ff7124f7f5d18182da565164abb5768eb773f4ba48aa66693:42be6036351796acfa08ffee6c26d52dda4f1b66ff1429fc054551a7035993e9:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "ac9f1f85b8944b897e4284864971e4e281749239adfdd96dff15b4bd504b5ac9"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:19Z",
-          "gates_passed": false,
+          "finished_at": "2026-11-21T08:12:18Z",
+          "gates_passed": true,
           "input_sha256": "ac9f1f85b8944b897e4284864971e4e281749239adfdd96dff15b4bd504b5ac9"
         },
         "membership": {
@@ -3527,9 +3551,10 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": false,
           "anchors": [],
-          "note": "No included-track anchor configured; membership cannot pass.",
-          "pass": false,
+          "note": "No official count for this edition; membership rests on the source proven on anchored editions.",
+          "pass": true,
           "rows_without_membership_or_allowed_track": 0
         },
         "paper_specific_affiliations": {
@@ -3586,7 +3611,7 @@
           "pass": true
         }
       },
-      "gates_passed": false,
+      "gates_passed": true,
       "http_last_run": {},
       "include_tracks": [
         "Conference",
@@ -3610,19 +3635,19 @@
             "works": 1428
           },
           "done": true,
-          "finished_at": "2026-11-20T21:13:25Z",
-          "input_sha256": "e27594ff3b89e4615d7725373517ec3ddf7113dbd5fb0e9dbaae92a4bc1b09cd:None:None:0bb4f374fa13e56e49ea1645977ed93d6cd5da90ac025ae5d274613b195cf431:7780bef1d176b9136e0a214ebc049275ec9f3cb49b761259e8daf5e7ffa86a06:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:33Z",
+          "input_sha256": "e27594ff3b89e4615d7725373517ec3ddf7113dbd5fb0e9dbaae92a4bc1b09cd:None:None:0bb4f374fa13e56e49ea1645977ed93d6cd5da90ac025ae5d274613b195cf431:7780bef1d176b9136e0a214ebc049275ec9f3cb49b761259e8daf5e7ffa86a06:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "ae94081426d958d9b8ed6ecde4482cef3fcf3c377ac9a94b71e0f9b433564002"
         },
         "discover": {},
         "enrich": {},
         "gates": {
           "counts": {
-            "passed": 0
+            "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:19Z",
-          "gates_passed": false,
+          "finished_at": "2026-11-21T07:46:34Z",
+          "gates_passed": true,
           "input_sha256": "ae94081426d958d9b8ed6ecde4482cef3fcf3c377ac9a94b71e0f9b433564002"
         },
         "membership": {
@@ -3674,16 +3699,17 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 7726,
-          "pdf_slots_resolved": 7436,
-          "rate": 0.9625,
-          "resolved_via_affiliation_map": 6834,
-          "slots_resolved_or_classified_noncredit": 7436,
+          "pdf_slots_resolved": 7438,
+          "rate": 0.9627,
+          "resolved_via_affiliation_map": 6836,
+          "slots_resolved_or_classified_noncredit": 7438,
           "slots_with_affiliation": 7726,
-          "slots_with_education_institution": 5488,
-          "slots_with_institution": 6834,
+          "slots_with_education_institution": 5490,
+          "slots_with_institution": 6836,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 1898,
@@ -3776,8 +3802,8 @@
             "works": 1898
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:20Z",
-          "input_sha256": "8db59694dd2cb3835314eb17767199ada0937ab4260d9e4793026fcb8106a9ed:None:None:3662f8e82183c5b57817cb4b14044a1b1d1d4c9256fea8c0ea1cccd7a992597a:239b3f180c70ec8a6beba48d4218c725353501ad269c30e9be93715632178bf2:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:34Z",
+          "input_sha256": "8db59694dd2cb3835314eb17767199ada0937ab4260d9e4793026fcb8106a9ed:None:None:3662f8e82183c5b57817cb4b14044a1b1d1d4c9256fea8c0ea1cccd7a992597a:239b3f180c70ec8a6beba48d4218c725353501ad269c30e9be93715632178bf2:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "46085bcddf21d3c7e6a30e675487d52776016878ffca8b890a99dcf3bbd003ce"
         },
         "discover": {},
@@ -3787,7 +3813,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:20Z",
+          "finished_at": "2026-11-21T08:12:20Z",
           "gates_passed": true,
           "input_sha256": "46085bcddf21d3c7e6a30e675487d52776016878ffca8b890a99dcf3bbd003ce"
         },
@@ -3839,16 +3865,17 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 9907,
-          "pdf_slots_resolved": 9517,
-          "rate": 0.9606,
-          "resolved_via_affiliation_map": 8785,
-          "slots_resolved_or_classified_noncredit": 9517,
+          "pdf_slots_resolved": 9518,
+          "rate": 0.9607,
+          "resolved_via_affiliation_map": 8786,
+          "slots_resolved_or_classified_noncredit": 9518,
           "slots_with_affiliation": 9907,
-          "slots_with_education_institution": 7144,
-          "slots_with_institution": 8785,
+          "slots_with_education_institution": 7146,
+          "slots_with_institution": 8786,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 2334,
@@ -3941,8 +3968,8 @@
             "works": 2334
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:21Z",
-          "input_sha256": "7ad14f32867f3ca5ae78fd43d5354f7b2053c42b1aef9490e7837362c0b451ec:None:None:bfe9f90de238be4f34331a0b430825a2953d162ea021da71fc8283f4318f3041:d08f2b138d73f93a770e2f67e47cd9ad5dde1d914c8931a953c163b77cf3e7eb:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:35Z",
+          "input_sha256": "7ad14f32867f3ca5ae78fd43d5354f7b2053c42b1aef9490e7837362c0b451ec:None:None:bfe9f90de238be4f34331a0b430825a2953d162ea021da71fc8283f4318f3041:d08f2b138d73f93a770e2f67e47cd9ad5dde1d914c8931a953c163b77cf3e7eb:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "937984f61022fc9ec75fbcbf67230dc7ef75fe76b54218eade34708adda49572"
         },
         "discover": {},
@@ -3952,7 +3979,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:21Z",
+          "finished_at": "2026-11-21T08:12:21Z",
           "gates_passed": true,
           "input_sha256": "937984f61022fc9ec75fbcbf67230dc7ef75fe76b54218eade34708adda49572"
         },
@@ -4014,6 +4041,7 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 2672,
@@ -4114,8 +4142,8 @@
             "works": 2834
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:22Z",
-          "input_sha256": "3c0e1bb8768b344fe59093ed9a3f97312a1979bf019901fd13eed3e54d77104e:None:None:c0b4e7bb57d79710d0f99e5398da2d926cbf25f004570afc9b840234cd06a7bc:a26e539ea5fa2995a222ad2dbbbdfc40d56328fbe962ae638b02d1673b78dfd4:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:36Z",
+          "input_sha256": "3c0e1bb8768b344fe59093ed9a3f97312a1979bf019901fd13eed3e54d77104e:None:None:c0b4e7bb57d79710d0f99e5398da2d926cbf25f004570afc9b840234cd06a7bc:a26e539ea5fa2995a222ad2dbbbdfc40d56328fbe962ae638b02d1673b78dfd4:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "378125b8ec4ee1f9db6833f634e7188db064d0c7681caa3c27af5571b98155e7"
         },
         "discover": {},
@@ -4125,7 +4153,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:22Z",
+          "finished_at": "2026-11-21T08:12:22Z",
           "gates_passed": true,
           "input_sha256": "378125b8ec4ee1f9db6833f634e7188db064d0c7681caa3c27af5571b98155e7"
         },
@@ -4178,16 +4206,17 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 17578,
-          "pdf_slots_resolved": 16895,
-          "rate": 0.9611,
-          "resolved_via_affiliation_map": 15452,
-          "slots_resolved_or_classified_noncredit": 16895,
+          "pdf_slots_resolved": 16896,
+          "rate": 0.9612,
+          "resolved_via_affiliation_map": 15453,
+          "slots_resolved_or_classified_noncredit": 16896,
           "slots_with_affiliation": 17578,
-          "slots_with_education_institution": 12901,
-          "slots_with_institution": 15452,
+          "slots_with_education_institution": 12903,
+          "slots_with_institution": 15453,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 3218,
@@ -4296,8 +4325,8 @@
             "works": 3540
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:23Z",
-          "input_sha256": "089d237eacd79e60c5fe3828fecf707c56982c037070e0127822164d56759430:None:None:c7cf865a07fefd25cbe581f510f087bcc408a43876464824c9cccf22b5adc772:e6b1f09c7bbe18cf548589467b271d5be6c01d0db03ff38d376b818ae2715159:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:37Z",
+          "input_sha256": "089d237eacd79e60c5fe3828fecf707c56982c037070e0127822164d56759430:None:None:c7cf865a07fefd25cbe581f510f087bcc408a43876464824c9cccf22b5adc772:e6b1f09c7bbe18cf548589467b271d5be6c01d0db03ff38d376b818ae2715159:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "46fa69ba39a790b638faa171c3e195acd6289cbd69da9cb4c7bda08b8920a56a"
         },
         "discover": {},
@@ -4307,7 +4336,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:24Z",
+          "finished_at": "2026-11-21T08:12:23Z",
           "gates_passed": true,
           "input_sha256": "46fa69ba39a790b638faa171c3e195acd6289cbd69da9cb4c7bda08b8920a56a"
         },
@@ -4370,6 +4399,7 @@
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 4037,
@@ -4482,8 +4512,8 @@
             "works": 4493
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:24Z",
-          "input_sha256": "d3e1ceedb923cd023dbd7bb3bc17d360bbb9c8166b97325cbd1c716d894bb2e8:None:None:9f0fe149f654d2554557ca07a74717a05c441c3ff0d1630162c92a071e74951a:aad50f10f6042626b993411af779ae4fee46165623ba8b3eecba3de1f11583e1:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:39Z",
+          "input_sha256": "d3e1ceedb923cd023dbd7bb3bc17d360bbb9c8166b97325cbd1c716d894bb2e8:None:None:9f0fe149f654d2554557ca07a74717a05c441c3ff0d1630162c92a071e74951a:aad50f10f6042626b993411af779ae4fee46165623ba8b3eecba3de1f11583e1:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "004578947afe69233fa68565e138b3304cf5f4ff6b6a44a74c3129d4a055f0d3"
         },
         "discover": {},
@@ -4493,7 +4523,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:25Z",
+          "finished_at": "2026-11-21T08:12:24Z",
           "gates_passed": true,
           "input_sha256": "004578947afe69233fa68565e138b3304cf5f4ff6b6a44a74c3129d4a055f0d3"
         },
@@ -4546,16 +4576,17 @@
           "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
           "pass": true,
           "pdf_slots": 33646,
-          "pdf_slots_resolved": 32504,
+          "pdf_slots_resolved": 32505,
           "rate": 0.9661,
-          "resolved_via_affiliation_map": 29604,
-          "slots_resolved_or_classified_noncredit": 32504,
+          "resolved_via_affiliation_map": 29605,
+          "slots_resolved_or_classified_noncredit": 32505,
           "slots_with_affiliation": 33646,
-          "slots_with_education_institution": 25633,
-          "slots_with_institution": 29604,
+          "slots_with_education_institution": 25634,
+          "slots_with_institution": 29605,
           "threshold": 0.95
         },
         "membership": {
+          "anchored": true,
           "anchors": [
             {
               "count": 5290,
@@ -4659,8 +4690,8 @@
             "works": 5783
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:25Z",
-          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20:fb3743b7e47e17df9961f86fc48eeb917bdd06ab0873bb290120aeb91da84a86:f761303f863a6fd83ea533a98a56dc38d0abc7335ab36bb4567b875ea0e7d6cc:b3453c69790244edf21208afc717fda701941a4045780695b82f825d66470652:841a43cfef423b8176bbca9deaccb2d68fc435bad09758e1436f20ccb66a4571:9bcee653f95ade0ac5a9f026b058e29e53cffe071fa8e3f22495093505e4cd54:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "finished_at": "2026-11-21T07:46:40Z",
+          "input_sha256": "7e37b41cf9994bb8666f9af643e94d335e7fbe1dac8e393efc80d37160acad20:fb3743b7e47e17df9961f86fc48eeb917bdd06ab0873bb290120aeb91da84a86:f761303f863a6fd83ea533a98a56dc38d0abc7335ab36bb4567b875ea0e7d6cc:b3453c69790244edf21208afc717fda701941a4045780695b82f825d66470652:841a43cfef423b8176bbca9deaccb2d68fc435bad09758e1436f20ccb66a4571:39b5078fa896478de88b928fc48b139fb94b8d02d4d28657e38f4f53634d6000:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
           "sha256": "70031f30efdbbef6617dc705ab493f0d0b4e783a0215305dac8c5dbe2a99cddc"
         },
         "discover": {
@@ -4685,7 +4716,7 @@
             "passed": 1
           },
           "done": true,
-          "finished_at": "2026-11-20T21:14:26Z",
+          "finished_at": "2026-11-21T08:12:25Z",
           "gates_passed": true,
           "input_sha256": "70031f30efdbbef6617dc705ab493f0d0b4e783a0215305dac8c5dbe2a99cddc"
         },
