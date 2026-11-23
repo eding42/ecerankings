@@ -1028,6 +1028,9 @@ def phase3_aggregate(areas, args):
     if os.path.exists(KNOWN_JSON):
         with open(KNOWN_JSON) as f:
             known_strong = json.load(f)
+        known_strong = {ak: ids for ak, ids in known_strong.items() if ak in areas["areas"]}
+        if not any(known_strong.values()):
+            flags["high"].append("[known-strong] no reference institutions configured for this registry; zero-count tripwires remain unassessed")
 
         area_scores = defaultdict(lambda: defaultdict(float))
         with open(inst_csv) as f:

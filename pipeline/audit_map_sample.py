@@ -37,6 +37,7 @@ Read-only apart from its own output directory and the report. Stdlib only.
 import argparse
 import csv
 import glob
+import hashlib
 import json
 import math
 import os
@@ -47,7 +48,7 @@ from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import adjudication  # noqa: E402
-from affiliation_evidence import academic_evidence  # noqa: E402
+from affiliation_evidence import institutional_name_evidence, build_name_index  # noqa: E402
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP_CSV = os.path.join(REPO_ROOT, "data", "affiliation-map.csv")
@@ -105,12 +106,13 @@ def draw_sample(rows, share, index, size, seed):
     rows = sorted(rows, key=lambda r: r["raw_affiliation"])
     quota = {name: max(1, round(size * frac)) for name, frac in STRATA}
     weight = lambda r: share.get(r["raw_affiliation"], 0.0)  # noqa: E731
+    name_index = build_name_index(index)
     pools = {
         "credit": [r for r in rows if accepted_education(r)],
         "short": [r for r in rows if accepted_education(r) and len(r["raw_affiliation"].split()) <= 2],
-        "manual": [r for r in rows if r["status"] == "manual" and credited(r)],
+        "manual": [r for r in rows if r["status"] == "manual" or r.get("matched_via", "").startswith("adjudicated:")],
         "no_evidence": [r for r in rows if r["status"] == "auto" and accepted_education(r)
-                        and index.get(r["institution_id"]) and not academic_evidence(r["raw_affiliation"], index[r["institution_id"]])],
+                        and index.get(r["institution_id"]) and not institutional_name_evidence(r["raw_affiliation"], index[r["institution_id"]], name_index)],
         "not_credited": [r for r in rows if r["status"] in ("auto", "manual") and not credited(r) and weight(r) > 0],
         "unmatched": [r for r in rows if r["status"] in ("review", "unmatched") and weight(r) > 0],
     }
@@ -136,6 +138,8 @@ def draw_sample(rows, share, index, size, seed):
 
 
 def write_sample(out, sample, meta):
+    if os.path.exists(os.path.join(out, "sample.json")):
+        raise ValueError("Audit sample already exists; use a fresh seed/output directory")
     os.makedirs(out, exist_ok=True)
     with open(os.path.join(out, "sample.json"), "w", encoding="utf8") as handle:
         json.dump({"meta": meta, "items": list(sample.values())}, handle, ensure_ascii=False, indent=1)
@@ -155,8 +159,17 @@ def load_decisions(paths):
         for path in sorted(glob.glob(pattern)):
             with open(path, encoding="utf8") as handle:
                 data = json.load(handle)
-            for d in data["decisions"] if isinstance(data, dict) and "decisions" in data else data:
+            items = data.get("decisions") or data.get("judgments") if isinstance(data, dict) else data
+            for d in items:
                 key = d.get("key") or adjudication.row_key(d.get("raw_affiliation", ""))
+                if key in decisions:
+                    raise ValueError(f"Duplicate judgment for {key}")
+                if d.get("decision") not in {"education", "supported", "corrected", "noneducation", "unresolved"}:
+                    raise ValueError(f"Invalid judgment for {key}")
+                if d.get("decision") in {"education", "supported", "corrected"} and not d.get("institution_id"):
+                    raise ValueError(f"Missing institution ID for {key}")
+                if not d.get("evidence") or not d.get("decided_by"):
+                    raise ValueError(f"Missing judgment evidence for {key}")
                 decisions[key] = d
     return decisions
 
@@ -176,7 +189,7 @@ def classify(item, decision, aliases):
     current = item["current"]
     was_credited = credited({**current, "institution_type": current["institution_type"]})
     if verdict == "unresolved":
-        return "undecidable" if was_credited else "correct"
+        return "undecidable"
     if was_credited:
         if verdict == "noneducation":
             return "wrong_credited"
@@ -204,9 +217,11 @@ def score(sample, decisions, aliases):
 def render_report(sample, per_stratum, outcomes, seed, credited_total, max_error):
     lines = [f"# Affiliation map audit, seed {seed}, {date.today().isoformat()}", "",
              f"{sum(1 for _ in sample['items'])} strings sampled, {len(outcomes)} judged.", "",
-             "| stratum | judged | wrong | missed credit | undecidable | error rate | 95% interval |",
+             "| stratum | judged | disputed destination/type | disputed omission | undecidable | disagreement rate | 95% interval |",
              "|---|---|---|---|---|---|---|"]
-    failing = False
+    failing = len(outcomes) != len(sample["items"])
+    if failing:
+        lines.append("Gate: incomplete — sampled strings are missing judgments.")
     estimate = None
     for name, _ in STRATA:
         c = per_stratum.get(name)
@@ -219,14 +234,20 @@ def render_report(sample, per_stratum, outcomes, seed, credited_total, max_error
         lines.append(f"| {name} | {c['n']} | {wrong} | {missed} | {c['undecidable']} | {p:.1%} | {low:.1%} to {high:.1%} |")
         if name == "credit":
             estimate = (wrong, decided)
-    if estimate:
+    if not estimate or not estimate[1]:
+        failing = True
+        lines.append("Gate: incomplete — no decidable credit sample.")
+    if estimate and estimate[1]:
         wrong, decided = estimate
         p, low, high = wilson(wrong, decided)
-        lines += ["", f"**Credit-weighted error rate: {p:.1%} (95% interval {low:.1%} to {high:.1%}).** "
-                      f"Of {credited_total:,.0f} credits that flow through accepted education rows, about "
-                      f"{p * credited_total:,.0f} are misassigned (range {low * credited_total:,.0f} to {high * credited_total:,.0f})."]
-        failing = p > max_error
-        lines.append(f"Gate: point estimate {'above' if failing else 'within'} {max_error:.0%}.")
+        lines += ["", f"**Blind-judge disagreement rate (credit-weighted proxy): {p:.1%} (95% interval {low:.1%} to {high:.1%}).** "
+                      f"Of {credited_total:,.0f} raw-affiliation opportunity shares associated with accepted education rows, about "
+                      f"{p * credited_total:,.0f} are associated with judge-disputed mappings (proxy range {low * credited_total:,.0f} to {high * credited_total:,.0f})."]
+        failing = failing or p > max_error or bool(per_stratum["credit"]["undecidable"])
+        gate = 'incomplete (undecidable credit judgments)' if per_stratum['credit']['undecidable'] else (
+            'point estimate above threshold' if p > max_error else 'point estimate within threshold')
+        lines.append(f"Gate: {gate}; threshold {max_error:.0%}.")
+    lines.append("Disagreements need evidence review; undecidable judgments are excluded from the interval and prevent a complete credit gate.")
     misses = [(i, d, o) for i, d, o in outcomes.values() if o in ("wrong_institution", "wrong_credited", "missed_credit")]
     if misses:
         lines += ["", "## Disagreements", ""]
@@ -245,8 +266,14 @@ def cmd_draw(args):
     _, share = adjudication.string_weights(args.cache_dir or [os.path.join(REPO_ROOT, "cache")])
     sample, pool_sizes = draw_sample(rows, share, index, args.size, args.seed)
     out = args.out or os.path.join(DEFAULT_OUT, f"seed-{args.seed}")
+    with open(MAP_CSV, "rb") as handle:
+        map_hash = hashlib.sha256(handle.read()).hexdigest()
     batches = write_sample(out, sample, {"seed": args.seed, "size": args.size, "pools": pool_sizes,
-                                         "map_rows": len(rows), "drawn": date.today().isoformat()})
+                                         "map_rows": len(rows), "drawn": date.today().isoformat(),
+                                         "map_sha256": map_hash,
+                                         "sampling_version": 2,
+                                         "cache_dirs": args.cache_dir or [os.path.join(REPO_ROOT, "cache")],
+                                         "opportunity_share": sum(share.get(r["raw_affiliation"], 0.0) for r in rows if accepted_education(r))})
     counts = Counter(s for item in sample.values() for s in item["strata"])
     print(f"sampled {len(sample)} distinct strings ({dict(counts)}) -> {out}")
     print(f"{batches} blind batches of <= {BATCH}; the judge sees only raw_affiliation")
@@ -259,12 +286,15 @@ def cmd_score(args):
     with open(os.path.join(out, "sample.json"), encoding="utf8") as handle:
         sample = json.load(handle)
     decisions = load_decisions(args.decisions or [os.path.join(out, "decisions-*.json")])
+    unexpected = set(decisions) - {item["key"] for item in sample["items"]}
+    if unexpected:
+        raise ValueError("Judgments contain keys outside this sample")
     per_stratum, outcomes = score(sample, decisions, load_aliases())
     missing = len(sample["items"]) - len(outcomes)
     with open(MAP_CSV, newline="", encoding="utf8") as handle:
         rows = list(csv.DictReader(handle))
     _, share = adjudication.string_weights(args.cache_dir or [os.path.join(REPO_ROOT, "cache")])
-    credited_total = sum(share.get(r["raw_affiliation"], 0.0) for r in rows if accepted_education(r))
+    credited_total = sample.get("meta", {}).get("opportunity_share", sum(share.get(r["raw_affiliation"], 0.0) for r in rows if accepted_education(r)))
     report, failing = render_report(sample, per_stratum, outcomes, args.seed, credited_total, args.max_error)
     os.makedirs(REPORT_DIR, exist_ok=True)
     report_path = os.path.join(REPORT_DIR, f"map-audit-{date.today().isoformat()}-seed{args.seed}.md")
@@ -288,7 +318,7 @@ def cmd_score(args):
     print(f"report: {os.path.relpath(report_path, REPO_ROOT)}")
     print(f"{len(fixes)} disagreements -> {os.path.relpath(fix_path, REPO_ROOT)}; "
           f"review, then `adjudication.py apply --dry-run` it. Nothing was applied.")
-    return 2 if failing or missing == len(sample["items"]) else 0
+    return 2 if failing or missing or not sample["items"] else 0
 
 
 def main():

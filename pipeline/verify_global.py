@@ -381,7 +381,7 @@ def check_aggregate_years(flags, registry, data_dir, window):
             f"{'…' if len(venues) > 6 else ''}); they stretch the site's year range")
 
 
-def check_reference_lists(flags, data_dir):
+def check_reference_lists(flags, data_dir, area_keys=None):
     """G9: tripwires that cannot trip."""
     credited = set()
     path = os.path.join(data_dir, "inst-area-year.csv")
@@ -397,6 +397,10 @@ def check_reference_lists(flags, data_dir):
     if os.path.exists(KNOWN_JSON) and credited:
         with open(KNOWN_JSON) as handle:
             known = json.load(handle)
+        if area_keys is not None:
+            known = {ak: values for ak, values in known.items() if ak in area_keys}
+        if not any(known.values()):
+            flags["high"].append("[known-strong] no reference institutions configured for this registry; zero-count tripwires remain unassessed")
         ids = sorted({i for values in known.values() if isinstance(values, list) for i in values
                       if isinstance(i, str) and i.startswith("http")})
         unknown = [i for i in ids if i not in credited and i not in index]
@@ -478,7 +482,7 @@ def run(registry, cache_dir=None, data_dir=None, area=None):
     check_venue_years(flags, registry, stats, window)
     check_nonresearch(flags, registry, stats, window)
     check_aggregate_years(flags, registry, data_dir, window)
-    check_reference_lists(flags, data_dir)
+    check_reference_lists(flags, data_dir, set(registry["areas"]))
     if os.path.exists(dropped_credit.INDEX_JSON):
         affil, types = dropped_credit.load_context()
         check_dropped_credit(flags, dropped_credit.scan(
