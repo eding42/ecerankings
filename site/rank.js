@@ -54,7 +54,6 @@ const AREA_LABELS = {
   embedded: 'Embedded Systems',
   image: 'Image & Vision',
   control: 'Control',
-  power: 'Power Systems',
   devices: 'Devices',
   photonics: 'Photonics',
   em_rf: 'Antennas & RF',
