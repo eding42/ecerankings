@@ -100,6 +100,12 @@ Do not read other runs' verdicts or modify files outside `output_dir`.
      from an adjacent block, even when the blocks share other lines. Record the
      block position and its literal lines in checkpoint notes or an audit field.
    - An author can have several affiliations.
+   - Distinguish affiliations printed for the paper from later addresses. Do not
+     add a footnote or parenthetical labelled "now at", "current affiliation",
+     or "current address" as a publication-time affiliation. Preserve the
+     literal wording in notes. If the page gives only a later address, or a
+     work-done statement and a later address with no unambiguous paper-time
+     affiliation, mark the author `unclear` and record the evidence for review.
    - If small glyphs remain ambiguous, mark that author `unclear` and note that
      a focused crop from the source PDF is needed. Do not guess or enlarge an
      already low-resolution image and treat it as new evidence.
@@ -124,6 +130,11 @@ Do not read other runs' verdicts or modify files outside `output_dir`.
 | `not_found` | The author isn't on the image. |
 | `unclear` | The image doesn't let you tell. |
 
+If the parser's extracted string includes a later-address clause, use `wrong`
+and provide the paper-time affiliation without that clause, even if the
+institution itself otherwise matches. A `correct` verdict retains the parser's
+original string in the build, including that later address.
+
 ## Never
 
 - Never use knowledge of where a person works or worked. Only what this page prints counts.
@@ -146,6 +157,13 @@ Each saved paper's `result` has this shape (the example shows one task):
 ```
 
 - `image_ok: false` means the image doesn't show the author block, for example a wrong crop. In that case every verdict is `unclear`.
+- Set `byline_discrepancy: true` on the paper result when the PDF has an extra
+  author or another material difference from the publisher byline; explain the
+  difference in `notes`. Ordering alone or a verified name variant does not
+  constitute a discrepancy. Preserve the publisher's slots and order.
+- Set `source_discrepancy: true` if the PDF title or content raises an
+  unresolved concern that it may be the wrong publication; explain why in
+  `notes`. The pipeline quarantines PDF evidence for such papers.
 - `page_affiliations` always holds what the page says. It is `[]` for `absent`, `not_found`, and `unclear`.
 - Use `notes` only for what a reviewer needs, such as "the byline prints Xinrun Du, the listing says Xeron Du".
 - Preserve the literal `raw_marks` in each saved author answer (`""` for shared

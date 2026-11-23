@@ -89,6 +89,36 @@ class Verify(unittest.TestCase):
         self.assertEqual((st["pending_batches"], st["pending_images"]), (2, 3))
         self.assertEqual(st["by_kind"], {"review": 1, "conflict": 1, "sample": 1})
 
+    def test_sample_gate_requires_every_selected_readable_paper(self):
+        self.write_batches()
+        selection = json.loads(pdf_verify.paths(self.ed)["selection"].read_text())
+        sample_id = selection["sample_ids"][0]
+        rows = {sample_id: {"kind": "sample", "image_ok": True, "authors": [{"verdict": "correct"}]}}
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (True, 1))
+        self.assertEqual(pdf_verify.sample_complete(self.ed, {}), (False, 1))
+        rows[sample_id]["image_ok"] = False
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (False, 1))
+        rows[sample_id] = {"kind": "sample", "image_ok": True, "authors": [{"verdict": "unclear"}]}
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (False, 1))
+        rows[sample_id] = {"kind": "sample", "image_ok": True, "authors": [{"verdict": "not_found"}]}
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (False, 1))
+        rows[sample_id] = {"kind": "sample", "image_ok": True, "authors": [{"verdict": "not_found", "resolution": "absent"}]}
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (True, 1))
+        rows[sample_id] = {"kind": "sample", "image_ok": True, "authors": [{"verdict": "correct"}],
+                           "byline_discrepancy": True}
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (False, 1))
+        pdf_verify.paths(self.ed)["selection"].unlink()
+        self.assertEqual(pdf_verify.sample_complete(self.ed, rows), (False, 0))
+
+    def test_sample_selection_records_papers_omitted_by_pilot_limit(self):
+        self.write_batches()
+        with patch.object(pdf_verify, "render_crop", side_effect=AssertionError("unexpected render")), \
+             patch.object(pdf_verify, "render_context", side_effect=AssertionError("unexpected render")):
+            pdf_verify.prep(self.ed, self.works, sample_size=1, batch_size=2, workers=1, limit=1)
+        selection = json.loads(pdf_verify.paths(self.ed)["selection"].read_text())
+        self.assertEqual(len(selection["sample_ids"]), 1)
+        self.assertEqual(pdf_verify.sample_complete(self.ed, {}), (False, 1))
+
     def test_new_resolution_avoids_old_crops_and_changes_batch_identity(self):
         def render(_pdf, png, **kwargs):
             png.parent.mkdir(parents=True, exist_ok=True)
@@ -178,6 +208,107 @@ class Verify(unittest.TestCase):
         gates = harvest_ml.compute_gates(self.ed, list(built.values()))
         self.assertFalse(gates["pdf_verification"]["pass"])                             # 50% < 98%
         self.assertEqual(gates["pdf_verification"]["judge_model"], ["claude-haiku-5-5"])
+
+    def test_accuracy_gate_cannot_pass_with_unreviewed_selected_paper(self):
+        self.write_batches()
+        self.write_subagent_results()
+        selection_path = pdf_verify.paths(self.ed)["selection"]
+        selection = json.loads(selection_path.read_text())
+        selection["sample_ids"].append("iclr:1999:not-rendered")
+        selection_path.write_text(json.dumps(selection))
+        for path in pdf_verify.paths(self.ed)["results"].glob("batch-*.json"):
+            data = json.loads(path.read_text())
+            for result in data["results"]:
+                for author in result["authors"]:
+                    author["verdict"] = "correct"
+            path.write_text(json.dumps(data))
+        pdf_verify.apply(self.ed)
+        harvest_ml.stage_build(self.ed)
+        gates = harvest_ml.compute_gates(self.ed, harvest_ml.read_jsonl(self.ed.works_path))
+        self.assertEqual(gates["pdf_verification"]["extractor_accuracy"], 1.0)
+        self.assertFalse(gates["pdf_verification"]["sample_complete"])
+        self.assertFalse(gates["pdf_verification"]["pass"])
+
+    def test_uncertain_image_review_does_not_credit_pdf_guess(self):
+        m = self.members[0]
+        pdf = {"confidence": "high", "affiliations": [["Unverified university"], ["Aalto University"]]}
+        for verdict in ("unclear", "not_found"):
+            verification = {"image_ok": True, "authors": [
+                {"verdict": verdict, "page_affiliations": []},
+                {"verdict": "correct", "page_affiliations": ["Aalto University"]},
+            ]}
+            built = harvest_ml.build_row(self.ed, m, None, {}, pdf, verification)
+            self.assertEqual(built["authorships"][0]["raw_affiliations"], [])
+            self.assertEqual(built["authorships"][1]["raw_affiliations"], ["Aalto University"])
+        unreadable = {"image_ok": False, "authors": [{"verdict": "unclear", "page_affiliations": []}] * 2}
+        built = harvest_ml.build_row(self.ed, m, None, {}, pdf, unreadable)
+        self.assertTrue(all(not a["raw_affiliations"] for a in built["authorships"]))
+
+    def test_correct_verdict_credits_page_text_when_extraction_was_not_accepted(self):
+        m = self.members[0]
+        verification = {"image_ok": True, "authors": [
+            {"verdict": "correct", "page_affiliations": ["Aalto University"]},
+            {"verdict": "correct", "page_affiliations": ["Federal Institute of Ceará"]},
+        ]}
+        partial = {"confidence": "partial", "affiliations": [["Aalto University"], ["Federal Institute of Ceará"]]}
+        built = harvest_ml.build_row(self.ed, m, None, {}, partial, verification)
+        self.assertEqual([a["raw_affiliations"] for a in built["authorships"]],
+                         [["Aalto University"], ["Federal Institute of Ceará"]])
+        self.assertTrue(all(a["affiliation_source"] == "publisher-pdf-image" for a in built["authorships"]))
+        # An accepted extraction keeps its own string and source.
+        high = {"confidence": "high", "affiliations": [["Aalto University"], ["Federal Institute of Ceará"]]}
+        built = harvest_ml.build_row(self.ed, m, None, {}, high, verification)
+        self.assertTrue(all(a["affiliation_source"] == "publisher-pdf" for a in built["authorships"]))
+        # A correct verdict with no page text credits nothing from a partial extraction.
+        empty = {"image_ok": True, "authors": [{"verdict": "correct", "page_affiliations": []}] * 2}
+        built = harvest_ml.build_row(self.ed, m, None, {}, partial, empty)
+        self.assertTrue(all(not a["raw_affiliations"] for a in built["authorships"]))
+
+    def test_not_found_pdf_author_fails_byline_gate(self):
+        self.write_batches()
+        self.write_subagent_results()
+        path = next(pdf_verify.paths(self.ed)["results"].glob("batch-*.json"))
+        data = json.loads(path.read_text())
+        data["results"][0]["authors"][0]["verdict"] = "not_found"
+        data["results"][0]["authors"][0]["page_affiliations"] = []
+        path.write_text(json.dumps(data))
+        pdf_verify.apply(self.ed)
+        harvest_ml.stage_build(self.ed)
+        gate = harvest_ml.compute_gates(self.ed, harvest_ml.read_jsonl(self.ed.works_path))["byline_integrity"]
+        self.assertEqual(gate["pdf_author_slots_not_found"], 1)
+        self.assertFalse(gate["pass"])
+
+    def test_explicit_pdf_byline_discrepancy_survives_apply_and_fails_gate(self):
+        self.write_batches()
+        self.write_subagent_results()
+        path = next(pdf_verify.paths(self.ed)["results"].glob("batch-*.json"))
+        data = json.loads(path.read_text())
+        data["results"][0]["byline_discrepancy"] = True
+        path.write_text(json.dumps(data))
+        _, rows = pdf_verify.apply(self.ed)
+        self.assertTrue(rows[data["results"][0]["task_id"]]["byline_discrepancy"])
+        harvest_ml.stage_build(self.ed)
+        gate = harvest_ml.compute_gates(self.ed, harvest_ml.read_jsonl(self.ed.works_path))["byline_integrity"]
+        self.assertEqual(gate["pdf_byline_discrepancy_papers"], 1)
+        self.assertFalse(gate["pass"])
+
+    def test_source_discrepancy_quarantines_pdf_and_fails_gate(self):
+        self.write_batches()
+        self.write_subagent_results()
+        path = next(pdf_verify.paths(self.ed)["results"].glob("batch-*.json"))
+        data = json.loads(path.read_text())
+        result = data["results"][0]
+        result["source_discrepancy"] = True
+        path.write_text(json.dumps(data))
+        _, rows = pdf_verify.apply(self.ed)
+        self.assertTrue(rows[result["task_id"]]["source_discrepancy"])
+        harvest_ml.stage_build(self.ed)
+        built = {w["id"]: w for w in harvest_ml.read_jsonl(self.ed.works_path)}
+        self.assertTrue(all(not a["raw_affiliations"] for a in built[result["task_id"]]["authorships"]))
+        self.assertTrue(built[result["task_id"]]["evidence"]["pdf_image_check"]["source_discrepancy"])
+        gate = harvest_ml.compute_gates(self.ed, list(built.values()))["pdf_evidence"]
+        self.assertEqual(gate["source_discrepancy_papers"], 1)
+        self.assertFalse(gate["pass"])
 
     def test_no_model_is_ever_invoked_by_the_pipeline(self):
         self.assertFalse(hasattr(pdf_verify, "run"))

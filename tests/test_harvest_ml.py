@@ -147,6 +147,15 @@ class Stages(unittest.TestCase):
         self.assertTrue(gates["paper_specific_affiliations"]["pass"])
         self.assertFalse(gates["institution_resolution"]["pass"])
 
+    def test_classified_noncredit_counts_only_adjudicated_rows_without_id(self):
+        amap = {"Google DeepMind": {"status": "manual", "institution_id": "", "institution_type": "company"},
+                "Some Lab": {"status": "unmatched", "institution_id": ""},
+                "MIT": {"status": "manual", "institution_id": "I63966007"}}
+        self.assertTrue(harvest_ml.classified_noncredit(["Google DeepMind"], amap))
+        self.assertFalse(harvest_ml.classified_noncredit(["Some Lab"], amap))
+        self.assertFalse(harvest_ml.classified_noncredit(["Google DeepMind", "Unknown"], amap))
+        self.assertFalse(harvest_ml.classified_noncredit([], amap))
+
     def test_enrich_resume_skips_queried_dois_and_failed_batch_is_not_negative(self):
         harvest_ml.append_jsonl(self.ed.discovery_path, {"paper_key": "iclr:1999:aaa111", "status": "ok", "arxiv_doi": "10.48550/arxiv.1"})
         with patch.object(harvest_ml.OAClient, "batch", side_effect=harvest_ml.RefreshError("429")):
@@ -160,6 +169,17 @@ class Stages(unittest.TestCase):
             harvest_ml.stage_enrich(self.ed, None, 5)
         self.assertEqual(batch.call_count, 1)
         self.assertEqual(harvest_ml.read_jsonl(self.ed.openalex_path)[0]["key"], "10.48550/arxiv.1")
+
+    def test_membership_without_a_count_passes_but_a_wrong_count_fails(self):
+        harvest_ml.stage_build(self.ed)
+        cfg = harvest_ml.EDITIONS[("iclr", 1999)]
+        cfg["expected"] = []
+        gates, _ = harvest_ml.stage_gates(self.ed)
+        self.assertTrue(gates["membership"]["pass"])
+        self.assertFalse(gates["membership"]["anchored"])
+        cfg["expected"] = [{"count": 5, "scope": "included", "source": "t"}]
+        gates, _ = harvest_ml.stage_gates(self.ed)
+        self.assertFalse(gates["membership"]["pass"])
 
     def test_gates_fail_below_threshold_and_status_stays_staged(self):
         harvest_ml.stage_build(self.ed)
@@ -248,6 +268,24 @@ class PdfStage(unittest.TestCase):
         self.assertEqual(counts["fetch_errors"], 1)
         self.assertFalse(self.ed.is_done("pdf"))
         self.assertEqual(harvest_ml.read_jsonl(self.ed.pdf_extract_path), [])
+
+
+class AuthorlessExceptions(unittest.TestCase):
+    def test_exception_needs_evidence_and_a_decider(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            path = Path(tmp) / "authorless.jsonl"
+            path.write_text(json.dumps({"paper_key": "neurips:2018:x", "evidence": "listing has no authors",
+                                        "decided_by": "user"}) + "\n", encoding="utf8")
+            self.assertIn("neurips:2018:x", harvest_ml.load_authorless(path))
+            path.write_text(json.dumps({"paper_key": "neurips:2018:x", "evidence": "", "decided_by": "user"}) + "\n",
+                            encoding="utf8")
+            with self.assertRaises(harvest_ml.HarvestError):
+                harvest_ml.load_authorless(path)
+
+    def test_shipped_exceptions_are_documented(self):
+        records = harvest_ml.load_authorless()
+        self.assertEqual(len(records), 4)
+        self.assertTrue(all(key.startswith("neurips:") for key in records))
 
 
 if __name__ == "__main__":

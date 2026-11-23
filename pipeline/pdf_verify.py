@@ -21,8 +21,9 @@ ROOT = Path(__file__).resolve().parents[1]
 SKILL = ".agents/skills/verify-pdf-affiliations/SKILL.md"
 DEFAULT_BATCH = 15
 DEFAULT_SAMPLE = 200
-RENDER_DPI = 300
+RENDER_DPI = 600
 VERDICTS = ("correct", "wrong", "missing", "absent", "not_found", "unclear")
+
 
 class VerifyError(RuntimeError):
     pass
@@ -46,7 +47,7 @@ def _write_json(path, obj):
 def paths(ed):
     base = ed.dir / "pdf-verify"
     return {"base": base, "img": base / "img", "batches": base / "batches", "results": base / "results",
-            "tasks": base / "tasks.jsonl", "out": ed.dir / "pdf-verify.jsonl"}
+            "tasks": base / "tasks.jsonl", "selection": base / "selection.json", "out": ed.dir / "pdf-verify.jsonl"}
 
 
 # --------------------------------------------------------------------------
@@ -121,6 +122,7 @@ def prep(ed, works, sample_size=DEFAULT_SAMPLE, batch_size=DEFAULT_BATCH, worker
     p = paths(ed)
     extracts = {r["paper_key"]: r for r in _read_jsonl(ed.pdf_extract_path)}
     tasks = select_tasks(ed, works, extracts, sample_size)
+    sample_ids = [key for key, kind, _ in tasks if kind == "sample"]
     if limit:
         tasks = tasks[:limit]
     counts = Counter(kind for _, kind, _ in tasks)
@@ -186,6 +188,7 @@ def prep(ed, works, sample_size=DEFAULT_SAMPLE, batch_size=DEFAULT_BATCH, worker
     counts["crops_without_abstract_anchor"] = sum(1 for t in task_rows if t["crop_to_abstract"] is False)
     if errors:
         _write_json(p["base"] / "prep-errors.json", errors)
+    _write_json(p["selection"], {"sample_ids": sample_ids})
     return counts
 
 
@@ -299,6 +302,14 @@ def apply(ed):
                 batch_problems.append({"file": result_file.name, "task_id": task_id,
                                        "error": "image_ok must be a boolean"})
                 continue
+            if "byline_discrepancy" in res and type(res["byline_discrepancy"]) is not bool:
+                batch_problems.append({"file": result_file.name, "task_id": task_id,
+                                       "error": "byline_discrepancy must be a boolean"})
+                continue
+            if "source_discrepancy" in res and type(res["source_discrepancy"]) is not bool:
+                batch_problems.append({"file": result_file.name, "task_id": task_id,
+                                       "error": "source_discrepancy must be a boolean"})
+                continue
             if not isinstance(res.get("notes", ""), str):
                 batch_problems.append({"file": result_file.name, "task_id": task_id,
                                        "error": "notes must be a string"})
@@ -315,6 +326,8 @@ def apply(ed):
             rows[task["task_id"]] = {
                 "paper_key": task["task_id"], "kind": expected_task["kind"], "model": data.get("model"),
                 "image_ok": res["image_ok"], "notes": res.get("notes") or "",
+                "byline_discrepancy": res.get("byline_discrepancy", False),
+                "source_discrepancy": res.get("source_discrepancy", False),
                 "authors": [{"verdict": a["verdict"],
                              "page_affiliations": [s.strip() for s in a.get("page_affiliations") or [] if isinstance(s, str) and s.strip()]}
                             for a in authors]}
@@ -331,6 +344,21 @@ def apply(ed):
     if problems:
         _write_json(p["base"] / "apply-problems.json", problems)
     return counts, rows
+
+
+def sample_complete(ed, rows):
+    """Require every selected sample paper, including ones that failed rendering."""
+    try:
+        selection = json.loads(paths(ed)["selection"].read_text(encoding="utf8"))
+        ids = selection["sample_ids"]
+    except (OSError, ValueError, KeyError, TypeError):
+        return False, 0
+    if not isinstance(ids, list) or not ids or any(not isinstance(k, str) for k in ids) or len(set(ids)) != len(ids):
+        return False, 0
+    return all(k in rows and rows[k].get("kind") == "sample" and rows[k].get("image_ok") and rows[k].get("authors")
+               and not rows[k].get("byline_discrepancy") and not rows[k].get("source_discrepancy")
+               and all(a.get("verdict") not in ("unclear", "not_found") or a.get("resolution") for a in rows[k].get("authors", []))
+               for k in ids), len(ids)
 
 
 def sample_accuracy(rows):
