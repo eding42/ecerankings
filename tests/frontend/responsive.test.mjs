@@ -83,7 +83,7 @@ for (const name of (process.env.ECE_BROWSERS || 'chromium').split(',')) {
         await assertFits(page);
         assert.equal(await page.locator('#areas-panel').evaluate((el) => el.open), width >= 900);
         assert.equal(await page.locator('.ranking > thead th:visible').count(), width <= 600 ? 3 : 5);
-        assert.equal(await page.locator('#area-count').textContent(), '18 of 20');
+        assert.equal(await page.locator('#area-count').textContent(), '17 of 19');
         assert.deepEqual(await page.locator('.inst-row').evaluateAll((rows) =>
           rows.map((row) => [row.querySelector('.inst').textContent, row.querySelector('.score').textContent])), initialRows);
         if (width <= 600) {
@@ -104,7 +104,7 @@ for (const name of (process.env.ECE_BROWSERS || 'chromium').split(',')) {
       assert.equal(await page.locator('.inst').first().getAttribute('aria-expanded'), 'true');
       assert.equal(await page.locator('.institution-totals:visible').count(), 1);
       assert.equal(await page.locator('.breakdown thead th:visible').count(), 3);
-      assert.equal(await page.locator('.breakdown tbody tr').count(), 18);
+      assert.equal(await page.locator('.breakdown tbody tr').count(), 17);
       await assertFits(page);
       await page.locator('.inst-row').first().evaluate((el) => el.scrollIntoView({ block: 'start' }));
       await screenshot(page, `${name}-390-details`);
@@ -138,7 +138,7 @@ for (const name of (process.env.ECE_BROWSERS || 'chromium').split(',')) {
       await screenshot(page, `${name}-390-areas`);
       await page.locator('[data-select="none"]').tap();
       assert.equal(await page.locator('.inst-row').count(), 0);
-      assert.equal(await page.locator('#area-count').textContent(), '0 of 20');
+      assert.equal(await page.locator('#area-count').textContent(), '0 of 19');
       assert.equal(await page.locator('#export').isDisabled(), true);
       assert.equal(await page.locator('#pager').isVisible(), false);
       await page.locator('[data-select="defaults"]').tap();

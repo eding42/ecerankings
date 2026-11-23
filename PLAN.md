@@ -87,9 +87,8 @@ single most important curated file in the project.
 | 8 | Networking | IEEE/ACM ToN / INFOCOM, SIGCOMM |
 | 9 | Control Systems | TAC, Automatica / CDC |
 | 10 | Robotics | T-RO / ICRA, RSS, RA-L |
-| 11 | Power Electronics | TPEL, JESTPE / ECCE, APEC |
-| 12 | Power & Energy Systems | TPWRS, T-Smart Grid / — |
-| 13 | Semiconductor Devices | T-ED, EDL / IEDM, VLSI Tech. |
+| 11 | Power & Energy | TPWRS, TPEL / ECCE |
+| 12 | Semiconductor Devices | T-ED, EDL / IEDM, VLSI Tech. |
 | 14 | Photonics & Optics | JLT, Optica / CLEO, OFC |
 | 15 | Electromagnetics, Antennas & RF | T-AP, T-MTT / IMS |
 | 16 | MEMS & Microsystems | J-MEMS / IEEE MEMS |

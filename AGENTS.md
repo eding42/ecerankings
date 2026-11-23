@@ -101,7 +101,7 @@ The repository maintains ranking engines across multiple academic disciplines un
 ## Ranking Methodology
 
 * **Geometric mean scoring:** `(∏(1 + s_i))^(1/n) - 1` across areas, where `n` is the count of *selected* areas (including those scoring zero).
-* **Default areas:** Only include areas with `default_on: true` (currently **18 of 20 areas**; `flagship` and `ml` are off by default). Verify against `data/areas.json`.
+* **Default areas:** Only include areas with `default_on: true` (currently **17 of 19 areas**; `flagship` and `ml` are off by default). Verify against `data/areas.json`.
 * **Publication credit:** Each paper is worth 1.0, split evenly among its listed authors ($1/N$). Each author's share is credited to the institutions they explicitly listed on that publication.
 * **Institutions, not departments:** Rankings reflect whole institutions, not ECE department rosters or faculty listings.
 
