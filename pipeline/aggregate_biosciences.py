@@ -145,6 +145,36 @@ def is_research_article(w, vkey):
 
     return True
 
+def resolve_authorship(author, include_non_education=False):
+    """Shared Biology resolution, including established hospital rollups."""
+    insts = author.get("institutions", [])
+    valid_targets = {}
+
+    for i in insts:
+        iid = i.get("id")
+        if not iid:
+            continue
+        itype = i.get("type")
+        target_id = INSTITUTION_ROLLUP.get(iid, iid)
+        target_name = CANONICAL_NAMES.get(target_id, i.get("display_name"))
+        target_country = i.get("country_code")
+
+        is_academic = (
+            itype == "education"
+            or target_id in ACADEMIC_ALLOWLIST
+            or target_id in INSTITUTION_ROLLUP.values()
+        )
+
+        if include_non_education or is_academic:
+            valid_targets[target_id] = {
+                "name": target_name,
+                "country": target_country,
+                "type": "education" if is_academic else itype,
+            }
+
+    return valid_targets
+
+
 def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False, venues=None, years=None):
     os.makedirs(out_dir, exist_ok=True)
     registry = load_registry(areas_path)
@@ -213,30 +243,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
 
                     for a in authorships:
                         total_authorships += 1
-                        insts = a.get("institutions", [])
-                        valid_targets = {}
-
-                        for i in insts:
-                            iid = i.get("id")
-                            if not iid:
-                                continue
-                            itype = i.get("type")
-                            target_id = INSTITUTION_ROLLUP.get(iid, iid)
-                            target_name = CANONICAL_NAMES.get(target_id, i.get("display_name"))
-                            target_country = i.get("country_code")
-
-                            is_academic = (
-                                itype == "education"
-                                or target_id in ACADEMIC_ALLOWLIST
-                                or target_id in INSTITUTION_ROLLUP.values()
-                            )
-
-                            if include_non_education or is_academic:
-                                valid_targets[target_id] = {
-                                    "name": target_name,
-                                    "country": target_country,
-                                    "type": "education" if is_academic else itype,
-                                }
+                        valid_targets = resolve_authorship(a, include_non_education)
 
                         if not valid_targets:
                             continue

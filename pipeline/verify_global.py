@@ -128,7 +128,7 @@ def latest_complete_year(data_dir):
 
 
 def accepted_education(row):
-    return bool(row) and row.get("status") in ("auto", "manual") and row.get("institution_type") == "education" \
+    return bool(row) and row.get("status") in ("auto", "manual", "joint") and row.get("institution_type") == "education" \
         and bool(row.get("institution_id"))
 
 

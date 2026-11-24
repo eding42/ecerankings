@@ -30,10 +30,12 @@ LEDGER = ROOT / "data" / "affiliation-decisions.jsonl"
 TRAPS_CSV = ROOT / "data" / "adjudication-traps.csv"
 CACHE_DIR = ROOT / "cache"
 
-DECISIONS = {"supported", "corrected", "noneducation", "unresolved", "needs-policy"}
+DECISIONS = {"supported", "corrected", "noneducation", "unresolved", "needs-policy", "joint"}
 # Map status written for each outcome. needs-policy leaves the row in review.
+# joint credits two or more named universities (split evenly by aggregate.py):
+# institution_id/name hold the members joined by "|" / " | ".
 STATUS_FOR = {"supported": "manual", "corrected": "manual", "noneducation": "manual",
-              "unresolved": "unmatched", "needs-policy": None}
+              "unresolved": "unmatched", "needs-policy": None, "joint": "joint"}
 TYPES = {"education", "company", "facility", "government", "nonprofit", "healthcare", "archive", "funder", "other"}
 PENDING = ("review", "unmapped")
 
@@ -119,12 +121,30 @@ def write_map(fieldnames, rows, path=None, expect_stamp=None):
             os.unlink(temp)
 
 
+def apply_metadata_corrections(index, corrections):
+    result = dict(index)
+    for correction in corrections:
+        iid = correction["id"]
+        inst = index.get(iid)
+        if (not inst or inst.get("display_name") != correction["display_name"]
+                or inst.get("country_code") != correction["country_code"]
+                or correction.get("type") not in TYPES
+                or not correction.get("source_url") or not correction.get("evidence")):
+            raise ValueError("Institution metadata correction does not match evidenced identity")
+        result[iid] = {**inst, "type": correction["type"]}
+    return result
+
+
 def load_index(path=None):
     path = Path(path or INDEX_JSON)
     if not path.exists():
         raise SystemExit(f"{path} is missing (committed local index). Check git checkout or rebuild it before adjudicating.")
     with open(path, encoding="utf8") as handle:
-        return json.load(handle)["by_id"]
+        index = json.load(handle)["by_id"]
+    corrections = ROOT / "data/institution-metadata-corrections.json"
+    if path.resolve() == (ROOT / "data/institutions.json").resolve() and corrections.exists():
+        index = apply_metadata_corrections(index, json.loads(corrections.read_text()))
+    return index
 
 
 def read_ledger(path=None):
@@ -330,6 +350,27 @@ def validate(decision, index):
         return None, "raw_affiliation is required"
     if decision.get("key") and decision["key"] != row_key(decision["raw_affiliation"]):
         return None, "key does not match raw_affiliation (string altered?)"
+    if kind == "joint":
+        ids = []
+        for raw_id in decision.get("institution_ids") or []:
+            member = full_id(raw_id)
+            if member and member not in ids:
+                ids.append(member)
+        if len(ids) < 2:
+            return None, "joint requires institution_ids naming two or more distinct universities"
+        members = []
+        for member in ids:
+            inst = index.get(member)
+            if not inst:
+                return None, f"{short_id(member)} is not in data/institutions.json"
+            if inst.get("type") != "education":
+                return None, f"{inst['display_name']} is type {inst.get('type')}; joint members must be education"
+            members.append(inst)
+        return {"institution_id": "|".join(ids),
+                "institution_name": " | ".join(m["display_name"] for m in members),
+                "institution_type": "education",
+                "country_code": "|".join(m.get("country_code") or "" for m in members),
+                "lineage": ""}, None
     iid = full_id(decision.get("institution_id"))
     if kind in ("supported", "corrected") and not iid:
         return None, f"{kind} requires institution_id"
@@ -401,7 +442,9 @@ def cmd_apply(args):
     write_map(fieldnames, rows, expect_stamp=stamp)
     stamp = utc_now()
     append_ledger([{**{k: d.get(k) for k in ("raw_affiliation", "decision", "evidence", "decided_by")},
-                    "institution_id": short_id(d.get("institution_id")) or None, "at": stamp} for d in accepted])
+                    "institution_id": short_id(d.get("institution_id")) or None,
+                    **({"institution_ids": list(dict.fromkeys(short_id(i) for i in d["institution_ids"]))} if d.get("decision") == "joint" else {}),
+                    "at": stamp} for d in accepted])
     print(f"wrote {MAP_CSV} and appended {len(accepted)} entries to {LEDGER}")
     return 1 if rejected else 0
 

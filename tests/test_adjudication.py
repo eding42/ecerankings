@@ -24,6 +24,19 @@ INDEX = {"by_id": {
 }}
 
 
+class MetadataCorrectionTests(unittest.TestCase):
+    def test_requires_matching_identity_and_evidence(self):
+        index = INDEX['by_id']
+        one = index['https://openalex.org/I1']
+        correction = {**one, 'type': 'facility', 'source_url': 'https://example.edu/about', 'evidence': 'source evidence'}
+        fixed = adj.apply_metadata_corrections(index, [correction])
+        self.assertEqual(fixed[one['id']]['type'], 'facility')
+        self.assertEqual(index[one['id']]['type'], 'education')
+        for changes in ({'country_code': 'CN'}, {'display_name': 'Different University'}, {'evidence': ''}):
+            with self.assertRaises(ValueError):
+                adj.apply_metadata_corrections(index, [{**correction, **changes}])
+
+
 def row(raw, status="review", iid="", name="", itype="", via=""):
     return {"raw_affiliation": raw, "status": status, "institution_id": iid, "institution_name": name,
             "institution_type": itype, "country_code": "", "lineage": "", "score": "0.8", "matched_via": via,
@@ -106,6 +119,33 @@ class Adjudication(unittest.TestCase):
         self.assertIn("rows restored: 1", out)
         r = self.map_rows()["Qualcomm Inc, San Diego, CA"]
         self.assertEqual((r["status"], r["institution_type"]), ("manual", "company"))
+
+    def test_joint_decision_credits_every_named_university_and_replays(self):
+        f = self.decisions([{"raw_affiliation": "Qualcomm Inc, San Diego, CA", "decision": "joint",
+                             "institution_ids": ["I1", "I2", "I1"], "evidence": "names both universities"}])
+        self.assertEqual(self.run_cmd("apply", f)[0], 0)
+        r = self.map_rows()["Qualcomm Inc, San Diego, CA"]
+        self.assertEqual((r["status"], r["institution_type"], r["matched_via"]), ("joint", "education", "adjudicated:joint"))
+        self.assertEqual(r["institution_id"], "https://openalex.org/I1|https://openalex.org/I2")
+        self.assertEqual(r["institution_name"], "Purdue University West Lafayette | Purdue University Northwest")
+        self.assertEqual(adj.read_ledger(self.paths["LEDGER"])[0]["institution_ids"], ["I1", "I2"])
+        fields, rows, _ = adj.read_map(self.paths["MAP_CSV"])
+        for row_ in rows:
+            if row_["raw_affiliation"].startswith("Qualcomm"):
+                row_.update(status="review", institution_id="", institution_name="", institution_type="")
+        adj.write_map(fields, rows, self.paths["MAP_CSV"])
+        self.assertIn("rows restored: 1", self.run_cmd("replay")[1])
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["status"], "joint")
+
+    def test_joint_decision_needs_two_education_members(self):
+        for ids, message in ((["I1"], "two or more distinct"), (["I1", "I3"], "joint members must be education"),
+                             (["I1", "I999"], "not in data/institutions.json")):
+            f = self.decisions([{"raw_affiliation": "Qualcomm Inc, San Diego, CA", "decision": "joint",
+                                 "institution_ids": ids, "evidence": "x"}])
+            code, out = self.run_cmd("apply", f)
+            self.assertEqual(code, 1)
+            self.assertIn(message, out)
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["status"], "review")
 
     def test_write_refuses_when_another_writer_changed_the_map(self):
         fields, rows, stamp = adj.read_map(self.paths["MAP_CSV"])

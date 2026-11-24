@@ -36,6 +36,19 @@ class VerificationSafetyTests(unittest.TestCase):
             self.assertIn('Fixed: 1', result.stdout)
             self.assertEqual(path.read_bytes(), before)
 
+    def test_other_fields_tripwires_are_not_reported_as_missing_institutions(self):
+        with tempfile.TemporaryDirectory() as temporary:
+            directory = pathlib.Path(temporary)
+            (directory / 'inst-area-year.csv').write_text('institution_id,institution_name,area,year,pub_count,adjusted_count\nI1,University,biology,2025,2,1.5\n')
+            (directory / 'inst-venue-year.csv').write_text('institution_id,institution_name,area,venue,year,pub_count,adjusted_count\nI1,University,biology,v,2025,2,1.5\n')
+            (directory / 'known.json').write_text(json.dumps({'architecture': ['Iwrongfield']}))
+            registry = {'areas': {'biology': {'name': 'Biology', 'default_on': True, 'venues': [{'key': 'v'}]}}}
+            args = types.SimpleNamespace(area=None, update_snapshots=False)
+            with mock.patch.object(verify, 'SITE_DATA', str(directory)), mock.patch.object(verify, 'INST_JSON', str(directory / 'none.json')), mock.patch.object(verify, 'KNOWN_JSON', str(directory / 'known.json')), contextlib.redirect_stdout(io.StringIO()):
+                flags = verify.phase3_aggregate(registry, args)
+            self.assertFalse(any('[architecture]' in message for message in flags['critical']))
+            self.assertTrue(any('remain unassessed' in message for message in flags['high']))
+
     def test_a_dead_venue_is_not_hidden_by_a_healthy_venue_in_the_same_area(self):
         with tempfile.TemporaryDirectory() as temporary:
             directory = pathlib.Path(temporary)

@@ -111,7 +111,7 @@ def raw_affiliations_resolve_to_education(raw_affils, affil_map, valid_types=Non
         valid_types = CREDIT_TYPES
     for raw in raw_affils:
         row = affil_map.get(raw)
-        if row and row.get("status") in ("auto", "manual") and row.get("institution_type") in valid_types:
+        if row and row.get("status") in ("auto", "manual", "joint") and row.get("institution_type") in valid_types:
             return True
     return False
 

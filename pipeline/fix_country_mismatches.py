@@ -37,7 +37,7 @@ from collections import Counter
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from affiliation_evidence import (  # noqa: E402
     academic_evidence, build_name_index, countries_named, country_contradiction, looks_like_company,
-    same_name_abroad)
+    same_name_abroad, names_education)
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 MAP_CSV = os.path.join(REPO_ROOT, "data", "affiliation-map.csv")
@@ -95,6 +95,8 @@ def propose(rows, by_id):
                 unresolved.append((raw, row, named, "", "country"))
         elif looks_like_company(raw) and row["status"] == "manual":
             continue
+        elif looks_like_company(raw) and names_education(raw, name_index):
+            unresolved.append((raw, row, set(), "", "compound-company"))
         elif looks_like_company(raw):
             companies.append({
                 "raw_affiliation": raw, "decision": "noneducation", "institution_id": None,

@@ -45,6 +45,17 @@ by default; the semantic normalizer is optional and should run separately.
 Adjudicate new raw strings, replay prior decisions after normalization, and run
 `pipeline/adjudication.py check`. Do not accept author-profile affiliations.
 
+Affiliation credit policy (user rulings, 2026-11-23):
+- A university's own hospital or medical centre credits the university; an
+  independent medical centre with no university named credits nobody.
+- A string naming one university credits that university; companies, hospitals
+  and non-university bodies named beside it are ignored.
+- A string naming two or more universities (a joint institute) is a `joint`
+  decision with `institution_ids`. The map row gets status `joint`, with the
+  members joined by `|` in `institution_id` and ` | ` in `institution_name`.
+  `aggregate.py` splits the author's `1/N` share evenly across them. Native
+  OpenAlex institutions on an authorship still take precedence over the map.
+
 ## 2. Build an isolated candidate
 
 `prepare_refresh.py` can combine complete collector outputs with an immutable

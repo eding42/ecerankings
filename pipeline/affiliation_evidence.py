@@ -19,6 +19,7 @@ import html
 import re
 import unicodedata
 from collections import defaultdict
+from functools import lru_cache
 
 # Country names as they appear at the end of affiliation strings.
 _COUNTRY_PATTERNS = {
@@ -78,10 +79,65 @@ def academic_evidence(raw, inst):
     return False
 
 
+def institutional_name_evidence(raw, inst, name_index):
+    """Require a full indexed name/alias, not academic vocabulary or a city.
+
+    Acronyms must identify one institution in the index; ambiguous acronyms
+    need adjudication with paper context. Country never supplies identity.
+    """
+    padded = " " + fold(raw) + " "
+    iid = inst.get("id")
+    for name in [inst.get("display_name")] + list(inst.get("alternatives") or []) + list(inst.get("acronyms") or []):
+        normalized = fold(name)
+        if len(normalized) < 3 or " " + normalized + " " not in padded:
+            continue
+        owners = name_index.get(normalized, set())
+        if len(owners) > 1:
+            named = countries_named(raw)
+            if len(named) != 1:
+                continue
+            country = next(iter(named))
+            if name_index.get(normalized + "|" + country) != {iid}:
+                continue
+        # Short aliases must actually be indexed, never inferred from location.
+        elif " " not in normalized and len(normalized) <= 6 and owners != {iid}:
+            continue
+        return True
+    return False
+
+
+def names_other_university(raw, inst, name_index):
+    """Conservatively hold compounds naming another education institution.
+
+    Longest spans win so a university system's name contained in its campus
+    name is not counted as a second affiliation. This does not split strings
+    or assign author markers: that requires paper evidence.
+    """
+    words = fold(raw).split()
+    covered, matches = set(), []
+    for width in range(min(16, len(words)), 0, -1):
+        for start in range(len(words) - width + 1):
+            positions = set(range(start, start + width))
+            if positions & covered:
+                continue
+            name = " ".join(words[start:start + width])
+            owners = name_index.get(name, set())
+            if len(name) < 3 or not owners:
+                continue
+            matches.append(owners)
+            covered.update(positions)
+    iid = inst.get("id")
+    return any(iid in owners for owners in matches) and any(iid not in owners for owners in matches)
+
+
+@lru_cache(maxsize=100000)
 def countries_named(raw):
     """Country codes named at the end of a raw affiliation string."""
-    tail = raw[-COUNTRY_TAIL:]
-    return {cc for cc, pattern in COUNTRY_RES.items() if pattern.search(tail)}
+    start = max(0, len(raw) - COUNTRY_TAIL)
+    # Match against the full text: slicing first turns New Mexico into Mexico
+    # when the cutoff falls between the two words.
+    return frozenset(cc for cc, pattern in COUNTRY_RES.items()
+                     if any(m.start() >= start for m in pattern.finditer(raw)))
 
 
 def country_contradiction(raw, mapped_cc):
@@ -96,6 +152,19 @@ def country_contradiction(raw, mapped_cc):
     return named
 
 
+def names_education(raw, name_index):
+    """Whether any indexed education name/alias occurs as a complete span.
+
+    This only blocks a company-only proposal; it does not resolve ambiguous
+    acronyms or authorize a university assignment.
+    """
+    words = fold(raw).split()
+    return any(name_index.get(" ".join(words[start:start + width]))
+               for width in range(1, min(16, len(words)) + 1)
+               for start in range(len(words) - width + 1)
+               if len(" ".join(words[start:start + width])) >= 3)
+
+
 def looks_like_company(raw):
     return bool(COMPANY_RE.search(raw)) and not ACADEMIC_RE.search(raw)
 
@@ -106,9 +175,11 @@ def build_name_index(by_id):
     for iid, inst in by_id.items():
         if inst.get("type") != "education":
             continue
-        for name in [inst.get("display_name")] + list(inst.get("alternatives") or []):
+        for name in [inst.get("display_name")] + list(inst.get("alternatives") or []) + list(inst.get("acronyms") or []):
             if name:
                 index[name.strip().lower()].add(iid)
+                index[fold(name)].add(iid)
+                index[fold(name) + "|" + (inst.get("country_code") or "")].add(iid)
     return index
 
 
@@ -132,7 +203,7 @@ def guard_row(raw, row, by_id, name_index):
       in the named country: switch to it.
     - Country contradiction otherwise: demote to review.
     - Company string: demote to review.
-    - No academic word and no trace of the institution's name: demote to review.
+    - No full institutional name or unambiguous indexed alias: demote to review.
     """
     if row.get("status") != "auto" or row.get("institution_type") != "education":
         return row
@@ -144,10 +215,11 @@ def guard_row(raw, row, by_id, name_index):
                        lineage="|".join(other.get("lineage") or [other["id"]]))
         else:
             row["status"] = "review"
-    elif looks_like_company(raw):
+    elif looks_like_company(raw) and not names_education(raw, name_index):
         row["status"] = "review"
-    else:
+    if row.get("status") == "auto":
         inst = by_id.get(row.get("institution_id"))
-        if inst and not academic_evidence(raw, inst):
+        if (not inst or not institutional_name_evidence(raw, inst, name_index)
+                or names_other_university(raw, inst, name_index)):
             row["status"] = "review"
     return row

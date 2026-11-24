@@ -114,6 +114,8 @@ def trim_work(w):
             "author_id": author.get("id"),
             "author_name": author.get("display_name"),
             "institutions": insts,
+            "raw_affiliations": a.get("raw_affiliation_strings") or [],
+            "affiliation_source": "openalex",
         })
     return {
         "id": w.get("id"),

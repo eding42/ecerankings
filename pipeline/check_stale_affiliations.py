@@ -18,6 +18,7 @@ work IDs (no contact email). Stdlib only.
 """
 
 import argparse
+from pathlib import Path
 import json
 import os
 import random
@@ -86,12 +87,17 @@ def main():
     parser.add_argument("--seed", type=int, default=2026)
     parser.add_argument("--size", type=int, default=150)
     parser.add_argument("--cache-dir", default=CACHE_DIR)
+    parser.add_argument("--out", help="New directory for replayable sample and fetched evidence")
     args = parser.parse_args()
     with open(AREAS_JSON) as handle:
         registry = json.load(handle)
     pool = stale_candidates(os.path.realpath(args.cache_dir), registry)
     sample = random.Random(args.seed).sample(pool, min(args.size, len(pool)))
     key, fetched = api_key(), {}
+    out = Path(args.out) if args.out else None
+    if out:
+        out.mkdir(parents=True, exist_ok=False)
+        (out / "sample.json").write_text(json.dumps({"seed": args.seed, "population": len(pool), "sample": sample}, indent=2))
     for start in range(0, len(sample), 50):
         ids = "|".join(w.rsplit("/", 1)[-1] for _, _, w in sample[start:start + 50])
         query = {"filter": "openalex_id:" + ids, "per-page": "50", "select": "id,authorships"}
@@ -100,6 +106,12 @@ def main():
         for work in get("https://api.openalex.org/works?" + urllib.parse.urlencode(query))["results"]:
             fetched[work["id"]] = work.get("authorships") or []
         time.sleep(1)
+    if out:
+        (out / "source-authorships.json").write_text(json.dumps(fetched, ensure_ascii=False))
+    missing = [wid for _, _, wid in sample if wid not in fetched]
+    if out:
+        (out / "missing.json").write_text(json.dumps(missing, indent=2))
+    print(f"requested {len(sample)} sampled works; {len(missing)} not returned by source (unverified)")
     by_venue, by_year = defaultdict(lambda: [0, 0]), defaultdict(lambda: [0, 0])
     resolved = n = anyaff = 0
     for venue, year, wid in sample:
