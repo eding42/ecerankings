@@ -617,7 +617,7 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
                "Osaka University", "Nagoya University", "Tohoku University",
                "Kyushu University", "Hokkaido University", "Waseda",
                "Keio University", "Institute of Science Tokyo"],
-        "CH": ["ETH Zurich", "EPFL", "University of Zurich"],
+        "CH": ["ETH Zurich", "EPFL", "University of Zurich", "École Polytechnique Fédérale"],
         "GB": ["University of Cambridge", "University of Oxford", "Imperial College",
                "University College London", "University of Edinburgh",
                "University of Manchester", "University of Southampton",
@@ -684,21 +684,24 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
         for name, actual_cc in zip(names, ccs):
             if not name or not actual_cc:
                 continue
-            for expected_cc, keywords in known_geo.items():
-                kw = next((k for k in keywords if k.lower() in name.lower()), None)
-                if kw is None:
-                    continue
-                # Mainland campuses of Hong Kong universities (CUHK-Shenzhen,
-                # HKUST-Guangzhou) are rightly CN.
-                if expected_cc == "HK" and re.search(r"Shenzhen|Guangzhou", name):
-                    break
-                if actual_cc != expected_cc:
-                    geo_conflicts += 1
-                    if geo_conflicts <= 10:
-                        flags["high"].append(
-                            f"'{name[:45]}' has country={actual_cc}, expected {expected_cc} (contains '{kw}')"
-                        )
-                break
+            # Whole-word match, longest keyword wins: "MIT" must not match RMIT or
+            # Mitsubishi, and "École Polytechnique" (FR) must yield to "École
+            # Polytechnique Fédérale" (CH).
+            matches = [(len(k), cc, k) for cc, keywords in known_geo.items() for k in keywords
+                       if re.search(r"(?<!\w)" + re.escape(k.lower()) + r"(?!\w)", name.lower())]
+            if not matches:
+                continue
+            _, expected_cc, kw = max(matches)
+            # Mainland campuses of Hong Kong universities (CUHK-Shenzhen,
+            # HKUST-Guangzhou) are rightly CN.
+            if expected_cc == "HK" and re.search(r"Shenzhen|Guangzhou", name):
+                continue
+            if actual_cc != expected_cc:
+                geo_conflicts += 1
+                if geo_conflicts <= 10:
+                    flags["high"].append(
+                        f"'{name[:45]}' has country={actual_cc}, expected {expected_cc} (contains '{kw}')"
+                    )
     if geo_conflicts > 10:
         flags["high"].append(f"... and {geo_conflicts - 10} more geo-heuristic violations")
 
@@ -1296,7 +1299,12 @@ def main():
     if args.all or args.phase == 4:
         # Corpus-wide findings ranked by the credit they move; see verify_global.py.
         import verify_global
-        all_flags["Phase 4: Global Audit"] = verify_global.run(areas, CACHE_DIR, SITE_DATA, args.area)
+        research_filter = None
+        if field_cfg.id == "biology":
+            from aggregate_biosciences import is_research_article
+            research_filter = is_research_article
+        all_flags["Phase 4: Global Audit"] = verify_global.run(
+            areas, CACHE_DIR, SITE_DATA, args.area, research_filter=research_filter)
     if args.all or args.phase == 5:
         # Author lists: missing, truncated, repeated, group-named, garbled; see verify_authors.py.
         import verify_authors

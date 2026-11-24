@@ -43,7 +43,7 @@ AREAS_JSON = os.path.join(REPO_ROOT, "data", "areas.json")
 ENV_FILE = os.path.join(REPO_ROOT, ".env")
 CACHE_DIR = os.path.join(REPO_ROOT, "cache")
 API = "https://api.openalex.org"
-MAILTO = "eding2019@gmail.com"
+MAILTO = "erding@usc.edu"
 SELECT_FIELDS = "id,doi,title,publication_year,type,authorships"
 PER_PAGE = 200
 

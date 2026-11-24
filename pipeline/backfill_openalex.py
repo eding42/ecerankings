@@ -43,7 +43,7 @@ from collections import Counter, defaultdict
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(REPO_ROOT, "cache")
 API = "https://api.openalex.org/works"
-MAILTO = "eding2019@gmail.com"
+MAILTO = "erding@usc.edu"
 BATCH = 50          # OpenAlex OR-filter list length; verified working at 50
 SLEEP = 0.03
 

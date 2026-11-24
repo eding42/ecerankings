@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
-"""Promote a verified local candidate and store changed raw files through Git LFS.
+"""Promote a verified local candidate into its field's site data directory.
+
+Works the same way for every field (--field ece|biology|earth-space). Raw cache
+files are stored through Git LFS where the field's cache is LFS-tracked.
 
 Does not stage Git changes, commit, push, or deploy. Writes the release manifest
 last, so the site packager rejects an interrupted or mixed publication.
@@ -10,8 +13,12 @@ import json
 import pathlib
 import shutil
 import subprocess
+import sys
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / 'pipeline'))
+from fields import add_field_argument, get_field  # noqa: E402
+
 INPUTS = {
     'registry': 'data/areas.json',
     'affiliation_map': 'data/affiliation-map.csv',
@@ -32,9 +39,10 @@ def digest(path):
     return value.hexdigest()
 
 
-def check_inputs(manifest):
+def check_inputs(manifest, registry='data/areas.json'):
+    inputs = {**INPUTS, 'registry': registry}
     for name, expected in manifest['input_hashes'].items():
-        if name not in INPUTS or digest(ROOT / INPUTS[name]) != expected:
+        if name not in inputs or digest(ROOT / inputs[name]) != expected:
             raise ValueError(f'Curated input changed since build: {name}')
     for name, expected in manifest.get('code_hashes', {}).items():
         source = (ROOT / name).resolve()
@@ -42,11 +50,14 @@ def check_inputs(manifest):
             raise ValueError(f'Build code changed since build: {name}')
 
 
-def validate_candidate(cache, release):
+def validate_candidate(cache, release, field=None):
+    field = field or get_field('ece')
     manifest = json.loads((release / 'manifest.json').read_text())
     if manifest.get('validation', {}).get('status') != 'passed':
         raise ValueError('A passing candidate release is required')
-    check_inputs(manifest)
+    if manifest.get('field', 'ece') != field.id:
+        raise ValueError(f"Candidate was built for {manifest.get('field', 'ece')}, not {field.id}")
+    check_inputs(manifest, field.areas_file)
     for relative, evidence in manifest['artifacts'].items():
         source = (release / relative).resolve()
         if not source.is_relative_to(release) or digest(source) != evidence['sha256']:
@@ -87,18 +98,35 @@ def export_lfs(source, destination, expected):
     return True
 
 
+def lfs_tracked(path):
+    result = subprocess.run(['git', 'check-attr', 'filter', '--', str(path.relative_to(ROOT))],
+                            cwd=ROOT, capture_output=True, text=True, check=True)
+    return result.stdout.strip().endswith(': lfs')
+
+
+def store(source, destination, expected):
+    """Copy one file into place, through Git LFS when the destination is LFS-tracked."""
+    if lfs_tracked(destination):
+        return export_lfs(source, destination, expected)
+    if source.resolve() != destination.resolve():
+        atomic_copy(source, destination)
+    return False
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
+    add_field_argument(parser, default='ece')
     parser.add_argument('--cache-dir', required=True, type=pathlib.Path)
     parser.add_argument('--release', required=True, type=pathlib.Path)
     parser.add_argument('--check-only', action='store_true')
     args = parser.parse_args()
+    field = get_field(args.field)
     cache, release = args.cache_dir.resolve(), args.release.resolve()
-    public = (ROOT / 'site/data').resolve()
+    public = (ROOT / field.site_data_dir).resolve()
     if release == public or public in release.parents:
-        parser.error('Use the separate candidate release, outside site/data')
+        parser.error(f'Use the separate candidate release, outside {field.site_data_dir}')
     try:
-        manifest, files = validate_candidate(cache, release)
+        manifest, files = validate_candidate(cache, release, field)
         if args.check_only:
             print(f'Candidate verified: {len(files)} cache files; no files promoted')
             return
@@ -112,18 +140,23 @@ def main():
         changed = 0
         for index, ((venue, year), source) in enumerate(sorted(files.items()), 1):
             row = inventory[(venue, year)]
-            changed += export_lfs(source, ROOT / 'cache' / venue / year / 'works.jsonl', row['sha256'])
+            changed += store(source, ROOT / field.cache_dir / venue / year / 'works.jsonl', row['sha256'])
             if index % 100 == 0:
                 print(f'Cache files verified: {index}; changed pointers: {changed}', flush=True)
         for relative, evidence in manifest['artifacts'].items():
-            source, destination = release / relative, public / relative
-            if relative == 'author-info.csv':
-                export_lfs(source, destination, evidence['sha256'])
-            else:
-                atomic_copy(source, destination)
-        check_inputs(manifest)
+            store(release / relative, public / relative, evidence['sha256'])
+        # Remove data from venues or areas the release no longer has. Hidden
+        # files (the verifier's accepted snapshots) are not release artifacts.
+        stale = [path for path in public.rglob('*.json')
+                 if path.name != 'manifest.json' and not path.name.startswith('.')
+                 and str(path.relative_to(public)) not in manifest['artifacts']]
+        for path in stale:
+            path.unlink()
+        check_inputs(manifest, field.areas_file)
         atomic_copy(release / 'manifest.json', public / 'manifest.json')
-        print(f'Promoted {len(files)} materialized cache files ({changed} changed LFS objects) and validated public data; no commit or deployment')
+        print(f'Promoted {len(files)} materialized cache files ({changed} changed LFS objects) and '
+              f'validated public data into {field.site_data_dir}; removed {len(stale)} stale JSON files; '
+              'no commit or deployment')
     except (ValueError, OSError, subprocess.CalledProcessError) as error:
         parser.exit(2, f'Promotion refused: {error}\n')
 

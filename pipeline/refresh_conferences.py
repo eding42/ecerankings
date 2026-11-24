@@ -20,7 +20,7 @@ ROOT = Path(__file__).resolve().parents[1]
 STAGING_ROOT = ROOT/'.tmp/refresh-2026-10-28/conferences'
 API_OA = 'https://api.openalex.org'
 API_CR = 'https://api.crossref.org'
-MAILTO = 'eding2019@gmail.com'
+MAILTO = 'erding@usc.edu'
 OA_LIMIT_DEFAULT = 3000
 BATCH = 100
 

@@ -5,7 +5,7 @@ description: Add or re-verify a venue (or an area's venues) in data/areas.json â
 
 # Collect venue data
 
-You are doing data collection for ecerankings.org. The methodology is settled (`PLAN.md`, `CLAUDE.md`). Do not redesign areas, add venues nobody asked for, or change counting rules.
+You are doing data collection for ecerankings.org. The methodology is settled (`docs/methodology.md`, `AGENTS.md`). Do not redesign areas, add venues nobody asked for, or change counting rules.
 
 **Scope** is the area key or venue the user named, and nothing else. **Default years** are the last 10 completed years, computed from `date +%Y`. The current year is a separately labelled partial observation. State the window you used in the report.
 

@@ -2,7 +2,7 @@
 
 A metrics-based ranking of ECE (Electrical & Computer Engineering) programs, modeled on CSRankings but journal-aware and built on **OpenAlex** instead of DBLP.
 
-> Read `PLAN.md` before doing anything substantive — it defines the methodology, area taxonomy, and venue-inclusion policy.
+> Read `docs/methodology.md` before doing anything substantive — it defines the methodology and venue-inclusion policy.
 
 ---
 
@@ -84,7 +84,7 @@ The repository maintains ranking engines across multiple academic disciplines un
 
 ## Key Files
 
-* `PLAN.md` — Architecture, methodology, phases. Do not change methodology decisions (adjusted counts, venue-inclusion policy, area list) without explicit user approval.
+* `docs/methodology.md` — Methodology, venue-inclusion policy, and the reasons behind them. Do not change methodology decisions (adjusted counts, venue-inclusion policy, area list) without explicit user approval.
 * `data/fields.json` & `pipeline/fields.py` — Central field registry defining paths, credit types, capabilities, and aliases across disciplines.
 * `data/areas.json` (ECE), `data/areas_biosciences.json` (Biology), `data/areas_earth_space.json` (Earth & Space) — The venue registries. Every ranked venue lives here with OpenAlex source IDs and a `status` field (`todo` → `candidate` → `verified`).
 * `data/known-strong.json` — Verification tripwire: per-area lists of institution IDs that must have non-zero scores. If any score zero, it is a data pipeline bug.
@@ -101,7 +101,7 @@ The repository maintains ranking engines across multiple academic disciplines un
 ## Ranking Methodology
 
 * **Geometric mean scoring:** `(∏(1 + s_i))^(1/n) - 1` across areas, where `n` is the count of *selected* areas (including those scoring zero).
-* **Default areas:** Only include areas with `default_on: true` (currently **17 of 19 areas**; `flagship` and `ml` are off by default). Verify against `data/areas.json`.
+* **Default areas:** Only include areas with `default_on: true` (currently **18 of 19 areas**; `flagship` is off by default). Verify against `data/areas.json`.
 * **Publication credit:** Each paper is worth 1.0, split evenly among its listed authors ($1/N$). Each author's share is credited to the institutions they explicitly listed on that publication.
 * **Institutions, not departments:** Rankings reflect whole institutions, not ECE department rosters or faculty listings.
 
@@ -132,19 +132,28 @@ normalize_semantic.py                →  data/affiliation-map.csv
 detect_editorials.py                 →  data/editorial-candidates.csv
     Proposes non-research candidates for manual promotion to data/excluded-works.csv.
 
-aggregate.py --field <id> --all-cached            →  <site_data>/inst-area-year.csv
-    Filters non-research types and excluded works, folds aliases, and calculates
-    adjusted fractional counts per institution, area, and year. Resolves field
-    defaults (cache, areas registry, credit types, output dir).
+build_release.py --field <id>                     →  .tmp/release-<id>/ (candidate)
+    Runs aggregate.py and split.py for the field, writes institutions.json
+    (name, country, credited type), validates the artifacts, and writes a hashed
+    manifest.json. Never writes into a site directory.
 
-split.py --field <id>                             →  <site_data>/<area>.json
-    Splits aggregate CSV into minified per-area JSON files for lazy frontend loading.
+    aggregate.py --field <id> --out <dir>         →  inst-area-year.csv, inst-venue-year.csv
+        Filters non-research types and excluded works, folds aliases, and
+        calculates adjusted fractional counts per institution, area, and year
+        with the field's credited institution types.
+    split.py --field <id>                         →  <area>.json, <area>/<venue>.json
+        Splits the aggregate CSVs into minified JSON for lazy frontend loading.
 
-build_institutions.py                             →  site/data/institutions.json
-    Generates id → {name, country} metadata used for country/regional filtering.
+promote_release.py --field <id>                   →  <site_data>/
+    Re-checks every hash and copies the accepted candidate into the field's
+    site data directory. The only supported way to change published data.
+
+prerender_site.mjs                                →  site/index.html, site/institution/
+    ECE only: prerenders the default ranking and one page per institution.
 
 package_site.py --field <id>                      →  dist/
-    Validates and packages static distribution bundles per discipline.
+    Packages one field's static site after checking every data file against
+    its manifest. The ECE package includes both sister sites.
 
 verify.py --field <id> --phase <1-5>              →  Console and data/reports/ report.
     Field-aware quality checks across harvest, normalization, aggregation,
@@ -179,7 +188,7 @@ audit_map_sample.py / audit_bylines.py / check_stale_affiliations.py
 ## Conventions & Constraints
 
 * **API Keys & Environment:**
-  * Read `OPENALEX_API_KEY` from `.env` at repo root (`api_key=<key>&mailto=eding2019@gmail.com`).
+  * Read `OPENALEX_API_KEY` from `.env` at repo root (`api_key=<key>&mailto=erding@usc.edu`).
   * Never commit `.env`, log API keys, or expose them in public assets.
 * **Python Environment:**
   * Python stdlib only (`urllib`, `json`, `csv`, `gzip`) for core harvest, aggregate, and verification scripts.

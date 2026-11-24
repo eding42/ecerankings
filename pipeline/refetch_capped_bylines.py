@@ -12,7 +12,7 @@ import urllib.request
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(REPO_ROOT, "cache_biosciences")
-REQ_HEADERS = {"User-Agent": "BiologyRankingsBylinesFixer/1.0 (mailto:eding2019@gmail.com)"}
+REQ_HEADERS = {"User-Agent": "BiologyRankingsBylinesFixer/1.0 (mailto:erding@usc.edu)"}
 
 
 def refetch_work(work_id):

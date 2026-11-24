@@ -23,7 +23,7 @@ import unicodedata
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(REPO_ROOT, "cache")
-MAILTO = "eding2019@gmail.com"
+MAILTO = "erding@usc.edu"
 
 PROCEEDINGS_CONFIG = {
     'isca': {

@@ -179,7 +179,7 @@ test('real data: default selection matches an independent computation', { skip: 
   const registry = JSON.parse(readFileSync(path.join(siteDir, 'data', 'areas.json'), 'utf8'));
   const institutions = JSON.parse(readFileSync(path.join(siteDir, 'data', 'institutions.json'), 'utf8'));
   const areas = R.defaultAreaIds(R.listAreas(registry));
-  assert.ok(!areas.includes('ml') && !areas.includes('flagship'));
+  assert.ok(areas.includes('ml') && !areas.includes('flagship'));
   const d = new Map(areas.map((a) => [a, JSON.parse(readFileSync(path.join(siteDir, 'data', `${a}.json`), 'utf8'))]));
   const rows = R.computeRankings({ from: 2016, to: 2025, region: 'world', areas }, d, institutions);
   // independent: per-institution log-sum

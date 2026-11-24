@@ -13,7 +13,7 @@ import urllib.error
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 CACHE_DIR = os.path.join(REPO_ROOT, "cache_biosciences")
-MAILTO = "eding2019@gmail.com"
+MAILTO = "erding@usc.edu"
 API = "https://api.openalex.org"
 
 VENUES = {

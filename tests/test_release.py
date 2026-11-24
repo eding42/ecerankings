@@ -27,7 +27,13 @@ class ReleaseTests(unittest.TestCase):
         for name in ('biology', 'earth-space'):
             (site / name / 'data').mkdir(parents=True)
             (site / name / 'index.html').write_text('fixture')
-            (site / name / 'data/manifest.json').write_text('{}')
+            files = {'areas.json': json.dumps(self.registry), 'institutions.json': '{}', 'a.json': '[]'}
+            for file, text in files.items():
+                (site / name / 'data' / file).write_text(text)
+            (site / name / 'data/manifest.json').write_text(json.dumps({
+                'validation': {'status': 'passed'},
+                'artifacts': {file: {'sha256': hashlib.sha256(text.encode()).hexdigest()}
+                              for file, text in files.items()}}))
         for name in CORE_FILES:
             target = site / name
             target.parent.mkdir(parents=True, exist_ok=True)
@@ -87,8 +93,16 @@ class ReleaseTests(unittest.TestCase):
         self.assertTrue((out / 'biology/index.html').is_file())
         self.assertTrue((out / 'institution/example/index.html').is_file())
         self.assertTrue((out / 'earth-space/data/manifest.json').is_file())
-        (site / 'biology/data/raw.csv').write_text('x')
+        # Release CSVs sit beside the data but are never published.
+        (site / 'biology/data/inst-area-year.csv').write_text('x')
+        package(site, out)
+        self.assertFalse((out / 'biology/data/inst-area-year.csv').exists())
+        (site / 'biology/notes.txt').write_text('x')
         with self.assertRaisesRegex(ValueError, 'Unexpected file in sister site'):
+            package(site, out)
+        (site / 'biology/notes.txt').unlink()
+        (site / 'earth-space/data/a.json').write_text('[{"i": "x"}]')
+        with self.assertRaisesRegex(ValueError, 'hash mismatch'):
             package(site, out)
 
     def test_lfs_promotion_keeps_a_cache_that_can_be_aggregated(self):

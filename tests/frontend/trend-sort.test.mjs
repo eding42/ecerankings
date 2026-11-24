@@ -141,7 +141,8 @@ test('engine and every sister site expose the Trend sort control', () => {
     const js = readFileSync(path.join(siteDir, rel), 'utf8');
     assert.match(js, /initRankingsApp/, `${rel} boots the shared engine`);
   }
-  // A future Earth & Space package keeps the control in its generated header.
-  const packager = readFileSync(path.join(root, 'pipeline', 'package_earth_space_site.py'), 'utf8');
-  assert.match(packager, /data-sort="trend"/);
+  for (const rel of ['index.html', 'biology/index.html', 'earth-space/index.html']) {
+    const html = readFileSync(path.join(siteDir, rel), 'utf8');
+    assert.match(html, /data-sort="trend"/, `${rel} has the trend sort control`);
+  }
 });

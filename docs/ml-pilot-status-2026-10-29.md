@@ -1,5 +1,7 @@
 # ICLR 2025 checkpoint — 2026-10-29
 
+> **Superseded.** Historical snapshot. NeurIPS, ICML and ICLR were published for 2016–2025 (PRs #29, #33), and ML has been on by default since 2026-11-24. Current state: [methodology.md](methodology.md) and [ml-pipeline.md](ml-pipeline.md).
+
 ML remains off by default. The publisher-first pilot is staged; it is not an
 accepted ranking dataset. Use [ml-pipeline.md](ml-pipeline.md) for commands.
 

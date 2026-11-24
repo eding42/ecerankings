@@ -38,7 +38,7 @@ venues = [
     ("jci", "The Journal of Clinical Investigation", "0021-9738")
 ]
 
-req_headers = {"User-Agent": "ECERankingsHarvester/1.0 (mailto:eding2019@gmail.com)"}
+req_headers = {"User-Agent": "ECERankingsHarvester/1.0 (mailto:erding@usc.edu)"}
 
 results = {}
 for key, name, issn in venues:

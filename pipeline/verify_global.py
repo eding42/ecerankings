@@ -132,7 +132,7 @@ def accepted_education(row):
         and bool(row.get("institution_id"))
 
 
-def scan_cache(cache_dir, venues, affil_map, excluded):
+def scan_cache(cache_dir, venues, affil_map, excluded, *, research_filter=None):
     """One pass over the cache. Returns per-venue-year stats and map usage."""
     stats = {}                      # (venue, year) -> Counter
     usage = Counter()               # raw string -> approximate credits resolved through the map
@@ -154,9 +154,11 @@ def scan_cache(cache_dir, venues, affil_map, excluded):
                     if identity in seen:
                         continue
                     seen.add(identity)
-                    if (work.get("type") or "").lower() in NONRESEARCH_TYPES:
-                        continue
-                    if work_key(work, venue, year) in excluded:
+                    if research_filter is not None:
+                        if not research_filter(work, venue):
+                            continue
+                    elif ((work.get("type") or "").lower() in NONRESEARCH_TYPES
+                          or work_key(work, venue, year) in excluded):
                         continue
                     authors = work.get("authorships") or []
                     if not authors:
@@ -459,7 +461,7 @@ def check_dropped_credit(flags, result):
     flags["low"].append(f"[drop/summary] dropped credit by reason (default-on areas): {parts}")
 
 
-def run(registry, cache_dir=None, data_dir=None, area=None):
+def run(registry, cache_dir=None, data_dir=None, area=None, *, research_filter=None):
     """Run every global check. Returns the usual {severity: [messages]} flags."""
     cache_dir = cache_dir or CACHE_DIR
     data_dir = data_dir or SITE_DATA
@@ -474,7 +476,8 @@ def run(registry, cache_dir=None, data_dir=None, area=None):
         with open(FIRST_YEARS_JSON) as handle:
             first_years = json.load(handle)
     venues = [v["key"] for a in registry["areas"].values() for v in a["venues"]]
-    stats, usage = scan_cache(cache_dir, venues, affil_map, load_exclusions(EXCLUDED_CSV))
+    stats, usage = scan_cache(cache_dir, venues, affil_map, load_exclusions(EXCLUDED_CSV),
+                              research_filter=research_filter)
 
     print(f"\n── Phase 4: Global audit (window {window[0]}–{window[1]}) ──")
     check_mismapped(flags, affil_map, usage)
