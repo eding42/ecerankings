@@ -129,6 +129,25 @@ class CheckTests(unittest.TestCase):
 
 
 class ScanTests(unittest.TestCase):
+    def test_biology_global_audit_uses_biology_research_filter(self):
+        from aggregate_biosciences import is_research_article
+
+        with tempfile.TemporaryDirectory() as tmp:
+            year = Path(tmp) / 'science' / '2020'
+            year.mkdir(parents=True)
+            papers = [
+                {'doi': '10.1126/science.a', 'title': 'News item', 'type': 'article',
+                 'referenced_works_count': 0, 'authorships': [{'institutions': []}]},
+                {'doi': '10.1126/science.b', 'title': 'Research article', 'type': 'article',
+                 'referenced_works_count': 30,
+                 'authorships': [{'institutions': [{'type': 'education'}]}]},
+            ]
+            (year / 'works.jsonl').write_text(''.join(json.dumps(w) + '\n' for w in papers))
+            stats, _ = G.scan_cache(tmp, ['science'], {}, set(),
+                                    research_filter=is_research_article)
+            self.assertEqual(stats[('science', 2020)]['papers'], 1)
+            self.assertEqual(stats[('science', 2020)]['credit'], 1.0)
+
     def test_scan_credits_like_the_aggregator_and_reports_reference_gaps(self):
         with tempfile.TemporaryDirectory() as tmp:
             tmp = Path(tmp)

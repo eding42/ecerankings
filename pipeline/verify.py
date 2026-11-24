@@ -1296,7 +1296,12 @@ def main():
     if args.all or args.phase == 4:
         # Corpus-wide findings ranked by the credit they move; see verify_global.py.
         import verify_global
-        all_flags["Phase 4: Global Audit"] = verify_global.run(areas, CACHE_DIR, SITE_DATA, args.area)
+        research_filter = None
+        if field_cfg.id == "biology":
+            from aggregate_biosciences import is_research_article
+            research_filter = is_research_article
+        all_flags["Phase 4: Global Audit"] = verify_global.run(
+            areas, CACHE_DIR, SITE_DATA, args.area, research_filter=research_filter)
     if args.all or args.phase == 5:
         # Author lists: missing, truncated, repeated, group-named, garbled; see verify_authors.py.
         import verify_authors
