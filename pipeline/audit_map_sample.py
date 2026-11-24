@@ -66,6 +66,11 @@ def short_id(value):
     return str(value or "").rstrip("/").rsplit("/", 1)[-1]
 
 
+def ids_of(value):
+    """Every member of a (possibly "|"-joined joint) institution_id."""
+    return frozenset(i for i in (short_id(p) for p in str(value or "").split("|")) if i)
+
+
 def wilson(errors, n, z=1.96):
     """95% Wilson interval for a proportion."""
     if n == 0:
@@ -85,7 +90,7 @@ def load_aliases(path=ALIASES_CSV):
 
 
 def credited(row):
-    return row["status"] in ("auto", "manual") and bool(row["institution_id"]) and row["institution_type"] in CREDIT_TYPES
+    return row["status"] in ("auto", "manual", "joint") and bool(row["institution_id"]) and row["institution_type"] in CREDIT_TYPES
 
 
 def accepted_education(row):
@@ -164,8 +169,10 @@ def load_decisions(paths):
                 key = d.get("key") or adjudication.row_key(d.get("raw_affiliation", ""))
                 if key in decisions:
                     raise ValueError(f"Duplicate judgment for {key}")
-                if d.get("decision") not in {"education", "supported", "corrected", "noneducation", "unresolved"}:
+                if d.get("decision") not in {"education", "supported", "corrected", "noneducation", "unresolved", "joint"}:
                     raise ValueError(f"Invalid judgment for {key}")
+                if d.get("decision") == "joint" and len(ids_of("|".join(d.get("institution_ids") or []))) < 2:
+                    raise ValueError(f"Joint judgment needs two institution_ids for {key}")
                 if d.get("decision") in {"education", "supported", "corrected"} and not d.get("institution_id"):
                     raise ValueError(f"Missing institution ID for {key}")
                 if not d.get("evidence") or not d.get("decided_by"):
@@ -177,7 +184,9 @@ def load_decisions(paths):
 def judge_verdict(decision):
     kind = (decision.get("decision") or "").lower()
     if kind in ("education", "supported", "corrected"):
-        return "education", short_id(decision.get("institution_id"))
+        return "education", ids_of(decision.get("institution_id"))
+    if kind == "joint":
+        return "education", ids_of("|".join(decision.get("institution_ids") or []))
     if kind == "noneducation":
         return "noneducation", ""
     return "unresolved", ""
@@ -193,8 +202,8 @@ def classify(item, decision, aliases):
     if was_credited:
         if verdict == "noneducation":
             return "wrong_credited"
-        mine = short_id(current["institution_id"])
-        return "correct" if aliases.get(mine, mine) == aliases.get(judged, judged) else "wrong_institution"
+        mine = {aliases.get(i, i) for i in ids_of(current["institution_id"])}
+        return "correct" if mine == {aliases.get(i, i) for i in judged} else "wrong_institution"
     return "missed_credit" if verdict == "education" else "correct"
 
 
@@ -304,9 +313,12 @@ def cmd_score(args):
     for item, decision, outcome in outcomes.values():
         if outcome in ("wrong_institution", "wrong_credited", "missed_credit"):
             verdict, judged = judge_verdict(decision)
+            members = sorted(judged)
+            kind = "noneducation" if verdict == "noneducation" else "joint" if len(members) > 1 else "corrected"
             fixes.append({"raw_affiliation": item["raw_affiliation"],
-                          "decision": "noneducation" if verdict == "noneducation" else "corrected",
-                          "institution_id": None if verdict == "noneducation" else judged,
+                          "decision": kind,
+                          "institution_id": members[0] if kind == "corrected" else None,
+                          **({"institution_ids": members} if kind == "joint" else {}),
                           "evidence": decision.get("evidence") or "blind re-judgement disagreed with the map",
                           "decided_by": decision.get("decided_by") or "map-audit"})
     fix_path = os.path.join(out, "disagreements.json")

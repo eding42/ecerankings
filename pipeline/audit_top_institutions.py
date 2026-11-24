@@ -134,9 +134,17 @@ def run_audit(field_cfg, top_n, data_dir, cache_dir, out_dir, country=None):
 
     for r in rows:
         raw = r["raw_affiliation"]
-        iid = adjudication.full_id(r.get("institution_id", ""))
-        w = share.get(raw, 0.0)
+        members = [adjudication.full_id(m) for m in adjudication.ids_of(r.get("institution_id", ""))]
+        # A joint row splits its credit evenly; account each member's share.
+        w = share.get(raw, 0.0) / max(1, len(members))
         c = counts.get(raw, 0)
+        in_top = [m for m in members if m in top_by_id]
+        iid = in_top[0] if in_top else (members[0] if members else "")
+        for extra in in_top[1:]:
+            per_inst[extra]["total_rows"] += 1
+            per_inst[extra]["total_credit"] += w
+            per_inst[extra]["clean_rows"] += 1
+            per_inst[extra]["clean_credit"] += w
 
         if iid in top_by_id:
             st = per_inst[iid]

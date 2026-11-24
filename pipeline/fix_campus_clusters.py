@@ -172,7 +172,9 @@ for r in rows:
     raw = r['raw_affiliation']
     lower = raw.lower()
     current_id = r.get('institution_id', '')
-    if not current_id:
+    # Only matcher output is re-checked. manual/joint rows are adjudicated
+    # (fix them through adjudication.py), and review rows earn no credit.
+    if not current_id or r.get('status') != 'auto':
         continue
 
     def kw_match(keywords, text):

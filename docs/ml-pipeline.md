@@ -110,9 +110,9 @@ deliberately credits nobody. `unresolved` decisions still count against it.
 - Only printed affiliation text earns credit. A logo alone does not.
 - A role or footnote mark ("Core Authors (MBZUAI)") names a role, not a workplace,
   and earns no credit.
-- A string naming two or more universities, or a joint lab, stays `unresolved`
-  (or `needs-policy`) until map rows can carry several institutions; credit would
-  then split evenly, as `PLAN.md` already specifies for multi-affiliation authors.
+- A string naming two or more universities, or a joint lab, is a `joint`
+  decision (superseded 2026-11-23; see the affiliation credit policy in
+  [refresh-runbook.md](refresh-runbook.md)).
 
 - Northeastern University: a string with no location is credited to Northeastern
   University (US); a string printing a China location is credited to Northeastern

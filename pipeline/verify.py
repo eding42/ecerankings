@@ -530,7 +530,7 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
         else:
             type_counts["(empty)"] += 1
 
-    resolved = status_counts.get("auto", 0) + status_counts.get("manual", 0)
+    resolved = status_counts.get("auto", 0) + status_counts.get("manual", 0) + status_counts.get("joint", 0)
     credited_count = sum(type_counts.get(t, 0) for t in CREDIT_TYPES)
     edu = type_counts.get("education", 0)
     company = type_counts.get("company", 0)
@@ -675,25 +675,30 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
 
     geo_conflicts = 0
     for r in rows:
-        if r["status"] not in ("auto", "manual"):
+        if r["status"] not in ("auto", "manual", "joint"):
             continue
-        name = r.get("institution_name", "")
-        actual_cc = r.get("country_code", "")
-        if not name or not actual_cc:
+        names = r.get("institution_name", "").split(" | ")
+        ccs = r.get("country_code", "").split("|")
+        if len(names) != len(ccs):
             continue
-        for expected_cc, keywords in known_geo.items():
-            for kw in keywords:
-                if kw.lower() in name.lower():
-                    if actual_cc != expected_cc and actual_cc != "":
-                        geo_conflicts += 1
-                        if geo_conflicts <= 10:
-                            flags["high"].append(
-                                f"'{name[:45]}' has country={actual_cc}, expected {expected_cc} (contains '{kw}')"
-                            )
-                    break
-            else:
+        for name, actual_cc in zip(names, ccs):
+            if not name or not actual_cc:
                 continue
-            break
+            for expected_cc, keywords in known_geo.items():
+                kw = next((k for k in keywords if k.lower() in name.lower()), None)
+                if kw is None:
+                    continue
+                # Mainland campuses of Hong Kong universities (CUHK-Shenzhen,
+                # HKUST-Guangzhou) are rightly CN.
+                if expected_cc == "HK" and re.search(r"Shenzhen|Guangzhou", name):
+                    break
+                if actual_cc != expected_cc:
+                    geo_conflicts += 1
+                    if geo_conflicts <= 10:
+                        flags["high"].append(
+                            f"'{name[:45]}' has country={actual_cc}, expected {expected_cc} (contains '{kw}')"
+                        )
+                break
     if geo_conflicts > 10:
         flags["high"].append(f"... and {geo_conflicts - 10} more geo-heuristic violations")
 

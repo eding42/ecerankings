@@ -76,6 +76,22 @@ SITE_DATA_DIR = os.path.join(REPO_ROOT, "site", "data")
 EXCLUDED_CSV = os.path.join(REPO_ROOT, "data", "excluded-works.csv")
 
 CREDIT_TYPES = {"education"}
+METADATA_CORRECTIONS = os.path.join(REPO_ROOT, "data", "institution-metadata-corrections.json")
+
+
+@lru_cache(maxsize=1)
+def type_corrections():
+    """Evidenced institution-type fixes for OpenAlex records ({id: type}).
+
+    Applied to native and map resolutions alike, so an institution OpenAlex
+    mistypes (IIT Palakkad as facility) is credited the same on both paths.
+    """
+    try:
+        with open(METADATA_CORRECTIONS, encoding="utf8") as handle:
+            corrections = json.load(handle)
+    except FileNotFoundError:
+        return {}
+    return {institution_id(c["id"]): c["type"] for c in corrections}
 
 
 def institution_id(value):
@@ -228,7 +244,7 @@ def joint_members(row):
     names = str(row.get("institution_name", "")).split(" | ")
     if len(names) != len(ids):
         names = [""] * len(ids)
-    kind = row.get("institution_type", "") or "education"
+    kind = row.get("institution_type", "")
     return [(i, n, kind) for i, n in zip(ids, names) if i]
 
 
@@ -304,10 +320,11 @@ def resolve_authorship(author, affil_map, aliases, credit_types):
     if used_map:
         insts = resolve_raw_affiliations(author.get("raw_affiliations") or [], affil_map)
     unique = {}
+    corrections = type_corrections()
     for inst in insts:
-        if inst.get("type") not in credit_types:
-            continue
         iid = institution_id(inst.get("id"))
+        if corrections.get(iid, inst.get("type")) not in credit_types:
+            continue
         if not iid:
             raise ValueError("Credited institution without id")
         target = aliases.get(iid)

@@ -31,7 +31,8 @@ TRAPS_CSV = ROOT / "data" / "adjudication-traps.csv"
 CACHE_DIR = ROOT / "cache"
 
 DECISIONS = {"supported", "corrected", "noneducation", "unresolved", "needs-policy", "joint"}
-# Map status written for each outcome. needs-policy leaves the row in review.
+# Map status written for each outcome. needs-policy leaves the row in review
+# (an auto row is demoted to review so it stops earning credit).
 # joint credits two or more named universities (split evenly by aggregate.py):
 # institution_id/name hold the members joined by "|" / " | ".
 STATUS_FOR = {"supported": "manual", "corrected": "manual", "noneducation": "manual",
@@ -67,6 +68,11 @@ def row_key(raw):
 
 def short_id(value):
     return str(value or "").rstrip("/").rsplit("/", 1)[-1]
+
+
+def ids_of(value):
+    """Short IDs of every member of a (possibly "|"-joined joint) institution_id."""
+    return tuple(i for i in (short_id(part) for part in str(value or "").split("|")) if i)
 
 
 def full_id(value):
@@ -160,7 +166,9 @@ def append_ledger(entries, path=None):
         return
     with open(path or LEDGER, "a", encoding="utf8") as handle:
         for entry in entries:
-            handle.write(json.dumps(entry, ensure_ascii=False, sort_keys=True) + "\n")
+            # U+2028/2029 are line breaks to str.splitlines(); keep one entry per line.
+            line = json.dumps(entry, ensure_ascii=False, sort_keys=True)
+            handle.write(line.replace("\u2028", "\\u2028").replace("\u2029", "\\u2029") + "\n")
 
 
 # --------------------------------------------------------------------------
@@ -400,16 +408,19 @@ def merge(rows, fieldnames, decisions, index, override=False, source="apply"):
         fields, error = validate(d, index)
         raw = d.get("raw_affiliation", "")
         current = by_raw.get(raw)
-        if not error and current and current["status"] == "manual" and not override and source == "apply":
-            same = short_id(current.get("institution_id")) == short_id((fields or {}).get("institution_id")) \
-                and STATUS_FOR[d["decision"]] == "manual"
+        if not error and current and current["status"] in ("manual", "joint") and not override and source == "apply":
+            same = ids_of(current.get("institution_id")) == ids_of((fields or {}).get("institution_id")) \
+                and STATUS_FOR[d["decision"]] == current["status"]
             if not same:
-                error = (f"already manual -> {current.get('institution_name') or '(none)'}; "
+                error = (f"already {current['status']} -> {current.get('institution_name') or '(none)'}; "
                          "pass --override to replace an earlier adjudication")
         if error:
             rejected.append({"raw_affiliation": raw, "error": error})
             continue
         status = STATUS_FOR[d["decision"]]
+        if d["decision"] == "needs-policy" and current and current["status"] == "auto":
+            current["status"] = "review"
+            current["matched_via"] = "adjudicated:needs-policy"
         if status:
             row = current or {name: "" for name in fieldnames}
             if not current:
@@ -443,7 +454,7 @@ def cmd_apply(args):
     stamp = utc_now()
     append_ledger([{**{k: d.get(k) for k in ("raw_affiliation", "decision", "evidence", "decided_by")},
                     "institution_id": short_id(d.get("institution_id")) or None,
-                    **({"institution_ids": list(dict.fromkeys(short_id(i) for i in d["institution_ids"]))} if d.get("decision") == "joint" else {}),
+                    **({"institution_ids": list(dict.fromkeys(i for i in map(short_id, d["institution_ids"]) if i))} if d.get("decision") == "joint" else {}),
                     "at": stamp} for d in accepted])
     print(f"wrote {MAP_CSV} and appended {len(accepted)} entries to {LEDGER}")
     return 1 if rejected else 0
@@ -455,10 +466,11 @@ def cmd_replay(args):
     latest = {}
     for entry in read_ledger():
         latest[entry["raw_affiliation"]] = entry
-    before = {r["raw_affiliation"]: (r["status"], short_id(r["institution_id"]), r["institution_type"]) for r in rows}
+    def state(r):
+        return (r["status"], ids_of(r["institution_id"]), r["institution_name"], r["institution_type"], r["country_code"])
+    before = {r["raw_affiliation"]: state(r) for r in rows}
     accepted, rejected = merge(rows, fieldnames, list(latest.values()), index, override=True, source="replay")
-    changed = [r["raw_affiliation"] for r in rows
-               if before.get(r["raw_affiliation"]) != (r["status"], short_id(r["institution_id"]), r["institution_type"])]
+    changed = [r["raw_affiliation"] for r in rows if before.get(r["raw_affiliation"]) != state(r)]
     print(f"ledger decisions: {len(latest)}  re-applied: {len(accepted)}  invalid now: {len(rejected)}  rows restored: {len(changed)}")
     for raw in changed[:20]:
         print(f"  restored {raw[:70]!r}")
@@ -485,13 +497,15 @@ def trap_result(trap, row):
     if row is None:
         return None if trap.get("absent_ok") == "yes" else "string not in map"
     expect = trap["expect"]
-    resolved = row["status"] in ("auto", "manual")
-    iid, itype = short_id(row["institution_id"]), row["institution_type"]
+    resolved = row["status"] in ("auto", "manual", "joint")
+    ids, itype = ids_of(row["institution_id"]), row["institution_type"]
+    shown = "|".join(ids) or "(none)"
     for clause in expect.split(";"):
         kind, _, value = clause.strip().partition(":")
-        if kind == "id" and not (resolved and iid == value):
-            return f"expected {value}, map has {iid or '(none)'} [{row['status']}]"
-        if kind == "not" and resolved and iid == value:
+        # id:I1 needs exactly I1; id:I1|I2 needs exactly that joint set.
+        if kind == "id" and not (resolved and set(ids) == set(ids_of(value))):
+            return f"expected {value}, map has {shown} [{row['status']}]"
+        if kind == "not" and resolved and value in ids:
             return f"mapped to forbidden {value} ({row['institution_name']}) [{row['status']}]"
         if kind == "noneducation" and resolved and itype == "education":
             return f"credited as education: {row['institution_name']} [{row['status']}]"
@@ -521,9 +535,9 @@ def cmd_check(args):
     print("== variants of one string mapped to different institutions (at least one credited as education)")
     groups = defaultdict(list)
     for r in rows:
-        if r["status"] in ("auto", "manual") and r["institution_id"]:
+        if r["status"] in ("auto", "manual", "joint") and r["institution_id"]:
             groups[fold(r["raw_affiliation"])].append(r)
-    split = {k: g for k, g in groups.items() if len({short_id(r["institution_id"]) for r in g}) > 1
+    split = {k: g for k, g in groups.items() if len({ids_of(r["institution_id"]) for r in g}) > 1
              and any(r["institution_type"] == "education" for r in g)}
     for k, group in sorted(split.items(), key=lambda kv: -len(kv[1]))[:args.show]:
         print(f"  {k[:60]!r}: " + "; ".join(f"[{r['status']}] {r['raw_affiliation'][:30]!r}->{r['institution_name'][:30]}" for r in group[:4]))
@@ -532,10 +546,11 @@ def cmd_check(args):
     incoherent = []
     if index:
         for r in rows:
-            if r["status"] in ("auto", "manual") and r["institution_id"]:
-                inst = index.get(full_id(r["institution_id"]))
-                if inst and (inst.get("type") or "") != r["institution_type"]:
-                    incoherent.append((r, inst))
+            if r["status"] in ("auto", "manual", "joint") and r["institution_id"]:
+                for member in ids_of(r["institution_id"]):
+                    inst = index.get(full_id(member))
+                    if inst and (inst.get("type") or "") != r["institution_type"]:
+                        incoherent.append((r, inst))
     # Older manual rows sometimes kept a university's ID but retyped it to
     # block credit ("Alibaba Group and UCSD" -> company). New decisions use
     # "noneducation" without the university's ID instead; review these.
@@ -568,7 +583,7 @@ def cmd_check(args):
     from affiliation_evidence import country_contradiction
     abroad = defaultdict(list)
     for r in rows:
-        if r["status"] in ("auto", "manual") and r["institution_type"] == "education" and r["institution_id"]:
+        if r["status"] in ("auto", "manual", "joint") and r["institution_type"] == "education" and r["institution_id"]:
             named = country_contradiction(r["raw_affiliation"], r.get("country_code", ""))
             if named:
                 abroad[(r["institution_name"], r.get("country_code", ""))].append((r, named))

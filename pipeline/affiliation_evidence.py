@@ -141,13 +141,18 @@ def countries_named(raw):
 
 
 def country_contradiction(raw, mapped_cc):
-    """Return the named countries when they exclude the mapped institution's."""
-    if not mapped_cc:
+    """Return the named countries when they exclude every mapped institution's.
+
+    mapped_cc may be "|"-joined (a joint row); naming any member's country is
+    not a contradiction.
+    """
+    mapped = {cc for cc in str(mapped_cc or "").split("|") if cc}
+    if not mapped:
         return None
     named = countries_named(raw)
-    if not named or mapped_cc in named:
+    if not named or mapped & named:
         return None
-    if any(frozenset((mapped_cc, cc)) in COUNTRY_EQUIVALENT for cc in named):
+    if any(frozenset((m, cc)) in COUNTRY_EQUIVALENT for m in mapped for cc in named):
         return None
     return named
 
