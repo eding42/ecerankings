@@ -83,7 +83,11 @@ def index_types(index):
 def classify_author(author, doi, native, affil_map, types, negative, credit_types):
     """Return (reason, institution_name). reason is None when credited."""
     institutions = author.get("institutions") or []
-    if [i for i in institutions if i.get("type") in credit_types]:
+    corrections = aggregate.type_corrections()
+
+    def credited(inst):
+        return corrections.get(aggregate.institution_id(inst.get("id")), inst.get("type")) in credit_types
+    if [i for i in institutions if credited(i)]:
         return None, ""
     raw = author.get("raw_affiliations") or []
     if institutions:
@@ -92,7 +96,7 @@ def classify_author(author, doi, native, affil_map, types, negative, credit_type
                 return "untyped_institution", inst.get("display_name") or ""
         return "openalex_noncredit", ""
     resolved = aggregate.resolve_raw_affiliations(raw, affil_map)
-    if [i for i in resolved if i.get("type") in credit_types]:
+    if [i for i in resolved if credited(i)]:
         return None, ""
     for inst in resolved:
         if types.get(short_id(inst.get("id"))) in credit_types:

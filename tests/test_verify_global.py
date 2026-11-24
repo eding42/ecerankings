@@ -30,6 +30,11 @@ class CountryTests(unittest.TestCase):
         self.assertIsNone(G.country_contradiction('Syracuse University', 'US'))  # names no country
         self.assertIsNone(G.country_contradiction('Anything, China', ''))
 
+    def test_joint_rows_accept_any_member_country(self):
+        self.assertIsNone(G.country_contradiction('Broad Institute of MIT and Harvard, Cambridge, MA, USA', 'US|US'))
+        self.assertIsNone(G.country_contradiction('TUM, Germany and NTHU, Hsinchu, Taiwan', 'DE|TW'))
+        self.assertEqual(G.country_contradiction('Somewhere, Japan', 'US|CN'), {'JP'})
+
     def test_place_names_containing_a_country_are_not_that_country(self):
         self.assertIsNone(G.country_contradiction('University of New Mexico, Albuquerque, NM', 'US'))
         self.assertIsNone(G.country_contradiction('University of New South Wales', 'AU'))

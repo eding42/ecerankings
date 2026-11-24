@@ -73,9 +73,12 @@ Batches can be fanned out to subagents. Put every subagent call for a wave in on
 |---|---|---|
 | `supported` | The current mapping is right. | required (education) |
 | `corrected` | A different education institution is right. | required (education) |
-| `noneducation` | It's a company, lab, government body, or hospital. These are never credited. | the org's own ID if known; never a university's |
-| `unresolved` | Unknowable or garbage, or a compound naming two or more universities with no primary one. | none |
-| `needs-policy` | Answering needs a methodology decision, e.g. a joint institute. The row stays in review. | none |
+| `noneducation` | It's a company, lab, government body, or independent hospital and names no university. These are never credited. | the org's own ID only when the index record is that same organization (name and country); otherwise null. Never a university's |
+| `joint` | The string names two or more universities, including a degree-granting constituent school beside its parent (Télécom Paris + IP Paris). A department, college or research institute inside a university is not a second university. Credit splits evenly. | `institution_ids`: every named university (education) |
+| `unresolved` | Unknowable or garbage. | none |
+| `needs-policy` | Answering needs a methodology decision the [credit policy](../../../docs/refresh-runbook.md) doesn't cover. The row stays in (or drops to) review. | none |
+
+A company, investor or hospital named beside one university is not joint: credit that university (`supported`/`corrected`).
 
 Return exactly one object per queued row:
 ```json

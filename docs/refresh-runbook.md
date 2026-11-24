@@ -45,6 +45,36 @@ by default; the semantic normalizer is optional and should run separately.
 Adjudicate new raw strings, replay prior decisions after normalization, and run
 `pipeline/adjudication.py check`. Do not accept author-profile affiliations.
 
+Affiliation credit policy (user rulings, 2026-11-23):
+- A university's own hospital or medical centre credits the university; an
+  independent medical centre with no university named credits nobody.
+- A string naming one university credits that university; companies, hospitals
+  and non-university bodies named beside it are ignored.
+- A string naming two or more universities (a joint institute) is a `joint`
+  decision with `institution_ids`. The map row gets status `joint`, with the
+  members joined by `|` in `institution_id` and ` | ` in `institution_name`.
+  `aggregate.py` splits the author's `1/N` share evenly across them. Native
+  OpenAlex institutions on an authorship still take precedence over the map.
+- A constituent establishment that grants degrees under its own name, named
+  beside its parent university or federation (Télécom Paris with Institut
+  Polytechnique de Paris, Grenoble INP with Université Grenoble Alpes,
+  Instituto Superior Técnico with the University of Lisbon), is `joint` too:
+  native OpenAlex lists both on such authorships and `aggregate.py` does not
+  roll lineage up, so splitting keeps the map and native paths consistent. A
+  string naming only one of them credits only that one. A department, faculty,
+  college, lab or research institute inside a university (Courant Institute,
+  Gatsby Unit) is not a second institution: credit the university. (Agent
+  default, 2026-11-24; veto by asking for parent-only or school-only credit.)
+- A company, investor or lab named beside one university does not make a
+  joint row: "MIT & Sequoia Capital" credits MIT, and "MIT-IBM Watson AI Lab"
+  credits MIT (this supersedes the 2026-11-19 trap that kept it uncredited).
+- A university system or federation named beside a member (CUNY, University of
+  California, Université de Lyon, Université de Toulouse, HESAM, Paris-Est Sup)
+  credits the member only; named alone, it credits the system's own record.
+- A CUHK unit placed in Shenzhen (School of Data Science, School of Science and
+  Engineering, SRIBD, AIRS, FNii, "(Shenzhen)") credits CUHK-Shenzhen; CUHK's
+  own Shenzhen Research Institute credits CUHK. (Agent defaults, 2026-11-24.)
+
 ## 2. Build an isolated candidate
 
 `prepare_refresh.py` can combine complete collector outputs with an immutable

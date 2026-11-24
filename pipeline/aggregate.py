@@ -76,6 +76,22 @@ SITE_DATA_DIR = os.path.join(REPO_ROOT, "site", "data")
 EXCLUDED_CSV = os.path.join(REPO_ROOT, "data", "excluded-works.csv")
 
 CREDIT_TYPES = {"education"}
+METADATA_CORRECTIONS = os.path.join(REPO_ROOT, "data", "institution-metadata-corrections.json")
+
+
+@lru_cache(maxsize=1)
+def type_corrections():
+    """Evidenced institution-type fixes for OpenAlex records ({id: type}).
+
+    Applied to native and map resolutions alike, so an institution OpenAlex
+    mistypes (IIT Palakkad as facility) is credited the same on both paths.
+    """
+    try:
+        with open(METADATA_CORRECTIONS, encoding="utf8") as handle:
+            corrections = json.load(handle)
+    except FileNotFoundError:
+        return {}
+    return {institution_id(c["id"]): c["type"] for c in corrections}
 
 
 def institution_id(value):
@@ -218,6 +234,20 @@ def load_affiliation_map():
     return mapping
 
 
+def joint_members(row):
+    """Members of a status=joint row as [(institution_id, name, type)].
+
+    A joint row credits every named university; aggregate splits the author's
+    share evenly across the unique institutions they resolve to.
+    """
+    ids = [institution_id(i) for i in str(row.get("institution_id", "")).split("|")]
+    names = str(row.get("institution_name", "")).split(" | ")
+    if len(names) != len(ids):
+        names = [""] * len(ids)
+    kind = row.get("institution_type", "")
+    return [(i, n, kind) for i, n in zip(ids, names) if i]
+
+
 def resolve_raw_affiliations(raw_affils, affil_map):
     """Resolve Crossref free-text affiliations via the map. Returns list of (id, name, type) tuples."""
     seen = set()
@@ -226,21 +256,26 @@ def resolve_raw_affiliations(raw_affils, affil_map):
         row = affil_map.get(raw)
         if not row:
             continue
-        if isinstance(row, tuple):
-            inst_id, name, kind = row
+        if isinstance(row, list):
+            members = row
+        elif isinstance(row, tuple):
+            members = [row]
+        elif row.get("status") == "joint":
+            members = joint_members(row)
         else:
             inst_id = institution_id(row.get("institution_id", ""))
             if not inst_id or row.get("status") not in ("auto", "manual"):
                 continue
-            name, kind = row.get("institution_name", ""), row.get("institution_type", "")
-        if inst_id in seen:
-            continue
-        seen.add(inst_id)
-        resolved.append({
-            "id": inst_id,
-            "display_name": name,
-            "type": kind,
-        })
+            members = [(inst_id, row.get("institution_name", ""), row.get("institution_type", ""))]
+        for inst_id, name, kind in members:
+            if inst_id in seen:
+                continue
+            seen.add(inst_id)
+            resolved.append({
+                "id": inst_id,
+                "display_name": name,
+                "type": kind,
+            })
     return resolved
 
 
@@ -248,12 +283,19 @@ def prepare_affiliation_map(mapping):
     """Normalize accepted exact matches once, retaining non-education entries.
 
     The first occurrence of an institution wins even if a later raw string
-    assigns it a different type, matching resolve_raw_affiliations.
+    assigns it a different type, matching resolve_raw_affiliations. A
+    status=joint row becomes a list of member tuples.
     """
-    return {raw: (institution_id(row.get('institution_id')), row.get('institution_name', ''),
-                  row.get('institution_type', ''))
-            for raw, row in mapping.items()
-            if row.get('status') in ('auto', 'manual') and institution_id(row.get('institution_id'))}
+    prepared = {}
+    for raw, row in mapping.items():
+        if row.get('status') == 'joint':
+            members = joint_members(row)
+            if members:
+                prepared[raw] = members
+        elif row.get('status') in ('auto', 'manual') and institution_id(row.get('institution_id')):
+            prepared[raw] = (institution_id(row.get('institution_id')), row.get('institution_name', ''),
+                             row.get('institution_type', ''))
+    return prepared
 
 
 def find_cached_years(venue_key, cache_dir=None):
@@ -265,6 +307,31 @@ def find_cached_years(venue_key, cache_dir=None):
         if entry.isdigit() and os.path.exists(os.path.join(venue_dir, entry, "works.jsonl")):
             years.append(int(entry))
     return years
+
+
+def resolve_authorship(author, affil_map, aliases, credit_types):
+    """Shared attribution path for production aggregation and audit traces.
+
+    aliases must already be canonicalized. Keep native non-credit resolutions:
+    a map disagreement is evidence to review, not permission to replace them.
+    """
+    insts = author.get("institutions") or []
+    used_map = not insts
+    if used_map:
+        insts = resolve_raw_affiliations(author.get("raw_affiliations") or [], affil_map)
+    unique = {}
+    corrections = type_corrections()
+    for inst in insts:
+        iid = institution_id(inst.get("id"))
+        if corrections.get(iid, inst.get("type")) not in credit_types:
+            continue
+        if not iid:
+            raise ValueError("Credited institution without id")
+        target = aliases.get(iid)
+        canonical = target[0] if target else iid
+        name = target[1] if target and target[1] else inst["display_name"]
+        unique.setdefault(canonical, (name, inst.get("lineage")))
+    return unique, used_map
 
 
 def process_venues(venue_keys, v2a, year_filter, affil_map, excluded=frozenset(),
@@ -346,31 +413,12 @@ def process_venues(venue_keys, v2a, year_filter, affil_map, excluded=frozenset()
 
                     for a in authorships:
                         total_authorship_pairs += 1
-                        insts = a.get("institutions") or []
-                        edu_insts = [i for i in insts if i.get("type") in active_credit_types]
-
-                        if not edu_insts and not insts:
-                            raw = a.get("raw_affiliations") or []
-                            resolved = resolve_raw_affiliations(raw, affil_map)
-                            edu_insts = [i for i in resolved if i.get("type") in active_credit_types]
-                            if edu_insts:
-                                crossref_resolved += 1
-
-                        if not edu_insts:
+                        unique_insts, used_map = resolve_authorship(a, affil_map, aliases, active_credit_types)
+                        if used_map and unique_insts:
+                            crossref_resolved += 1
+                        if not unique_insts:
                             dropped_no_edu_inst += 1
                             continue
-                        # Resolve aliases and collapse duplicate affiliations
-                        # before dividing the author's share. Two provider IDs
-                        # for the same university are one affiliation.
-                        unique_insts = {}
-                        for inst in edu_insts:
-                            iid = institution_id(inst.get("id"))
-                            if not iid:
-                                raise ValueError(f"Education institution without id in {path}")
-                            target = aliases.get(iid)
-                            canonical = target[0] if target else iid
-                            name = target[1] if target and target[1] else inst["display_name"]
-                            unique_insts.setdefault(canonical, (name, inst.get("lineage")))
                         if len(unique_insts) > 1:
                             multi_inst_author_events += 1
                         share = paper_weight / len(unique_insts)

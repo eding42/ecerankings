@@ -173,6 +173,7 @@ def main():
     initial_hashes = {path: digest(ROOT / path) for path in [
         'data/fields.json', 'data/areas.json', 'data/affiliation-map.csv', 'data/institution-aliases.csv',
         'data/excluded-works.csv', 'data/institution-metadata-overrides.json',
+        'data/institution-metadata-corrections.json',
         'data/institutions.json', 'data/refresh/institution-records-2026-10-28.json']
         if (ROOT / path).exists()}
     code_hashes = {path: digest(ROOT / path) for path in CODE_FILES}
@@ -224,6 +225,8 @@ def main():
                      'excluded_works': initial_hashes['data/excluded-works.csv']}
     if override_path.exists():
         public_inputs['institution_metadata_overrides'] = initial_hashes['data/institution-metadata-overrides.json']
+    if (ROOT / 'data/institution-metadata-corrections.json').exists():
+        public_inputs['institution_metadata_corrections'] = initial_hashes['data/institution-metadata-corrections.json']
     public_inputs['institution_metadata_snapshot'] = initial_hashes['data/institutions.json']
     if live_path.exists():
         public_inputs['institution_metadata_refresh'] = initial_hashes['data/refresh/institution-records-2026-10-28.json']

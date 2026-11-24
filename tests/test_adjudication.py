@@ -24,6 +24,19 @@ INDEX = {"by_id": {
 }}
 
 
+class MetadataCorrectionTests(unittest.TestCase):
+    def test_requires_matching_identity_and_evidence(self):
+        index = INDEX['by_id']
+        one = index['https://openalex.org/I1']
+        correction = {**one, 'type': 'facility', 'source_url': 'https://example.edu/about', 'evidence': 'source evidence'}
+        fixed = adj.apply_metadata_corrections(index, [correction])
+        self.assertEqual(fixed[one['id']]['type'], 'facility')
+        self.assertEqual(index[one['id']]['type'], 'education')
+        for changes in ({'country_code': 'CN'}, {'display_name': 'Different University'}, {'evidence': ''}):
+            with self.assertRaises(ValueError):
+                adj.apply_metadata_corrections(index, [{**correction, **changes}])
+
+
 def row(raw, status="review", iid="", name="", itype="", via=""):
     return {"raw_affiliation": raw, "status": status, "institution_id": iid, "institution_name": name,
             "institution_type": itype, "country_code": "", "lineage": "", "score": "0.8", "matched_via": via,
@@ -106,6 +119,88 @@ class Adjudication(unittest.TestCase):
         self.assertIn("rows restored: 1", out)
         r = self.map_rows()["Qualcomm Inc, San Diego, CA"]
         self.assertEqual((r["status"], r["institution_type"]), ("manual", "company"))
+
+    def test_joint_decision_credits_every_named_university_and_replays(self):
+        f = self.decisions([{"raw_affiliation": "Qualcomm Inc, San Diego, CA", "decision": "joint",
+                             "institution_ids": ["I1", "I2", "I1"], "evidence": "names both universities"}])
+        self.assertEqual(self.run_cmd("apply", f)[0], 0)
+        r = self.map_rows()["Qualcomm Inc, San Diego, CA"]
+        self.assertEqual((r["status"], r["institution_type"], r["matched_via"]), ("joint", "education", "adjudicated:joint"))
+        self.assertEqual(r["institution_id"], "https://openalex.org/I1|https://openalex.org/I2")
+        self.assertEqual(r["institution_name"], "Purdue University West Lafayette | Purdue University Northwest")
+        self.assertEqual(adj.read_ledger(self.paths["LEDGER"])[0]["institution_ids"], ["I1", "I2"])
+        fields, rows, _ = adj.read_map(self.paths["MAP_CSV"])
+        for row_ in rows:
+            if row_["raw_affiliation"].startswith("Qualcomm"):
+                row_.update(status="review", institution_id="", institution_name="", institution_type="")
+        adj.write_map(fields, rows, self.paths["MAP_CSV"])
+        self.assertIn("rows restored: 1", self.run_cmd("replay")[1])
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["status"], "joint")
+
+    def apply_joint(self, raw="Qualcomm Inc, San Diego, CA", ids=("I1", "I2")):
+        f = self.decisions([{"raw_affiliation": raw, "decision": "joint", "institution_ids": list(ids),
+                             "evidence": "names both universities"}])
+        self.assertEqual(self.run_cmd("apply", f)[0], 0)
+
+    def test_replay_restores_a_changed_non_last_joint_member(self):
+        self.apply_joint()
+        fields, rows, _ = adj.read_map(self.paths["MAP_CSV"])
+        for r in rows:
+            if r["raw_affiliation"].startswith("Qualcomm"):
+                r["institution_id"] = "https://openalex.org/I3|https://openalex.org/I2"
+        adj.write_map(fields, rows, self.paths["MAP_CSV"])
+        self.assertIn("rows restored: 1", self.run_cmd("replay")[1])
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["institution_id"],
+                         "https://openalex.org/I1|https://openalex.org/I2")
+
+    def test_apply_needs_override_to_replace_a_joint_row(self):
+        self.apply_joint()
+        f = self.decisions([{"raw_affiliation": "Qualcomm Inc, San Diego, CA", "decision": "corrected",
+                             "institution_id": "I1", "evidence": "x"}])
+        code, out = self.run_cmd("apply", f)
+        self.assertEqual(code, 1)
+        self.assertIn("already joint", out)
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["status"], "joint")
+        self.assertEqual(self.run_cmd("apply", "--override", f)[0], 0)
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["status"], "manual")
+
+    def test_joint_ledger_entry_drops_empty_ids(self):
+        self.apply_joint(ids=("I1", "", "I2"))
+        self.assertEqual(adj.read_ledger(self.paths["LEDGER"])[0]["institution_ids"], ["I1", "I2"])
+
+    def test_traps_see_every_joint_member(self):
+        joint = row("X", "joint", "https://openalex.org/I1|https://openalex.org/I2", "A | B", "education")
+        self.assertIn("forbidden", adj.trap_result({"expect": "not:I1"}, joint))
+        self.assertIn("forbidden", adj.trap_result({"expect": "not:I2"}, joint))
+        self.assertIn("credited as education", adj.trap_result({"expect": "noneducation"}, joint))
+        self.assertIn("expected I1", adj.trap_result({"expect": "id:I1"}, joint))
+        self.assertIsNone(adj.trap_result({"expect": "id:I2|I1"}, joint))
+        self.assertIsNone(adj.trap_result({"expect": "not:I3"}, joint))
+
+    def test_needs_policy_demotes_an_auto_row(self):
+        f = self.decisions([{"raw_affiliation": "PURDUE UNIVERSITY", "decision": "needs-policy", "evidence": "x"}])
+        self.assertEqual(self.run_cmd("apply", f)[0], 0)
+        self.assertEqual(self.map_rows()["PURDUE UNIVERSITY"]["status"], "review")
+        f = self.decisions([{"raw_affiliation": "Purdue University", "decision": "needs-policy", "evidence": "x"}])
+        self.run_cmd("apply", f)
+        self.assertEqual(self.map_rows()["Purdue University"]["status"], "manual")
+
+    def test_ledger_lines_survive_splitlines(self):
+        adj.append_ledger([{"raw_affiliation": "University of Bonn\u2028Bonn", "decision": "unresolved"}],
+                          self.paths["LEDGER"])
+        text = self.paths["LEDGER"].read_text(encoding="utf8")
+        self.assertEqual(len(text.splitlines()), 1)
+        self.assertEqual(adj.read_ledger(self.paths["LEDGER"])[0]["raw_affiliation"], "University of Bonn\u2028Bonn")
+
+    def test_joint_decision_needs_two_education_members(self):
+        for ids, message in ((["I1"], "two or more distinct"), (["I1", "I3"], "joint members must be education"),
+                             (["I1", "I999"], "not in data/institutions.json")):
+            f = self.decisions([{"raw_affiliation": "Qualcomm Inc, San Diego, CA", "decision": "joint",
+                                 "institution_ids": ids, "evidence": "x"}])
+            code, out = self.run_cmd("apply", f)
+            self.assertEqual(code, 1)
+            self.assertIn(message, out)
+        self.assertEqual(self.map_rows()["Qualcomm Inc, San Diego, CA"]["status"], "review")
 
     def test_write_refuses_when_another_writer_changed_the_map(self):
         fields, rows, stamp = adj.read_map(self.paths["MAP_CSV"])

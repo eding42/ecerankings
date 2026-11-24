@@ -32,6 +32,20 @@ def row(iid, status='auto', via=''):
 
 
 class GuardTests(unittest.TestCase):
+    def test_country_tail_does_not_split_new_mexico(self):
+        raw = 'University of New Mexico,Electrical and Computer Engineering,Albuquerque,NM'
+        self.assertNotIn('MX', E.countries_named(raw))
+
+    def test_company_compound_preserves_indexed_university_alias(self):
+        by = {'https://openalex.org/I20': inst('I20', 'University of California, Berkeley', 'US', alternatives=['UC Berkeley'])}
+        r = {'raw_affiliation': 'UC Berkeley and Google, Inc', 'status': 'auto',
+             'institution_type': 'education', 'institution_id': 'https://openalex.org/I20',
+             'institution_name': 'University of California, Berkeley', 'country_code': 'US'}
+        _, companies, unresolved = F.propose([r], by)
+        self.assertFalse(companies)
+        self.assertEqual(unresolved[0][4], 'compound-company')
+        self.assertEqual(E.guard_row(r['raw_affiliation'], dict(r), by, E.build_name_index(by))['status'], 'auto')
+
     def test_same_name_in_the_named_country_replaces_the_match(self):
         r = E.guard_row('Southeast University,Nanjing,China', row('I1', via='Southeast University'), BY_ID, INDEX)
         self.assertEqual((r['status'], r['institution_id'], r['country_code']), ('auto', 'https://openalex.org/I2', 'CN'))

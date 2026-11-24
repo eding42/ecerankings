@@ -18,6 +18,7 @@ INPUTS = {
     'institution_aliases': 'data/institution-aliases.csv',
     'excluded_works': 'data/excluded-works.csv',
     'institution_metadata_overrides': 'data/institution-metadata-overrides.json',
+    'institution_metadata_corrections': 'data/institution-metadata-corrections.json',
     'institution_metadata_snapshot': 'data/institutions.json',
     'institution_metadata_refresh': 'data/refresh/institution-records-2026-10-28.json',
 }

@@ -4,6 +4,7 @@ import subprocess
 import sys
 import tempfile
 import unittest
+import unittest.mock
 
 ROOT = pathlib.Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
@@ -83,6 +84,20 @@ class AggregateSafetyTests(unittest.TestCase):
         result = aggregate.process_venues(['journal'], {'journal': ('area', 'Area')}, None, {},
                                           aliases={'I1': ('I2', 'Canonical')}, cache_dir=str(self.cache))
         self.assertEqual(result[0][(iid('I2'), 'area', 2025)]['adjusted_count'], 1)
+
+    def test_type_corrections_apply_to_native_institutions(self):
+        facility = {'id': iid('I9'), 'display_name': 'Mistyped Institute', 'type': 'facility'}
+        self.write('journal', [work(institutions=[facility])])
+        aggregate.type_corrections.cache_clear()
+        self.addCleanup(aggregate.type_corrections.cache_clear)
+        with unittest.mock.patch.object(aggregate, 'type_corrections', lambda: {iid('I9'): 'education'}):
+            result = aggregate.process_venues(['journal'], {'journal': ('area', 'Area')}, None, {},
+                                              cache_dir=str(self.cache))
+        self.assertEqual(result[0][(iid('I9'), 'area', 2025)]['adjusted_count'], 1)
+
+    def test_joint_rows_without_a_type_earn_no_credit(self):
+        row = {'status': 'joint', 'institution_id': 'I1|I2', 'institution_name': 'A | B', 'institution_type': ''}
+        self.assertEqual([m[2] for m in aggregate.joint_members(row)], ['', ''])
 
     def test_alias_cycles_fail_instead_of_misassigning_credit(self):
         with self.assertRaisesRegex(ValueError, 'alias cycle'):

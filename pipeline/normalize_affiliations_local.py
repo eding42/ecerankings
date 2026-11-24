@@ -444,14 +444,14 @@ def main():
         st = row["status"] if row else "unmapped"
         by_status[st] = by_status.get(st, 0) + 1
         weighted[st] = weighted.get(st, 0) + count
-        if row and row["status"] in ("auto", "manual") and row["institution_type"] == "education":
+        if row and row["status"] in ("auto", "manual", "joint") and row["institution_type"] == "education":
             edu_strings += 1
             edu_occurrences += count
 
     total_occ = sum(all_strings.values())
     print(f"\nMap written to {MAP_CSV}")
     print(f"{'status':<12}{'distinct':>10}{'occurrences':>14}{'% of occurrences':>18}")
-    for st in ("auto", "manual", "review", "unmatched", "unmapped"):
+    for st in ("auto", "manual", "joint", "review", "unmatched", "unmapped"):
         if st in by_status:
             print(f"{st:<12}{by_status[st]:>10}{weighted[st]:>14}{100*weighted[st]/max(total_occ,1):>17.1f}%")
     print(f"\nCredited (auto+manual, type=education): {edu_strings} distinct strings, {edu_occurrences} occurrences ({100*edu_occurrences/max(total_occ,1):.1f}%)")
