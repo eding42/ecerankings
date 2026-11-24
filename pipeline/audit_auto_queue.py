@@ -15,6 +15,9 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import adjudication  # noqa: E402
 import affiliation_evidence as ae  # noqa: E402
 
+# Non-education types swept for universities mislabeled as organizations.
+NONEDU_SWEEP_TYPES = {"company", "funder", "archive"}
+
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 
@@ -28,6 +31,8 @@ def is_unreviewed(row, scope):
         return status == "auto" and row.get("institution_type") == "education"
     if scope == "auto-all":
         return status == "auto"
+    if scope == "auto-nonedu":
+        return status == "auto" and row.get("institution_type") in NONEDU_SWEEP_TYPES
     if scope == "review":
         return status == "review"
     if scope == "unmatched":
@@ -201,7 +206,7 @@ def main(argv=None):
     p_next.add_argument(
         "--scope",
         default="auto-no-ev",
-        choices=["auto-no-ev", "auto-flagged", "auto-edu", "auto-all", "review", "unmatched"],
+        choices=["auto-no-ev", "auto-flagged", "auto-edu", "auto-all", "auto-nonedu", "review", "unmatched"],
     )
     p_next.add_argument("--credited-only", action="store_true", help="Only include rows with >0 credit")
     p_next.add_argument("--limit", type=int, default=50, help="Batch size (default: 50)")
