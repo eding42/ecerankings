@@ -15,8 +15,6 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import adjudication  # noqa: E402
 import affiliation_evidence as ae  # noqa: E402
 
-# Non-education types swept for universities mislabeled as organizations.
-NONEDU_SWEEP_TYPES = {"company", "funder", "archive"}
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
@@ -32,7 +30,7 @@ def is_unreviewed(row, scope):
     if scope == "auto-all":
         return status == "auto"
     if scope == "auto-nonedu":
-        return status == "auto" and row.get("institution_type") in NONEDU_SWEEP_TYPES
+        return status == "auto" and row.get("institution_type") != "education"
     if scope == "review":
         return status == "review"
     if scope == "unmatched":
