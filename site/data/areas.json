@@ -1836,11 +1836,77 @@
         }
       ]
     },
-    "powerelec": {
-      "name": "Power Electronics",
+    "power": {
+      "name": "Power & Energy",
       "cluster": "Power & Energy",
       "default_on": true,
       "venues": [
+        {
+          "key": "tpwrs",
+          "display": "IEEE Transactions on Power Systems",
+          "kind": "journal",
+          "openalex_ids": [
+            "S201921491"
+          ],
+          "status": "verified",
+          "expected_per_year": [
+            400,
+            700
+          ],
+          "notes": "Full checklist passed 2026-07-19. Identity confirmed (IEEE TPS, ISSN 0885-8950/1558-0679). 2016-2025 all present in OpenAlex, no coverage gaps. Volume 2020-2025: 584/592/624/556/425/389 \u2014 2024 and 2025 dip below 500 (2025 partial-year ingestion lag, 2024 mild genuine dip) but within rough sanity vs expected [400,700]. Affiliation coverage 95.5% on 25 sampled 2024 works. Top insts 2021-2025: Tsinghua, US DOE, Zhejiang, Xi'an Jiaotong, NCEPU, Imperial, State Grid, NTU, Chongqing.",
+          "years": {
+            "2016": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 569
+            },
+            "2017": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 665
+            },
+            "2018": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 565
+            },
+            "2019": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 550
+            },
+            "2020": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 584
+            },
+            "2021": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 592
+            },
+            "2022": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 624
+            },
+            "2023": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 556
+            },
+            "2024": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 425
+            },
+            "2025": {
+              "source": "openalex",
+              "id": "S201921491",
+              "count": 389
+            }
+          }
+        },
         {
           "key": "tpel",
           "display": "IEEE Transactions on Power Electronics",
@@ -1854,20 +1920,6 @@
             1900
           ],
           "notes": "Verified 2026-07-22. S29875816 confirmed sole correct source (IEEE T-PEL). 2024 count 1689 in expected [1200,1900] range. High volume journal \u2014 note in tiering discussion."
-        },
-        {
-          "key": "jestpe",
-          "display": "IEEE Journal of Emerging and Selected Topics in Power Electronics",
-          "kind": "journal",
-          "openalex_ids": [
-            "S2764857692"
-          ],
-          "status": "verified",
-          "expected_per_year": [
-            300,
-            650
-          ],
-          "notes": "Full checklist run 2026-07-22, window 2017-2026. Identity confirmed (ISSN 2168-6777, IEEE host org). Single stable journal source, all years native in OpenAlex, no fragmentation/lag. Per-year article counts sum to source's works_count (5220), confirming no duplicate source ID. Volume: 2019-2025 in/near [300,650] band (2025=673, ~3.5% over, within tolerance); 2017-2018 (228, 260) below floor due to journal's early ramp-up post-2013 founding, not a data issue. Affiliation coverage 93.5% (100/107) on 25-work 2024 sample, well above 85% threshold. Institution sniff test (2020-2024 top 10): Aalborg, Xi'an Jiaotong, Zhejiang, HUST, Harbin Institute of Tech, Southeast, Hunan, NUAA, Tsinghua, NTU - matches known power electronics leaders, no lookalike/off-field contamination. All checks pass cleanly."
         },
         {
           "key": "ecce",
@@ -1941,145 +1993,6 @@
               "doi_prefix": "10.1109/ecce58356.2025",
               "count": 933,
               "container_title": "2025 IEEE Energy Conversion Conference Congress and Exposition (ECCE)"
-            }
-          }
-        }
-      ]
-    },
-    "power": {
-      "name": "Power & Energy Systems",
-      "cluster": "Power & Energy",
-      "default_on": true,
-      "venues": [
-        {
-          "key": "tpwrs",
-          "display": "IEEE Transactions on Power Systems",
-          "kind": "journal",
-          "openalex_ids": [
-            "S201921491"
-          ],
-          "status": "verified",
-          "expected_per_year": [
-            400,
-            700
-          ],
-          "notes": "Full checklist passed 2026-07-19. Identity confirmed (IEEE TPS, ISSN 0885-8950/1558-0679). 2016-2025 all present in OpenAlex, no coverage gaps. Volume 2020-2025: 584/592/624/556/425/389 \u2014 2024 and 2025 dip below 500 (2025 partial-year ingestion lag, 2024 mild genuine dip) but within rough sanity vs expected [400,700]. Affiliation coverage 95.5% on 25 sampled 2024 works. Top insts 2021-2025: Tsinghua, US DOE, Zhejiang, Xi'an Jiaotong, NCEPU, Imperial, State Grid, NTU, Chongqing.",
-          "years": {
-            "2016": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 569
-            },
-            "2017": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 665
-            },
-            "2018": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 565
-            },
-            "2019": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 550
-            },
-            "2020": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 584
-            },
-            "2021": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 592
-            },
-            "2022": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 624
-            },
-            "2023": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 556
-            },
-            "2024": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 425
-            },
-            "2025": {
-              "source": "openalex",
-              "id": "S201921491",
-              "count": 389
-            }
-          }
-        },
-        {
-          "key": "tsg",
-          "display": "IEEE Transactions on Smart Grid",
-          "kind": "journal",
-          "openalex_ids": [
-            "S59604973"
-          ],
-          "status": "verified",
-          "expected_per_year": [
-            300,
-            650
-          ],
-          "notes": "Verified 2026-07-22. S59604973 confirmed sole correct source (IEEE T-Smart Grid). 2024 count 359 in expected [300,650] range. Full year coverage 2016-2025 in OpenAlex. Affiliation coverage 99.3%.",
-          "years": {
-            "2016": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 659
-            },
-            "2017": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 627
-            },
-            "2018": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 352
-            },
-            "2019": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 380
-            },
-            "2020": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 460
-            },
-            "2021": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 429
-            },
-            "2022": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 504
-            },
-            "2023": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 416
-            },
-            "2024": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 345
-            },
-            "2025": {
-              "source": "openalex",
-              "id": "S59604973",
-              "count": 469
             }
           }
         }
