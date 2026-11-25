@@ -2,20 +2,20 @@
   "schema_version": 1,
   "field": "biology",
   "description": "Institutions ranked by peer-reviewed research papers in selective life sciences and biomedical journals.",
-  "generated_at": "2026-11-24T23:42:01.270588+00:00",
-  "source_revision": "bb92567bee6ab99b2fc2a843a4232d48fd629aaa",
+  "generated_at": "2026-11-25T22:47:27.987707+00:00",
+  "source_revision": "47759859f68a67ae47e94473782f91adcbc259f8",
   "source_tree_dirty": true,
   "source_tree_status": "available",
   "source_revision_meaning": "Git baseline at build time; code_hashes identify the actual working-tree files, including uncommitted changes.",
   "code_hashes": {
     "pipeline/aggregate.py": "3d42b1d689fff74b06dca334e044df36a4211146ae4905b85dfdc85017fff6db",
-    "pipeline/aggregate_biosciences.py": "e8d1e55760dcfbd2f0901bc9b5af9acfcbb9e153ece77235a7c1fa6cf8e458b8",
+    "pipeline/aggregate_biosciences.py": "3667a2822bc6217da836b818f4e1943bcafca6498cf078147685c9284a463399",
     "pipeline/aggregation_runtime.py": "b5dbb4cd338969fa8a8954d9653cf57bb03b2eaf1acc21ad4dffee63c43baa59",
     "pipeline/fields.py": "b34c92cae0100af1c1dc1e7d4e7a607dde984ae32a7f16bb886feda99989a419",
     "pipeline/workkey.py": "639e71f64299af09b346e6983a60af2cf928d08732fd851adc8266a5e2cee538",
     "pipeline/split.py": "57d0b2e19817a1a6822779e0597207bf74329c50309ddc55f58a6da2789b3836",
     "pipeline/build_release.py": "f09c53936e09b3d891318fa25eb3df37540b2297bf4b1b2906cc1fcbc50fbc82",
-    "pipeline/verify.py": "35556b4de0b8178065cfabba8cdcbd5878d036f33195a63f149bac81d4f350a3",
+    "pipeline/verify.py": "529ec499ca100ea924a63d5988587687522293eabd7d1763fef77f2c37cce426",
     "pipeline/promote_release.py": "a21f8566ffe1af8b4cb1fecd148566f6faf1111c4f157365b2d4f9b7639e605b"
   },
   "aggregation": null,
@@ -27,10 +27,11 @@
   "methodology": "Equal 1/N author credit, split between the unique credited institutions (education) each author lists; geometric mean of 1+area counts minus 1.",
   "input_hashes": {
     "registry": "77b375c0dbd333cec09fd3c823544e415acfc8855ce8983f58a26112675a0383",
-    "affiliation_map": "e42af98878e6c2acb093b2838216af6907fd4b7167c2192bd07f4dce3a51a77b",
-    "institution_aliases": "6212b67b32a68f418bf133f5571c0032d77f708f0f8fbea4bdb65508a6140f02",
-    "excluded_works": "17d6b5d6020be221b5f1aec94fd7616a6ee3b4ae37c7ea769abe54004c44741d",
-    "institution_metadata_corrections": "5cb48aef600283dbc4a821e7c722fd27282866e8abb76d3fa01c48b533725bb4",
+    "affiliation_map": "c2d703a79f28e8c51f0cf4dbe91619bcfcdb63f4fa82a42fccbbd9203dfc7951",
+    "institution_aliases": "7ffccf62872496d053c6630e82796a37de3549d2f7d8d8474356c0e880885043",
+    "excluded_works": "7204abc2a295dcf565d38a2dbb42592c85d4b76dcc85881e71c60106fa33795f",
+    "institution_metadata_overrides": "c5c8f89738490e009000621fc0071e0e2f5d95d868ae83435b86862351847aaa",
+    "institution_metadata_corrections": "95babf5095eac4d718ce6536e534cd7322217d4ded1dd343d6da13c42cd0c324",
     "institution_metadata_snapshot": "31eb5f1a179964306ab85233df1e59f49c62b795cec9b30a1de7c01c8cc4edb3",
     "institution_metadata_refresh": "5b7f84011a6016dae7390cdc191d1401b4b7032ea786d91801010413650dbf9b"
   },
@@ -40,208 +41,208 @@
       "bytes": 17552
     },
     "biochem-struct/mol-cell.json": {
-      "sha256": "b12bbf567e935c75fa75f3e193aeaab00b795872e49719bc5a663c4cfe7bd6f7",
-      "bytes": 552245
+      "sha256": "2fe7a5249f3e17cca7a63e4135d57eec9c8cae430f6847e1255056b0186b9f14",
+      "bytes": 552874
     },
     "biochem-struct/nar.json": {
-      "sha256": "1808a799c5a778bdb42d5f12bf1f2cb62d4d442fce0eb154dd989b942b1622d0",
-      "bytes": 1450640
+      "sha256": "dbe3e5ade58d9cd94a12ee649cfa34d8f728f3f68305b9dc20db4b7aba3d8b94",
+      "bytes": 1452432
     },
     "biochem-struct/nsmb.json": {
-      "sha256": "b651bf5a24e2526e8625e3aa45fcda89c6797383c23090b8fa3b09156c120e2e",
-      "bytes": 364718
+      "sha256": "97ea9ce5eb150be95904487d73788168d0f7b7b5b49c3913943db9f7be267469",
+      "bytes": 365602
     },
     "biochem-struct/structure.json": {
-      "sha256": "e0166ba21ab0b922cf39bec6df20b173db245e5061b701e3bcaca04ea7424e2d",
-      "bytes": 400346
+      "sha256": "f07c31f956529e982014ee704389e664ac84fee7252a8e9928aea73a427bbf5a",
+      "bytes": 400388
     },
     "biochem-struct.json": {
-      "sha256": "d756147803376768d908d3192bc1dc9de32260edb3425ba7618e6489aa6bce28",
-      "bytes": 1657049
+      "sha256": "87a067d8a58f692fbc85e7f3a3d9c6d2ea43e740c18ace88d77ce2d287cd2cc2",
+      "bytes": 1658946
     },
     "bioeng-biotech/nat-biomed-eng.json": {
-      "sha256": "6756a69ff41798872ff7f4c7040a25a6577cc5d73d8dae745d701f0504e5323e",
-      "bytes": 153976
+      "sha256": "16a38619734ba241b8e19b6ca0269528a610b7d8354274029c221b7fdd86aedd",
+      "bytes": 154075
     },
     "bioeng-biotech/nat-biotech.json": {
-      "sha256": "3ab346724bc7818b9c0aa731be74768307a8e2a7431835aae00365b5986b50ca",
-      "bytes": 439331
+      "sha256": "7410c45678a3aeed489a951eac11f0fbd85fc9e732fbbd2fb9142a2d1c7f11cb",
+      "bytes": 439506
     },
     "bioeng-biotech.json": {
-      "sha256": "a666d9db9e95916d548447b8a9d767ec9840d0c13ed2bd90b33d49b88a2ad36e",
-      "bytes": 517731
+      "sha256": "f503339ec63e8c97688281d97b4fbf6436576a906fac7b44f25a37cdb6c80abf",
+      "bytes": 518046
     },
     "cancer-transl/cancer-cell.json": {
-      "sha256": "1052663fd2b74f57890c2d222a406045f33223c568b28936a29a53358f241763",
-      "bytes": 357243
+      "sha256": "a7cfc099d2d86c1ea30b2daf92809444357654a854bb1b4f3efe5124d3c63f82",
+      "bytes": 357170
     },
     "cancer-transl/jci.json": {
-      "sha256": "3a8246cbf643b40e713ed6dc87bcd8ae521db6c851a6706a3d2ec2115f384540",
-      "bytes": 796620
+      "sha256": "9288080183fd12b5936fbc37e8818a79bb092b52125d933e1cec2cdd26c84055",
+      "bytes": 796417
     },
     "cancer-transl/sci-transl-med.json": {
-      "sha256": "0a9ffe2c236f5caa7ffce83289cc1e0c05f874a90de48447ff668abf30f1a844",
-      "bytes": 497557
+      "sha256": "9f0d3595b439ec244a1c90935629fa88d5fef23df2d1d99df1d6d60c5c66f100",
+      "bytes": 497351
     },
     "cancer-transl.json": {
-      "sha256": "f08f1ce38e94d5cb40b98b611acaedd3c242007f440cd46756f35f8fb34947ee",
-      "bytes": 1061588
+      "sha256": "79f7b6908ff35a545e61a95d9beabb6259aa30d5d09d6461feb9c8339dc8576c",
+      "bytes": 1061299
     },
     "comp-bio/bioinformatics.json": {
-      "sha256": "1e80a9c55e6ddb5395570c7741f5a8d34afb1ad1bfc6fd02fc8b0bee678de6c8",
-      "bytes": 1063501
+      "sha256": "7d40dc0f0a28e5b39ac6fcd04cd087b1296eb5fb5dca33644aa3a62cd1d17925",
+      "bytes": 1064866
     },
     "comp-bio/cell-systems.json": {
-      "sha256": "691d5e702af248a106bed3340d092f6ffd65a716b2c8005ca7289f6ab0cf9bdd",
-      "bytes": 131275
+      "sha256": "5016942d94709a157c2a704fe26b7758f43e089a3591bb7eeed5c6a0a0c55769",
+      "bytes": 131666
     },
     "comp-bio/plos-comp-bio.json": {
-      "sha256": "6054b8fb97c173380dc35326da27ba91e2ff375ebe8c5fb471ded1f9d48e68d8",
-      "bytes": 897672
+      "sha256": "6505f310dad86c46f5548df23137e1321f4565de76932fca3c11ae6a5e344938",
+      "bytes": 899953
     },
     "comp-bio.json": {
-      "sha256": "6b74079bf2ba3d2d7bfe4be1d39abbbe17b1c2e3e02366f8bd030eff5a6871ef",
-      "bytes": 1489161
+      "sha256": "f962fbbf532e00efc3cce1213639f916e48009fdecfb1bbb7aacfd569bb5c029",
+      "bytes": 1491757
     },
     "ecology-evol/nat-ecol-evol.json": {
-      "sha256": "023705d64002203e4e9f64db02a1216b753d0360acc726b02b74fa910196def4",
-      "bytes": 483993
+      "sha256": "193eb76331f9c4a50a0334322d3befe7597a304d1c2ced053847e4fd53cbf475",
+      "bytes": 484566
     },
     "ecology-evol.json": {
-      "sha256": "023705d64002203e4e9f64db02a1216b753d0360acc726b02b74fa910196def4",
-      "bytes": 483993
+      "sha256": "193eb76331f9c4a50a0334322d3befe7597a304d1c2ced053847e4fd53cbf475",
+      "bytes": 484566
     },
     "elite_bio/cell.json": {
-      "sha256": "a1dc449afc83b5f17d8d0136c988659ccd5afe5a44804cb4643fbc3200a66ae3",
-      "bytes": 733276
+      "sha256": "16334718bd91d234b7f5d72ce5d62b6756e9263d2a24ed15c3f156ad4b551576",
+      "bytes": 734013
     },
     "elite_bio/nature.json": {
-      "sha256": "e0a8e3d0cffb37acc93f0f12da7073e889c538d0769f4c71e114ef87c14596d4",
-      "bytes": 1427422
+      "sha256": "2c26673a681ffc22447bf57fd348b23d1cc1ab9b2a52d2a51e9ae7c66992a8a7",
+      "bytes": 1429482
     },
     "elite_bio/pnas.json": {
-      "sha256": "65c24a8d33e9d5b4b400254a679175dda6fa09667e07947a4a706ce60a7557cf",
-      "bytes": 2259129
+      "sha256": "617390149962460975e5d036a864d7a1e9769e732c7f543ba59210dd2dc51986",
+      "bytes": 2261110
     },
     "elite_bio/science.json": {
-      "sha256": "8eb4a3d8f86359902d609bfec6027de830da8974653df9ed807a7bebab535de8",
-      "bytes": 1082642
+      "sha256": "7be847d8bfe75a73a3e994cc46c92cae6fd987e512dc8c1b9238af0ba3934f22",
+      "bytes": 1084104
     },
     "elite_bio.json": {
-      "sha256": "6e468887a3f22024a16e17a81133d98f7667280a8354c9569d2a9191ff3888e2",
-      "bytes": 2949338
+      "sha256": "47ff4d62ed3378c8142d906c5a41a1aebb425e22f88977887d9be983dece6853",
+      "bytes": 2951778
     },
     "genetics/genome-bio.json": {
-      "sha256": "dbe7cf35588cd0ecf381aa6bcfc3902f4849732d232e2029688ba209ce16f31a",
-      "bytes": 614499
+      "sha256": "09a4d4e232a8af892cce69ae0b0509d1a5355d57d1835f96a4beae685e67a752",
+      "bytes": 615445
     },
     "genetics/genome-res.json": {
-      "sha256": "fca7f0b8ab8ace6908cb4159a3d6a9ddce5d56d2ea10821e2cbc861b68295a48",
-      "bytes": 435643
+      "sha256": "e9d00c74d7e116f63975ab75a0ad9568d6f031e4599c90ca390f0e31f08bc6be",
+      "bytes": 436299
     },
     "genetics/nat-genetics.json": {
-      "sha256": "a6745b83b55d257cb8a7e75689d719436ba267f8fbef505b78d7af0703546798",
-      "bytes": 933543
+      "sha256": "5d030ba2ac0cf6ee61c12d6893768c8991bc8e6d1e74caab9c9c444acabda7a7",
+      "bytes": 933886
     },
     "genetics.json": {
-      "sha256": "6b8bf695dbe3e82887f88a81989620788c4305c27f48fcb8c545909a27d0d949",
-      "bytes": 1296677
+      "sha256": "f926c360ec7f325202f19ffa93a690a86757dd0d1d3e53b6e6d9e3564a186005",
+      "bytes": 1298245
     },
     "immuno-micro/cell-host-microbe.json": {
-      "sha256": "f6a8ea33ab110e2bfdcdb44c3c47b47f7f316fffefd26fcd5f3e848cb9505eb3",
-      "bytes": 349169
+      "sha256": "44cdefbf4835a983d361a66f8fb2c2350c21faf6d9316e1a1ca3f2abc0c3a3d7",
+      "bytes": 349227
     },
     "immuno-micro/immunity.json": {
-      "sha256": "edccf2cca49660514559dd5013b100f34a75598b7538167908b66023873f05ad",
-      "bytes": 405604
+      "sha256": "605f19ba5bb2c9719c7c7e62317b6557a9fb3ee2e2a1e8711f26d3a61fbce794",
+      "bytes": 405728
     },
     "immuno-micro/jem.json": {
-      "sha256": "f6c076d6785c6dec4b4ea1083e0fc2cdc7ff4e4ac026c4cec8764c2654f57abc",
-      "bytes": 519785
+      "sha256": "e701700896c29208489beb65c503ca1fbd72cbb694f33b4aaa02df9823f029dc",
+      "bytes": 519584
     },
     "immuno-micro/nat-immunol.json": {
-      "sha256": "9c761ae18cdc33458d0f98f01d664059a67b93b45db87c99c7f9d4c0082e1fe0",
-      "bytes": 388015
+      "sha256": "e293269f2e2bb8637762ddede28d047caf334d4f86defb3872b95e7a52b8be67",
+      "bytes": 388245
     },
     "immuno-micro/nat-microbiol.json": {
-      "sha256": "6f398f25c6c39f082dfc8dd13b5c390422208864bb30262c56a8bb2e36de3bd5",
-      "bytes": 342378
+      "sha256": "beb781e5049730ba5bf119da4aec9bfd3a79322746b4b5f2c6505ace38dce8ee",
+      "bytes": 342317
     },
     "immuno-micro/sci-immunol.json": {
-      "sha256": "3a2e8e0297fa6f0ef29240684b3af5298fdf5ccc954e7c11e68ae8b94118b7cf",
-      "bytes": 182947
+      "sha256": "bda3c03eebbc40007230164b6fb93263dabc15ed365b8951cb7eafb9c7469644",
+      "bytes": 182809
     },
     "immuno-micro.json": {
-      "sha256": "5d37368381c4de8e219d93c29e47b7fb98421cc00f3d78429b650438c1341a93",
-      "bytes": 1088023
+      "sha256": "5f0abde19649b845a8db54e0d0c2d963a0cca39d09c7efbcbd6eee7c5dadbf34",
+      "bytes": 1088415
     },
     "inst-area-year.csv": {
-      "sha256": "45388b4e11dfdbb26b82f105b1201a47709b0c05c5145a86e009402726bc2b9e",
-      "bytes": 13413598
+      "sha256": "43557b88115336e9e0ebe7c1301341d4d92c134a78e145f73d002ffd14822783",
+      "bytes": 13424952
     },
     "inst-venue-year.csv": {
-      "sha256": "131e7c0fb771a4c1c44ece79e0929a217c6ef87fb9ecbec7dd8b344b43c00052",
-      "bytes": 23389730
+      "sha256": "ad1291a09189af4dd23191d303b9ebe008116f6d79f026a86c708d25467b71fd",
+      "bytes": 23411174
     },
     "institutions.json": {
-      "sha256": "2759b99c680a50b84d12991b56687a0f56dff20327ddd11734314b6cebfedea2",
-      "bytes": 638086
+      "sha256": "ca6425e998de2f6c54693820f1daa81524a1cc7bdd0c58663e6ed58becbb8a7c",
+      "bytes": 638299
     },
     "metabolism-physiol/cell-metab.json": {
-      "sha256": "b1c5282f5fa4bede224ac67bc3412e7537f3b9189a455e0ff5c14787923cad5b",
-      "bytes": 414627
+      "sha256": "9c770e94e6797c0ea23cf55eea89165bbda25a2d095d74cddf756f85d42a8294",
+      "bytes": 414577
     },
     "metabolism-physiol/nat-metab.json": {
-      "sha256": "d85e726960bb60ac23b8efd088b7a0a2db60b111bcbbcbe049d3dc3d55430d96",
-      "bytes": 182506
+      "sha256": "1e76b16f1c823fec2de9410f5c5dd6ee723f47fcf546df30b1ada30a4da59405",
+      "bytes": 182460
     },
     "metabolism-physiol.json": {
-      "sha256": "0d8677b16b61154279820e1cc6026716fb0e60a7b671f3f2c017a10d9e86c209",
-      "bytes": 510501
+      "sha256": "dde9284cd2444f18ab341e00da3872b61b366163fc81938c250967a8d23ebb72",
+      "bytes": 510439
     },
     "mol-cell/dev-cell.json": {
-      "sha256": "e110d3a446c65e567bb587dc7c69f890452de3ebbadf81a8e2614f8631904173",
-      "bytes": 446117
+      "sha256": "ea9e0ca2a035b3b9954e52fd6cc864665adfc74c7a1d83146ff6003a10aaace6",
+      "bytes": 447205
     },
     "mol-cell/embo-j.json": {
-      "sha256": "2abe1520e1852267918cc9bfe76df5d63b0a5b3828bb7706880432416413d157",
-      "bytes": 639803
+      "sha256": "51961864c4165711568a6c6e107397b97cc9e61f2ebe07801a27c06298e20a49",
+      "bytes": 641075
     },
     "mol-cell/jcb.json": {
-      "sha256": "d1d8e78bae9720e5b2c93e124ddab84307fc12ac5c9b964733f01964e3f0a104",
-      "bytes": 541546
+      "sha256": "ae7c50e49c76cc481d4c53fd698a053529b67219dacc112bf815f384defa5a0f",
+      "bytes": 542381
     },
     "mol-cell/nat-cell-bio.json": {
-      "sha256": "911f16be9c344adfb9d1df24756e27edc4f89f4acd458ce067336067809185fd",
-      "bytes": 408160
+      "sha256": "13536de1e157bb1384d60bb14dd300c9c960607c25af26af4b49a84b83177b3d",
+      "bytes": 408508
     },
     "mol-cell.json": {
-      "sha256": "be60ccffb209c83447dd976167a7e0f852d75cb6c2024924f0c51d5eb86aab51",
-      "bytes": 1109235
+      "sha256": "9535667449d54bb69942764040dc0b91d6b8bdc237ae4d045bb1b61b21c52360",
+      "bytes": 1111157
     },
     "neuro/nat-neurosci.json": {
-      "sha256": "cc981fc2761fdf98d132acb988f938d9c58cbcfa3d16e53ac96ab671627b49ab",
-      "bytes": 488550
+      "sha256": "55cad3bd53d659d9d27a145814b8484bfaa15379f7c6707a08e5f9d2098ea020",
+      "bytes": 489629
     },
     "neuro/neuron.json": {
-      "sha256": "05eafa4ab45c1ecd164bf18a8c61bb5db23b73dc8874dff4acb01d33a7948d7f",
-      "bytes": 536695
+      "sha256": "d8ca69fff1b78efd2c0312a658b58347edba549aab45a388eeee3cc07894a654",
+      "bytes": 538646
     },
     "neuro.json": {
-      "sha256": "21872ed98c11af36be9a5028b7740cef6be4d93560fe1159652b55e190d94d48",
-      "bytes": 755202
+      "sha256": "c11893a0e3533537171c1aa94fdcabe67d3c477b887d6a2ddf4db5df4b149f08",
+      "bytes": 757170
     },
     "plant-bio/nat-plants.json": {
-      "sha256": "8f33fc12d052d3ba22f1d11bbb4ae10c918b64cec88fa0fa032b778493f884df",
-      "bytes": 292886
+      "sha256": "61e21eca6b19e471f1d4b7ffdd5a7937d71ace57366ab9970b95fdfc5dd2e231",
+      "bytes": 292776
     },
     "plant-bio/plant-cell.json": {
-      "sha256": "931db8bb219ab07cb2d74c5eb5b28c3049f16da2d32d6cca3bd7e601abd3eaa4",
-      "bytes": 503508
+      "sha256": "233b3887c706ecbbe55ab956b8d0ee8921cbc1618f61977a5225ff38fcc67bd0",
+      "bytes": 503591
     },
     "plant-bio.json": {
-      "sha256": "d0b8787e42453d0777d654185d97cc7c14a8b9e1d0a748c2b3822eacfcae5b7b",
-      "bytes": 674619
+      "sha256": "9cd3238dfea94984ced673c8ff423f91d2211f4682d79c782b61a196a508b109",
+      "bytes": 674562
     }
   },
   "validation": {
@@ -255,23 +256,23 @@
       "complete institution metadata keys",
       "nonempty default-on areas"
     ],
-    "aggregate_rows": 133952,
-    "institutions": 5801,
+    "aggregate_rows": 134109,
+    "institutions": 5803,
     "year_min": 2005,
     "year_max": 2025,
     "adjusted_count_by_area": {
-      "elite_bio": 69664.23752,
-      "mol-cell": 15807.29476,
-      "biochem-struct": 31541.90638,
-      "metabolism-physiol": 3282.55185,
-      "genetics": 9500.48032,
-      "neuro": 9650.86263,
-      "immuno-micro": 12979.43304,
-      "ecology-evol": 1397.53629,
+      "elite_bio": 69689.60109,
+      "mol-cell": 15813.19884,
+      "biochem-struct": 31535.77581,
+      "metabolism-physiol": 3282.45529,
+      "genetics": 9505.62954,
+      "neuro": 9672.91819,
+      "immuno-micro": 12979.74322,
+      "ecology-evol": 1397.86962,
       "plant-bio": 5014.7348,
-      "comp-bio": 23489.26816,
-      "bioeng-biotech": 3181.47669,
-      "cancer-transl": 11087.95263
+      "comp-bio": 23501.01304,
+      "bioeng-biotech": 3181.05363,
+      "cancer-transl": 11087.65263
     },
     "venues_without_credit": [],
     "institutions_without_country": 0
