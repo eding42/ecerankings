@@ -40,7 +40,7 @@ import pdf_affiliations  # noqa: E402
 import pdf_verify  # noqa: E402
 
 ROOT = Path(__file__).resolve().parents[1]
-MAILTO = os.environ.get("OPENALEX_MAILTO", os.environ.get("MAILTO", "admin@ecerankings.org"))
+MAILTO = os.environ.get("OPENALEX_MAILTO", os.environ.get("MAILTO", "erding@usc.edu"))
 USER_AGENT = f"ecerankings-harvest-ml/1.0 (mailto:{MAILTO})"
 DEFAULT_STAGE_ROOT = ROOT / ".tmp" / "ml-harvest"
 DEFAULT_MANIFEST = ROOT / "data" / "refresh" / "ml-harvest-2026-10-29.json"
