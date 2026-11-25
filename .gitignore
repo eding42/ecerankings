@@ -9,7 +9,6 @@ ai_temp/
 dist/
 node_modules/
 .wrangler/
-cache_biosciences/
 cache_staged/
 data/biosciences_aggregates/
 
@@ -17,6 +16,10 @@ data/biosciences_aggregates/
 cache/**/.checkpoint
 cache/**/*.bak
 cache/**/*.pdf
+cache_biosciences/**/.checkpoint*
+cache_biosciences/**/.done
+cache_biosciences/**/*.bak
+cache_biosciences/**/*.pdf
 data/refresh/*.lock
 
 # Local backups

@@ -24,6 +24,11 @@ from collections import defaultdict
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fields import add_field_argument, get_field  # noqa: E402
+from aggregate import (  # noqa: E402
+    canonical_aliases, institution_id, load_affiliation_map, load_aliases, load_exclusions,
+    prepare_affiliation_map, resolve_raw_affiliations, type_corrections,
+)
+from workkey import work_key  # noqa: E402
 CACHE_DIR = os.path.join(REPO_ROOT, "cache_biosciences")
 AREAS_JSON = os.path.join(REPO_ROOT, "data", "areas_biosciences.json")
 OUT_DIR = os.path.join(REPO_ROOT, "data", "biosciences_aggregates")
@@ -145,19 +150,26 @@ def is_research_article(w, vkey):
 
     return True
 
-def resolve_authorship(author, include_non_education=False):
+def resolve_authorship(author, include_non_education=False, *, affiliation_map=None,
+                       aliases=None, institution_metadata=None):
     """Shared Biology resolution, including established hospital rollups."""
-    insts = author.get("institutions", [])
+    insts = author.get("institutions") or []
+    if not insts and affiliation_map:
+        raw = author.get("raw_affiliations") or author.get("raw_affiliation_strings") or []
+        insts = resolve_raw_affiliations(raw, affiliation_map)
     valid_targets = {}
 
     for i in insts:
-        iid = i.get("id")
+        iid = institution_id(i.get("id"))
         if not iid:
             continue
-        itype = i.get("type")
-        target_id = INSTITUTION_ROLLUP.get(iid, iid)
-        target_name = CANONICAL_NAMES.get(target_id, i.get("display_name"))
+        itype = type_corrections().get(iid, i.get("type"))
+        canonical_id, canonical_name = (aliases or {}).get(iid, (iid, None))
+        target_id = INSTITUTION_ROLLUP.get(canonical_id, canonical_id)
+        target_name = CANONICAL_NAMES.get(target_id) or canonical_name or i.get("display_name") or target_id
         target_country = i.get("country_code")
+        if not target_country and institution_metadata:
+            target_country = institution_metadata.get(target_id, {}).get("country_code")
 
         is_academic = (
             itype == "education"
@@ -178,6 +190,12 @@ def resolve_authorship(author, include_non_education=False):
 def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False, venues=None, years=None):
     os.makedirs(out_dir, exist_ok=True)
     registry = load_registry(areas_path)
+    affiliation_map = prepare_affiliation_map(load_affiliation_map())
+    aliases = canonical_aliases(load_aliases())
+    # The same curated non-research exclusions every field uses.
+    excluded = load_exclusions()
+    with open(os.path.join(REPO_ROOT, "data", "institutions.json"), encoding="utf-8") as f:
+        institution_metadata = json.load(f)["by_id"]
 
     venue_to_areas = defaultdict(list)
     for akey, ainfo in registry["areas"].items():
@@ -203,7 +221,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
     if venues:
         target_venues = [v for v in venues if os.path.isdir(os.path.join(cache_dir, v))]
     else:
-        target_venues = sorted(os.listdir(cache_dir))
+        target_venues = sorted(venue_to_areas)
     year_filter = {int(y) for y in years} if years is not None else None
     for v in target_venues:
         vdir = os.path.join(cache_dir, v)
@@ -230,7 +248,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
                     w = json.loads(line)
                     total_works += 1
 
-                    if not is_research_article(w, v):
+                    if not is_research_article(w, v) or work_key(w, v, ystr) in excluded:
                         continue
                     research_works += 1
 
@@ -243,10 +261,14 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
 
                     for a in authorships:
                         total_authorships += 1
-                        valid_targets = resolve_authorship(a, include_non_education)
+                        valid_targets = resolve_authorship(
+                            a, include_non_education, affiliation_map=affiliation_map,
+                            aliases=aliases, institution_metadata=institution_metadata,
+                        )
 
                         if not valid_targets:
                             continue
+                        credited_authorships += 1
 
                         # Split author's share evenly across distinct target institutions
                         split_share = share_per_author / len(valid_targets)
@@ -262,7 +284,6 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
 
                             inst_venue_year[(target_id, v, year)]["pub_count"] += 1
                             inst_venue_year[(target_id, v, year)]["adjusted_count"] += split_share
-                            credited_authorships += 1
 
     suffix = "_all_insts" if include_non_education else "_edu_only"
     out_csv = os.path.join(out_dir, f"inst-area-year{suffix}.csv")
@@ -279,7 +300,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
                 area,
                 year,
                 vals["pub_count"],
-                round(vals["adjusted_count"], 4)
+                round(vals["adjusted_count"], 5)
             ])
 
     venue_csv = os.path.join(out_dir, f"inst-venue-year{suffix}.csv")
@@ -297,7 +318,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
                 v,
                 year,
                 vals["pub_count"],
-                round(vals["adjusted_count"], 4)
+                round(vals["adjusted_count"], 5)
             ])
 
     # Summary table across all years (using elite_bio or total adjusted count)
@@ -320,7 +341,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
                 meta.get("country", ""),
                 meta.get("type", "education"),
                 vals["pub_count"],
-                round(vals["adjusted_count"], 4)
+                round(vals["adjusted_count"], 5)
             ])
 
     print(f"\n[{'All Institutions' if include_non_education else 'Universities Only'}]")

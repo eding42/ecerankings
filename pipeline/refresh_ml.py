@@ -31,7 +31,7 @@ else:
 
 ROOT = Path(__file__).resolve().parents[1]
 API = "https://api.openalex.org"
-MAILTO = "eding2019@gmail.com"
+MAILTO = "erding@usc.edu"
 VENUES = ("icml", "iclr", "neurips")
 BATCH = 100
 MAX_LIST_CALLS = 350

@@ -84,7 +84,7 @@ class TestFields(unittest.TestCase):
         bio = get_field("biology")
         self.assertTrue(bio.has_capability("has_hospital_rollup"))
         self.assertTrue(bio.has_capability("has_all_insts_mode"))
-        self.assertFalse(bio.has_capability("strict_manifest_checksums"))
+        self.assertTrue(bio.has_capability("strict_manifest_checksums"))
 
         earth = get_field("earth-space")
         self.assertTrue(earth.has_capability("has_sector_filter"))

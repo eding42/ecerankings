@@ -1,7 +1,4820 @@
 {
   "schema_version": 1,
+  "field": "biology",
+  "description": "Institutions ranked by peer-reviewed research papers in selective life sciences and biomedical journals.",
+  "generated_at": "2026-11-24T23:42:01.270588+00:00",
+  "source_revision": "bb92567bee6ab99b2fc2a843a4232d48fd629aaa",
+  "source_tree_dirty": true,
+  "source_tree_status": "available",
+  "source_revision_meaning": "Git baseline at build time; code_hashes identify the actual working-tree files, including uncommitted changes.",
+  "code_hashes": {
+    "pipeline/aggregate.py": "3d42b1d689fff74b06dca334e044df36a4211146ae4905b85dfdc85017fff6db",
+    "pipeline/aggregate_biosciences.py": "e8d1e55760dcfbd2f0901bc9b5af9acfcbb9e153ece77235a7c1fa6cf8e458b8",
+    "pipeline/aggregation_runtime.py": "b5dbb4cd338969fa8a8954d9653cf57bb03b2eaf1acc21ad4dffee63c43baa59",
+    "pipeline/fields.py": "b34c92cae0100af1c1dc1e7d4e7a607dde984ae32a7f16bb886feda99989a419",
+    "pipeline/workkey.py": "639e71f64299af09b346e6983a60af2cf928d08732fd851adc8266a5e2cee538",
+    "pipeline/split.py": "57d0b2e19817a1a6822779e0597207bf74329c50309ddc55f58a6da2789b3836",
+    "pipeline/build_release.py": "f09c53936e09b3d891318fa25eb3df37540b2297bf4b1b2906cc1fcbc50fbc82",
+    "pipeline/verify.py": "35556b4de0b8178065cfabba8cdcbd5878d036f33195a63f149bac81d4f350a3",
+    "pipeline/promote_release.py": "a21f8566ffe1af8b4cb1fecd148566f6faf1111c4f157365b2d4f9b7639e605b"
+  },
+  "aggregation": null,
   "latest_complete_year": 2025,
-  "generated_at": "2026-11-13",
-  "description": "BioRankings: Life Sciences, Biomedical & Bioengineering Rankings",
-  "areas_count": 12
+  "latest_complete_year_meaning": "Last completed calendar year; publisher coverage may still be incomplete.",
+  "earliest_year": 2016,
+  "default_start_year": 2016,
+  "default_end_year": 2025,
+  "methodology": "Equal 1/N author credit, split between the unique credited institutions (education) each author lists; geometric mean of 1+area counts minus 1.",
+  "input_hashes": {
+    "registry": "77b375c0dbd333cec09fd3c823544e415acfc8855ce8983f58a26112675a0383",
+    "affiliation_map": "e42af98878e6c2acb093b2838216af6907fd4b7167c2192bd07f4dce3a51a77b",
+    "institution_aliases": "6212b67b32a68f418bf133f5571c0032d77f708f0f8fbea4bdb65508a6140f02",
+    "excluded_works": "17d6b5d6020be221b5f1aec94fd7616a6ee3b4ae37c7ea769abe54004c44741d",
+    "institution_metadata_corrections": "5cb48aef600283dbc4a821e7c722fd27282866e8abb76d3fa01c48b533725bb4",
+    "institution_metadata_snapshot": "31eb5f1a179964306ab85233df1e59f49c62b795cec9b30a1de7c01c8cc4edb3",
+    "institution_metadata_refresh": "5b7f84011a6016dae7390cdc191d1401b4b7032ea786d91801010413650dbf9b"
+  },
+  "artifacts": {
+    "areas.json": {
+      "sha256": "77b375c0dbd333cec09fd3c823544e415acfc8855ce8983f58a26112675a0383",
+      "bytes": 17552
+    },
+    "biochem-struct/mol-cell.json": {
+      "sha256": "b12bbf567e935c75fa75f3e193aeaab00b795872e49719bc5a663c4cfe7bd6f7",
+      "bytes": 552245
+    },
+    "biochem-struct/nar.json": {
+      "sha256": "1808a799c5a778bdb42d5f12bf1f2cb62d4d442fce0eb154dd989b942b1622d0",
+      "bytes": 1450640
+    },
+    "biochem-struct/nsmb.json": {
+      "sha256": "b651bf5a24e2526e8625e3aa45fcda89c6797383c23090b8fa3b09156c120e2e",
+      "bytes": 364718
+    },
+    "biochem-struct/structure.json": {
+      "sha256": "e0166ba21ab0b922cf39bec6df20b173db245e5061b701e3bcaca04ea7424e2d",
+      "bytes": 400346
+    },
+    "biochem-struct.json": {
+      "sha256": "d756147803376768d908d3192bc1dc9de32260edb3425ba7618e6489aa6bce28",
+      "bytes": 1657049
+    },
+    "bioeng-biotech/nat-biomed-eng.json": {
+      "sha256": "6756a69ff41798872ff7f4c7040a25a6577cc5d73d8dae745d701f0504e5323e",
+      "bytes": 153976
+    },
+    "bioeng-biotech/nat-biotech.json": {
+      "sha256": "3ab346724bc7818b9c0aa731be74768307a8e2a7431835aae00365b5986b50ca",
+      "bytes": 439331
+    },
+    "bioeng-biotech.json": {
+      "sha256": "a666d9db9e95916d548447b8a9d767ec9840d0c13ed2bd90b33d49b88a2ad36e",
+      "bytes": 517731
+    },
+    "cancer-transl/cancer-cell.json": {
+      "sha256": "1052663fd2b74f57890c2d222a406045f33223c568b28936a29a53358f241763",
+      "bytes": 357243
+    },
+    "cancer-transl/jci.json": {
+      "sha256": "3a8246cbf643b40e713ed6dc87bcd8ae521db6c851a6706a3d2ec2115f384540",
+      "bytes": 796620
+    },
+    "cancer-transl/sci-transl-med.json": {
+      "sha256": "0a9ffe2c236f5caa7ffce83289cc1e0c05f874a90de48447ff668abf30f1a844",
+      "bytes": 497557
+    },
+    "cancer-transl.json": {
+      "sha256": "f08f1ce38e94d5cb40b98b611acaedd3c242007f440cd46756f35f8fb34947ee",
+      "bytes": 1061588
+    },
+    "comp-bio/bioinformatics.json": {
+      "sha256": "1e80a9c55e6ddb5395570c7741f5a8d34afb1ad1bfc6fd02fc8b0bee678de6c8",
+      "bytes": 1063501
+    },
+    "comp-bio/cell-systems.json": {
+      "sha256": "691d5e702af248a106bed3340d092f6ffd65a716b2c8005ca7289f6ab0cf9bdd",
+      "bytes": 131275
+    },
+    "comp-bio/plos-comp-bio.json": {
+      "sha256": "6054b8fb97c173380dc35326da27ba91e2ff375ebe8c5fb471ded1f9d48e68d8",
+      "bytes": 897672
+    },
+    "comp-bio.json": {
+      "sha256": "6b74079bf2ba3d2d7bfe4be1d39abbbe17b1c2e3e02366f8bd030eff5a6871ef",
+      "bytes": 1489161
+    },
+    "ecology-evol/nat-ecol-evol.json": {
+      "sha256": "023705d64002203e4e9f64db02a1216b753d0360acc726b02b74fa910196def4",
+      "bytes": 483993
+    },
+    "ecology-evol.json": {
+      "sha256": "023705d64002203e4e9f64db02a1216b753d0360acc726b02b74fa910196def4",
+      "bytes": 483993
+    },
+    "elite_bio/cell.json": {
+      "sha256": "a1dc449afc83b5f17d8d0136c988659ccd5afe5a44804cb4643fbc3200a66ae3",
+      "bytes": 733276
+    },
+    "elite_bio/nature.json": {
+      "sha256": "e0a8e3d0cffb37acc93f0f12da7073e889c538d0769f4c71e114ef87c14596d4",
+      "bytes": 1427422
+    },
+    "elite_bio/pnas.json": {
+      "sha256": "65c24a8d33e9d5b4b400254a679175dda6fa09667e07947a4a706ce60a7557cf",
+      "bytes": 2259129
+    },
+    "elite_bio/science.json": {
+      "sha256": "8eb4a3d8f86359902d609bfec6027de830da8974653df9ed807a7bebab535de8",
+      "bytes": 1082642
+    },
+    "elite_bio.json": {
+      "sha256": "6e468887a3f22024a16e17a81133d98f7667280a8354c9569d2a9191ff3888e2",
+      "bytes": 2949338
+    },
+    "genetics/genome-bio.json": {
+      "sha256": "dbe7cf35588cd0ecf381aa6bcfc3902f4849732d232e2029688ba209ce16f31a",
+      "bytes": 614499
+    },
+    "genetics/genome-res.json": {
+      "sha256": "fca7f0b8ab8ace6908cb4159a3d6a9ddce5d56d2ea10821e2cbc861b68295a48",
+      "bytes": 435643
+    },
+    "genetics/nat-genetics.json": {
+      "sha256": "a6745b83b55d257cb8a7e75689d719436ba267f8fbef505b78d7af0703546798",
+      "bytes": 933543
+    },
+    "genetics.json": {
+      "sha256": "6b8bf695dbe3e82887f88a81989620788c4305c27f48fcb8c545909a27d0d949",
+      "bytes": 1296677
+    },
+    "immuno-micro/cell-host-microbe.json": {
+      "sha256": "f6a8ea33ab110e2bfdcdb44c3c47b47f7f316fffefd26fcd5f3e848cb9505eb3",
+      "bytes": 349169
+    },
+    "immuno-micro/immunity.json": {
+      "sha256": "edccf2cca49660514559dd5013b100f34a75598b7538167908b66023873f05ad",
+      "bytes": 405604
+    },
+    "immuno-micro/jem.json": {
+      "sha256": "f6c076d6785c6dec4b4ea1083e0fc2cdc7ff4e4ac026c4cec8764c2654f57abc",
+      "bytes": 519785
+    },
+    "immuno-micro/nat-immunol.json": {
+      "sha256": "9c761ae18cdc33458d0f98f01d664059a67b93b45db87c99c7f9d4c0082e1fe0",
+      "bytes": 388015
+    },
+    "immuno-micro/nat-microbiol.json": {
+      "sha256": "6f398f25c6c39f082dfc8dd13b5c390422208864bb30262c56a8bb2e36de3bd5",
+      "bytes": 342378
+    },
+    "immuno-micro/sci-immunol.json": {
+      "sha256": "3a2e8e0297fa6f0ef29240684b3af5298fdf5ccc954e7c11e68ae8b94118b7cf",
+      "bytes": 182947
+    },
+    "immuno-micro.json": {
+      "sha256": "5d37368381c4de8e219d93c29e47b7fb98421cc00f3d78429b650438c1341a93",
+      "bytes": 1088023
+    },
+    "inst-area-year.csv": {
+      "sha256": "45388b4e11dfdbb26b82f105b1201a47709b0c05c5145a86e009402726bc2b9e",
+      "bytes": 13413598
+    },
+    "inst-venue-year.csv": {
+      "sha256": "131e7c0fb771a4c1c44ece79e0929a217c6ef87fb9ecbec7dd8b344b43c00052",
+      "bytes": 23389730
+    },
+    "institutions.json": {
+      "sha256": "2759b99c680a50b84d12991b56687a0f56dff20327ddd11734314b6cebfedea2",
+      "bytes": 638086
+    },
+    "metabolism-physiol/cell-metab.json": {
+      "sha256": "b1c5282f5fa4bede224ac67bc3412e7537f3b9189a455e0ff5c14787923cad5b",
+      "bytes": 414627
+    },
+    "metabolism-physiol/nat-metab.json": {
+      "sha256": "d85e726960bb60ac23b8efd088b7a0a2db60b111bcbbcbe049d3dc3d55430d96",
+      "bytes": 182506
+    },
+    "metabolism-physiol.json": {
+      "sha256": "0d8677b16b61154279820e1cc6026716fb0e60a7b671f3f2c017a10d9e86c209",
+      "bytes": 510501
+    },
+    "mol-cell/dev-cell.json": {
+      "sha256": "e110d3a446c65e567bb587dc7c69f890452de3ebbadf81a8e2614f8631904173",
+      "bytes": 446117
+    },
+    "mol-cell/embo-j.json": {
+      "sha256": "2abe1520e1852267918cc9bfe76df5d63b0a5b3828bb7706880432416413d157",
+      "bytes": 639803
+    },
+    "mol-cell/jcb.json": {
+      "sha256": "d1d8e78bae9720e5b2c93e124ddab84307fc12ac5c9b964733f01964e3f0a104",
+      "bytes": 541546
+    },
+    "mol-cell/nat-cell-bio.json": {
+      "sha256": "911f16be9c344adfb9d1df24756e27edc4f89f4acd458ce067336067809185fd",
+      "bytes": 408160
+    },
+    "mol-cell.json": {
+      "sha256": "be60ccffb209c83447dd976167a7e0f852d75cb6c2024924f0c51d5eb86aab51",
+      "bytes": 1109235
+    },
+    "neuro/nat-neurosci.json": {
+      "sha256": "cc981fc2761fdf98d132acb988f938d9c58cbcfa3d16e53ac96ab671627b49ab",
+      "bytes": 488550
+    },
+    "neuro/neuron.json": {
+      "sha256": "05eafa4ab45c1ecd164bf18a8c61bb5db23b73dc8874dff4acb01d33a7948d7f",
+      "bytes": 536695
+    },
+    "neuro.json": {
+      "sha256": "21872ed98c11af36be9a5028b7740cef6be4d93560fe1159652b55e190d94d48",
+      "bytes": 755202
+    },
+    "plant-bio/nat-plants.json": {
+      "sha256": "8f33fc12d052d3ba22f1d11bbb4ae10c918b64cec88fa0fa032b778493f884df",
+      "bytes": 292886
+    },
+    "plant-bio/plant-cell.json": {
+      "sha256": "931db8bb219ab07cb2d74c5eb5b28c3049f16da2d32d6cca3bd7e601abd3eaa4",
+      "bytes": 503508
+    },
+    "plant-bio.json": {
+      "sha256": "d0b8787e42453d0777d654185d97cc7c14a8b9e1d0a748c2b3822eacfcae5b7b",
+      "bytes": 674619
+    }
+  },
+  "validation": {
+    "status": "passed",
+    "checks": [
+      "unique aggregate keys",
+      "finite nonnegative credit bounded by paper count",
+      "venue ownership",
+      "venue-to-area credit reconciliation",
+      "area and venue JSON-to-CSV equality",
+      "complete institution metadata keys",
+      "nonempty default-on areas"
+    ],
+    "aggregate_rows": 133952,
+    "institutions": 5801,
+    "year_min": 2005,
+    "year_max": 2025,
+    "adjusted_count_by_area": {
+      "elite_bio": 69664.23752,
+      "mol-cell": 15807.29476,
+      "biochem-struct": 31541.90638,
+      "metabolism-physiol": 3282.55185,
+      "genetics": 9500.48032,
+      "neuro": 9650.86263,
+      "immuno-micro": 12979.43304,
+      "ecology-evol": 1397.53629,
+      "plant-bio": 5014.7348,
+      "comp-bio": 23489.26816,
+      "bioeng-biotech": 3181.47669,
+      "cancer-transl": 11087.95263
+    },
+    "venues_without_credit": [],
+    "institutions_without_country": 0
+  },
+  "refresh": {
+    "files": [
+      {
+        "venue": "bioinformatics",
+        "year": "2005",
+        "bytes": 794077,
+        "sha256": "3db90921ca116bcadb99ac8784995329a35e757e30867aa79c785a21dc24118e"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2006",
+        "bytes": 1525508,
+        "sha256": "fe5a0a0b9162711599391fe1d34fe3f455b332c993299cbc587534e9c80a1d6d"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2007",
+        "bytes": 2501845,
+        "sha256": "790cebd10d1663a59d0544cf790b5d15c1440045ca2b2ed4c4b08880b4c941ba"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2008",
+        "bytes": 2533613,
+        "sha256": "635bdc1ae5f5202d64e5d5df4706021d7d85d44b6dc826a1fb4b09e70b05e17e"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2009",
+        "bytes": 2801328,
+        "sha256": "97d58183f02964a089aa2f6ea868d6c2db6b8a5dddb5d1f5fe49118447565463"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2010",
+        "bytes": 3069770,
+        "sha256": "7e0fdc8d7081bb37d2aa85346b56170d8d7903fdd59908629afce8037ead24d3"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2011",
+        "bytes": 3224325,
+        "sha256": "e0eb8cce9fd1979e40f1f833e39fce73bdbcebf857621eeaf867c9febb69dcd5"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2012",
+        "bytes": 3530247,
+        "sha256": "74ccd1f425c1b053a1d7471d43c32cb8eb730d68728e7347b3a703f9cdc48479"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2013",
+        "bytes": 3800370,
+        "sha256": "5322452bd19cb84a435733ea6a5cb44d24efc035c12bbfec0f3092881f1b5b9b"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2014",
+        "bytes": 4961420,
+        "sha256": "4ecec4168424ebc682a197a722cdb9d9ae3582f5ae9b86926fb64b8a7061d335"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2015",
+        "bytes": 2753018,
+        "sha256": "776e8abc04dee2c0563c6c3ef8463354e53319e3046d6be9e3092b3854f45455"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2016",
+        "bytes": 2351096,
+        "sha256": "96ffe078c3e4f70c7684b329b7401bfe532d9de0520b50e7d4b14c6f9129ada2"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2017",
+        "bytes": 2719109,
+        "sha256": "b733bf92774ddcd5285dcc9f3a665eead452dbd5b9f4f62caef6c85be57b5199"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2018",
+        "bytes": 3338170,
+        "sha256": "370875909bd8fd96f237fe68c6aa982245b4817f4bbb242f1a4d4889d5e779ed"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2019",
+        "bytes": 3343448,
+        "sha256": "e56d3f08d14775bb52fb621d4a1bdf3118c82e4967b8130213197ee820fb0a5a"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2020",
+        "bytes": 3151185,
+        "sha256": "78f991ff463c8d1dc8f511f7b75e7e5c267c747bbe816bd3c8559d6706521bc3"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2021",
+        "bytes": 2903530,
+        "sha256": "abef85d54d7e417e96e5945adfccb27af7669db7fdc049fe36c437fbcfb28a5a"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2022",
+        "bytes": 2784337,
+        "sha256": "0906d8109ad1b726b8c6c8f5873464ba7a02f2c3efa71f1fcf2c34a513f58dc1"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2023",
+        "bytes": 2597043,
+        "sha256": "d9e56382b9c038b6c6932d89593e20367a1cd18fc4696e26d2387bc9a42f8e3c"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2024",
+        "bytes": 2921987,
+        "sha256": "c1b40fb6600545cd61ffe3ec2f546e23dade1c8d38fca6ac3978e0606c404914"
+      },
+      {
+        "venue": "bioinformatics",
+        "year": "2025",
+        "bytes": 2667346,
+        "sha256": "7eb23f72c96455af4b8509b36b120f31649b36d321b0dc75e341da236f3e29e0"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2005",
+        "bytes": 567261,
+        "sha256": "529f717d92f403abbf5d0aa95a9f549932b14cf17024bb470cdb4a6215e07851"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2006",
+        "bytes": 634931,
+        "sha256": "e78b615095d94be8050b7ff453a6046e173a723c028a64d612629feb519c3ea7"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2007",
+        "bytes": 589261,
+        "sha256": "8abc2467e40eff626d31ae2b2ae5f302ff21510dd673c8543d3ed2b2ac7e610e"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2008",
+        "bytes": 668105,
+        "sha256": "489fdce2145b379f8c9ac8ac8792746e4b623704fa92cc3c8da3ebea9e66ed33"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2009",
+        "bytes": 705582,
+        "sha256": "94f4ddefcf044ca0048fe37794c92ae5450b3f878c5100fb30f0b801f052448b"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2010",
+        "bytes": 935126,
+        "sha256": "50235c6bf71455ab157687e9ab7aac915f86804d8dc650bdaf80ce741a15aff8"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2011",
+        "bytes": 1053227,
+        "sha256": "4412e448399c0fd367fe2eb2cc9c127c85c4be88508346a3a99765809ebe2c74"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2012",
+        "bytes": 1127394,
+        "sha256": "19926decf048596d8e525b133a8edd11304fdad7b8c1d232f1547529e20afa98"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2013",
+        "bytes": 1224128,
+        "sha256": "ce22241cf04140b03d615077f938b143a15255cda7b78d41000d73d14d67f614"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2014",
+        "bytes": 1528928,
+        "sha256": "ec5a12b01f078645a9e7cc0e0e1111851350517a418a7945146ec38d0fabb914"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2015",
+        "bytes": 1430491,
+        "sha256": "dd9196bc63d8173100a134d46851fea2e1dd16e9158fe08ffe841e01112d56bc"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2016",
+        "bytes": 2060104,
+        "sha256": "f7257af6d3d226dc192594d66561f3a9fac0cebae1557e3315da68bbe1af2521"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2017",
+        "bytes": 1652590,
+        "sha256": "0ac0efea15c14a83f1997c750bcad6dd8f212a22179e746abb6c8c5e3cce6444"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2018",
+        "bytes": 2596743,
+        "sha256": "5f0fc1974a315574c55f8c8da525a4eaf4848f608836548cad4d5f093a535fd2"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2019",
+        "bytes": 1704899,
+        "sha256": "252f97489c0db40789ff74b64fba7d709d2fdd42fd38a7609c19eafe548a1c11"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2020",
+        "bytes": 1744518,
+        "sha256": "4d00f4d838ec0aebeb1b47aafca916cded3d23099d161c9bdfd375e91ea2f8ca"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2021",
+        "bytes": 1863228,
+        "sha256": "4f3ffa5bde604b4b8b3418c0206c7149d8c3e2af57d358fcd195075b8968ad57"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2022",
+        "bytes": 2164479,
+        "sha256": "8955fe01c3f9068049d4cd68510a73065b60f5dd1c70d3dea2a42cbfa615f186"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2023",
+        "bytes": 1971506,
+        "sha256": "655dc88d84befdd14484db9e869bd42c6d540785064e9559a9fc3fbd61b7aecf"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2024",
+        "bytes": 2086762,
+        "sha256": "921547b55ce8b438e731dc9d1d20ea2d1351a116d15d6f72172812ec3071448f"
+      },
+      {
+        "venue": "cancer-cell",
+        "year": "2025",
+        "bytes": 2506148,
+        "sha256": "ab2074d38eab6f12ab29b69591ae42972ba9569037e16f252a3702a8ca51e1c5"
+      },
+      {
+        "venue": "cell",
+        "year": "2005",
+        "bytes": 1536332,
+        "sha256": "082f8b79cac51e3f11d0c29359cb73ae6232bbddcce109f628cc815b4d908b14"
+      },
+      {
+        "venue": "cell",
+        "year": "2006",
+        "bytes": 1770600,
+        "sha256": "82b5261d95421e8002c9baf229ff6daa4c1821ff0c0924c8b07cb45e59ecd599"
+      },
+      {
+        "venue": "cell",
+        "year": "2007",
+        "bytes": 1972404,
+        "sha256": "f29cd87b332869ef37368a86e4d70966ae173ce786f0241e875adb52265aef43"
+      },
+      {
+        "venue": "cell",
+        "year": "2008",
+        "bytes": 1930482,
+        "sha256": "541f13d74eb4a4996f2e537cb6812d4372dd07ae51e18788332a6d6d6fd1ebef"
+      },
+      {
+        "venue": "cell",
+        "year": "2009",
+        "bytes": 1871821,
+        "sha256": "7eb6b62f5d3c50520f4dc5531c79b72a91966d0703826d17f175c6468899541f"
+      },
+      {
+        "venue": "cell",
+        "year": "2010",
+        "bytes": 1963642,
+        "sha256": "ff8f5009eea424c42bfe119719927d06b42fb2ce662e199e98c2791581b15bbd"
+      },
+      {
+        "venue": "cell",
+        "year": "2011",
+        "bytes": 2097710,
+        "sha256": "8c987e17f5730cd03f726b2911ac8300311d5b256860c003ca1686301c235a76"
+      },
+      {
+        "venue": "cell",
+        "year": "2012",
+        "bytes": 2857733,
+        "sha256": "04cc65b660083b7f0e795f9f3ec1eba62c8309e572fdc38bd2fd267efcc3b5b1"
+      },
+      {
+        "venue": "cell",
+        "year": "2013",
+        "bytes": 2978007,
+        "sha256": "7ea3cbd9e2b75cf51b1a3e53eef7b3f2e01bcaa387dc3eff3fc862d46c13bb82"
+      },
+      {
+        "venue": "cell",
+        "year": "2014",
+        "bytes": 3633086,
+        "sha256": "bf70b1984180d1941dc1551a1bfb377acb0e9d2a2ece87863770bf932607cdb1"
+      },
+      {
+        "venue": "cell",
+        "year": "2015",
+        "bytes": 3977842,
+        "sha256": "d9a001a5eb2d566c07c38eb4e8b2db281352000138283588c9a1b66bfde08465"
+      },
+      {
+        "venue": "cell",
+        "year": "2016",
+        "bytes": 4661271,
+        "sha256": "b8812d54bfa3f3a92fccd2d4d0326dbb09febd6eb14afd0acef48928943e5df5"
+      },
+      {
+        "venue": "cell",
+        "year": "2017",
+        "bytes": 3880803,
+        "sha256": "1725bc8cadb514bcd1f1a041b4432bfd24cdfcbe9464944ccc76bd7c3cdff0f0"
+      },
+      {
+        "venue": "cell",
+        "year": "2018",
+        "bytes": 5905000,
+        "sha256": "31c86b107a9ca31a4b45e09239e058c988898193cdcbd498f9c6f4be9b47ddf0"
+      },
+      {
+        "venue": "cell",
+        "year": "2019",
+        "bytes": 5152774,
+        "sha256": "96c5fafd185bce4a49ab7a33277555e2208a467b84b0f31e2a4b469dea7321be"
+      },
+      {
+        "venue": "cell",
+        "year": "2020",
+        "bytes": 6482229,
+        "sha256": "323f8d5eb4ff58a8eda2520550ad87b671e881bdb7e6869944ca944fd96e18e9"
+      },
+      {
+        "venue": "cell",
+        "year": "2021",
+        "bytes": 5463062,
+        "sha256": "8409d23feb34c03811897181a6eccccfdb545c49cae8afb50ee4e4d02d497352"
+      },
+      {
+        "venue": "cell",
+        "year": "2022",
+        "bytes": 4096300,
+        "sha256": "882752972669f44c364b9b3b95053cecfe168fe5680c5c698e5c18ad912eb6d5"
+      },
+      {
+        "venue": "cell",
+        "year": "2023",
+        "bytes": 4721357,
+        "sha256": "f21bb4052292ef4e7ab08278b184fabef572395272345d7ddd64472d643829df"
+      },
+      {
+        "venue": "cell",
+        "year": "2024",
+        "bytes": 5955626,
+        "sha256": "65685faf2ba45bc857745d50b8d0e2abd22665938be14b492b156fe2e41cbec4"
+      },
+      {
+        "venue": "cell",
+        "year": "2025",
+        "bytes": 5538192,
+        "sha256": "8fefefdd96c3c7cb4b6cfdaf861a424d1a8ebcc103d6aee20be2c97bfe86ea0b"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2007",
+        "bytes": 275945,
+        "sha256": "44a73edd26efc658662a1c513c99ab4f0829deedaa2d2f7edb669cccd6342fb5"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2008",
+        "bytes": 428551,
+        "sha256": "6274375d78943cf71d8289e2a9772bf92ad50dc9d0f504a91dfb052b6a9873e8"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2009",
+        "bytes": 523836,
+        "sha256": "4bdcbf6f4f16ddeaf3a10befb82eb74a0cc16bb192ec953e5e6e29fe87658d62"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2010",
+        "bytes": 460338,
+        "sha256": "8936af6e3616a3658613b1e64b31d04c9feaa5a4481c573150735edd4644bf50"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2011",
+        "bytes": 553629,
+        "sha256": "08ab4f1631b09a255408593a56730e17c4efc1f3e06a99d1aa3db7e06e854ca3"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2012",
+        "bytes": 689985,
+        "sha256": "096943dedb17337db71401b4a0de0b4eae7d505540c323623ab748dfd803be94"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2013",
+        "bytes": 761485,
+        "sha256": "3181a94209ec8691e34940e55598cda82564db65295786521f245058764f11e2"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2014",
+        "bytes": 975307,
+        "sha256": "a25f08586ee65187c693d9af3c73cdcdc1705a23ac341b318bfa66b04ed91607"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2015",
+        "bytes": 979182,
+        "sha256": "42ae2689ba280f27975e88403c5a8d4c5b32987bbc9a60b3ae5bb77aa4247aeb"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2016",
+        "bytes": 1188704,
+        "sha256": "26baad3c93fcbe232bfb1bc29116a08d4424f897aeeb7fb42cc4b5a9a05241fd"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2017",
+        "bytes": 1017012,
+        "sha256": "291f0ad8d80ab4ddb964a9911fb101b693b03f853ad5d357a84bc2e0657ec3a4"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2018",
+        "bytes": 1230202,
+        "sha256": "20cea433d223806f59a20ba2b7917eb0eb73fb7fd7ccefb0eec027307e763ab0"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2019",
+        "bytes": 1104607,
+        "sha256": "8172fe5843e839433ce075551fef9ccec57af0bc7f3e6fd73154a447d99edc00"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2020",
+        "bytes": 1531440,
+        "sha256": "63c959057ab49a2918a42baa577fe6d0273129ff0308ea9c8df5ac3989534edc"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2021",
+        "bytes": 1354185,
+        "sha256": "5b63e1888c3274f3b980bd4c9250125e2cea738ab37d34fe2665be9529d282c6"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2022",
+        "bytes": 1329063,
+        "sha256": "651fab63d0ebc7fc4df2ee4e9abbb35dceace96a83832e2dd6a288bf45b2321e"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2023",
+        "bytes": 1463406,
+        "sha256": "94f2f75e3919d91fa0273a008906f7ac862474a169bbc1a250ba84392f881d81"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2024",
+        "bytes": 1565311,
+        "sha256": "cdfc728bec81b6ba38692d8c4d73d63ff24ebc5dccacd96629e9d656e436c70c"
+      },
+      {
+        "venue": "cell-host-microbe",
+        "year": "2025",
+        "bytes": 1208421,
+        "sha256": "65fd19dff4faeda1a351bdfb83569c16a1af4de1ac70a8f99689a02f4ed27ba0"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2005",
+        "bytes": 370456,
+        "sha256": "43a13489ce2a194f29c5c873e667140c79219e989d1dbb7a26652e2cc0c7ec12"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2006",
+        "bytes": 509646,
+        "sha256": "70ace023785a7a1753171f5f2ce9a415249aac5bbc60acbab191ea626934b098"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2007",
+        "bytes": 476970,
+        "sha256": "e15968606a10da55e6d24636af819579485c64707520edd8cedacc97c2cb3b2d"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2008",
+        "bytes": 566899,
+        "sha256": "d2c9b3feef609ce2a3a35f7efc2e1448e0371aaa8aaffd3ba7e80c7ffef6ef88"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2009",
+        "bytes": 603149,
+        "sha256": "acea1a14aa9ecb973d17dda9f74402fb23d524e9a73fe69e2932344526848087"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2010",
+        "bytes": 761544,
+        "sha256": "28daad18a71d8f48e3f32caee54abc18a80220a744b805af1993024416e7ec62"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2011",
+        "bytes": 997840,
+        "sha256": "288e30885393112740381532849c44bff4bf27ce51245a88227d6b7bcae22ffe"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2012",
+        "bytes": 972697,
+        "sha256": "49bbf7bf18c2d7b22718f8c67c14102ba620dfd71eba0d9a2249fe613f53e981"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2013",
+        "bytes": 1045703,
+        "sha256": "fe9be84f13a13e779f971dfb0401bd034558d7c7158528815eff970e54541988"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2014",
+        "bytes": 1237927,
+        "sha256": "efc80117646b838921214da94a4c7544357736f16887b23467c425721fad16f3"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2015",
+        "bytes": 1671181,
+        "sha256": "4b8f7ff9120262f8679acdcfa7e14dc4c8c23f35129621e3f3267dfc861c08f6"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2016",
+        "bytes": 1428948,
+        "sha256": "8397d76ad656c1aee9822c27f231cd29cfa49007fdb5bdb67109f0a92a0bb051"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2017",
+        "bytes": 1450589,
+        "sha256": "b5c3c78355e9a51995af5a677f36837acf089652ec12d90714e912e7486b44ee"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2018",
+        "bytes": 1978778,
+        "sha256": "b7963146482fca687efa796fc0e2c7b146b3667933b98af32abbd73408a144aa"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2019",
+        "bytes": 1645042,
+        "sha256": "4f94e5f4afce888d1cfc5c3485b3e53cbcde79cb8ec8a45453c9c3bc4b2fcd93"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2020",
+        "bytes": 1822981,
+        "sha256": "2183e40bb6df3fbdd768b9a5a1e9df5f01a83fce8578cf56f06038bd82125f5b"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2021",
+        "bytes": 1484965,
+        "sha256": "ee3578d10a076be867ae66e993cabef9de1b7ae720fb484b251c4638433ba73f"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2022",
+        "bytes": 1536084,
+        "sha256": "bf6c04717c33ede02eded9b1127f7f5a07c500a045b5b9d2bceaaec7d8900be6"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2023",
+        "bytes": 1626474,
+        "sha256": "b08265754010edbdb8888160c712be197b1d42af831c3f4cc5f698a846ac8dd3"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2024",
+        "bytes": 1954949,
+        "sha256": "71cb2689b74352065363700573926defd01930c6f2e618895ccf91fcc8b43790"
+      },
+      {
+        "venue": "cell-metab",
+        "year": "2025",
+        "bytes": 1773350,
+        "sha256": "ccb3e10c7d27b127d20cfa7e21fa951b2eb5df7fa480305060e03804c2004272"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2015",
+        "bytes": 302131,
+        "sha256": "0caecb76932b398c48d7ebd15384568f61bd98111046ddf8a6677f41164aec99"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2016",
+        "bytes": 611124,
+        "sha256": "14d25aa310ed753e54bb10bc771ecfb0f5541f0a593970cb54eaa59fdd765e59"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2017",
+        "bytes": 693392,
+        "sha256": "e7e9edfcae2cc38a7bc14f781843ed0d8e7ffe82fd8df7b8b5be660aa8e7c344"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2018",
+        "bytes": 1097335,
+        "sha256": "7b0f337b02ed27a8f552e949ed9b5921dcb8ab3bbfa3795e856ad45fab055b70"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2019",
+        "bytes": 646083,
+        "sha256": "5d575afd666287fc83495b0e0bb3a228e07607fff6e51deb6295201179f557ea"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2020",
+        "bytes": 640703,
+        "sha256": "0e10b5c919e79fd9cec35dd6eeb4b6d6a96ac9b0ea003fac7c74eae92a17b6d9"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2021",
+        "bytes": 502947,
+        "sha256": "1aa57c207c6b8ab9276dc87f9d58eff403fa83297f5cafacd041d0e98e2cf304"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2022",
+        "bytes": 429478,
+        "sha256": "ddd36c4b7ab2b2a3e4af5c82c5856f5fb054a638b7a4f413bfc5620ef0bcf947"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2023",
+        "bytes": 486602,
+        "sha256": "aced0599a56730917578991ecb984ef0a35b1f1bafbf4d5ff1e62c6791306182"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2024",
+        "bytes": 538431,
+        "sha256": "d17a0c38ad24f1c35bfbea59bd06ccb57cb787e1688f66be95e32ec8b52061b6"
+      },
+      {
+        "venue": "cell-systems",
+        "year": "2025",
+        "bytes": 570579,
+        "sha256": "cf242f58a9f57ebeab8919395a2262f0585c6c28aae837df05ffe9a3d7272cd8"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2005",
+        "bytes": 613407,
+        "sha256": "01656f531c97feba7fd3898ed25eff840c17ddcef310fe161ffa815e9e53f3bd"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2006",
+        "bytes": 615314,
+        "sha256": "d1d017616db81ca82996de8c333d9853a8713b620bede48351a3fb7ee896bc0d"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2007",
+        "bytes": 588441,
+        "sha256": "9c44ebf1970ae1c78f6ca795a6e6221a8cf88f1644ec1004826d24ababf65a91"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2008",
+        "bytes": 663950,
+        "sha256": "ade5204b34266412573fe7d20abcfa2e2f3ce8d93602ae067d08c29d0ac2e76a"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2009",
+        "bytes": 664977,
+        "sha256": "57ad1e9dd1b319a23e8164fa6ceadb8acf67bc2fb6c1b186def61643e3960e8d"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2010",
+        "bytes": 799290,
+        "sha256": "af13172503e3eb94a22b595d1e23120913ab1eef37f78416a34c74159bb8b62b"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2011",
+        "bytes": 884772,
+        "sha256": "313b1ca241c21fd81b3eb25bc7854d89ef6c53d603a2d9d2dc200b092ad123fb"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2012",
+        "bytes": 1052689,
+        "sha256": "522daa4bff9d970155aa3033ab13ce93c98383d6f7fbb02946c6e4b34c85f901"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2013",
+        "bytes": 1132169,
+        "sha256": "c4e1ec1e527e12a8f6ecff78a4c59506bea40f552d7b0ee0af9822e2687f08bc"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2014",
+        "bytes": 1436639,
+        "sha256": "91522f05e0383403f5931096d5ff18376ee6db3a458b7eee1414b0466b57ac0b"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2015",
+        "bytes": 1305079,
+        "sha256": "03a4b043d1eac1ff807fc80902b4d6e687c057811de92608a328ff98ba510ae4"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2016",
+        "bytes": 1274350,
+        "sha256": "724e4bcd2fc048fcfe91fb163ad332581499d92dad1a445288cf8cc4df766a1a"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2017",
+        "bytes": 1394536,
+        "sha256": "a3d732c8dae1e9f5acc40dd18fbb65cdfc02182246929eb051948d3bc87e9172"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2018",
+        "bytes": 1625009,
+        "sha256": "2b6461450c34cbe05a4ec3d1fe6795e04c311eb176aad5c58cab932db04d4e4e"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2019",
+        "bytes": 1622593,
+        "sha256": "bd521ddaef3a9ee96afd8bbaba16ab73cb84ef002efd320b0d87bec7f1f0741c"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2020",
+        "bytes": 1589805,
+        "sha256": "4213321eba797e3a797608204bb133da6ba32667cef14b140411e3416762ed1a"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2021",
+        "bytes": 1597970,
+        "sha256": "aa488779879932b7ee0c406f5954760250201a12934f7353aec3f82496eaedde"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2022",
+        "bytes": 1526228,
+        "sha256": "b67a0dfecad752197e8a8985b76d6176b0144e79ee5bd6ed502735919310cd7b"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2023",
+        "bytes": 1785683,
+        "sha256": "3abe56940ff08131af63814005064625ff1487b7ef3e07ee9d6ab18bcd343fad"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2024",
+        "bytes": 2285160,
+        "sha256": "1d4857a24a155a7a2f337dd86291860d9477a0b7f7ffc71a867a12ab631e141f"
+      },
+      {
+        "venue": "dev-cell",
+        "year": "2025",
+        "bytes": 1551807,
+        "sha256": "e06769a0214e65067050dd3a906af4e5dea0ddc1adfc3a55c5b291af66f0f6b4"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2005",
+        "bytes": 1472405,
+        "sha256": "63ba1880b8ca1ccef7c6d008b66f86fd74f205e8c8b8afba9f400908e1619635"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2006",
+        "bytes": 2183827,
+        "sha256": "d735fa233e289f40b4c035599c3443cfd2102405415ec10b34bc171a0e6ee82a"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2007",
+        "bytes": 1929076,
+        "sha256": "c41d503be222150ade2a97874e2d107eac4f8bdefbb665d1c2d0dae9441baf68"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2008",
+        "bytes": 1120141,
+        "sha256": "2eff98e1821ea0a6698beba38628979de98d5d6b24b767db659116407f78ee77"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2009",
+        "bytes": 1738948,
+        "sha256": "58dff800aeed47655718d4e359b63f2a3e04949c5c62434a5b427fa3cc13db2c"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2010",
+        "bytes": 1514006,
+        "sha256": "4097f88c0e146a2e507446e378b01805182126d429eba1fd1f38b0a78d105028"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2011",
+        "bytes": 2155293,
+        "sha256": "d75a5be88addb9c42061356d5c6d02c9e307cab4ccd7bd5846b9a8f12fb18e9f"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2012",
+        "bytes": 1528870,
+        "sha256": "23c943ab1fe3b568fc77b7888c65a140354c2461c8c8298376bfd567349d98e8"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2013",
+        "bytes": 1237894,
+        "sha256": "59ce8e1f63ea2a20de90a53993b658a27d10b0e6246b73b81bfd853232318a0b"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2014",
+        "bytes": 1341730,
+        "sha256": "be615ef2bfc4a6e8631125e4c1e17a6a33e46605515c54d56a711d043b4f5961"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2015",
+        "bytes": 1186994,
+        "sha256": "96529678d961dabd41c2d0341cc2a1958a9ed9c76ced349f9caf28bcea0de126"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2016",
+        "bytes": 1183580,
+        "sha256": "479b24768df8d3ee9f2611430700b23dc09d0f5c64f015638086d37309af3a00"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2017",
+        "bytes": 1525962,
+        "sha256": "ecf760e09f942fab9413551fa71eff363e04abf45099e3d493d4665abe685e9f"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2018",
+        "bytes": 1816381,
+        "sha256": "4b8e12ef11d4dae5dee1c8d649fa14d49fa2a2c5757031e6ac3ada6a7bbcb13c"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2019",
+        "bytes": 1744441,
+        "sha256": "dd0af558ee7c7d9c41722a40a634dad102622a5a56dafba4b4e3952f1a5cdd14"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2020",
+        "bytes": 2353987,
+        "sha256": "3d5636d56a9d831057153d46390bd90263bb715877b34d6e1fef11df54ba144e"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2021",
+        "bytes": 1901345,
+        "sha256": "1c2feb3dd8c36711415890ea8d9ab0608d49db01adc5e23124af93c4932fdc86"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2022",
+        "bytes": 1889160,
+        "sha256": "124f308cef00b9bd58accf021efe358912ab047fb917b14c4fe212c0383e25f1"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2023",
+        "bytes": 2032218,
+        "sha256": "fe324e7c0d2449f1f3470a270e07c891200d2531ce38b825e71ab9669fa843a5"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2024",
+        "bytes": 2319056,
+        "sha256": "1650431673678e62facb71b7c2af64671c4cd6327d5cb4c13fc43c329b45ab96"
+      },
+      {
+        "venue": "embo-j",
+        "year": "2025",
+        "bytes": 2210780,
+        "sha256": "34436361e7e70b802b7a925636c621b82ddab14a70ef88a5d23d0dab9e2ff988"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2005",
+        "bytes": 639925,
+        "sha256": "51f42f041d4cca54575b0efd1cb58f4217c8188b2e57919d1c6e3fd40bf76c2a"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2006",
+        "bytes": 695075,
+        "sha256": "5233e870d9da5b9c4534d4cbf321c04679646a2f5d5462905fb723eea8e1b132"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2007",
+        "bytes": 1392334,
+        "sha256": "84563ffbf7e1088adf4e3f309215a74e262381915dc793cb6b6207235051d909"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2008",
+        "bytes": 1194762,
+        "sha256": "a882af7a454da81b334bb713fbfe786e54cbc8be05d315d051ca47d29b6fc1a2"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2009",
+        "bytes": 833765,
+        "sha256": "b868ed92237a2facb8fdf6221322de7cb45afce074d5f3d3ccfcf54003e4e66a"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2010",
+        "bytes": 884684,
+        "sha256": "128066ae958fbb79df8cc5831d1bee1e1fec8fc518c6a6a89691c419860a03ff"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2011",
+        "bytes": 1247302,
+        "sha256": "685ce0de74f7e594c30d9f09321fd30ba438526e37425ba42849f568888440ea"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2012",
+        "bytes": 995252,
+        "sha256": "9be032fbd0baed9a875b095d1797cadd77c48eb041f7530943086793da34aa28"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2013",
+        "bytes": 1228216,
+        "sha256": "42d4c4bbc31aefac81be8bcedbad511ee467150dab09db010bfdd29ce1cb97ff"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2014",
+        "bytes": 1583803,
+        "sha256": "940847bc98edfbcfdde6483818e6ac5c6b3bf7905c08510078d3db9c6fcc59ad"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2015",
+        "bytes": 1749636,
+        "sha256": "db3b7895a884f18fe053e27264ef9c3dae7611200f98f1d33a44f5597e6764e7"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2016",
+        "bytes": 1529335,
+        "sha256": "641836d16b62fd20ff11f2a95b32697defa90bb1fa7da8b6cf73176448f89a85"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2017",
+        "bytes": 1570301,
+        "sha256": "2b23f6cc5ddadde6dce2f0a8f64d008318f13dfd8d59aa777d70d5166bcf59f3"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2018",
+        "bytes": 1317398,
+        "sha256": "0f0cedb29ec876f872e7ed811f0fa66f8919d27a28a09133735e7db7480bf678"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2019",
+        "bytes": 1816099,
+        "sha256": "4e3c839bb8985e91e56cc78b24e419d078adc6609ba9d640756a877ac7ce9ab0"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2020",
+        "bytes": 2003833,
+        "sha256": "e8fc35b7b66b180041359bea3e050688863b886f2a98fb4946d427b0627e0e5a"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2021",
+        "bytes": 2300666,
+        "sha256": "f5cab439f37546f0541eb147d5a810c0d1ea7fda938ae051f84c4fc64fe41bf8"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2022",
+        "bytes": 1970495,
+        "sha256": "0de675c44778b41b5dec28124c2050680d949c20157924d85cdf60f399e03e46"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2023",
+        "bytes": 2165176,
+        "sha256": "d168788d6224f344358ac8cec41b18721c7322bb506919e4c347ff68108186cf"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2024",
+        "bytes": 2134240,
+        "sha256": "b256603d68ee533c95bf2ce8149e03587492e154fc7d372c64f9e92bc31e18f9"
+      },
+      {
+        "venue": "genome-bio",
+        "year": "2025",
+        "bytes": 2930680,
+        "sha256": "3556bf3fd1872678bcb037e9725102360b722c413ddf137753dab1b7bd447022"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2005",
+        "bytes": 751635,
+        "sha256": "520a79678fe3534b5682c54c26b5c93c27a85377281c4a3c8323118bcf3c5e59"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2006",
+        "bytes": 669235,
+        "sha256": "bfd191dee756dbbb180c941d7c13c4f564205d6b8a175792f7d139cabeafd068"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2007",
+        "bytes": 886453,
+        "sha256": "6398998df825689369d4248738a32bc4d116b3cb9bc84aa129919ac14c47ae2b"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2008",
+        "bytes": 934949,
+        "sha256": "b9440e8049c0bca6e04afd787297b119e24f9df4b24a91067fe151626d892c3d"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2009",
+        "bytes": 1116397,
+        "sha256": "4e9a7bd300c63e6de178e30a5b9915cba8461fdee7dd26378bbe9473516f98aa"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2010",
+        "bytes": 1045491,
+        "sha256": "8d5963f5d65d60777e1bf1181c93aa620a64737d9f56dbf0fdb7f25c507eca8c"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2011",
+        "bytes": 1266929,
+        "sha256": "f030d66ca62040ce1ee1aa5b535fb1a11c0bdaead3c96ffc87ee4b4895016026"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2012",
+        "bytes": 1275215,
+        "sha256": "39aacec5ee1652e8b190280fa525a9b449c0ab57f5c147f5d14ec16f47699321"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2013",
+        "bytes": 1007246,
+        "sha256": "38b5fc8425e881d90cfd2f49c8c4ec29d8d85178f16e1ce55c9e91db443abf66"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2014",
+        "bytes": 1126328,
+        "sha256": "1e08bcb9519b2d46ce1cceac08ba417560c6aca12666d1bf5bdf53ad0465af74"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2015",
+        "bytes": 1273597,
+        "sha256": "e7bd6a8dc5dc933f205fdd3feb9a70dc4c5443b5a581e7b6713c946d25445379"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2016",
+        "bytes": 1126228,
+        "sha256": "0607a19dc6bf38da33a49d2d70cd254fa1931078d7169c11641f22f09322e305"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2017",
+        "bytes": 1359603,
+        "sha256": "16aa53b42038c2ebfe7a25e01e757ccbd13b81664c6b44f37192b143012ba2f0"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2018",
+        "bytes": 1140588,
+        "sha256": "7f35331ac35e9449aca575dea24b46f6b61c8b8a55b77ee9d01b5904b8045682"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2019",
+        "bytes": 1312640,
+        "sha256": "4e8e143242c40214f31d9067312cc265e9bca5f984a017a16fdefb3332f09f8c"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2020",
+        "bytes": 1278097,
+        "sha256": "9dd87a49dbdfeb25a7b489e9b6e96e3eb184ed9191ac9098f60114a00ab06da7"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2021",
+        "bytes": 1361865,
+        "sha256": "132d8c056a483f0d39c2f834afc15ab8ac5625c5a78fa628e5d297e464ecf531"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2022",
+        "bytes": 970315,
+        "sha256": "a5a6bc771c36b9431a2f481da108d23ea6788c2efaf5faa6833fdc3e48523b57"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2023",
+        "bytes": 968209,
+        "sha256": "5051ab4b18f397414f5aa65c806f8fd6b9513148fe1b08b4d6114e5b6e722b6a"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2024",
+        "bytes": 1338535,
+        "sha256": "5c8c7ebce09468111103c5e2b0b045e0dd27ce4c51c59ed96fda1341f0521b50"
+      },
+      {
+        "venue": "genome-res",
+        "year": "2025",
+        "bytes": 1195658,
+        "sha256": "0b3ac8f0887078bff212606408c2f5cd0e23d44ac0fe959d750ee33892ad355c"
+      },
+      {
+        "venue": "immunity",
+        "year": "2005",
+        "bytes": 590054,
+        "sha256": "18208eb4010c3326278a21208aac4dc5b846fe4ffb51075245dc848ea953db73"
+      },
+      {
+        "venue": "immunity",
+        "year": "2006",
+        "bytes": 715086,
+        "sha256": "1d3e50ae010f6ab60315b79cb5a54c00b26f0cce0759526048497086210acfec"
+      },
+      {
+        "venue": "immunity",
+        "year": "2007",
+        "bytes": 686559,
+        "sha256": "ac417369b95cc8eb35ba7a7a612e77e1cb746da2495c642c1c56db90a2c9ac40"
+      },
+      {
+        "venue": "immunity",
+        "year": "2008",
+        "bytes": 829800,
+        "sha256": "bbe366227cd97faceafd906e2e3ac220422e25c729971c9eca82033009e726f1"
+      },
+      {
+        "venue": "immunity",
+        "year": "2009",
+        "bytes": 829380,
+        "sha256": "c88bc3d875b277ee0044deaa699e3b5ac7cf6ce5887cfa74e993d9e19b3363d2"
+      },
+      {
+        "venue": "immunity",
+        "year": "2010",
+        "bytes": 747260,
+        "sha256": "6e6af95d78326bd5f1e65da9f72a8a624040383184953278d67f184fad3f7fc5"
+      },
+      {
+        "venue": "immunity",
+        "year": "2011",
+        "bytes": 955090,
+        "sha256": "3ee699ad9d7ad09c998bb78811d862fd9c329355e02b7ab5c223f5213616d774"
+      },
+      {
+        "venue": "immunity",
+        "year": "2012",
+        "bytes": 1174038,
+        "sha256": "799e1a8cf2944e0a1e2bf223a217efcf98188aee40516025305ec7806e0f9bba"
+      },
+      {
+        "venue": "immunity",
+        "year": "2013",
+        "bytes": 1252292,
+        "sha256": "e940a18a09aa2c630ac4e12a96ab9ddc0c59eb31e557643ec96a009c8b2b5ff4"
+      },
+      {
+        "venue": "immunity",
+        "year": "2014",
+        "bytes": 1281146,
+        "sha256": "baefbe8f7ec90253a20ed7d9c76c2af41cfd0b41534bff79930063eeb28f5ef6"
+      },
+      {
+        "venue": "immunity",
+        "year": "2015",
+        "bytes": 1532095,
+        "sha256": "bed44cbd6d914091db1eaf017cfea5e37789572de14bb04445141b59180809bf"
+      },
+      {
+        "venue": "immunity",
+        "year": "2016",
+        "bytes": 1921906,
+        "sha256": "582ab77d0ff101ae837a7a3bc0f71bb95da63b41380f7e35e525c925c193e0c8"
+      },
+      {
+        "venue": "immunity",
+        "year": "2017",
+        "bytes": 1563671,
+        "sha256": "3bf45d2fcf97867ac3b9cc69cfef499e1990d24085844047d037b44271b726dd"
+      },
+      {
+        "venue": "immunity",
+        "year": "2018",
+        "bytes": 1786520,
+        "sha256": "3c50c036ac2e3c70e68af7349ee2044b41af697400174598e20f0886da574029"
+      },
+      {
+        "venue": "immunity",
+        "year": "2019",
+        "bytes": 1960812,
+        "sha256": "03b12ff0336ac1d26990de4923bcb3c3a9a7a3afdd0de459574cad11e0d8bb7a"
+      },
+      {
+        "venue": "immunity",
+        "year": "2020",
+        "bytes": 2024838,
+        "sha256": "4596dd713794c5d57d2d70f55694a3ec0470ef50ca6b9b350d89762911b19141"
+      },
+      {
+        "venue": "immunity",
+        "year": "2021",
+        "bytes": 2292164,
+        "sha256": "981568c3f01ad8bddded0d28060b55cde7d5a33ad0c5f398cfd3229659f1462a"
+      },
+      {
+        "venue": "immunity",
+        "year": "2022",
+        "bytes": 1780580,
+        "sha256": "911d97d27b178d834a8bc34fd4f69b8f5537b5c2d9764b1aa7df5f1aa821cbc9"
+      },
+      {
+        "venue": "immunity",
+        "year": "2023",
+        "bytes": 2167009,
+        "sha256": "f7278cced0ced781de717dd9caf54d2c80999015bfa0bbf4c4b9680d3c4a3a82"
+      },
+      {
+        "venue": "immunity",
+        "year": "2024",
+        "bytes": 2223107,
+        "sha256": "6631cac8cf08a58843d5cbd8c31851c1808bd9ea8d4eee5e5837b4bf9164081b"
+      },
+      {
+        "venue": "immunity",
+        "year": "2025",
+        "bytes": 2010811,
+        "sha256": "ca04e4e1b00a8ef138ddcba9ab248e066fff75c3203c15cd3a1ae6e57437882c"
+      },
+      {
+        "venue": "jcb",
+        "year": "2005",
+        "bytes": 1412473,
+        "sha256": "c5b9a5892327219d2b605c10cbd23be96bcb944e6ede6d842eb12f101890fbb4"
+      },
+      {
+        "venue": "jcb",
+        "year": "2006",
+        "bytes": 1593517,
+        "sha256": "c63137fab57871318f970e299fbda43613d48f9cb2a8abbee5f1806452ec5af2"
+      },
+      {
+        "venue": "jcb",
+        "year": "2007",
+        "bytes": 1707535,
+        "sha256": "6245c3dde5b498716ded240ff5a48b86b3c1becb83f4cd00995c091aabb52aa9"
+      },
+      {
+        "venue": "jcb",
+        "year": "2008",
+        "bytes": 1708937,
+        "sha256": "069f978ba558d53128aabc2554b3d0035443262c8c75aa3b27305c6ff6b08dff"
+      },
+      {
+        "venue": "jcb",
+        "year": "2009",
+        "bytes": 1710802,
+        "sha256": "42619c0ea4182fdefdade144ec34823eb442027d3dbd25d7601a67910af94209"
+      },
+      {
+        "venue": "jcb",
+        "year": "2010",
+        "bytes": 1642370,
+        "sha256": "f7b05522aac419da4deaf36ff07555380a92a16231ca0f7c0ecdc77d11e0275a"
+      },
+      {
+        "venue": "jcb",
+        "year": "2011",
+        "bytes": 1632485,
+        "sha256": "9a854ac6ec4508c62ef38a3637355ca6abc13326d106b80e966722a8cfca7a53"
+      },
+      {
+        "venue": "jcb",
+        "year": "2012",
+        "bytes": 1470734,
+        "sha256": "d546c627f9dc15ee168bdd4ecf98172b52db2389f2a0e0807063c2ea14ece2b2"
+      },
+      {
+        "venue": "jcb",
+        "year": "2013",
+        "bytes": 1562666,
+        "sha256": "bd121de5cbc4a1732cf86e7caf568d2324019e9656afc78bb83f120aa5139fee"
+      },
+      {
+        "venue": "jcb",
+        "year": "2014",
+        "bytes": 1523136,
+        "sha256": "89a07d397f742fff46bf84d99b0b18bc79199360bdff839ba16625f142bec347"
+      },
+      {
+        "venue": "jcb",
+        "year": "2015",
+        "bytes": 1850962,
+        "sha256": "779a0a91183badbfceaf696b348bf4cb24aac75e1aceafd09ce9278e1fa33d2a"
+      },
+      {
+        "venue": "jcb",
+        "year": "2016",
+        "bytes": 1320572,
+        "sha256": "d11a57336253dbf6cc141d34b8271686b3d6964026248b83cae871b0b147c04c"
+      },
+      {
+        "venue": "jcb",
+        "year": "2017",
+        "bytes": 1546355,
+        "sha256": "14bc985b384d812e1ea912bd93416ad26cd2203f96c564a10df08190e64771e5"
+      },
+      {
+        "venue": "jcb",
+        "year": "2018",
+        "bytes": 1336313,
+        "sha256": "878f40cc3b06c4a6092b50bc673b2678ccab3353f07a2b56ca08e72b46fa2444"
+      },
+      {
+        "venue": "jcb",
+        "year": "2019",
+        "bytes": 1247305,
+        "sha256": "eab53dd934c8652824d9c5e5130c3331a8052725f683805a72c2e02d789a9cbe"
+      },
+      {
+        "venue": "jcb",
+        "year": "2020",
+        "bytes": 1321818,
+        "sha256": "34ece8a54dd2c9c11a485d77712b22a4925cc681209d9461d8050f1dcfa50554"
+      },
+      {
+        "venue": "jcb",
+        "year": "2021",
+        "bytes": 1384774,
+        "sha256": "6e782788e1a8288fa120ab2f7180df824da75f9a9c9e31093f18d1ce2d4f50a0"
+      },
+      {
+        "venue": "jcb",
+        "year": "2022",
+        "bytes": 1233161,
+        "sha256": "fbf88474e619d324259339fe4036f289e8c68b7087800a28bbb76f24a96304dc"
+      },
+      {
+        "venue": "jcb",
+        "year": "2023",
+        "bytes": 1301789,
+        "sha256": "a62d152ea2e663501005cc602a87c59d854b0b74e6173a2b0321f8306ed67a21"
+      },
+      {
+        "venue": "jcb",
+        "year": "2024",
+        "bytes": 1396656,
+        "sha256": "da1de14a52bb02e0c6987c8e3480fe2e8bc84803852ff8b19e8c76c14ece09ff"
+      },
+      {
+        "venue": "jcb",
+        "year": "2025",
+        "bytes": 1398822,
+        "sha256": "b51a2702aae6f35d8f71230b0029f73bf8cfac6bcd39f77033e85fd60f9f6b4c"
+      },
+      {
+        "venue": "jci",
+        "year": "2005",
+        "bytes": 1413867,
+        "sha256": "052ad72e3268c767b16566ae7c72486d9588e2b01d1a7e3515c6c93aabd86e76"
+      },
+      {
+        "venue": "jci",
+        "year": "2006",
+        "bytes": 907780,
+        "sha256": "648348f1bfba725122f7c9d1fb58d2ead3635155be719f9109c8a8d86397c201"
+      },
+      {
+        "venue": "jci",
+        "year": "2007",
+        "bytes": 1945636,
+        "sha256": "ce0c1147c30177da674443edbee5786d77d27f1df3949bcb578260d0de30a307"
+      },
+      {
+        "venue": "jci",
+        "year": "2008",
+        "bytes": 2094836,
+        "sha256": "d04c51361d4cca8e2ab0dea1b1260d5cb2923bf7a3a9e978ca8d3fabe5c426f1"
+      },
+      {
+        "venue": "jci",
+        "year": "2009",
+        "bytes": 1723099,
+        "sha256": "46bc193290ed9dc5e51143fec049c099db3e9730803ea7ba74c743dccd6a4e11"
+      },
+      {
+        "venue": "jci",
+        "year": "2010",
+        "bytes": 2282010,
+        "sha256": "ce8df37237635f78e3d3706447c80f31b2f19eb948d8ff39aa30a9f5dc80cbbf"
+      },
+      {
+        "venue": "jci",
+        "year": "2011",
+        "bytes": 2552587,
+        "sha256": "9850773ed9051c0047481a610f5e9dcfaf300260742285971d5338d1ca6bd6e3"
+      },
+      {
+        "venue": "jci",
+        "year": "2012",
+        "bytes": 2375404,
+        "sha256": "fc7daf88c1cab9f7c3a9f7b0ee83bffc36d1d0a0aee07310ca602510f445e074"
+      },
+      {
+        "venue": "jci",
+        "year": "2013",
+        "bytes": 2961559,
+        "sha256": "6c1d43b4dd6c47334db3c7022609f7f7c303dc226227e28ee07c48a9170d520e"
+      },
+      {
+        "venue": "jci",
+        "year": "2014",
+        "bytes": 3214623,
+        "sha256": "20f8013f0f4121ed5830acbf69f697fee7be128385b2478f97880e6ff7c5a982"
+      },
+      {
+        "venue": "jci",
+        "year": "2015",
+        "bytes": 2584497,
+        "sha256": "ae0c9fc18015a5ed64cd755b23270e5faf4206f2a6db9e619c25ca3877530e5f"
+      },
+      {
+        "venue": "jci",
+        "year": "2016",
+        "bytes": 2712721,
+        "sha256": "54a13644fea1a90a81ff60d6758e168391f11c3a5e01053c863227855d980a73"
+      },
+      {
+        "venue": "jci",
+        "year": "2017",
+        "bytes": 2906817,
+        "sha256": "04397686cd3091e7718b9a08ae23ac252b92268f431d3387e58c8ec3080e62a8"
+      },
+      {
+        "venue": "jci",
+        "year": "2018",
+        "bytes": 3478306,
+        "sha256": "72986841151e15f91467cf1b726e99c8be57cc3aaa9eb3824a1716dc4c76c334"
+      },
+      {
+        "venue": "jci",
+        "year": "2019",
+        "bytes": 3531353,
+        "sha256": "804abfd925a3331ac1a85339e8f198b1f69bea86d55b11525217bb127f9839da"
+      },
+      {
+        "venue": "jci",
+        "year": "2020",
+        "bytes": 4283245,
+        "sha256": "1cc9cb8568e64b36f4a260a216b775137edd1b8c7f7178adfab88aec8ae0b766"
+      },
+      {
+        "venue": "jci",
+        "year": "2021",
+        "bytes": 4178123,
+        "sha256": "70b46f9bd18f4ec190879038420717c215ccce90998ed7514c106aabce92d102"
+      },
+      {
+        "venue": "jci",
+        "year": "2022",
+        "bytes": 3699696,
+        "sha256": "2782674a4e8d9530248f1de01e239200e9f1c5f0a4d079b0c89f08ee8da12a89"
+      },
+      {
+        "venue": "jci",
+        "year": "2023",
+        "bytes": 4402509,
+        "sha256": "7f2a4a09aaf35f6354655652436df84f595997bf479d84fb6484699e354a855a"
+      },
+      {
+        "venue": "jci",
+        "year": "2024",
+        "bytes": 5151264,
+        "sha256": "b24b34a948803e9875121db0dfb46df15e43fec4ca2055adfe5acdf98f060c01"
+      },
+      {
+        "venue": "jci",
+        "year": "2025",
+        "bytes": 6268589,
+        "sha256": "7fb80ac963d9d153ce25593be124220889bec4801479aefb5f58f4a51d4d9be8"
+      },
+      {
+        "venue": "jem",
+        "year": "2005",
+        "bytes": 1736980,
+        "sha256": "6806d3f40aa9c9705a6beca0159c28e5bb47bc5194bd28c8ac282741cf78e854"
+      },
+      {
+        "venue": "jem",
+        "year": "2006",
+        "bytes": 1252703,
+        "sha256": "43373ba7e4bf2ace06a28d61d24ee46b537f4c3384cf05644665f92d273e9b2d"
+      },
+      {
+        "venue": "jem",
+        "year": "2007",
+        "bytes": 1408874,
+        "sha256": "a4e01c834806d3778873a5bd0b8bc10c8d67b22f0428413774e1721030238fb5"
+      },
+      {
+        "venue": "jem",
+        "year": "2008",
+        "bytes": 1389541,
+        "sha256": "c0070821ad5d89cf61ef8289310c7328b885f2bdbeeb8e9cec5fc84cce9b0730"
+      },
+      {
+        "venue": "jem",
+        "year": "2009",
+        "bytes": 1819233,
+        "sha256": "a7f475729a2c2f43142be71c0b99827fc489d07c8b93b68102c946cb6996c43f"
+      },
+      {
+        "venue": "jem",
+        "year": "2010",
+        "bytes": 1823803,
+        "sha256": "3d589945d440b9d5b1568b40088e0fb453ab33f388fb0a2438897a85c5eed521"
+      },
+      {
+        "venue": "jem",
+        "year": "2011",
+        "bytes": 1921467,
+        "sha256": "f7ce329bbc93961c9feffcac83e803a8f17663c6de5fb8e488d96839a7125457"
+      },
+      {
+        "venue": "jem",
+        "year": "2012",
+        "bytes": 1684018,
+        "sha256": "7b80815511502b902fcdbdec9665c18dc0290e58829a77111fa3d5dfd6eb93c5"
+      },
+      {
+        "venue": "jem",
+        "year": "2013",
+        "bytes": 1896492,
+        "sha256": "478a9c50d1f8a942c25e53baf15b2e5f866d5869db1ad7e757a73eb31133bc02"
+      },
+      {
+        "venue": "jem",
+        "year": "2014",
+        "bytes": 1900892,
+        "sha256": "65ceb99310f08c465a07dbf0e2037309cdbc4d3adc6a875701ca10bfe8c34e7b"
+      },
+      {
+        "venue": "jem",
+        "year": "2015",
+        "bytes": 1639721,
+        "sha256": "e5d26e36e56af83f1026771549eb477231ffd20c86328a9ca7faeccece679794"
+      },
+      {
+        "venue": "jem",
+        "year": "2016",
+        "bytes": 1811186,
+        "sha256": "eaf65af4e53e3b0dea5ba01b30606caeb057204ddee37a75994cdf79edd66228"
+      },
+      {
+        "venue": "jem",
+        "year": "2017",
+        "bytes": 1996123,
+        "sha256": "f62d7a96ed9ad1953c7704f1803b684ac784387515dc642186333052c2a78f25"
+      },
+      {
+        "venue": "jem",
+        "year": "2018",
+        "bytes": 1509482,
+        "sha256": "769557ea84c9ab3c495046e149f71b6c8926ea47be00ec17669d2b5a6a191f4d"
+      },
+      {
+        "venue": "jem",
+        "year": "2019",
+        "bytes": 1832724,
+        "sha256": "c2f63423abd10cf4663f2eab215d9cfb631677107a87e6225990ad1550a6c8fa"
+      },
+      {
+        "venue": "jem",
+        "year": "2020",
+        "bytes": 2236919,
+        "sha256": "574f7185be37c141be1151a3c3a55403b2d3b0421648291d622941af6a0898d9"
+      },
+      {
+        "venue": "jem",
+        "year": "2021",
+        "bytes": 2505965,
+        "sha256": "f7ecb533fbbf34b0bbe4603437896050f2101664b66c01828a2775c6c5d815e7"
+      },
+      {
+        "venue": "jem",
+        "year": "2022",
+        "bytes": 2326154,
+        "sha256": "21346ee28e00e9a9128914788983a31742fab92a5c747561454fffb2650bdcb5"
+      },
+      {
+        "venue": "jem",
+        "year": "2023",
+        "bytes": 1888657,
+        "sha256": "4b1bd16ee918735d922f40d3327bd91325bdd589c0401a767415cdb4b8d41023"
+      },
+      {
+        "venue": "jem",
+        "year": "2024",
+        "bytes": 2348644,
+        "sha256": "65cbf4de16ea438aa89862c7cfb49d69fc885409e15528f8eb92c534403070cb"
+      },
+      {
+        "venue": "jem",
+        "year": "2025",
+        "bytes": 1694892,
+        "sha256": "92c25d9e0450427a691d56feac8c40409880a7f2c871451263c253d60c593ede"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2005",
+        "bytes": 1140737,
+        "sha256": "5f97129835202c74f7174bc9bdd29082d7ca8b40e163b788fb6b75bc5593ff3c"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2006",
+        "bytes": 1249926,
+        "sha256": "c34b173520cff130fe3aebb49f786f1ad93c847f28416abf23c857c268a92994"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2007",
+        "bytes": 1293665,
+        "sha256": "343b172fad6057466a3f99f7e2981bb219501e757a1ac4b5bb4c04f351e40ede"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2008",
+        "bytes": 1371834,
+        "sha256": "5af72c0ec4ef942c726f1f7764266707a7db99f9cbf50b9d5b690aca387fead6"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2009",
+        "bytes": 1332098,
+        "sha256": "cb617b9c9c9771d3ba3179ccc188158cf36ec6c1f3bda02af96980e4fad7a615"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2010",
+        "bytes": 1484888,
+        "sha256": "925b2d9a442399085cd35964673bab02a50015c3fe56b3f590a9138642507e95"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2011",
+        "bytes": 1564367,
+        "sha256": "2e0bae668232cc34abd9764c3b20acfb9df058819835ebf17e45cd5e40a7da5c"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2012",
+        "bytes": 1989037,
+        "sha256": "fca6152804f050f36a4ab09d1a21a3c8d1f0b0e29cbb4c7de93747f66a4866b8"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2013",
+        "bytes": 1490716,
+        "sha256": "96994f0553c33fa106e4459b88e84524c5ccc9ae6561985398897f917204694b"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2014",
+        "bytes": 2116784,
+        "sha256": "03adf3caed660c4f668d5c5864fb11e9e16f76312c72eb08679261bce80602e6"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2015",
+        "bytes": 2086940,
+        "sha256": "e59598b37c6e739de0cca24f71c5e54e6cf4fdcf4c1450014f5a004ae74a6fbb"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2016",
+        "bytes": 2200888,
+        "sha256": "67d4cf5121f37799f1dd6fb7513117a8fe3895bb1dea4b049df88cb49588fe45"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2017",
+        "bytes": 2203880,
+        "sha256": "6cea822df2d279666c533feaa5a58cf2b88e0c3638ee3d3701f35be41f112655"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2018",
+        "bytes": 2643943,
+        "sha256": "9e7f909d989967e21b1a0ea969af0c7bd986feeede78479568ee53bfd76de5bb"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2019",
+        "bytes": 2898821,
+        "sha256": "9158fc80168f8b55a5730759855964a50c62569061c70cd13c890d72c66f59a8"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2020",
+        "bytes": 2650770,
+        "sha256": "0522252f06708d4767836d2b8d58ae444305d33e853c8f247cd0f1c0648d36d5"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2021",
+        "bytes": 2555809,
+        "sha256": "4a0e9fc0e75565a1fed0932ef87f150a0f526f7fbc2654786b4e3f734740bea2"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2022",
+        "bytes": 2232954,
+        "sha256": "1d444063c5b50076f8a9a5fc1fa89b401809211923dac4640ed2e2ebf6b4b709"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2023",
+        "bytes": 2405356,
+        "sha256": "61802d861e002d9dce592306dbca4e33153fdc82c7d8e8921038bbf079548c84"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2024",
+        "bytes": 2595470,
+        "sha256": "ecb64515fdf9526d81c7afda6f202d9aaaae7ed8aaa7e9355201b4a429b52ab6"
+      },
+      {
+        "venue": "mol-cell",
+        "year": "2025",
+        "bytes": 1975980,
+        "sha256": "036f7d9e1e5800724ef26ec7f9798b20cbe522f0951b86a47da3777c36c2ca27"
+      },
+      {
+        "venue": "nar",
+        "year": "2005",
+        "bytes": 2187308,
+        "sha256": "0447e88d34b13ccf5a75e5f9e974398b81909c0aaab08fc0d0e96bed15d0bdb9"
+      },
+      {
+        "venue": "nar",
+        "year": "2006",
+        "bytes": 3416788,
+        "sha256": "3de8d247a6f9c9273eab90791b44c4215b4ae07f4a25f909e872fdbbf45b6c02"
+      },
+      {
+        "venue": "nar",
+        "year": "2007",
+        "bytes": 6830518,
+        "sha256": "d8effae4c6fe55e88e81529f42dc66d3ecb2ab010fd64d463811724a8cc933d2"
+      },
+      {
+        "venue": "nar",
+        "year": "2008",
+        "bytes": 6343002,
+        "sha256": "a28f9f34f172357fdbf8b42370cf8703f424992749737d155907b511f2cd817d"
+      },
+      {
+        "venue": "nar",
+        "year": "2009",
+        "bytes": 7362976,
+        "sha256": "25307f227c7d8f80a295d4c45b54078e38ff13a29354e3a7531909353c198e1b"
+      },
+      {
+        "venue": "nar",
+        "year": "2010",
+        "bytes": 8245318,
+        "sha256": "9fd5803611d70d0d484fe3678da0c7ca881602f3b7ceea555f7a9b49608509ac"
+      },
+      {
+        "venue": "nar",
+        "year": "2011",
+        "bytes": 9673225,
+        "sha256": "097cf19f5efdd7f008f84b67b740add17ca5506c642eac93eaac25c6dcbcf6bb"
+      },
+      {
+        "venue": "nar",
+        "year": "2012",
+        "bytes": 9146870,
+        "sha256": "2c8c6bbb1661eca44eb3b079667d8c11074d84ad5ad7a564cb7679f3167871a4"
+      },
+      {
+        "venue": "nar",
+        "year": "2013",
+        "bytes": 11780144,
+        "sha256": "faee2798a7013fc14beaa932b8c7f0ab72751ef2f117484da6106e782316449d"
+      },
+      {
+        "venue": "nar",
+        "year": "2014",
+        "bytes": 6845076,
+        "sha256": "4b0ccc3e9d3cf929329b4c811d1a480b6f96533faa7edefd2dcb5c89348be774"
+      },
+      {
+        "venue": "nar",
+        "year": "2015",
+        "bytes": 6893548,
+        "sha256": "639a3d17addd984880d47668387c3075549e3574903fe0acee3227bc3e203f95"
+      },
+      {
+        "venue": "nar",
+        "year": "2016",
+        "bytes": 6854577,
+        "sha256": "5cae3ad1c136a064e532fbc3fafae8b8e1e2fe51328cbb4bb5ad0c5dceb03f23"
+      },
+      {
+        "venue": "nar",
+        "year": "2017",
+        "bytes": 6430955,
+        "sha256": "ebf36f05ae061cb14bb8e2c475a9c60818334ba48951df7b1e73f839de273417"
+      },
+      {
+        "venue": "nar",
+        "year": "2018",
+        "bytes": 6733056,
+        "sha256": "af99bf53b5f3765d2b8def1b8c05b9b269fb86b8eaac06a4c6cca8793858c453"
+      },
+      {
+        "venue": "nar",
+        "year": "2019",
+        "bytes": 6546653,
+        "sha256": "3dade25415eb058e78079f194cfdf38f64b225ee1c82c49c1f6683923d0058a7"
+      },
+      {
+        "venue": "nar",
+        "year": "2020",
+        "bytes": 7026696,
+        "sha256": "970e0f6db58b1568e74a4848485a55bf24833c544d73e379445f4df937acb7c1"
+      },
+      {
+        "venue": "nar",
+        "year": "2021",
+        "bytes": 7076136,
+        "sha256": "e769d83235a2d1f1ee8286c207843b80966658c537cda993e4d1096da2e1000e"
+      },
+      {
+        "venue": "nar",
+        "year": "2022",
+        "bytes": 7196928,
+        "sha256": "1407f8c47bdec83dccf9b6765d0cacb6c892875889c166822710b78f47c92955"
+      },
+      {
+        "venue": "nar",
+        "year": "2023",
+        "bytes": 7354842,
+        "sha256": "212d5ca7e21711a6313174c104032b566a163c15b349c88bfec8978e66b8d33d"
+      },
+      {
+        "venue": "nar",
+        "year": "2024",
+        "bytes": 7558788,
+        "sha256": "ce38616644656b60f3ac882b1f9b69dfa215bd7f5cc37dd301a98186381d3f18"
+      },
+      {
+        "venue": "nar",
+        "year": "2025",
+        "bytes": 9293539,
+        "sha256": "84f93d0a449e925c0564bba90b0d693dd667ae8cd743c3d6463d9d73a512b411"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2015",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2016",
+        "bytes": 54889,
+        "sha256": "0aced1a7776b8a3967e2ccb39935323d3ce933e93fa375e94643ce89cf521798"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2017",
+        "bytes": 642625,
+        "sha256": "02257a61093a42017d23e43bff626ed93cad81f7554043ef266237f095174f97"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2018",
+        "bytes": 641895,
+        "sha256": "a77462d39a163ff23bde2859ae91fcbbf71b3586ce784f93810aa81e9e66dda7"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2019",
+        "bytes": 675829,
+        "sha256": "f064f877d35dade384015d2ef3a79bebdceb022bb4785e641c432caf00386321"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2020",
+        "bytes": 857156,
+        "sha256": "54085a867d6c711a61a439d254d1c488ba3b990222e6cc4c6bd124a37fa9ca54"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2021",
+        "bytes": 1003225,
+        "sha256": "4dd119c2e963b49e622acc217ad2cfd94b585037093605c823c2dd38a98f3e87"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2022",
+        "bytes": 1081104,
+        "sha256": "0bf24fac50dcdb8af6a4262933e946dbade3f9050b10416b8da768c6e185c241"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2023",
+        "bytes": 1060748,
+        "sha256": "843f0636207f8b7653b180daa8500f6efe4b076fc28c0f17e2cbb09ed6c03e77"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2024",
+        "bytes": 989004,
+        "sha256": "47b24c54059412a2f382ee218f537e8fa9d1f4d63dca477598f5bf360540e7b7"
+      },
+      {
+        "venue": "nat-biomed-eng",
+        "year": "2025",
+        "bytes": 1906628,
+        "sha256": "7aa492d879dccb7f911319016da0d3e2b6f5bca971089d0cd882886c8bc96fd3"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2005",
+        "bytes": 617969,
+        "sha256": "0f73433412030adb2464c62b38627ea8e8c1df6327a2b5efc83b3dafb8b71c23"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2006",
+        "bytes": 844001,
+        "sha256": "803b6e32cfd9d884b58ee30f2fb8fcb7b1597e35f03e8bc175909bdb0f310f25"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2007",
+        "bytes": 830761,
+        "sha256": "957c689c1b306bc534840832ec4561488316eb91e826c7df1bbdea268a802fbd"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2008",
+        "bytes": 1030185,
+        "sha256": "397a732f16f7ad6c3ebcad03c971d22762d8c97666c25bbc621f5290b6c80c7e"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2009",
+        "bytes": 682840,
+        "sha256": "3ccbd4c8ed1d716b25bbd18b90525abed2b0d2962776c84317b6270e1aaad3c3"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2010",
+        "bytes": 1061208,
+        "sha256": "c69bb5ef910d66d884907a203bf69f07faf9171945a0b6d0ddf5a97bf808647d"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2011",
+        "bytes": 895926,
+        "sha256": "b803145758962e516477daff980189fa807455be6f55e55357bdb5fb4e697de1"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2012",
+        "bytes": 825744,
+        "sha256": "8025aa402448b051f804e57dfc5736077d20bfc7eb0bacad4fa10b6c4efdcc01"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2013",
+        "bytes": 863255,
+        "sha256": "37bc47a6f66160978a97dde865199f34165a8b4dd8164a7776eb46d777c0705f"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2014",
+        "bytes": 1261037,
+        "sha256": "d83a3015d09ed97ad008d62bb7d468ca356cb9bd5fffc846ce0e6bf43edaa1ba"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2015",
+        "bytes": 1105751,
+        "sha256": "3550a8953c5af999c07c6b7b0819765995ae5d3415f0370ead78ea0d0bccf486"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2016",
+        "bytes": 1291762,
+        "sha256": "dd6b93e3bd59595db43c4b931d8b8baaf570df35c1da96cfb3127a5543c94a6e"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2017",
+        "bytes": 1031121,
+        "sha256": "6126682f3d4533a494de6a3cb6f1d997b76259aa34fa95377ec3661627d89c57"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2018",
+        "bytes": 1186574,
+        "sha256": "c6ebc789e13833f153582c84a1281831ff58e0b00752aa7284967f56245fbb7c"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2019",
+        "bytes": 1272340,
+        "sha256": "da813882f7adb1a01550e2e2f1ac3814008b14d12c9019a814b14a6f6e50be90"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2020",
+        "bytes": 3227256,
+        "sha256": "b990e8b4e27fc99fd76e35b52c108a51863e6d6363585624a16aa15e89766d3b"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2021",
+        "bytes": 1629937,
+        "sha256": "f6b9ecee62210f26eab8b50d6f13fecc0b9d72a28a0025f313862b7979e719fb"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2022",
+        "bytes": 1713602,
+        "sha256": "938ed86b7e2feb27de7eb5e3bc4872dc4e19933f8e90cb93b00f8d8ebab2cb8e"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2023",
+        "bytes": 1915471,
+        "sha256": "5bd1f8b5121e10a9e341b7cbd30c24085595cd9f9cc831916b2335411deae351"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2024",
+        "bytes": 1819523,
+        "sha256": "8ddd41f286a59ce56e63106a73694932597145b485699f486743de3cf11eff83"
+      },
+      {
+        "venue": "nat-biotech",
+        "year": "2025",
+        "bytes": 1518377,
+        "sha256": "f134849f5ef7220ed3705caffb292b336db8107fdd5336f5ac668f034af5713e"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2005",
+        "bytes": 756199,
+        "sha256": "7b7ffc8eb65b085d3e8501cb9aa7299d2ad3a2f246b024e81b863607cdfec549"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2006",
+        "bytes": 817340,
+        "sha256": "c34cd1e4dbe697264a2140aa4098a494307180b64836af6bfd3639aa7c997b05"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2007",
+        "bytes": 750853,
+        "sha256": "c25477376a5871d436a46919ded322563b3da1b0b936af31e0e479d5aab053a7"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2008",
+        "bytes": 924707,
+        "sha256": "31d28225f2c1a4984e2041b5c6f4522e2adf0a9a6104555d61233fdba3e1e5a0"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2009",
+        "bytes": 1014582,
+        "sha256": "6b70322357bd456a7cae27dbba83e6dc68c0a6e7bcf1b51fd9841637df109964"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2010",
+        "bytes": 812807,
+        "sha256": "3ebda82b09406a7793fe295703b3597ab0f7ff8c07ff2797b577ca58ccb9cd78"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2011",
+        "bytes": 942970,
+        "sha256": "4cd3606142f73fd74786148f6b59c3005f88e540891cec6d0a672c560aa1c39a"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2012",
+        "bytes": 869937,
+        "sha256": "ed4aacad7059f6d4325033bc2cd33ae9976934758ad2f0977aa05157de13bee6"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2013",
+        "bytes": 1016352,
+        "sha256": "89b283a07fd0d9dc621afbafd804dc2c1fe31822c18abbf5e6f7bca7d7a3a998"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2014",
+        "bytes": 809846,
+        "sha256": "c177432e08ca00f99201c3bc0e9d37382b4a68a1a81fcfda1c7fa24484fa6e33"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2015",
+        "bytes": 1168126,
+        "sha256": "b06d0c55f45254d3fa3e4bccac2f01f098947f5d3876fe22ce6d95aa9c16e66a"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2016",
+        "bytes": 925570,
+        "sha256": "bf289c6b8f308f6f3efcc14a5b27c84bd6035b12f932a257ef7b7d5be999f9a3"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2017",
+        "bytes": 1035905,
+        "sha256": "7733601fca9cae25be95efad80ad37b4acb0ce3b1e2de060979cd4005c7e0156"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2018",
+        "bytes": 1005162,
+        "sha256": "54e11396db466a8441770e818f8e856d0bc1970724a3c1c40ff648391e65a550"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2019",
+        "bytes": 1094342,
+        "sha256": "07f2f283ce06ca4ff690778137ce68335207a4498f6f1fdd149df1d5c8bbcff7"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2020",
+        "bytes": 1192692,
+        "sha256": "c77841d3a9ee5bb799b19f3b8fe80dad25180c9c07a597913a19fd1ea4513fac"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2021",
+        "bytes": 1007941,
+        "sha256": "aa4f78c0a0e2bf16d0eb67c3cf93b7fe87948a5448bf301222beb32571062b89"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2022",
+        "bytes": 1399623,
+        "sha256": "6cc4cf02d155aa90e9f46628b3200ac579733000553e7893b69add49d3c17a52"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2023",
+        "bytes": 1418752,
+        "sha256": "9cc8fff07b047bcb0be763ef3a4efa73f583275f042774d7cb73445e5725b0f4"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2024",
+        "bytes": 1560403,
+        "sha256": "478971fcb3fbe1ff7aba44761ea7533cf94b853b32006d433be7c3a91678a318"
+      },
+      {
+        "venue": "nat-cell-bio",
+        "year": "2025",
+        "bytes": 1638284,
+        "sha256": "ab90dffdfba9e4905d616a8af4859dc767380718d8dca708bfbc01f1ce0c7643"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2015",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2016",
+        "bytes": 49628,
+        "sha256": "4dcd4a48e36bf79bdda192cc3894ab23a9eb719af559156a6247c9e0dd5e773a"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2017",
+        "bytes": 1576868,
+        "sha256": "1a8b195c52fb8c20568967e8e015a702fe400e0ccdd09dd287db1f75ce63b6f5"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2018",
+        "bytes": 1508228,
+        "sha256": "74a2f0441be31ad4e06e6e2b8ccae03db620b573d65f2101f8b9ab43e5c9c551"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2019",
+        "bytes": 1166931,
+        "sha256": "2a95090743cd378abbb49af6d20ac1b23946dd1299ff55102b9a9202fccf6edf"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2020",
+        "bytes": 1191732,
+        "sha256": "90c431c48cce4de8e4a6dcafa96bdeb83548b68721be36737a8fe9d42027fd30"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2021",
+        "bytes": 1040557,
+        "sha256": "8d44838a57208def72a6970896b03148028268c68b4ad35c0567fc3efc0d562e"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2022",
+        "bytes": 1329904,
+        "sha256": "16dee0f9336f1c3990eb7befaf36b1ea1a6c502cf02a5a7b6f4460543955f196"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2023",
+        "bytes": 1326607,
+        "sha256": "322d2e031bc28895766a273350723b3d5c3e95e574805c76ba8f51a48851bf7c"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2024",
+        "bytes": 1915126,
+        "sha256": "3f06634e063f10a37c5f3c8ecb1471029c5a92afa5497f72f898ebfb6119e716"
+      },
+      {
+        "venue": "nat-ecol-evol",
+        "year": "2025",
+        "bytes": 1469871,
+        "sha256": "8cca863e93b96764cc026bb00368eb791ac152095c171adf1b670c016923b8c2"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2005",
+        "bytes": 1507835,
+        "sha256": "6d0bbc32d4d7a42a0e024f8061aca396bf51243faf1379c8b518306a513d2798"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2006",
+        "bytes": 1849522,
+        "sha256": "5e45e9728d4610073274557f536050191815c3c53bf92bf49da41dca9ca39cf7"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2007",
+        "bytes": 2401871,
+        "sha256": "1341fce789bf298c224df19332f0343a5ecc694494d7980a9692dffd7eaba8e8"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2008",
+        "bytes": 2777730,
+        "sha256": "f2fa6726d846825880e229af53f1f75e9717783089a23f974135d39c300051fd"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2009",
+        "bytes": 3574518,
+        "sha256": "e422c7fcc3ae2c5416cc38316a6025dc01b0ff53095150186ebc2ae4b19b9860"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2010",
+        "bytes": 4344921,
+        "sha256": "b1858ef7274deb4216326d97e90a2c4b4407d994a778e7ffaa165e7134002124"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2011",
+        "bytes": 3483560,
+        "sha256": "7500beaa88053042366f4bb8db5d05d5c0ae58cec102dd3f82328237ac10e0ba"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2012",
+        "bytes": 4028766,
+        "sha256": "e854bb468d686d8332b16150649e4bc73d622c62e16d979d9e739c427edf3061"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2013",
+        "bytes": 5910848,
+        "sha256": "69c8dc37c8cc464f02e5f353c687b34679b4601095b4bcd88139658ce6b086f1"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2014",
+        "bytes": 3415684,
+        "sha256": "329b562f4c2032420e9918f11ca35e8b3bb7b9af30dc8aa6426c7a2f7345bd73"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2015",
+        "bytes": 4758316,
+        "sha256": "647c3071c6f87270d412cc4d974e837fa7c0db9b90192783b413b31d51c8f1d0"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2016",
+        "bytes": 3802073,
+        "sha256": "bf1d7ddf27dc1363a957c069eaeab74aa33abc9d9426c310ca727310b49a023c"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2017",
+        "bytes": 4972588,
+        "sha256": "98a919c0b12e3f4694f055082ba86115f6582c893be58145b1fe4c2cad7222a0"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2018",
+        "bytes": 3471859,
+        "sha256": "2c4eaa8545c18640f499a6b590b9d734d9db7c039faec8171840c1470ee7dc6e"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2019",
+        "bytes": 2980311,
+        "sha256": "109afbdd0bc1c3103a3c1386b1b2432f29053030e901856abfd6ad9a9125512d"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2020",
+        "bytes": 5422009,
+        "sha256": "e643801e100913397c373c0b443775aa021780a29559c6bb9ce2145d1afbb095"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2021",
+        "bytes": 3421357,
+        "sha256": "532347978d85da87454111f6d050bebd1d447a609f495d2309b19ac9ffa901e3"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2022",
+        "bytes": 4300119,
+        "sha256": "7eb85e15d65b55b9b6934a64936dec0279e821edfb1aaad66d65692355d28e5f"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2023",
+        "bytes": 3830810,
+        "sha256": "c69ad55e407ad46b12479fe175339b885b112ce2a1ea82d725846521a052d8ea"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2024",
+        "bytes": 4511409,
+        "sha256": "e547ed72db6b835206afa2671ef94c4b3052a1e6d647cfa96843c7c6354f2d0d"
+      },
+      {
+        "venue": "nat-genetics",
+        "year": "2025",
+        "bytes": 5440057,
+        "sha256": "6cd3dd890d23655f5a398c98b2af63f5c5438d68a6e061b4ca4b585b5edd7fb8"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2005",
+        "bytes": 753628,
+        "sha256": "369c5eacbaa68b4f437940b4602c20ac30df2f5744f92eaf987f3ff06920fd1e"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2006",
+        "bytes": 731561,
+        "sha256": "b07fa695936c0cddcb09e58b130249fb64dddf7e0cbc77c724cd9f6dc60ae19f"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2007",
+        "bytes": 786691,
+        "sha256": "d29680a02068757a0c7c58a63604723a49f97f6a6729becc89c44ee889f14dfa"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2008",
+        "bytes": 857128,
+        "sha256": "ad3895b052f78c6a2c11601581ff0ea623f691ae510128356b5b52beafc31f4c"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2009",
+        "bytes": 775281,
+        "sha256": "a652a7852bdc152b2cd7bbc3653983053a5ebdd688e5d3400359e21f64af5fed"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2010",
+        "bytes": 746472,
+        "sha256": "a2141a8ca3e489f53d492cce477afc1a0619068c842a099038eeae6d48e9e6bf"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2011",
+        "bytes": 890080,
+        "sha256": "6b33d859dc34ea07ee49fd308e99f5593205a2ac34d4988ea4f01a77823270fc"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2012",
+        "bytes": 945547,
+        "sha256": "3d7bff8c10b57db6233919bdceb3598f9894b5e07759bb70bc2bcfa54a87d1a3"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2013",
+        "bytes": 999037,
+        "sha256": "48384b921da1c742dbed5cc228cad05eaab1a6d692cf187c9a63ddd060d7e659"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2014",
+        "bytes": 898234,
+        "sha256": "a9834030c194d77f21a9858e302f25e96c05a4cae40981691e74414383a9bebe"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2015",
+        "bytes": 1043410,
+        "sha256": "528a17a0469aa2f2dd41b7f3a82afaeb095807d5c5d3204eedda5787f28fa721"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2016",
+        "bytes": 1299901,
+        "sha256": "dd67d25c9cd8f17bf29dc71171815ad2b37c793b6558f9dcae7f6dceabb0b396"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2017",
+        "bytes": 1044840,
+        "sha256": "fb3928e1ad65b0f0c73d7ff159aa787980e9ba4236f3a5f7742ccd3f47378f47"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2018",
+        "bytes": 1079351,
+        "sha256": "29bce0663d8acb57310616a5acd727bbdf100a98ae7a2dfc42847bffeb34516c"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2019",
+        "bytes": 1409365,
+        "sha256": "25b4d86aeb9af7bf61576983df1d83ebb0a3e755080643c9195cd503c4158aab"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2020",
+        "bytes": 1525353,
+        "sha256": "f7b4a9a8095f53f10d3d95c07c9fb449a58724e233445f4d871da743d3220d47"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2021",
+        "bytes": 1593688,
+        "sha256": "cb8bf6e676d14aec68f9e147afcaaa5338044933de5aed92e0d0824a03c16ab4"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2022",
+        "bytes": 1368728,
+        "sha256": "58bd99f0de2dfca52c427b9e71c331951e661edec334cde9e0129b6f55d34eb9"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2023",
+        "bytes": 1634585,
+        "sha256": "950244ef507f10fdd1e2c88f569fc661c6567aa0d740ae3b47a94a7f36ad6a32"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2024",
+        "bytes": 3175133,
+        "sha256": "20b16c5c260f511503e09159015d4014fd2124c1b521a849c2dc4ae82320c6c3"
+      },
+      {
+        "venue": "nat-immunol",
+        "year": "2025",
+        "bytes": 2077277,
+        "sha256": "cd88bd146e421666ad05b4cceadfd9149900eb3b3fdb9c5c1ad4ab9171cd74af"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2015",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2016",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2017",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2018",
+        "bytes": 175073,
+        "sha256": "c24239204c6ea6341a938eb043326696b16bde21935d56e8bdc0e00bf47345c1"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2019",
+        "bytes": 770610,
+        "sha256": "7462380883877975793dc15840ddaef4951d8609f3feae089cc8c78370181d8c"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2020",
+        "bytes": 1076935,
+        "sha256": "31525f800cd1925c98e1fa051bc9673f45e3f1caeb95d90c7a7b7e43457e9573"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2021",
+        "bytes": 1181389,
+        "sha256": "246cac802d55de9b1c75e5060695547aa24513d0b9e4922e80b5a393966852b2"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2022",
+        "bytes": 1265936,
+        "sha256": "0212164fdfa193ff0b4f9fd1dd609aa69b2399c61449e4e48521a82e8ecb9a01"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2023",
+        "bytes": 1413223,
+        "sha256": "2cdebc1e7c0f383de20fa81f82ffc829978b2c2a388536dd72e463511d4d86d8"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2024",
+        "bytes": 1638348,
+        "sha256": "d038b553d8ffc63767f3fb66351a3301fcb06864e37922921742d8aa1175d5bc"
+      },
+      {
+        "venue": "nat-metab",
+        "year": "2025",
+        "bytes": 1780579,
+        "sha256": "7109ed58a5e544bcb1f2d92f8f96b0bbb40d6cca88b2886a812203c2dd6fda6f"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2015",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2016",
+        "bytes": 1485223,
+        "sha256": "c12b169c4225c4f3a36b1ef9e877724d487dda5bfe49daf16da72894614e387b"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2017",
+        "bytes": 1097572,
+        "sha256": "6244d3f8d67ac56bb3f69e06dcd2d2c24e342adf70a303fafcf2fecf20a01552"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2018",
+        "bytes": 1261240,
+        "sha256": "28f1f0da476f15d03e86eff83b7f7e4611623cb16e9ef33a4e99167bd3abb921"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2019",
+        "bytes": 1954794,
+        "sha256": "64851670281c95d80e248bf3eb5ffe11015e0ae36a2c3c11c9b52f8e9c97aa52"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2020",
+        "bytes": 1123721,
+        "sha256": "7ff186bdee2224e7fd4a1ef88a6aee5ce83b14b6d82da55bc1a84d66cb6e4439"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2021",
+        "bytes": 1243448,
+        "sha256": "f7fe1605c11dbda8ab160da25c8d07883395ea2e878ec3ebde851f30ed7cd390"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2022",
+        "bytes": 1765529,
+        "sha256": "ab26c9d81b2c427bf90b818cbb10fd09341a63837b826138b5276b3f54212a8b"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2023",
+        "bytes": 1511680,
+        "sha256": "be8803aa63e60ce8bda0017804f071851f1243615d659cb45c64dcf640cf07b5"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2024",
+        "bytes": 2208741,
+        "sha256": "7a2d7c8c82ad4ac96515d3b4c7842e0bcee371133b4598a527fbeb8040e4c300"
+      },
+      {
+        "venue": "nat-microbiol",
+        "year": "2025",
+        "bytes": 2262869,
+        "sha256": "3b25ef087fdbb15fe8d90f572e6a4fc638fdc46d153077ee9349b28524500595"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2005",
+        "bytes": 961362,
+        "sha256": "6f9a51ef89e7d608f3d4111c8aa6f7f97e5d4edf9fbb045939e01a8edeea5c9b"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2006",
+        "bytes": 876885,
+        "sha256": "3fa100f48304d9a2c728dab86c4f8f2d796e306a6bb3303165066558c0b705c5"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2007",
+        "bytes": 819280,
+        "sha256": "4b51143d542a42a0f3daba2439053241c3228ab2d0efbc15bff6ff35af2ca148"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2008",
+        "bytes": 809181,
+        "sha256": "6cba2d67f6349adf4e8fdf0f827ac6b6b46be2e069c1c7e077cd364236bf8038"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2009",
+        "bytes": 948452,
+        "sha256": "e4539abf95f2a6db51fa398f86767e5764ae56432e7281739fbd0aec635fd0de"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2010",
+        "bytes": 1006045,
+        "sha256": "03595482578f5f6377371e57d70d8de9624472cff480d9e953e2f123c6134790"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2011",
+        "bytes": 1092385,
+        "sha256": "fbba801e7287406a6e87a3193eb2689355286a2fe45a3770b6c2aaaa5ec3d748"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2012",
+        "bytes": 985681,
+        "sha256": "e447d72737c9e0622e43a45ca824915b03b24fe43af5e36b103b18a50d4d3769"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2013",
+        "bytes": 1345835,
+        "sha256": "34f22b627d064731ec52184b9c682cb326520dbef6f2448f37fa5500dfc43ac6"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2014",
+        "bytes": 1235966,
+        "sha256": "fbfa9f5ef72670bd21f41f6b08683f6888a0d31dd0961175cc704aa068ceb768"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2015",
+        "bytes": 1664603,
+        "sha256": "a3578e1d92e88ffbe7f3d7f7257422c5f6f698e5f5e7a21dc3fdd471fba0bd27"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2016",
+        "bytes": 1343837,
+        "sha256": "1ba40e0859aef06fb2b3f302569073cc92a2dd920ce6165f604a4dc2b056c28c"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2017",
+        "bytes": 1223079,
+        "sha256": "fc56d327c2924455cda780876bad5ec76ad2920128c34f4ff656e90948d88193"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2018",
+        "bytes": 1181485,
+        "sha256": "ee2b75040f84a5cb40d77809d5aa191da849f08ba71ce47451fdfdef447b514e"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2019",
+        "bytes": 1562045,
+        "sha256": "261e34bbcf62726836eaacb6af1e2ebb09bddbec78f7ae923a74a77415d6292d"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2020",
+        "bytes": 1125133,
+        "sha256": "aafc2b33a4de01321a5965c11b942f910ee8c881182995994dcd8390e32bf0b8"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2021",
+        "bytes": 1207800,
+        "sha256": "16a9d47d6d9e281acd37703b550446b7890990c92a5c55b90629eac0b948dd13"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2022",
+        "bytes": 1364880,
+        "sha256": "c9b3759fc808945af28bfb4625b721d8fd84073f4b38c28187533dfd90cbcbe8"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2023",
+        "bytes": 1401101,
+        "sha256": "63ac9e4a58d41b9f807c2cf36217d2cb26d22e4879ffe260eb581deee4ed9b7b"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2024",
+        "bytes": 1826178,
+        "sha256": "251eed7c05869a0117b385c7331a4ef09ce088f7957680c64342177f03fd4643"
+      },
+      {
+        "venue": "nat-neurosci",
+        "year": "2025",
+        "bytes": 2822703,
+        "sha256": "ca5dc3570d01ae7ec6c4f0e563f55d995632e3ab9d16cdb9a3cde1076d2fbb09"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2015",
+        "bytes": 719975,
+        "sha256": "a5027d5684be4e39776d41352de577742cd122c573210ff85acb766fbd65b943"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2016",
+        "bytes": 675763,
+        "sha256": "7bbe6ad9a3cbb7089cf33baef4532b2ade56c4847ca8f3b03d257f2b60046c91"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2017",
+        "bytes": 772148,
+        "sha256": "797e434047d71c2a12d4f5d129fdb31350ec66bf29e48b15b098e39654c09597"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2018",
+        "bytes": 844597,
+        "sha256": "a495704e755ced5b40e0802ac8dd3c6a2efcb417dcb9295efe75f7dd507aac4b"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2019",
+        "bytes": 926452,
+        "sha256": "8f3df82df2f278dee7b4fcd52bd060c9bdb91f945d433ce9f6e5679f6a61f797"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2020",
+        "bytes": 852244,
+        "sha256": "f10fd60c4487062af159eab36f9ed46ce966d6e5374c2fd0f1e3c0f3a9b443c9"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2021",
+        "bytes": 940816,
+        "sha256": "d36a1a966a1830a47066f9288a8ab67d2484a77220660bc2ab00d339ce5e35d8"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2022",
+        "bytes": 930457,
+        "sha256": "dea6ba7416609ddab297a1d299039c52bfb2e4499ca3dbd7e7409739657e5138"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2023",
+        "bytes": 1397913,
+        "sha256": "688c36d2860cc7c6492ddf21b342b40934ba67ebfad4a2acc3aa1882eb531471"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2024",
+        "bytes": 1259936,
+        "sha256": "a18aed25087eddce683c7c649c2ca4d4aa251d5df569b241ee20b250d4779c11"
+      },
+      {
+        "venue": "nat-plants",
+        "year": "2025",
+        "bytes": 1407170,
+        "sha256": "32f7eb48331fa5ae366e3fabcd8bf7eb0b348e05747ef06039b8270bd887008c"
+      },
+      {
+        "venue": "nature",
+        "year": "2005",
+        "bytes": 3203857,
+        "sha256": "2af2354d1ac7c35c607a608e91ea96156eaff596aaa82efa26c6657468ffe70f"
+      },
+      {
+        "venue": "nature",
+        "year": "2006",
+        "bytes": 3340840,
+        "sha256": "857f63213ddd278f12358ba7d7bcdc82c594044cb5ab3427c89b945274092499"
+      },
+      {
+        "venue": "nature",
+        "year": "2007",
+        "bytes": 3706240,
+        "sha256": "1664f8f09c3855753d507b68a2cebd55c5426941c1d29603fceacd18d49ed0a9"
+      },
+      {
+        "venue": "nature",
+        "year": "2008",
+        "bytes": 4047302,
+        "sha256": "d028a4d979364da2c7d780a13cb5a4bde8472ce1011f3154c8b432ca73bca54e"
+      },
+      {
+        "venue": "nature",
+        "year": "2009",
+        "bytes": 3327507,
+        "sha256": "ab52ae793d964e9cdadb16c63b557555386a9afcfa319a74e1c0447bee7bc10d"
+      },
+      {
+        "venue": "nature",
+        "year": "2010",
+        "bytes": 5199493,
+        "sha256": "de4cda78c7f15826180763767084f947e1204537f77785ed91cdfdb1281d2fb1"
+      },
+      {
+        "venue": "nature",
+        "year": "2011",
+        "bytes": 5437777,
+        "sha256": "e98649ea4692d4235eaae4d47003c90a55943b1f7c58a8459358a43c009d9d54"
+      },
+      {
+        "venue": "nature",
+        "year": "2012",
+        "bytes": 6820941,
+        "sha256": "f6f2211ff86a629f11c86a1e7c599d88dbeed7985cc758f05e6666a38975bd36"
+      },
+      {
+        "venue": "nature",
+        "year": "2013",
+        "bytes": 5773415,
+        "sha256": "e7d720583565332dec79a1f00deede8295ea3d8b1170ea5eb5a45e8580357644"
+      },
+      {
+        "venue": "nature",
+        "year": "2014",
+        "bytes": 7756105,
+        "sha256": "76403e9a73fa0a34b31334a5f49aa36928dfb9aaf1101d24b5e0a48012729ecc"
+      },
+      {
+        "venue": "nature",
+        "year": "2015",
+        "bytes": 6974627,
+        "sha256": "36cc81d8ea9f4a36ef42e8736feffca139473a557eb7a60be048fd5f1e7cc654"
+      },
+      {
+        "venue": "nature",
+        "year": "2016",
+        "bytes": 7040179,
+        "sha256": "277c02e3f72615e626fbe8defba067a98d1e83400d09a0cd52389c456523a330"
+      },
+      {
+        "venue": "nature",
+        "year": "2017",
+        "bytes": 7219705,
+        "sha256": "7f1b914a60d503b9f0c1ebf01a71d466de20b9204da423ca67a290672fe260b6"
+      },
+      {
+        "venue": "nature",
+        "year": "2018",
+        "bytes": 6432279,
+        "sha256": "447b8bc9085e8cb279f38d059b872b8e085690f3081729291ca78b31de6e25aa"
+      },
+      {
+        "venue": "nature",
+        "year": "2019",
+        "bytes": 7007283,
+        "sha256": "18892ab797ce9d870840a07b7aa86d342fb5e70fd41bfb38d7b0e3525292ab6f"
+      },
+      {
+        "venue": "nature",
+        "year": "2020",
+        "bytes": 18273678,
+        "sha256": "a5df06545d3ce7293825e42f258ef8133e9e2281b22f7a9845cdef0ff5514065"
+      },
+      {
+        "venue": "nature",
+        "year": "2021",
+        "bytes": 11247942,
+        "sha256": "f930343b02f4eb2d9bea8ac511387aa9f53c54cf73ece8b2121df60ffecf9c87"
+      },
+      {
+        "venue": "nature",
+        "year": "2022",
+        "bytes": 10957798,
+        "sha256": "1d816d18afd9e7cb6caa77fc7c411f858107acbc3f4b63cd72ed87ef77b22cc1"
+      },
+      {
+        "venue": "nature",
+        "year": "2023",
+        "bytes": 11940144,
+        "sha256": "23eb562ccaae8bd67fc187e7b4a3aaaf0bf642f770aa8d0b0dc516f58eb6400c"
+      },
+      {
+        "venue": "nature",
+        "year": "2024",
+        "bytes": 10574286,
+        "sha256": "6a24ca0e3c8e872d2b7901f8e42a5d9459c7a28663d408e9b4767e2859e74ce0"
+      },
+      {
+        "venue": "nature",
+        "year": "2025",
+        "bytes": 12496647,
+        "sha256": "19711dc70bfb39c2128cce2bd8927710c273cd039f193f4e06f3564b82812b4e"
+      },
+      {
+        "venue": "neuron",
+        "year": "2005",
+        "bytes": 1181205,
+        "sha256": "d00daee4530a9b6549807a782a430515bd984f9176d3a960fea030b9ea6e2633"
+      },
+      {
+        "venue": "neuron",
+        "year": "2006",
+        "bytes": 1171232,
+        "sha256": "f4463145d4af2de8066d8a2109cbe99b21c7ba91ca237c62917c417dbf7ae66a"
+      },
+      {
+        "venue": "neuron",
+        "year": "2007",
+        "bytes": 1114330,
+        "sha256": "5f9177241f2e4a2bed3ec153555d8ec550416d27a02de915b3e12dcf5a49e9f3"
+      },
+      {
+        "venue": "neuron",
+        "year": "2008",
+        "bytes": 1281079,
+        "sha256": "e86abeeb86f19bbc07118de0a71b44c3abba9262261fb3e0a8302f12e0db70d2"
+      },
+      {
+        "venue": "neuron",
+        "year": "2009",
+        "bytes": 1055395,
+        "sha256": "c41fc7e008fc7f61f42ca370c8aa020c637576a8f1586be7b5a6847a3f6ef457"
+      },
+      {
+        "venue": "neuron",
+        "year": "2010",
+        "bytes": 1247582,
+        "sha256": "ea1ae861f1631c1e0cfa4242ae0e3d3e638266494e37fd1c95f653aaf5e577f1"
+      },
+      {
+        "venue": "neuron",
+        "year": "2011",
+        "bytes": 1442250,
+        "sha256": "0139eabdd740b1e0a1d6036f2adb1e847fd17658dcd3c148dc5d642a6f3a88b2"
+      },
+      {
+        "venue": "neuron",
+        "year": "2012",
+        "bytes": 1449003,
+        "sha256": "dd988fd6ab80c18aab589cba9b7251c518c7cff2ff90da394ef111ad1ef48ea0"
+      },
+      {
+        "venue": "neuron",
+        "year": "2013",
+        "bytes": 1721535,
+        "sha256": "ba96e30bd804764d4b9dc291a1a7137deb4eec88de371648740a93d0db1a04f0"
+      },
+      {
+        "venue": "neuron",
+        "year": "2014",
+        "bytes": 2344264,
+        "sha256": "00e27d4763aca7bd6853d42f0c9eec8cfde943cc6c375832bc3a5c3613e928d5"
+      },
+      {
+        "venue": "neuron",
+        "year": "2015",
+        "bytes": 2008381,
+        "sha256": "4502ec1371e5d83fec17cd57e65d736b7d9420be5bf3d8213e81a6e955f7c8a3"
+      },
+      {
+        "venue": "neuron",
+        "year": "2016",
+        "bytes": 2473718,
+        "sha256": "21865fba56d7cded5180a4ceb781bb6a950af89b883c4d092f7d32e8c759ebf8"
+      },
+      {
+        "venue": "neuron",
+        "year": "2017",
+        "bytes": 2253212,
+        "sha256": "e40fb3355a6c9747f4f27fdcab7debc89711bf30d2c757da8fad538f00dff458"
+      },
+      {
+        "venue": "neuron",
+        "year": "2018",
+        "bytes": 2856106,
+        "sha256": "f51161aaca6cf93e4787d0b75b9b1dd7920330acc865ea754f9613e6298610bc"
+      },
+      {
+        "venue": "neuron",
+        "year": "2019",
+        "bytes": 2424481,
+        "sha256": "cf6596f10feca0e7e595026432788d8aff807fae5748abcc91a858ae8361ec1b"
+      },
+      {
+        "venue": "neuron",
+        "year": "2020",
+        "bytes": 2473288,
+        "sha256": "9434c8ff691727d97a94f07f5a07cb02c88228c29c8bab607a821d6cc0ee9590"
+      },
+      {
+        "venue": "neuron",
+        "year": "2021",
+        "bytes": 2044917,
+        "sha256": "f51cd8c82e14b24b49875e21ecbc1ae1beb4ab5bea9472177a50059effba2132"
+      },
+      {
+        "venue": "neuron",
+        "year": "2022",
+        "bytes": 1828387,
+        "sha256": "e273f6d3ea4b25c7fec0ea73a448c3991934ca54e21e6c5cba56a8e940329225"
+      },
+      {
+        "venue": "neuron",
+        "year": "2023",
+        "bytes": 2099054,
+        "sha256": "98781c0d9be8d59cabba720e6f480500e524831885538db5b9f4dd76419f615a"
+      },
+      {
+        "venue": "neuron",
+        "year": "2024",
+        "bytes": 2106816,
+        "sha256": "a301195a10f6392d6d7c050854bec30392eb2ae2b80fe91b01306e33d2edf4b7"
+      },
+      {
+        "venue": "neuron",
+        "year": "2025",
+        "bytes": 2143811,
+        "sha256": "3d044f4d1e3cc5803db2087e29b9fe55b0757eadefa2f43b8ecf921171352130"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2005",
+        "bytes": 707871,
+        "sha256": "3e8ff215a2108a3a8bce6644dda14a2d74cb7e5277b86800cc2db7754da36b1f"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2006",
+        "bytes": 635098,
+        "sha256": "fee9660d893d28a94d3f7f19d8ead04b03b97e2d8bf79586ce2ec277bf1b0ec7"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2007",
+        "bytes": 782323,
+        "sha256": "7c1915bbeac803c18f43ba8cc2f5acd0263942426edb7b795c78cc78f7d61d58"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2008",
+        "bytes": 756033,
+        "sha256": "b0a22b52118709daa8ef44d6bc3614e8a14e8c87476026b7fe73eea458405fe4"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2009",
+        "bytes": 856143,
+        "sha256": "39b65e631085a01be85daa684b2238851ad17bc7744e716976698aec3a35ce7f"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2010",
+        "bytes": 1065534,
+        "sha256": "3e8c0ab86b74eb0baec10e62fd3192f9a0f8830e01194251b724ab5404865bfa"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2011",
+        "bytes": 1077019,
+        "sha256": "c8f055e9ece6d3fa650f909efac990d4ccf88fbfd288cad0011e7077e2ea6b3f"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2012",
+        "bytes": 1013994,
+        "sha256": "40a780c25d79eb5db09250fefdfb4ba1d2781f39f43b7546383e095836ee7170"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2013",
+        "bytes": 923809,
+        "sha256": "6ea1100702b53b49456d5eccfcd314d5579ccccc5c9a1785b91ae52363d97a8b"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2014",
+        "bytes": 687291,
+        "sha256": "e4978d53caec4a413098ac31ee81ad1009745829d5626134e03572c39da1b958"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2015",
+        "bytes": 841096,
+        "sha256": "adac9aa16a33927bd373c26150921f67a1742f9b90a6d5ea78fe60494315e63c"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2016",
+        "bytes": 799894,
+        "sha256": "088b07cd2281d2075ffb0f3b2313ee24e9a056f74bb271d2a5efc7e55d133ed2"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2017",
+        "bytes": 809563,
+        "sha256": "5661666872bf5631b694fa9e8b86773deec1476a7b12e82074fabc5f4153760d"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2018",
+        "bytes": 703647,
+        "sha256": "96408bb0002cae422283d77552b791e79ebf78db1a153f239c6000ff2b2fb850"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2019",
+        "bytes": 631546,
+        "sha256": "4bce1ad75b0ccd69ea8966edfed399c17ba63c2729865b232687205f25bbec14"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2020",
+        "bytes": 872902,
+        "sha256": "cf1efb90473b81235094d3ba0e06e0441922583a2015fbc71c9b2cbc2f0660cf"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2021",
+        "bytes": 642217,
+        "sha256": "ff282a4c3795bc229e20b31c140bbe66459d62639e8a2a6c681ad969135aebc6"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2022",
+        "bytes": 860022,
+        "sha256": "b4a830cc447b7f95507d68e42d44a98cad2804e88ff53ee2bb21b6bc09659261"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2023",
+        "bytes": 1151946,
+        "sha256": "7ba897f4e58877ef9c92b3d9f5109b23668d6f727a43f7da4a6ae76f5db4a18d"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2024",
+        "bytes": 1551531,
+        "sha256": "43265aafaaad9d50737e85cd945c74aa9175af13a87212aa9978f66d67d85dd1"
+      },
+      {
+        "venue": "nsmb",
+        "year": "2025",
+        "bytes": 1404340,
+        "sha256": "0c99e485de46d1a5084d09ade6941822105bb846ff17ae1f893b834c4a6b711b"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2005",
+        "bytes": 1026109,
+        "sha256": "15cac053f6c26f2e360703279dee70ee01061201ac620386de5ea45a4b1aa704"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2006",
+        "bytes": 963734,
+        "sha256": "52993b6e433f15e09f66b2c62f676df1cb2ce664df0209019daa17cc3be8621a"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2007",
+        "bytes": 1276355,
+        "sha256": "dc410482757f2ff4a3cd689a97b31a3a6c3d2c4be23e459cbdeb5873ba236d3e"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2008",
+        "bytes": 1048234,
+        "sha256": "c682af9acc4dab5456fad6ccc71b9f711f4ac4a2f61975f2929215fbf1374cd4"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2009",
+        "bytes": 1263884,
+        "sha256": "4e61a0f675c476769e8c9b138cf9c0f773263ed8c79970f4b79646a4d8f046cb"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2010",
+        "bytes": 1318063,
+        "sha256": "646f3a26026b82ea9e3c6f55aae60a859ba7ae457ee51c77f937b7a39165de34"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2011",
+        "bytes": 1594117,
+        "sha256": "e6ce07b2093553a4ffc7791a64375a685b265c227b7d564a1d1f334680f41c7b"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2012",
+        "bytes": 1849705,
+        "sha256": "e5d59f9732e2406dfece3695b478d53130fdbfd3fd5f1d0c27b8f8c7ce9a5456"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2013",
+        "bytes": 1959642,
+        "sha256": "21f9298a8d5e3ef5dda7cc903cfcd379fd8f36f06c044452bd7c58a02f1955e7"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2014",
+        "bytes": 1791971,
+        "sha256": "558315a64cc04b06f5ebbaf4767ac78a926246ca70dda68819bc256c1179c83d"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2015",
+        "bytes": 1374119,
+        "sha256": "bf6be2734178b8328a2474ec06b929c59835c3a204d7be63a540c33665e77838"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2016",
+        "bytes": 1162361,
+        "sha256": "25a994303eb4989f71dc2ceed6465560c4d233fcf8df4c0d93ef1a156fcfdcb3"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2017",
+        "bytes": 1289958,
+        "sha256": "d30c884ffed335b087f7a67d3c2ea2cd28aa41e8359b04d79d8a218df4c0fb73"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2018",
+        "bytes": 1188099,
+        "sha256": "8c842b7834615b0233635f78b39f47fb49ef113f5d1be63bd318d67cb6efa443"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2019",
+        "bytes": 1386613,
+        "sha256": "19caa93cb6ef6c3234e1b57622325aeb79ca1b0cd812723af9e6ca6955bc3160"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2020",
+        "bytes": 1570639,
+        "sha256": "5386020475dd22543716a6738b19cd0b40202a3fba774fd8f276cf30df82bbc8"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2021",
+        "bytes": 1264388,
+        "sha256": "bf5e153f4221b2d4277e386b5777f8757c1c8d7d42398248e14fca304d49e45c"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2022",
+        "bytes": 1719766,
+        "sha256": "5dc46c4e76cb90fb87a4ca2b5a8e67eaadecac4120d83fa50d6c184308ae4401"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2023",
+        "bytes": 1597837,
+        "sha256": "a683c8ea61aa8b9021f029e2e76772ca24e45c4124d2de3fe70af2549da2a102"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2024",
+        "bytes": 1790994,
+        "sha256": "c02bc7c0bce0517d679b8ce69b2b9fd6435fd3ae47ae9716c9b36c2af1487f04"
+      },
+      {
+        "venue": "plant-cell",
+        "year": "2025",
+        "bytes": 1468844,
+        "sha256": "c134ce043693cb211bb1dc2bc93dc2c654cdbf0050d4359810079ff2c3d450b5"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2005",
+        "bytes": 770381,
+        "sha256": "2bffe14b7832c88127359e0f17e1c88262f16d3dbafcf693714bd3e6a093af43"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2006",
+        "bytes": 240898,
+        "sha256": "70efc98ae8d8c03cb476d00c388a41da900f4167d027d9334d3632c52150969f"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2007",
+        "bytes": 289051,
+        "sha256": "037bb8768826d9cedd4fab46149859acda4c04c89009b1f0884574c8c1b96213"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2008",
+        "bytes": 703803,
+        "sha256": "a945ff5375ef1e383e2d510d21a9af5e3b2fcb6877f9ff9c68151fba521e693d"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2009",
+        "bytes": 1035058,
+        "sha256": "69615c9be312f47688456046c6787d6a14e72b48cca7dcfaadf78443944ab4de"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2010",
+        "bytes": 1250632,
+        "sha256": "f96ca7a18818ec0e89c63637a9a569d6829ce21da8d25eb60381401936489c4d"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2011",
+        "bytes": 1256806,
+        "sha256": "ffa2011f41d2d0b9433c1f2201344962a386e893ab38da83fef6f40afa79a744"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2012",
+        "bytes": 1611942,
+        "sha256": "6f43b5fa721714b362622c096baf3473358be9edafa0ef8aadd5a3f85692c7ab"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2013",
+        "bytes": 1828724,
+        "sha256": "48d0c712ba3e47341c8f339e22ee7e8257edd04d30accd1be2ebca44f85b9482"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2014",
+        "bytes": 1990417,
+        "sha256": "8d03e8c141c37c09c01016af5f367527cfa1959aea9ad95c7d8fd2fb143d9807"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2015",
+        "bytes": 2065384,
+        "sha256": "037c7e0017256e0580eaaa06601b45faacf252c15ed616e96f2cce27242914bc"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2016",
+        "bytes": 1792247,
+        "sha256": "e5a07dac44e81010b8c781f69974a54f655504926bc616036b63d1f219f8df49"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2017",
+        "bytes": 2049002,
+        "sha256": "411c0ab0ce7312281d6ff90fa6190101ca5ce6f4f71a8d791383b6456913ce43"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2018",
+        "bytes": 2023031,
+        "sha256": "56dec7f6013783ae7c89674db9314a00ad68ee7593143782f5204e96e35df432"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2019",
+        "bytes": 2269023,
+        "sha256": "bdc564b87272e967278dda0a897ba1d3214b277eced0ec4c945a1f22d309496a"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2020",
+        "bytes": 2720236,
+        "sha256": "ec3b6d8f751aa85406f9010b66b9aac0b46d9f740dc7cdeda1dd178a90fa7a53"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2021",
+        "bytes": 3778677,
+        "sha256": "fbc27c02f18bfb1da77168c8363bf854bea69809672b584a1f5eab5c77de6b2c"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2022",
+        "bytes": 3110930,
+        "sha256": "9134be8ca27d9a99945670bf90cc89a274a7251cef86939dc1bd8640bb06eda9"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2023",
+        "bytes": 2686408,
+        "sha256": "d40cffe2ee6505692b136be2679b757295a8ca9135cdf3021cbeeb648a82e688"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2024",
+        "bytes": 3033908,
+        "sha256": "8569cf8ff7ef25a6e629f0bd55621540ce7d339c1827c6d913c6f3cccf2b09e9"
+      },
+      {
+        "venue": "plos-comp-bio",
+        "year": "2025",
+        "bytes": 3246035,
+        "sha256": "a089cf70830cfd08c861e67902219fc1fe9f14b1ea4c206dea106daee83e605f"
+      },
+      {
+        "venue": "pnas",
+        "year": "2005",
+        "bytes": 19435371,
+        "sha256": "d5da8a72c96b41f4410a94fb4b45736f51efae316036bb8531a60359e061c6fe"
+      },
+      {
+        "venue": "pnas",
+        "year": "2006",
+        "bytes": 11920868,
+        "sha256": "907a74d1cb5e4204d8f29fa46a8beac4e272af8b751f113657015c083c7498fc"
+      },
+      {
+        "venue": "pnas",
+        "year": "2007",
+        "bytes": 12065545,
+        "sha256": "607d5928edb0e49ad515ca8b2d364ce7139515aa0aafaf7178419e01ddf95e1f"
+      },
+      {
+        "venue": "pnas",
+        "year": "2008",
+        "bytes": 12335569,
+        "sha256": "6821995cffc51f707ffbdb6d2b6cf3dcac6892d2cab5c377f15af9daa0e012b5"
+      },
+      {
+        "venue": "pnas",
+        "year": "2009",
+        "bytes": 14036279,
+        "sha256": "b8f4232100446b52c0b9331ba8c5cbcc6a560bd23bf90c3d46560ec72235afae"
+      },
+      {
+        "venue": "pnas",
+        "year": "2010",
+        "bytes": 13937570,
+        "sha256": "87c2946ac4301241aaa549dd9a24150b1c908c6e7ecf98d3c00ac2f70f9d0611"
+      },
+      {
+        "venue": "pnas",
+        "year": "2011",
+        "bytes": 13619070,
+        "sha256": "ed54b202588578eb2603b48ce90e198c341e20d1183513a3c53d5d7344d5f1ce"
+      },
+      {
+        "venue": "pnas",
+        "year": "2012",
+        "bytes": 14923905,
+        "sha256": "37c699775da6c9627c88a30739f90b2590a50d7b62b8bd6a251b7a41efcc195e"
+      },
+      {
+        "venue": "pnas",
+        "year": "2013",
+        "bytes": 15958203,
+        "sha256": "fdf0d1a108476802b2da22888b6115e2b64f87639a752182f6139b98156df533"
+      },
+      {
+        "venue": "pnas",
+        "year": "2014",
+        "bytes": 14454229,
+        "sha256": "f368ebad5f245d94eabd82fbc85a8582d812aff23e4388bb079b653aca187dd2"
+      },
+      {
+        "venue": "pnas",
+        "year": "2015",
+        "bytes": 14015316,
+        "sha256": "ede7df07c6db22c4b775509c3c37f41b263609b169ee11c59a4fce4fd05a5d30"
+      },
+      {
+        "venue": "pnas",
+        "year": "2016",
+        "bytes": 13690143,
+        "sha256": "84f01affa69469c75f78c23d98185d735f3822cf10b3f3864ba2ea387e024dc7"
+      },
+      {
+        "venue": "pnas",
+        "year": "2017",
+        "bytes": 14140466,
+        "sha256": "4588e706d836966bada67d399fc8297e4d84adfe38ec33c17c4c6b26b1924fc9"
+      },
+      {
+        "venue": "pnas",
+        "year": "2018",
+        "bytes": 14172402,
+        "sha256": "f5cb197f49643353156b426d652836fd7cee2056069df6d91a51f190f129cc63"
+      },
+      {
+        "venue": "pnas",
+        "year": "2019",
+        "bytes": 14912325,
+        "sha256": "7514392ca15ff1d54798e6450cd1f4f0ab8b5faf955e73df72d8665d2945c51c"
+      },
+      {
+        "venue": "pnas",
+        "year": "2020",
+        "bytes": 15352042,
+        "sha256": "8f5cb5d583fe4b3bea709596d45fb90e50328d64652b0b62417e5785753538a8"
+      },
+      {
+        "venue": "pnas",
+        "year": "2021",
+        "bytes": 14884784,
+        "sha256": "80240bc09daf0ddc2e23f555f44b01f3b2943ee78258d1ca7d92e4926193e732"
+      },
+      {
+        "venue": "pnas",
+        "year": "2022",
+        "bytes": 15353564,
+        "sha256": "bf1c79412a97a704c3ef5c23d85873a396f67e2b14e4d524ff6dfcc50aea3c80"
+      },
+      {
+        "venue": "pnas",
+        "year": "2023",
+        "bytes": 13845372,
+        "sha256": "5a35e933ba5232e4362eef43b17829ddccb63a0ac1c20f51e6c016cc77ee7fff"
+      },
+      {
+        "venue": "pnas",
+        "year": "2024",
+        "bytes": 13908829,
+        "sha256": "8d19de094fc26e4fdc8c593d472493a10cd3296410d907802263cb79c76eb1fe"
+      },
+      {
+        "venue": "pnas",
+        "year": "2025",
+        "bytes": 17596440,
+        "sha256": "0acbad0a5ab3c155d15ff7a13c582b2d77c2b71815f5d35fc41ad7c3b0c930db"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2009",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2010",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2011",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2012",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2013",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2014",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2015",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2016",
+        "bytes": 277281,
+        "sha256": "73efc9dbd7205f140e8f059be8daa08b8154e6a16c2e0bbc5f5708205c76a5c5"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2017",
+        "bytes": 725438,
+        "sha256": "627b7db2c99c7353d3a83b3b3c380134924ef3d07c16fe0a4d5198bfa7b74833"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2018",
+        "bytes": 671712,
+        "sha256": "3a4adcdf3508db0ef45104d025833f6789a02f0dc13e1e45afad15b052990b5a"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2019",
+        "bytes": 691522,
+        "sha256": "8acd1a90cc3115a800bed7c8b6b3da9d7a3f387989c1ed4fbc7deb3a0fa1c1f5"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2020",
+        "bytes": 1003907,
+        "sha256": "2ab491e22207e75cdfb6a330d8e6f765499ef70b6f60390d6db0a9baaf1e96b0"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2021",
+        "bytes": 2203495,
+        "sha256": "fad0364d49efd9acf2a034d8131ff40bf5521b893c67c6d69366f4b1bcc1bae8"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2022",
+        "bytes": 1688980,
+        "sha256": "028e3d49de9ce1e9b0c16c8c767dfebea04ac4c4d5d97b7da6054b73fa2b6881"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2023",
+        "bytes": 1405780,
+        "sha256": "878281ebdf6d01a09f8fe8dd9b12e324fcca0fd4f7c36e685db01bbcae7af5a1"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2024",
+        "bytes": 1614931,
+        "sha256": "c969daf02da5e03ef99588de21b6d238042a32ab549d4a703c95158976c23d5c"
+      },
+      {
+        "venue": "sci-immunol",
+        "year": "2025",
+        "bytes": 1553134,
+        "sha256": "93b8af790a9bcd8476771991281f34a5f035b131a310cb4220eb6905504e8f3b"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2005",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2006",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2007",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2008",
+        "bytes": 0,
+        "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2009",
+        "bytes": 239719,
+        "sha256": "4fb7621518a23e3fcbddd1f80e3db9040cd9edab85e750ad27ef0d7f4451e0a7"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2010",
+        "bytes": 1009628,
+        "sha256": "ead8a95b88a94c63f14cd5ea4809078114417b7441fd80de12da2b8a00064191"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2011",
+        "bytes": 1245388,
+        "sha256": "d047964bf14dced25415932d0d14f9e5d1b790c3e194e3131ae3818fecd80bc3"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2012",
+        "bytes": 1524574,
+        "sha256": "fc68fd4dfaade673a36e4a7f249d86e09c3c4e3f61b32a5865b433665e25ac5c"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2013",
+        "bytes": 1554257,
+        "sha256": "aa05df35e6523b27d8b6370ca4e3c1cb222e28295c19844cc0edfa433e46fd7e"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2014",
+        "bytes": 1859939,
+        "sha256": "e812d254c42990fa5d0b3d17939f6456ed3063fa24ae7572a89132b353f1835d"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2015",
+        "bytes": 2129393,
+        "sha256": "88affdbe782c01641ba70078a0d5eee5d3fe464945e0a82090b503936687fa10"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2016",
+        "bytes": 2107586,
+        "sha256": "eec478660db4bbfae88ae38ab0417f9b5525a98b52426ce72dce8a58a7f98112"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2017",
+        "bytes": 2471731,
+        "sha256": "57fd4019110668be52c5084d71fffc596165a079df553fb3d8dff31d171bad07"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2018",
+        "bytes": 2450593,
+        "sha256": "174e97fa5a136c322c5d3552c087b75bb89dd5c03b4ce599a304666271a6cca9"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2019",
+        "bytes": 2922007,
+        "sha256": "df43adab6a2fd61d7742add71c959b662811bf3582d9ec391397f40e70029aa6"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2020",
+        "bytes": 3303472,
+        "sha256": "b60e56b99a38769fb21f315f475f2ac7b97d8ad0798fc2bf73cc137625572dd1"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2021",
+        "bytes": 4393305,
+        "sha256": "8a01738a2bf2edd888dae13c110e8361a96da42002381c2d7205bb54c2089b0f"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2022",
+        "bytes": 3853087,
+        "sha256": "3ca4613f62adcebf6128638c39114fe4f39a53c3d3ba1a238af2de0c1db0fda1"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2023",
+        "bytes": 3054797,
+        "sha256": "f99af41d0f26879cc04b4637de71eb4723aa928b3a89027fa3c6e3b3ffff8cfc"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2024",
+        "bytes": 3692522,
+        "sha256": "8917da62d52375f63e5d198843944f17264498fad5efd085155e55b219360c9d"
+      },
+      {
+        "venue": "sci-transl-med",
+        "year": "2025",
+        "bytes": 4113814,
+        "sha256": "1e05500bfbf5894aae13ae17f80596d79f2a53b0c08d6c4c1051384c59590be8"
+      },
+      {
+        "venue": "science",
+        "year": "2005",
+        "bytes": 5656683,
+        "sha256": "12f21dffefd39202b06fe45082a5350382c875d170c255811b82f459895bc0dc"
+      },
+      {
+        "venue": "science",
+        "year": "2006",
+        "bytes": 5650878,
+        "sha256": "b8dc669f31738e67692e94b68b3b86f458297f0b965c88ec526780c25e28d4b5"
+      },
+      {
+        "venue": "science",
+        "year": "2007",
+        "bytes": 6995587,
+        "sha256": "9ce7f8f2a1dc12448a7eafa2031ab673afa43bfb0de3137ec1103bd8a2b70603"
+      },
+      {
+        "venue": "science",
+        "year": "2008",
+        "bytes": 5501697,
+        "sha256": "19091419e4a54f6f13e3990eb45bb11bbd02b707f249a1dfc41c441ede089c8d"
+      },
+      {
+        "venue": "science",
+        "year": "2009",
+        "bytes": 3951876,
+        "sha256": "358e3e16baaffbc3b4a90e150259b44a4eb3c2f7d40cd1d0fc23e0da8cac5543"
+      },
+      {
+        "venue": "science",
+        "year": "2010",
+        "bytes": 3062417,
+        "sha256": "083345332644e8b699207d4acd7bde901574016c18c293711f2122b71ac8d610"
+      },
+      {
+        "venue": "science",
+        "year": "2011",
+        "bytes": 3037304,
+        "sha256": "36ce8f445554c54adbde1242e57f0a10b0daca1b346d9916a319d84f611f8b75"
+      },
+      {
+        "venue": "science",
+        "year": "2012",
+        "bytes": 3076420,
+        "sha256": "1ae912af0d593c9b56917991f4cb12a335794aefcd028e5dd159ddd573a711bd"
+      },
+      {
+        "venue": "science",
+        "year": "2013",
+        "bytes": 3260372,
+        "sha256": "ba3970ad0f92d80c01da113c7c5afc75e1c794c6ad57ec6119bffeac9499df6e"
+      },
+      {
+        "venue": "science",
+        "year": "2014",
+        "bytes": 3901111,
+        "sha256": "14d52ddf8cab81cc0937610a88e945f71358ffb9276a375cc004cf367da651c0"
+      },
+      {
+        "venue": "science",
+        "year": "2015",
+        "bytes": 4271354,
+        "sha256": "ed4393d544cdf4ae3e210970b3a0240bd1b60d6f174edc8fbee9a81b621bfd31"
+      },
+      {
+        "venue": "science",
+        "year": "2016",
+        "bytes": 4053939,
+        "sha256": "55ad2eb4d6acda7fe69f19fa1a8b3fb953407da84d1f2e31ae94a02a7ec2985f"
+      },
+      {
+        "venue": "science",
+        "year": "2017",
+        "bytes": 3896304,
+        "sha256": "f4226988a06ccbe8606d9d396ad8b9adc08a970800f7d566a9d342bc14742440"
+      },
+      {
+        "venue": "science",
+        "year": "2018",
+        "bytes": 5005166,
+        "sha256": "75748924e882f31f995218d3df70f36870e0379e0e86a30995b68ea3f1978aeb"
+      },
+      {
+        "venue": "science",
+        "year": "2019",
+        "bytes": 4854498,
+        "sha256": "8cb181ccaa4c171df6647478b773a3da6f1bbb5639f7215b152d143481d19810"
+      },
+      {
+        "venue": "science",
+        "year": "2020",
+        "bytes": 6201728,
+        "sha256": "8c6ee4d2fac81c5e3f3d39ba05bc77cdaa3eca2103db20251f6b411bb9312f2b"
+      },
+      {
+        "venue": "science",
+        "year": "2021",
+        "bytes": 5435341,
+        "sha256": "da4f06716a3d688fbfd897ad79a2208cbb9178b28759c17362d806aa5affbcbf"
+      },
+      {
+        "venue": "science",
+        "year": "2022",
+        "bytes": 6148801,
+        "sha256": "9f19f8a502f97cf6dbe52d0125ddaa8ba0e34cf4c43fc5742a51eaee741d72a5"
+      },
+      {
+        "venue": "science",
+        "year": "2023",
+        "bytes": 4472752,
+        "sha256": "7e5a8adf46c67783302726cd4ff87b2ab484c55c6161441e4e9f668c170c5091"
+      },
+      {
+        "venue": "science",
+        "year": "2024",
+        "bytes": 4853516,
+        "sha256": "4fd28cf88f786b9ab2754cbc64d86882f117e20317473968c734615faf446da2"
+      },
+      {
+        "venue": "science",
+        "year": "2025",
+        "bytes": 5697617,
+        "sha256": "2a6340697fedd46496ab2e9e71c088425a2e553761a643402f92e53f0dd932b9"
+      },
+      {
+        "venue": "structure",
+        "year": "2005",
+        "bytes": 609874,
+        "sha256": "223e7ea44ade93da26a6b5dcd14bf269799554d49e43d4bd26614079601d7d1c"
+      },
+      {
+        "venue": "structure",
+        "year": "2006",
+        "bytes": 682293,
+        "sha256": "bc8e0886a693ec7bfeee5a923d854407ee1689058d40e2b2e5da48f892172a53"
+      },
+      {
+        "venue": "structure",
+        "year": "2007",
+        "bytes": 574323,
+        "sha256": "d77f250e2e0f255a929216dbc03b14ade61328a6a21ce3763fc4d57d29b84666"
+      },
+      {
+        "venue": "structure",
+        "year": "2008",
+        "bytes": 709082,
+        "sha256": "f1ba26e7d1e8998cb0fbbb3dc260e87b6c33d478cac5fa22f9744ebc57aa2fa4"
+      },
+      {
+        "venue": "structure",
+        "year": "2009",
+        "bytes": 700608,
+        "sha256": "44a8e05df5bf416a6e182e86a264e0a6a57374eac33e9391e595c95ddec1e79d"
+      },
+      {
+        "venue": "structure",
+        "year": "2010",
+        "bytes": 738151,
+        "sha256": "0b6b473b7eb88dc98dc5ecdf56ef72bf612393f2fa76b7e2b7529b4d553a3442"
+      },
+      {
+        "venue": "structure",
+        "year": "2011",
+        "bytes": 751676,
+        "sha256": "1d3b39734b23a315f8e48633c6c13a0e39b4a0a78e982ac6f20ef7b886bb07cb"
+      },
+      {
+        "venue": "structure",
+        "year": "2012",
+        "bytes": 1067572,
+        "sha256": "742d6b1f67794799b796393fd5e568d668dbc5aee75128cea0eb692a1e9b101f"
+      },
+      {
+        "venue": "structure",
+        "year": "2013",
+        "bytes": 994370,
+        "sha256": "45e8ddd019f25e22f5e2daf9651b13f25bdc771a0fd5363dfae1f449c6d81da2"
+      },
+      {
+        "venue": "structure",
+        "year": "2014",
+        "bytes": 910262,
+        "sha256": "b9b658a4137c08a08fb7dcb76969f4843ad46c449833a5543de170a9466ac5c6"
+      },
+      {
+        "venue": "structure",
+        "year": "2015",
+        "bytes": 1111608,
+        "sha256": "82e2286c5f66aadf2274367810a11a703f6f5a2f34f4c70b00718906095a5f35"
+      },
+      {
+        "venue": "structure",
+        "year": "2016",
+        "bytes": 1099606,
+        "sha256": "e8ca992e0ebf9c043ab70e44fef3531e032daa45437640381f9bef331ea212ea"
+      },
+      {
+        "venue": "structure",
+        "year": "2017",
+        "bytes": 1075945,
+        "sha256": "e4faf89f292b78ac33a0753523d47876add0cce1300cb52c6009b98817cf662d"
+      },
+      {
+        "venue": "structure",
+        "year": "2018",
+        "bytes": 1000457,
+        "sha256": "00ee8a8246edfe308a1b1eed7e6b1fed137c26c3bf96f667a939215429318473"
+      },
+      {
+        "venue": "structure",
+        "year": "2019",
+        "bytes": 858945,
+        "sha256": "2f9fbbdf72cb1f8f6fd0cc2b8117476f37d2d25fd9d4f946b439ca348b48c1fa"
+      },
+      {
+        "venue": "structure",
+        "year": "2020",
+        "bytes": 798969,
+        "sha256": "5fafc4232d100067b3c81b7f1e105c63211d5f8fc359c2b145a4ed1043e1cd32"
+      },
+      {
+        "venue": "structure",
+        "year": "2021",
+        "bytes": 688421,
+        "sha256": "c261eab41bb5a59e60a48f78b187ccbf6339d8673305b6f0885a1ab8b23aa76f"
+      },
+      {
+        "venue": "structure",
+        "year": "2022",
+        "bytes": 742743,
+        "sha256": "573074e7a8115fe3e9943f8dbe5c5cc8911f8c195bbc4892c0e7d492ddcb1bd0"
+      },
+      {
+        "venue": "structure",
+        "year": "2023",
+        "bytes": 857991,
+        "sha256": "6971cf3158a128d8f9427b2327f60a7a39abc15de30211814cb83702dd8fdd58"
+      },
+      {
+        "venue": "structure",
+        "year": "2024",
+        "bytes": 1166479,
+        "sha256": "cc2ecb25342b75bb15909a44dadd1c91d5dba607f9cb4a6dcdd36667b69eeb5d"
+      },
+      {
+        "venue": "structure",
+        "year": "2025",
+        "bytes": 1042353,
+        "sha256": "8af0f10ca25bacafc7e21658157806bba75861bdabc8d102b6b2a2aff247ee38"
+      }
+    ]
+  },
+  "coverage_note": "Source indexing and affiliation coverage vary by venue and year. Carried-forward scopes were not refreshed in this build."
 }

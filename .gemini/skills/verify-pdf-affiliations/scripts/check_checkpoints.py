@@ -37,8 +37,10 @@ def validate(saved, task, batch_name, model):
             raise ValueError("affiliations must be nonempty strings")
         if verdict in {"absent", "not_found", "unclear"} and affiliations:
             raise ValueError("unresolved/absent verdict must have empty affiliations")
-        if verdict in {"correct", "wrong", "missing"} and not affiliations:
+        if verdict in {"correct", "missing"} and not affiliations:
             raise ValueError("resolved verdict must include page affiliations")
+        if verdict == "wrong" and not affiliations and not task["extracted"][i]:
+            raise ValueError("wrong with no page affiliation requires a parser extraction")
         if verdict == "missing" and task["extracted"][i]:
             raise ValueError("missing requires an empty parser extraction")
         if not result["image_ok"] and verdict != "unclear":

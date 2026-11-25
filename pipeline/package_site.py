@@ -16,30 +16,78 @@ sys.path.insert(0, str(ROOT / 'pipeline'))
 from fields import add_field_argument, get_field  # noqa: E402
 MAX_ASSET = 25 * 1024 * 1024
 PACKAGE_MARKER = '.ecerankings-package'
-# Sister sites linked from the header. Their manifests carry no artifact hashes,
-# so they get the structural checks only.
+# Sister sites linked from the header, published under the ECE site.
 SISTER_SITES = ['biology', 'earth-space']
 SISTER_SUFFIXES = {'.html', '.css', '.js', '.json', '.svg', '.png'}
 
 
+def data_files(site):
+    """The published data files of one field's site, in the same layout for every field."""
+    registry = json.loads((site / 'data/areas.json').read_text())
+    public = ['data/areas.json', 'data/institutions.json', 'data/manifest.json']
+    public += [f'data/{area}.json' for area in registry['areas']]
+    for area, a_data in registry['areas'].items():
+        for venue in a_data.get('venues', []):
+            vpath = f"data/{area}/{venue.get('key')}.json"
+            if (site / vpath).is_file():
+                public.append(vpath)
+    return registry, public
+
+
+def check_data(site, registry, public):
+    """Require a passing release manifest whose hashes match every published data file."""
+    manifest = json.loads((site / 'data/manifest.json').read_text())
+    if manifest.get('validation', {}).get('status') != 'passed':
+        raise ValueError(f'A validated release manifest is required before packaging: {site}')
+    artifacts = manifest.get('artifacts', {})
+    for relative in public:
+        if relative.startswith('data/') and relative != 'data/manifest.json':
+            expected = artifacts.get(relative.removeprefix('data/'), {}).get('sha256')
+            actual = hashlib.sha256((site / relative).read_bytes()).hexdigest()
+            if not expected or expected != actual:
+                raise ValueError(f'Release manifest hash mismatch: {site.name}/{relative}')
+    institutions = json.loads((site / 'data/institutions.json').read_text())
+    for area in registry['areas']:
+        rows = json.loads((site / f'data/{area}.json').read_text())
+        if not isinstance(rows, list):
+            raise ValueError(f'Area {area} is not an array')
+        absent = {row['i'] for row in rows} - institutions.keys()
+        if absent:
+            raise ValueError(f'Area {area} has {len(absent)} institutions without metadata')
+    return manifest
+
+
+def check_asset(source, relative):
+    if not source.is_file():
+        raise ValueError(f'Missing required public asset: {relative}')
+    if source.stat().st_size > MAX_ASSET:
+        raise ValueError(f'Asset exceeds Cloudflare 25 MiB limit: {relative}')
+    if source.read_bytes()[:50].startswith(b'version https://git-lfs.github.com/spec/v1'):
+        raise ValueError(f'Unmaterialized Git LFS pointer: {relative}')
+
+
+def site_files(root, label):
+    """Every file of a sister site: its pages and assets, plus its release data files."""
+    if not (root / 'index.html').is_file() or not (root / 'data/manifest.json').is_file():
+        raise ValueError(f'Missing sister site: {label}')
+    registry, public = data_files(root)
+    for source in sorted(root.rglob('*')):
+        if source.is_symlink():
+            raise ValueError(f'Symlink in sister site: {label}/{source.relative_to(root)}')
+        relative = source.relative_to(root).as_posix()
+        if not source.is_file() or relative.startswith('data/'):
+            continue
+        if source.suffix not in SISTER_SUFFIXES:
+            raise ValueError(f'Unexpected file in sister site: {label}/{relative}')
+        public.append(relative)
+    for relative in public:
+        check_asset(root / relative, f'{label}/{relative}')
+    check_data(root, registry, public)
+    return public
+
+
 def sister_files(site):
-    found = []
-    for name in SISTER_SITES:
-        root = site / name
-        if not (root / 'index.html').is_file() or not (root / 'data/manifest.json').is_file():
-            raise ValueError(f'Missing sister site: {name}')
-        for source in sorted(root.rglob('*')):
-            if source.is_symlink():
-                raise ValueError(f'Symlink in sister site: {source.relative_to(site)}')
-            if not source.is_file():
-                continue
-            relative = source.relative_to(site).as_posix()
-            if source.suffix not in SISTER_SUFFIXES:
-                raise ValueError(f'Unexpected file in sister site: {relative}')
-            if source.suffix == '.json':
-                json.loads(source.read_text())
-            found.append(relative)
-    return found
+    return [f'{name}/{relative}' for name in SISTER_SITES for relative in site_files(site / name, name)]
 
 
 CORE_FILES = [
@@ -53,54 +101,24 @@ def package(site, output):
     if output.is_symlink() or (output.exists() and (
             not output.is_dir() or (any(output.iterdir()) and not (output / PACKAGE_MARKER).is_file()))):
         raise ValueError('Refusing to replace an existing directory not generated by this packager')
-    registry = json.loads((site / 'data/areas.json').read_text())
     public = ['index.html', '404.html', 'methodology.html', 'coverage.html', 'styles.css', 'main.js',
               'rank.js', 'rank-history.js', 'rank-history.css', 'comparison.js', 'comparison.css', 'year-strip.js', 'year-strip.css', 'coverage.js', 'favicon.svg', 'apple-touch-icon.png', 'og.png', '_headers', 'robots.txt', 'sitemap.xml']
     public += CORE_FILES
-    public += ['data/areas.json', 'data/institutions.json', 'data/manifest.json']
-    public += [f'data/{area}.json' for area in registry['areas']]
-    for area, a_data in registry['areas'].items():
-        for venue in a_data.get('venues', []):
-            vkey = venue.get('key')
-            vpath = f'data/{area}/{vkey}.json'
-            if (site / vpath).is_file():
-                public.append(vpath)
+    registry, data = data_files(site)
+    public += data
     public += sister_files(site)
     # Institution pages come from prerender_site.mjs, together with the ranking in index.html.
     pages = sorted(p.relative_to(site).as_posix() for p in (site / 'institution').rglob('*') if p.is_file())
     if 'institution/index.html' not in pages or any(not p.endswith('/index.html') for p in pages):
         raise ValueError('institution/ is missing or holds unexpected files; run: node pipeline/prerender_site.mjs')
     public += pages
-    institutions = json.loads((site / 'data/institutions.json').read_text())
-    manifest = json.loads((site / 'data/manifest.json').read_text())
-    if manifest.get('validation', {}).get('status') != 'passed':
-        raise ValueError('A validated release manifest is required before packaging')
-    artifacts = manifest.get('artifacts', {})
     for relative in public:
-        source = site / relative
-        if not source.is_file():
-            raise ValueError(f'Missing required public asset: {relative}')
-        if source.stat().st_size > MAX_ASSET:
-            raise ValueError(f'Asset exceeds Cloudflare 25 MiB limit: {relative}')
-        if source.read_bytes()[:50].startswith(b'version https://git-lfs.github.com/spec/v1'):
-            raise ValueError(f'Unmaterialized Git LFS pointer: {relative}')
-        if relative.split('/')[0] in SISTER_SITES + ['institution']:
-            continue
-        if relative.startswith('data/') and relative != 'data/manifest.json':
-            expected = artifacts.get(relative.removeprefix('data/'), {}).get('sha256')
-            actual = hashlib.sha256(source.read_bytes()).hexdigest()
-            if not expected or expected != actual:
-                raise ValueError(f'Release manifest hash mismatch: {relative}')
+        if relative.split('/')[0] not in SISTER_SITES:
+            check_asset(site / relative, relative)
+    manifest = check_data(site, registry, data)
     prerendered = re.search(r'<tbody id="ranking-body" data-prerender="([0-9a-f]{64})">', (site / 'index.html').read_text())
     if not prerendered or prerendered.group(1) != hashlib.sha256((site / 'data/manifest.json').read_bytes()).hexdigest():
         raise ValueError('index.html ranking is out of date; run: node pipeline/prerender_site.mjs')
-    for area in registry['areas']:
-        rows = json.loads((site / f'data/{area}.json').read_text())
-        if not isinstance(rows, list):
-            raise ValueError(f'Area {area} is not an array')
-        absent = {row['i'] for row in rows} - institutions.keys()
-        if absent:
-            raise ValueError(f'Area {area} has {len(absent)} institutions without metadata')
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='ecerankings-package-', dir=output.parent) as tmp:
         stage = pathlib.Path(tmp) / 'public'
@@ -144,27 +162,8 @@ def package_sister_site(field_cfg, site_path, output):
     if output.is_symlink() or (output.exists() and (
             not output.is_dir() or (any(output.iterdir()) and not (output / PACKAGE_MARKER).is_file()))):
         raise ValueError('Refusing to replace an existing directory not generated by this packager')
-    if not (site_path / 'index.html').is_file() or not (site_path / 'data/manifest.json').is_file():
-        raise ValueError(f'Missing required site files in {site_path}')
+    public = site_files(site_path, field_cfg.id)
     manifest = json.loads((site_path / 'data/manifest.json').read_text())
-    if 'validation' in manifest and manifest['validation'].get('status') != 'passed':
-        raise ValueError(f'Sister site manifest validation status failed: {site_path}')
-    public = []
-    for source in sorted(site_path.rglob('*')):
-        if source.is_symlink():
-            raise ValueError(f'Symlink in sister site: {source.relative_to(site_path)}')
-        if not source.is_file():
-            continue
-        rel = source.relative_to(site_path).as_posix()
-        if source.suffix not in SISTER_SUFFIXES:
-            raise ValueError(f'Unexpected file in sister site: {rel}')
-        if source.stat().st_size > MAX_ASSET:
-            raise ValueError(f'Asset exceeds Cloudflare 25 MiB limit: {rel}')
-        if source.read_bytes()[:50].startswith(b'version https://git-lfs.github.com/spec/v1'):
-            raise ValueError(f'Unmaterialized Git LFS pointer: {rel}')
-        if source.suffix == '.json':
-            json.loads(source.read_text())
-        public.append(rel)
 
     output.parent.mkdir(parents=True, exist_ok=True)
     with tempfile.TemporaryDirectory(prefix='ecerankings-package-', dir=output.parent) as tmp:

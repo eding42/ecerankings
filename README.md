@@ -27,7 +27,7 @@ static; ranking calculations run in your browser over precomputed counts.
   least 80% of their content in scope for the area.
 - **Publication counts only.** No citation counts or impact factors.
 
-Full methodology: [PLAN.md](PLAN.md). Venues and area defaults:
+Full methodology: [docs/methodology.md](docs/methodology.md). Venues and area defaults:
 [data/areas.json](data/areas.json).
 
 ## View and test
@@ -51,8 +51,10 @@ node --test tests/frontend/*.test.mjs
 OpenAlex supplies works and paper-specific affiliations. Crossref supplies exact
 conference-edition membership where OpenAlex's venue indexing is incomplete.
 ML membership comes from publisher proceedings; Semantic Scholar only discovers
-identifiers. ML remains off by default while coverage and PDF-verification gates
-are incomplete.
+identifiers. ML has been on by default since 2026-11-24.
+
+Two sister rankings share the pipeline and frontend: Biology (`site/biology/`)
+and Earth & Space (`site/earth-space/`). See [docs/methodology.md](docs/methodology.md).
 
 1. Materialize required `cache/` files with Git LFS. A pointer is not a dataset.
 2. Put `OPENALEX_API_KEY` in the ignored root `.env` file. Reuse cached responses

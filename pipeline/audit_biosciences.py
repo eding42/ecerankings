@@ -12,10 +12,10 @@ api_key = env.get('OPENALEX_API_KEY')
 
 def api_get(endpoint, params):
     params = dict(params)
-    params['mailto'] = 'eding2019@gmail.com'
+    params['mailto'] = 'erding@usc.edu'
     if api_key: params['api_key'] = api_key
     url = f'https://api.openalex.org{endpoint}?' + urllib.parse.urlencode(params, safe=":,|*!")
-    req = urllib.request.Request(url, headers={'User-Agent': 'ecerankings/1.0 (mailto:eding2019@gmail.com)'})
+    req = urllib.request.Request(url, headers={'User-Agent': 'ecerankings/1.0 (mailto:erding@usc.edu)'})
     with urllib.request.urlopen(req, timeout=30) as resp:
         return json.loads(resp.read().decode())
 

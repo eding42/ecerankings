@@ -78,7 +78,7 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AREAS_JSON = os.path.join(REPO_ROOT, "data", "areas.json")
 CACHE_DIR = os.path.join(REPO_ROOT, "cache")
 API = "https://api.crossref.org/works"
-MAILTO = "eding2019@gmail.com"
+MAILTO = "erding@usc.edu"
 ROWS = 500
 
 

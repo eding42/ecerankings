@@ -132,7 +132,7 @@ def accepted_education(row):
         and bool(row.get("institution_id"))
 
 
-def scan_cache(cache_dir, venues, affil_map, excluded):
+def scan_cache(cache_dir, venues, affil_map, excluded, *, research_filter=None):
     """One pass over the cache. Returns per-venue-year stats and map usage."""
     stats = {}                      # (venue, year) -> Counter
     usage = Counter()               # raw string -> approximate credits resolved through the map
@@ -154,9 +154,14 @@ def scan_cache(cache_dir, venues, affil_map, excluded):
                     if identity in seen:
                         continue
                     seen.add(identity)
-                    if (work.get("type") or "").lower() in NONRESEARCH_TYPES:
-                        continue
+                    # Every field honors the curated exclusion list; a field's own
+                    # research filter replaces only the generic type filter.
                     if work_key(work, venue, year) in excluded:
+                        continue
+                    if research_filter is not None:
+                        if not research_filter(work, venue):
+                            continue
+                    elif (work.get("type") or "").lower() in NONRESEARCH_TYPES:
                         continue
                     authors = work.get("authorships") or []
                     if not authors:
@@ -459,7 +464,7 @@ def check_dropped_credit(flags, result):
     flags["low"].append(f"[drop/summary] dropped credit by reason (default-on areas): {parts}")
 
 
-def run(registry, cache_dir=None, data_dir=None, area=None):
+def run(registry, cache_dir=None, data_dir=None, area=None, *, research_filter=None):
     """Run every global check. Returns the usual {severity: [messages]} flags."""
     cache_dir = cache_dir or CACHE_DIR
     data_dir = data_dir or SITE_DATA
@@ -474,7 +479,8 @@ def run(registry, cache_dir=None, data_dir=None, area=None):
         with open(FIRST_YEARS_JSON) as handle:
             first_years = json.load(handle)
     venues = [v["key"] for a in registry["areas"].values() for v in a["venues"]]
-    stats, usage = scan_cache(cache_dir, venues, affil_map, load_exclusions(EXCLUDED_CSV))
+    stats, usage = scan_cache(cache_dir, venues, affil_map, load_exclusions(EXCLUDED_CSV),
+                              research_filter=research_filter)
 
     print(f"\n── Phase 4: Global audit (window {window[0]}–{window[1]}) ──")
     check_mismapped(flags, affil_map, usage)
@@ -486,7 +492,8 @@ def run(registry, cache_dir=None, data_dir=None, area=None):
     if os.path.exists(dropped_credit.INDEX_JSON):
         affil, types = dropped_credit.load_context()
         check_dropped_credit(flags, dropped_credit.scan(
-            cache_dir, registry, affil, types, load_exclusions(EXCLUDED_CSV), dropped_credit.load_negative()))
+            cache_dir, registry, affil, types, load_exclusions(EXCLUDED_CSV), dropped_credit.load_negative(),
+            research_filter=research_filter))
     else:
         flags["medium"].append("[drop] data/institutions.json is missing, so dropped credit could not be classified")
     print(f"  {len(flags['critical'])} critical, {len(flags['high'])} high, {len(flags['medium'])} medium")

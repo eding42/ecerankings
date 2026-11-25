@@ -2551,7 +2551,7 @@
     "ml": {
       "name": "Machine Learning",
       "cluster": "Signals & Intelligence",
-      "default_on": false,
+      "default_on": true,
       "venues": [
         {
           "key": "neurips",
@@ -2565,7 +2565,7 @@
             2000,
             4800
           ],
-          "notes": "CS-overlap, default-off area per PLAN.md. S4306420609 captures only ~15% of expected papers for 2016-2021 (223-731/yr vs 2000-4800) with variable affiliation coverage (76-91%). Years 2022-2024 confirmed in Crossref via container-title 'Advances in Neural Information Processing Systems N' (doi_prefix 10.52202/<volume_id>), counts 2834/3540/4494 within expected range. 2025 not yet in Crossref (expected ingestion lag). 2016-2021: ~70-85% of actual NeurIPS papers have no discoverable source in OpenAlex or Crossref (proceedings at proceedings.neurips.cc without DOIs) \u2014 genuine gap, not ingestion lag. Status stays candidate pending user decision on pre-2022 coverage gap.",
+          "notes": "Publisher-first cache for 2016\u20132025 uses https://proceedings.neurips.cc/ for membership. In 2025 the publisher list contains 5,823 papers across all tracks. The cache includes 5,286 Conference and 497 Datasets & Benchmarks papers and excludes 40 Position papers. The fact sheet reports 5,290 Conference acceptances. Historical Crossref entries below document prior source coverage. See data/refresh/ml-harvest-2026-10-29.json for per-edition checks.",
           "years": {
             "2022": {
               "source": "crossref",
@@ -2597,7 +2597,7 @@
             1500,
             3800
           ],
-          "notes": "Downgraded from verified to candidate 2026-07-23 per user request. ICML has NO reliable OpenAlex venue source (S4306419644 is contaminated with non-ICML papers). Papers in OpenAlex are attributed to arXiv, not ICML/PMLR, so affiliation coverage is 0%. Crossref container-title search returns false positives from lookalike venues (ICMLA, ICMLC). PMLR ISSN 2640-3498 returns 0 Crossref results. All in-window years confirmed via PMLR website (proceedings.mlr.press) but no viable API/data path for automated harvesting yet. Needs user decision on data source (PMLR scraping, OpenReview API, Semantic Scholar)."
+          "notes": "Publisher-first cache for 2016\u20132025 uses Proceedings of Machine Learning Research for membership. PMLR volume 267 (https://proceedings.mlr.press/v267/) lists 3,330 papers for 2025, including position papers, versus 3,333 in the fact sheet (3,260 main-track plus 73 position). See data/refresh/ml-harvest-2026-10-29.json for per-edition checks."
         },
         {
           "key": "iclr",
@@ -2611,7 +2611,7 @@
             1500,
             3800
           ],
-          "notes": "Volume sanity failure: S4306419637 captures only ~200-252 papers/yr (expected 1500-3800), solely for 2013-2021. Years 2022-2025 missing from both OpenAlex and Crossref due to ICLR's OpenReview-based publishing model (papers attributed to arXiv in OpenAlex, not to any ICLR-specific venue). This is a structural coverage gap, not ingestion lag. Identity confirmed (sample titles are genuine ML papers). Affiliation coverage 93.2% (passes). Institution sniff passes (Google, UC Berkeley, Stanford, CMU, Microsoft, MIT, Meta). Needs user decision on alternative data source (OpenReview API, proceedings download) or exclusion."
+          "notes": "Publisher-first cache for 2017\u20132025 uses the ICLR proceedings and OpenReview accepted records for membership. In 2025, the proceedings and authenticated OpenReview agree on 3,703 papers versus 3,704 in the fact sheet. See data/refresh/ml-harvest-2026-10-29.json for per-edition checks."
         }
       ]
     },

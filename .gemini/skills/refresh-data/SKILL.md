@@ -18,6 +18,8 @@ gates and the regression baseline.
 - Never commit or push without explicit confirmation (`AGENTS.md`).
 - "Refresh" means build + verify + report. "Push the refresh" means a branch
   and a PR. "Merge/deploy" is a separate approval.
+- `main` is the live site: merge the PR into `main` first, then deploy only
+  from an up-to-date, clean `main` checkout. Never deploy a feature branch.
 - Stop on any critical/high `verify.py` flag, a coverage drop over 5
   percentage points, or an artifact hash mismatch. Report; do not promote.
 - Use explicit `git add` paths; never `git add -A`.

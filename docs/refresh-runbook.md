@@ -1,8 +1,21 @@
 # Refresh and publish
 
 Use Python 3.11+, Git LFS, a materialized source cache, and the OpenAlex key in
-the ignored root `.env`. Methodology and venue decisions belong in `PLAN.md`
-and `data/areas.json`; a refresh does not change them.
+the ignored root `.env`. Methodology and venue decisions belong in `docs/methodology.md`
+and the venue registries; a refresh does not change them.
+
+All three fields release the same way. Every release command takes
+`--field ece|biology|earth-space` (default `ece`) and reads the field's
+registry, cache, credited institution types and site data directory from
+`data/fields.json`:
+
+| Field | Registry | Cache | Site data |
+|---|---|---|---|
+| `ece` | `data/areas.json` | `cache/` | `site/data/` |
+| `earth-space` | `data/areas_earth_space.json` | `cache/` (shared with ECE) | `site/earth-space/data/` |
+| `biology` | `data/areas_biosciences.json` | `cache_biosciences/` (not in Git) | `site/biology/data/` |
+
+Below, `<field>`, `<cache>` and `<site-data>` stand for one row of this table.
 
 ## Authorization
 
@@ -85,22 +98,29 @@ quarantine evidence. Its output becomes the candidate cache below.
 
 ```sh
 python3 pipeline/refresh_manifest.py --cache-dir <candidate-cache> --out .tmp/refresh.json
-python3 pipeline/build_release.py --cache-dir <candidate-cache> \
-  --refresh-manifest .tmp/refresh.json --out .tmp/release
+python3 pipeline/build_release.py --field <field> --cache-dir <candidate-cache> \
+  --refresh-manifest .tmp/refresh.json --out .tmp/release-<field>
 ```
 
-The builder checks source hashes, rejects writes into `site/data`, reconciles
-credit across CSV/JSON artifacts, and records code/input/artifact hashes.
-It includes `split.py`; direct aggregation must always be followed by splitting.
+The builder checks source hashes, rejects writes into the field's site data,
+aggregates, splits, writes `institutions.json` (name, country, and the type each
+institution was credited under), reconciles credit across the CSV and JSON
+artifacts, and records code, input and artifact hashes in `manifest.json`.
+Biology's aggregator also produces all-institution tables; the release keeps the
+education-only tables the site ranks. Direct aggregation must always be
+followed by splitting.
 
 ## 3. Verify before promotion
 
 ```sh
-cp site/data/.coverage-snapshot.json site/data/.ranking-snapshot.json .tmp/release/
-python3 pipeline/verify.py --all --cache-dir <candidate-cache> --data-dir .tmp/release
-python3 pipeline/compare_aggregates.py --reference site/data --candidate .tmp/release \
-  --report .tmp/release-diff.json
+cp <site-data>/.coverage-snapshot.json <site-data>/.ranking-snapshot.json .tmp/release-<field>/
+python3 pipeline/verify.py --field <field> --all --cache-dir <candidate-cache> \
+  --data-dir .tmp/release-<field>
+python3 pipeline/compare_aggregates.py --reference <site-data> --candidate .tmp/release-<field> \
+  --report .tmp/release-diff-<field>.json
 ```
+
+Copy the snapshots only where the field has them (ECE today).
 
 Review finding changes against the baseline and explain intended credit changes.
 Stop for unexplained critical/high findings, regressions, dropped publisher
@@ -119,12 +139,16 @@ verifier reports no critical/high findings.
 After validation passes:
 
 ```sh
-python3 pipeline/promote_release.py --cache-dir <candidate-cache> --release .tmp/release --check-only
-python3 pipeline/promote_release.py --cache-dir <candidate-cache> --release .tmp/release
+python3 pipeline/promote_release.py --field <field> --cache-dir <candidate-cache> \
+  --release .tmp/release-<field> --check-only
+python3 pipeline/promote_release.py --field <field> --cache-dir <candidate-cache> \
+  --release .tmp/release-<field>
 ```
 
-Promotion checks all source/input/artifact hashes again and writes the release
-manifest last. Copy accepted coverage/ranking snapshots from the candidate to
+Promotion refuses a candidate built for another field, checks all source, input
+and artifact hashes again, copies the candidate cache into the field's cache
+(through Git LFS where it is tracked), removes data JSON for venues or areas the
+release no longer has, and writes the release manifest last. Copy accepted coverage/ranking snapshots from the candidate to
 `site/data` separately; they are not promotion artifacts. Keep the previous
 release until verification and publication finish.
 
@@ -133,17 +157,30 @@ With commit approval, create a review branch and stage only reviewed paths:
 ```sh
 git switch -c data/refresh-YYYY-MM-DD
 git add data/areas.json data/affiliation-map.csv data/excluded-works.csv \
-  data/institution-aliases.csv data/institution-metadata-overrides.json cache site/data
+  data/institution-aliases.csv cache site/data site/index.html site/institution site/sitemap.xml
 ```
+
+For a sister field, stage its registry and `<site-data>` instead of the ECE
+paths. Biology's raw cache is not in Git, so a Biology release can only be
+rebuilt on a machine that holds `cache_biosciences/`.
 
 Never use `git add -A`. Exclude `.env`, `.tmp/`, `ai_temp/`, local settings,
 `data/institutions.json`, and generated dependency/build directories. State the
 scope, unresolved editions, coverage/credit deltas, and validation results in
 the PR. Commit, push, and merge only at their authorized levels.
 
-For an approved Cloudflare publication, package the accepted public files:
+**Main is the live site.** Merge the PR into `main` before deploying, and deploy
+only from an up-to-date `main` checkout with a clean tree (`git switch main &&
+git pull`). Never deploy from a feature branch or uncommitted files; the live site
+must always match `main`.
+
+For an approved Cloudflare publication, package the accepted public files and
+deploy with Wrangler. The repo has no Wrangler config file; Wrangler is still
+the maintainer's chosen deploy tool, so do not substitute the `cf` CLI.
+
 
 ```sh
+git switch main && git pull --ff-only && git status --short   # must be empty
 node pipeline/prerender_site.mjs
 python3 pipeline/package_site.py --out dist
 npx wrangler pages deploy dist --project-name ecerankings --branch main
@@ -152,10 +189,12 @@ npx wrangler pages deploy dist --project-name ecerankings --branch main
 `prerender_site.mjs` writes the default ranking into `site/index.html`, one page per
 ranked institution under `site/institution/`, and `site/sitemap.xml`; commit the
 result with the data. The packager refuses an `index.html` built from other data.
-The packager requires the release manifest and matching public-asset hashes;
-it excludes CSVs, raw cache data, and LFS pointers, copies the `biology/` and
-`earth-space/` sister sites with structural checks only (their manifests carry no hashes), and enforces the 25 MiB asset
-limit. Code-only publications still need a valid existing dataset. A Git-connected
+Only ECE is prerendered. The ECE package includes the `biology/` and
+`earth-space/` sites. For every field the packager requires a passing release
+manifest whose hashes match each published data file, publishes the same data
+layout (registry, institutions, manifest, per-area and per-venue JSON), excludes
+CSVs, raw cache data and LFS pointers, and enforces the 25 MiB asset limit.
+`package_site.py --field biology|earth-space` packages one sister site alone. Code-only publications still need a valid existing dataset. A Git-connected
 Pages project may deploy on a `main` push; confirm that configuration before pushing.
 Rollback with the previous Pages deployment or a reviewed Git revert. Do not
 publish a partially promoted tree or rewrite provenance hashes to make it pass.

@@ -89,7 +89,8 @@ def classify_author(author, doi, native, affil_map, types, negative, credit_type
         return corrections.get(aggregate.institution_id(inst.get("id")), inst.get("type")) in credit_types
     if [i for i in institutions if credited(i)]:
         return None, ""
-    raw = author.get("raw_affiliations") or []
+    # Biology records keep OpenAlex's field name, raw_affiliation_strings.
+    raw = author.get("raw_affiliations") or author.get("raw_affiliation_strings") or []
     if institutions:
         for inst in institutions:
             if not inst.get("type") and types.get(short_id(inst.get("id"))) in credit_types:
@@ -113,8 +114,12 @@ def classify_author(author, doi, native, affil_map, types, negative, credit_type
 
 
 def scan(cache_dir, registry, affil_map, types, excluded=frozenset(), negative=frozenset(), all_areas=False,
-         credit_types=None):
-    """Replay the aggregator's per-author decision across the cache."""
+         credit_types=None, research_filter=None):
+    """Replay the aggregator's per-author decision across the cache.
+
+    research_filter(work, venue), when given, replaces the generic type filter,
+    as it does in the field's aggregator (Biology).
+    """
     credit_types = credit_types or aggregate.CREDIT_TYPES
     venues = {}
     for area_key, area in registry["areas"].items():
@@ -141,7 +146,10 @@ def scan(cache_dir, registry, affil_map, types, excluded=frozenset(), negative=f
                     if identity in seen:
                         continue
                     seen.add(identity)
-                    if (work.get("type") or "").lower() in aggregate.NONRESEARCH_TYPES:
+                    if research_filter is not None:
+                        if not research_filter(work, venue):
+                            continue
+                    elif (work.get("type") or "").lower() in aggregate.NONRESEARCH_TYPES:
                         continue
                     if work_key(work, venue, year) in excluded:
                         continue
