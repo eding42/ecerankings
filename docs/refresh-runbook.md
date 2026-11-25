@@ -214,6 +214,15 @@ scope, unresolved editions, coverage/credit deltas, and validation results in
 the PR. Commit, push, and merge only at their authorized levels. Confirm the
 accepted release is merged into `main` before packaging a new copy.
 
+**Before opening a PR.** A conflict-free merge only proves the text combined. Rebuild
+the branch on current `origin/main` (fetch first; the local `main` may be stale),
+resolve overlaps by hand, then run the three CI steps from a clean checkout of the
+committed files: `python3 -m unittest discover -s tests -p 'test_*.py'`,
+`node --test tests/frontend/*.test.mjs`, then `node pipeline/prerender_site.mjs`
+(no `git diff` under `site/` afterwards) and `python3 pipeline/package_site.py --out
+<dir>`. A feature that is off unless configured (such as `facultyDataPath`) keeps
+rollback to a single `git revert` of the squash commit.
+
 **Main is the live site.** Merge the PR into `main` before deploying, and deploy
 only from an up-to-date `main` checkout with a clean tree (`git switch main &&
 git pull`). Never deploy from a feature branch or uncommitted files; the live site

@@ -208,6 +208,7 @@ audit_map_sample.py / audit_bylines.py / check_stale_affiliations.py
   * **`main` is the main site.** `origin/main` is the source of truth for the live ECE site and must always reflect the published public copy (release data, `site/data`, prerendered pages, release manifest). Never leave an accepted release only on a feature branch or worktree.
   * **Reconcile with `main` before pushing a new copy.** Fetch and merge/rebase the current `origin/main` into the working branch before preparing or pushing a new release. The local `main` checkout may be stale — verify with `git rev-list --left-right --count origin/main...HEAD` instead of trusting it.
   * **Merge before publication.** An accepted release lands on `main` (via approved PR) before a new public copy is packaged or deployed; deploy from `main`, never from a feature branch or worktree.
+  * **A clean text merge is not proof.** Before opening a PR, rebuild the branch on current `origin/main`, then run what CI runs (the commands in `.github/workflows/check.yml`) from a clean checkout of the committed files, so files left only in your working tree cannot hide a failure. A required check on the PR re-tests it merged with the latest `main`.
   * **Never commit or push without explicit confirmation.**
   * Stage specific paths with `git add <files>`; never `git add -A` or `git add .`.
   * Never commit `.env`, `.tmp/`, `data/institutions.json`, or local settings.
