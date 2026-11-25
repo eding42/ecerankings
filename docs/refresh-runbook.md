@@ -174,6 +174,13 @@ only from an up-to-date `main` checkout with a clean tree (`git switch main &&
 git pull`). Never deploy from a feature branch or uncommitted files; the live site
 must always match `main`.
 
+**Merging deploys.** GitHub Actions does this automatically:
+`.github/workflows/check.yml` runs the tests, the prerender check and the packager
+on every PR, and `.github/workflows/deploy.yml` re-runs those checks on every push
+to `main`, deploys with Wrangler, and confirms the live `version.json` names the
+commit. Neither downloads Git LFS files. The commands below are the manual
+fallback (for example if Actions is down); run them only from a clean `main`.
+
 For an approved Cloudflare publication, package the accepted public files and
 deploy with Wrangler. The repo has no Wrangler config file; Wrangler is still
 the maintainer's chosen deploy tool, so do not substitute the `cf` CLI.

@@ -1,0 +1,67 @@
+# main is the live site: every push to main is checked, packaged and deployed.
+# Needs repository secrets CLOUDFLARE_API_TOKEN (Pages edit) and
+# CLOUDFLARE_ACCOUNT_ID.
+name: Deploy
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+# One deploy at a time; a newer push waits rather than racing the older one.
+concurrency:
+  group: deploy-production
+  cancel-in-progress: false
+
+env:
+  GIT_LFS_SKIP_SMUDGE: "1"
+
+jobs:
+  check:
+    uses: ./.github/workflows/check.yml
+
+  deploy:
+    needs: check
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    environment:
+      name: production
+      url: https://ecerankings.eding.dev
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Package
+        run: python3 pipeline/package_site.py --out "$RUNNER_TEMP/dist"
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: >
+          npx --yes wrangler@4.168.0 pages deploy "$RUNNER_TEMP/dist"
+          --project-name ecerankings --branch main
+          --commit-hash "$GITHUB_SHA" --commit-dirty=false
+
+      - name: Confirm the live site serves this commit
+        run: |
+          for attempt in 1 2 3 4 5 6; do
+            live=$(curl -fsS "https://ecerankings.eding.dev/version.json?ci=$GITHUB_RUN_ID" | python3 -c 'import json,sys; print(json.load(sys.stdin)["source_revision"])' || true)
+            [ "$live" = "$GITHUB_SHA" ] && { echo "Live at $live"; exit 0; }
+            sleep 10
+          done
+          echo "::error::Live site reports ${live:-nothing}, expected $GITHUB_SHA"
+          exit 1
