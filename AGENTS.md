@@ -200,4 +200,4 @@ audit_map_sample.py / audit_bylines.py / check_stale_affiliations.py
   * Stage specific paths with `git add <files>`; never `git add -A` or `git add .`.
   * Never commit `.env`, `.tmp/`, `data/institutions.json`, or local settings.
   * "Push" authorizes pushing to a feature/fix branch or PR, not directly deploying to production.
-  * **`main` is the live site.** Merge into `main` before deploying, and deploy only from an up-to-date, clean `main` checkout — never from a feature branch or uncommitted files.
+  * **`main` is the live site.** Merge into `main` before deploying, and deploy only from an up-to-date, clean `main` checkout — never from a feature branch or uncommitted files. Merging to `main` deploys automatically (`.github/workflows/deploy.yml`), so merge approval is deploy approval.

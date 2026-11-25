@@ -1,0 +1,51 @@
+# Checks every PR to main, and runs again before each deploy (deploy.yml).
+# Works from committed files only: no Git LFS downloads, no network data
+# collection, no rebuild of the rankings.
+name: Check
+
+on:
+  pull_request:
+    branches: [main]
+  workflow_call:
+
+permissions:
+  contents: read
+
+env:
+  # The raw caches and author CSVs are LFS files the site build never reads.
+  # Skipping them keeps CI from using the repo's LFS bandwidth.
+  GIT_LFS_SKIP_SMUDGE: "1"
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          lfs: false
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Python tests
+        run: python3 -m unittest discover -s tests -p 'test_*.py'
+
+      - name: Frontend tests
+        run: node --test tests/frontend/*.test.mjs
+
+      - name: Prerendered pages match the committed data
+        run: |
+          node pipeline/prerender_site.mjs
+          git diff --exit-code -- site || {
+            echo "::error::Prerendered pages are out of date. Run node pipeline/prerender_site.mjs and commit the result."
+            exit 1
+          }
+
+      - name: Package (checks every data file against its release manifest)
+        run: python3 pipeline/package_site.py --out "$RUNNER_TEMP/dist"
