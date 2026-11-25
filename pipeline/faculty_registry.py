@@ -536,11 +536,20 @@ def export():
     with store.lock(REGISTRY):return export_locked()
 
 
+def public_roster_link(configured,summary):
+    """The link readers click: a configured human-facing page when the collected source is a data endpoint."""
+    url=configured.get(summary.get('school'),{}).get('public_roster_url')
+    if not url:return {}
+    if urllib.parse.urlsplit(url).scheme!='https':raise ValueError('Public roster link must use HTTPS')
+    return {'roster_url':url}
+
+
 def export_locked():
     report=validate()
     current=read(REGISTRY/'current.json')
-    schools=[{k:s[k] for k in ['institution_id','name','unit','headcount','incoming_headcount','current_headcount','observed_on','policy_id','roster_url','count_basis']}
-             for s in current['schools'] if s['state']=='verified']
+    configured=read(REGISTRY/'schools.json')['schools']
+    schools=[{**{k:s[k] for k in ['institution_id','name','unit','headcount','incoming_headcount','current_headcount','observed_on','policy_id','roster_url','count_basis']},
+              **public_roster_link(configured,s)} for s in current['schools'] if s['state']=='verified']
     public=ROOT/'site/faculty'
     if public.is_symlink() or (public.exists() and (not public.is_dir() or {p.name for p in public.iterdir()}!={'current.json','manifest.json'})):
         raise ValueError('Refusing to replace an unrelated faculty export path')

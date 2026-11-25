@@ -7,7 +7,7 @@ import unittest
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / 'pipeline'))
-from faculty_registry import classify_role, validate_people
+from faculty_registry import classify_role, validate_people, public_roster_link
 from faculty_pilot import sha
 from package_site import faculty_files
 
@@ -98,6 +98,12 @@ class FacultyRegistryTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError,'Unresolved faculty'):faculty_files(site)
             payload['schools'][0].update(headcount=12,incoming_headcount=13,current_headcount=0);save()
             with self.assertRaisesRegex(ValueError,'count breakdown'):faculty_files(site)
+
+    def test_public_link_replaces_a_data_endpoint_only_when_configured_and_https(self):
+        configured={'a':{'public_roster_url':'https://u.edu/people'},'b':{},'c':{'public_roster_url':'http://u.edu/people'}}
+        self.assertEqual(public_roster_link(configured,{'school':'a'}),{'roster_url':'https://u.edu/people'})
+        self.assertEqual(public_roster_link(configured,{'school':'b'}),{})
+        with self.assertRaises(ValueError):public_roster_link(configured,{'school':'c'})
 
 
 if __name__=='__main__':unittest.main()
