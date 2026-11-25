@@ -1,0 +1,634 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/ab36cc537ffafe7a2b5ec17b607be815b30174515db6554dc7a358e331c2f874.json",
+    "sha256": "ab36cc537ffafe7a2b5ec17b607be815b30174515db6554dc7a358e331c2f874"
+  },
+  "brief": {
+    "file": "audits/briefs/341a86d31e56fa117a880883df91952309de6a2bcbcdd5c3b7b13e8d5f261031.json",
+    "sha256": "341a86d31e56fa117a880883df91952309de6a2bcbcdd5c3b7b13e8d5f261031"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_f7bc9787086a48ea9539e030048ba44b",
+    "candidate_sha256": "1b6e36f0796d6be7b35a99236d128daff5d3855be2b7c5afab6bf9e67aa3e8c8",
+    "reviewer_id": "claude-haiku-gwu-audit",
+    "reviewed_at": "2026-11-25T05:03:48+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus"
+      ],
+      "checked_list_ids": [
+        "gwu-ece-faculty",
+        "gwu-ece-emeritus"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_002d18eec2735ce59ece",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor and Associate Department Chair for Graduate Studies.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_079228fcd01f5d3397d9",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the Courtesy Appointment heading as Professor. The official profile (node/1316) gives his primary appointment as Tenured Full Professor of Decision Sciences at GWU; the explicit ECE courtesy designation qualifies under joint_appointments, and the primary unit does not change this. Borderline on the primary-unit point only.",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-profile-lejeune"
+        ]
+      },
+      {
+        "person_id": "person_0ab6e86c8a4d56d591e4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      },
+      {
+        "person_id": "person_16a49cfc43825a0e83af",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Research & Visiting Faculty as Research Faculty and under Emeritus Faculty as Professor Emeritus. The specific emeritus appointment type takes precedence over the research listing; the official profile (node/hermann-helgert) describes research faculty status only.",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-list-emeritus",
+          "gwu-profile-helgert"
+        ]
+      },
+      {
+        "person_id": "person_17a75f53793f51dda360",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the Courtesy Appointment heading as Associate Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_1c62ae717c4c5a2d9926",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      },
+      {
+        "person_id": "person_1fabf167eebb5dd7bb8c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_286c2eeecbaa5f2fa589",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty with title 'Dean, School of Engineering and Applied Science'. The official ECE profile (node/1301) states 'Dean ... and Professor', so an official ECE page states a professorial appointment, which the dean rule requires. Borderline: if the owner reads the dean rule as requiring an explicit ECE-specific professorial statement beyond the department listing, this flips to excluded academic_professional.",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-profile-lach"
+        ]
+      },
+      {
+        "person_id": "person_2a45bb8848285413a11a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      },
+      {
+        "person_id": "person_33e8411e48e058558b23",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Associate Professor and Associate Department Chair for Undergraduate Studies.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_3c4d8bf8d94a5998b005",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as David and Marilyn Karlgaard Endowed Chair Professor of ECE.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_4ec0c509b781503bb5ef",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      },
+      {
+        "person_id": "person_52352e82b44553d5afa9",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under Research & Visiting Faculty as Research Professor; the official profile (node/74) also says 'Research Professor'. Research professor titles are excluded (research_only).",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-profile-nagel"
+        ]
+      },
+      {
+        "person_id": "person_5f5b3a21d2105eeea38a",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the Courtesy Appointment heading as Assistant Professor; the explicit courtesy designation is retained.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_67082dd1e3d35002b6a4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      },
+      {
+        "person_id": "person_69cd732192665e18b7b1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_6d016a3e08bd55f38252",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Associate Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_7186d588e6c659adb192",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      },
+      {
+        "person_id": "person_7265d99368d2580aa434",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Associate Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_82475bf962665afba64b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor and Department Chair.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_8918ce120ec0513ea821",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_8a3459e2625e53579162",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor and Vice Provost for Graduate and Postdoctoral Affairs; the official profile (node/68) states Professor. Professorial rank on the department's main list counts under the department-roster convention. Borderline: the vice provost title is outside the literal president/dean/provost rule; if the owner applies that rule to vice provosts, this flips to excluded academic_professional. The profile also says 'Department Chair' while the directory names El-Ghazawi as Department Chair; this does not change membership.",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-profile-subramaniam"
+        ]
+      },
+      {
+        "person_id": "person_a512b255f93455a6a98b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor. Office-hours field reads 'On Sabbatical'; a sabbatical is not a departure, so the regular appointment stands.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_a8e43b5940e65912b0bf",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Associate Professor of Practice. Practice-track titles are excluded (academic_professional).",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_c43d86d1a94b5706a6a9",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the Courtesy Appointment heading as Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_d223a14a6c7659e4b2cd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_d299214c59875d89a83d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty on the official ECE faculty directory as Associate Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_e1f9dcc6c8d454c785ac",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Assistant Professor.",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_e710696907e857dda4fc",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus and also under Research & Visiting Faculty as Professor. The specific emeritus appointment type takes precedence over the generic professor title. The profile (node/58) says 'Professor and Fellow of IEEE' with no emeritus statement. Borderline: if the owner treats the profile and Research & Visiting listing as the current appointment, this flips to included regular.",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-list-emeritus",
+          "gwu-profile-zaghloul"
+        ]
+      },
+      {
+        "person_id": "person_eee2f32c758259118ec1",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed only under Research & Visiting Faculty; no Regular Faculty listing. Title 'L. Stanley Crane Professor' and profile 'Professor and Fellow of IEEE' show a professorial title, but a named chair counts as regular only on the department's main faculty list, and the section heading applies to him. Excluded as research_only, with the category taken from the section heading rather than a research-professor title. Borderline: if the owner treats the named chair as a regular appointment, this flips to included regular.",
+        "source_ids": [
+          "gwu-list-faculty",
+          "gwu-profile-lang"
+        ]
+      },
+      {
+        "person_id": "person_fd2a1e605efd54cdaaae",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under Regular Faculty as Assistant Professor (tenure-track professorial rank; no start date stated).",
+        "source_ids": [
+          "gwu-list-faculty"
+        ]
+      },
+      {
+        "person_id": "person_ffed627cce0851278500",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed under Emeritus Faculty as Professor Emeritus on the emeritus section of the official ECE faculty directory.",
+        "source_ids": [
+          "gwu-list-emeritus"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "gwu-list-faculty",
+        "url": "https://ece.engineering.gwu.edu/faculty-directory",
+        "observed_at": "2026-11-25T05:01:40+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty Directory page: h2 sections Regular Faculty, Research & Visiting Faculty, Courtesy Appointment, Emeritus Faculty; person cards and titles",
+        "response_sha256": "9f50f366e308a540c47c99db758921690346644c6765951a750d28304677c14c"
+      },
+      {
+        "id": "gwu-list-emeritus",
+        "url": "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+        "observed_at": "2026-11-25T05:01:40+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "h2 Emeritus Faculty: plain-text entries 'Name, Professor Emeritus, Ph.D. ...'",
+        "response_sha256": "b9cf76994bb3af0c1287a07a0afdab5f9c21ebdce4332fb6c59ac8be45572948"
+      },
+      {
+        "id": "gwu-profile-lach",
+        "url": "https://ece.engineering.gwu.edu/node/1301",
+        "observed_at": "2026-11-25T05:02:40+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile: 'Dean, School of Engineering and Applied Science and Professor'",
+        "response_sha256": "f3157f084a310c0a2094868e7fcf3c5d68178168c6d64f039cab260ddf994cd8"
+      },
+      {
+        "id": "gwu-profile-subramaniam",
+        "url": "https://ece.engineering.gwu.edu/node/68",
+        "observed_at": "2026-11-25T05:02:41+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile title line: 'Department Chair and Vice Provost for Graduate and Postdoctoral Affairs'; 'Professor' in profile",
+        "response_sha256": "06d59571ddba423d2d785d44584d6c028f6fb2de45f2392be25c50a2a03db521"
+      },
+      {
+        "id": "gwu-profile-lang",
+        "url": "https://ece.engineering.gwu.edu/node/75",
+        "observed_at": "2026-11-25T05:02:41+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile title line: 'L. Stanley Crane Professor and Fellow of IEEE'",
+        "response_sha256": "70c8729bf70e06c96e7434b728698130b46b985f4bbcaafa53e31ee2e5e7796d"
+      },
+      {
+        "id": "gwu-profile-lejeune",
+        "url": "https://ece.engineering.gwu.edu/node/1316",
+        "observed_at": "2026-11-25T05:02:42+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile: 'Professor'; 'Tenured Full Professor of Decision Sciences at GWU'",
+        "response_sha256": "781a52ac52dc195aba0693ffecdc25db007a1e6f5d5485a1aa4cc1637a5fb208"
+      },
+      {
+        "id": "gwu-profile-nagel",
+        "url": "https://ece.engineering.gwu.edu/node/74",
+        "observed_at": "2026-11-25T05:02:42+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile title line: 'Research Professor'",
+        "response_sha256": "bc9eed38c23d3a52b46652aff02e3a6e0ed59f0c559bab62c4d2a7eadc86f430"
+      },
+      {
+        "id": "gwu-profile-zaghloul",
+        "url": "https://ece.engineering.gwu.edu/node/58",
+        "observed_at": "2026-11-25T05:02:43+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile title line: 'Professor and Fellow of IEEE'; no emeritus statement",
+        "response_sha256": "88cb4a7db7c6e7add5b0987e7b54a79a724eaaac4140866ad1f082fe8bb3054c"
+      },
+      {
+        "id": "gwu-profile-helgert",
+        "url": "https://ece.engineering.gwu.edu/hermann-helgert",
+        "observed_at": "2026-11-25T05:02:44+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile: 'Research Faculty'; 'Professor Hermann Helgert conducts research'",
+        "response_sha256": "cc1ab3a91776f2eded504f4b91c969758b591416ddc7f101a156b78d0dfe16e9"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Both brief list pages downloaded from the official ECE faculty directory (the base page and ?section=emeritus). The two bodies are the same page, differing only in the query-string configuration. Parsed sections: Regular Faculty, Research & Visiting Faculty, Courtesy Appointment, Emeritus Faculty. Every person in the brief appears on a list and every list name matches brief.people. 32 distinct people enumerated, no omissions."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Navigation lists a 'Lecturers and Professorial Lecturers' anchor (#Lecturers), but the page has no lecturer section or entries, so nothing is enumerated under it."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No owner determinations dated 2026-11-25 apply to this roster."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_286c2eeecbaa5f2fa589",
+        "description": "Borderline (dean rule). Included regular: listed under Regular Faculty; official profile states 'Dean ... and Professor'. Would change to excluded academic_professional if the owner requires an explicit ECE-specific professorial statement beyond the department listing."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_8a3459e2625e53579162",
+        "description": "Borderline (vice provost). Included regular: Regular Faculty listing and profile state Professor. Would change to excluded academic_professional if the president/dean/provost rule is applied to vice provosts. Profile wording 'Department Chair' conflicts with the directory's El-Ghazawi as Department Chair; membership unaffected."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_eee2f32c758259118ec1",
+        "description": "Borderline (section placement). Excluded research_only: only listed under Research & Visiting Faculty, and the named-chair title does not place him on the main faculty list. Would change to included regular if the owner treats the named chair as a regular appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_e710696907e857dda4fc",
+        "description": "Excluded emeritus: Emeritus Faculty listing (Professor Emeritus) takes precedence over the generic Professor title in the Research & Visiting listing and in her profile. Would change to included regular if the owner treats the profile as the current appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_16a49cfc43825a0e83af",
+        "description": "Excluded emeritus: Emeritus Faculty listing (Professor Emeritus) takes precedence over the Research Faculty listing."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_079228fcd01f5d3397d9",
+        "description": "Included courtesy: explicit Courtesy Appointment heading; primary appointment per profile is Decision Sciences, which does not remove the explicit ECE courtesy designation."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_a8e43b5940e65912b0bf",
+        "description": "Excluded academic_professional: Associate Professor of Practice is a practice-track title."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_a512b255f93455a6a98b",
+        "description": "Included regular: 'On Sabbatical' office-hours note is not a departure."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_52352e82b44553d5afa9",
+        "description": "Excluded research_only: Research Professor title on the Research & Visiting list and in the profile."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_7186d588e6c659adb192",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_0ab6e86c8a4d56d591e4",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_2a45bb8848285413a11a",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ffed627cce0851278500",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4ec0c509b781503bb5ef",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_1c62ae717c4c5a2d9926",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_67082dd1e3d35002b6a4",
+        "description": "Excluded emeritus: Professor Emeritus on the Emeritus Faculty section of the official ECE directory."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_f7bc9787086a48ea9539e030048ba44b",
+    "candidate_sha256": "1b6e36f0796d6be7b35a99236d128daff5d3855be2b7c5afab6bf9e67aa3e8c8",
+    "transport": "t3",
+    "run_id": "agent_ac0354c1763f82ff0",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T05:04:03.421989+00:00",
+    "exit_code": 0
+  }
+}

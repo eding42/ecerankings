@@ -1,0 +1,388 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/37066fc08d93b38cce31ff332b00bbd4e40647dde60248bd3a2a3ad716573882.json",
+    "sha256": "37066fc08d93b38cce31ff332b00bbd4e40647dde60248bd3a2a3ad716573882"
+  },
+  "brief": {
+    "file": "audits/briefs/ed7bc4bb7b8d1d910d5d3c356b80e128b0aaa3b49429437d11ea8ca5d7846089.json",
+    "sha256": "ed7bc4bb7b8d1d910d5d3c356b80e128b0aaa3b49429437d11ea8ca5d7846089"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_92cc3c7f2c14482dbd61b97b7c440e43",
+    "candidate_sha256": "e71a6ff4cd6b347f12f36b56666bdcf652044f76979731718088877305a0fd9e",
+    "reviewer_id": "haiku-audit-wayne",
+    "reviewed_at": "2026-11-25T02:24:31.334363+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty",
+        "https://engineering.wayne.edu/electrical-computer/faculty"
+      ],
+      "checked_list_ids": [
+        "faculty"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_8e484c552b565b478b40",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as 'Associate Professor (Teaching), Electrical and Computer Engineering'. Teaching-track title is excluded under project convention; no regular or joint ECE professorial appointment shown.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_33c0afb73dc2528eb3f2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_f8bd0fff499b5ea6bfaa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_4930db20275b51db94b6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_3dec6e10e21f57adbb6c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as 'Professor Emeritus, Electrical and Computer Engineering'. Emeritus is excluded; current_state past.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_a28c8e5610f45891aded",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_f033907534ab5933bf45",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_68eb8eb4b6b75727a7a6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as 'Professor and Chair, Electrical and Computer Engineering': a departmental chair with a professorial rank in the main faculty list, so regular (membership ece, current).",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_edb209c2f296543788ba",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_d4bc595d12d25b67b7e2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_47e5c5d95c625872915a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_c25a83ac8ce85d35b26a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as 'Associate Professor (Teaching), Electrical and Computer Engineering'. Teaching-track title is excluded under project convention; no regular or joint ECE professorial appointment shown.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_404c3524ff4557ec8148",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_2458deed9ff55d92a526",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_c8d800c014765fc39143",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_432f8ac11c515a6f9b18",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_1a7e8601085155ecb761",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_6ca78d4c4f4c5242a763",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_f5ed9f46a98a56f48fe6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_cbef29c9070153ee83b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as 'Assistant Professor, Electrical and Computer Engineering' in the main faculty list: regular professorial rank (membership ece, current).",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_1a9acedf667b54be8a12",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_890d6f8df5db534a85a0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      },
+      {
+        "person_id": "person_d7cd063d55a05395aa18",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the main faculty list with a regular professorial title; no adjunct/courtesy/joint/affiliate designation or incoming announcement on the page; membership ece.",
+        "source_ids": [
+          "wayne-faculty-list"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "wayne-faculty-list",
+        "url": "https://engineering.wayne.edu/electrical-computer/faculty",
+        "observed_at": "2026-11-25T02:24:00.774557+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty profiles page, main listing: 23 person entries with name and title text",
+        "response_sha256": "7fada24ccf6e9ddd7590506c18a403c97940a71d723f07fc1f90f14d134e9c91"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Retrieved the single primary list (https://engineering.wayne.edu/electrical-computer/faculty, 45,329 bytes, sha256 7fada24c...c9e91) at 2026-11-25T02:24:00Z. Parsed 23 person entries (name, title, section); names match brief.people exactly, with no omissions in either direction."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "The department faculty page publishes no adjunct, joint, affiliated/below-the-line, courtesy or research-faculty lists. The only list is the main faculty profiles listing. Those categories therefore produce no entries here, and no separate sections were found to apply to any person."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No profile pages were fetched: every brief profile_url points to the list page, and profile pages are optional under the audit instructions. Decisions rest on the list-page titles."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_8e484c552b565b478b40",
+        "description": "Excluded as teaching: 'Associate Professor (Teaching)'. Would change only if an official source showed a regular or joint EE/ECE professorial appointment, which the department page does not show."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c25a83ac8ce85d35b26a",
+        "description": "Excluded as teaching: 'Associate Professor (Teaching)'. Would change only if an official source showed a regular or joint EE/ECE professorial appointment, which the department page does not show."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_3dec6e10e21f57adbb6c",
+        "description": "Excluded as emeritus: 'Professor Emeritus'. Would change only if an official source showed a current active professorial appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_68eb8eb4b6b75727a7a6",
+        "description": "Included as regular: 'Professor and Chair' carries a professorial rank in the main list."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_cbef29c9070153ee83b4",
+        "description": "Included as regular: 'Assistant Professor' in the main list; no incoming or start-date statement on the page."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_92cc3c7f2c14482dbd61b97b7c440e43",
+    "candidate_sha256": "e71a6ff4cd6b347f12f36b56666bdcf652044f76979731718088877305a0fd9e",
+    "transport": "t3",
+    "run_id": "agent_ae8112681f882dc29",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T02:24:49.033200+00:00",
+    "exit_code": 0
+  }
+}

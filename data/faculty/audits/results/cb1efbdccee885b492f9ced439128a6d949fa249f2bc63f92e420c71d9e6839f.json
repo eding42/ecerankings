@@ -1,0 +1,1123 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/ab117bd8d22e4b448936c269652ac86f99037d7cc111e61286547b1eba2bfdf6.json",
+    "sha256": "ab117bd8d22e4b448936c269652ac86f99037d7cc111e61286547b1eba2bfdf6"
+  },
+  "brief": {
+    "file": "audits/briefs/b7879577488628b28b6642e084e3cfed20184dafd7aa83b831ef1d4f88c0beda.json",
+    "sha256": "b7879577488628b28b6642e084e3cfed20184dafd7aa83b831ef1d4f88c0beda"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_54a60f6f4b5b40aebb63bc5a3fbb20e0",
+    "candidate_sha256": "1c4ab584fb253925f37bc9d739fc60ae4735daa00911f13795d23ef6cb6bc56b",
+    "reviewer_id": "claude-sonnet-5-5-v5-t20-audit",
+    "reviewed_at": "2026-11-23T11:10:42.118945+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/electrical-engineering",
+        "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/emeriti-retired-officers-not-residence"
+      ],
+      "checked_list_ids": [
+        "bulletin_ee",
+        "bulletin_emeriti_ee"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_0124237397835ae4b5cb",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_01d0be3c41d95e619b35",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_075a8cf9ea89546fafd8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_07830ce871595399be8a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Senior Associate Research Scientist\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_08bdf25b7254524b9d2b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Charles Batchelor Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_0997d0216f235166bfa9",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "EE Bulletin lists \"Henning G. Schulzrinne, Computer Science\" under Professors, i.e. a professor whose home department is the one named after the comma, carried in the EE roster; Faculty Bulletin gives an explicit Professor of Electrical Engineering title (Julian Clarence Levi Professor of Mathematical Methods and Computer Science and Professor of Electrical Engineering). Official professorial EE appointment, regular-versus-courtesy subtype not established, so joint_secondary.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_0d212985792450f187d4",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_0dd4dac84821578c96f3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Professor Emeritus of Electrical Engineering\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_0e6f7fdbb6345deb8c04",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_10d62362dfd05318a55b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Bernard J. Lechner Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_11325a66ebfa5477b687",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Kenneth Brayer Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_11c5b8b5165f595ea4dc",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Charles Batchelor Professor Emeritus of Electrical Engineering\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_15037819915b5da2b80c",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_15a02c58449f50648fdf",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_1c7a472cdd24555d8fc8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Assistant Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Assistant Professor of Electrical Engineering\". Professorial EE appointment (EE rank Assistant Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_2486968a6e3f57b19fb6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Edwin Howard Armstrong Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_250748cf4a9d515bac9b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_2b17b1039ca75f7a925c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_2ca7ce2995215111bcd4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Research Scientist\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_2ce155bee57f5364a0b6",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_2d680428963353328693",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_2df686312d50520aa34e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_2eea16bfb5ac5e31b8a2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_31fa035b3c8353129612",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Dicker Professor Emeritus of Electrical Engineering\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_33bb87474d6c5b95a5cb",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Professor Emeritus of Electrical Engineering\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_3670529334a0520ab76f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_38468993a559572ba1ee",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Senior Research Scientist\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_38b17dc648e0517c97ce",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_3af9a07d46df5ab6b049",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Assistant Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_3e7ea489cbc5537bb98c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_46aaee1da61a544cb3e4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Assistant Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_49a31c9ae85b57eeaf82",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Assistant Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_53f97695b74254d7a10e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_5de85541cabd544d883e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_5de934acdaab5091be7c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Thayer Lindsley Professor in the Faculty of Engineering and Applied Science (Electrical Engineering) and Professor of Applied Physics\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_6ce70e75da835ab8a666",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_73809073ae2f5b298581",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Charles Batchelor Professor of Electrical Engineering and Professor of Systems Biology\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_7e59eed4e35356e7ae59",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_8331bf31ad9e59b7a55a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_87ded14079825711b91c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors of Professional Practice\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Professional Practice in Electrical Engineering\". Professional-practice / discipline-lecturer (teaching) title, an excluded non-research-professor category.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_8d091a2f1f4159a28ae6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_908101842838552b987f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors of Professional Practice\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Professional Practice in the Department of Mechanical Engineering and of Electrical Engineering\". Professional-practice / discipline-lecturer (teaching) title, an excluded non-research-professor category.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_92da5b3e64e751068d58",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_946dbcab358151c1bdaa",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_951b9619a194529597cd",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_96e8af6353ed5107adde",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Professor Emeritus of Computer Science and Electrical Engineering\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_9cb5676fbdee54ff9857",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Assistant Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Assistant Professor of Electrical Engineering\". Professorial EE appointment (EE rank Assistant Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_9e71a86f3e3658d9b65c",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_9f8064323cd35b2f804f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Assistant Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Assistant Professor of Electrical Engineering\". Professorial EE appointment (EE rank Assistant Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_a1417f1659605a8ca81f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "EE Bulletin lists \"Alexander Gaeta, Applied Physics and Materials Science\" under Professors, i.e. a professor whose home department is the one named after the comma, carried in the EE roster; Faculty Bulletin gives an explicit Professor of Electrical Engineering title (David M. Rickey Professor of Applied Physics and Materials Science and Professor of Electrical Engineering). Official professorial EE appointment, regular-versus-courtesy subtype not established, so joint_secondary.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_a1ab5c28ff5c56b39ce9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_a5610a4eb5ae5e3f9432",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_a72522c9ed9456f0b3e1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Kenneth Brayer Professor of Electrical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_a7a1ba72e048507eaf9f",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_aa373f9328ce503eb3be",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_af5ab7baf1f15846aa33",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_af939a05e90e5884813c",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Assistant Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_b04c7e3646c75ad7b4a5",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_b0950a342f045b11a01c",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Research Scientist\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_b0bb2592bac657da9330",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_b277423ca0e858879199",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_b96e18b0564e598d9a91",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "EE Bulletin lists \"Paul Sajda, Biomedical Engineering\" under Professors, i.e. a professor whose home department is the one named after the comma, carried in the EE roster; Faculty Bulletin gives an explicit Professor of Electrical Engineering title (Vikram S. Pandit Professor of Biomedical Engineering; Professor of Radiology (Physics) and Electrical Engineering). Official professorial EE appointment, regular-versus-courtesy subtype not established, so joint_secondary.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_be574ca6cc185df0abd0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Lau Family Professor of Electrical Engineering and Professor of Biomedical Engineering\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_c25ce97ef8835878a08f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_cd35f901bb3d5b699d7f",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_d3e4dd527fd456aba449",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_dadcd765fc1559ca9f5e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Associate Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_db857c55eca653269e2e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Professor Emeritus of Electrical Engineering and of Computer Science\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_dc28b4824d2c55fd8813",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_e49f23ae91da5b6292af",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Postdoctoral Research Scientists\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_e536c650e5615f309731",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Morris A. and Alma Schapiro Professor and Professor of Electrical Engineering and Computer Science\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_e8d2e2edbcb55f23be7b",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_eb0cd36928575b0793b8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_eba063b869a95c5e8a56",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_f384d66f8ddf5f678916",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Senior Lecturer in Discipline\" in the EE Bulletin directory. Faculty Bulletin: \"Teaching Professor of Electrical Engineering\". Professional-practice / discipline-lecturer (teaching) title, an excluded non-research-professor category.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_f3f8606e7db85118b359",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Higgins Professor of Electrical Engineering and Professor of Applied Physics\". Professorial EE appointment (EE rank Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_f45cb304e4655ce4a143",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professor of Professional Practice\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Professional Practice in Electrical Engineering\". Professional-practice / discipline-lecturer (teaching) title, an excluded non-research-professor category.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_f60ec362d8a054dea830",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Assistant Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Assistant Professor of Electrical Engineering\". Professorial EE appointment (EE rank Assistant Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      },
+      {
+        "person_id": "person_f88cd0d0cc4c53c58e50",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on the Columbia Engineering Bulletin Emeriti and Retired Officers (Not in Residence) page as \"Professor Emeritus of Electrical Engineering\"; emeritus is an excluded category.",
+        "source_ids": [
+          "shared_frozen_96d4af622302d904f86717cb"
+        ]
+      },
+      {
+        "person_id": "person_f95f39758e2b5c6885f0",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Adjunct Professors\" in the EE Bulletin directory; adjunct appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_fc0f66a973835b2a85d1",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Staff Associate\" in the EE Bulletin directory; non-professorial research/staff title, excluded.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7"
+        ]
+      },
+      {
+        "person_id": "person_fcd7a2242df65d23a5b1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under \"Associate Professors\" in the EE Bulletin directory. Faculty Bulletin: \"Associate Professor of Electrical Engineering\". Professorial EE appointment (EE rank Associate Professor); no incoming/start-date language.",
+        "source_ids": [
+          "shared_frozen_a6c8e681380e01f91f7977c7",
+          "shared_frozen_93508afa7568ae7b28eaaf97"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_a6c8e681380e01f91f7977c7",
+        "url": "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/electrical-engineering",
+        "observed_at": "2026-11-23T10:59:42.479820+00:00",
+        "request_json": "{\"form\": {}, \"method\": \"GET\"}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ff01e5cc9e93ac9f53b1e4f438f147dbedddfbbd86d117a4b6a1699b75aeafd8"
+      },
+      {
+        "id": "shared_frozen_96d4af622302d904f86717cb",
+        "url": "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/emeriti-retired-officers-not-residence",
+        "observed_at": "2026-11-23T10:59:43.251008+00:00",
+        "request_json": "{\"form\": {}, \"method\": \"GET\"}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3d796484997e0fe052d0c7ff4e4629bc059403a58913e09d55a52b8640bfe27b"
+      },
+      {
+        "id": "shared_frozen_93508afa7568ae7b28eaaf97",
+        "url": "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/faculty",
+        "observed_at": "2026-11-23T10:59:43.764508+00:00",
+        "request_json": "{\"form\": {}, \"method\": \"GET\"}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0f75e15f204b123db04176f98ba2e410f9ff7f36ebcee0725e9202fc02e1c587"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Independent parse of the pinned EE Bulletin page enumerated 75 names across 15 headings and the Emeriti page yielded 7 EE-titled emeriti (Coffman, Diament, Meadows, Nowick, Schwartz, Stern, Yang); these 82 names exactly equal the required person set. Faculty Bulletin was scanned for every \"Electrical\" title: every hit maps to a required person (name variants only), so no omissions."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_2b17b1039ca75f7a925c",
+        "description": "EE Bulletin spells the name \"Xiaodang Wang\"; Faculty Bulletin lists \"Xiaodong Wang, Professor of Electrical Engineering\". Treated as the same person (same rank/dept; identity merge is the collector's, not changed here)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "Homayoon Beigi, Zoran Kostic and Xiang Meng (Professor/Associate Professor of Professional Practice) and David Vallancourt (Senior Lecturer in Discipline; Faculty Bulletin: \"Teaching Professor of Electrical Engineering\") are classified teaching and excluded. Alexander Gaeta, Paul Sajda and Henning Schulzrinne appear in the EE directory with another home department after the name and a Faculty Bulletin \"Professor of Electrical Engineering\" title; classified joint_secondary (included)."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Adjunct Senior Associate / Adjunct Associate Research Scientists (Willner, Fratelli, Ko) carry both adjunct and research-scientist labels; recorded as adjunct. Staff Associate, Senior Research Scientist, Associate Research Scientists and Postdoctoral Research Scientists recorded as research_staff. All excluded either way. No announced incoming or start-date language appears on the pinned pages."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Faculty Members-at-Large and individual personal/lab profile pages were not part of the pinned captures; unit authority rests on the official Bulletin EE listing and Faculty Bulletin titles."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_54a60f6f4b5b40aebb63bc5a3fbb20e0",
+    "candidate_sha256": "1c4ab584fb253925f37bc9d739fc60ae4735daa00911f13795d23ef6cb6bc56b",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A81c1b876-7755-4b73-8b77-31cc6ed303e0%253Adelegate-task%253Av5-t20-columbia_princeton-70615f4a:ordinal:1",
+    "model": "claude-sonnet-5-5",
+    "finished_at": "2026-11-23T11:11:25.520701+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/97ab3f5f5f900290520add490633fe286087aa3cfd4954ac56623154d1a7ad0c.json",
+      "sha256": "97ab3f5f5f900290520add490633fe286087aa3cfd4954ac56623154d1a7ad0c"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/97ab3f5f5f900290520add490633fe286087aa3cfd4954ac56623154d1a7ad0c.json",
+    "sha256": "97ab3f5f5f900290520add490633fe286087aa3cfd4954ac56623154d1a7ad0c"
+  }
+}

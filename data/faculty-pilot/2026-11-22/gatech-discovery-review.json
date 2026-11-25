@@ -1,0 +1,146 @@
+{
+  "reviewer": "Astra independent discovery cross-check",
+  "observed_date": "2026-11-22",
+  "scope": "Four named discovery candidates; no prior evidence changed.",
+  "premise_correction": "Daglis and Hyesoon Kim are already among the neutral219 ECE records. Only Abernethy and Dhekne are outside that roster.",
+  "sources": [
+    {
+      "key": "abernethy",
+      "url": "https://ideas.gatech.edu/people/jacob-abernethy",
+      "sha256": "a946596d129ba258821d231327d8f722d2d50bf1ddb5167c33af8cdcf89e335d",
+      "snapshot": ".tmp/astra-gatech/discovery/abernethy.html",
+      "observed_at": "2026-11-22T21:45:48.421478+00:00"
+    },
+    {
+      "key": "abernethy_scs",
+      "url": "https://www.scs.gatech.edu/people/jacob-abernethy",
+      "sha256": "05e50b603e946b05079cf0624439ff4fa1caac67171012e4a1c825926805d9ea",
+      "snapshot": ".tmp/astra-gatech/discovery/abernethy_scs.html",
+      "observed_at": "2026-11-22T21:45:48.733134+00:00"
+    },
+    {
+      "key": "dhekne",
+      "url": "https://www.scs.gatech.edu/people/ashutosh-dhekne",
+      "sha256": "dbcc5cab72af56e23cad73a8a704ee1e7b345caf20f253c9cca794c5feee7df5",
+      "snapshot": ".tmp/astra-gatech/discovery/dhekne.html",
+      "observed_at": "2026-11-22T21:45:48.736560+00:00"
+    },
+    {
+      "key": "dhekne_cv",
+      "url": "https://www.cc.gatech.edu/cv/adhekne3",
+      "sha256": "a91fc907733ab821c8b7eb70056f966a2c4266e0d6a2d2bfef0c9a7e66fffa9b",
+      "snapshot": ".tmp/astra-gatech/discovery/dhekne_cv.html",
+      "observed_at": "2026-11-22T21:45:48.266763+00:00"
+    },
+    {
+      "key": "daglis",
+      "url": "https://ece.gatech.edu/directory/alexandros-daglis",
+      "sha256": "dce225dffd438ffd3981990df9d09e055cbe333544db7ddc3ce1107a1052153c",
+      "snapshot": ".tmp/astra-gatech/discovery/daglis.html",
+      "observed_at": "2026-11-22T21:45:47.929209+00:00"
+    },
+    {
+      "key": "kim",
+      "url": "https://ece.gatech.edu/directory/hyesoon-kim",
+      "sha256": "873a54886c88e1dc95e5cec5972c23ea0a9c5faafad881476b2db382972ff479",
+      "snapshot": ".tmp/astra-gatech/discovery/kim.html",
+      "observed_at": "2026-11-22T21:45:48.003385+00:00"
+    },
+    {
+      "key": "kim_scs",
+      "url": "https://www.scs.gatech.edu/people/hyesoon-kim",
+      "sha256": "abc18a79a4c30975bb2ce554e1d358f1298f5024c9d394c8b3c9d092812bca28",
+      "snapshot": ".tmp/astra-gatech/discovery/kim_scs.html",
+      "observed_at": "2026-11-22T21:45:48.526526+00:00"
+    },
+    {
+      "key": "labs",
+      "url": "https://researchopportunities.ece.gatech.edu/research-labs/",
+      "snapshot": ".tmp/faculty-pilot/scope_gatech_labs.html",
+      "sha256": "982b40a9bb5306c37ba441a5a421dba3d71b638ababbc8435ddfd8f67be29cde",
+      "observed_date": "2026-11-22"
+    }
+  ],
+  "records": [
+    {
+      "name": "Jacob Abernethy",
+      "existing_person_id": null,
+      "present_in_219_ece_roster": false,
+      "source_keys": [
+        "abernethy",
+        "abernethy_scs",
+        "labs"
+      ],
+      "stated_appointment_facts": [
+        "SCS institutional profile identifies Associate Professor and affiliations SCS and ML@GT.",
+        "IDEaS profile identifies College of Computing associate professor and School of Computer Science unit.",
+        "Earlier Michigan EECS employment is not a Georgia Tech ECE appointment."
+      ],
+      "eligible": false,
+      "classification": "regular_ECE_not_established",
+      "reasoning": "Do not add to verified regular ECE roster: institutional profiles establish CS roles and none of the inspected sources establishes a regular or joint ECE appointment. This is an evidence-based non-inclusion, not proof that no unlisted joint appointment exists.",
+      "limits": [
+        "Missing from ECE roster alone is not proof of no ECE appointment.",
+        "Primary CS affiliation alone cannot negate a genuine joint ECE appointment.",
+        "A later explicit current university appointment source would reopen eligibility."
+      ]
+    },
+    {
+      "name": "Ashutosh Dhekne",
+      "existing_person_id": null,
+      "present_in_219_ece_roster": false,
+      "source_keys": [
+        "dhekne",
+        "dhekne_cv",
+        "labs"
+      ],
+      "stated_appointment_facts": [
+        "SCS institutional biography identifies associate professor of Computer Science.",
+        "College of Computing academic CV identifies primary unit School of Computer Science."
+      ],
+      "eligible": false,
+      "classification": "regular_ECE_not_established",
+      "reasoning": "Do not add to verified regular ECE roster: institutional profiles establish CS roles and none of the inspected sources establishes a regular or joint ECE appointment. This is an evidence-based non-inclusion, not proof that no unlisted joint appointment exists.",
+      "limits": [
+        "Missing from ECE roster alone is not proof of no ECE appointment.",
+        "Primary CS affiliation alone cannot negate a genuine joint ECE appointment.",
+        "A later explicit current university appointment source would reopen eligibility."
+      ]
+    },
+    {
+      "name": "Alexandros Daglis",
+      "existing_person_id": "gatech:cf1dc7505f2f8b36",
+      "present_in_219_ece_roster": true,
+      "source_keys": [
+        "daglis",
+        "labs"
+      ],
+      "stated_appointment_facts": [
+        "ECE institutional profile explicitly labels ECE Adjunct alongside Associate Professor."
+      ],
+      "eligible": false,
+      "classification": "adjunct_ECE",
+      "reasoning": "Explicit ECE adjunct appointment excludes from regular ECE scope.",
+      "limits": []
+    },
+    {
+      "name": "Hyesoon Kim",
+      "existing_person_id": "gatech:7befcb3c890c5ec0",
+      "present_in_219_ece_roster": true,
+      "source_keys": [
+        "kim",
+        "kim_scs",
+        "labs"
+      ],
+      "stated_appointment_facts": [
+        "ECE institutional profile explicitly labels ECE Adjunct alongside School Chair-Academic.",
+        "SCS institutional profile identifies professor and chair of Computer Science, chair appointment August 2026."
+      ],
+      "eligible": false,
+      "classification": "adjunct_ECE",
+      "reasoning": "Explicit ECE adjunct appointment excludes from regular ECE scope.",
+      "limits": []
+    }
+  ],
+  "summary": "No additional verified regular ECE professor identified. Two explicit adjunct exclusions; two non-inclusions for lack of positive ECE appointment evidence."
+}

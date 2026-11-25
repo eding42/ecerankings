@@ -1,0 +1,43 @@
+{
+  "schema_version": 1,
+  "job_id": "audit_d4519ee27e824c14a257620409ee4668",
+  "candidate_sha256": "61dc31cd80d8a45860a00a9344a93c66e962c1b2f4568666490b8d89c5aa3a33",
+  "created_at": "2026-11-23T11:00:34.831784+00:00",
+  "provenance": "Independent judgment of immutable shared university captures from the candidate observation date. Source capture times are preserved and may predate this audit job.",
+  "evidence": {
+    "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200": {
+      "file": "evidence/2baf51458157bed0ee3deaf61ee174047b121983f7523618847fc6643f4f192f.json",
+      "sha256": "2baf51458157bed0ee3deaf61ee174047b121983f7523618847fc6643f4f192f"
+    },
+    "https://faculty.engineering.asu.edu/directory/ecee/rank": {
+      "file": "evidence/b93d80a0e51b1e1bfb31cc758a0dc68df30249cf3c3c7c9b9baea39123bedd16.json",
+      "sha256": "b93d80a0e51b1e1bfb31cc758a0dc68df30249cf3c3c7c9b9baea39123bedd16"
+    }
+  },
+  "records": [
+    {
+      "id": "shared_frozen_7f6caccb5fe34c2caa8c8d84",
+      "url": "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+      "observed_at": "2026-11-23T10:59:57.828761+00:00",
+      "response_sha256": "23bf401aa5a4678096e7a3d80805f45f7621d5bf55bca1d9f5ca0de53d0a23e9",
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-t20/sources/edd7d82e62303efd2ba71acd69a247935a212578332ef2c5fba1d49ed9263294.bin",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact."
+    },
+    {
+      "id": "shared_frozen_e783479e8b60cb824fb7f12f",
+      "url": "https://faculty.engineering.asu.edu/directory/ecee/rank",
+      "observed_at": "2026-11-23T10:59:58.069055+00:00",
+      "response_sha256": "c532d06f33c474d4797972c7580cda095c5f74a0cfcfb923a62f42119709b493",
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-t20/sources/940f0539ea95416aad57ca10af547ff1c0bc63421611de3bade201d3a775f006.bin",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact."
+    }
+  ]
+}

@@ -1,0 +1,2830 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/b9009dfdfde40dd7cace7f8754c41cd5c8d4601a475cdc8d63a606db06a47262.json",
+    "sha256": "b9009dfdfde40dd7cace7f8754c41cd5c8d4601a475cdc8d63a606db06a47262"
+  },
+  "brief": {
+    "file": "audits/briefs/d74e940e94994f9053c4e5554d6d02815b8a05a9f87290cb74dea24928c72e0b.json",
+    "sha256": "d74e940e94994f9053c4e5554d6d02815b8a05a9f87290cb74dea24928c72e0b"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_71b40f7b6985463098ec3cde062d7055",
+    "candidate_sha256": "0bf6e8e03a7a4d96ae195451e97cc13b6a20931af827fc0bfb1b30bc9a33436b",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:53:29.853281+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://colorado.edu/ecee/adam-sadoff",
+        "https://colorado.edu/ecee/al-bovik",
+        "https://colorado.edu/ecee/alan-brannon",
+        "https://colorado.edu/ecee/albin-gasiewski",
+        "https://colorado.edu/ecee/andras-gyenis",
+        "https://colorado.edu/ecee/andrew-ludlow",
+        "https://colorado.edu/ecee/andrew-pleszkun",
+        "https://colorado.edu/ecee/antonio-gentile",
+        "https://colorado.edu/ecee/arielle-blum",
+        "https://colorado.edu/ecee/arnoldo-majerfeld",
+        "https://colorado.edu/ecee/bart-van-zeghbroeck",
+        "https://colorado.edu/ecee/bor-yuh-evan-chang",
+        "https://colorado.edu/ecee/bret-moreland",
+        "https://colorado.edu/ecee/brett-perez",
+        "https://colorado.edu/ecee/bri-mathias-hodge",
+        "https://colorado.edu/ecee/brian-hooker",
+        "https://colorado.edu/ecee/calvin-chan",
+        "https://colorado.edu/ecee/charles-ferrer",
+        "https://colorado.edu/ecee/cheng-wang",
+        "https://colorado.edu/ecee/chris-choi",
+        "https://colorado.edu/ecee/chris-myers",
+        "https://colorado.edu/ecee/claire-bennett",
+        "https://colorado.edu/ecee/cody-scarborough",
+        "https://colorado.edu/ecee/dan-walkes",
+        "https://colorado.edu/ecee/dana-anderson",
+        "https://colorado.edu/ecee/daniel-feldkhun",
+        "https://colorado.edu/ecee/david-beeman",
+        "https://colorado.edu/ecee/david-meyer-0",
+        "https://colorado.edu/ecee/debbie-yeh",
+        "https://colorado.edu/ecee/dejan-filipovic",
+        "https://colorado.edu/ecee/dirk-grunwald",
+        "https://colorado.edu/ecee/dragan-maksimovic",
+        "https://colorado.edu/ecee/edward-kuester",
+        "https://colorado.edu/ecee/elizabeth-bradley",
+        "https://colorado.edu/ecee/emily-gibson",
+        "https://colorado.edu/ecee/emily-jensen",
+        "https://colorado.edu/ecee/eric-bogatin",
+        "https://colorado.edu/ecee/eric-keller",
+        "https://colorado.edu/ecee/eric-wustrow",
+        "https://colorado.edu/ecee/erica-reid",
+        "https://colorado.edu/ecee/erik-hodges",
+        "https://colorado.edu/ecee/evan-feldman",
+        "https://colorado.edu/ecee/ewald-fuchs",
+        "https://colorado.edu/ecee/fabio-somenzi",
+        "https://colorado.edu/ecee/faisal-khan",
+        "https://colorado.edu/ecee/florent-lecocq",
+        "https://colorado.edu/ecee/frank-barnes",
+        "https://colorado.edu/ecee/franklyn-quinlan",
+        "https://colorado.edu/ecee/garret-moddel",
+        "https://colorado.edu/ecee/gary-hachtel",
+        "https://colorado.edu/ecee/gonzalo-constante-flores",
+        "https://colorado.edu/ecee/henry-kapteyn",
+        "https://colorado.edu/ecee/howard-wachtel",
+        "https://colorado.edu/ecee/jade-morton",
+        "https://colorado.edu/ecee/jarka-hladisova",
+        "https://colorado.edu/ecee/jay-mendelson",
+        "https://colorado.edu/ecee/john-bennett",
+        "https://colorado.edu/ecee/john-hauser",
+        "https://colorado.edu/ecee/jonathan-haines",
+        "https://colorado.edu/ecee/joseph-joe-izraelevitz",
+        "https://colorado.edu/ecee/juan-rodriguez",
+        "https://colorado.edu/ecee/juliet-gopinath",
+        "https://colorado.edu/ecee/kamal-sharma",
+        "https://colorado.edu/ecee/katie-morgan",
+        "https://colorado.edu/ecee/kelvin-wagner",
+        "https://colorado.edu/ecee/kim-macgregor",
+        "https://colorado.edu/ecee/kimberly-low",
+        "https://colorado.edu/ecee/kyri-baker",
+        "https://colorado.edu/ecee/laila-fighera-marzall",
+        "https://colorado.edu/ecee/lalit-pandit",
+        "https://colorado.edu/ecee/laura-sinclair",
+        "https://colorado.edu/ecee/liliana-filipovic",
+        "https://colorado.edu/ecee/linden-mcclure",
+        "https://colorado.edu/ecee/logan-horowitz",
+        "https://colorado.edu/ecee/lori-meehan",
+        "https://colorado.edu/ecee/luca-corradini",
+        "https://colorado.edu/ecee/lucy-pao",
+        "https://colorado.edu/ecee/mackenzie-hatcher",
+        "https://colorado.edu/ecee/mahesh-varanasi",
+        "https://colorado.edu/ecee/marco-nicotra",
+        "https://colorado.edu/ecee/margaret-murnane",
+        "https://colorado.edu/ecee/matt-eichenfield",
+        "https://colorado.edu/ecee/melinda-piket-may",
+        "https://colorado.edu/ecee/michael-lightner",
+        "https://colorado.edu/ecee/nicole-bienert",
+        "https://colorado.edu/ecee/nikolaus-correll",
+        "https://colorado.edu/ecee/nikolay-zabotin",
+        "https://colorado.edu/ecee/niyem-mawenbe-bawana",
+        "https://colorado.edu/ecee/patty-sue-femrite",
+        "https://colorado.edu/ecee/paul-kooros",
+        "https://colorado.edu/ecee/peter-mathys",
+        "https://colorado.edu/ecee/rafael-piestun",
+        "https://colorado.edu/ecee/ramin-ayanzadeh",
+        "https://colorado.edu/ecee/richard-mihran",
+        "https://colorado.edu/ecee/robert-maccurdy",
+        "https://colorado.edu/ecee/robert-mcleod",
+        "https://colorado.edu/ecee/robert-w-erickson",
+        "https://colorado.edu/ecee/robin-elliott",
+        "https://colorado.edu/ecee/russell-hayes",
+        "https://colorado.edu/ecee/sam-siewert",
+        "https://colorado.edu/ecee/scott-diddams",
+        "https://colorado.edu/ecee/sean-shaheen",
+        "https://colorado.edu/ecee/shalom-ruben",
+        "https://colorado.edu/ecee/shu-wei-huang",
+        "https://colorado.edu/ecee/sofi-alarcon-escallada",
+        "https://colorado.edu/ecee/sriram-sankaranarayanan",
+        "https://colorado.edu/ecee/stacy-marquardt",
+        "https://colorado.edu/ecee/suhad-salah",
+        "https://colorado.edu/ecee/susan-avery",
+        "https://colorado.edu/ecee/talles-santos",
+        "https://colorado.edu/ecee/tamara-lehman",
+        "https://colorado.edu/ecee/taylor-barton",
+        "https://colorado.edu/ecee/terri-fiez",
+        "https://colorado.edu/ecee/terry-gilbert",
+        "https://colorado.edu/ecee/tim-scherr",
+        "https://colorado.edu/ecee/tim-swettlen",
+        "https://colorado.edu/ecee/tina-smilkstein-1",
+        "https://colorado.edu/ecee/ute-herzfeld",
+        "https://colorado.edu/ecee/vanessa-de-los-reyes",
+        "https://colorado.edu/ecee/victor-bright",
+        "https://colorado.edu/ecee/vincent-heuring",
+        "https://colorado.edu/ecee/wounjhang-won-park",
+        "https://colorado.edu/ecee/yide-zhang",
+        "https://colorado.edu/ecee/youjian-eugene-liu",
+        "https://colorado.edu/ecee/zoya-popovic"
+      ],
+      "checked_list_ids": [
+        "ecee_p1",
+        "ecee_p2",
+        "ecee_p3"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_cd1a19c0f5b059ea877d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Dana Anderson is Affiliated Faculty (Professor of Physics ) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_cd1a19c0f5b059ea877d"
+        ]
+      },
+      {
+        "person_id": "person_b1645ed917755b9d93e8",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "John Bennett is Affiliated Faculty (Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_b1645ed917755b9d93e8"
+        ]
+      },
+      {
+        "person_id": "person_7ade3dd23c625bbcba9f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Victor Bright is Affiliated Faculty (Professor of Mechanical Engineering; Alvah and Harriet Hovlid Professor) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_7ade3dd23c625bbcba9f"
+        ]
+      },
+      {
+        "person_id": "person_771523679015580480f4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Dirk Grunwald is Affiliated Faculty (Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_771523679015580480f4"
+        ]
+      },
+      {
+        "person_id": "person_2c8b8613ac0354daa0bb",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Henry Kapteyn is Affiliated Faculty (Professor of Physics ) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_2c8b8613ac0354daa0bb"
+        ]
+      },
+      {
+        "person_id": "person_030cc6f461ef5610b1a2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Garret Moddel is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_030cc6f461ef5610b1a2"
+        ]
+      },
+      {
+        "person_id": "person_f66ead418181527ca26e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Margaret Murnane is Affiliated Faculty (Professor of Physics) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_f66ead418181527ca26e"
+        ]
+      },
+      {
+        "person_id": "person_07f240ac7cc55702b2ed",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Terri Fiez is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_07f240ac7cc55702b2ed"
+        ]
+      },
+      {
+        "person_id": "person_3a635a112789513b96d2",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jarka Hladisova is listed as Staff (Professional Research Assistant); excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_3a635a112789513b96d2"
+        ]
+      },
+      {
+        "person_id": "person_bc39c391e3475887a264",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David Beeman is listed as ['Adjunct Faculty'] (Professor Adjunct); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_bc39c391e3475887a264"
+        ]
+      },
+      {
+        "person_id": "person_16be5ca62054509eb73d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Bor-Yuh Evan Chang is Affiliated Faculty (Associate Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_16be5ca62054509eb73d"
+        ]
+      },
+      {
+        "person_id": "person_779127b1f2925b58ba7d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Sriram Sankaranarayanan is Affiliated Faculty (Associate Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_779127b1f2925b58ba7d"
+        ]
+      },
+      {
+        "person_id": "person_614bd4bfc1815a879923",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Eric Bogatin is listed as ['Teaching Faculty'] (Scholar in Residence); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_614bd4bfc1815a879923"
+        ]
+      },
+      {
+        "person_id": "person_368bcb40223f5858a18e",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Shalom Ruben is Affiliated Faculty with non-professorial teaching title (Senior Instructor in Mechanical Engineering); excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_368bcb40223f5858a18e"
+        ]
+      },
+      {
+        "person_id": "person_c3a3e413a1f157928794",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Bret Moreland is listed as Staff (Laboratory and Facilities Coordinator); excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_c3a3e413a1f157928794"
+        ]
+      },
+      {
+        "person_id": "person_bb3d7efc7b7650d1bf5f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Arnoldo Majerfeld is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_bb3d7efc7b7650d1bf5f"
+        ]
+      },
+      {
+        "person_id": "person_68e9979be52e5862b243",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Juan Rodriguez is listed as ['Adjunct Faculty'] (Adjunct Professor); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_68e9979be52e5862b243"
+        ]
+      },
+      {
+        "person_id": "person_9128bba5504658a998f4",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jay Mendelson is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_9128bba5504658a998f4"
+        ]
+      },
+      {
+        "person_id": "person_72af6b1b26dc57b28e6c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Gary Hachtel is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_72af6b1b26dc57b28e6c"
+        ]
+      },
+      {
+        "person_id": "person_4b8501694a855bc5bca2",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Robert MacCurdy is Affiliated Faculty (Assistant Professor of Mechanical Engineering) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_4b8501694a855bc5bca2"
+        ]
+      },
+      {
+        "person_id": "person_c516818b6d37553187ac",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Russell Hayes is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_c516818b6d37553187ac"
+        ]
+      },
+      {
+        "person_id": "person_f81ba9ab46025999ae95",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Jade Morton is Affiliated Faculty (Professor of Aerospace Engineering Sciences) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_f81ba9ab46025999ae95"
+        ]
+      },
+      {
+        "person_id": "person_25eed11bb47052618f7d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Emily Gibson is Affiliated Faculty (Associate Professor of Bioengineering, CU Denver ) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_25eed11bb47052618f7d"
+        ]
+      },
+      {
+        "person_id": "person_ff6f2ec18ea65286b02e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Debbie Yeh is listed as Staff (Area Director; Undergraduate Advisor); excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_ff6f2ec18ea65286b02e"
+        ]
+      },
+      {
+        "person_id": "person_5bdb1827b6825cac81f4",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Lalit Pandit is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_5bdb1827b6825cac81f4"
+        ]
+      },
+      {
+        "person_id": "person_a0f19aed72f9541a9771",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Paul Kooros is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_a0f19aed72f9541a9771"
+        ]
+      },
+      {
+        "person_id": "person_6fe5ab1adbb955189de1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Ewald Fuchs is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_6fe5ab1adbb955189de1"
+        ]
+      },
+      {
+        "person_id": "person_e53077371b925a5ba761",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David Meyer is listed as Emeritus Faculty (Associate Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_e53077371b925a5ba761"
+        ]
+      },
+      {
+        "person_id": "person_1c43339815e75e00a7d1",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Andrew Ludlow is listed as ['Adjoint Faculty'] (Adjoint Professor); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_1c43339815e75e00a7d1"
+        ]
+      },
+      {
+        "person_id": "person_240ab294068d57989113",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Laura Sinclair is listed as ['Adjoint Faculty'] (Adjoint Professor); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_240ab294068d57989113"
+        ]
+      },
+      {
+        "person_id": "person_cd0762fd9bb05b2fbe26",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Brett Perez is listed as Staff (IT Systems Engineer); excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_cd0762fd9bb05b2fbe26"
+        ]
+      },
+      {
+        "person_id": "person_6095e12fd5165056a4ce",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Richard Mihran is listed as ['Adjunct Faculty'] (Professor Adjunct); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_6095e12fd5165056a4ce"
+        ]
+      },
+      {
+        "person_id": "person_2460fa43725058a3a0df",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Nikolaus Correll is Affiliated Faculty (Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_2460fa43725058a3a0df"
+        ]
+      },
+      {
+        "person_id": "person_ccb94497dfaa5923bc9a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Franklyn Quinlan is listed as ['Adjoint Faculty'] (Adjoint Professor); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_ccb94497dfaa5923bc9a"
+        ]
+      },
+      {
+        "person_id": "person_fb84a8f6ce4d50fc9cd3",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Talles Santos is listed as ['Teaching Faculty'] (Teaching Assistant Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_fb84a8f6ce4d50fc9cd3"
+        ]
+      },
+      {
+        "person_id": "person_8dcfcdc9b04258d3b27b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Dan Walkes is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_8dcfcdc9b04258d3b27b"
+        ]
+      },
+      {
+        "person_id": "person_16ea5eaf3c9f56ca8ed8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "John Hauser is listed as Emeritus Faculty (Associate Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_16ea5eaf3c9f56ca8ed8"
+        ]
+      },
+      {
+        "person_id": "person_62ac4e6dda39571a9fa8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Vincent Heuring is listed as Emeritus Faculty (Associate Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_62ac4e6dda39571a9fa8"
+        ]
+      },
+      {
+        "person_id": "person_9a067017ffc2564999e5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Edward Kuester is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_9a067017ffc2564999e5"
+        ]
+      },
+      {
+        "person_id": "person_39302d37767e5d328a8a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Andrew Pleszkun is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_39302d37767e5d328a8a"
+        ]
+      },
+      {
+        "person_id": "person_f400451ae5fd58e3ab1f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Howard Wachtel is listed as Emeritus Faculty (Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_f400451ae5fd58e3ab1f"
+        ]
+      },
+      {
+        "person_id": "person_beae514f70775ff1bc4c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Nikolay Zabotin is listed as Emeritus Faculty (Research Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p1",
+          "profile_person_beae514f70775ff1bc4c"
+        ]
+      },
+      {
+        "person_id": "person_dc5ea8d34c77583e8c42",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Brian Hooker is listed as Emeritus Faculty (Associate Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_dc5ea8d34c77583e8c42"
+        ]
+      },
+      {
+        "person_id": "person_e2c33ce2460b56f1906d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Robert McLeod is Tenure-Track Faculty (Professor; Richard & Joy Dorf Endowed Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_e2c33ce2460b56f1906d"
+        ]
+      },
+      {
+        "person_id": "person_857cd02a165053408ed4",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Erica Reid is listed as Staff (Program & Marketing Manager); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_857cd02a165053408ed4"
+        ]
+      },
+      {
+        "person_id": "person_168e2065c4225b82a648",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Katie Morgan is listed as Staff (Research Accountant); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_168e2065c4225b82a648"
+        ]
+      },
+      {
+        "person_id": "person_f4675465dc0c54c6ba54",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kimberly Low is listed as Staff (Faculty Affairs Administrator & Assistant to the Chair); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_f4675465dc0c54c6ba54"
+        ]
+      },
+      {
+        "person_id": "person_22ea07ae79ab5b199acd",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Sam Siewert is listed as ['Adjunct Faculty'] (Associate Professor Adjunct); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_22ea07ae79ab5b199acd"
+        ]
+      },
+      {
+        "person_id": "person_db3f04c872a1557aaab9",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Florent Lecocq is listed as ['Adjoint Faculty'] (Adjoint Professor); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_db3f04c872a1557aaab9"
+        ]
+      },
+      {
+        "person_id": "person_41ebe6dae0785a24a75a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Elizabeth Bradley is Affiliated Faculty (Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_41ebe6dae0785a24a75a"
+        ]
+      },
+      {
+        "person_id": "person_f411da84c76d5d2c93e7",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jonathan Haines is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_f411da84c76d5d2c93e7"
+        ]
+      },
+      {
+        "person_id": "person_8e561056f02a5e389511",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Lucy Pao is Tenure-Track Faculty (Professor; Palmer Endowed Chair in Electrical, Computer & Energy Engineering) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_8e561056f02a5e389511"
+        ]
+      },
+      {
+        "person_id": "person_24dcb37e065b53019189",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Ramin Ayanzadeh is Affiliated Faculty (Assistant Professor of Computer Science) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_24dcb37e065b53019189"
+        ]
+      },
+      {
+        "person_id": "person_e587855aded054d5a4e9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kyri Baker is Affiliated Faculty (Assistant Professor of Civil, Environmental and Architectural Engineering) in CU Boulder ECEE; included as affiliate_professor.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_e587855aded054d5a4e9"
+        ]
+      },
+      {
+        "person_id": "person_0a930c55131c502db325",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Susan Avery is listed as Emeritus Faculty (President Emerita, Woods Hole Oceanographic Institution) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_0a930c55131c502db325"
+        ]
+      },
+      {
+        "person_id": "person_5f91fda2dd0d5575992b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Frank Barnes is listed as Emeritus Faculty (Distinguished Professor Emeritus) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_5f91fda2dd0d5575992b"
+        ]
+      },
+      {
+        "person_id": "person_6958b960d7005b23a4f3",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Patty Sue Femrite is listed as Staff (Finance and Payroll Specialist); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_6958b960d7005b23a4f3"
+        ]
+      },
+      {
+        "person_id": "person_66630a1770c35a318dff",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Liliana Filipovic is listed as Staff (Program Assistant I); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_66630a1770c35a318dff"
+        ]
+      },
+      {
+        "person_id": "person_0c2712f47757518781b5",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Terry Gilbert is listed as Staff (E-Store & Lab Coordinator); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_0c2712f47757518781b5"
+        ]
+      },
+      {
+        "person_id": "person_4b3f3f1993c45ef7bc75",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Linden McClure is listed as ['Adjunct Faculty'] (Professor Adjunct); excluded under CU APS 5060 / us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_4b3f3f1993c45ef7bc75"
+        ]
+      },
+      {
+        "person_id": "person_e3743e61d001587fa768",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Faisal Khan is Affiliated Faculty with non-professorial external researcher title (Chief Researcher / Scientist, NREL); excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_e3743e61d001587fa768"
+        ]
+      },
+      {
+        "person_id": "person_8d4716eb32635c39abe4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Melinda Piket-May is Tenure-Track Faculty (Professor; Associate Chair for External Relations and Outreach) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_8d4716eb32635c39abe4"
+        ]
+      },
+      {
+        "person_id": "person_5953a464b1ec592fa869",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Bart Van Zeghbroeck is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_5953a464b1ec592fa869"
+        ]
+      },
+      {
+        "person_id": "person_2c7ea95fab1f59f783d3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Marco Nicotra is Tenure-Track Faculty (Associate Professor; Associate Chair for Undergraduate Education) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_2c7ea95fab1f59f783d3"
+        ]
+      },
+      {
+        "person_id": "person_45c0e88f6c1c559d92c6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Juliet Gopinath is Tenure-Track Faculty (Professor; Alfred T. and Betty E. Look Endowed Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_45c0e88f6c1c559d92c6"
+        ]
+      },
+      {
+        "person_id": "person_bd435a0f99cf532ab33d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Chris Myers is Tenure-Track Faculty (Department Chair; Professor; Palmer Leadership Chair in Electrical, Computer & Energy Engineering) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_bd435a0f99cf532ab33d"
+        ]
+      },
+      {
+        "person_id": "person_7dc3908000fe53339868",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Dejan Filipovic is Tenure-Track Faculty (Professor; Hudson Moore Jr. Chair in Engineering) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_7dc3908000fe53339868"
+        ]
+      },
+      {
+        "person_id": "person_343b77da20205355950a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "András Gyenis is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_343b77da20205355950a"
+        ]
+      },
+      {
+        "person_id": "person_12de1491f3b45dc883ee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Shu-Wei Huang is Tenure-Track Faculty (Associate Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_12de1491f3b45dc883ee"
+        ]
+      },
+      {
+        "person_id": "person_036e66ef5c5f5b3aa94e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Youjian (Eugene) Liu is Tenure-Track Faculty (Associate Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_036e66ef5c5f5b3aa94e"
+        ]
+      },
+      {
+        "person_id": "person_a0e5633a14515502b0f4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Peter Mathys is Tenure-Track Faculty (Associate Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_a0e5633a14515502b0f4"
+        ]
+      },
+      {
+        "person_id": "person_620a4c66d6695e3982f9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Rafael Piestun is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_620a4c66d6695e3982f9"
+        ]
+      },
+      {
+        "person_id": "person_730b7faa9ce4563bba72",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Cody Scarborough is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_730b7faa9ce4563bba72"
+        ]
+      },
+      {
+        "person_id": "person_630865612664577f8352",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Fabio Somenzi is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_630865612664577f8352"
+        ]
+      },
+      {
+        "person_id": "person_e069f22a686b586db7de",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Mahesh Varanasi is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_e069f22a686b586db7de"
+        ]
+      },
+      {
+        "person_id": "person_b67ac0f5710d5a2d81c0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Eric Wustrow is Tenure-Track Faculty (Associate Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_b67ac0f5710d5a2d81c0"
+        ]
+      },
+      {
+        "person_id": "person_c451fbc558525df488cb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Scott Diddams is Tenure-Track Faculty (Professor; Robert H. Davis Endowed Chair in Discovery Learning) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_c451fbc558525df488cb"
+        ]
+      },
+      {
+        "person_id": "person_fcf0e80badf350639c96",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Albin Gasiewski is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_fcf0e80badf350639c96"
+        ]
+      },
+      {
+        "person_id": "person_676f3814aff65e11b9c4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Eric Keller is Tenure-Track Faculty (Professor ; Associate Chair for Professional and Online Masters Programs) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_676f3814aff65e11b9c4"
+        ]
+      },
+      {
+        "person_id": "person_8e9146be82595f83a3b5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Yide Zhang is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_8e9146be82595f83a3b5"
+        ]
+      },
+      {
+        "person_id": "person_c08d2d69f1715d63a474",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Luca Corradini is Tenure-Track Faculty (Associate Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_c08d2d69f1715d63a474"
+        ]
+      },
+      {
+        "person_id": "person_5dc7926e84aa5d61acf2",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Laila Fighera Marzall is listed as Research Faculty (Assistant Research Professor); research-only excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_5dc7926e84aa5d61acf2"
+        ]
+      },
+      {
+        "person_id": "person_e1405aec66af55478ed8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Zoya Popovic is Tenure-Track Faculty (Distinguished Professor; Lockheed Martin Endowed Chair in RF Engineering) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_e1405aec66af55478ed8"
+        ]
+      },
+      {
+        "person_id": "person_c516f752987b5150bab7",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Robin Elliott is listed as Staff (Director of Operations & Finance); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_c516f752987b5150bab7"
+        ]
+      },
+      {
+        "person_id": "person_c9d3ba1a108b5f89988a",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Charles Ferrer is listed as Staff (Communications Specialist); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_c9d3ba1a108b5f89988a"
+        ]
+      },
+      {
+        "person_id": "person_3416dfffd8115624bbe7",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kim MacGregor is listed as Staff (Finance Professional); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_3416dfffd8115624bbe7"
+        ]
+      },
+      {
+        "person_id": "person_7f79b31848345cfe9422",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Vanessa de los Reyes is listed as Staff (Student Services & Scheduling Coordinator); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_7f79b31848345cfe9422"
+        ]
+      },
+      {
+        "person_id": "person_07895db563665c43893c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Logan Horowitz is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_07895db563665c43893c"
+        ]
+      },
+      {
+        "person_id": "person_0ab761b5d4ec589c974d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Stacy Marquardt is listed as Staff (Executive Assistant to the Gustafson Chair in Quantum Engineering); excluded.",
+        "source_ids": [
+          "ecee_p2",
+          "profile_person_0ab761b5d4ec589c974d"
+        ]
+      },
+      {
+        "person_id": "person_b08a8fecb15f51b5a9eb",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Adam Sadoff is listed as Staff (Graduate Program Advisor); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_b08a8fecb15f51b5a9eb"
+        ]
+      },
+      {
+        "person_id": "person_27b225b4d4eb58d3b764",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Robert W. Erickson is listed as Emeritus Faculty (Professor; Co-Director of CoPEC) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_27b225b4d4eb58d3b764"
+        ]
+      },
+      {
+        "person_id": "person_17d48380f7605972bbeb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Sean Shaheen is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_17d48380f7605972bbeb"
+        ]
+      },
+      {
+        "person_id": "person_2628e69d026f5ac6bec8",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Arielle Blum is listed as ['Teaching Faculty'] (Associate Teaching Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_2628e69d026f5ac6bec8"
+        ]
+      },
+      {
+        "person_id": "person_107e1f240e5958c0b35c",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Mackenzie Hatcher is listed as Staff (Undergraduate Academic Advisor); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_107e1f240e5958c0b35c"
+        ]
+      },
+      {
+        "person_id": "person_36aaf7762dec54c4bc6c",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Suhad Salah is listed as Staff (Undergraduate Academic Advisor); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_36aaf7762dec54c4bc6c"
+        ]
+      },
+      {
+        "person_id": "person_144eb45b87e35cd18adf",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Claire Bennett is listed as Staff (Area Director); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_144eb45b87e35cd18adf"
+        ]
+      },
+      {
+        "person_id": "person_e16068ebe2835955a816",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Evan Feldman is listed as Staff (Senior Undergraduate Academic Advisor); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_e16068ebe2835955a816"
+        ]
+      },
+      {
+        "person_id": "person_d2c05798b8bd5a77a4b8",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Sofi Alarcon Escallada is listed as Staff (Senior Undergraduate Academic Advisor); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_d2c05798b8bd5a77a4b8"
+        ]
+      },
+      {
+        "person_id": "person_814df1a4af4f54f7949a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Joseph (Joe) Izraelevitz is Tenure-Track Faculty (Associate Professor ) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_814df1a4af4f54f7949a"
+        ]
+      },
+      {
+        "person_id": "person_73a384e1506755449fed",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Emily Jensen is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_73a384e1506755449fed"
+        ]
+      },
+      {
+        "person_id": "person_558c063d7bbc540da090",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Daniel Feldkhun is listed as Research Faculty (Senior Research Associate); research-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_558c063d7bbc540da090"
+        ]
+      },
+      {
+        "person_id": "person_5992713e3afd59968837",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Nicole Bienert is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_5992713e3afd59968837"
+        ]
+      },
+      {
+        "person_id": "person_30f7899926d65f479a77",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Michael Lightner is Tenure-Track Faculty (Professor; CU Vice President for Academic Affairs ) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_30f7899926d65f479a77"
+        ]
+      },
+      {
+        "person_id": "person_fe7e29a2a3315ffa8f75",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Ute Herzfeld is listed as Research Faculty (Research Professor); research-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_fe7e29a2a3315ffa8f75"
+        ]
+      },
+      {
+        "person_id": "person_af901928b67e533eb1d9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kelvin Wagner is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_af901928b67e533eb1d9"
+        ]
+      },
+      {
+        "person_id": "person_673811870fc7507199a4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Al Bovik is Tenure-Track Faculty (Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_673811870fc7507199a4"
+        ]
+      },
+      {
+        "person_id": "person_32a0f9495bd251b8a2e2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Cheng Wang is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_32a0f9495bd251b8a2e2"
+        ]
+      },
+      {
+        "person_id": "person_8ebeb7dc60cb556884d1",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Tim Swettlen is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_8ebeb7dc60cb556884d1"
+        ]
+      },
+      {
+        "person_id": "person_858b37c699e052699957",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Bri-Mathias Hodge is Tenure-Track Faculty (Professor; Interim Department Chair) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_858b37c699e052699957"
+        ]
+      },
+      {
+        "person_id": "person_25f2944243c15b549a31",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Taylor Barton is Tenure-Track Faculty (Associate Professor; Lockheed Martin Faculty Fellow; Associate Chair for Research and Graduate Education) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_25f2944243c15b549a31"
+        ]
+      },
+      {
+        "person_id": "person_685bc137250f5d069e64",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tamara Lehman is Tenure-Track Faculty (Associate Professor; Associate Chair for Faculty and Staff) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_685bc137250f5d069e64"
+        ]
+      },
+      {
+        "person_id": "person_18871b19ce7d5e978ede",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Dragan Maksimovic is Tenure-Track Faculty (Distinguished Professor; Co-Director of CoPEC; Charles Victor Schelke Endowed Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_18871b19ce7d5e978ede"
+        ]
+      },
+      {
+        "person_id": "person_2aef702a32715c3d814c",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Calvin Chan is listed as Research Faculty (Research Professor); research-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_2aef702a32715c3d814c"
+        ]
+      },
+      {
+        "person_id": "person_dc74800c55bf531688e9",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Antonio Gentile is listed as ['Teaching Faculty'] (Associate Teaching Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_dc74800c55bf531688e9"
+        ]
+      },
+      {
+        "person_id": "person_54bac0de17ce5ecaa087",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Niyem Mawenbe Bawana is listed as ['Teaching Faculty'] (Assistant Teaching Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_54bac0de17ce5ecaa087"
+        ]
+      },
+      {
+        "person_id": "person_2e501cb41ad154d883fe",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Chris Choi is listed as ['Lecturers'] (Lecturer); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_2e501cb41ad154d883fe"
+        ]
+      },
+      {
+        "person_id": "person_46b56bb9daeb587794b4",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kamal Sharma is listed as ['Teaching Faculty'] (Assistant Teaching Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_46b56bb9daeb587794b4"
+        ]
+      },
+      {
+        "person_id": "person_674033a8c5e4587299b6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Tina Smilkstein is listed as ['Teaching Faculty'] (Associate Teaching Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_674033a8c5e4587299b6"
+        ]
+      },
+      {
+        "person_id": "person_0343294ca9ba546aad80",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Tim Scherr is listed as Emeritus Faculty (Teaching Associate Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_0343294ca9ba546aad80"
+        ]
+      },
+      {
+        "person_id": "person_b45200c47c82521cadd1",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Erik Hodges is listed as ['Teaching Faculty'] (Assistant Teaching Professor); teaching-only excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_b45200c47c82521cadd1"
+        ]
+      },
+      {
+        "person_id": "person_d9c5ccbd24585061863e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Lori Meehan is listed as Staff (Senior Graduate Program Manager); excluded.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_d9c5ccbd24585061863e"
+        ]
+      },
+      {
+        "person_id": "person_0fa509de5b4652dcaab8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Gonzalo Constante Flores is Tenure-Track Faculty (Assistant Professor) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_0fa509de5b4652dcaab8"
+        ]
+      },
+      {
+        "person_id": "person_88daa10ddbac550da3b8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Matt Eichenfield is Tenure-Track Faculty (Karl Gustafson Endowed Chair in Quantum Engineering) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_88daa10ddbac550da3b8"
+        ]
+      },
+      {
+        "person_id": "person_580885a6fe125d18875d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Wounjhang (Won) Park is Tenure-Track Faculty (Professor; N. Rex Sheppard Faculty Fellow) in CU Boulder ECEE.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_580885a6fe125d18875d"
+        ]
+      },
+      {
+        "person_id": "person_5e6affff8b7c5746a14d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Alan Brannon is listed as ['Adjoint Faculty'] (Senior Principal Research Associate); excluded as research_staff.",
+        "source_ids": [
+          "ecee_p3",
+          "profile_person_5e6affff8b7c5746a14d"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "ecee_p1",
+        "url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=0&include=field_ucb_person_job_type",
+        "observed_at": "2026-11-24T08:53:14.872825+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "jsonapi",
+        "response_sha256": "3620e15a9ca31ac83026a8c711f60e0a3507c84d8a75ae5ccd9bed521f8d03c7"
+      },
+      {
+        "id": "ecee_p2",
+        "url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=50&include=field_ucb_person_job_type",
+        "observed_at": "2026-11-24T08:53:14.906648+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "jsonapi",
+        "response_sha256": "aa9580479887de625e964161e9bd57075621ffc29747e46bac2660ea729eccd0"
+      },
+      {
+        "id": "ecee_p3",
+        "url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=100&include=field_ucb_person_job_type",
+        "observed_at": "2026-11-24T08:53:15.005359+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "jsonapi",
+        "response_sha256": "4dcef686b330a1e6a44ec2bb17d6eb0136b2758acccd4595facb41688786da26"
+      },
+      {
+        "id": "supporting_1",
+        "url": "https://catalog.colorado.edu/undergraduate/colleges-schools/engineering-applied-science/programs-study/electrical-computer-energy-engineering/",
+        "observed_at": "2026-11-24T08:53:15.492197+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "407a14bddbcfbf475ed56b8fba479c039f64b49ce654b2c5d4d92b852aaa9f37"
+      },
+      {
+        "id": "profile_person_b1645ed917755b9d93e8",
+        "url": "https://www.colorado.edu/ecee/john-bennett",
+        "observed_at": "2026-11-24T08:53:15.521400+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d96a2f60ef95858ac61af75798c8eb6067302cd57da1137b4ca3e78eacc28def"
+      },
+      {
+        "id": "profile_person_2c8b8613ac0354daa0bb",
+        "url": "https://www.colorado.edu/ecee/henry-kapteyn",
+        "observed_at": "2026-11-24T08:53:15.525669+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "11ed427a9ec4f2b3e8afbbaaae9c8e87f6ab847d53a0d53459a4c607d9f2be22"
+      },
+      {
+        "id": "profile_person_cd1a19c0f5b059ea877d",
+        "url": "https://www.colorado.edu/ecee/dana-anderson",
+        "observed_at": "2026-11-24T08:53:15.528439+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "3313f368d2506415c2a1f2170e9c699e790e493ecc1ff88863fcbd9434ebbe79"
+      },
+      {
+        "id": "profile_person_771523679015580480f4",
+        "url": "https://www.colorado.edu/ecee/dirk-grunwald",
+        "observed_at": "2026-11-24T08:53:15.529280+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "109585d40b4d0fe28c9ea3abe16bd6a4e3407459f8221b74de94d51b12814a68"
+      },
+      {
+        "id": "profile_person_3a635a112789513b96d2",
+        "url": "https://www.colorado.edu/ecee/jarka-hladisova",
+        "observed_at": "2026-11-24T08:53:15.531847+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f38bca304396f07a2feb55a472d81853bc1f73895e807564e9af47e2d5a96ce7"
+      },
+      {
+        "id": "profile_person_030cc6f461ef5610b1a2",
+        "url": "https://www.colorado.edu/ecee/garret-moddel",
+        "observed_at": "2026-11-24T08:53:15.531781+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f95aa8f18f1f5236ed76dce1db97c645664a3e3a963def550b3283adb5dd7871"
+      },
+      {
+        "id": "profile_person_07f240ac7cc55702b2ed",
+        "url": "https://www.colorado.edu/ecee/terri-fiez",
+        "observed_at": "2026-11-24T08:53:15.534340+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "9e3f710c1de065109f9c1ce2f027ac4e012c31ac71861d367a1e26732d83e5b8"
+      },
+      {
+        "id": "profile_person_bc39c391e3475887a264",
+        "url": "https://www.colorado.edu/ecee/david-beeman",
+        "observed_at": "2026-11-24T08:53:15.536887+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "c07239691be4f05e36ba723a108466cc9bf1b02a7d6a2d7d0a6255fc85c9abb0"
+      },
+      {
+        "id": "profile_person_779127b1f2925b58ba7d",
+        "url": "https://www.colorado.edu/ecee/sriram-sankaranarayanan",
+        "observed_at": "2026-11-24T08:53:15.537838+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "9d18cb65149da401ea9750f81e14c0f6646c7b81ce0eb93ce53bbbf7e2d79758"
+      },
+      {
+        "id": "profile_person_16be5ca62054509eb73d",
+        "url": "https://www.colorado.edu/ecee/bor-yuh-evan-chang",
+        "observed_at": "2026-11-24T08:53:15.538622+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "666c9724b93286c783401a35c3145ec223fc27d3be9c523a69eaa192614db452"
+      },
+      {
+        "id": "profile_person_68e9979be52e5862b243",
+        "url": "https://www.colorado.edu/ecee/juan-rodriguez",
+        "observed_at": "2026-11-24T08:53:15.557481+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "7de13c6cb5f3de7689f759a5af31a7f2eb9dc34ec6077a2d0b5b72afe52503b8"
+      },
+      {
+        "id": "profile_person_c3a3e413a1f157928794",
+        "url": "https://www.colorado.edu/ecee/bret-moreland",
+        "observed_at": "2026-11-24T08:53:15.558882+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "283d732cac9dec88ba774230bd3c653ab13f374637734b85769b672da6192a96"
+      },
+      {
+        "id": "profile_person_bb3d7efc7b7650d1bf5f",
+        "url": "https://www.colorado.edu/ecee/arnoldo-majerfeld",
+        "observed_at": "2026-11-24T08:53:15.559405+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "9f785700e3121e9d07fecab4dc5570d97ef47304ed971d9a93a6fc70d32929fe"
+      },
+      {
+        "id": "profile_person_368bcb40223f5858a18e",
+        "url": "https://www.colorado.edu/ecee/shalom-ruben",
+        "observed_at": "2026-11-24T08:53:15.560286+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "05bb7f5f187177841216a2b06dcf98ef78e8ed1de2a764ae2f22b43f0647f936"
+      },
+      {
+        "id": "profile_person_4b8501694a855bc5bca2",
+        "url": "https://www.colorado.edu/ecee/robert-maccurdy",
+        "observed_at": "2026-11-24T08:53:15.561209+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "0212ce99d687e162fe425dcdd7296872edbfa8a87ac2ba5cce61f571fcb515ad"
+      },
+      {
+        "id": "profile_person_f81ba9ab46025999ae95",
+        "url": "https://www.colorado.edu/ecee/jade-morton",
+        "observed_at": "2026-11-24T08:53:15.562191+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d0a7facb69a70dec6d64fc67e679eda68f31eb76538b64c6649d495df7903d80"
+      },
+      {
+        "id": "profile_person_c516818b6d37553187ac",
+        "url": "https://www.colorado.edu/ecee/russell-hayes",
+        "observed_at": "2026-11-24T08:53:15.562745+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "06d8ca3f8327eaa0d47f22e116ab762aa5c8ce4d16a8e145ff902c305e420786"
+      },
+      {
+        "id": "profile_person_72af6b1b26dc57b28e6c",
+        "url": "https://www.colorado.edu/ecee/gary-hachtel",
+        "observed_at": "2026-11-24T08:53:15.563173+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "97b21188878d5556f4c8ee1bbe87e0020656630698a23b60bae075bfe1ea1602"
+      },
+      {
+        "id": "profile_person_f66ead418181527ca26e",
+        "url": "https://www.colorado.edu/ecee/margaret-murnane",
+        "observed_at": "2026-11-24T08:53:15.574891+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f60aeec0ee3c9dd6a11c38aba0ee0717bc2d067952b9590aa20ea7159d92056e"
+      },
+      {
+        "id": "profile_person_25eed11bb47052618f7d",
+        "url": "https://www.colorado.edu/ecee/emily-gibson",
+        "observed_at": "2026-11-24T08:53:15.583024+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "62722c444d09ea5754aa2b12dcfb43969aa70ebe069a1a7c88e99990fd3a061c"
+      },
+      {
+        "id": "profile_person_5bdb1827b6825cac81f4",
+        "url": "https://www.colorado.edu/ecee/lalit-pandit",
+        "observed_at": "2026-11-24T08:53:15.583309+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e89003ccc166bc264f614f22d9e70238303f7924a13563c811e83bf36aabdfdf"
+      },
+      {
+        "id": "profile_person_a0f19aed72f9541a9771",
+        "url": "https://www.colorado.edu/ecee/paul-kooros",
+        "observed_at": "2026-11-24T08:53:15.584078+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "75251ef15e0aec049a575e36e14dc0d7b46a209a82c6769b995f738707d1a5c8"
+      },
+      {
+        "id": "profile_person_1c43339815e75e00a7d1",
+        "url": "https://www.colorado.edu/ecee/andrew-ludlow",
+        "observed_at": "2026-11-24T08:53:15.586009+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "6555543bb50d61a255fc92859dcab53243e5b924720105043610cbe884bfea96"
+      },
+      {
+        "id": "profile_person_ff6f2ec18ea65286b02e",
+        "url": "https://www.colorado.edu/ecee/debbie-yeh",
+        "observed_at": "2026-11-24T08:53:15.587977+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "0ea55c9e478131788043209d66d90ffbbde5fd999e0aac7ecdbea7e4c4665969"
+      },
+      {
+        "id": "profile_person_e53077371b925a5ba761",
+        "url": "https://www.colorado.edu/ecee/david-meyer-0",
+        "observed_at": "2026-11-24T08:53:15.589929+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "fd6ba317be2e7cd64789faf2d2bf822b596225a545d239d732e57ae8a0b39713"
+      },
+      {
+        "id": "profile_person_240ab294068d57989113",
+        "url": "https://www.colorado.edu/ecee/laura-sinclair",
+        "observed_at": "2026-11-24T08:53:15.590782+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "11d8f07dd402c7f5f492e5447cae6f5854f6a0fc1179c0065834ce032bc907bf"
+      },
+      {
+        "id": "profile_person_6fe5ab1adbb955189de1",
+        "url": "https://www.colorado.edu/ecee/ewald-fuchs",
+        "observed_at": "2026-11-24T08:53:15.591048+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e8ad5f437b2aa429572b046545d9ab11c4eed8fe999d6b4c3cfd3f40fb4c15c6"
+      },
+      {
+        "id": "profile_person_7ade3dd23c625bbcba9f",
+        "url": "https://www.colorado.edu/ecee/victor-bright",
+        "observed_at": "2026-11-24T08:53:15.591580+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "065aee761eadcdfcecb8618ffaff6f04e76cdd5e274577c944bcd44730060bdd"
+      },
+      {
+        "id": "profile_person_9128bba5504658a998f4",
+        "url": "https://www.colorado.edu/ecee/jay-mendelson",
+        "observed_at": "2026-11-24T08:53:15.603093+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "ac2ce5820067564e03352fe9eb43f3895f66b35e28cd21e2f48fa18506a9e2c4"
+      },
+      {
+        "id": "profile_person_614bd4bfc1815a879923",
+        "url": "https://www.colorado.edu/ecee/eric-bogatin",
+        "observed_at": "2026-11-24T08:53:15.607307+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "6f14dfdba59af6a3eab5d58c4c0eb02f76360128067c84e811703d82eb9ed05d"
+      },
+      {
+        "id": "profile_person_6095e12fd5165056a4ce",
+        "url": "https://www.colorado.edu/ecee/richard-mihran",
+        "observed_at": "2026-11-24T08:53:15.609083+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "356b24f4a1571c1766bd4ba9d7fb2eae0ca66c67e7106e6d70558110a5564c0f"
+      },
+      {
+        "id": "profile_person_62ac4e6dda39571a9fa8",
+        "url": "https://www.colorado.edu/ecee/vincent-heuring",
+        "observed_at": "2026-11-24T08:53:15.611160+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "1a9cfbe859605b291c2b6755721f0114a62f26ac6d6fdf08ee11bc13f512bdf5"
+      },
+      {
+        "id": "profile_person_fb84a8f6ce4d50fc9cd3",
+        "url": "https://www.colorado.edu/ecee/talles-santos",
+        "observed_at": "2026-11-24T08:53:15.613373+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "cd0c4c7a11441f94e12e6cc5d0d03c1c25d3fae5e66f539eb4aa696727ac84f2"
+      },
+      {
+        "id": "profile_person_2460fa43725058a3a0df",
+        "url": "https://www.colorado.edu/ecee/nikolaus-correll",
+        "observed_at": "2026-11-24T08:53:15.613912+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "a2c8eea1c95636578c1eb2639e3be2d54ecfaddd73be1c1f537190506f48c663"
+      },
+      {
+        "id": "profile_person_ccb94497dfaa5923bc9a",
+        "url": "https://www.colorado.edu/ecee/franklyn-quinlan",
+        "observed_at": "2026-11-24T08:53:15.613973+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e74d5be8607e07ce7d932f5002402a84d07a3dc5d4e1c38d69b803b10e14e11c"
+      },
+      {
+        "id": "profile_person_39302d37767e5d328a8a",
+        "url": "https://www.colorado.edu/ecee/andrew-pleszkun",
+        "observed_at": "2026-11-24T08:53:15.616549+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "766b78f2d59390443f9a1e68df05c2e7607dc3a3ca98f9521f8902daeec34cf3"
+      },
+      {
+        "id": "profile_person_8dcfcdc9b04258d3b27b",
+        "url": "https://www.colorado.edu/ecee/dan-walkes",
+        "observed_at": "2026-11-24T08:53:15.616491+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "95fc6bcddbb293d0469ba94e247a2f0dbcdcd3799a61fee05b921ca34409e1bb"
+      },
+      {
+        "id": "profile_person_beae514f70775ff1bc4c",
+        "url": "https://www.colorado.edu/ecee/nikolay-zabotin",
+        "observed_at": "2026-11-24T08:53:15.629614+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "28a2dd80fc49335cd101d9853bfd625cd4751668e51ac3c9ea97f564384a41b4"
+      },
+      {
+        "id": "profile_person_dc5ea8d34c77583e8c42",
+        "url": "https://www.colorado.edu/ecee/brian-hooker",
+        "observed_at": "2026-11-24T08:53:15.634848+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "55115151b3a3decb3f7e65dcacb634bd4c55b167fd43bc61f53cbdf750dd7ca4"
+      },
+      {
+        "id": "profile_person_9a067017ffc2564999e5",
+        "url": "https://www.colorado.edu/ecee/edward-kuester",
+        "observed_at": "2026-11-24T08:53:15.635285+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "aba25522ee4846ce084d0025de9ebef65d25e0d56e3c90ea936d7e332959c0b3"
+      },
+      {
+        "id": "profile_person_db3f04c872a1557aaab9",
+        "url": "https://www.colorado.edu/ecee/florent-lecocq",
+        "observed_at": "2026-11-24T08:53:15.638585+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "47c404bf67c6e62b78e31621ca6a1c5c52acfd7336d4a83c9989836a01435ef6"
+      },
+      {
+        "id": "profile_person_f4675465dc0c54c6ba54",
+        "url": "https://www.colorado.edu/ecee/kimberly-low",
+        "observed_at": "2026-11-24T08:53:15.643769+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "ac4e4b54c650965b9c46d2e09b7e18cdcf128845f12774cbe8803a928d4e519c"
+      },
+      {
+        "id": "profile_person_cd0762fd9bb05b2fbe26",
+        "url": "https://www.colorado.edu/ecee/brett-perez",
+        "observed_at": "2026-11-24T08:53:15.649577+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "63ed46e00cfbdfe7f760c975367aaf3c67415cda3983a29093cf751a47f0dceb"
+      },
+      {
+        "id": "profile_person_f411da84c76d5d2c93e7",
+        "url": "https://www.colorado.edu/ecee/jonathan-haines",
+        "observed_at": "2026-11-24T08:53:15.655217+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "121a58f3220cad692f121059c682e0af74d5c5d89f7a21bbdc8ce50c2244bd3d"
+      },
+      {
+        "id": "profile_person_41ebe6dae0785a24a75a",
+        "url": "https://www.colorado.edu/ecee/elizabeth-bradley",
+        "observed_at": "2026-11-24T08:53:15.655899+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "c2411cabf3dbdce71de9773243ea654df10803e802e881c8ab881dab79fcee68"
+      },
+      {
+        "id": "profile_person_8e561056f02a5e389511",
+        "url": "https://www.colorado.edu/ecee/lucy-pao",
+        "observed_at": "2026-11-24T08:53:15.656342+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d25bb8f5aaf1498c2b5a8281787c7fc1f5d2ed4822b8ebab20be997cb19b221b"
+      },
+      {
+        "id": "profile_person_16ea5eaf3c9f56ca8ed8",
+        "url": "https://www.colorado.edu/ecee/john-hauser",
+        "observed_at": "2026-11-24T08:53:15.663423+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "fcd89e147b5663439dc151f3054641d5864e6bb46d4c1854e26cf1a17fb20332"
+      },
+      {
+        "id": "profile_person_0a930c55131c502db325",
+        "url": "https://www.colorado.edu/ecee/susan-avery",
+        "observed_at": "2026-11-24T08:53:15.674486+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5f10e65acf7cbc2ae87e1d9029e881a4d3bfc326c2b84e56008c4e49741d64dc"
+      },
+      {
+        "id": "profile_person_6958b960d7005b23a4f3",
+        "url": "https://www.colorado.edu/ecee/patty-sue-femrite",
+        "observed_at": "2026-11-24T08:53:15.677567+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "dadb304bbb70ee91f2201abd71f1117ae9048fd27da25d4545aa9ce73c1f9ad8"
+      },
+      {
+        "id": "profile_person_e2c33ce2460b56f1906d",
+        "url": "https://www.colorado.edu/ecee/robert-mcleod",
+        "observed_at": "2026-11-24T08:53:15.683663+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "2d8913dd68d85cf267abf5b0fee3c33d015f13e4e0dcbc33bf815c47a652fb34"
+      },
+      {
+        "id": "profile_person_f400451ae5fd58e3ab1f",
+        "url": "https://www.colorado.edu/ecee/howard-wachtel",
+        "observed_at": "2026-11-24T08:53:15.686022+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d9ff25e5dcfc977cedc169c3ca63e4fccce61d3491e039047e8a446d5462e168"
+      },
+      {
+        "id": "profile_person_22ea07ae79ab5b199acd",
+        "url": "https://www.colorado.edu/ecee/sam-siewert",
+        "observed_at": "2026-11-24T08:53:15.697908+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "2ab61d72409174dadfe32061f54ae8b1af1d059e76bf9f7f6a41058fc02ff73c"
+      },
+      {
+        "id": "profile_person_168e2065c4225b82a648",
+        "url": "https://www.colorado.edu/ecee/katie-morgan",
+        "observed_at": "2026-11-24T08:53:15.700159+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "fc6bcbac9abd14cec76d53d2a6cd656c8a759fa98475fecfc658eb1c6606d120"
+      },
+      {
+        "id": "profile_person_4b3f3f1993c45ef7bc75",
+        "url": "https://www.colorado.edu/ecee/linden-mcclure",
+        "observed_at": "2026-11-24T08:53:15.701308+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f571c5480d6d51775e2795cdd27fdee3ba5c46c7934356ec018301aecca7a5ab"
+      },
+      {
+        "id": "profile_person_857cd02a165053408ed4",
+        "url": "https://www.colorado.edu/ecee/erica-reid",
+        "observed_at": "2026-11-24T08:53:15.701748+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5d166652502ec26c2dc149c54b0512e394ea9363a2e61991f14524fb7bd3d225"
+      },
+      {
+        "id": "profile_person_5953a464b1ec592fa869",
+        "url": "https://www.colorado.edu/ecee/bart-van-zeghbroeck",
+        "observed_at": "2026-11-24T08:53:15.704819+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d8d615ffab37208e6145339cf8ba983ebc6dbc5757e03cbfb506ddefa23c1fae"
+      },
+      {
+        "id": "profile_person_24dcb37e065b53019189",
+        "url": "https://www.colorado.edu/ecee/ramin-ayanzadeh",
+        "observed_at": "2026-11-24T08:53:15.708753+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d3e0f568b372a2e30fd8cef1dd2223c1ef7a91eae08ac5a04280f8be578684a1"
+      },
+      {
+        "id": "profile_person_bd435a0f99cf532ab33d",
+        "url": "https://www.colorado.edu/ecee/chris-myers",
+        "observed_at": "2026-11-24T08:53:15.718568+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "193303f6a49289c4723944219b250104196550b291aabac62e8972ae7c57a039"
+      },
+      {
+        "id": "profile_person_7dc3908000fe53339868",
+        "url": "https://www.colorado.edu/ecee/dejan-filipovic",
+        "observed_at": "2026-11-24T08:53:15.719654+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "a77d12d16eae37f5bcf9474b28beced4cf295dca04a0990c945f43e579124667"
+      },
+      {
+        "id": "profile_person_45c0e88f6c1c559d92c6",
+        "url": "https://www.colorado.edu/ecee/juliet-gopinath",
+        "observed_at": "2026-11-24T08:53:15.720560+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "bc9e9e9969069b0f2c52f5b3eb9453f0d881263cb3a7fc96987b4f30fcce84c6"
+      },
+      {
+        "id": "profile_person_2c7ea95fab1f59f783d3",
+        "url": "https://www.colorado.edu/ecee/marco-nicotra",
+        "observed_at": "2026-11-24T08:53:15.721168+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5edf5df79b82832ed8f89678a57c0479e9950993e59a51cf7b5ecca5a196e20a"
+      },
+      {
+        "id": "profile_person_e587855aded054d5a4e9",
+        "url": "https://www.colorado.edu/ecee/kyri-baker",
+        "observed_at": "2026-11-24T08:53:15.726625+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "2c9b35cb26994537a8198adfe887a00e91a281f78817fd336a548c27ff5d1764"
+      },
+      {
+        "id": "profile_person_12de1491f3b45dc883ee",
+        "url": "https://www.colorado.edu/ecee/shu-wei-huang",
+        "observed_at": "2026-11-24T08:53:15.731849+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "83295334f2c6f352bd7f0744fc8cf6ed3a7f505479614420820dccbbdc962ebf"
+      },
+      {
+        "id": "profile_person_66630a1770c35a318dff",
+        "url": "https://www.colorado.edu/ecee/liliana-filipovic",
+        "observed_at": "2026-11-24T08:53:15.732661+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "224e8214b2deabf17dec003c668f07a0ce52f4f887d9860c05e5285671bbcfbc"
+      },
+      {
+        "id": "profile_person_0c2712f47757518781b5",
+        "url": "https://www.colorado.edu/ecee/terry-gilbert",
+        "observed_at": "2026-11-24T08:53:15.734066+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5a87e4668360c381b607f1a6f912503f341d30d4f330217dae6f9382bfd898cb"
+      },
+      {
+        "id": "profile_person_5f91fda2dd0d5575992b",
+        "url": "https://www.colorado.edu/ecee/frank-barnes",
+        "observed_at": "2026-11-24T08:53:15.736144+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "c5b367fba351ada6bf01916053d0b1d910b26419939601212265a01ad3786fe5"
+      },
+      {
+        "id": "profile_person_036e66ef5c5f5b3aa94e",
+        "url": "https://www.colorado.edu/ecee/youjian-eugene-liu",
+        "observed_at": "2026-11-24T08:53:15.742055+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "0424cee1d441227a14172053057bb801f5aa7a705ccf3471e23a0a3f23a8700a"
+      },
+      {
+        "id": "profile_person_620a4c66d6695e3982f9",
+        "url": "https://www.colorado.edu/ecee/rafael-piestun",
+        "observed_at": "2026-11-24T08:53:15.743374+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "04876b979b7035a331bd7a05c5b4e512e3f33e38f5b7f0a1bd9e24c9223b364a"
+      },
+      {
+        "id": "profile_person_a0e5633a14515502b0f4",
+        "url": "https://www.colorado.edu/ecee/peter-mathys",
+        "observed_at": "2026-11-24T08:53:15.743329+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "434e31f82c63bcfbbd123852db765fa9adc32e2b2fdbb61b4cef433e7e8ae34a"
+      },
+      {
+        "id": "profile_person_e3743e61d001587fa768",
+        "url": "https://www.colorado.edu/ecee/faisal-khan",
+        "observed_at": "2026-11-24T08:53:15.747966+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f7e44829ccd652999e221c32cc82f60948276ca395af8af6ade105ccb606320c"
+      },
+      {
+        "id": "profile_person_630865612664577f8352",
+        "url": "https://www.colorado.edu/ecee/fabio-somenzi",
+        "observed_at": "2026-11-24T08:53:15.750937+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "a41065e9df046e3775b028aa34be153b7ec1bd1b950c06a89903acd70e3d55f0"
+      },
+      {
+        "id": "profile_person_c451fbc558525df488cb",
+        "url": "https://www.colorado.edu/ecee/scott-diddams",
+        "observed_at": "2026-11-24T08:53:15.754444+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "436267cb07450774c2da2dafc2d6a707561e156da52c8308550adf3edde5f16a"
+      },
+      {
+        "id": "profile_person_e069f22a686b586db7de",
+        "url": "https://www.colorado.edu/ecee/mahesh-varanasi",
+        "observed_at": "2026-11-24T08:53:15.754955+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "986763164f6ef5766c8b45dea1e8a36e149b26a3e39ee0eaedafbdee1e576e00"
+      },
+      {
+        "id": "profile_person_b67ac0f5710d5a2d81c0",
+        "url": "https://www.colorado.edu/ecee/eric-wustrow",
+        "observed_at": "2026-11-24T08:53:15.756416+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e0f1f01be6a78876021493d0889f3a4237663876941b04fcb2aea705bb781ccd"
+      },
+      {
+        "id": "profile_person_8d4716eb32635c39abe4",
+        "url": "https://www.colorado.edu/ecee/melinda-piket-may",
+        "observed_at": "2026-11-24T08:53:15.756806+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "a80dc21b17bb960d159d2b19367589d1f980e33d2dd8c31381abde8d7e3e76e2"
+      },
+      {
+        "id": "profile_person_676f3814aff65e11b9c4",
+        "url": "https://www.colorado.edu/ecee/eric-keller",
+        "observed_at": "2026-11-24T08:53:15.765251+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "6f9eb9b563ecf3c8636d1547e48f226ee9d44e88fa2b1b6226ae26d2fe685a42"
+      },
+      {
+        "id": "profile_person_c08d2d69f1715d63a474",
+        "url": "https://www.colorado.edu/ecee/luca-corradini",
+        "observed_at": "2026-11-24T08:53:15.767061+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e83e621ad4f296f1827aec00016f41e0b2cbb447754b8b1a9b854b73617b77d9"
+      },
+      {
+        "id": "profile_person_8e9146be82595f83a3b5",
+        "url": "https://www.colorado.edu/ecee/yide-zhang",
+        "observed_at": "2026-11-24T08:53:15.767591+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "a55778533e884c516311fbac036609bc01ebf325b0c5a911d2d4e914750c943f"
+      },
+      {
+        "id": "profile_person_5dc7926e84aa5d61acf2",
+        "url": "https://www.colorado.edu/ecee/laila-fighera-marzall",
+        "observed_at": "2026-11-24T08:53:15.770249+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "2548221081e51645af6b65e7d54d7bee6823bafea09f1e601def20bef59042db"
+      },
+      {
+        "id": "profile_person_e1405aec66af55478ed8",
+        "url": "https://www.colorado.edu/ecee/zoya-popovic",
+        "observed_at": "2026-11-24T08:53:15.775249+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "decb32908cdd96c8f9b109e9f7d65f1b3ad8240ce95d64a18c3a2ed11684e955"
+      },
+      {
+        "id": "profile_person_3416dfffd8115624bbe7",
+        "url": "https://www.colorado.edu/ecee/kim-macgregor",
+        "observed_at": "2026-11-24T08:53:15.775800+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "6d037eac4c925d8b957f2799fd26472b6665f03419cda151211762cc63e6611f"
+      },
+      {
+        "id": "profile_person_7f79b31848345cfe9422",
+        "url": "https://www.colorado.edu/ecee/vanessa-de-los-reyes",
+        "observed_at": "2026-11-24T08:53:15.777324+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "86f02ce2e62112b2fee865d422ffbd5353b956a85c09bdd304ad6788a9d70d9a"
+      },
+      {
+        "id": "profile_person_c9d3ba1a108b5f89988a",
+        "url": "https://www.colorado.edu/ecee/charles-ferrer",
+        "observed_at": "2026-11-24T08:53:15.777819+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e48b843c369ccacf78042f29e48f4016388a25fdada8f57d6d36442ddcab3121"
+      },
+      {
+        "id": "profile_person_343b77da20205355950a",
+        "url": "https://www.colorado.edu/ecee/andras-gyenis",
+        "observed_at": "2026-11-24T08:53:15.783637+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "0ef6f043aeab204022c8fee02c05e817e23c20be1814a43fee094d187963e3c9"
+      },
+      {
+        "id": "profile_person_730b7faa9ce4563bba72",
+        "url": "https://www.colorado.edu/ecee/cody-scarborough",
+        "observed_at": "2026-11-24T08:53:15.792976+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "9f61faf2d0535a2c7bf318cb7f971487dfba9ae1a06d8588f3e0a59284eb1650"
+      },
+      {
+        "id": "profile_person_fcf0e80badf350639c96",
+        "url": "https://www.colorado.edu/ecee/albin-gasiewski",
+        "observed_at": "2026-11-24T08:53:15.796533+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5da9da84a01357f8e6378e62c508ebac7aba04f9b4fe8056d1fabe6b829ad807"
+      },
+      {
+        "id": "profile_person_107e1f240e5958c0b35c",
+        "url": "https://www.colorado.edu/ecee/mackenzie-hatcher",
+        "observed_at": "2026-11-24T08:53:15.799820+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f0fbee63cf869effcd330ce2393939bd410d952ef9778e887aebc1ec6abd50c8"
+      },
+      {
+        "id": "profile_person_2628e69d026f5ac6bec8",
+        "url": "https://www.colorado.edu/ecee/arielle-blum",
+        "observed_at": "2026-11-24T08:53:15.804058+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5679fe9b10c0670d692912b8f5c2702065178d887ab79e3f865e79f4a6ff5294"
+      },
+      {
+        "id": "profile_person_144eb45b87e35cd18adf",
+        "url": "https://www.colorado.edu/ecee/claire-bennett",
+        "observed_at": "2026-11-24T08:53:15.810794+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "12fffb762c428a6f8c83a979d3c8565e03f2274ce6fb032eb8f30e7515bd946e"
+      },
+      {
+        "id": "profile_person_e16068ebe2835955a816",
+        "url": "https://www.colorado.edu/ecee/evan-feldman",
+        "observed_at": "2026-11-24T08:53:15.815457+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "39c9537dd858ef9157c5151999e9cf81fd5f9d575d8d852b83db210472904308"
+      },
+      {
+        "id": "profile_person_c516f752987b5150bab7",
+        "url": "https://www.colorado.edu/ecee/robin-elliott",
+        "observed_at": "2026-11-24T08:53:15.823430+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e28f05908ee4d64e0f99b62bf9866cf4b4be010ab5a39771d844c275fb87ef57"
+      },
+      {
+        "id": "profile_person_27b225b4d4eb58d3b764",
+        "url": "https://www.colorado.edu/ecee/robert-w-erickson",
+        "observed_at": "2026-11-24T08:53:15.834682+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "168d1f10b7bdf4efe47d34c1f315911672a2c26cf99971253341258993154e7e"
+      },
+      {
+        "id": "profile_person_558c063d7bbc540da090",
+        "url": "https://www.colorado.edu/ecee/daniel-feldkhun",
+        "observed_at": "2026-11-24T08:53:15.841716+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "4cc497b4611ef4acb9d71b23f41342dbf995a720de0ad4df3bff618603390a38"
+      },
+      {
+        "id": "profile_person_73a384e1506755449fed",
+        "url": "https://www.colorado.edu/ecee/emily-jensen",
+        "observed_at": "2026-11-24T08:53:15.843139+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f47ec01c309f20fd6143b5a7fc3346154f2c235e701863aca855f2fbcd93dd8b"
+      },
+      {
+        "id": "profile_person_5992713e3afd59968837",
+        "url": "https://www.colorado.edu/ecee/nicole-bienert",
+        "observed_at": "2026-11-24T08:53:15.843468+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "a109d2be80c37c48c31c4c36fd4124c4ffc420e868be833223f46e89fd525d09"
+      },
+      {
+        "id": "profile_person_07895db563665c43893c",
+        "url": "https://www.colorado.edu/ecee/logan-horowitz",
+        "observed_at": "2026-11-24T08:53:15.848500+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "442f0a86b668cf64690821ba44ecf003c40b5e35b18459a0ad3e57a467afd5cf"
+      },
+      {
+        "id": "profile_person_17d48380f7605972bbeb",
+        "url": "https://www.colorado.edu/ecee/sean-shaheen",
+        "observed_at": "2026-11-24T08:53:15.854299+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "33eda9d57b5acbce80f91c191f9eaa8b84dfd52fb363679a2283c31c4b02ebe4"
+      },
+      {
+        "id": "profile_person_0ab761b5d4ec589c974d",
+        "url": "https://www.colorado.edu/ecee/stacy-marquardt",
+        "observed_at": "2026-11-24T08:53:15.854453+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "490c47618758f5ebc137908979d4f11ae9631107e51aeccd16b5b3c8f854af28"
+      },
+      {
+        "id": "profile_person_b08a8fecb15f51b5a9eb",
+        "url": "https://www.colorado.edu/ecee/adam-sadoff",
+        "observed_at": "2026-11-24T08:53:15.855095+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e1a0687bd7e3427028924488e227f08bd5917abcd53e5bd09e92619efaacc724"
+      },
+      {
+        "id": "profile_person_36aaf7762dec54c4bc6c",
+        "url": "https://www.colorado.edu/ecee/suhad-salah",
+        "observed_at": "2026-11-24T08:53:15.855572+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "c5c5d006ed6e91010bac3c039971b59117537a693e7bd5e1f6f2fe50d01d4d2d"
+      },
+      {
+        "id": "profile_person_fe7e29a2a3315ffa8f75",
+        "url": "https://www.colorado.edu/ecee/ute-herzfeld",
+        "observed_at": "2026-11-24T08:53:15.859358+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "8426f7075fdf5df37cb1cedaf5351e0ac615437284470d140eb509613c6ab64e"
+      },
+      {
+        "id": "profile_person_af901928b67e533eb1d9",
+        "url": "https://www.colorado.edu/ecee/kelvin-wagner",
+        "observed_at": "2026-11-24T08:53:15.865171+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "529367e7298567abcd2a41154eb39d4fde437770625d3082d0d75e7d1da06564"
+      },
+      {
+        "id": "profile_person_673811870fc7507199a4",
+        "url": "https://www.colorado.edu/ecee/al-bovik",
+        "observed_at": "2026-11-24T08:53:15.866907+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "ff9c03b931737b7d6471596af38f2bf58358e68855bc5af1e56cecf59658b498"
+      },
+      {
+        "id": "profile_person_32a0f9495bd251b8a2e2",
+        "url": "https://www.colorado.edu/ecee/cheng-wang",
+        "observed_at": "2026-11-24T08:53:15.871769+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "48062b7b5c389760e5affa6d5a1fb7c92bf9a008407b98a550011b73a3de0216"
+      },
+      {
+        "id": "profile_person_814df1a4af4f54f7949a",
+        "url": "https://www.colorado.edu/ecee/joseph-joe-izraelevitz",
+        "observed_at": "2026-11-24T08:53:15.874701+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "13a02739c406f28ba8c1dc60b973fc47e1c3498bd715f5f312e7dde1d92c0033"
+      },
+      {
+        "id": "profile_person_d2c05798b8bd5a77a4b8",
+        "url": "https://www.colorado.edu/ecee/sofi-alarcon-escallada",
+        "observed_at": "2026-11-24T08:53:15.876182+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "59bafa34c443bd519ab960f2e6c3787128fc06a32a8f58fe9f425fe1160bb0de"
+      },
+      {
+        "id": "profile_person_dc74800c55bf531688e9",
+        "url": "https://www.colorado.edu/ecee/antonio-gentile",
+        "observed_at": "2026-11-24T08:53:15.885634+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "1209566b95e01c6b121c19207c633142f57991528c72af9b5729a69f26b92bf1"
+      },
+      {
+        "id": "profile_person_2e501cb41ad154d883fe",
+        "url": "https://www.colorado.edu/ecee/chris-choi",
+        "observed_at": "2026-11-24T08:53:15.893148+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "705780afe66b7f4e285ba764ac75e0e5deef7f722c6219fd3597816d5bd4a024"
+      },
+      {
+        "id": "profile_person_674033a8c5e4587299b6",
+        "url": "https://www.colorado.edu/ecee/tina-smilkstein-1",
+        "observed_at": "2026-11-24T08:53:15.894613+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "757c132224fa976b5981454d47f3bb6dfb7e6f16bae54c781d5e026f94050a45"
+      },
+      {
+        "id": "profile_person_46b56bb9daeb587794b4",
+        "url": "https://www.colorado.edu/ecee/kamal-sharma",
+        "observed_at": "2026-11-24T08:53:15.895585+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "273d2d42d99272ea78815cfe570db8510caeff08f00aefb1e88793a45a794faf"
+      },
+      {
+        "id": "profile_person_30f7899926d65f479a77",
+        "url": "https://www.colorado.edu/ecee/michael-lightner",
+        "observed_at": "2026-11-24T08:53:15.904212+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "31e624e3dcba1a8530ee2caace51f88b9a610970f1daf30d5e072cce148ce835"
+      },
+      {
+        "id": "profile_person_b45200c47c82521cadd1",
+        "url": "https://www.colorado.edu/ecee/erik-hodges",
+        "observed_at": "2026-11-24T08:53:15.914724+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "0bc0b5a2371ec720b0db7c78d45a1330c237a4af6bbe8ee0088ac1fe4e76974f"
+      },
+      {
+        "id": "profile_person_0fa509de5b4652dcaab8",
+        "url": "https://www.colorado.edu/ecee/gonzalo-constante-flores",
+        "observed_at": "2026-11-24T08:53:15.915266+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "f46b1ddf74b0534558ac64b8ab46c5cf419c38fe82b84b0fd1186893a356143a"
+      },
+      {
+        "id": "profile_person_d9c5ccbd24585061863e",
+        "url": "https://www.colorado.edu/ecee/lori-meehan",
+        "observed_at": "2026-11-24T08:53:15.918533+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "b8295b24c4b051d78dde3046a52d5b22d14d888fa726ecff605c771c9f731eff"
+      },
+      {
+        "id": "profile_person_88daa10ddbac550da3b8",
+        "url": "https://www.colorado.edu/ecee/matt-eichenfield",
+        "observed_at": "2026-11-24T08:53:15.927816+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "5ed77351bb8b3884ec9a67d9ce2e8a24eba47602523ef1f19d8c883b4db93bea"
+      },
+      {
+        "id": "profile_person_858b37c699e052699957",
+        "url": "https://www.colorado.edu/ecee/bri-mathias-hodge",
+        "observed_at": "2026-11-24T08:53:15.929036+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "4c9a4213e07fab23c077cb090ac190813b454febc540d980f67a15779e105910"
+      },
+      {
+        "id": "profile_person_685bc137250f5d069e64",
+        "url": "https://www.colorado.edu/ecee/tamara-lehman",
+        "observed_at": "2026-11-24T08:53:15.930775+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "788d22d05410d40dcf92ad63d66057d515f03d2b3ce642a43c01cc90b1ca084d"
+      },
+      {
+        "id": "profile_person_8ebeb7dc60cb556884d1",
+        "url": "https://www.colorado.edu/ecee/tim-swettlen",
+        "observed_at": "2026-11-24T08:53:15.931640+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "96c37ed1086e40ab6827121590beb9db15b8e4843bcc2a6f3eff61df971515ce"
+      },
+      {
+        "id": "profile_person_25f2944243c15b549a31",
+        "url": "https://www.colorado.edu/ecee/taylor-barton",
+        "observed_at": "2026-11-24T08:53:15.935542+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "b47328e324112e8ae9352fc84e2ecdc5d7eae5f9d55aaac26c5cbb19f271473a"
+      },
+      {
+        "id": "profile_person_580885a6fe125d18875d",
+        "url": "https://www.colorado.edu/ecee/wounjhang-won-park",
+        "observed_at": "2026-11-24T08:53:15.936185+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "e6caa6a7317be40910d34f7d11102e38cae875101af8f4abc9512e140e84d93f"
+      },
+      {
+        "id": "profile_person_54bac0de17ce5ecaa087",
+        "url": "https://www.colorado.edu/ecee/niyem-mawenbe-bawana",
+        "observed_at": "2026-11-24T08:53:15.938365+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "b3dad8596a2a2f50c4b6cac9e9f4d4fbed033c1d7e7515388f0773fa57307100"
+      },
+      {
+        "id": "profile_person_18871b19ce7d5e978ede",
+        "url": "https://www.colorado.edu/ecee/dragan-maksimovic",
+        "observed_at": "2026-11-24T08:53:15.938623+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "379a3061212d11c75c91ce250ce3e321f77347ec5e25d433c9de44a8e86774fc"
+      },
+      {
+        "id": "profile_person_2aef702a32715c3d814c",
+        "url": "https://www.colorado.edu/ecee/calvin-chan",
+        "observed_at": "2026-11-24T08:53:15.940508+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "d41c7349c2aec4374e5160584db65480b0e89b801c13b54b73dcb8b11df142f1"
+      },
+      {
+        "id": "profile_person_0343294ca9ba546aad80",
+        "url": "https://www.colorado.edu/ecee/tim-scherr",
+        "observed_at": "2026-11-24T08:53:15.966578+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "7491c5d4345158cc22131de4f68d353a4944829fb7ad6c62728cec58bc01922f"
+      },
+      {
+        "id": "profile_person_5e6affff8b7c5746a14d",
+        "url": "https://www.colorado.edu/ecee/alan-brannon",
+        "observed_at": "2026-11-24T08:53:15.995267+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "html",
+        "response_sha256": "be99d9ffae1a0b46fe0b0ebe9454473cdf5e70694c356bbed26960ea56b1d907"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "CU Boulder catalog page (supporting_1) is older than the live ECEE JSON:API directory, omitting recent hires (e.g., Emily Jensen, Matt Eichenfield) while still listing departed faculty; not a blocking omission."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_71b40f7b6985463098ec3cde062d7055",
+    "candidate_sha256": "0bf6e8e03a7a4d96ae195451e97cc13b6a20931af827fc0bfb1b30bc9a33436b",
+    "transport": "t3",
+    "run_id": "audit-boulder-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:53:29.853281+00:00",
+    "exit_code": 0
+  }
+}

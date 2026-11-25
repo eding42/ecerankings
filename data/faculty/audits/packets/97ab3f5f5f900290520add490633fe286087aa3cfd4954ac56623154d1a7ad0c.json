@@ -1,0 +1,59 @@
+{
+  "schema_version": 1,
+  "job_id": "audit_54a60f6f4b5b40aebb63bc5a3fbb20e0",
+  "candidate_sha256": "1c4ab584fb253925f37bc9d739fc60ae4735daa00911f13795d23ef6cb6bc56b",
+  "created_at": "2026-11-23T11:00:34.715597+00:00",
+  "provenance": "Independent judgment of immutable shared university captures from the candidate observation date. Source capture times are preserved and may predate this audit job.",
+  "evidence": {
+    "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/electrical-engineering": {
+      "file": "evidence/a57b2f3eba640cb3deebf255110c0c46dfab626bd6a2cea32f589476146ac906.json",
+      "sha256": "a57b2f3eba640cb3deebf255110c0c46dfab626bd6a2cea32f589476146ac906"
+    },
+    "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/emeriti-retired-officers-not-residence": {
+      "file": "evidence/0fb82e715690aa1b7e18269bd4cb1f0ded9dcf72b73bc9357d415fbb5b5afbbb.json",
+      "sha256": "0fb82e715690aa1b7e18269bd4cb1f0ded9dcf72b73bc9357d415fbb5b5afbbb"
+    },
+    "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/faculty": {
+      "file": "evidence/17f334e6d0f21ac5f36c0e8fdf9ed49691eb1bf349d8cd7774945726ee2640da.json",
+      "sha256": "17f334e6d0f21ac5f36c0e8fdf9ed49691eb1bf349d8cd7774945726ee2640da"
+    }
+  },
+  "records": [
+    {
+      "id": "shared_frozen_a6c8e681380e01f91f7977c7",
+      "url": "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/electrical-engineering",
+      "observed_at": "2026-11-23T10:59:42.479820+00:00",
+      "response_sha256": "ff01e5cc9e93ac9f53b1e4f438f147dbedddfbbd86d117a4b6a1699b75aeafd8",
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-t20/sources/2217e0045de25e813b6961b4c6320a42724800b701d5f95798387599b1bf9a33.bin",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact."
+    },
+    {
+      "id": "shared_frozen_96d4af622302d904f86717cb",
+      "url": "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/emeriti-retired-officers-not-residence",
+      "observed_at": "2026-11-23T10:59:43.251008+00:00",
+      "response_sha256": "3d796484997e0fe052d0c7ff4e4629bc059403a58913e09d55a52b8640bfe27b",
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-t20/sources/606b32ace92072b5a492fe3efb32926b40f7349304dec154a53cbb14209f2bf7.bin",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact."
+    },
+    {
+      "id": "shared_frozen_93508afa7568ae7b28eaaf97",
+      "url": "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/faculty",
+      "observed_at": "2026-11-23T10:59:43.764508+00:00",
+      "response_sha256": "0f75e15f204b123db04176f98ba2e410f9ff7f36ebcee0725e9202fc02e1c587",
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-t20/sources/de1706c07c9afac53e5360f360c76596077ea0dff7f200598272333768d13b82.bin",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact."
+    }
+  ]
+}

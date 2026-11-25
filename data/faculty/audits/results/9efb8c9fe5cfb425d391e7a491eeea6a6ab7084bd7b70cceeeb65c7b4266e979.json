@@ -1,0 +1,1781 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/2ac69eed73baeb49e2b98ccd58aff34d6cf59d9d5ceb40352fae3eb735f82d34.json",
+    "sha256": "2ac69eed73baeb49e2b98ccd58aff34d6cf59d9d5ceb40352fae3eb735f82d34"
+  },
+  "brief": {
+    "file": "audits/briefs/922189bdb1782bb468d66b0c7516fb061878395784b271a8ba54d8d47016ca5d.json",
+    "sha256": "922189bdb1782bb468d66b0c7516fb061878395784b271a8ba54d8d47016ca5d"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_a2b1b390f5964669a50852074932e603",
+    "candidate_sha256": "81db4894e79eac371a49388acfa82d0888230da26042263f9fb9486997802347",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:48:05.515875+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://engineering.uci.edu/dept/eecs/people/emeritus.php",
+        "https://engineering.uci.edu/directory/aghasi_hamidreza.php",
+        "https://engineering.uci.edu/directory/al_faruque_mohammad.php",
+        "https://engineering.uci.edu/directory/alexopoulos_nicolaos.php",
+        "https://engineering.uci.edu/directory/ayanoglu_ender.php",
+        "https://engineering.uci.edu/directory/bagherzadeh_nader.php",
+        "https://engineering.uci.edu/directory/bershad_neil.php",
+        "https://engineering.uci.edu/directory/boyraz_ozdal.php",
+        "https://engineering.uci.edu/directory/burke_peter.php",
+        "https://engineering.uci.edu/directory/butts_carter.php",
+        "https://engineering.uci.edu/directory/cao_hung.php",
+        "https://engineering.uci.edu/directory/capolino_filippo.php",
+        "https://engineering.uci.edu/directory/chandramowlishwaran_aparna.php",
+        "https://engineering.uci.edu/directory/chen_alfred.php",
+        "https://engineering.uci.edu/directory/chen_zhongping.php",
+        "https://engineering.uci.edu/directory/chou_pai.php",
+        "https://engineering.uci.edu/directory/dang_quoc_viet.php",
+        "https://engineering.uci.edu/directory/de_flaviis_franco.php",
+        "https://engineering.uci.edu/directory/demsky_brian.php",
+        "https://engineering.uci.edu/directory/doemer_rainer.php",
+        "https://engineering.uci.edu/directory/dutt_nikil.php",
+        "https://engineering.uci.edu/directory/elmalaki_salma.php",
+        "https://engineering.uci.edu/directory/esfandyar_pour_rahim.php",
+        "https://engineering.uci.edu/directory/franz_michael.php",
+        "https://engineering.uci.edu/directory/gajski_daniel.php",
+        "https://engineering.uci.edu/directory/gaudiot_jean_luc.php",
+        "https://engineering.uci.edu/directory/green_michael.php",
+        "https://engineering.uci.edu/directory/gulsen_gultekin.php",
+        "https://engineering.uci.edu/directory/healey_glenn.php",
+        "https://engineering.uci.edu/directory/heydari_payam.php",
+        "https://engineering.uci.edu/directory/huang_sitao.php",
+        "https://engineering.uci.edu/directory/imani_mohsen.php",
+        "https://engineering.uci.edu/directory/jafar_syed.php",
+        "https://engineering.uci.edu/directory/jafarkhani_hamid.php",
+        "https://engineering.uci.edu/directory/jordan_scott.php",
+        "https://engineering.uci.edu/directory/khargonekar_pramod.php",
+        "https://engineering.uci.edu/directory/kheradvar_arash.php",
+        "https://engineering.uci.edu/directory/khine_michelle.php",
+        "https://engineering.uci.edu/directory/khodagholy_dion.php",
+        "https://engineering.uci.edu/directory/kleinfelder_stuart.php",
+        "https://engineering.uci.edu/directory/kurdahi_fadi.php",
+        "https://engineering.uci.edu/directory/lee_henry.php",
+        "https://engineering.uci.edu/directory/levorato_marco.php",
+        "https://engineering.uci.edu/directory/li_gp.php",
+        "https://engineering.uci.edu/directory/li_zhou.php",
+        "https://engineering.uci.edu/directory/lin_kwei_jay.php",
+        "https://engineering.uci.edu/directory/markopoulou_athina.php",
+        "https://engineering.uci.edu/directory/mccarthy_michael.php",
+        "https://engineering.uci.edu/directory/molloi_sabee.php",
+        "https://engineering.uci.edu/directory/nenadic_zoran.php",
+        "https://engineering.uci.edu/directory/pasqualetti_fabio.php",
+        "https://engineering.uci.edu/directory/potma_eric.php",
+        "https://engineering.uci.edu/directory/rahmani_amir.php",
+        "https://engineering.uci.edu/directory/samueli_henry.php",
+        "https://engineering.uci.edu/directory/sanger_terry.php",
+        "https://engineering.uci.edu/directory/shah_pratik.php",
+        "https://engineering.uci.edu/directory/shcherbakov_maxim.php",
+        "https://engineering.uci.edu/directory/shen_yanning.php",
+        "https://engineering.uci.edu/directory/sheu_chen_yu_phillip.php",
+        "https://engineering.uci.edu/directory/shkel_andrei.php",
+        "https://engineering.uci.edu/directory/shoukry_yasser.php",
+        "https://engineering.uci.edu/directory/singh_sameer.php",
+        "https://engineering.uci.edu/directory/smedley_keyue.php",
+        "https://engineering.uci.edu/directory/stubberud_allen.php",
+        "https://engineering.uci.edu/directory/swindlehurst_lee.php",
+        "https://engineering.uci.edu/directory/tan_harry.php",
+        "https://engineering.uci.edu/directory/tsai_chen.php",
+        "https://engineering.uci.edu/directory/tsai_kevin.php",
+        "https://engineering.uci.edu/directory/vaisband_boris.php",
+        "https://engineering.uci.edu/directory/velez_cuervo_camilo.php",
+        "https://engineering.uci.edu/directory/wang_zhiying.php",
+        "https://engineering.uci.edu/directory/wickramasinghe_kumar.php",
+        "https://engineering.uci.edu/directory/won_yoonjin.php",
+        "https://engineering.uci.edu/directory/xia_fei.php",
+        "https://engineering.uci.edu/directory/yousefi_zadeh_homayoun.php",
+        "https://engineering.uci.edu/users/roy-fox.php",
+        "https://math.uci.edu/people/aleksandr-figotin"
+      ],
+      "checked_list_ids": [
+        "faculty",
+        "affiliated",
+        "emeritus"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_fdd063bd4c0c5d02b8b5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_069"
+        ]
+      },
+      {
+        "person_id": "person_4cd8618d783f5bf4bf79",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_006"
+        ]
+      },
+      {
+        "person_id": "person_3f4334082e665b0eabde",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_007"
+        ]
+      },
+      {
+        "person_id": "person_cee01f7d92a15fe9a00b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_009"
+        ]
+      },
+      {
+        "person_id": "person_ad7beef50c09548dadc4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_010"
+        ]
+      },
+      {
+        "person_id": "person_73dcbd2848a15157959c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_012"
+        ]
+      },
+      {
+        "person_id": "person_662951ccce9754e3b414",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_013"
+        ]
+      },
+      {
+        "person_id": "person_b11682d2eb7359a99a35",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_015"
+        ]
+      },
+      {
+        "person_id": "person_52e00b9ff6fb567ebcd2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_016"
+        ]
+      },
+      {
+        "person_id": "person_6d3db116650152a6a25c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_017"
+        ]
+      },
+      {
+        "person_id": "person_4f7803264c8c5abb850b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS faculty.php as Professor of Teaching; excluded as teaching under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_021"
+        ]
+      },
+      {
+        "person_id": "person_0ddcf84d97785b42a7b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_022"
+        ]
+      },
+      {
+        "person_id": "person_4fa5666c11df5c588e30",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_024"
+        ]
+      },
+      {
+        "person_id": "person_6784fa8294c45800b3da",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS faculty.php as Professor of Teaching; excluded as teaching under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_026"
+        ]
+      },
+      {
+        "person_id": "person_f1a075fb92f05876bc6e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_027"
+        ]
+      },
+      {
+        "person_id": "person_d78db1eebb03528f8c31",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_030"
+        ]
+      },
+      {
+        "person_id": "person_52c853e723ed5fab8b55",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_031"
+        ]
+      },
+      {
+        "person_id": "person_b1b5d09ced145b968462",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_033"
+        ]
+      },
+      {
+        "person_id": "person_5357b7f8b941542f81ec",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_034"
+        ]
+      },
+      {
+        "person_id": "person_755d3babc0655ab5b1ac",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_035"
+        ]
+      },
+      {
+        "person_id": "person_ad861095a5115e4f8630",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_037"
+        ]
+      },
+      {
+        "person_id": "person_72528ea1baab522d806a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_038"
+        ]
+      },
+      {
+        "person_id": "person_0b0fff0ab3a6514296f5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_040"
+        ]
+      },
+      {
+        "person_id": "person_69041096ee2e5928ae1a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_043"
+        ]
+      },
+      {
+        "person_id": "person_fdadc97915775df983c5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_045"
+        ]
+      },
+      {
+        "person_id": "person_6ded3a8b9daa55c6908f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_048"
+        ]
+      },
+      {
+        "person_id": "person_24710f4596fc5389a55a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_049"
+        ]
+      },
+      {
+        "person_id": "person_47cb7c176cd25a5c94d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_051"
+        ]
+      },
+      {
+        "person_id": "person_8ec0e0edf782562a953b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_055"
+        ]
+      },
+      {
+        "person_id": "person_d3db3208f597537faa46",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS faculty.php as Adjunct Professor; excluded as adjunct under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_058"
+        ]
+      },
+      {
+        "person_id": "person_5ed150ed35aa5cfeb1c3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_059"
+        ]
+      },
+      {
+        "person_id": "person_d1949746d6e457a08e3f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_061"
+        ]
+      },
+      {
+        "person_id": "person_642bd146f4735891b7cc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_062"
+        ]
+      },
+      {
+        "person_id": "person_34ca59f8941758e3bf59",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_063"
+        ]
+      },
+      {
+        "person_id": "person_2fa80c4273c85779a5b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_065"
+        ]
+      },
+      {
+        "person_id": "person_36833ce812da530eb373",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_067"
+        ]
+      },
+      {
+        "person_id": "person_892a954c55185404adc0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_073"
+        ]
+      },
+      {
+        "person_id": "person_5c0b0795cb755d90846d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_075"
+        ]
+      },
+      {
+        "person_id": "person_b996557d420452df954f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Tenured/tenure-track Professor of EECS on faculty.php; included as regular under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_078"
+        ]
+      },
+      {
+        "person_id": "person_efdf46ad3b6a56de9a58",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS faculty.php as Adjunct Professor; excluded as adjunct under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_005",
+          "src_079"
+        ]
+      },
+      {
+        "person_id": "person_8e8378238b2459c79d47",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_014"
+        ]
+      },
+      {
+        "person_id": "person_1a3bca2924a05d29852d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_018"
+        ]
+      },
+      {
+        "person_id": "person_5e6cc497a5ba52969916",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_019"
+        ]
+      },
+      {
+        "person_id": "person_5933af49c26f574a9a3d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_023"
+        ]
+      },
+      {
+        "person_id": "person_4a7ca67d1ad755ec85e9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_025"
+        ]
+      },
+      {
+        "person_id": "person_d499d859c48e5543a72a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_081"
+        ]
+      },
+      {
+        "person_id": "person_618c0a535ba25556b643",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_080"
+        ]
+      },
+      {
+        "person_id": "person_c3b7fc61ddf35d0faa2a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_028"
+        ]
+      },
+      {
+        "person_id": "person_9221c57644b95b7a91de",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_032"
+        ]
+      },
+      {
+        "person_id": "person_44d88daf77565ff98d5e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_036"
+        ]
+      },
+      {
+        "person_id": "person_49bb8c73c2315fdebd36",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_041"
+        ]
+      },
+      {
+        "person_id": "person_79f1cf765b125d9daede",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_039"
+        ]
+      },
+      {
+        "person_id": "person_a0c926ae60b355709eea",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_042"
+        ]
+      },
+      {
+        "person_id": "person_add3ff1da2ea529eaa52",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_047"
+        ]
+      },
+      {
+        "person_id": "person_9f9cb68fb0ac5a388140",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_052"
+        ]
+      },
+      {
+        "person_id": "person_81b037f1300353578ed1",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_053"
+        ]
+      },
+      {
+        "person_id": "person_c9bc5c286056532782f9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_054"
+        ]
+      },
+      {
+        "person_id": "person_370a447bfb305d1ab8e2",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_056"
+        ]
+      },
+      {
+        "person_id": "person_58021e6f6af659e1ba6a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_057"
+        ]
+      },
+      {
+        "person_id": "person_b3396ef885b75d9aaa89",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_060"
+        ]
+      },
+      {
+        "person_id": "person_2870d2c0f5eb50f7a21a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_064"
+        ]
+      },
+      {
+        "person_id": "person_1d16c0651dfb5218822d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_066"
+        ]
+      },
+      {
+        "person_id": "person_264501d88cfb56baae2b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_074"
+        ]
+      },
+      {
+        "person_id": "person_fc875e8367d1546b9481",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS affiliated.php as official EECS Affiliated Faculty; included as affiliate_professor under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_077"
+        ]
+      },
+      {
+        "person_id": "person_2d7d54f7e89354b1bf60",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_008"
+        ]
+      },
+      {
+        "person_id": "person_0a303a00e08a5db4804e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_011"
+        ]
+      },
+      {
+        "person_id": "person_89a0e0dd5d855315a7e8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_020"
+        ]
+      },
+      {
+        "person_id": "person_f9827919727d5f6ba8f4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_47d96d7f71735dc48d38",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_003",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_957c8f2099335e71a716",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_029"
+        ]
+      },
+      {
+        "person_id": "person_b58b609bb7855bb9b0ff",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_044"
+        ]
+      },
+      {
+        "person_id": "person_a4a869678d9959548e82",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_046"
+        ]
+      },
+      {
+        "person_id": "person_5487ea0f2dca57b89f42",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_050"
+        ]
+      },
+      {
+        "person_id": "person_894afd5e21145c1b9830",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_068"
+        ]
+      },
+      {
+        "person_id": "person_64c06ac3c41f5cdbb30a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_070"
+        ]
+      },
+      {
+        "person_id": "person_aafc40488a0e5c1f905f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_071"
+        ]
+      },
+      {
+        "person_id": "person_6b50c763528d504ba3d8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_072"
+        ]
+      },
+      {
+        "person_id": "person_1c966b1ad5c3535894a4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on EECS emeritus.php; excluded as emeritus under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_004",
+          "src_076"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_001",
+        "url": "https://catalogue.uci.edu/thehenrysamuelischoolofengineering/departmentofelectricalengineeringandcomputerscience/",
+        "observed_at": "2026-11-24T08:48:03.250927+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7ffa310b03a2de90c53bbc2f7a2a4c881fe8813f118ffbe57e41ce8bf4b1b8df"
+      },
+      {
+        "id": "src_002",
+        "url": "https://cs.ics.uci.edu/people/faculty/",
+        "observed_at": "2026-11-24T08:48:05.505662+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "858f2c564c86f3ecdf3a71b210caece22e043aa3002f944f910e8290f3539b23"
+      },
+      {
+        "id": "src_003",
+        "url": "https://engineering.uci.edu/dept/eecs/people/affiliated.php",
+        "observed_at": "2026-11-24T08:48:03.143304+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "324a899a984b8dd61fa25bb42890a59ea419b9df50d4aa2ad9210a63bb774f59"
+      },
+      {
+        "id": "src_004",
+        "url": "https://engineering.uci.edu/dept/eecs/people/emeritus.php",
+        "observed_at": "2026-11-24T08:48:03.145011+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6b39b7193c9e1757b0ff07d13b9bafbf0ba1b05817634f98b21657b3291234ca"
+      },
+      {
+        "id": "src_005",
+        "url": "https://engineering.uci.edu/dept/eecs/people/faculty.php",
+        "observed_at": "2026-11-24T08:48:03.216471+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9d9965002bbe21da1a27accaf94b144577c544f2e39cb78fe0fbdeb4458713f2"
+      },
+      {
+        "id": "src_006",
+        "url": "https://engineering.uci.edu/directory/aghasi_hamidreza.php",
+        "observed_at": "2026-11-24T08:48:03.148546+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "2d3486e3c43b41e3b61e3032c06de9000455373e4a2c10b3eb0f04d039dfa773"
+      },
+      {
+        "id": "src_007",
+        "url": "https://engineering.uci.edu/directory/al_faruque_mohammad.php",
+        "observed_at": "2026-11-24T08:48:03.130348+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d7b790f13e11f599c6365b50e2ae7b13bbce716ccebc130fa285263c10e5cebd"
+      },
+      {
+        "id": "src_008",
+        "url": "https://engineering.uci.edu/directory/alexopoulos_nicolaos.php",
+        "observed_at": "2026-11-24T08:48:05.166701+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "280d2014f78cc3a6a6cbae12763da8b544ca6181097733fd2484014ee336712d"
+      },
+      {
+        "id": "src_009",
+        "url": "https://engineering.uci.edu/directory/ayanoglu_ender.php",
+        "observed_at": "2026-11-24T08:48:03.149023+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "720e515f9745ee343b767d38a37638e212e0e25dbb736ce8a68954c53c39fcf4"
+      },
+      {
+        "id": "src_010",
+        "url": "https://engineering.uci.edu/directory/bagherzadeh_nader.php",
+        "observed_at": "2026-11-24T08:48:03.135604+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "89d2cb179851a3a4fdb0976a2826157f6ee6d432a111e8eaa34a690946946800"
+      },
+      {
+        "id": "src_011",
+        "url": "https://engineering.uci.edu/directory/bershad_neil.php",
+        "observed_at": "2026-11-24T08:48:05.195165+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4e23a73feafe6d6f4c9252bd8808d45f24b5710286c57d869ef7ce975e55ee79"
+      },
+      {
+        "id": "src_012",
+        "url": "https://engineering.uci.edu/directory/boyraz_ozdal.php",
+        "observed_at": "2026-11-24T08:48:03.146993+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3ceae18626967f28c5c7ee6a1bf5f5023019a82ef9015af911a35541c56b14f6"
+      },
+      {
+        "id": "src_013",
+        "url": "https://engineering.uci.edu/directory/burke_peter.php",
+        "observed_at": "2026-11-24T08:48:03.150031+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "dbb1282a9c1a8c9f160f1c0a7f58ed6a93067215ccd30473130a20618455a2c4"
+      },
+      {
+        "id": "src_014",
+        "url": "https://engineering.uci.edu/directory/butts_carter.php",
+        "observed_at": "2026-11-24T08:48:04.441757+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "57d55256c66052ba3e09890827c4be02e88f3c20bdad1baa863f3be8b6080139"
+      },
+      {
+        "id": "src_015",
+        "url": "https://engineering.uci.edu/directory/cao_hung.php",
+        "observed_at": "2026-11-24T08:48:03.438924+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d4211e5baaac78e4983cdafc49d8e1e15f61b5a0a27da8cb152dab58782c9c7f"
+      },
+      {
+        "id": "src_016",
+        "url": "https://engineering.uci.edu/directory/capolino_filippo.php",
+        "observed_at": "2026-11-24T08:48:03.442867+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ea032e78c8cc651031a8b2b239bcc01e122884a0e85f350417820c60bfcc98a0"
+      },
+      {
+        "id": "src_017",
+        "url": "https://engineering.uci.edu/directory/chandramowlishwaran_aparna.php",
+        "observed_at": "2026-11-24T08:48:03.487176+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d9be76d6b2639427f1947b16263d2e7f708e7b0ad625c0f4841f40c5361a11db"
+      },
+      {
+        "id": "src_018",
+        "url": "https://engineering.uci.edu/directory/chen_alfred.php",
+        "observed_at": "2026-11-24T08:48:04.421707+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "042bf9c07c03aa22a36e6fe6a2f6cffb5d16152e618676af9b49b83b72ac564b"
+      },
+      {
+        "id": "src_019",
+        "url": "https://engineering.uci.edu/directory/chen_zhongping.php",
+        "observed_at": "2026-11-24T08:48:04.486474+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "350df7f28060fa102f9ade8845b9641b34466fc69ed66e5ce2da72a7a98ef2ad"
+      },
+      {
+        "id": "src_020",
+        "url": "https://engineering.uci.edu/directory/chou_pai.php",
+        "observed_at": "2026-11-24T08:48:05.200187+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d45dd16bf2fd4c7abcaeebfa9ca7677ac0be236c30df84ec18e9e23b72f772e1"
+      },
+      {
+        "id": "src_021",
+        "url": "https://engineering.uci.edu/directory/dang_quoc_viet.php",
+        "observed_at": "2026-11-24T08:48:03.494303+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d08303d0023384376217efb312cda7bda06379592ba7388b72908cdfa65040e4"
+      },
+      {
+        "id": "src_022",
+        "url": "https://engineering.uci.edu/directory/de_flaviis_franco.php",
+        "observed_at": "2026-11-24T08:48:03.499782+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9de35d185e5df48e630535608db49c67cc16d30ed61eb402fe6d4ca64ab535f2"
+      },
+      {
+        "id": "src_023",
+        "url": "https://engineering.uci.edu/directory/demsky_brian.php",
+        "observed_at": "2026-11-24T08:48:05.496713+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3e4d736c02c3e759d8626c027e06f02a2ab3b3b76023a9bc72bb02f7abe0321e"
+      },
+      {
+        "id": "src_024",
+        "url": "https://engineering.uci.edu/directory/doemer_rainer.php",
+        "observed_at": "2026-11-24T08:48:03.485813+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ead41a7108786fe055f62d1a959e49b2f64093b519d706bde3539f7497639eff"
+      },
+      {
+        "id": "src_025",
+        "url": "https://engineering.uci.edu/directory/dutt_nikil.php",
+        "observed_at": "2026-11-24T08:48:04.525884+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "c078564b3dd4648ac52ca97ec6b8ce83e70c4068c790494041bc7e4f63e0e9a9"
+      },
+      {
+        "id": "src_026",
+        "url": "https://engineering.uci.edu/directory/elmalaki_salma.php",
+        "observed_at": "2026-11-24T08:48:03.494899+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "511fb1055a5e62c931df3c50315c848d62885127c438b61f6842ddc56c8715a8"
+      },
+      {
+        "id": "src_027",
+        "url": "https://engineering.uci.edu/directory/esfandyar_pour_rahim.php",
+        "observed_at": "2026-11-24T08:48:03.495457+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "873d1164aadbf4af07390a012597f4bc93d3df40d716194c0bd9d0a692775809"
+      },
+      {
+        "id": "src_028",
+        "url": "https://engineering.uci.edu/directory/franz_michael.php",
+        "observed_at": "2026-11-24T08:48:04.554998+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "977778d46006b82ae50c3ef717f995f2b5f98a9e24fa873172c1ae4063bcae7c"
+      },
+      {
+        "id": "src_029",
+        "url": "https://engineering.uci.edu/directory/gajski_daniel.php",
+        "observed_at": "2026-11-24T08:48:05.230269+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e5d0d3cd8816b917d5490f2849f6ab8daf5a10176ee786de6fd5ea396146018a"
+      },
+      {
+        "id": "src_030",
+        "url": "https://engineering.uci.edu/directory/gaudiot_jean_luc.php",
+        "observed_at": "2026-11-24T08:48:03.497426+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "db1182a38e70c16b983753beb677a46d4bff46fd13df9984fd3e60d37b08e6fb"
+      },
+      {
+        "id": "src_031",
+        "url": "https://engineering.uci.edu/directory/green_michael.php",
+        "observed_at": "2026-11-24T08:48:03.568668+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "39c3457040b0937c8ef136e40f3805638bd7f4429174b7e7c8db9a0c5e602120"
+      },
+      {
+        "id": "src_032",
+        "url": "https://engineering.uci.edu/directory/gulsen_gultekin.php",
+        "observed_at": "2026-11-24T08:48:04.564994+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "dc9845568002e170a0c67e163834c7a1471fb93305e3c4067c1add6d6bf01834"
+      },
+      {
+        "id": "src_033",
+        "url": "https://engineering.uci.edu/directory/healey_glenn.php",
+        "observed_at": "2026-11-24T08:48:03.565844+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3f488a9e3019ba2ae66390199237c7a597216404d8b7bbd9770b937b240e1cd0"
+      },
+      {
+        "id": "src_034",
+        "url": "https://engineering.uci.edu/directory/heydari_payam.php",
+        "observed_at": "2026-11-24T08:48:03.767000+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f2a690d45409805fd1d3d9481eccd5b90d48f88b4ca69dfd12b2edc883509d10"
+      },
+      {
+        "id": "src_035",
+        "url": "https://engineering.uci.edu/directory/huang_sitao.php",
+        "observed_at": "2026-11-24T08:48:03.763328+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3d92f19faea5b73e6224ca1247c162b9b9888a35725074836aa8d9515a0c9feb"
+      },
+      {
+        "id": "src_036",
+        "url": "https://engineering.uci.edu/directory/imani_mohsen.php",
+        "observed_at": "2026-11-24T08:48:04.549443+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "585376c418ac924f92689b2ed18a2355a9fa33f73f25373454e3ff09fc0a3cae"
+      },
+      {
+        "id": "src_037",
+        "url": "https://engineering.uci.edu/directory/jafar_syed.php",
+        "observed_at": "2026-11-24T08:48:03.830677+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6e0486b6eda17e4d801bab447dd8cbce0defdcffad0c86ac7125b6daea6a3088"
+      },
+      {
+        "id": "src_038",
+        "url": "https://engineering.uci.edu/directory/jafarkhani_hamid.php",
+        "observed_at": "2026-11-24T08:48:03.866917+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9b6acca2abe5b84e2ff9cf54f391d5bd21d5f2b97e688732356b3c1886c741c8"
+      },
+      {
+        "id": "src_039",
+        "url": "https://engineering.uci.edu/directory/jordan_scott.php",
+        "observed_at": "2026-11-24T08:48:04.734979+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7d502ec7c192bb96f2f2925818bddc10eba824c98b3e7c1d887a156f04eee240"
+      },
+      {
+        "id": "src_040",
+        "url": "https://engineering.uci.edu/directory/khargonekar_pramod.php",
+        "observed_at": "2026-11-24T08:48:03.859015+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "612d947cce1c5099baf5cf537760b046a17c6f446836981afdf66a1a0883b2c2"
+      },
+      {
+        "id": "src_041",
+        "url": "https://engineering.uci.edu/directory/kheradvar_arash.php",
+        "observed_at": "2026-11-24T08:48:04.577377+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "5761609b33e6f8008f16dd119ec385e5bd04d28fcc26814924aa81546ca90ed9"
+      },
+      {
+        "id": "src_042",
+        "url": "https://engineering.uci.edu/directory/khine_michelle.php",
+        "observed_at": "2026-11-24T08:48:04.793560+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "67bed921bcc4124e4d9ab039771b3256b835dfb57fa3c0a0ff88ff5b298380ed"
+      },
+      {
+        "id": "src_043",
+        "url": "https://engineering.uci.edu/directory/khodagholy_dion.php",
+        "observed_at": "2026-11-24T08:48:03.835788+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "43ad12700f1e7fe6b0b32e3a54ae7681d178bb9ec8739ba7eb468f7a4b089298"
+      },
+      {
+        "id": "src_044",
+        "url": "https://engineering.uci.edu/directory/kleinfelder_stuart.php",
+        "observed_at": "2026-11-24T08:48:05.255338+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "98240fbdb1951e5e7ff195fde90177c287ed8a2218a125a5f94d0c3a8d5ca625"
+      },
+      {
+        "id": "src_045",
+        "url": "https://engineering.uci.edu/directory/kurdahi_fadi.php",
+        "observed_at": "2026-11-24T08:48:03.850453+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "5e903cc785b89aaa6fd159b16ff05cf8fd20502500d982d911e7b07be4d4ab31"
+      },
+      {
+        "id": "src_046",
+        "url": "https://engineering.uci.edu/directory/lee_henry.php",
+        "observed_at": "2026-11-24T08:48:05.368559+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "652079676a2c01aeddbef85d2a4d48c57358ecde1dd5a20a33dbd405a2d5faf2"
+      },
+      {
+        "id": "src_047",
+        "url": "https://engineering.uci.edu/directory/levorato_marco.php",
+        "observed_at": "2026-11-24T08:48:04.791732+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b800c76f1c623272450b0d122371a452ae4cfd7bf286e8a42ad27bda00d898e7"
+      },
+      {
+        "id": "src_048",
+        "url": "https://engineering.uci.edu/directory/li_gp.php",
+        "observed_at": "2026-11-24T08:48:03.848211+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "dab40c4bd43133c5576f22b76e27774832d9505db3f9607589b3d389c169b191"
+      },
+      {
+        "id": "src_049",
+        "url": "https://engineering.uci.edu/directory/li_zhou.php",
+        "observed_at": "2026-11-24T08:48:03.844785+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e88348e97c01b9fbe2de29c39d18b93544478145006e0da38f96e8685a22d6e1"
+      },
+      {
+        "id": "src_050",
+        "url": "https://engineering.uci.edu/directory/lin_kwei_jay.php",
+        "observed_at": "2026-11-24T08:48:05.458212+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1b42d1da75fd07c67d9b1586dae55bbafd57f0ca1032f0acb8a095dcc480d527"
+      },
+      {
+        "id": "src_051",
+        "url": "https://engineering.uci.edu/directory/markopoulou_athina.php",
+        "observed_at": "2026-11-24T08:48:03.894084+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e9e7ed7d4d83cdc0528a75cb5e2c285dbd014ef22e3bfdb9261be1b1ac5bc99f"
+      },
+      {
+        "id": "src_052",
+        "url": "https://engineering.uci.edu/directory/mccarthy_michael.php",
+        "observed_at": "2026-11-24T08:48:04.837720+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4b19be38742d09551dd86e8dfc95eeccc9b0f79f0387c83385afd8cb2b47a616"
+      },
+      {
+        "id": "src_053",
+        "url": "https://engineering.uci.edu/directory/molloi_sabee.php",
+        "observed_at": "2026-11-24T08:48:04.831521+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "578e37305138d667df296ce91d2821cb9c04a110b8e03e8e5abf23d384b0c678"
+      },
+      {
+        "id": "src_054",
+        "url": "https://engineering.uci.edu/directory/nenadic_zoran.php",
+        "observed_at": "2026-11-24T08:48:04.872576+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "82e556ba2460c9502bf112e41fc1108c44e34694e102c3a5cb22f638e07b5baf"
+      },
+      {
+        "id": "src_055",
+        "url": "https://engineering.uci.edu/directory/pasqualetti_fabio.php",
+        "observed_at": "2026-11-24T08:48:03.875566+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "45b6c9072e376865b6544c03375d22c06811537b16620b4f67031b9aa9c777a7"
+      },
+      {
+        "id": "src_056",
+        "url": "https://engineering.uci.edu/directory/potma_eric.php",
+        "observed_at": "2026-11-24T08:48:04.884189+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1ab1786fcfcc1a51c5d243c7b5a790d4cf6e5f4233dfcd1a037a3c220f43ec52"
+      },
+      {
+        "id": "src_057",
+        "url": "https://engineering.uci.edu/directory/rahmani_amir.php",
+        "observed_at": "2026-11-24T08:48:04.903491+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "87d429783b6db48c6cf63adc95adf07d127d553e930d0f76c82bedd4e2fb36fe"
+      },
+      {
+        "id": "src_058",
+        "url": "https://engineering.uci.edu/directory/samueli_henry.php",
+        "observed_at": "2026-11-24T08:48:04.079260+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "18c9ad4ee17c0131e262a6bfb707d4b822a1d9f9444a24057e2e16214afdd050"
+      },
+      {
+        "id": "src_059",
+        "url": "https://engineering.uci.edu/directory/sanger_terry.php",
+        "observed_at": "2026-11-24T08:48:04.080395+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7f44a21a6b3e5fe532795e73f7bf25b2e0ce83b241640698c9aaaaee9b838206"
+      },
+      {
+        "id": "src_060",
+        "url": "https://engineering.uci.edu/directory/shah_pratik.php",
+        "observed_at": "2026-11-24T08:48:04.926690+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "78e522b73ca2d84dd6c4f62af5839f18a48fc698d4b4cb8fb13ee2f493ceab53"
+      },
+      {
+        "id": "src_061",
+        "url": "https://engineering.uci.edu/directory/shcherbakov_maxim.php",
+        "observed_at": "2026-11-24T08:48:04.183775+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "786b2700176fd775fb5b66310f93883cb312803b43daf6945a191d6684670feb"
+      },
+      {
+        "id": "src_062",
+        "url": "https://engineering.uci.edu/directory/shen_yanning.php",
+        "observed_at": "2026-11-24T08:48:04.166075+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1d7d1fc1f5dd429199c3a514c3aa26f6ec8834da0a5a387d7355f0c2b1d4ffa3"
+      },
+      {
+        "id": "src_063",
+        "url": "https://engineering.uci.edu/directory/sheu_chen_yu_phillip.php",
+        "observed_at": "2026-11-24T08:48:04.191731+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9e4db7b1a827497deaabe2052f66d3d6a66c57c8f155361922662e027fd01287"
+      },
+      {
+        "id": "src_064",
+        "url": "https://engineering.uci.edu/directory/shkel_andrei.php",
+        "observed_at": "2026-11-24T08:48:05.050067+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b94abc72a3e6a16e2715a394791c5e5b7fb5ebb5338432a55fb3d6cec322f9b4"
+      },
+      {
+        "id": "src_065",
+        "url": "https://engineering.uci.edu/directory/shoukry_yasser.php",
+        "observed_at": "2026-11-24T08:48:04.202563+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7ac38ae96aafb10509596896d2830e7363683ea51ca088c320d7ecddc978111c"
+      },
+      {
+        "id": "src_066",
+        "url": "https://engineering.uci.edu/directory/singh_sameer.php",
+        "observed_at": "2026-11-24T08:48:05.124713+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e4c2e72b22b6ca665b73dbd79e6883e84682c3fa04527c0869f2c4d4f3a7c8d5"
+      },
+      {
+        "id": "src_067",
+        "url": "https://engineering.uci.edu/directory/smedley_keyue.php",
+        "observed_at": "2026-11-24T08:48:04.198020+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "041093115ec004d2bb01702ac4c8ef79f6be742c2a5b9d035d30c93f009d45f8"
+      },
+      {
+        "id": "src_068",
+        "url": "https://engineering.uci.edu/directory/stubberud_allen.php",
+        "observed_at": "2026-11-24T08:48:05.461136+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "00d50b70c2d32cb7dbf6ffa3b0d3eccba194ea8c8ffb40a3c10d224e7ba224bf"
+      },
+      {
+        "id": "src_069",
+        "url": "https://engineering.uci.edu/directory/swindlehurst_lee.php",
+        "observed_at": "2026-11-24T08:48:03.121350+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7ef9b42a004cae4fd67b1419753a553bc1b2564e6c481bf7bb65a6808b84bcb7"
+      },
+      {
+        "id": "src_070",
+        "url": "https://engineering.uci.edu/directory/tan_harry.php",
+        "observed_at": "2026-11-24T08:48:05.476630+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "964c5c17be864fb7c0b88a0b50736ee08c4f926d9b3a9d8b27c6a304b8635f1f"
+      },
+      {
+        "id": "src_071",
+        "url": "https://engineering.uci.edu/directory/tsai_chen.php",
+        "observed_at": "2026-11-24T08:48:05.456691+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "13e4d20d00042e694c901bcde6a24e9fe29e58f5b140bd7246b8c06cc76c9b8d"
+      },
+      {
+        "id": "src_072",
+        "url": "https://engineering.uci.edu/directory/tsai_kevin.php",
+        "observed_at": "2026-11-24T08:48:05.471504+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d97e6a4fa988f6c2658f930636096d82e5e9805d43264655064375a80c772983"
+      },
+      {
+        "id": "src_073",
+        "url": "https://engineering.uci.edu/directory/vaisband_boris.php",
+        "observed_at": "2026-11-24T08:48:04.214719+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "a66939f27a6bb5a700fd7b5341419a9c7b992c8fbd742525d3c1eb033714902f"
+      },
+      {
+        "id": "src_074",
+        "url": "https://engineering.uci.edu/directory/velez_cuervo_camilo.php",
+        "observed_at": "2026-11-24T08:48:05.111983+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1f3e092cb495d5cecadd051a46989681dd3bd2ff86a34a5f630cffa075106076"
+      },
+      {
+        "id": "src_075",
+        "url": "https://engineering.uci.edu/directory/wang_zhiying.php",
+        "observed_at": "2026-11-24T08:48:04.189516+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "c6e92c49b01dfc1a261b8210037c36ca44d3fcf809427ad35142abeafb9a6ba0"
+      },
+      {
+        "id": "src_076",
+        "url": "https://engineering.uci.edu/directory/wickramasinghe_kumar.php",
+        "observed_at": "2026-11-24T08:48:05.501922+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "2655753131526c0794f34330c9905819c00b98925be95bffdf6b3095da3db1ff"
+      },
+      {
+        "id": "src_077",
+        "url": "https://engineering.uci.edu/directory/won_yoonjin.php",
+        "observed_at": "2026-11-24T08:48:05.143075+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d47e1a32b6d8f6e30078d5649f4faa743d7bfc24ba737a1a8fd2ae5a44bd7534"
+      },
+      {
+        "id": "src_078",
+        "url": "https://engineering.uci.edu/directory/xia_fei.php",
+        "observed_at": "2026-11-24T08:48:04.200545+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d67ab5f825abc2c41f9972b387b81f55ca4addcf12740276f54605f40b4ce57d"
+      },
+      {
+        "id": "src_079",
+        "url": "https://engineering.uci.edu/directory/yousefi_zadeh_homayoun.php",
+        "observed_at": "2026-11-24T08:48:04.221702+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ddc357bed901e6a07b5d670e688f54c7cb450053a8658c429f979995da437bd1"
+      },
+      {
+        "id": "src_080",
+        "url": "https://engineering.uci.edu/users/roy-fox.php",
+        "observed_at": "2026-11-24T08:48:05.141971+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "53ef49e39041409474b270883dd731558eecddc4133c0fd42cf56df50e7b1f11"
+      },
+      {
+        "id": "src_081",
+        "url": "https://scholarconnect.uci.edu/afigotin",
+        "observed_at": "2026-11-24T08:48:04.444794+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7cb594ccff9cc1b69b9f6b890304238643485acb9e6f0fda21ee97939d1345bc"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_a2b1b390f5964669a50852074932e603",
+    "candidate_sha256": "81db4894e79eac371a49388acfa82d0888230da26042263f9fb9486997802347",
+    "transport": "t3",
+    "run_id": "audit-uci-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:48:05.515875+00:00",
+    "exit_code": 0
+  }
+}

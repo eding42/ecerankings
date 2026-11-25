@@ -1,0 +1,64 @@
+[
+  {
+    "case": "incoming appointment",
+    "person_id": "berkeley:85083610209422b9",
+    "result": "Current eligibility withheld while individual paper identity can be accepted."
+  },
+  {
+    "case": "rank and courtesy appointments",
+    "person_id": "stanford:bc43ce121d379cac",
+    "result": "Preserve directory/profile rank conflict; distinguish EE appointment from courtesy CS role."
+  },
+  {
+    "case": "same name",
+    "result": "Qian Xu, Yuan Cao and Yang Zhao retrieve many author groups. Name-only candidates remain unresolved, not accepted."
+  },
+  {
+    "case": "same title across publication types",
+    "doi": "10.1364/cleo_at.2017.am1b.3",
+    "result": "CLEO title also occurs in a lab-listed Advanced Materials article. Title alone does not identify the same work; no acceptance."
+  },
+  {
+    "case": "missing or synthetic ID",
+    "accepted_examples": [
+      {
+        "doi": "10.1145/3037697.3037751",
+        "author_id": "crossref:name:mendel-rosenblum"
+      },
+      {
+        "doi": "10.1145/3582016.3582070",
+        "author_id": "crossref:name:priyanka-raina"
+      },
+      {
+        "doi": "10.1145/3620666.3651368",
+        "author_id": "crossref:name:priyanka-raina"
+      },
+      {
+        "doi": "10.1109/iedm45741.2023.10413707",
+        "author_id": "crossref:name:kwabena-boahen"
+      },
+      {
+        "doi": "10.1364/optica.443979",
+        "author_id": "crossref:name:minjoo-larry-lee"
+      },
+      {
+        "doi": "10.1103/physrevlett.128.110502",
+        "author_id": null
+      },
+      {
+        "doi": "10.1126/science.abc2836",
+        "author_id": null
+      }
+    ],
+    "result": "Accept only evidenced individual authorships; never join people by a null or name-slug ID."
+  },
+  {
+    "case": "institutional move",
+    "doi": "10.1126/science.abc2836",
+    "result": "Current Berkeley faculty identity links to an MIT-affiliated cached paper; original institution IDs remain unchanged."
+  },
+  {
+    "case": "non-faculty and outside-unit controls",
+    "result": "US lecturers remain teaching category; iSchool/Pathology faculty do not become ECE faculty; unmatched authors stay unknown."
+  }
+]

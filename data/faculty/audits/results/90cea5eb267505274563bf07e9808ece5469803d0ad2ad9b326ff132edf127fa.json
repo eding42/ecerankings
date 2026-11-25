@@ -1,0 +1,2072 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/292a0a8860183343a54fee9272517278f90210c745a0c342af06d6722adce1ba.json",
+    "sha256": "292a0a8860183343a54fee9272517278f90210c745a0c342af06d6722adce1ba"
+  },
+  "brief": {
+    "file": "audits/briefs/29037d4f5f0e1311d55addceb56b55b28bdd0d758f65d1026f3d6ed160ba1b9f.json",
+    "sha256": "29037d4f5f0e1311d55addceb56b55b28bdd0d758f65d1026f3d6ed160ba1b9f"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_fc8d78a9a8994673bb6d672fc56a4bd1",
+    "candidate_sha256": "38e8945b36e25c1f61c359ea9217881c06eb34ed5193fb073f33e81eabdedc75",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:39:13.745734+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://engineering.nyu.edu/dante-youla",
+        "https://engineering.nyu.edu/david-goodman",
+        "https://engineering.nyu.edu/faculty/amit-patel",
+        "https://engineering.nyu.edu/faculty/andras-gyorgy",
+        "https://engineering.nyu.edu/faculty/andrew-kent",
+        "https://engineering.nyu.edu/faculty/anna-choromanska",
+        "https://engineering.nyu.edu/faculty/anthony-tzes",
+        "https://engineering.nyu.edu/faculty/austin-rovinski",
+        "https://engineering.nyu.edu/faculty/azhar-zam",
+        "https://engineering.nyu.edu/faculty/aziza-almanakly",
+        "https://engineering.nyu.edu/faculty/brandon-reagen",
+        "https://engineering.nyu.edu/faculty/chinmay-hegde",
+        "https://engineering.nyu.edu/faculty/daniel-sodickson",
+        "https://engineering.nyu.edu/faculty/danny-yuxing-huang",
+        "https://engineering.nyu.edu/faculty/dariusz-czarkowski",
+        "https://engineering.nyu.edu/faculty/david-chudnovsky",
+        "https://engineering.nyu.edu/faculty/david-fouhey",
+        "https://engineering.nyu.edu/faculty/davood-shahrjerdi",
+        "https://engineering.nyu.edu/faculty/elza-erkip",
+        "https://engineering.nyu.edu/faculty/farshad-khorrami",
+        "https://engineering.nyu.edu/faculty/fraida-fund",
+        "https://engineering.nyu.edu/faculty/francisco-de-leon",
+        "https://engineering.nyu.edu/faculty/gregory-chudnovsky",
+        "https://engineering.nyu.edu/faculty/h-jonathan-chao",
+        "https://engineering.nyu.edu/faculty/hamed-rahmani",
+        "https://engineering.nyu.edu/faculty/i-tai-lu",
+        "https://engineering.nyu.edu/faculty/ivan-selesnick",
+        "https://engineering.nyu.edu/faculty/jaime-llorca",
+        "https://engineering.nyu.edu/faculty/javad-shabani",
+        "https://engineering.nyu.edu/faculty/jelena-kovacevic",
+        "https://engineering.nyu.edu/faculty/john-neil-carter",
+        "https://engineering.nyu.edu/faculty/jona-balle",
+        "https://engineering.nyu.edu/faculty/jonathan-mamou",
+        "https://engineering.nyu.edu/faculty/juan-pablo-bello",
+        "https://engineering.nyu.edu/faculty/leslie-greengard",
+        "https://engineering.nyu.edu/faculty/ludovic-righetti",
+        "https://engineering.nyu.edu/faculty/mahmoud-rasras",
+        "https://engineering.nyu.edu/faculty/marwa-chafii",
+        "https://engineering.nyu.edu/faculty/matthew-campisi",
+        "https://engineering.nyu.edu/faculty/michael-knox",
+        "https://engineering.nyu.edu/faculty/michail-maniatakos",
+        "https://engineering.nyu.edu/faculty/mohamad-eid",
+        "https://engineering.nyu.edu/faculty/muhammad-shafique",
+        "https://engineering.nyu.edu/faculty/nina-krikorian-ezik",
+        "https://engineering.nyu.edu/faculty/nirod-das",
+        "https://engineering.nyu.edu/faculty/nizar-touzi",
+        "https://engineering.nyu.edu/faculty/omar-mansour",
+        "https://engineering.nyu.edu/faculty/onur-mutlu",
+        "https://engineering.nyu.edu/faculty/ozgur-sinanoglu",
+        "https://engineering.nyu.edu/faculty/parijat-dube",
+        "https://engineering.nyu.edu/faculty/pei-liu",
+        "https://engineering.nyu.edu/faculty/peter-voltz",
+        "https://engineering.nyu.edu/faculty/prashanth-krishnamurthy",
+        "https://engineering.nyu.edu/faculty/quanyan-zhu",
+        "https://engineering.nyu.edu/faculty/ramesh-karri",
+        "https://engineering.nyu.edu/faculty/riccardo-lattanzi",
+        "https://engineering.nyu.edu/faculty/romain-corcolle",
+        "https://engineering.nyu.edu/faculty/sai-qian-zhang",
+        "https://engineering.nyu.edu/faculty/shivendra-panwar",
+        "https://engineering.nyu.edu/faculty/siddharth-garg",
+        "https://engineering.nyu.edu/faculty/sohmyung-ha",
+        "https://engineering.nyu.edu/faculty/spencer-kuo",
+        "https://engineering.nyu.edu/faculty/stephen-arnold",
+        "https://engineering.nyu.edu/faculty/sundeep-rangan",
+        "https://engineering.nyu.edu/faculty/thanasis-korakis",
+        "https://engineering.nyu.edu/faculty/theodore-ted-s-rappaport",
+        "https://engineering.nyu.edu/faculty/thomas-marzetta",
+        "https://engineering.nyu.edu/faculty/unnikrishna-pillai",
+        "https://engineering.nyu.edu/faculty/wenqi-cui",
+        "https://engineering.nyu.edu/faculty/xiao-kang-chen",
+        "https://engineering.nyu.edu/faculty/yang-xu",
+        "https://engineering.nyu.edu/faculty/yann-lecun",
+        "https://engineering.nyu.edu/faculty/yao-wang",
+        "https://engineering.nyu.edu/faculty/yi-fang",
+        "https://engineering.nyu.edu/faculty/yong-liu",
+        "https://engineering.nyu.edu/faculty/yuzhang-lin",
+        "https://engineering.nyu.edu/faculty/zhengxue-zhao",
+        "https://engineering.nyu.edu/faculty/zhong-ping-jiang",
+        "https://engineering.nyu.edu/frank-cassara",
+        "https://engineering.nyu.edu/henry-l-bertoni",
+        "https://engineering.nyu.edu/joseph-bongiorno",
+        "https://engineering.nyu.edu/michael-ettenberg",
+        "https://engineering.nyu.edu/philip-sarachik",
+        "https://engineering.nyu.edu/robert-r-boorstyn",
+        "https://engineering.nyu.edu/staff/beverlyn-blanco",
+        "https://engineering.nyu.edu/staff/kiren-nayak",
+        "https://engineering.nyu.edu/staff/laura-schlein",
+        "https://engineering.nyu.edu/staff/michele-james",
+        "https://engineering.nyu.edu/staff/raquel-thompson",
+        "https://engineering.nyu.edu/staff/richard-toth",
+        "https://engineering.nyu.edu/theodor-tamir",
+        "https://engineering.nyu.edu/zivan-zabar"
+      ],
+      "checked_list_ids": [
+        "faculty"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_96bee921949251b0b382",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Electrical and Computer Engineering Department Chair | Profe).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_96bee921949251b0b382"
+        ]
+      },
+      {
+        "person_id": "person_5aae4d6cba375127abf0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_5aae4d6cba375127abf0"
+        ]
+      },
+      {
+        "person_id": "person_1615b5a1ca7a55b0bb86",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Associate Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_1615b5a1ca7a55b0bb86"
+        ]
+      },
+      {
+        "person_id": "person_a1e874685cd15ed2b90f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: NYU Tandon Industry Professor series (Industry Professor | Electrical and Computer Engineering) is non-tenure, primarily teaching.",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_a1e874685cd15ed2b90f"
+        ]
+      },
+      {
+        "person_id": "person_4db55dc11831561e87e1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor | Electrical and Computer Engineering | Center for).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_4db55dc11831561e87e1"
+        ]
+      },
+      {
+        "person_id": "person_69f138fad1335673a8ba",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Associate Professor | Alfred. P. Sloan Fellow | Electrical a).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_69f138fad1335673a8ba"
+        ]
+      },
+      {
+        "person_id": "person_cd5d2396ee885da5b104",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | Electrical and Computer Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_cd5d2396ee885da5b104"
+        ]
+      },
+      {
+        "person_id": "person_415ca330a0ee5121b1b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Associate Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_415ca330a0ee5121b1b7"
+        ]
+      },
+      {
+        "person_id": "person_ac2ddfbd83155c289788",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Institute Professor, Electrical and Computer Engineering | E).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_ac2ddfbd83155c289788"
+        ]
+      },
+      {
+        "person_id": "person_286d410097d850b88c8a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Institute Associate Professor | Electrical and Computer Engi).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_286d410097d850b88c8a"
+        ]
+      },
+      {
+        "person_id": "person_cdd72069c77e52538926",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor of Electrical and Computer Engineering | Electrica).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_cdd72069c77e52538926"
+        ]
+      },
+      {
+        "person_id": "person_4aba84fe34895a0dab6d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Associate Professor | Computer Science and Engineering | Ele).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_4aba84fe34895a0dab6d"
+        ]
+      },
+      {
+        "person_id": "person_40ce10611e2759fb9ceb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | NYU Center for Cybersecurity (CCS) | E).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_40ce10611e2759fb9ceb"
+        ]
+      },
+      {
+        "person_id": "person_3efdf977d998529596b6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Institute Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_3efdf977d998529596b6"
+        ]
+      },
+      {
+        "person_id": "person_8756a7a788855bffa5b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor (IEEE Fellow) | Co-Founder of Center for AI and Ro).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_8756a7a788855bffa5b4"
+        ]
+      },
+      {
+        "person_id": "person_b8c2556c7e175d05ae22",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: NYU Tandon Industry Professor series (Industry Professor | Electrical and Computer Engineering | N) is non-tenure, primarily teaching.",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_b8c2556c7e175d05ae22"
+        ]
+      },
+      {
+        "person_id": "person_0dca364bee1e58a094a4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Dean Emeritus of the NYU Tandon School of Engineering | Paul).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_0dca364bee1e58a094a4"
+        ]
+      },
+      {
+        "person_id": "person_8f07bdbd44685ebbbc00",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor | Director of Undergraduate Programs | Electrical ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_8f07bdbd44685ebbbc00"
+        ]
+      },
+      {
+        "person_id": "person_6659e1978d61556eb6f0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Associate Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_6659e1978d61556eb6f0"
+        ]
+      },
+      {
+        "person_id": "person_45032be6f4775a57bec9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor, Electrical and Computer Engineering | Director of).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_45032be6f4775a57bec9"
+        ]
+      },
+      {
+        "person_id": "person_1fe57c16d8dd53208878",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor | Electrical and Computer Engineering | Computer S).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_1fe57c16d8dd53208878"
+        ]
+      },
+      {
+        "person_id": "person_2d29b78464e15ceeb587",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor | Director of Center for Advanced Technology in Te).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_2d29b78464e15ceeb587"
+        ]
+      },
+      {
+        "person_id": "person_bd751741a8ed5d2aaf98",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor | Electrical and Computer Engineering | Connect).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_bd751741a8ed5d2aaf98"
+        ]
+      },
+      {
+        "person_id": "person_5b53d71c96e851409618",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_5b53d71c96e851409618"
+        ]
+      },
+      {
+        "person_id": "person_53c669a1adb75a54ae9a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor | Director of NYU WIRELESS | Electrical and Comput).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_53c669a1adb75a54ae9a"
+        ]
+      },
+      {
+        "person_id": "person_6dabee09144a54ebbced",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (David Lee/Ernst Weber Professor of Electrical Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_6dabee09144a54ebbced"
+        ]
+      },
+      {
+        "person_id": "person_4a5e035ed2ac5f9ebdb6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_4a5e035ed2ac5f9ebdb6"
+        ]
+      },
+      {
+        "person_id": "person_dfa465588d325da7b25e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Glenn Y. Louie Professor | Electrical and Computer Engineeri).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_dfa465588d325da7b25e"
+        ]
+      },
+      {
+        "person_id": "person_2544a75ba5ea57bba382",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_2544a75ba5ea57bba382"
+        ]
+      },
+      {
+        "person_id": "person_fb3a66992fea50d6b345",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor of Electrical and Computer Engineering & Biomedica).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_fb3a66992fea50d6b345"
+        ]
+      },
+      {
+        "person_id": "person_45621f984bdc5a2b8124",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor, Electrical and Computer Engineering | Physics Pro).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_45621f984bdc5a2b8124"
+        ]
+      },
+      {
+        "person_id": "person_0d3713e432b65ddd99bc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Director, Nanofabrication Cleanroom | NYU WIRELESS, Professo).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_0d3713e432b65ddd99bc"
+        ]
+      },
+      {
+        "person_id": "person_1dddbae7c2ad558eb186",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Vice Dean for Academics | Associate Professor | Electrical a).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_1dddbae7c2ad558eb186"
+        ]
+      },
+      {
+        "person_id": "person_1d58c0b070025b2d8853",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Professor of Electrical and Computer Engineering & Biomedica).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_1d58c0b070025b2d8853"
+        ]
+      },
+      {
+        "person_id": "person_ac2de9448a3a5be6ac28",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Assistant Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_ac2de9448a3a5be6ac28"
+        ]
+      },
+      {
+        "person_id": "person_44e39a17072c57bcbcfb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Core ECE faculty (Associate Professor | Electrical and Computer Engineering | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_44e39a17072c57bcbcfb"
+        ]
+      },
+      {
+        "person_id": "person_fdfba71a4a975ca7963c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Associate Professor of Electrical Engineering | Electrical a).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_fdfba71a4a975ca7963c"
+        ]
+      },
+      {
+        "person_id": "person_edc9d02ee9375b87a629",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Global Network Assistant Professor | Electrical and Computer).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_edc9d02ee9375b87a629"
+        ]
+      },
+      {
+        "person_id": "person_c0d3b325a38a5b7e8f19",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Research Associate Professor | Global Network Associate Prof).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_c0d3b325a38a5b7e8f19"
+        ]
+      },
+      {
+        "person_id": "person_baf6afb3c4365ef28b13",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Assistant Professor of Biomedical and Electrical Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_baf6afb3c4365ef28b13"
+        ]
+      },
+      {
+        "person_id": "person_dbd5f6b7219c52ab88d7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Assistant Professor of Biomedical and Electrical Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_dbd5f6b7219c52ab88d7"
+        ]
+      },
+      {
+        "person_id": "person_50f68fc8b6e85b18ab7b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Global Network Associate Professor | Research Associate Prof).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_50f68fc8b6e85b18ab7b"
+        ]
+      },
+      {
+        "person_id": "person_487e170fec33544a951e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Global Network Professor | Electrical and Computer Engineeri).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_487e170fec33544a951e"
+        ]
+      },
+      {
+        "person_id": "person_7f8525119e085ed59351",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Global Network Professor | Electrical and Computer Engineeri).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_7f8525119e085ed59351"
+        ]
+      },
+      {
+        "person_id": "person_87e05d290e0c566eb84f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Global Network Professor of Electrical and Computer Engineer).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_87e05d290e0c566eb84f"
+        ]
+      },
+      {
+        "person_id": "person_1aab72cd64c1540ea4a0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Global Network Professor | Electrical and Computer Engineeri).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_1aab72cd64c1540ea4a0"
+        ]
+      },
+      {
+        "person_id": "person_f20f63bdada6573385ce",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Global Network ECE professorial faculty (Associate Professor of Bioengineering (NYUAD), Biomedical, E).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_f20f63bdada6573385ce"
+        ]
+      },
+      {
+        "person_id": "person_4465b68229875dad93e6",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Distinguished Industry Professor | Electrical and Computer E).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_4465b68229875dad93e6"
+        ]
+      },
+      {
+        "person_id": "person_b1780be144f857879f34",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Distinguished Industry Professor | Electrical and Computer E).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_b1780be144f857879f34"
+        ]
+      },
+      {
+        "person_id": "person_be052a2e27d853c99902",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Research Associate Professor | Electrical and Computer Engin).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_be052a2e27d853c99902"
+        ]
+      },
+      {
+        "person_id": "person_20e205919a275607814d",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Research Associate Professor | Electrical and Computer Engin).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_20e205919a275607814d"
+        ]
+      },
+      {
+        "person_id": "person_86b0f962507051a6bbcd",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Senior Research Scientist | Electrical and Computer Engineer).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_86b0f962507051a6bbcd"
+        ]
+      },
+      {
+        "person_id": "person_a780331ddcb75523824b",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Research Associate Professor | Electrical and Computer Engin).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_a780331ddcb75523824b"
+        ]
+      },
+      {
+        "person_id": "person_a28db9868928540c9b48",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Research Professor | Electrical and Computer Engineering | N).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_a28db9868928540c9b48"
+        ]
+      },
+      {
+        "person_id": "person_ad9eafcb3c1d56efa160",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Research Associate Professor | Electrical and Computer Engin).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_ad9eafcb3c1d56efa160"
+        ]
+      },
+      {
+        "person_id": "person_4c62ef2460b758a79546",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Research Faculty and Staff (Distinguished Industry Professor | Director of NYU WIRELESS ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_4c62ef2460b758a79546"
+        ]
+      },
+      {
+        "person_id": "person_1546bbf7ef7356548799",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (University Professor | Thomas Potts Professor of Applied Phy).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_1546bbf7ef7356548799"
+        ]
+      },
+      {
+        "person_id": "person_dac4c304fc6a55dab538",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Professor | Computer Science and Engineering | Electrical an).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_dac4c304fc6a55dab538"
+        ]
+      },
+      {
+        "person_id": "person_b0c2722484335c64b4c3",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Global Network Assistant Professor | Electrical and Computer).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_b0c2722484335c64b4c3"
+        ]
+      },
+      {
+        "person_id": "person_3de42b5ed0b75f82811e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Professor | Electrical and Computer Engineering | Connect).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_3de42b5ed0b75f82811e"
+        ]
+      },
+      {
+        "person_id": "person_b622beae688c57699023",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Professor of Physics | Electrical and Computer Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_b622beae688c57699023"
+        ]
+      },
+      {
+        "person_id": "person_03f7bba32e2b591ca1af",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Professor of Radiology, Electrical and Computer Engineering,).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_03f7bba32e2b591ca1af"
+        ]
+      },
+      {
+        "person_id": "person_ae4ab3c55beb5bc19390",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Professor | Electrical and Computer Engineering | Connect).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_ae4ab3c55beb5bc19390"
+        ]
+      },
+      {
+        "person_id": "person_634437477bab5bdda5be",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Professor of Radiology Neuroscience and Physiology, and Biom).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_634437477bab5bdda5be"
+        ]
+      },
+      {
+        "person_id": "person_c923ce5e3f0d54f2b849",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Included: Official ECE Affiliated and Associated Faculty (Finance and Risk Engineering Department Chair | Professor | ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_c923ce5e3f0d54f2b849"
+        ]
+      },
+      {
+        "person_id": "person_f36ee720c0865930a380",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Adjunct Lecturer | Electrical and Computer Engineering | <a ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_f36ee720c0865930a380"
+        ]
+      },
+      {
+        "person_id": "person_a58cebcf0b975a10a2b1",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Graduate Program Coordinator and Advisor | Electrical and Co).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_a58cebcf0b975a10a2b1"
+        ]
+      },
+      {
+        "person_id": "person_05dbd5bee0075f46956f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Adjunct faculty | Electrical and Computer Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_05dbd5bee0075f46956f"
+        ]
+      },
+      {
+        "person_id": "person_0fc41dbec6d3579c920d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Adjunct Lecturer | Electrical and Computer Engineering | <di).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_0fc41dbec6d3579c920d"
+        ]
+      },
+      {
+        "person_id": "person_c27c698c262c5b55a8f8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Adjunct Lecturer | Electrical and Computer Engineering | <di).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_c27c698c262c5b55a8f8"
+        ]
+      },
+      {
+        "person_id": "person_a1c93250f53254cab69b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Industry Associate Professor | Computer Science and Engineer).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_a1c93250f53254cab69b"
+        ]
+      },
+      {
+        "person_id": "person_68cf4a96c8105cadba3d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Adjunct Professor | Electrical and Computer Engineering | Co).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_68cf4a96c8105cadba3d"
+        ]
+      },
+      {
+        "person_id": "person_b3f4cb4805ae5962b4b5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Adjunct Professors section (Adjunct Electrical Engineering | Electrical and Computer Eng).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_b3f4cb4805ae5962b4b5"
+        ]
+      },
+      {
+        "person_id": "person_fc238d9b0a1a507dbce2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | N).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_fc238d9b0a1a507dbce2"
+        ]
+      },
+      {
+        "person_id": "person_14a5594103f95b4498e5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | <).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_14a5594103f95b4498e5"
+        ]
+      },
+      {
+        "person_id": "person_eadcb9d0f7e3553f86ca",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | <).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_eadcb9d0f7e3553f86ca"
+        ]
+      },
+      {
+        "person_id": "person_7f1602d74790535a9e1b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | R).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_7f1602d74790535a9e1b"
+        ]
+      },
+      {
+        "person_id": "person_fdd3a6a770345b0a802e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | C).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_fdd3a6a770345b0a802e"
+        ]
+      },
+      {
+        "person_id": "person_0c1981ba060f5b9eb4f7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | <).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_0c1981ba060f5b9eb4f7"
+        ]
+      },
+      {
+        "person_id": "person_9adc0254ec3d5c7faa66",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | C).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_9adc0254ec3d5c7faa66"
+        ]
+      },
+      {
+        "person_id": "person_b1a0e8f4413d5613924b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | <).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_b1a0e8f4413d5613924b"
+        ]
+      },
+      {
+        "person_id": "person_d2c4b370412957ce950c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus (Deceased) | Electrical and Computer Engi).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_d2c4b370412957ce950c"
+        ]
+      },
+      {
+        "person_id": "person_aeda635f1db95b9da983",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Emeritus Faculty (Professor Emeritus | Electrical and Computer Engineering | C).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_aeda635f1db95b9da983"
+        ]
+      },
+      {
+        "person_id": "person_f3176c794f9c5ac898f2",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Non-professorial Presidential Fellow (Presidential Fellow | Electrical and Computer Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_f3176c794f9c5ac898f2"
+        ]
+      },
+      {
+        "person_id": "person_590ec13f312b5062ae05",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Professor Emeritus in Presidential Fellows (Professor Emeritus | Electrical and Computer Engineering | N).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_590ec13f312b5062ae05"
+        ]
+      },
+      {
+        "person_id": "person_6e2c052976e0533a8c50",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Professor Emeritus in Presidential Fellows (NYU School of Engineering Presidential Fellow and Professor ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_6e2c052976e0533a8c50"
+        ]
+      },
+      {
+        "person_id": "person_190e62934b46551291a1",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Department Staff (Undergraduate and Graduate Program Advisor | Electrical and ).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_190e62934b46551291a1"
+        ]
+      },
+      {
+        "person_id": "person_57e1ab96ccaa5d398c62",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Department Staff (Program Administrator | Electrical and Computer Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_57e1ab96ccaa5d398c62"
+        ]
+      },
+      {
+        "person_id": "person_33d54d5a1e2d5bbc843e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Department Staff (Managing Director, Center of Advanced Technology in Telecomm).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_33d54d5a1e2d5bbc843e"
+        ]
+      },
+      {
+        "person_id": "person_9532d9abf4985d3f9216",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Department Staff (Director, Operations & Administration | Electrical and Compu).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_9532d9abf4985d3f9216"
+        ]
+      },
+      {
+        "person_id": "person_31629450808d571b9abc",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Department Staff (Project Manager | Electrical and Computer Engineering).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_31629450808d571b9abc"
+        ]
+      },
+      {
+        "person_id": "person_fb4c21da50ba5c6a9a24",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Excluded: Department Staff (Coordinator of Undergraduate Programs and Advisement | Elect).",
+        "source_ids": [
+          "src_list_faculty",
+          "src_person_fb4c21da50ba5c6a9a24"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_list_faculty",
+        "url": "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering/people",
+        "observed_at": "2026-11-24T08:38:30.385564+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon ECE People Directory",
+        "response_sha256": "447c50c1739bbfd4f64073fbd9d3b62de30003b5494833811735ea710bcd6091"
+      },
+      {
+        "id": "src_person_96bee921949251b0b382",
+        "url": "https://engineering.nyu.edu/faculty/ramesh-karri",
+        "observed_at": "2026-11-24T08:38:29.966754+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Ramesh Karri",
+        "response_sha256": "a7cc2b1a36d7c2203f47e4f9c0ebb89dafdcc0f27892d8a3bf9161201b96914a"
+      },
+      {
+        "id": "src_person_5aae4d6cba375127abf0",
+        "url": "https://engineering.nyu.edu/faculty/aziza-almanakly",
+        "observed_at": "2026-11-24T08:38:29.294845+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Aziza Almanakly",
+        "response_sha256": "525f584cd16db25e721684a23cee4ed4bea7d77a57f8024d536c3e266718e478"
+      },
+      {
+        "id": "src_person_1615b5a1ca7a55b0bb86",
+        "url": "https://engineering.nyu.edu/faculty/jona-balle",
+        "observed_at": "2026-11-24T08:38:29.153118+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Jona Ballé",
+        "response_sha256": "edfd8b02b663f1e7e08d0c584ea816e190b1d4df34e56a5a0c2f9ba7a6e476b7"
+      },
+      {
+        "id": "src_person_a1e874685cd15ed2b90f",
+        "url": "https://engineering.nyu.edu/faculty/matthew-campisi",
+        "observed_at": "2026-11-24T08:38:29.160667+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Matthew Campisi",
+        "response_sha256": "dbee750b8c78787d3da0a9e5ad94125400dfe0c08ad310a9e72161ba1f965ec4"
+      },
+      {
+        "id": "src_person_4db55dc11831561e87e1",
+        "url": "https://engineering.nyu.edu/faculty/h-jonathan-chao",
+        "observed_at": "2026-11-24T08:38:29.178886+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: H. Jonathan Chao",
+        "response_sha256": "f15b2593ec87ea203bb0e15433134dccca6f25684c271a3e8b9f5be60a390f94"
+      },
+      {
+        "id": "src_person_69f138fad1335673a8ba",
+        "url": "https://engineering.nyu.edu/faculty/anna-choromanska",
+        "observed_at": "2026-11-24T08:38:30.237390+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Anna Choromanska",
+        "response_sha256": "1312e4c0e93becc3e7dbc7556edf61df2760a87d7f90717ccec2d42522f4cc4c"
+      },
+      {
+        "id": "src_person_cd5d2396ee885da5b104",
+        "url": "https://engineering.nyu.edu/faculty/wenqi-cui",
+        "observed_at": "2026-11-24T08:38:29.163855+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Wenqi Cui",
+        "response_sha256": "bf9c203ed172f1592bef058a9a614fbf20902eb33cf4ba988ad9b30a8bbfff2e"
+      },
+      {
+        "id": "src_person_415ca330a0ee5121b1b7",
+        "url": "https://engineering.nyu.edu/faculty/nirod-das",
+        "observed_at": "2026-11-24T08:38:29.109815+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Nirod Das",
+        "response_sha256": "920d8c84da284f9d69155b31d3700193579ddbf09ae41f7a7b00c55fb6ed4b2d"
+      },
+      {
+        "id": "src_person_ac2ddfbd83155c289788",
+        "url": "https://engineering.nyu.edu/faculty/elza-erkip",
+        "observed_at": "2026-11-24T08:38:29.598090+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Elza Erkip",
+        "response_sha256": "885880f280dc6d668024e1594812b3398867d9d753fd19d75e9e85c512d55a47"
+      },
+      {
+        "id": "src_person_286d410097d850b88c8a",
+        "url": "https://engineering.nyu.edu/faculty/david-fouhey",
+        "observed_at": "2026-11-24T08:38:29.476083+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: David Fouhey",
+        "response_sha256": "1f160131411968d40e56defc8c82aa104bc41833155f7cc86fc0bbc1aaa3d546"
+      },
+      {
+        "id": "src_person_cdd72069c77e52538926",
+        "url": "https://engineering.nyu.edu/faculty/siddharth-garg",
+        "observed_at": "2026-11-24T08:38:29.943996+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Siddharth Garg",
+        "response_sha256": "395e20d2cc21898e09e3c34845169f41b92dcb7ee5b8b66acd65abe1b8c824f9"
+      },
+      {
+        "id": "src_person_4aba84fe34895a0dab6d",
+        "url": "https://engineering.nyu.edu/faculty/chinmay-hegde",
+        "observed_at": "2026-11-24T08:38:30.126921+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Chinmay Hegde",
+        "response_sha256": "5b8c13fbc0fc8cf34d92ad101870290201ab59749648c1efb883e0850eab437d"
+      },
+      {
+        "id": "src_person_40ce10611e2759fb9ceb",
+        "url": "https://engineering.nyu.edu/faculty/danny-yuxing-huang",
+        "observed_at": "2026-11-24T08:38:30.319348+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Danny Yuxing Huang",
+        "response_sha256": "4cf357b4032c41eb6c27506f85d1f6519de5b6703aa9a4b722166cbba084ffa5"
+      },
+      {
+        "id": "src_person_3efdf977d998529596b6",
+        "url": "https://engineering.nyu.edu/faculty/zhong-ping-jiang",
+        "observed_at": "2026-11-24T08:38:30.375860+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Zhong-Ping Jiang",
+        "response_sha256": "26282377cca735de560c30a41fc48b1396c4f017b33938d0c7ff6943848165d3"
+      },
+      {
+        "id": "src_person_8756a7a788855bffa5b4",
+        "url": "https://engineering.nyu.edu/faculty/farshad-khorrami",
+        "observed_at": "2026-11-24T08:38:30.334454+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Farshad Khorrami",
+        "response_sha256": "5607402cda3461b9622dc7e744f0338076451929698d70a7611dbc4628e3d643"
+      },
+      {
+        "id": "src_person_b8c2556c7e175d05ae22",
+        "url": "https://engineering.nyu.edu/faculty/michael-knox",
+        "observed_at": "2026-11-24T08:38:30.057678+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Michael Knox",
+        "response_sha256": "d9e088c052d6025459e49878ed63a6bd23bb451adc491b7c8856958f3b035c80"
+      },
+      {
+        "id": "src_person_0dca364bee1e58a094a4",
+        "url": "https://engineering.nyu.edu/faculty/jelena-kovacevic",
+        "observed_at": "2026-11-24T08:38:32.390667+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Jelena Kovačević",
+        "response_sha256": "01482a3e35254ea71ca03be66d95ce07f6b39f14f49bba99f0b54d86e7011e0c"
+      },
+      {
+        "id": "src_person_8f07bdbd44685ebbbc00",
+        "url": "https://engineering.nyu.edu/faculty/francisco-de-leon",
+        "observed_at": "2026-11-24T08:38:30.432495+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Francisco de Leon",
+        "response_sha256": "4bb70b41ca16f251bf0d953e9f64931c8af0d26f3627faf08563802d9541bdfe"
+      },
+      {
+        "id": "src_person_6659e1978d61556eb6f0",
+        "url": "https://engineering.nyu.edu/faculty/yuzhang-lin",
+        "observed_at": "2026-11-24T08:38:30.367595+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Yuzhang Lin",
+        "response_sha256": "daacd7fcdc985e4dc010b529b832c16a56c39c110f4306cf38c95c1a35528401"
+      },
+      {
+        "id": "src_person_45032be6f4775a57bec9",
+        "url": "https://engineering.nyu.edu/faculty/yong-liu",
+        "observed_at": "2026-11-24T08:38:30.459401+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Yong Liu",
+        "response_sha256": "149fdd3221f8ae9dcfb8aea2420fe0458f1a6344b03c993bd3dd2efa147c175d"
+      },
+      {
+        "id": "src_person_1fe57c16d8dd53208878",
+        "url": "https://engineering.nyu.edu/faculty/onur-mutlu",
+        "observed_at": "2026-11-24T08:38:30.420914+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Onur Mutlu",
+        "response_sha256": "d478fcf77fdde9523df9457b462df88f966f930155c50aaabadb76c4b7dcb38b"
+      },
+      {
+        "id": "src_person_2d29b78464e15ceeb587",
+        "url": "https://engineering.nyu.edu/faculty/shivendra-panwar",
+        "observed_at": "2026-11-24T08:38:30.552318+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Shivendra Panwar",
+        "response_sha256": "823c5cc7585e4304dee369c0b0a7c6045695a16f87c21892e84baf4087bf9419"
+      },
+      {
+        "id": "src_person_bd751741a8ed5d2aaf98",
+        "url": "https://engineering.nyu.edu/faculty/unnikrishna-pillai",
+        "observed_at": "2026-11-24T08:38:32.190974+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Unnikrishna Pillai",
+        "response_sha256": "9837df063f21e6b629c79c3bea4ab40b568439180eeda4729d252ed76ad4685b"
+      },
+      {
+        "id": "src_person_5b53d71c96e851409618",
+        "url": "https://engineering.nyu.edu/faculty/hamed-rahmani",
+        "observed_at": "2026-11-24T08:38:32.884344+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Hamed Rahmani",
+        "response_sha256": "74ce51e636ecedf8102461f30ca5ffb4717f2e9d2359c87ec3d65fc6a98e72de"
+      },
+      {
+        "id": "src_person_53c669a1adb75a54ae9a",
+        "url": "https://engineering.nyu.edu/faculty/sundeep-rangan",
+        "observed_at": "2026-11-24T08:38:30.881758+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Sundeep Rangan",
+        "response_sha256": "8abd8bbe26f6302be2a7a4245e5fe4e3a396fac4d7ca2c513ad5af3daaeab401"
+      },
+      {
+        "id": "src_person_6dabee09144a54ebbced",
+        "url": "https://engineering.nyu.edu/faculty/theodore-ted-s-rappaport",
+        "observed_at": "2026-11-24T08:38:30.871484+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Theodore (Ted) S. Rappaport",
+        "response_sha256": "7853f19f4175bd87a005a8dc6c9aba7b2e028028a07afc2a9cc14f9bced12843"
+      },
+      {
+        "id": "src_person_4a5e035ed2ac5f9ebdb6",
+        "url": "https://engineering.nyu.edu/faculty/brandon-reagen",
+        "observed_at": "2026-11-24T08:38:30.913772+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Brandon Reagen",
+        "response_sha256": "6f230e8504a6e6bd013c012a5f972e97b2c48bae8b6a194d472afc1905fe7436"
+      },
+      {
+        "id": "src_person_dfa465588d325da7b25e",
+        "url": "https://engineering.nyu.edu/faculty/ludovic-righetti",
+        "observed_at": "2026-11-24T08:38:30.937449+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Ludovic Righetti",
+        "response_sha256": "77aff81e8d1d2c24fd9bb79c08a63fd7b2a7b74a1c534e7a3214e24875263c72"
+      },
+      {
+        "id": "src_person_2544a75ba5ea57bba382",
+        "url": "https://engineering.nyu.edu/faculty/austin-rovinski",
+        "observed_at": "2026-11-24T08:38:30.923743+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Austin Rovinski",
+        "response_sha256": "dd49bcdafa3d528058e1d0bb9d569760603b8766b0d2390e96ef991292a39f76"
+      },
+      {
+        "id": "src_person_fb3a66992fea50d6b345",
+        "url": "https://engineering.nyu.edu/faculty/ivan-selesnick",
+        "observed_at": "2026-11-24T08:38:32.742493+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Ivan Selesnick",
+        "response_sha256": "c5bda315b11e714d1c68e3d04e0e78b58ddd3285e87f5bd8cfa831a3a0feb775"
+      },
+      {
+        "id": "src_person_45621f984bdc5a2b8124",
+        "url": "https://engineering.nyu.edu/faculty/javad-shabani",
+        "observed_at": "2026-11-24T08:38:30.902287+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Javad Shabani",
+        "response_sha256": "30e83a4f1c879e591b6584e84a02321198e39cbac06f0561e26112fc7ef4926a"
+      },
+      {
+        "id": "src_person_0d3713e432b65ddd99bc",
+        "url": "https://engineering.nyu.edu/faculty/davood-shahrjerdi",
+        "observed_at": "2026-11-24T08:38:31.007823+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Davood Shahrjerdi",
+        "response_sha256": "c37d43db2f4b13827b1d79c7da371b0077406a658be9f5c75c5b6e26972c63bf"
+      },
+      {
+        "id": "src_person_1dddbae7c2ad558eb186",
+        "url": "https://engineering.nyu.edu/faculty/peter-voltz",
+        "observed_at": "2026-11-24T08:38:31.025802+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Peter Voltz",
+        "response_sha256": "0fb5617afe76a0d1f4beee4c8712c493def6a2db78153c83ff75f514b2396ddb"
+      },
+      {
+        "id": "src_person_1d58c0b070025b2d8853",
+        "url": "https://engineering.nyu.edu/faculty/yao-wang",
+        "observed_at": "2026-11-24T08:38:32.076812+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Yao Wang",
+        "response_sha256": "ba0b3af9eeba4abb7bac75dab61dd1705ba1541d28171d0dc9db243b6f8f6509"
+      },
+      {
+        "id": "src_person_ac2de9448a3a5be6ac28",
+        "url": "https://engineering.nyu.edu/faculty/sai-qian-zhang",
+        "observed_at": "2026-11-24T08:38:32.355991+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Sai Qian Zhang",
+        "response_sha256": "4cdcafc46b40ed8f883618cc19233105286333e7d950a43e363e78475da5a6ae"
+      },
+      {
+        "id": "src_person_44e39a17072c57bcbcfb",
+        "url": "https://engineering.nyu.edu/faculty/quanyan-zhu",
+        "observed_at": "2026-11-24T08:38:32.068829+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Quanyan Zhu",
+        "response_sha256": "456ae878a64d6e99fcd18a5b6edf626a85f3549719fe628eacd1cd6035347323"
+      },
+      {
+        "id": "src_person_fdfba71a4a975ca7963c",
+        "url": "https://engineering.nyu.edu/faculty/marwa-chafii",
+        "observed_at": "2026-11-24T08:38:31.608812+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Marwa Chafii",
+        "response_sha256": "89ab1a6900009740a1c20169763b313882858a0a286b7879b60de7b628971c58"
+      },
+      {
+        "id": "src_person_edc9d02ee9375b87a629",
+        "url": "https://engineering.nyu.edu/faculty/mohamad-eid",
+        "observed_at": "2026-11-24T08:38:31.496336+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Mohamad Eid",
+        "response_sha256": "2350d75f55f214dd4002950529c981bce64e965736333f7df4399f6e3a4351a7"
+      },
+      {
+        "id": "src_person_c0d3b325a38a5b7e8f19",
+        "url": "https://engineering.nyu.edu/faculty/yi-fang",
+        "observed_at": "2026-11-24T08:38:31.832894+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Yi Fang",
+        "response_sha256": "2070c4d9e8cebe2b731a8ebda4ef1eef99b121fd6d5e662e8c68bfa1bc813e4d"
+      },
+      {
+        "id": "src_person_baf6afb3c4365ef28b13",
+        "url": "https://engineering.nyu.edu/faculty/andras-gyorgy",
+        "observed_at": "2026-11-24T08:38:32.453106+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Andras Gyorgy",
+        "response_sha256": "c7258019959572a3eba00f3ff9cf9d7ff9685248cc14b6d2b1caf4873f20d3df"
+      },
+      {
+        "id": "src_person_dbd5f6b7219c52ab88d7",
+        "url": "https://engineering.nyu.edu/faculty/sohmyung-ha",
+        "observed_at": "2026-11-24T08:38:31.768261+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Sohmyung Ha",
+        "response_sha256": "1d0ca35822328b3cd781405a42054ec9db2da2f669cf11314709e459307ef980"
+      },
+      {
+        "id": "src_person_50f68fc8b6e85b18ab7b",
+        "url": "https://engineering.nyu.edu/faculty/michail-maniatakos",
+        "observed_at": "2026-11-24T08:38:32.290266+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Michail Maniatakos",
+        "response_sha256": "21fd31d480e0feff6405eb8c2bbaceaaa2cc17cb55b9b3a6da1ef7564a65ca27"
+      },
+      {
+        "id": "src_person_487e170fec33544a951e",
+        "url": "https://engineering.nyu.edu/faculty/mahmoud-rasras",
+        "observed_at": "2026-11-24T08:38:32.164600+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Mahmoud Rasras",
+        "response_sha256": "e178aad4bbc72c7d75e64abc18bd450877eda6d4df7446884b0fa042d3525207"
+      },
+      {
+        "id": "src_person_7f8525119e085ed59351",
+        "url": "https://engineering.nyu.edu/faculty/muhammad-shafique",
+        "observed_at": "2026-11-24T08:38:33.476741+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Muhammad Shafique",
+        "response_sha256": "5aafe86b82a39f05517117a68d6ecf551d573642a37d83824c64bd9c232f1abc"
+      },
+      {
+        "id": "src_person_87e05d290e0c566eb84f",
+        "url": "https://engineering.nyu.edu/faculty/ozgur-sinanoglu",
+        "observed_at": "2026-11-24T08:38:34.064111+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Ozgur Sinanoglu",
+        "response_sha256": "2d4f530b183d2efa4486f2599510cf6f9da48e3625cb557576a362f3e517c115"
+      },
+      {
+        "id": "src_person_1aab72cd64c1540ea4a0",
+        "url": "https://engineering.nyu.edu/faculty/anthony-tzes",
+        "observed_at": "2026-11-24T08:38:32.517561+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Anthony Tzes",
+        "response_sha256": "20f7d0f1c0693ece8757debf6fc9b821b913a7dfe8c6b9c07a7ee16193965b07"
+      },
+      {
+        "id": "src_person_f20f63bdada6573385ce",
+        "url": "https://engineering.nyu.edu/faculty/azhar-zam",
+        "observed_at": "2026-11-24T08:38:33.431655+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Azhar Zam",
+        "response_sha256": "b53d2b2da30bc23943676805fb9c43265adae35d5f3396e7dc4dbceb22abb264"
+      },
+      {
+        "id": "src_person_4465b68229875dad93e6",
+        "url": "https://engineering.nyu.edu/faculty/david-chudnovsky",
+        "observed_at": "2026-11-24T08:38:32.634465+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: David Chudnovsky",
+        "response_sha256": "dc6407a6b05af56a00ba4595030d9afdd8c963ebb0f0d10518f7382f8fb7fff5"
+      },
+      {
+        "id": "src_person_b1780be144f857879f34",
+        "url": "https://engineering.nyu.edu/faculty/gregory-chudnovsky",
+        "observed_at": "2026-11-24T08:38:32.628919+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Gregory Chudnovsky",
+        "response_sha256": "3105d11525a023d3a17f02456193235c38e35ec2569a20d79e8261fb642b6a69"
+      },
+      {
+        "id": "src_person_be052a2e27d853c99902",
+        "url": "https://engineering.nyu.edu/faculty/fraida-fund",
+        "observed_at": "2026-11-24T08:38:34.403528+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Fraida Fund",
+        "response_sha256": "e0bef20d57de0ad04dfebe985b3def69e22be2ef9d1004c94285f3cec07188c5"
+      },
+      {
+        "id": "src_person_20e205919a275607814d",
+        "url": "https://engineering.nyu.edu/faculty/thanasis-korakis",
+        "observed_at": "2026-11-24T08:38:34.399344+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Thanasis Korakis",
+        "response_sha256": "bf72ee8d5fb883915348b91f2a1eaf7b436fdccd04a3426c5ecf1de6a9b3c877"
+      },
+      {
+        "id": "src_person_86b0f962507051a6bbcd",
+        "url": "https://engineering.nyu.edu/faculty/prashanth-krishnamurthy",
+        "observed_at": "2026-11-24T08:38:32.958682+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Prashanth Krishnamurthy",
+        "response_sha256": "aece6534e6cdbaa7e71b4b914cbe9fa7268ba95feab36805313750c6125d6e27"
+      },
+      {
+        "id": "src_person_a780331ddcb75523824b",
+        "url": "https://engineering.nyu.edu/faculty/pei-liu",
+        "observed_at": "2026-11-24T08:38:34.392992+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Pei Liu",
+        "response_sha256": "77f29e004b72477f0e49c12a38218f39b498a9fb4a70a97c042fefa9de194feb"
+      },
+      {
+        "id": "src_person_a28db9868928540c9b48",
+        "url": "https://engineering.nyu.edu/faculty/jaime-llorca",
+        "observed_at": "2026-11-24T08:38:33.055895+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Jaime Llorca",
+        "response_sha256": "f611a8551c0d03cc646dbc2a69d46ac630dc424fd1d828089c30a32fa9ade50f"
+      },
+      {
+        "id": "src_person_ad9eafcb3c1d56efa160",
+        "url": "https://engineering.nyu.edu/faculty/yang-xu",
+        "observed_at": "2026-11-24T08:38:34.419662+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Yang Xu",
+        "response_sha256": "1fa0812c4d05566566acb63a349645bb8713b20b2629a6a8ae46c0f7b9343fc5"
+      },
+      {
+        "id": "src_person_4c62ef2460b758a79546",
+        "url": "https://engineering.nyu.edu/faculty/thomas-marzetta",
+        "observed_at": "2026-11-24T08:38:33.174127+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Thomas Marzetta",
+        "response_sha256": "cdf648f64e299bfcd2a383e7a62b0c6962cd08dfd1ff38f0a26a63d282eed215"
+      },
+      {
+        "id": "src_person_1546bbf7ef7356548799",
+        "url": "https://engineering.nyu.edu/faculty/stephen-arnold",
+        "observed_at": "2026-11-24T08:38:35.206792+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Stephen Arnold",
+        "response_sha256": "88cfcab22ae5823a9e1f238884a889bf562ac6d8cf63b64fdeec5d6b553c8037"
+      },
+      {
+        "id": "src_person_dac4c304fc6a55dab538",
+        "url": "https://engineering.nyu.edu/faculty/juan-pablo-bello",
+        "observed_at": "2026-11-24T08:38:33.400876+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Juan Pablo Bello",
+        "response_sha256": "1c920babb4bac5467966c2308f2dee7f07df0c32fcf63b80cefdf175da2bd877"
+      },
+      {
+        "id": "src_person_b0c2722484335c64b4c3",
+        "url": "https://engineering.nyu.edu/faculty/romain-corcolle",
+        "observed_at": "2026-11-24T08:38:34.501214+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Romain Corcolle",
+        "response_sha256": "9450b7d7f2c84ddc4f7b843d726799f9701265152d2f05a32b4c878701bf6153"
+      },
+      {
+        "id": "src_person_3de42b5ed0b75f82811e",
+        "url": "https://engineering.nyu.edu/faculty/leslie-greengard",
+        "observed_at": "2026-11-24T08:38:34.524694+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Leslie Greengard",
+        "response_sha256": "f28e88959b4d43c34966850612791ba3d3c25ae39189062964353d282b01e3b4"
+      },
+      {
+        "id": "src_person_b622beae688c57699023",
+        "url": "https://engineering.nyu.edu/faculty/andrew-kent",
+        "observed_at": "2026-11-24T08:38:34.605255+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Andrew Kent",
+        "response_sha256": "abfa1be239aff7aa8fceef1f937726dd64f74ec2982957f1c4a05797db5e13ea"
+      },
+      {
+        "id": "src_person_03f7bba32e2b591ca1af",
+        "url": "https://engineering.nyu.edu/faculty/riccardo-lattanzi",
+        "observed_at": "2026-11-24T08:38:33.876680+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Riccardo Lattanzi",
+        "response_sha256": "670bebe879b4566c086ce00756845312d25870268ca41f98655c6c3a4e8bb646"
+      },
+      {
+        "id": "src_person_ae4ab3c55beb5bc19390",
+        "url": "https://engineering.nyu.edu/faculty/yann-lecun",
+        "observed_at": "2026-11-24T08:38:33.866643+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Yann LeCun",
+        "response_sha256": "032fd55a0a31703f409c1d74971c820449a0d34f234e092217740676eabde900"
+      },
+      {
+        "id": "src_person_634437477bab5bdda5be",
+        "url": "https://engineering.nyu.edu/faculty/daniel-sodickson",
+        "observed_at": "2026-11-24T08:38:35.655500+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Daniel Sodickson",
+        "response_sha256": "a2596ccdf393100a1dd0b67c4fae3e7249f7b63b50e01ee4d316eb0e8c115542"
+      },
+      {
+        "id": "src_person_c923ce5e3f0d54f2b849",
+        "url": "https://engineering.nyu.edu/faculty/nizar-touzi",
+        "observed_at": "2026-11-24T08:38:34.428170+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Nizar Touzi",
+        "response_sha256": "3b42fc2fb34201a7a7a6aa6ccf3f6c61ae77097a3c187226ad2edf86646086d3"
+      },
+      {
+        "id": "src_person_f36ee720c0865930a380",
+        "url": "https://engineering.nyu.edu/faculty/john-neil-carter",
+        "observed_at": "2026-11-24T08:38:35.249854+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: John Neil Carter",
+        "response_sha256": "1501c8e41f0704283faffdee3d5cc37015ab8c4fc2cfe7af937c2da652afe03c"
+      },
+      {
+        "id": "src_person_a58cebcf0b975a10a2b1",
+        "url": "https://engineering.nyu.edu/faculty/xiao-kang-chen",
+        "observed_at": "2026-11-24T08:38:35.603114+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Xiao-Kang Chen",
+        "response_sha256": "8e355c41c5165bc0ff4ace172c2b8d8ad4b6b0752d35b280d8752344fb866d0b"
+      },
+      {
+        "id": "src_person_05dbd5bee0075f46956f",
+        "url": "https://engineering.nyu.edu/faculty/parijat-dube",
+        "observed_at": "2026-11-24T08:38:34.854240+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Parijat Dube",
+        "response_sha256": "4efdf2b8c507368b0bc4d918315b18138378a537cf166f316b5a59cd185640db"
+      },
+      {
+        "id": "src_person_0fc41dbec6d3579c920d",
+        "url": "https://engineering.nyu.edu/faculty/nina-krikorian-ezik",
+        "observed_at": "2026-11-24T08:38:34.859811+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Nina Krikorian-Ezik",
+        "response_sha256": "d40207ff72869f0d39fb85fd4b49f01d9ca78bbd93d2ba6dbf7f7e3b2571892e"
+      },
+      {
+        "id": "src_person_c27c698c262c5b55a8f8",
+        "url": "https://engineering.nyu.edu/faculty/jonathan-mamou",
+        "observed_at": "2026-11-24T08:38:35.784811+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Jonathan Mamou",
+        "response_sha256": "fe4951e7c19faef6347beb10cc0fb09b3506a27bd1427969fc947da8d45aa94b"
+      },
+      {
+        "id": "src_person_a1c93250f53254cab69b",
+        "url": "https://engineering.nyu.edu/faculty/omar-mansour",
+        "observed_at": "2026-11-24T08:38:35.844028+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Omar Mansour",
+        "response_sha256": "abc3d7eabb1e8c9872a29f879163564ac27403afda4e8bcd5f095f44709d7224"
+      },
+      {
+        "id": "src_person_68cf4a96c8105cadba3d",
+        "url": "https://engineering.nyu.edu/faculty/amit-patel",
+        "observed_at": "2026-11-24T08:38:35.987076+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Amit Patel",
+        "response_sha256": "65b6e6bafca9237eeddf101f058dd026e2f5beb8ddc7caeca20ffa2d3a6b2829"
+      },
+      {
+        "id": "src_person_b3f4cb4805ae5962b4b5",
+        "url": "https://engineering.nyu.edu/faculty/zhengxue-zhao",
+        "observed_at": "2026-11-24T08:38:35.750839+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Zhengxue Zhao",
+        "response_sha256": "23b2f469738cc1f8fc1a48394c520fe00ba85f24c338c88af1f412750696ad62"
+      },
+      {
+        "id": "src_person_fc238d9b0a1a507dbce2",
+        "url": "https://engineering.nyu.edu/henry-l-bertoni",
+        "observed_at": "2026-11-24T08:38:34.952252+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Henry L Bertoni",
+        "response_sha256": "120aa2fa62cbc514b2a42c945a58543cb36ac099d515818a2f6a5d3c16a198f0"
+      },
+      {
+        "id": "src_person_14a5594103f95b4498e5",
+        "url": "https://engineering.nyu.edu/joseph-bongiorno",
+        "observed_at": "2026-11-24T08:38:35.894676+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Joseph Bongiorno",
+        "response_sha256": "20d433013d3b44b6f6229bf933414656bb29d9fe841b26b31aba1789dd99fb1a"
+      },
+      {
+        "id": "src_person_eadcb9d0f7e3553f86ca",
+        "url": "https://engineering.nyu.edu/robert-r-boorstyn",
+        "observed_at": "2026-11-24T08:38:35.321969+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Robert R. Boorstyn",
+        "response_sha256": "de0afa26bee4ea1a8c427bf18de677336c5dd8975e15f7de3ac2cdb4c0bfa946"
+      },
+      {
+        "id": "src_person_7f1602d74790535a9e1b",
+        "url": "https://engineering.nyu.edu/frank-cassara",
+        "observed_at": "2026-11-24T08:38:36.079805+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Frank Cassara",
+        "response_sha256": "47b9343b111dcd88d849c182b1475d3a69986999e033e2cb42a5ae2733265d96"
+      },
+      {
+        "id": "src_person_fdd3a6a770345b0a802e",
+        "url": "https://engineering.nyu.edu/faculty/dariusz-czarkowski",
+        "observed_at": "2026-11-24T08:38:36.729661+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Dariusz Czarkowski",
+        "response_sha256": "f4e8e88461eea022f8c0826940291d49b103f39968ec21a855e6c08bcdb2fd55"
+      },
+      {
+        "id": "src_person_0c1981ba060f5b9eb4f7",
+        "url": "https://engineering.nyu.edu/faculty/spencer-kuo",
+        "observed_at": "2026-11-24T08:38:36.613032+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Spencer Kuo",
+        "response_sha256": "47f88279129e894714ff47f703b81f516591790258df6026a3c07ce647c8b458"
+      },
+      {
+        "id": "src_person_9adc0254ec3d5c7faa66",
+        "url": "https://engineering.nyu.edu/faculty/i-tai-lu",
+        "observed_at": "2026-11-24T08:38:36.776594+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: I-Tai Lu",
+        "response_sha256": "f9f2b614683b53ae70370aea6c1b14d2978784870cee505be17581cf87d647aa"
+      },
+      {
+        "id": "src_person_b1a0e8f4413d5613924b",
+        "url": "https://engineering.nyu.edu/philip-sarachik",
+        "observed_at": "2026-11-24T08:38:36.620847+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Philip Sarachik",
+        "response_sha256": "d33a089b305e719a3020373ded1375b9319eb1d7061be8b3b5545028862b11c1"
+      },
+      {
+        "id": "src_person_d2c4b370412957ce950c",
+        "url": "https://engineering.nyu.edu/theodor-tamir",
+        "observed_at": "2026-11-24T08:38:37.066796+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Theodor Tamir",
+        "response_sha256": "f09c9252fc18c36d91132d37b1257632c19adf27d44765b2e78faadd1de107ec"
+      },
+      {
+        "id": "src_person_aeda635f1db95b9da983",
+        "url": "https://engineering.nyu.edu/zivan-zabar",
+        "observed_at": "2026-11-24T08:38:36.921014+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Zivan Zabar",
+        "response_sha256": "f59aa659f11a80b2da4996f357feefb35ec4117d0be3a0789bdbfcabac7e6f39"
+      },
+      {
+        "id": "src_person_f3176c794f9c5ac898f2",
+        "url": "https://engineering.nyu.edu/michael-ettenberg",
+        "observed_at": "2026-11-24T08:38:36.186980+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Michael Ettenberg",
+        "response_sha256": "80af66125a8d7b23de35445d5fd98728981ab97b29785d5b5550e860fb15fb81"
+      },
+      {
+        "id": "src_person_590ec13f312b5062ae05",
+        "url": "https://engineering.nyu.edu/david-goodman",
+        "observed_at": "2026-11-24T08:38:36.254507+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: David Goodman",
+        "response_sha256": "f53ad84fa018f25de2f5a23112de3723c00f6406686849557af70134b1f71157"
+      },
+      {
+        "id": "src_person_6e2c052976e0533a8c50",
+        "url": "https://engineering.nyu.edu/dante-youla",
+        "observed_at": "2026-11-24T08:38:37.184430+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Dante Youla",
+        "response_sha256": "6c0dcb87e694d66e1b5dc5db006fb1a3a3df59189cf1e07bda0ebe7801125014"
+      },
+      {
+        "id": "src_person_190e62934b46551291a1",
+        "url": "https://engineering.nyu.edu/staff/beverlyn-blanco",
+        "observed_at": "2026-11-24T08:38:37.243046+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Beverlyn Blanco",
+        "response_sha256": "7ff20d4c092132cc8257b7aaa363d73f4101fbc2dbea8c59168d4d3180e778be"
+      },
+      {
+        "id": "src_person_57e1ab96ccaa5d398c62",
+        "url": "https://engineering.nyu.edu/staff/michele-james",
+        "observed_at": "2026-11-24T08:38:37.352477+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Michele James",
+        "response_sha256": "161601e863dfb54c9623faad82a2a08377cca06bdd4bee2ea0f4fbded71745ce"
+      },
+      {
+        "id": "src_person_33d54d5a1e2d5bbc843e",
+        "url": "https://engineering.nyu.edu/staff/kiren-nayak",
+        "observed_at": "2026-11-24T08:38:37.482154+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Kiren Nayak",
+        "response_sha256": "360a7b7ba26a7990e5d08944cf97f78594c5fef19221c9c884aeb159d5d520af"
+      },
+      {
+        "id": "src_person_9532d9abf4985d3f9216",
+        "url": "https://engineering.nyu.edu/staff/laura-schlein",
+        "observed_at": "2026-11-24T08:38:37.469903+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Laura Schlein",
+        "response_sha256": "e7c7ed201b75d7ff22d69b4994db931fe0b3e151af9dfbc0d93eee7f3426b5b3"
+      },
+      {
+        "id": "src_person_31629450808d571b9abc",
+        "url": "https://engineering.nyu.edu/staff/raquel-thompson",
+        "observed_at": "2026-11-24T08:38:37.678025+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Raquel Thompson",
+        "response_sha256": "e633437dab6a570eab11bd97cd2f6ee5d78731e856be0aa94eceb4539ad529d2"
+      },
+      {
+        "id": "src_person_fb4c21da50ba5c6a9a24",
+        "url": "https://engineering.nyu.edu/staff/richard-toth",
+        "observed_at": "2026-11-24T08:38:37.048717+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "NYU Tandon Profile: Richard Toth",
+        "response_sha256": "8a8d4197c49b6dfd0ac67ca89d986b5a39a62cd84b30799210705a89cc8353be"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_fc8d78a9a8994673bb6d672fc56a4bd1",
+    "candidate_sha256": "38e8945b36e25c1f61c359ea9217881c06eb34ed5193fb073f33e81eabdedc75",
+    "transport": "t3",
+    "run_id": "audit-nyu-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:39:13.745734+00:00",
+    "exit_code": 0
+  }
+}

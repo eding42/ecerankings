@@ -1,0 +1,2664 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/c92752450043a837b6bf339e3d4c3fd0fdc19e2c9ef414122750b7a36e31681a.json",
+    "sha256": "c92752450043a837b6bf339e3d4c3fd0fdc19e2c9ef414122750b7a36e31681a"
+  },
+  "brief": {
+    "file": "audits/briefs/22dd136063694ae95b0f3c12ba81c0054ac51a1d9b9c55d4da265a1d4f710773.json",
+    "sha256": "22dd136063694ae95b0f3c12ba81c0054ac51a1d9b9c55d4da265a1d4f710773"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_2fa1c48ddfc74b9ca2f4b87067be7da9",
+    "candidate_sha256": "1cecaf34a7bb063399d842d7171b32da464dcf733e5f0f6d25a64c506e59824b",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:45:26.287535+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://eceweb.rice.edu/people/faculty",
+        "https://profiles.rice.edu/faculty/aditya-mohite",
+        "https://profiles.rice.edu/faculty/akane-sano",
+        "https://profiles.rice.edu/faculty/alessandro-alabastri",
+        "https://profiles.rice.edu/faculty/anastasios-kyrillidis",
+        "https://profiles.rice.edu/faculty/andrey-baydin",
+        "https://profiles.rice.edu/faculty/ankit-patel",
+        "https://profiles.rice.edu/faculty/anna-karin-gustavsson",
+        "https://profiles.rice.edu/faculty/anshumali-shrivastava",
+        "https://profiles.rice.edu/faculty/arlei-lopes-da-silva",
+        "https://profiles.rice.edu/faculty/ashok-veeraraghavan",
+        "https://profiles.rice.edu/faculty/ashutosh-sabharwal",
+        "https://profiles.rice.edu/faculty/athanasios-antoulas",
+        "https://profiles.rice.edu/faculty/behnaam-aazhang",
+        "https://profiles.rice.edu/faculty/benjamin-hayden",
+        "https://profiles.rice.edu/faculty/caleb-kemere",
+        "https://profiles.rice.edu/faculty/cesar-uribe",
+        "https://profiles.rice.edu/faculty/chong-xie",
+        "https://profiles.rice.edu/faculty/chris-braun",
+        "https://profiles.rice.edu/faculty/christina-tringides",
+        "https://profiles.rice.edu/faculty/christy-landes",
+        "https://profiles.rice.edu/faculty/clayton-shepard",
+        "https://profiles.rice.edu/faculty/dan-s-wallach",
+        "https://profiles.rice.edu/faculty/david-b-johnson",
+        "https://profiles.rice.edu/faculty/devika-subramanian",
+        "https://profiles.rice.edu/faculty/douglas-natelson",
+        "https://profiles.rice.edu/faculty/edward-w-knightly",
+        "https://profiles.rice.edu/faculty/emilia-morosan",
+        "https://profiles.rice.edu/faculty/erzsebet-merenyi",
+        "https://profiles.rice.edu/faculty/gary-woods",
+        "https://profiles.rice.edu/faculty/gene-frantz",
+        "https://profiles.rice.edu/faculty/guha-balakrishnan",
+        "https://profiles.rice.edu/faculty/gururaj-naik",
+        "https://profiles.rice.edu/faculty/gyu-boong-jo",
+        "https://profiles.rice.edu/faculty/hanyu-zhu",
+        "https://profiles.rice.edu/faculty/jacob-t-robinson",
+        "https://profiles.rice.edu/faculty/john-mellor-crummey",
+        "https://profiles.rice.edu/faculty/john-seymour",
+        "https://profiles.rice.edu/faculty/jose-roberto-moreto",
+        "https://profiles.rice.edu/faculty/joseph-r-cavallaro",
+        "https://profiles.rice.edu/faculty/joseph-young",
+        "https://profiles.rice.edu/faculty/juliane-sempionatto",
+        "https://profiles.rice.edu/faculty/junichiro-kono",
+        "https://profiles.rice.edu/faculty/kaiyuan-yang",
+        "https://profiles.rice.edu/faculty/kevin-f-kelly",
+        "https://profiles.rice.edu/faculty/lan-luan",
+        "https://profiles.rice.edu/faculty/lei-li",
+        "https://profiles.rice.edu/faculty/lisa-obryan",
+        "https://profiles.rice.edu/faculty/lydia-e-kavraki",
+        "https://profiles.rice.edu/faculty/maarten-de-hoop",
+        "https://profiles.rice.edu/faculty/marcia-omalley",
+        "https://profiles.rice.edu/faculty/michael-orchard",
+        "https://profiles.rice.edu/faculty/momona-yamagami",
+        "https://profiles.rice.edu/faculty/moshe-y-vardi",
+        "https://profiles.rice.edu/faculty/nakul-garg",
+        "https://profiles.rice.edu/faculty/naomi-j-halas",
+        "https://profiles.rice.edu/faculty/nishal-shah",
+        "https://profiles.rice.edu/faculty/peter-j-nordlander",
+        "https://profiles.rice.edu/faculty/peter-j-varman",
+        "https://profiles.rice.edu/faculty/rahman-doost-mohammady",
+        "https://profiles.rice.edu/faculty/ray-simar",
+        "https://profiles.rice.edu/faculty/rebecca-richards-kortum",
+        "https://profiles.rice.edu/faculty/richard-g-baraniuk",
+        "https://profiles.rice.edu/faculty/robert-likamwa",
+        "https://profiles.rice.edu/faculty/santiago-segarra",
+        "https://profiles.rice.edu/faculty/shengxi-huang",
+        "https://profiles.rice.edu/faculty/songtao-chen",
+        "https://profiles.rice.edu/faculty/stephan-link",
+        "https://profiles.rice.edu/faculty/t-s-eugene-ng",
+        "https://profiles.rice.edu/faculty/taiyun-chi",
+        "https://profiles.rice.edu/faculty/thanh-tran",
+        "https://profiles.rice.edu/faculty/tomasz-tkaczyk",
+        "https://profiles.rice.edu/faculty/tony-geng",
+        "https://profiles.rice.edu/faculty/valentin-dragoi",
+        "https://profiles.rice.edu/faculty/vivek-boominathan",
+        "https://profiles.rice.edu/faculty/wei-qiu",
+        "https://profiles.rice.edu/faculty/yimo-han",
+        "https://profiles.rice.edu/faculty/yu-kee-ooi",
+        "https://profiles.rice.edu/faculty/yuji-zhao",
+        "https://profiles.rice.edu/faculty/zhongyuan-zhao",
+        "https://profiles.rice.edu/staff/shiqian-ma"
+      ],
+      "checked_list_ids": [
+        "professor",
+        "associate-professor",
+        "assistant-professor",
+        "research-faculty",
+        "teaching-faculty",
+        "joint",
+        "adjunct"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_1bcab922ec445a8185ac",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as J.S. Abercrombie Professor, Electrical and Computer Engineering<br>Director, Rice Neuroengineering Initiative (NEI)<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_behnaam-aazhang",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_702d51a8152652aba03e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_athanasios-antoulas",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_efae2045035d5c96a96f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as C. Sidney Burrus Professor of Electrical and Computer Engineering<br>Professor, Statistics<br>Professor, Computer Science<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_richard-g-baraniuk",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_ef90224ff1f55bc9b4a0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical and Computer Engineering<br>Professor, Computer Science<br>Director, Center for Multimedia Communications<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_joseph-r-cavallaro",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_308fa5348adf579a9f78",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as University Professor and Stanley C. Moore Professor of Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_naomi-j-halas",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_5af8dc64d7c455cebba3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Sheafor-Lindsay Professor, Electrical and Computer Engineering<br>Professor, Computer Science<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_edward-w-knightly",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_13b34ebcdae55d919cb5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Director, Smalley-Curl Institute<br>Karl F. Hasselmann Chair in Engineering<br>Professor, Electrical & Computer Engineering, Physics & Astronomy, and Materials Science & NanoEngineering.",
+        "source_ids": [
+          "src_profile_junichiro-kono",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_2926944900a45234ad86",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_michael-orchard",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_35f49d48918d5a12979d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical and Computer Engineering<br>Professor, Bioengineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_jacob-t-robinson",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_1ee72712e40f5c24b4d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Ernest D. Butcher Professor of Engineering, Electrical and Computer Engineering, Computer Science<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_ashutosh-sabharwal",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_b4b96a3dc5c45e91b0b8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical and Computer Engineering<br>Professor, Computer Science.",
+        "source_ids": [
+          "src_profile_peter-j-varman",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_70562d50345957c0b4f4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Department Chair, Electrical and Computer Engineering<br>Professor, Electrical and Computer Engineering<br>Professor, Computer Science<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_ashok-veeraraghavan",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_992571e265305037acb8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical and Computer Engineering and Neuroengineering.",
+        "source_ids": [
+          "src_profile_chong-xie",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_2d27ef5c05a55ac8a575",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (professor) as Professor, Electrical & Computer Engineering.",
+        "source_ids": [
+          "src_profile_yuji-zhao",
+          "src_list_professor"
+        ]
+      },
+      {
+        "person_id": "person_e75130b1c76852fdbd8e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_taiyun-chi",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_bbbd2c90e9b0549f937a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering<br>Associate Professor, Materials Science and NanoEngineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_shengxi-huang",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_c254bb6c6c6d5aaeb72e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_kevin-f-kelly",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_affac46515b252feaf4f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering<br>Associate Professor, Bioengineering.",
+        "source_ids": [
+          "src_profile_caleb-kemere",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_4670960294f65346953f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_robert-likamwa",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_3f49f1b6beae5c21b878",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_lan-luan",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_d48964acec5659269168",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_gururaj-naik",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_9248b7572bd95305a0f0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering<br>Member, Rice Digital Health and Houston Methodist-Rice Digital Health Institute<br>Member, Ken Kennedy Institute<br>Member, Institute of Health Resilience and Innovation.",
+        "source_ids": [
+          "src_profile_akane-sano",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_58b94f75bd4c58358fc6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as W. M. Rice Trustee Associate Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_santiago-segarra",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_39a4cd06db9a5aeab432",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (associate-professor) as Associate Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_kaiyuan-yang",
+          "src_list_associate-professor"
+        ]
+      },
+      {
+        "person_id": "person_591ee094b41e5ba5a9bc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Director, Applied Physics Graduate Program<br>Core Member, Smalley-Curl Institute.",
+        "source_ids": [
+          "src_profile_alessandro-alabastri",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_b8f0a5d2afaa525f99a8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_guha-balakrishnan",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_aba0dfc2d42f546e9c4b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_songtao-chen",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_41f58c44892857b8a257",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_nakul-garg",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_58afb61991b15e5088b8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_tony-geng",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_3ce6ad69d4b65b28aa21",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_lei-li",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_d0e557e076875c779ff3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_wei-qiu",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_6450117500f6539aac1c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute<br>Faculty, Applied Physics Program.",
+        "source_ids": [
+          "src_profile_juliane-sempionatto",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_16486fec725f5b00b156",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor of Electrical and Computer Engineering<br>McNair Scholar in Neuroengineering <br>Member, Ken Kennedy Institute <br>Adjunct Assistant Professor of Neurosurgery at Baylor College of Medicine.",
+        "source_ids": [
+          "src_profile_nishal-shah",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_eefb64a2a1925205b828",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Louis Owen Assistant Professor, Electrical and Computer Engineering<br>Assistant Professor of Computational Applied Mathematics and Operations Reserach (courtesy appointment) <br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_cesar-uribe",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_9fdae025ecf85dada4b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE faculty API (assistant-professor) as Assistant Professor, Electrical and Computer Engineering<br>Member, Rice Digital Health and Houston Methodist-Rice Digital Health Institute<br>Member, Ken Kennedy Institute<br>Member, Institute of Health Resilience and Innovation.",
+        "source_ids": [
+          "src_profile_momona-yamagami",
+          "src_list_assistant-professor"
+        ]
+      },
+      {
+        "person_id": "person_1f5b13bff3145f2bb45b",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Research Faculty API (Assistant Research Professor); research-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_andrey-baydin",
+          "src_list_research-faculty"
+        ]
+      },
+      {
+        "person_id": "person_cb8a22319d295292afec",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Research Faculty API (Assistant Research Professor<br>Member, Ken Kennedy Institute); research-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_vivek-boominathan",
+          "src_list_research-faculty"
+        ]
+      },
+      {
+        "person_id": "person_865b11eca56e5804ab25",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Research Faculty API (Associate Research Professor, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute); research-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_rahman-doost-mohammady",
+          "src_list_research-faculty"
+        ]
+      },
+      {
+        "person_id": "person_adefe1ca26275e6db1b5",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Research Faculty API (Assistant Research Professor, Electrical and Computer Engineering); research-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_lisa-obryan",
+          "src_list_research-faculty"
+        ]
+      },
+      {
+        "person_id": "person_ac4ae2ff130354b796b8",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Research Faculty API (Assistant Research Professor); research-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_zhongyuan-zhao",
+          "src_list_research-faculty"
+        ]
+      },
+      {
+        "person_id": "person_b55f819a8c7a5292987a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Assistant Teaching Professor<br>Director, MDH Program); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_chris-braun",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_bffb94389b395c8c928d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Professor in the Practice, Electrical and Computer Engineering); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_gene-frantz",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_343dd632db305a7ea1ef",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Assistant Teaching Professor); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_jose-roberto-moreto",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_48710a596c8c55a5878a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Assistant Teaching Professor, Electrical and Computer Engineering); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_yu-kee-ooi",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_055116e9a33c5806b2a5",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Lecturer, Electrical and Computer Engineering); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_clayton-shepard",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_6f45b943a0cc587ea637",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Professor in the Practice, Electrical and Computer Engineering<br>Member, Ken Kennedy Institute); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_ray-simar",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_fbd41a82e1c25ee59c84",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Professor in the Practice, Electrical and Computer Engineering); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_thanh-tran",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_b6f9876f6cac5e28aed8",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Distinguished Professor in the Practice, Electrical and Computer and Engineering); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_gary-woods",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_8f186ad545035b87aadf",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Teaching Faculty API (Associate Teaching Professor, Electrical and Computer Engineering<br>Director, MECE Program); teaching-only role excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_joseph-young",
+          "src_list_teaching-faculty"
+        ]
+      },
+      {
+        "person_id": "person_3324d101941252858f3e",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Simons Chair and Professor of Computational and Applied Mathematics<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_maarten-de-hoop",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_f341dc6ed21350389643",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Assistant Professor of Chemistry<br>Director, Rice Center for Nanoscale Imaging Sciences<br>Norman Hackerman-Welch Young Investigator.",
+        "source_ids": [
+          "src_profile_anna-karin-gustavsson",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_21af3b1d2f4e5ea9810c",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Assistant Professor<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_yimo-han",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_c697b5f2457d5699879f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor, Physics and Astronomy<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_gyu-boong-jo",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_5c024513b62c593eb326",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Computer Science and of Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_david-b-johnson",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_f5060a715aa05c2a8c38",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as University Professor<br>Kenneth and Audrey Kennedy Professor of Computing <br>Professor of Computer Science, Electrical & Computer Engineering, Mechanical Engineering, and Bioengineering<br>Director, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_lydia-e-kavraki",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_05c45b3bf7755392a621",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Noah Harding Associate Professor, Computer Science<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_anastasios-kyrillidis",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_7f24ae750ec555e4a582",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Assistant Professor of Computer Science <br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_arlei-lopes-da-silva",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_2fab164b611c53c69dfe",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Computer Science and of Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_john-mellor-crummey",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_10cd220e374b5dafb2ce",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Faculty Director, Rice Engineering Initiative for Energy Transition and Sustainability (REINVENTS)<br>William M. Rice Trustee Professor, Chemical and Biomolecular Engineering<br>Professor, Materials Science and NanoEngineering, Electrical and Computer Engineering, and Chemistry.",
+        "source_ids": [
+          "src_profile_aditya-mohite",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_4f91bb33408153f9b6df",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor, Physics and Astronomy.",
+        "source_ids": [
+          "src_profile_emilia-morosan",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_ecc6a4b603ea55e3806a",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor, Physics and Astronomy <br>Associate Dean for Research.",
+        "source_ids": [
+          "src_profile_douglas-natelson",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_49b3e9cfc4795d42bfde",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Computer Science and of Electrical and Computer Engineering<br>Chair, CS Grad Committee<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_t-s-eugene-ng",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_6f984281a2b552e887c0",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Wiess Chair and Professor, Physics and Astronomy<br>Professor, Electrical and Computer Engineering<br>Professor, Materials Science and NanoEngineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_peter-j-nordlander",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_40cac2f4e6df587dbc41",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Chair, Department of Mechanical Engineering<br>Thomas Michael Panos Family Professor in Mechanical Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_marcia-omalley",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_fceec3bb88385f62901f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Malcolm Gillis University Professor <br>Professor of Bioengineering<br>Co-Director of Rice360 Institute for Global Health Technologies.",
+        "source_ids": [
+          "src_profile_rebecca-richards-kortum",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_dfeff93b928b5207863c",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Computer Science, of Electrical and Computer Engineering, and of Statistics<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_anshumali-shrivastava",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_14208105b0235b0f9730",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Computer Science and of Electrical and Computer Engineering<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_devika-subramanian",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_1d283c75d9775e8384fc",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Bioengineering & Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_tomasz-tkaczyk",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_4d1007d7d66850fd9906",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Assistant Professor, Materials Science and NanoEngineering<br>CPRIT Scholar in Cancer Research.",
+        "source_ids": [
+          "src_profile_christina-tringides",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_7213f0035235548890e2",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Karen Ostrum George Distinguished Service Professor in Computational Engineering<br>University Professor<br>Member, Ken Kennedy Institute.",
+        "source_ids": [
+          "src_profile_moshe-y-vardi",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_b16beee4e1765696b003",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Professor of Computer Science and of Electrical and Computer Engineering.",
+        "source_ids": [
+          "src_profile_dan-s-wallach",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_f60dd765d5f25cc2bb3d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on official Rice ECE Joint Faculty API as Associate Professor, Materials Science and NanoEngineering<br>William Marsh Rice Chair<br>MSNE Associate Chair of Undergraduate Studies<br>Martel College Advisor.",
+        "source_ids": [
+          "src_profile_hanyu-zhu",
+          "src_list_joint"
+        ]
+      },
+      {
+        "person_id": "person_62cdf9db881e51bbbf80",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_ac25d602712c55d99307",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_64326cc24ce252c09c63",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f0c61233c0445f259464",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f86d6b0898535f58a8c4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_6995af71925d540bb8df",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_0cc4e0462f575359990e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_7b6956400f545924bd38",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_69470ea5a8f654ecbf2a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_65d496d28f785b27a4eb",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_76bb60de347a5e2d9ff5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_2ecc4087aa3d51278d63",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_8bfd6e12b23f5ec79893",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_c9ed7a50a3ed5cd9802a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_070db3eaa3d55efdac8b",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_e122ddf8388a5e0aa17a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_fc531f9f1a7f5df9aa7d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_2f1ee3837df45c09896e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_604a8dd22d8f5bb08745",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_c223b359ddac5935ac85",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_4431e53128555ef38f5f",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_f83baac9f6525437b2b7",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f41ff7a5c90859baa1ca",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_06487687c1c25940b9ce",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_a71434f02530582d84d8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Joint Faculty] on eceweb.rice.edu/people/faculty, but profiles.rice.edu/faculty/benjamin-hayden lists Adjunct Professor of ECE; adjuncts are excluded.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_3"
+        ]
+      },
+      {
+        "person_id": "person_66a5d2b7c9c5522b9dff",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_83716aa4b89e503dba2f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_ee739f9e09b9530fbbc5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_6c7daa5fe4c05664a796",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_2c4feed657d55f8aad00",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_1bdcc888b729552f8b04",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_c123c44711c95e5db172",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_9daa56ddf0fd5bbdb5b3",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f1751245483859bb9a44",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_c66f82c8ca7b52419177",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_d5d0e62feb495e7ca9a6",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_7612f62fb5fe5025a828",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Joint Faculty] on eceweb.rice.edu/people/faculty, but ga.rice.edu ECE catalog lists Osama R. Mawlawi as Adjunct; adjuncts are excluded.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_abb930b3baab54d18adb",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f928af87fe795a42833a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_d4b3f808f55352909fd3",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_e677d975eacc579db2b2",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_87a514c3315d541b903f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_408d14ed356b5464914c",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Joint Faculty] on eceweb.rice.edu/people/faculty and Assistant Professor, Electrical and Computer Engineering on profiles.rice.edu/faculty/ankit-patel.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_2"
+        ]
+      },
+      {
+        "person_id": "person_0b5a7c641967522ba4dc",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_4c094a6651995eb298ba",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_0092487fe4145199bc62",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_db0ab925f3ca591fa68d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_0398a3ff60ec50faba5d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_346c514c02ea5b2a9990",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_a518b6ea64de53cdaef7",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on eceweb.rice.edu/people/faculty; profiles.rice.edu/faculty/john-seymour lists Adjunct Professor; adjuncts are excluded.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_4"
+        ]
+      },
+      {
+        "person_id": "person_5fe0b843805c53368684",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_4ee0e2197528568faf64",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_782c662322b3505e8804",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_84dc0b86f61a5692ab9a",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_e0ca92b502b85a0b9aaa",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_7928c199c5055ca0ae21",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f03336d27c245fa98664",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_77a517a0e54459d190a1",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_ca3fdaec2f7358dbbdf4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_d00a0bcd7b5458fe8297",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_53b5b6b9e66e5cb1b553",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "External TMC/CMU/UTMB [Joint Faculty] collaborator on eceweb.rice.edu/people/faculty without an active non-adjunct Rice profiles.rice.edu or ga.rice.edu ECE professorial appointment.",
+        "source_ids": [
+          "src_list_adjunct",
+          "src_support_1"
+        ]
+      },
+      {
+        "person_id": "person_8cd87f63941e52909106",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_1e7022c7e3f25bb8b6f1",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_501c211968035000a5bb",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_0de041aee62059a5a8e1",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_61292553dac35e4faa5a",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Joint Faculty] on eceweb.rice.edu/people/faculty and Assistant Professor, Electrical and Computer Engineering on profiles.rice.edu/faculty/ankit-patel.",
+        "source_ids": [
+          "src_support_2",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_5c3a316541dd50a482a5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed on eceweb.rice.edu/people/faculty; profiles.rice.edu/faculty/john-seymour lists Adjunct Professor; adjuncts are excluded.",
+        "source_ids": [
+          "src_support_4",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_8c00878acf235f39bb9e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_christy-landes",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_dc2331028b23595b9ba0",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_stephan-link",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_f912ad46d476545e8ace",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_shiqian-ma",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_6785bfffd9d5559e860a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_erzsebet-merenyi",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_834e8743f445536e9afa",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Adjunct Faculty] on eceweb.rice.edu/people/faculty; adjuncts are excluded under us-ece-affiliated-v5.",
+        "source_ids": [
+          "src_profile_valentin-dragoi",
+          "src_list_adjunct"
+        ]
+      },
+      {
+        "person_id": "person_e8ba63856a49523e90e6",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as [Joint Faculty] on eceweb.rice.edu/people/faculty, but profiles.rice.edu/faculty/benjamin-hayden lists Adjunct Professor of ECE; adjuncts are excluded.",
+        "source_ids": [
+          "src_support_3",
+          "src_list_adjunct"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_list_professor",
+        "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Professor&netid=",
+        "observed_at": "2026-11-24T08:44:25.588133+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:professor",
+        "response_sha256": "6979bac397731ccd2785cc5ef17aa8aabf901209e0c414b080b10fedd54c6a4e"
+      },
+      {
+        "id": "src_list_associate-professor",
+        "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Associate+Professor&netid=",
+        "observed_at": "2026-11-24T08:44:25.973062+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:associate-professor",
+        "response_sha256": "fd9f58946c1c5854d729de148566cb44831ab530df6d7263965cde6b75d3d3a2"
+      },
+      {
+        "id": "src_list_assistant-professor",
+        "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Assistant+Professor&netid=",
+        "observed_at": "2026-11-24T08:44:25.975707+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:assistant-professor",
+        "response_sha256": "922da5aaa8af2e65f75164e5f5df6c59765e1b96f4fd54e359a33f8063535c40"
+      },
+      {
+        "id": "src_list_research-faculty",
+        "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Research+Faculty&netid=",
+        "observed_at": "2026-11-24T08:44:25.972747+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:research-faculty",
+        "response_sha256": "009c1f85bac19a360af4ef5d97fa06fc52a69cda1150cb6aaeadf5f63b87c167"
+      },
+      {
+        "id": "src_list_teaching-faculty",
+        "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Teaching+Faculty&netid=",
+        "observed_at": "2026-11-24T08:44:25.597688+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:teaching-faculty",
+        "response_sha256": "cec6334cb4ca5d68957ab297f930d4a36cc2c9f6dc6aae46ca85e07123e36513"
+      },
+      {
+        "id": "src_list_joint",
+        "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Joint&netid=",
+        "observed_at": "2026-11-24T08:44:25.605334+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:joint",
+        "response_sha256": "e42799fff4089b9946ea6c73c86e45af9ddc5413f1e00d65cdf8899a1eac998a"
+      },
+      {
+        "id": "src_list_adjunct",
+        "url": "https://eceweb.rice.edu/people/faculty",
+        "observed_at": "2026-11-24T08:44:24.976986+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "list:adjunct",
+        "response_sha256": "f2bab246f13f8f1049685e91324fe4592d1a9c4f4d27294e98b30fa19d1569c5"
+      },
+      {
+        "id": "src_support_1",
+        "url": "https://ga.rice.edu/programs-study/departments-programs/engineering/electrical-computer-engineering/",
+        "observed_at": "2026-11-24T08:44:25.413218+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting:electrical-computer-engineering",
+        "response_sha256": "307c444bb43cc140068493d57fe988bec0273e248bb12140851f26e30e56bc51"
+      },
+      {
+        "id": "src_support_2",
+        "url": "https://profiles.rice.edu/faculty/ankit-patel",
+        "observed_at": "2026-11-24T08:44:30.836088+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting:ankit-patel",
+        "response_sha256": "e79fcfb58a5530c33c8bb5a19fbc0b70da588ae639a136e5c11b7b93ec66b50c"
+      },
+      {
+        "id": "src_support_3",
+        "url": "https://profiles.rice.edu/faculty/benjamin-hayden",
+        "observed_at": "2026-11-24T08:44:30.995302+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting:benjamin-hayden",
+        "response_sha256": "5c74dad1bf831cdb9e8be53cd761cd5984eb3036eaab175ad19898d14a401829"
+      },
+      {
+        "id": "src_support_4",
+        "url": "https://profiles.rice.edu/faculty/john-seymour",
+        "observed_at": "2026-11-24T08:44:31.245148+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting:john-seymour",
+        "response_sha256": "491185232f80f22a09e8d93920ebfbf9470c851ed53d4d446c1f4265f2ac5135"
+      },
+      {
+        "id": "src_profile_behnaam-aazhang",
+        "url": "https://profiles.rice.edu/faculty/behnaam-aazhang",
+        "observed_at": "2026-11-24T08:44:43.703109+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:behnaam-aazhang",
+        "response_sha256": "1b5720231a60cb4dec2d9445f84ee522d038e7374456f86f4030e98a208bb13c"
+      },
+      {
+        "id": "src_profile_athanasios-antoulas",
+        "url": "https://profiles.rice.edu/faculty/athanasios-antoulas",
+        "observed_at": "2026-11-24T08:44:43.688240+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:athanasios-antoulas",
+        "response_sha256": "0cf76e68d8a55414e2c4934bae5f7481e3c35e5749fcaec4d9cc18e438d1d654"
+      },
+      {
+        "id": "src_profile_richard-g-baraniuk",
+        "url": "https://profiles.rice.edu/faculty/richard-g-baraniuk",
+        "observed_at": "2026-11-24T08:44:44.397512+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:richard-g-baraniuk",
+        "response_sha256": "ada07889da8df7bdc2485f7bd78a364016d2e717b454401f5cc3bb40f69fb357"
+      },
+      {
+        "id": "src_profile_joseph-r-cavallaro",
+        "url": "https://profiles.rice.edu/faculty/joseph-r-cavallaro",
+        "observed_at": "2026-11-24T08:44:44.034087+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:joseph-r-cavallaro",
+        "response_sha256": "510778a5593ecce7caa0435e12f1836c70add848df26c114b6c86c582d39a82c"
+      },
+      {
+        "id": "src_profile_naomi-j-halas",
+        "url": "https://profiles.rice.edu/faculty/naomi-j-halas",
+        "observed_at": "2026-11-24T08:44:44.340257+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:naomi-j-halas",
+        "response_sha256": "dd4da1b8d7a2026fca5430bb25489f3bcd57a67027b8f5acdf499b6f21b7cc46"
+      },
+      {
+        "id": "src_profile_edward-w-knightly",
+        "url": "https://profiles.rice.edu/faculty/edward-w-knightly",
+        "observed_at": "2026-11-24T08:44:43.870509+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:edward-w-knightly",
+        "response_sha256": "e993f548fb5f218e39538dbd5187754b8aab86d3db23780a0fece2229a99a87a"
+      },
+      {
+        "id": "src_profile_junichiro-kono",
+        "url": "https://profiles.rice.edu/faculty/junichiro-kono",
+        "observed_at": "2026-11-24T08:44:44.047184+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:junichiro-kono",
+        "response_sha256": "2a556d073492b8d4a1c1e5db5f1d3076d33e81affdde78e4b5c8718d7bb35997"
+      },
+      {
+        "id": "src_profile_michael-orchard",
+        "url": "https://profiles.rice.edu/faculty/michael-orchard",
+        "observed_at": "2026-11-24T08:44:44.235924+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:michael-orchard",
+        "response_sha256": "715016bf6e1c1d7d27a0e4678ace95756928b526aeb794535a2122bcbe96dfa9"
+      },
+      {
+        "id": "src_profile_jacob-t-robinson",
+        "url": "https://profiles.rice.edu/faculty/jacob-t-robinson",
+        "observed_at": "2026-11-24T08:44:44.036285+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:jacob-t-robinson",
+        "response_sha256": "9568ad6f2ee76e34826a3cf6ff0097944ff86de598e104611c1f212a276de94e"
+      },
+      {
+        "id": "src_profile_ashutosh-sabharwal",
+        "url": "https://profiles.rice.edu/faculty/ashutosh-sabharwal",
+        "observed_at": "2026-11-24T08:44:43.544695+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:ashutosh-sabharwal",
+        "response_sha256": "6d406f7005706ae997a8d0d2fb3e3806891556d86e2887b395eb60b9f62995d0"
+      },
+      {
+        "id": "src_profile_peter-j-varman",
+        "url": "https://profiles.rice.edu/faculty/peter-j-varman",
+        "observed_at": "2026-11-24T08:44:44.382899+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:peter-j-varman",
+        "response_sha256": "7c4fc07a823c6253c12dc7d5655cd32a55361b5a2e44be33787e0f04ab13ba90"
+      },
+      {
+        "id": "src_profile_ashok-veeraraghavan",
+        "url": "https://profiles.rice.edu/faculty/ashok-veeraraghavan",
+        "observed_at": "2026-11-24T08:44:43.553792+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:ashok-veeraraghavan",
+        "response_sha256": "d3900cd2301b21041196b10a73c781dce899828402ebd4ce78654d2ea8f6510a"
+      },
+      {
+        "id": "src_profile_chong-xie",
+        "url": "https://profiles.rice.edu/faculty/chong-xie",
+        "observed_at": "2026-11-24T08:44:43.719505+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:chong-xie",
+        "response_sha256": "af66918a44e54a334101dbff53a16db3ab8a0cdfe1b4a1bb75c4afa64f7942da"
+      },
+      {
+        "id": "src_profile_yuji-zhao",
+        "url": "https://profiles.rice.edu/faculty/yuji-zhao",
+        "observed_at": "2026-11-24T08:44:44.666931+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:yuji-zhao",
+        "response_sha256": "93717d05c81976e2ea988703c147f67aca3888868c23715d501f11f7ea275d61"
+      },
+      {
+        "id": "src_profile_taiyun-chi",
+        "url": "https://profiles.rice.edu/faculty/taiyun-chi",
+        "observed_at": "2026-11-24T08:44:44.543115+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:taiyun-chi",
+        "response_sha256": "66bb4a39b4abe7325be20439a7398826e59d034307e4f0870dc7c553d6f34537"
+      },
+      {
+        "id": "src_profile_shengxi-huang",
+        "url": "https://profiles.rice.edu/faculty/shengxi-huang",
+        "observed_at": "2026-11-24T08:44:44.516096+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:shengxi-huang",
+        "response_sha256": "c47f3c4529fd2dae6bf25abf2c07f124448f93ae1f997767fb8a4aee54ad45ce"
+      },
+      {
+        "id": "src_profile_kevin-f-kelly",
+        "url": "https://profiles.rice.edu/faculty/kevin-f-kelly",
+        "observed_at": "2026-11-24T08:44:44.230314+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:kevin-f-kelly",
+        "response_sha256": "7d0dbad7a5ceaa6ba3480c4bcfc635cfa1145563e31406e7ff61568599c708de"
+      },
+      {
+        "id": "src_profile_caleb-kemere",
+        "url": "https://profiles.rice.edu/faculty/caleb-kemere",
+        "observed_at": "2026-11-24T08:44:43.713203+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:caleb-kemere",
+        "response_sha256": "b8ac8c4b5a63e7df2ae09e1523d3710ce06fa1432797009e6c41ddaf9b3f3555"
+      },
+      {
+        "id": "src_profile_robert-likamwa",
+        "url": "https://profiles.rice.edu/faculty/robert-likamwa",
+        "observed_at": "2026-11-24T08:44:44.474830+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:robert-likamwa",
+        "response_sha256": "9590183aeec97b41af11d16f7538d4c6f7fffad3ad574b8034987b5546bd7c36"
+      },
+      {
+        "id": "src_profile_lan-luan",
+        "url": "https://profiles.rice.edu/faculty/lan-luan",
+        "observed_at": "2026-11-24T08:44:44.178559+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:lan-luan",
+        "response_sha256": "f456058e9c3ab55a867f0d9e4437a00b327bdaa80d9355f78b6ba85e3fede7e5"
+      },
+      {
+        "id": "src_profile_gururaj-naik",
+        "url": "https://profiles.rice.edu/faculty/gururaj-naik",
+        "observed_at": "2026-11-24T08:44:43.985328+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:gururaj-naik",
+        "response_sha256": "edcf76b1a94cffcaaa4d21c6bd96e856bca5d6e01cc276a0957bd1b32f754b03"
+      },
+      {
+        "id": "src_profile_akane-sano",
+        "url": "https://profiles.rice.edu/faculty/akane-sano",
+        "observed_at": "2026-11-24T08:44:43.548174+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:akane-sano",
+        "response_sha256": "cf73510637cbf436766728822f63a6d6c1184153896e2e07a9e802b4ce374a8e"
+      },
+      {
+        "id": "src_profile_santiago-segarra",
+        "url": "https://profiles.rice.edu/faculty/santiago-segarra",
+        "observed_at": "2026-11-24T08:44:44.525149+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:santiago-segarra",
+        "response_sha256": "33deb9d46ccb68dcb722045552baf42fa6c244a10d0b4f7c1ff73b6d07b32a4e"
+      },
+      {
+        "id": "src_profile_kaiyuan-yang",
+        "url": "https://profiles.rice.edu/faculty/kaiyuan-yang",
+        "observed_at": "2026-11-24T08:44:44.157888+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:kaiyuan-yang",
+        "response_sha256": "e0267c49d0431bb5bf8d241ec9aa2cb7e6d005aea5cc820be9a034dbf081a11c"
+      },
+      {
+        "id": "src_profile_alessandro-alabastri",
+        "url": "https://profiles.rice.edu/faculty/alessandro-alabastri",
+        "observed_at": "2026-11-24T08:44:43.569752+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:alessandro-alabastri",
+        "response_sha256": "559f6c22ba79244c579b111a069996c82383c4f4d2d0ddac281240185fc711b1"
+      },
+      {
+        "id": "src_profile_guha-balakrishnan",
+        "url": "https://profiles.rice.edu/faculty/guha-balakrishnan",
+        "observed_at": "2026-11-24T08:44:43.893003+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:guha-balakrishnan",
+        "response_sha256": "52776b9454c4b309035fb582c3bd5023c44516824ab1c825ec866a609010b03c"
+      },
+      {
+        "id": "src_profile_songtao-chen",
+        "url": "https://profiles.rice.edu/faculty/songtao-chen",
+        "observed_at": "2026-11-24T08:44:44.497552+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:songtao-chen",
+        "response_sha256": "f2ab0c51be658a291934c1fe74bbb51ed2a792b68275a69fecfccef867661c5e"
+      },
+      {
+        "id": "src_profile_nakul-garg",
+        "url": "https://profiles.rice.edu/faculty/nakul-garg",
+        "observed_at": "2026-11-24T08:44:44.336578+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:nakul-garg",
+        "response_sha256": "faeac285df99fe464985499f079ad5445404596eda4baebeb0f8be4bd9aba03d"
+      },
+      {
+        "id": "src_profile_tony-geng",
+        "url": "https://profiles.rice.edu/faculty/tony-geng",
+        "observed_at": "2026-11-24T08:44:44.539040+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:tony-geng",
+        "response_sha256": "2f404119a1e7cf7f8be1727855a42cb0f5237c0ad0798f04a756043d1c6ef327"
+      },
+      {
+        "id": "src_profile_lei-li",
+        "url": "https://profiles.rice.edu/faculty/lei-li",
+        "observed_at": "2026-11-24T08:44:44.231454+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:lei-li",
+        "response_sha256": "2ec0095b56ca4902bfafd7cc5915d3bab4212ed001e7b7a5fa64cc5df6182d6e"
+      },
+      {
+        "id": "src_profile_wei-qiu",
+        "url": "https://profiles.rice.edu/faculty/wei-qiu",
+        "observed_at": "2026-11-24T08:44:44.632863+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:wei-qiu",
+        "response_sha256": "4009708f4e523869fa009b4af5459965502b3e8a16888bf57d2f34723d938ff7"
+      },
+      {
+        "id": "src_profile_juliane-sempionatto",
+        "url": "https://profiles.rice.edu/faculty/juliane-sempionatto",
+        "observed_at": "2026-11-24T08:44:44.059576+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:juliane-sempionatto",
+        "response_sha256": "01a9b2361d89fc267b29a06302245d20c5e86963737276615220c736d96aad13"
+      },
+      {
+        "id": "src_profile_nishal-shah",
+        "url": "https://profiles.rice.edu/faculty/nishal-shah",
+        "observed_at": "2026-11-24T08:44:44.347352+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:nishal-shah",
+        "response_sha256": "fd4c6b3ceef83eac24227d7f2bdd6f7e4e244a07812c81a1bd09cb40ddbe9e43"
+      },
+      {
+        "id": "src_profile_cesar-uribe",
+        "url": "https://profiles.rice.edu/faculty/cesar-uribe",
+        "observed_at": "2026-11-24T08:44:43.680033+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:cesar-uribe",
+        "response_sha256": "08852bbf8a1ceaa8671a92692a1aa54b9e9c2b94c701640a822d86028d9ae4e0"
+      },
+      {
+        "id": "src_profile_momona-yamagami",
+        "url": "https://profiles.rice.edu/faculty/momona-yamagami",
+        "observed_at": "2026-11-24T08:44:44.225152+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:momona-yamagami",
+        "response_sha256": "422b4647a39cc069455d4e94ad85660c90346ec452bed16e587dc6ba48bd962c"
+      },
+      {
+        "id": "src_profile_andrey-baydin",
+        "url": "https://profiles.rice.edu/faculty/andrey-baydin",
+        "observed_at": "2026-11-24T08:44:43.528997+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:andrey-baydin",
+        "response_sha256": "230aecfba6abc6c27bbfa023d1728fa8a3e9719dfcce4c4c0b537fb2740a874c"
+      },
+      {
+        "id": "src_profile_vivek-boominathan",
+        "url": "https://profiles.rice.edu/faculty/vivek-boominathan",
+        "observed_at": "2026-11-24T08:44:44.659726+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:vivek-boominathan",
+        "response_sha256": "b85acfa4c0fd71dde725a5802f25c15aceb8abeba81425c37527c5b49e0eb39c"
+      },
+      {
+        "id": "src_profile_rahman-doost-mohammady",
+        "url": "https://profiles.rice.edu/faculty/rahman-doost-mohammady",
+        "observed_at": "2026-11-24T08:44:44.409291+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:rahman-doost-mohammady",
+        "response_sha256": "d76526299198009848ab9608ecc4522118c228ccf55498038e5554d35ce662a7"
+      },
+      {
+        "id": "src_profile_lisa-obryan",
+        "url": "https://profiles.rice.edu/faculty/lisa-obryan",
+        "observed_at": "2026-11-24T08:44:44.171566+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:lisa-obryan",
+        "response_sha256": "1b549508e54a855af1395790708f2c556c6524da57837b456cc37e9aab17c589"
+      },
+      {
+        "id": "src_profile_zhongyuan-zhao",
+        "url": "https://profiles.rice.edu/faculty/zhongyuan-zhao",
+        "observed_at": "2026-11-24T08:44:44.701455+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:zhongyuan-zhao",
+        "response_sha256": "3c2e4ea8cd7aef9fc8849f82e0d07eb597357ed1c1fe478bfdb67d38963fb5b8"
+      },
+      {
+        "id": "src_profile_chris-braun",
+        "url": "https://profiles.rice.edu/faculty/chris-braun",
+        "observed_at": "2026-11-24T08:44:43.735680+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:chris-braun",
+        "response_sha256": "33d71d8a2cd6ce3b4f7b0c2ac26a394eaaa8ffe685bfd90e30955b75354a5f25"
+      },
+      {
+        "id": "src_profile_gene-frantz",
+        "url": "https://profiles.rice.edu/faculty/gene-frantz",
+        "observed_at": "2026-11-24T08:44:43.886994+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:gene-frantz",
+        "response_sha256": "101196b11d91afd74a3ec5554d3ac2e6427ce77b222dfbaf5de21c76c58d0a90"
+      },
+      {
+        "id": "src_profile_jose-roberto-moreto",
+        "url": "https://profiles.rice.edu/faculty/jose-roberto-moreto",
+        "observed_at": "2026-11-24T08:44:44.048413+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:jose-roberto-moreto",
+        "response_sha256": "30156f4fd9ad36b43de032b37ccb319f03209c9c97fde78563054f037b13dbbb"
+      },
+      {
+        "id": "src_profile_yu-kee-ooi",
+        "url": "https://profiles.rice.edu/faculty/yu-kee-ooi",
+        "observed_at": "2026-11-24T08:44:44.673700+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:yu-kee-ooi",
+        "response_sha256": "60a604daf4f205ca60be993e6758b4dedc539d4890e14bc55cfc5168f0880ad6"
+      },
+      {
+        "id": "src_profile_clayton-shepard",
+        "url": "https://profiles.rice.edu/faculty/clayton-shepard",
+        "observed_at": "2026-11-24T08:44:43.738073+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:clayton-shepard",
+        "response_sha256": "168f40ba324f9dee76676337f993f6e4da56419710d07a8979835a1cd43b666d"
+      },
+      {
+        "id": "src_profile_ray-simar",
+        "url": "https://profiles.rice.edu/faculty/ray-simar",
+        "observed_at": "2026-11-24T08:44:44.389326+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:ray-simar",
+        "response_sha256": "53cd78f54ae235f4e4a2391a30e72d61c5f14a00bd63f5905765482d9e7f73e6"
+      },
+      {
+        "id": "src_profile_thanh-tran",
+        "url": "https://profiles.rice.edu/faculty/thanh-tran",
+        "observed_at": "2026-11-24T08:44:44.536243+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:thanh-tran",
+        "response_sha256": "43e18e3acb4b9d04d40a0f132cd4f948636aeb3199b382f7e10cd2f574cd09ab"
+      },
+      {
+        "id": "src_profile_gary-woods",
+        "url": "https://profiles.rice.edu/faculty/gary-woods",
+        "observed_at": "2026-11-24T08:44:43.884654+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:gary-woods",
+        "response_sha256": "406687630d16a8062938e56f2a9a1c420f24e7964c99db10f079ed4b68914c58"
+      },
+      {
+        "id": "src_profile_joseph-young",
+        "url": "https://profiles.rice.edu/faculty/joseph-young",
+        "observed_at": "2026-11-24T08:44:44.039173+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:joseph-young",
+        "response_sha256": "2fab6b0ef8cc4bcfde30199110af319f8407b60647477de18851959c2e251592"
+      },
+      {
+        "id": "src_profile_maarten-de-hoop",
+        "url": "https://profiles.rice.edu/faculty/maarten-de-hoop",
+        "observed_at": "2026-11-24T08:44:44.213360+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:maarten-de-hoop",
+        "response_sha256": "5cf96e0ccbb16865fe46ae64eda1c5d4337b0e7155f8f14300719e87890a88d4"
+      },
+      {
+        "id": "src_profile_anna-karin-gustavsson",
+        "url": "https://profiles.rice.edu/faculty/anna-karin-gustavsson",
+        "observed_at": "2026-11-24T08:44:43.554197+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:anna-karin-gustavsson",
+        "response_sha256": "23c167b1884c590390172f87d21fb4b1badf7b65cdb45b2e4833e80356c56041"
+      },
+      {
+        "id": "src_profile_yimo-han",
+        "url": "https://profiles.rice.edu/faculty/yimo-han",
+        "observed_at": "2026-11-24T08:44:44.656937+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:yimo-han",
+        "response_sha256": "f508a4e057829a1587be8f00b56c933d787023d6ab3f3239e79ffa4dcd1120bd"
+      },
+      {
+        "id": "src_profile_gyu-boong-jo",
+        "url": "https://profiles.rice.edu/faculty/gyu-boong-jo",
+        "observed_at": "2026-11-24T08:44:44.050589+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:gyu-boong-jo",
+        "response_sha256": "fa50076aab03862b0e3c7c22955af5488b8210ff1bddb46eb829c70ac2175f74"
+      },
+      {
+        "id": "src_profile_david-b-johnson",
+        "url": "https://profiles.rice.edu/faculty/david-b-johnson",
+        "observed_at": "2026-11-24T08:44:43.864101+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:david-b-johnson",
+        "response_sha256": "d43a5c73d245bccd805c9ab37fa490611d924fadc919d55fd13d9241fdf852a7"
+      },
+      {
+        "id": "src_profile_lydia-e-kavraki",
+        "url": "https://profiles.rice.edu/faculty/lydia-e-kavraki",
+        "observed_at": "2026-11-24T08:44:44.236958+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:lydia-e-kavraki",
+        "response_sha256": "379b0cca468f5eeffd99453e1d67d28fd2bca5b8c9084d443d344c9f2a29c203"
+      },
+      {
+        "id": "src_profile_anastasios-kyrillidis",
+        "url": "https://profiles.rice.edu/faculty/anastasios-kyrillidis",
+        "observed_at": "2026-11-24T08:44:43.520473+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:anastasios-kyrillidis",
+        "response_sha256": "e132101cc5aad1c4972826c405495e5c342d0288d0d285bf15deb943fa7d8a2d"
+      },
+      {
+        "id": "src_profile_arlei-lopes-da-silva",
+        "url": "https://profiles.rice.edu/faculty/arlei-lopes-da-silva",
+        "observed_at": "2026-11-24T08:44:43.530017+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:arlei-lopes-da-silva",
+        "response_sha256": "d17992ba2791d5ea39447f14d220c1df99d32129adcef886f9a751cb3faf860a"
+      },
+      {
+        "id": "src_profile_john-mellor-crummey",
+        "url": "https://profiles.rice.edu/faculty/john-mellor-crummey",
+        "observed_at": "2026-11-24T08:44:44.049387+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:john-mellor-crummey",
+        "response_sha256": "946001bbf540a6cd32fc510ebc1b833a94945b7998d19344d775d7e35cedc6f3"
+      },
+      {
+        "id": "src_profile_aditya-mohite",
+        "url": "https://profiles.rice.edu/faculty/aditya-mohite",
+        "observed_at": "2026-11-24T08:44:43.565907+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:aditya-mohite",
+        "response_sha256": "1e190434a2f1d1c663a51f177ba56f1bd192ce013daf72454ce9371a3bb6197c"
+      },
+      {
+        "id": "src_profile_emilia-morosan",
+        "url": "https://profiles.rice.edu/faculty/emilia-morosan",
+        "observed_at": "2026-11-24T08:44:43.870178+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:emilia-morosan",
+        "response_sha256": "3451cb62fbfe4f6392b86baac56ab42c6b3ade57e6507edf574ca31c50215079"
+      },
+      {
+        "id": "src_profile_douglas-natelson",
+        "url": "https://profiles.rice.edu/faculty/douglas-natelson",
+        "observed_at": "2026-11-24T08:44:43.881301+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:douglas-natelson",
+        "response_sha256": "fff4f6c505b358bfbaa890e9c1098cfbf2fff643463f4370fd16d1cd1a265821"
+      },
+      {
+        "id": "src_profile_t-s-eugene-ng",
+        "url": "https://profiles.rice.edu/faculty/t-s-eugene-ng",
+        "observed_at": "2026-11-24T08:44:44.524873+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:t-s-eugene-ng",
+        "response_sha256": "0c18f6ea5381a207bc6432b9bdbeef96cccf8b0a72cee322b26b513d4678750b"
+      },
+      {
+        "id": "src_profile_peter-j-nordlander",
+        "url": "https://profiles.rice.edu/faculty/peter-j-nordlander",
+        "observed_at": "2026-11-24T08:44:44.366647+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:peter-j-nordlander",
+        "response_sha256": "4a7be874b84695338e6c53c4137d55606be1a3fa9ed6354b53c4347fa786996b"
+      },
+      {
+        "id": "src_profile_marcia-omalley",
+        "url": "https://profiles.rice.edu/faculty/marcia-omalley",
+        "observed_at": "2026-11-24T08:44:44.260968+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:marcia-omalley",
+        "response_sha256": "b280a807cb1ff5cbeac4aa428e9467f4758dd37c4aa34d8dce46149b508303fa"
+      },
+      {
+        "id": "src_profile_rebecca-richards-kortum",
+        "url": "https://profiles.rice.edu/faculty/rebecca-richards-kortum",
+        "observed_at": "2026-11-24T08:44:44.395192+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:rebecca-richards-kortum",
+        "response_sha256": "5cbc43b478dcd1d79e2937f2071a6f9efb0fa2992e871e5253464309b03c18f2"
+      },
+      {
+        "id": "src_profile_anshumali-shrivastava",
+        "url": "https://profiles.rice.edu/faculty/anshumali-shrivastava",
+        "observed_at": "2026-11-24T08:44:43.548609+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:anshumali-shrivastava",
+        "response_sha256": "9a76e931dfa7ad923b3e37420495b05449ff6754a614ffda43a79cb0a2313fcd"
+      },
+      {
+        "id": "src_profile_devika-subramanian",
+        "url": "https://profiles.rice.edu/faculty/devika-subramanian",
+        "observed_at": "2026-11-24T08:44:43.864906+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:devika-subramanian",
+        "response_sha256": "c29d7f27bbf8a54f3a3e6ae03a93ce54844da2d944980db83974d2891a45ca02"
+      },
+      {
+        "id": "src_profile_tomasz-tkaczyk",
+        "url": "https://profiles.rice.edu/faculty/tomasz-tkaczyk",
+        "observed_at": "2026-11-24T08:44:44.562713+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:tomasz-tkaczyk",
+        "response_sha256": "12bb5e241168551592c296c61cec725a6bbfea3225daca5d2b8a5a43b3231ef1"
+      },
+      {
+        "id": "src_profile_christina-tringides",
+        "url": "https://profiles.rice.edu/faculty/christina-tringides",
+        "observed_at": "2026-11-24T08:44:43.728268+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:christina-tringides",
+        "response_sha256": "9fbf21453bee55fafc54c45272a6957fd74e034e634cadee2b9da2c946f7b34f"
+      },
+      {
+        "id": "src_profile_moshe-y-vardi",
+        "url": "https://profiles.rice.edu/faculty/moshe-y-vardi",
+        "observed_at": "2026-11-24T08:44:44.328290+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:moshe-y-vardi",
+        "response_sha256": "71d374b4faf6008ea337547bad77a6d3a352fe4e48288468b08b1457ac1217a1"
+      },
+      {
+        "id": "src_profile_dan-s-wallach",
+        "url": "https://profiles.rice.edu/faculty/dan-s-wallach",
+        "observed_at": "2026-11-24T08:44:43.728805+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:dan-s-wallach",
+        "response_sha256": "a8dd1eb81746ada27e83208557efbdcdb2d4e7add61c220cebb3fdfb1a25c6bf"
+      },
+      {
+        "id": "src_profile_hanyu-zhu",
+        "url": "https://profiles.rice.edu/faculty/hanyu-zhu",
+        "observed_at": "2026-11-24T08:44:44.028978+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:hanyu-zhu",
+        "response_sha256": "b7c8a0b1b2b967d970f757c95b1c640e10efbadf1fc3b37edd3cf2331b2c8e72"
+      },
+      {
+        "id": "src_profile_christy-landes",
+        "url": "https://profiles.rice.edu/faculty/christy-landes",
+        "observed_at": "2026-11-24T08:44:43.720153+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:christy-landes",
+        "response_sha256": "309dd84673a625706015c5d43ef829a56d58662293b2205cdfd3a8bb3befe829"
+      },
+      {
+        "id": "src_profile_stephan-link",
+        "url": "https://profiles.rice.edu/faculty/stephan-link",
+        "observed_at": "2026-11-24T08:44:44.503426+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:stephan-link",
+        "response_sha256": "164a33452415282c6b9f2b4e3c4c1f21bd10cc792b7c0c09c10d4b6502817659"
+      },
+      {
+        "id": "src_profile_shiqian-ma",
+        "url": "https://profiles.rice.edu/staff/shiqian-ma",
+        "observed_at": "2026-11-24T08:44:44.710127+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:shiqian-ma",
+        "response_sha256": "ffa428b0ea2fbd724be6685dd2dcc9ebb0390c6ac76c9e8705bfc85959839e74"
+      },
+      {
+        "id": "src_profile_erzsebet-merenyi",
+        "url": "https://profiles.rice.edu/faculty/erzsebet-merenyi",
+        "observed_at": "2026-11-24T08:44:43.892120+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:erzsebet-merenyi",
+        "response_sha256": "e0c9a2690bd8a312a23c944a9d7ce18812f1428fdda4e6ee70457be5560d97ad"
+      },
+      {
+        "id": "src_profile_valentin-dragoi",
+        "url": "https://profiles.rice.edu/faculty/valentin-dragoi",
+        "observed_at": "2026-11-24T08:44:44.615300+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile:valentin-dragoi",
+        "response_sha256": "a191fddd3e03768447aa4b9fe0da860893472df428d7a08671fd6e02e02d5736"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_2fa1c48ddfc74b9ca2f4b87067be7da9",
+    "candidate_sha256": "1cecaf34a7bb063399d842d7171b32da464dcf733e5f0f6d25a64c506e59824b",
+    "transport": "t3",
+    "run_id": "audit-rice-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:45:26.287535+00:00",
+    "exit_code": 0
+  }
+}

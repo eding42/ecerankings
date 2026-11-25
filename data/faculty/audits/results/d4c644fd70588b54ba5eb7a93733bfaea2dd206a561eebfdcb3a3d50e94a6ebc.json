@@ -1,0 +1,1826 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/5991b01c53d3a3c3f9e8dcb31d8c87d872880ab8d4c08352e01dca0c176d044a.json",
+    "sha256": "5991b01c53d3a3c3f9e8dcb31d8c87d872880ab8d4c08352e01dca0c176d044a"
+  },
+  "brief": {
+    "file": "audits/briefs/d2ee689716667a03e3f198536a65db842b5354e5bd96b38d9b96e723ad55331c.json",
+    "sha256": "d2ee689716667a03e3f198536a65db842b5354e5bd96b38d9b96e723ad55331c"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_25fdaf9c0760466db0c4754d3ac76f18",
+    "candidate_sha256": "9123803a8d7d9fd06942ecd22b2b848a9dd1143b27cdcabce77e2c41d8e21bd3",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:40:54.562191+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://seas.harvard.edu/electrical-engineering/people",
+        "https://seas.harvard.edu/person/ahmad-mo-khalil",
+        "https://seas.harvard.edu/person/boris-kozinsky",
+        "https://seas.harvard.edu/person/conor-walsh",
+        "https://seas.harvard.edu/person/david-brooks",
+        "https://seas.harvard.edu/person/david-clarke",
+        "https://seas.harvard.edu/person/demba-ba",
+        "https://seas.harvard.edu/person/donhee-ham",
+        "https://seas.harvard.edu/person/eric-mazur",
+        "https://seas.harvard.edu/person/evelyn-hu",
+        "https://seas.harvard.edu/person/federico-capasso",
+        "https://seas.harvard.edu/person/flavio-calmon",
+        "https://seas.harvard.edu/person/frank-doyle",
+        "https://seas.harvard.edu/person/frank-keutsch",
+        "https://seas.harvard.edu/person/gage-hills",
+        "https://seas.harvard.edu/person/gu-yeon-wei",
+        "https://seas.harvard.edu/person/heng-yang",
+        "https://seas.harvard.edu/person/ht-kung",
+        "https://seas.harvard.edu/person/joanna-aizenberg",
+        "https://seas.harvard.edu/person/john-shaw",
+        "https://seas.harvard.edu/person/kiyoul-yang",
+        "https://seas.harvard.edu/person/l-mahadevan",
+        "https://seas.harvard.edu/person/le-xie",
+        "https://seas.harvard.edu/person/lene-hau",
+        "https://seas.harvard.edu/person/marko-loncar",
+        "https://seas.harvard.edu/person/martin-bechthold",
+        "https://seas.harvard.edu/person/maurice-smith",
+        "https://seas.harvard.edu/person/maxim-prigozhin",
+        "https://seas.harvard.edu/person/michael-aziz",
+        "https://seas.harvard.edu/person/michael-brenner",
+        "https://seas.harvard.edu/person/na-li",
+        "https://seas.harvard.edu/person/patrick-slade",
+        "https://seas.harvard.edu/person/paul-horowitz",
+        "https://seas.harvard.edu/person/petros-koumoutsakos",
+        "https://seas.harvard.edu/person/robert-howe",
+        "https://seas.harvard.edu/person/robert-wood",
+        "https://seas.harvard.edu/person/shriya-srinivasan",
+        "https://seas.harvard.edu/person/stephanie-gil",
+        "https://seas.harvard.edu/person/todd-zickler",
+        "https://seas.harvard.edu/person/vijay-janapa-reddi",
+        "https://seas.harvard.edu/person/vinothan-manoharan",
+        "https://seas.harvard.edu/person/woodward-yang",
+        "https://seas.harvard.edu/person/yilun-du",
+        "https://seas.harvard.edu/person/yue-lu",
+        "https://seas.harvard.edu/person/zachary-schiffer"
+      ],
+      "checked_list_ids": [
+        "ee_people",
+        "ee_faculty_research"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_c1cbf8f8f2945faaa772",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Demba Ba has an explicit EE professorial appointment on their SEAS profile (Gordon McKay Professor of Electrical Engineering Director of Undergraduate Studies, Electrical Engineering).",
+        "source_ids": [
+          "src_007",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_0643442173a450ee9732",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Flavio P. Calmon has an explicit EE professorial appointment on their SEAS profile (Thomas D. Cabot Associate Professor of Electrical Engineering).",
+        "source_ids": [
+          "src_012",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_e0118c66c31f5aa39e68",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Gage Hills has an explicit EE professorial appointment on their SEAS profile (Associate Professor of Electrical Engineering).",
+        "source_ids": [
+          "src_015",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_eb23f8e7881f55fa813d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Paul Horowitz holds an explicit Emeritus title (Professor of Physics and of Electrical Engineering, Emeritus).",
+        "source_ids": [
+          "src_033",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_6b13361607335b39b5f9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Evelyn Hu has an explicit EE professorial appointment on their SEAS profile (Tarr-Coyne Professor of Applied Physics and of Electrical Engineering Participant, Nanoscale Science and Engineering Cen).",
+        "source_ids": [
+          "src_010",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_3031661b89b75d1d8017",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Vijay Janapa Reddi has an explicit EE professorial appointment on their SEAS profile (Gordon McKay Professor of Electrical Engineering).",
+        "source_ids": [
+          "src_040",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_edb77f8190645fbaa86a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Na Li has an explicit EE professorial appointment on their SEAS profile (Winokur Family Professor of Electrical Engineering and Applied Mathematics Area Chair, Electrical Engineering).",
+        "source_ids": [
+          "src_031",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_27d212b6b04b585d8a6e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Marko Lončar has an explicit EE professorial appointment on their SEAS profile (Tiantsai Lin Professor of Electrical Engineering Harvard Quantum Initiative).",
+        "source_ids": [
+          "src_025",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_a47f94341cb5568d9f5c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Gu-Yeon Wei has an explicit EE professorial appointment on their SEAS profile (Robert and Suzanne Case Professor of Electrical Engineering and Computer Science).",
+        "source_ids": [
+          "src_016",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_bed368c7546f56498bd1",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Robert J. Wood appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_036",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_e0ff1eae98df5691803e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Le Xie has an explicit EE professorial appointment on their SEAS profile (Gordon McKay Professor of Electrical Engineering).",
+        "source_ids": [
+          "src_023",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_6515f467d7d35704a585",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Heng Yang has an explicit EE professorial appointment on their SEAS profile (Assistant Professor of Electrical Engineering).",
+        "source_ids": [
+          "src_017",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_fe31562cbffa56299130",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kiyoul Yang has an explicit EE professorial appointment on their SEAS profile (Assistant Professor of Electrical Engineering).",
+        "source_ids": [
+          "src_021",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_071170b64af3538ca0df",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Woodward Yang has an explicit EE professorial appointment on their SEAS profile (Gordon McKay Professor of Electrical Engineering and Computer Science).",
+        "source_ids": [
+          "src_042",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_c8cb85b6df015394bc69",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Todd Zickler has an explicit EE professorial appointment on their SEAS profile (William and Ami Kuan Danoff Professor of Electrical Engineering and Computer Science).",
+        "source_ids": [
+          "src_039",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_c0723bbc2672562d8948",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Mustafa Okan Araz is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_2812ea95022f524e816d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Philipp Arens is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_0a2986330ca95bca82c8",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Derya Cansever is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_e0d5c0d64c7c55cb9529",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Matthew Cantor is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_b0c74a19ac9057cd8cec",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Liudong Chen is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_cc7fd0c909eb5897b8b6",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Lin Dong is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_b88bfe5376cc57958879",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Zhiyuan Fan is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_e70806250373573a807e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Chenxiao Gao is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_b921953749815f31a812",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Vivek Goyal is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_fc5776e0563c5472bbb2",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Gaia Grosso is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_36231460c6de5f0da654",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Sidong Guo is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_565fe65102c255b8b09d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Guanhao Huang is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_45596c35acbd51b9af82",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Hyeon Hwang is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_d562563f1754519cbd91",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Yan Jin is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_39cfce09c7f7520f8807",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Georgios Kyriazidis is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_4f7c0ce651a057fca084",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Erik Masselink is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_d7e1348a73e953318d94",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Rohin McIntosh is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_f88c77725df15dd8b724",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Dylan Simone Meyer-O'Connor is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_e0c4e5f399105ca19131",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Aditya Paul is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_c192ae7d374d56f69656",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Ayush Rai is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_0e8f02b111645442a992",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Evan Routhier is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_ceba2f0c3b8b5131bd54",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Samuel Talkington is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_0e6013b13c1e54f2b206",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Handon Um is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_cf84125dff4c540097dd",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jacob Wang is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_cd2904e69e825979a698",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Paul Whatmough is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_65cdf65d13e55561b85b",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Tianyi Zeng is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_76dcf08b1c8d531b8d11",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jenny Mileski is listed on /electrical-engineering/people in a non-professorial staff/administrative role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_b3248da2606c5c19ab08",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jessica Olson is listed on /electrical-engineering/people in a non-professorial staff/administrative role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_d4763d951a9c591d90ff",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Lizette Ortega is listed on /electrical-engineering/people in a non-professorial staff/administrative role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_969cf32526205b9297f7",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Rady M. Rogers is listed on /electrical-engineering/people in a non-professorial staff/administrative role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_71fb9f00955c57f49f36",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Gioia Sweetland is listed on /electrical-engineering/people in a non-professorial staff/administrative role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_35a6b475e4df5a2289f9",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Stephanie A. Vincent is listed on /electrical-engineering/people in a non-professorial staff/administrative role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_d81830614e6b5aef91f3",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Haldun Balim is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_3471322ca8395192a327",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Egemen Bostan is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_fe755e2a91825652aaa9",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Andy Cheng is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_6194cba7295b53158598",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Shubham Choudhary is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_bd3ab468386158729aa3",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Aneel Damaraju is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_21cc67cd98565528808b",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "John Davis is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_6baa26d7a3325821b047",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Haebin Do is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_2015003bc98d559d8c27",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Mariam Elgamal is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_eff08039af6d5c42b6cb",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Tong Ge is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_a8a36497d1485039aa37",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Zander Ingare is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_1e5d40439f64552a98b0",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Shucheng Kang is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_03f61896671e555cbf18",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kevin Kim is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_06a7d802135c5031a632",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David Kong is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_22741f97d5eb5329964f",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kelly Lai is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_e896fe7b382e53db8402",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Chao-Chi Lan is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_2197d5cae2825aaeaf33",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Chia-Yi Lee is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_3910c33674d7548389db",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Karen Li is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_842418c07db35ed4a20d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Haitong Ma is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_59331a3352a657e7830c",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Lauren Malek is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_8ac36aff6d5357acbeb0",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Eliana Mann is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_92e28d87f69e5771a8ba",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Mark Mazumder is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_777c608a8ef357b2bbcd",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jalil Morris is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_2863136aaca15ae8846f",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Shruti Sharma is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_7f6b0b33013c5462abfb",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Nadir Badr Eddine Talha is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_9597365277265dbcbab8",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Apoorva Thanvantri is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_707aab0ee7755fb9b35d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Deven Tseng is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_4cfe935894465a189f08",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Aron Vekassy is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_12508e91e73c562cae3e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Donald Witt is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_9605a593097856c1b2b7",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Seungmok Youn is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_095fc0f1d214501995d4",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Qian Zhang is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_8081b8547bf35d5d88ab",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Yuyang Zhang is listed on /electrical-engineering/people in a non-professorial research/teaching/student role.",
+        "source_ids": [
+          "src_001"
+        ]
+      },
+      {
+        "person_id": "person_ac58fcfe0fee5e06b2f0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Donhee Ham appears on /electrical-engineering/people as Director of Undergraduate Studies in Electrical Engineering with an active SEAS professorship.",
+        "source_ids": [
+          "src_008",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_7e35dc2a09df53798749",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David Brooks appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Computer Science).",
+        "source_ids": [
+          "src_005",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_0b4e684375d35bbfa0ec",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "H.T. Kung has an explicit EE professorial appointment on their SEAS profile (William H. Gates Professor of Computer Science and Electrical Engineering and Vinton Hayes Senior Research Fellow in Ele).",
+        "source_ids": [
+          "src_018",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_7e864da20db2567985d7",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Federico Capasso holds Vinton Hayes Senior Research Fellow in Electrical Engineering with Primary Teaching Area Applied Physics (no Professor of EE title).",
+        "source_ids": [
+          "src_011",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_98971d1a21ee5110b33e",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Lene V. Hau appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Physics).",
+        "source_ids": [
+          "src_024",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_e2b40259eac75f53b5f6",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Eric Mazur appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Physics).",
+        "source_ids": [
+          "src_009",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_7baa16c3361e54738b16",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Maxim Prigozhin appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Physics).",
+        "source_ids": [
+          "src_028",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_7e106fb9012e50bfbddf",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Martin Bechthold appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_026",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_a5b76662efd95971bdcb",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David Clarke appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_006",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_da30fa6e0b155e94b716",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Yilun Du appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Computer Science).",
+        "source_ids": [
+          "src_043",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_10d43c82722f5fb7ba0e",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Stephanie Gil appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Computer Science).",
+        "source_ids": [
+          "src_038",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_9609d8c0381e53babce4",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Robert D. Howe appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_035",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_bff26708073358649294",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "L Mahadevan appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Mathematics).",
+        "source_ids": [
+          "src_022",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_5b6467dd6e315060a1fe",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Patrick Slade appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Bioengineering).",
+        "source_ids": [
+          "src_032",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_e55a0a1ca92053218a7d",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Maurice Smith appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Bioengineering).",
+        "source_ids": [
+          "src_027",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_57d0694916fd5555b8a0",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Shriya Srinivasan appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Bioengineering).",
+        "source_ids": [
+          "src_037",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_bdafa1dfec1250bb84dc",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Conor Walsh appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_004",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_fc494a5a08c15bc6a506",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Joanna Aizenberg appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_019",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_e4b04702910f59e4b577",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Michael J. Aziz appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_029",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_7d8df1aa24c954fa86b4",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Michael P. Brenner appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Mathematics).",
+        "source_ids": [
+          "src_030",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_5b30a7addf9a52e184f7",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Frank N Keutsch appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Environmental Science & Engineering).",
+        "source_ids": [
+          "src_014",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_4f71f7d46c1150ffa153",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Ahmad (Mo) Khalil appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Bioengineering).",
+        "source_ids": [
+          "src_002",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_339c265a5b08595988b1",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Petros Koumoutsakos appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Mathematics).",
+        "source_ids": [
+          "src_034",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_9205a9f30b005ad4a817",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Boris Kozinsky appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Materials Science & Mechanical Engineering).",
+        "source_ids": [
+          "src_003",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_14923f6fd054550fac8a",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Vinothan N. Manoharan appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Physics).",
+        "source_ids": [
+          "src_041",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_24104644757058f3a2d7",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Zachary Schiffer appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Applied Physics).",
+        "source_ids": [
+          "src_045",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_9cd1c8368bd75b50aa84",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "John H. Shaw appears on /electrical-engineering/faculty-research or /people without an explicit EE professorial appointment (Primary Teaching Area: Environmental Science & Engineering).",
+        "source_ids": [
+          "src_020",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_a74ebe3a44a45ecc9d46",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Frank Doyle holds an explicit Emeritus title (John A. and Elizabeth S. Armstrong Professor of Engineering and Applied Sciences, Emeritus Professor Emeritus).",
+        "source_ids": [
+          "src_013",
+          "src_001",
+          "src_000"
+        ]
+      },
+      {
+        "person_id": "person_4105f13e634455de9b98",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Yue Lu has an explicit EE professorial appointment on their SEAS profile (Gordon McKay Professor of Electrical Engineering and of Applied Mathematics Director of Graduate Studies, Applied Mathem).",
+        "source_ids": [
+          "src_044",
+          "src_001",
+          "src_000"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_000",
+        "url": "https://seas.harvard.edu/electrical-engineering/faculty-research",
+        "observed_at": "2026-11-24T08:40:05.584952+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "7c2d8e510b8b717349576789acbb5d1f897d1d8f6e2a0eb83daaa33665af4ede"
+      },
+      {
+        "id": "src_001",
+        "url": "https://seas.harvard.edu/electrical-engineering/people",
+        "observed_at": "2026-11-24T08:40:05.585392+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "dab7ccb42a450ca3e392f55c66b6c144e2fb896f10dd6085e77fedb6d347280e"
+      },
+      {
+        "id": "src_002",
+        "url": "https://seas.harvard.edu/person/ahmad-mo-khalil",
+        "observed_at": "2026-11-24T08:40:05.585958+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "ef93b229e2fbc603f5125abc33b2d9d84f06be8956e1ab75678b95add40a575f"
+      },
+      {
+        "id": "src_003",
+        "url": "https://seas.harvard.edu/person/boris-kozinsky",
+        "observed_at": "2026-11-24T08:40:05.586667+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "ef76484a8302d2465ab22fa4c5093d0b88d373c5fc67b55c0956a6d5ed189bb6"
+      },
+      {
+        "id": "src_004",
+        "url": "https://seas.harvard.edu/person/conor-walsh",
+        "observed_at": "2026-11-24T08:40:05.587280+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "2ac44b384c2b965be51706a3bffc042729cc9127b4a4a7d45289cf839bfd584b"
+      },
+      {
+        "id": "src_005",
+        "url": "https://seas.harvard.edu/person/david-brooks",
+        "observed_at": "2026-11-24T08:40:05.587941+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "1e0046e8b30e63f970985c01e9e01e351f57e976324a14fad17c74d6538b1e5e"
+      },
+      {
+        "id": "src_006",
+        "url": "https://seas.harvard.edu/person/david-clarke",
+        "observed_at": "2026-11-24T08:40:05.588475+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "f85eace8982412c58364a9d29d75bd2d2a8d9172fbe32364bfddf714d58f6cbe"
+      },
+      {
+        "id": "src_007",
+        "url": "https://seas.harvard.edu/person/demba-ba",
+        "observed_at": "2026-11-24T08:40:05.588997+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "74e92176d7f5cbec8e5fe5bd14308b34de127da0a050a993653007d6257ebba6"
+      },
+      {
+        "id": "src_008",
+        "url": "https://seas.harvard.edu/person/donhee-ham",
+        "observed_at": "2026-11-24T08:40:05.589648+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "c44db0fd979ddc3c2be9263b1291abe60c7e44af3c1804a554b61fb99d0ef235"
+      },
+      {
+        "id": "src_009",
+        "url": "https://seas.harvard.edu/person/eric-mazur",
+        "observed_at": "2026-11-24T08:40:05.590393+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "ec937a1486d792b6771015331dfd6d9cd993d80092bd920104707e232c64d1b7"
+      },
+      {
+        "id": "src_010",
+        "url": "https://seas.harvard.edu/person/evelyn-hu",
+        "observed_at": "2026-11-24T08:40:05.591114+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "1551aceefc8428a3d44c06cdffeefe3b33e5d0be204d5602957e38df857dd5e9"
+      },
+      {
+        "id": "src_011",
+        "url": "https://seas.harvard.edu/person/federico-capasso",
+        "observed_at": "2026-11-24T08:40:05.591589+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "0be5f96807900227dc3b480206bdb50caa86af3ce0908f68c222b7d753f26052"
+      },
+      {
+        "id": "src_012",
+        "url": "https://seas.harvard.edu/person/flavio-calmon",
+        "observed_at": "2026-11-24T08:40:05.624507+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "8ef002d874c0fc7b79e718aea5b069bd5da1b22fd9c4541850f2ef152b668094"
+      },
+      {
+        "id": "src_013",
+        "url": "https://seas.harvard.edu/person/frank-doyle",
+        "observed_at": "2026-11-24T08:40:05.633733+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "7d1427a68fc273b486ca0535ab9c95bd33491f08a0e05ee20e52258bbfee02f9"
+      },
+      {
+        "id": "src_014",
+        "url": "https://seas.harvard.edu/person/frank-keutsch",
+        "observed_at": "2026-11-24T08:40:05.639379+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "490a2522716ab2fd7a4a3b2f2513400a8bbc9dcc99e61c4fc933589592dd3e72"
+      },
+      {
+        "id": "src_015",
+        "url": "https://seas.harvard.edu/person/gage-hills",
+        "observed_at": "2026-11-24T08:40:05.641253+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "0d0ebba746c9ba30eb95d793ac618d3dc3e123d2157da65c78e3b146db7579f9"
+      },
+      {
+        "id": "src_016",
+        "url": "https://seas.harvard.edu/person/gu-yeon-wei",
+        "observed_at": "2026-11-24T08:40:05.642672+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "2eb79528af324b54d624ea22a597dca7bfc42eada49061f183c4e71ae897a9f6"
+      },
+      {
+        "id": "src_017",
+        "url": "https://seas.harvard.edu/person/heng-yang",
+        "observed_at": "2026-11-24T08:40:05.643258+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "aa8dff1cb67112af3af457744e15e64d247f147117057af74920a5a556c45698"
+      },
+      {
+        "id": "src_018",
+        "url": "https://seas.harvard.edu/person/ht-kung",
+        "observed_at": "2026-11-24T08:40:05.644934+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "0ab7c9e1c6f47277f933d012732acce005d0f27dc8585856c33b0eca8943342d"
+      },
+      {
+        "id": "src_019",
+        "url": "https://seas.harvard.edu/person/joanna-aizenberg",
+        "observed_at": "2026-11-24T08:40:05.645433+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "14bf16c7c605bc659114de497d15a8ae7df472b823d0a0af7b58fc94b16fd117"
+      },
+      {
+        "id": "src_020",
+        "url": "https://seas.harvard.edu/person/john-shaw",
+        "observed_at": "2026-11-24T08:40:05.646195+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "a3d4e693afb3921cde62a8d38338f62f4f6cda80aaaea3fc4cc575e123a6b3ea"
+      },
+      {
+        "id": "src_021",
+        "url": "https://seas.harvard.edu/person/kiyoul-yang",
+        "observed_at": "2026-11-24T08:40:05.646573+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "9d1ada07b8c27aabab2da8b1218273881e1709fb63677253d503e0ec9ed0c73f"
+      },
+      {
+        "id": "src_022",
+        "url": "https://seas.harvard.edu/person/l-mahadevan",
+        "observed_at": "2026-11-24T08:40:05.647064+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "2a3718d2e0ccf4bda1aff85bdea0e085e965e06fa323b11ec152ddb65a929631"
+      },
+      {
+        "id": "src_023",
+        "url": "https://seas.harvard.edu/person/le-xie",
+        "observed_at": "2026-11-24T08:40:05.651716+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "3fbfb108dcfd8f8a59e264ea30b921f1f3f5d1e1ef744dfbe14bf83db3dc4535"
+      },
+      {
+        "id": "src_024",
+        "url": "https://seas.harvard.edu/person/lene-hau",
+        "observed_at": "2026-11-24T08:40:05.666597+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "2bab6055abfd031eed08d70a3f943f9ded81d8065fee45f0286d3ec399db4df9"
+      },
+      {
+        "id": "src_025",
+        "url": "https://seas.harvard.edu/person/marko-loncar",
+        "observed_at": "2026-11-24T08:40:05.668910+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "56727774e44166cf5028e658fed0a11485e971f7a94c75b8119af341dd5250e0"
+      },
+      {
+        "id": "src_026",
+        "url": "https://seas.harvard.edu/person/martin-bechthold",
+        "observed_at": "2026-11-24T08:40:05.671520+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "3a3b951f06c4fe916b124414a6ebfda0db982f845d532b9d308273fdbe7e154f"
+      },
+      {
+        "id": "src_027",
+        "url": "https://seas.harvard.edu/person/maurice-smith",
+        "observed_at": "2026-11-24T08:40:05.675459+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "f3800802acc640915bca6840a64911189fe4fbdfab0156d0c8bb1432f2494f63"
+      },
+      {
+        "id": "src_028",
+        "url": "https://seas.harvard.edu/person/maxim-prigozhin",
+        "observed_at": "2026-11-24T08:40:05.683352+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "8004b85db66046c5b9735a191a6893f8be1d126d64417d1cc9e09416c03bcc70"
+      },
+      {
+        "id": "src_029",
+        "url": "https://seas.harvard.edu/person/michael-aziz",
+        "observed_at": "2026-11-24T08:40:05.684491+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "5bed0096a473830fd2b24f3d09330f10f4baba5b9f3e918873f9e59e1e8429ca"
+      },
+      {
+        "id": "src_030",
+        "url": "https://seas.harvard.edu/person/michael-brenner",
+        "observed_at": "2026-11-24T08:40:05.688727+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "adad6dd08c5076ee6313114ced45ac1b7ea2a4ac24bee15e30f87f965c73c7ef"
+      },
+      {
+        "id": "src_031",
+        "url": "https://seas.harvard.edu/person/na-li",
+        "observed_at": "2026-11-24T08:40:05.689460+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "53d07d4fc5a42c4534635d8d785753d12b95146da4e6e65b7741deb87eacf122"
+      },
+      {
+        "id": "src_032",
+        "url": "https://seas.harvard.edu/person/patrick-slade",
+        "observed_at": "2026-11-24T08:40:05.690176+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "8b42e6d2ca4b32cfd1acb7fab00358e787f97240cd666e162d82f6a6d3ffd5f7"
+      },
+      {
+        "id": "src_033",
+        "url": "https://seas.harvard.edu/person/paul-horowitz",
+        "observed_at": "2026-11-24T08:40:05.690682+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "eec87a49fd802540f3500809ae9d755c74a41915eb3390135488d92d1d98aad9"
+      },
+      {
+        "id": "src_034",
+        "url": "https://seas.harvard.edu/person/petros-koumoutsakos",
+        "observed_at": "2026-11-24T08:40:05.691028+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "378c17db5347b1bd8d46cf489191d1ae3bc59a8726e4f9ac8f181d7683004ce3"
+      },
+      {
+        "id": "src_035",
+        "url": "https://seas.harvard.edu/person/robert-howe",
+        "observed_at": "2026-11-24T08:40:05.695518+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "a339b7905c57c0a5bf44ac2078138424b3b67f0a235dc9082e83eac2d9fc3b88"
+      },
+      {
+        "id": "src_036",
+        "url": "https://seas.harvard.edu/person/robert-wood",
+        "observed_at": "2026-11-24T08:40:05.697543+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "50f990bf907cb0b64ad8975f759272053047ae919b2b46974c5082d26d4cb11b"
+      },
+      {
+        "id": "src_037",
+        "url": "https://seas.harvard.edu/person/shriya-srinivasan",
+        "observed_at": "2026-11-24T08:40:05.698080+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "b020b6e8a9519ad5346d9d6fb350d6f2701ed7c43a43a63efd91ec6acc883939"
+      },
+      {
+        "id": "src_038",
+        "url": "https://seas.harvard.edu/person/stephanie-gil",
+        "observed_at": "2026-11-24T08:40:05.736969+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "b543c581f89b967d42b2df5f06f4f5db339974f58878586cf966e3324e87ccb0"
+      },
+      {
+        "id": "src_039",
+        "url": "https://seas.harvard.edu/person/todd-zickler",
+        "observed_at": "2026-11-24T08:40:05.739004+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "295b58ebf0d466f4fa17de0e1c9f6812b534f3923658bce1afb4e41267b00da6"
+      },
+      {
+        "id": "src_040",
+        "url": "https://seas.harvard.edu/person/vijay-janapa-reddi",
+        "observed_at": "2026-11-24T08:40:05.741326+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "91408f2e065a8879270bcb31f740b0bddce07466c410c079e317b4916403d1fc"
+      },
+      {
+        "id": "src_041",
+        "url": "https://seas.harvard.edu/person/vinothan-manoharan",
+        "observed_at": "2026-11-24T08:40:05.743133+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "bb282e01f0762afbc99328de6a7d4e3493ef392721aba5d36b410f7b5f34fb01"
+      },
+      {
+        "id": "src_042",
+        "url": "https://seas.harvard.edu/person/woodward-yang",
+        "observed_at": "2026-11-24T08:40:05.747831+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "3c2913f3e529e26ceb924a1673913cc4cbacf8dbce6d3a757a008049576425c7"
+      },
+      {
+        "id": "src_043",
+        "url": "https://seas.harvard.edu/person/yilun-du",
+        "observed_at": "2026-11-24T08:40:05.748840+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "e29b00d3ee2c88cff7050d2242932eb24fa39b3983ecee96d011f0f05127da17"
+      },
+      {
+        "id": "src_044",
+        "url": "https://seas.harvard.edu/person/yue-lu",
+        "observed_at": "2026-11-24T08:40:05.749881+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "0f3ef651db873b5b10e72902f0e9af27f26d75fae661348c58d73a95f1c7dc42"
+      },
+      {
+        "id": "src_045",
+        "url": "https://seas.harvard.edu/person/zachary-schiffer",
+        "observed_at": "2026-11-24T08:40:05.753233+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_document",
+        "response_sha256": "8432782e5cfa0993dc7c0233e52097841aa2d1a3bce25f20c0a9287f73a8e42c"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_25fdaf9c0760466db0c4754d3ac76f18",
+    "candidate_sha256": "9123803a8d7d9fd06942ecd22b2b848a9dd1143b27cdcabce77e2c41d8e21bd3",
+    "transport": "t3",
+    "run_id": "audit-harvard-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:40:54.562191+00:00",
+    "exit_code": 0
+  }
+}

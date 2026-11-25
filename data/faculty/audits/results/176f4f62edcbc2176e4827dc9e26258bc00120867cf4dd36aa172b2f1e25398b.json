@@ -1,0 +1,2876 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/8f0c5e52e83730946674a6721ddb82e02e2067fd5860937bc939fc6e6cf8af10.json",
+    "sha256": "8f0c5e52e83730946674a6721ddb82e02e2067fd5860937bc939fc6e6cf8af10"
+  },
+  "brief": {
+    "file": "audits/briefs/a59c21385e0bd73952e8cff38fe9a28881659ada292aeeddc2a10c83c7b3aca9.json",
+    "sha256": "a59c21385e0bd73952e8cff38fe9a28881659ada292aeeddc2a10c83c7b3aca9"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_d560d89fd49c4ef3a2a8f1d3cc35cdbc",
+    "candidate_sha256": "350d1f319aaa9037014695370d94719b24135a842024fd6f7b109ce58ba16673",
+    "reviewer_id": "claude-opus-5-5-v5-t20-verify",
+    "reviewed_at": "2026-11-23T11:30:37.989914+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://engineering.tamu.edu/biomedical/profiles/Hoyt-Kenneth.html",
+        "https://engineering.tamu.edu/biomedical/profiles/cote-gerard-l.html",
+        "https://engineering.tamu.edu/contact/profiles/bishop-robert.html",
+        "https://engineering.tamu.edu/electrical/profiles/adatta.html",
+        "https://engineering.tamu.edu/electrical/profiles/adpatton.html",
+        "https://engineering.tamu.edu/electrical/profiles/ahan.html",
+        "https://engineering.tamu.edu/electrical/profiles/akarsilayan.html",
+        "https://engineering.tamu.edu/electrical/profiles/asprintson.html",
+        "https://engineering.tamu.edu/electrical/profiles/begovic-miroslav.html",
+        "https://engineering.tamu.edu/electrical/profiles/benner-carl.html",
+        "https://engineering.tamu.edu/electrical/profiles/birchfield-adam.html",
+        "https://engineering.tamu.edu/electrical/profiles/bjyoon.html",
+        "https://engineering.tamu.edu/electrical/profiles/bouhali-othmane.html",
+        "https://engineering.tamu.edu/electrical/profiles/chen-xin.html",
+        "https://engineering.tamu.edu/electrical/profiles/cmadsen.html",
+        "https://engineering.tamu.edu/electrical/profiles/cnguyen.html",
+        "https://engineering.tamu.edu/electrical/profiles/csingh.html",
+        "https://engineering.tamu.edu/electrical/profiles/csu.html",
+        "https://engineering.tamu.edu/electrical/profiles/davis-katherine.html",
+        "https://engineering.tamu.edu/electrical/profiles/drussell.html",
+        "https://engineering.tamu.edu/electrical/profiles/duffield-nick.html",
+        "https://engineering.tamu.edu/electrical/profiles/eden-gary.html",
+        "https://engineering.tamu.edu/electrical/profiles/eserpedin.html",
+        "https://engineering.tamu.edu/electrical/profiles/fan-zhiwen.html",
+        "https://engineering.tamu.edu/electrical/profiles/garg-raghav.html",
+        "https://engineering.tamu.edu/electrical/profiles/gchoi.html",
+        "https://engineering.tamu.edu/electrical/profiles/georghiades-costas.html",
+        "https://engineering.tamu.edu/electrical/profiles/gong-jiarui.html",
+        "https://engineering.tamu.edu/electrical/profiles/hampel-arias-zigfried.html",
+        "https://engineering.tamu.edu/electrical/profiles/htoliyat.html",
+        "https://engineering.tamu.edu/electrical/profiles/huang-garng.html",
+        "https://engineering.tamu.edu/electrical/profiles/ihou.html",
+        "https://engineering.tamu.edu/electrical/profiles/iskander-marco.html",
+        "https://engineering.tamu.edu/electrical/profiles/jafari-roozbeh.html",
+        "https://engineering.tamu.edu/electrical/profiles/jang-wonhyeok.html",
+        "https://engineering.tamu.edu/electrical/profiles/jboutros.html",
+        "https://engineering.tamu.edu/electrical/profiles/jchamberland.html",
+        "https://engineering.tamu.edu/electrical/profiles/jhowze.html",
+        "https://engineering.tamu.edu/electrical/profiles/jhu.html",
+        "https://engineering.tamu.edu/electrical/profiles/jji.html",
+        "https://engineering.tamu.edu/electrical/profiles/johnson-matthew.html",
+        "https://engineering.tamu.edu/electrical/profiles/jsilvamartinez.html",
+        "https://engineering.tamu.edu/electrical/profiles/jzou.html",
+        "https://engineering.tamu.edu/electrical/profiles/kalafatis-stavros.html",
+        "https://engineering.tamu.edu/electrical/profiles/kalathil-dileep.html",
+        "https://engineering.tamu.edu/electrical/profiles/katehi-linda.html",
+        "https://engineering.tamu.edu/electrical/profiles/kbutlerpurry.html",
+        "https://engineering.tamu.edu/electrical/profiles/kchang.html",
+        "https://engineering.tamu.edu/electrical/profiles/kentesari.html",
+        "https://engineering.tamu.edu/electrical/profiles/khan-irfan.html",
+        "https://engineering.tamu.edu/electrical/profiles/kmichalski.html",
+        "https://engineering.tamu.edu/electrical/profiles/knarayanan.html",
+        "https://engineering.tamu.edu/electrical/profiles/knowka.html",
+        "https://engineering.tamu.edu/electrical/profiles/koohi-milad.html",
+        "https://engineering.tamu.edu/electrical/profiles/kpandey.html",
+        "https://engineering.tamu.edu/electrical/profiles/kumar-suryansh.html",
+        "https://engineering.tamu.edu/electrical/profiles/kwatson.html",
+        "https://engineering.tamu.edu/electrical/profiles/lin-pao-tai.html",
+        "https://engineering.tamu.edu/electrical/profiles/lkish.html",
+        "https://engineering.tamu.edu/electrical/profiles/lstotts.html",
+        "https://engineering.tamu.edu/electrical/profiles/lusher-john.html",
+        "https://engineering.tamu.edu/electrical/profiles/massaoudi-mohamed.html",
+        "https://engineering.tamu.edu/electrical/profiles/mehsani.html",
+        "https://engineering.tamu.edu/electrical/profiles/menon-arya.html",
+        "https://engineering.tamu.edu/electrical/profiles/miller-scott.html",
+        "https://engineering.tamu.edu/electrical/profiles/mkezunovic.html",
+        "https://engineering.tamu.edu/electrical/profiles/mlu.html",
+        "https://engineering.tamu.edu/electrical/profiles/moreira-oscar.html",
+        "https://engineering.tamu.edu/electrical/profiles/murali-varun.html",
+        "https://engineering.tamu.edu/electrical/profiles/mweichold.html",
+        "https://engineering.tamu.edu/electrical/profiles/oeknoyan.html",
+        "https://engineering.tamu.edu/electrical/profiles/overbye-thomas.html",
+        "https://engineering.tamu.edu/electrical/profiles/paramesh-jeyanandh.html",
+        "https://engineering.tamu.edu/electrical/profiles/park-hangue.html",
+        "https://engineering.tamu.edu/electrical/profiles/pcantrell.html",
+        "https://engineering.tamu.edu/electrical/profiles/peeples-joshua.html",
+        "https://engineering.tamu.edu/electrical/profiles/penjeti.html",
+        "https://engineering.tamu.edu/electrical/profiles/pgratz.html",
+        "https://engineering.tamu.edu/electrical/profiles/phemmer.html",
+        "https://engineering.tamu.edu/electrical/profiles/pkumar.html",
+        "https://engineering.tamu.edu/electrical/profiles/pottathuparambil-robin.html",
+        "https://engineering.tamu.edu/electrical/profiles/qian-xiaoning.html",
+        "https://engineering.tamu.edu/electrical/profiles/rajendran-jeyavijayan.html",
+        "https://engineering.tamu.edu/electrical/profiles/rbalog.html",
+        "https://engineering.tamu.edu/electrical/profiles/reddy-narasimha.html",
+        "https://engineering.tamu.edu/electrical/profiles/rentzepis-peter.html",
+        "https://engineering.tamu.edu/electrical/profiles/rharris.html",
+        "https://engineering.tamu.edu/electrical/profiles/rmercer.html",
+        "https://engineering.tamu.edu/electrical/profiles/rnevels.html",
+        "https://engineering.tamu.edu/electrical/profiles/roy-sandip.html",
+        "https://engineering.tamu.edu/electrical/profiles/rrighetti.html",
+        "https://engineering.tamu.edu/electrical/profiles/sarkka-simo.html",
+        "https://engineering.tamu.edu/electrical/profiles/shen-yang.html",
+        "https://engineering.tamu.edu/electrical/profiles/shi-weiping.html",
+        "https://engineering.tamu.edu/electrical/profiles/shoyos.html",
+        "https://engineering.tamu.edu/electrical/profiles/skhatri.html",
+        "https://engineering.tamu.edu/electrical/profiles/sokolov-alexei.html",
+        "https://engineering.tamu.edu/electrical/profiles/spalermo.html",
+        "https://engineering.tamu.edu/electrical/profiles/sshakkottai.html",
+        "https://engineering.tamu.edu/electrical/profiles/swright.html",
+        "https://engineering.tamu.edu/electrical/profiles/tao-jian.html",
+        "https://engineering.tamu.edu/electrical/profiles/tian-chao.html",
+        "https://engineering.tamu.edu/electrical/profiles/tliu.html",
+        "https://engineering.tamu.edu/electrical/profiles/tyler-john.html",
+        "https://engineering.tamu.edu/electrical/profiles/ubraganeto.html",
+        "https://engineering.tamu.edu/electrical/profiles/williams-r-stanley.html",
+        "https://engineering.tamu.edu/electrical/profiles/xie-le.html",
+        "https://engineering.tamu.edu/electrical/profiles/xzhang.html",
+        "https://engineering.tamu.edu/electrical/profiles/yi-suin.html",
+        "https://engineering.tamu.edu/electrical/profiles/zhang-han.html",
+        "https://engineering.tamu.edu/electrical/profiles/zhang-zhe.html",
+        "https://engineering.tamu.edu/etid/profiles/ekin-sabit.html",
+        "https://engineering.tamu.edu/etid/profiles/hammad-eman.html",
+        "https://engineering.tamu.edu/etid/profiles/kabir-elnaz.html",
+        "https://engineering.tamu.edu/etid/profiles/karim-muhammad-faeyz.html",
+        "https://engineering.tamu.edu/etid/profiles/pandey-gaurav.html",
+        "https://engineering.tamu.edu/etid/profiles/shsieh.html",
+        "https://engineering.tamu.edu/etid/profiles/song-xingyong.html",
+        "https://engineering.tamu.edu/etid/profiles/wzhan.html",
+        "https://engineering.tamu.edu/etid/profiles/zhou-yue.html",
+        "https://engineering.tamu.edu/industrial/profiles/eksin-ceyhun.html",
+        "https://engineering.tamu.edu/materials/profiles/lin-yuxuan-cosmi.html",
+        "https://engineering.tamu.edu/materials/profiles/xqian.html",
+        "https://engineering.tamu.edu/mechanical/profiles/lan-shoufeng.html",
+        "https://engineering.tamu.edu/mechanical/profiles/wang-ya.html",
+        "https://engineering.tamu.edu/petroleum/profiles/misra-sid.html"
+      ],
+      "checked_list_ids": [
+        "electrical_json"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_03260ecec0fd55caa6cc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; O'Donnell Foundation Chair III; Director, Smart Grid Center; Member, National Academy of Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_ebaa6b5040b7e08e9f5bc2a9"
+        ]
+      },
+      {
+        "person_id": "person_05ff4f7af2295b09a5b4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Affiliated Faculty, Electrical & Computer Engineering; Assistant Professor, Geography and Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_dea16c6616335e70c4b199b3"
+        ]
+      },
+      {
+        "person_id": "person_0632af9ceaeb5c6aa492",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Director, Renewable Energy and Advanced Power Electronics Laboratory (REAPER). Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_6ed5fff9e869f2e548a2c9ee",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_0b2e106dbab95aed884f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Affiliated Faculty, Electrical & Computer Engineering and Nuclear Engineering; Assistant Professor, College of Performance, Visualization & Fine Arts. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_cd078b58f6add1af73d91281"
+        ]
+      },
+      {
+        "person_id": "person_0c9c777f30a459abb5e0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering; Affiliated Faculty, Materials Science & Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_b712f89528d40e55fee0ca04"
+        ]
+      },
+      {
+        "person_id": "person_0dda6f076c945392aebc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_235ccd826db954b1da5c8cf0",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_114452ab3b01523295f1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_d8f6b0234e910c4a999a0fa7"
+        ]
+      },
+      {
+        "person_id": "person_12aff509101f5c6bb237",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_c3a6f0e969dfe108b9cce515"
+        ]
+      },
+      {
+        "person_id": "person_134f99b1f5ba5b5db956",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor of Practice, Electrical & Computer Engineering. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_002c0660381f4c966978020b",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_1440c56e414e5d1a84be",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Texas Instruments (TI) Chair; Member, National Academy of Science; Affiliated Faculty, Biomedical Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_0e200892c2d2cc8ceff249b9",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_192048803ac35eb98fc9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_5d00f73b5db494543aab18ae",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_1ac1b3fefd435a4bad36",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; J.W. Runyon Jr. Professor. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_f6fdf7fb725e0a7399bae14e"
+        ]
+      },
+      {
+        "person_id": "person_1b719158181056919a32",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Industrial & Systems Engineering; Corrie and Jim Furber '64 Faculty Fellow; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_d2135f3d7609ad2a02c749d6"
+        ]
+      },
+      {
+        "person_id": "person_1bc38f530d0c53ea93aa",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_2b5dae3268a473219ad81ce3",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_1db5b89aa3b55e8ab9e8",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Research Professor, Electrical & Computer Engineering. Research-track professorial title.",
+        "source_ids": [
+          "shared_frozen_57e3e757007cca8fec43bb6c",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_2010a189daee5176b204",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Engineering Technology & Industrial Distribution; Electronic Systems Engineering Technology; Affiliated Faculty, Electrical and Computer Engineering; Affiliated Faculty, Texas A&M Energy Institute. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_96d4f5d1850506bb1fbc5059"
+        ]
+      },
+      {
+        "person_id": "person_208ca9cde4a151338ccb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_bc8e91f9d1199a043358141d"
+        ]
+      },
+      {
+        "person_id": "person_25f50d94d3b158369f46",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Mechanical Engineering; James J Cain '51 Faculty Fellow II; Affiliated Faculty, Electrical & Computer Engineering; Affiliated Faculty, Materials Science & Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_07ffdd3fd3e5fcc70a40ae30",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_273e18dcd7a253e0a836",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_66af4e90cc1cafd227db685e",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_27bd799296d859a89191",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Affiliated Faculty, Computer Science and Engineering; Debbie & Dennis Segers ‘75 Professorship. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_44eada2fb3f0a6f0fb82defe",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_2b4b52e0b266508fbb83",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_709b5508a3275190e0d4aa71",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_31ac457817bf5945ae5a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Regents Professor; Irma Runyon Chair; University Distinguished Professor; Member, National Academy of Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_f27995c66a310beb0dddad3a"
+        ]
+      },
+      {
+        "person_id": "person_346de524b9ea50508e59",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_84cf9d9cbc0a0c48f1e3d5c2"
+        ]
+      },
+      {
+        "person_id": "person_355a62c591d95f579d03",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Director of Graduate Programs, Electrical & Computer Engineering; Professor, Electrical & Computer Engineering; J.W. Runyon, Jr. '35 Professor II. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_d78f9581978f3eb10f676958"
+        ]
+      },
+      {
+        "person_id": "person_365cd1aa1dfd532cb030",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4547d41335926ee22be04ad6",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_390d0f94a479522c97b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_20e73c142b7933853a51ab1f",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_3a2160169f7e569ebb97",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Affiliated Faculty, Electrical & Computer Engineering. Official directory and profile carry only \"Affiliated Faculty, ECE\" with no current TAMU professorial title (non-TAMU phone). Settled ruling: excluded affiliate.",
+        "source_ids": [
+          "shared_frozen_062a3422a882590a5e70e390",
+          "shared_frozen_1a76469560bb1b624aa1b07f",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_3a2f4a238dd15ee6a831",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_d1ea4f2ae90d77104d92f783"
+        ]
+      },
+      {
+        "person_id": "person_3be436b77aae54478fdb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Segers Family Dean's Excellence Professorship II; Affiliated Faculty, Computer Science and Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_c814e91310a059b3ba44e88a"
+        ]
+      },
+      {
+        "person_id": "person_3bfadcd8053f5a4881f6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_3c8b45afb8f3e20fe405d8d8",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_3c3545b6a98559c8b3bf",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Engineering Technology & Industrial Distribution; Charlotte and Walter Buchanan Faculty Fellow; Electronic Systems Engineering Technology; Director, Generative AI Literacy Initiative, Texas A&M Institute of Data Science (TAMIDS); Research Coordination Fellow, TAMIDS; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_8a308ad5ef83436739554310"
+        ]
+      },
+      {
+        "person_id": "person_3c6b8d5980605ce1b1f5",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Affiliated Faculty, Electrical & Computer Engineering; Affiliated Faculty, Institute for Quantum Science and Engineering (IQSE) at Texas A&M University; Emeritus Professor, University of Illinois; Distinguished Lecturer, Hagler Institute for Advanced Study at Texas A&M University. No current TAMU professorial appointment: Emeritus Professor at Illinois and Distinguished Lecturer at the Hagler Institute; ECE designation is affiliated-only.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_a69e222cdf73223b84ffb2ee"
+        ]
+      },
+      {
+        "person_id": "person_3f641909d40d5406b8bc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Affiliated Faculty, Computer Science & Engineering; Eugene E. Webb ‘43 Professorship. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_6df73efebb69c1a23abef0a3",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_3fe5017e448e503b81e4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering; Holleran-Bowman Faculty Fellow; Affiliated Faculty, Computer Science & Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4abb821aacbd6c635493e463",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_42f52e07e68e5ca0a97e",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Qatar Faculty']; titles: Research Professor, Electrical & Computer Engineering at Qatar; Director, Research Computing. Research professor title (research-only track).",
+        "source_ids": [
+          "shared_frozen_0cc1a051836b9aa8134490d9",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_44259b0cabde5a46a12d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Agency Director, Texas A&M Engineering Experiment Station; Project Office Director for Health Initiatives, Strategic Advanced Research Unit, Texas A&M Engineering Experiment Station; Professor, Biomedical Engineering; James J. Cain Professor I; Regents Professor; Director, Center for Remote Health Technologies and Systems; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_37c24f93f112493807d01aa3",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_481c59bde3245d0e9c90",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering; Debbie and Dennis Segers '75 Professor. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_f299803956c37a98d5edd1be"
+        ]
+      },
+      {
+        "person_id": "person_48ba286c66f35124b296",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_8962bd8d0353fec5c762f2a2"
+        ]
+      },
+      {
+        "person_id": "person_4b9e7e873d765c35b072",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_8c451da643ef249878735934"
+        ]
+      },
+      {
+        "person_id": "person_4c038b22f98357d2821e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering and Materials Science & Engineering; Director, Mid-Infrared Integrated Photonics and Remote Sensing (MiPRoS) Laboratory. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_74dc7f745bbb4114e9be44f7"
+        ]
+      },
+      {
+        "person_id": "person_4fa2de7a2473584ebe35",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_fa7f66ee46a8ce6c665b1b8e"
+        ]
+      },
+      {
+        "person_id": "person_5070d998954a5dc5b227",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Co-Director of Undergraduate Programs, Electrical & Computer Engineering; Professor of Practice, Electrical & Computer Engineering; TI Texas A&M Former Students Professor of Practice Fellow. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_fff79d5a19bfa5b1eca05a50"
+        ]
+      },
+      {
+        "person_id": "person_52e07b9b8fff5d3884c5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering; Woods Family Career Development Professorship. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_599ea789c2f287364630f671",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_52fd05c74855575dbfd3",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Assistant Professor, Materials Science and Engineering; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_8ade114c73bd5e25a187252d"
+        ]
+      },
+      {
+        "person_id": "person_533e961509ca566588cc",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Affiliated Faculty, Electrical & Computer Engineering; Professor, Physics & Astronomy. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_571ab6dbf29da205bd99565a",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_55011ee69413527494a8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Texas Instruments Jack Kilby Chair. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_da91aa087304472ff9d8e4da"
+        ]
+      },
+      {
+        "person_id": "person_5ae1eebf8da553eeab9e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Assistant Professor, Engineering Technology & Industrial Distribution; Electronic Systems Engineering Technology; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_bfb8828c119c3010b44004c0"
+        ]
+      },
+      {
+        "person_id": "person_5c5e4884b1be58918017",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Instructional Assistant Professor, Electrical & Computer Engineering. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_e18453d76ff6e2af73bb40cc"
+        ]
+      },
+      {
+        "person_id": "person_5db344a1bc8750f388a1",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Vice Chancellor for Engineering, The Texas A&M University System; Dean of Engineering, Texas A&M University; Director of the Texas A&M Engineering Experiment Station; Harold J. Haynes Dean's Chair in Engineering; Professor, Aerospace Engineering; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_0b22370d2ad48c3f326c26fd",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_5ec4a98cddc057e783c7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Royce E. Wisenbaker Professor I; Director, Texas A&M Institute of Data Science; Affiliated Faculty, Computer Science & Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_488d0047a71067b7255f354e",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_63da9604eeca51d9afcc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering; Raghvendra K. Pandey Faculty Fellowship. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_ff6964b2002500cc5d447b01"
+        ]
+      },
+      {
+        "person_id": "person_6448b2201d9c5d789213",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_9af167ce3095814ca1a28812"
+        ]
+      },
+      {
+        "person_id": "person_6678145157375dae9ca6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_fc2bad0ecb6aeb838de4ca24"
+        ]
+      },
+      {
+        "person_id": "person_6756cd4bd0445e419af1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; TI Professor I in Analog Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_44780a4f0c91c4bbcc7b8854",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_6a566f54d62557c9bf4e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_58afd18ebcb09c7553802461",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_6a7ded3edfce5929ba43",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_d0a2e24be13f9f779b578a94"
+        ]
+      },
+      {
+        "person_id": "person_6cd3e342a2c9591bbb7c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_9e1b2fadf503d90e7dc55af2"
+        ]
+      },
+      {
+        "person_id": "person_735d9d431ce7554d8737",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor of Practice, Electrical & Computer Engineering. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_1dc17a375222c00b4ef3e50c",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_769508df090152af8f7f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Co-Director of Undergraduate Programs, Electrical & Computer Engineering; Associate Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_2daee0bbb76f528e087b7d20",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_79e5df0d34ea5fd192d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering and Industrial & Systems Engineering; Regents Professor; Distinguished Professor; O’Donnell Foundation Chair I; Member, National Academy of Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_7661febc0634dcfd25de7776"
+        ]
+      },
+      {
+        "person_id": "person_7b9acaf5bf8a5ba7af34",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_9f3b81d9f723b52709871905"
+        ]
+      },
+      {
+        "person_id": "person_7e0e18dfcbf45ba0aed1",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Professor, Engineering Technology & Industrial Distribution; Manufacturing & Mechanical Engineering Technology; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_aa3e30cb4c0578b712f69329"
+        ]
+      },
+      {
+        "person_id": "person_7ef50bd04f845281b727",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering; Lauderdale Family Engineering Excellence Professor; ASCEND Fellow. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_39e386e4b16122a730c6f2ee",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_822a50ccea11504ea314",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Senior Professor, Electrical & Computer Engineering; Regents Professor; Interim Director, Institute for Engineering Education and Innovation (IEEI). Senior (Associate) Professor is the TAMU non-tenure-accruing title for faculty who have completed a tenured career and are retiring within a specified period (CAS faculty evaluation guidelines); graduate catalog lists the same title. Settled ruling: retired_working.",
+        "source_ids": [
+          "shared_frozen_1a76469560bb1b624aa1b07f",
+          "shared_frozen_5600b8f74b45a54a03e8ed10",
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_b3cb0902d6717a80d1b33b6b"
+        ]
+      },
+      {
+        "person_id": "person_843f7a3b1a7b558083ba",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Professor, Biomedical Engineering; Professor, Small Animal Clinical Sciences; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_50a2e96a379516172a6413ba",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_861ddb302f15500bb353",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_a1b763e212720d1e41fa5717"
+        ]
+      },
+      {
+        "person_id": "person_88f55b888df4591f9298",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Texas Instruments Engineering Professor. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_456391227f51e8a9aca44651",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_8da4966593565340a81f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['(none; tag electrical/Faculty)']; titles: Assistant Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_1a76469560bb1b624aa1b07f",
+          "shared_frozen_2ebee1124214527974d70a08",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_91f1ffa0203b57c6ac8b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Senior Lecturer Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_f67b46314ba5a8a2efaa5fb0"
+        ]
+      },
+      {
+        "person_id": "person_950520b9d117519293cc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_ec13002867f3afe3b2dc8713"
+        ]
+      },
+      {
+        "person_id": "person_951ee3df65545156babd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Affiliated Faculty, Computer Science and Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_784db17662984c0fb11d50d2"
+        ]
+      },
+      {
+        "person_id": "person_97f138d99d3a55f0a2f2",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Research Assistant Professor, Electrical & Computer Engineering. Research-track professorial title.",
+        "source_ids": [
+          "shared_frozen_5bf9d07fe303f789ff8ae2a3",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_983bcbc5592f5adba507",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_0eddc5a5a894f4f8eb73cf31",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_9a8b80c34b38572b93df",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Director, Global Cyber Research Institute. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_0261c93d391baf73748038f5",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_9bf0688be6ba51acb147",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering; Affiliated Faculty, Mechanical Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_5bc10c393c7334854f7a2c21",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_a01ade700f9c5f1ab67b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Robert Kennedy '26 Chair. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_7d1cf4b22e59a9f166500bd8"
+        ]
+      },
+      {
+        "person_id": "person_a1bd02785a6b50c9ac3c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor of Practice, Electrical & Computer Engineering. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_5945832c58313175556492ad",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_a43692c8a7b75697a216",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Professor, Engineering Technology & Industrial Distribution; Multidisciplinary Engineering Technology; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_9f86081d5f0d052182661b22"
+        ]
+      },
+      {
+        "person_id": "person_a67ad669d10a5db78c3b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Materials Science & Engineering; Joint Appointment, Physics and Astronomy; AZZ Inc. Fellow; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_51180fb67159c5193e7f01f0",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_a9187105acd55a81ba87",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Instructional Associate Professor, Electrical & Computer Engineering. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_c5361a6a51f76814fe9432e9"
+        ]
+      },
+      {
+        "person_id": "person_ab3f78905b585cc0becc",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Assistant Professor, Engineering Technology & Industrial Distribution; Industrial Distribution; Affiliated Faculty, Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_584ab0796f88b0401f63a29c",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_b166cfa696f5599f9bf4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Robert M. Kennedy '26 Professor I. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_75510f36ae9b673899c7e592"
+        ]
+      },
+      {
+        "person_id": "person_b227e09af740507fbcaf",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Assistant Professor, Electrical & Computer Engineering; Affiliated Faculty, Institute for Quantum Science and Engineering (IQSE) at Texas A&M. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_1c2ef863a4d829722e3295be",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_b22cd867b56e59909a46",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical and Computer Engineering; Affiliated Faculty, Texas A&M Institute for Neuroscience. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_431a8445a72376eb83a2bf37",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_b2339be45e3c558a9645",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Assistant Professor, Marine Engineering Technology in Galveston; Affiliated Faculty, Computer Science & Engineering and Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_755f318552850eb319a497f1"
+        ]
+      },
+      {
+        "person_id": "person_b617c9cd689256649d36",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Senior Associate Professor, Electrical & Computer Engineering. Senior (Associate) Professor is the TAMU non-tenure-accruing title for faculty who have completed a tenured career and are retiring within a specified period (CAS faculty evaluation guidelines); graduate catalog lists the same title. Settled ruling: retired_working.",
+        "source_ids": [
+          "shared_frozen_1732dad529adb0491ad8b216",
+          "shared_frozen_1a76469560bb1b624aa1b07f",
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_b3cb0902d6717a80d1b33b6b"
+        ]
+      },
+      {
+        "person_id": "person_b8801ba1f15d5a1395f2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Department Head, Electrical & Computer Engineering; Professor, Electrical & Computer Engineering; Regents Professor; Truchard Foundation Chair Professor. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_716d86c9e0522554bf2f3a58",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_b926a170b57c5e838b2a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical and Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_0d10ec859315ba0b98bda138",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_ba1f9065a6595be1ad3b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_705fea773543137cf08d54f3",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_baf29017d2b95f9f9557",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_a8d762d66599b0e28ad86912"
+        ]
+      },
+      {
+        "person_id": "person_bc0bbad25b825d19847a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Dean for Research, Texas A&M College of Engineering; Associate Agency Director, Texas A&M Engineering Experiment Station; Project Office Director for CHIPS, Strategic Advanced Research Unit, Texas A&M Engineering Experiment Station; Professor, Electrical & Computer Engineering; Texas Instruments Professorship II; Chancellor EDGES Fellow; Presidential Impact Fellow; Affiliated Faculty, Biomedical Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_c2a4310e52a4e739e72123d2"
+        ]
+      },
+      {
+        "person_id": "person_bc1c2e8573a752da9031",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Professor, Petroleum Engineering; Ted H. Smith, Jr. ’75 and Max R. Vordenbaum ‘73 DVG Professor; Affiliated Faculty, Electrical Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_25b0df9cffd96b3f4e519fe4",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_bd26530bf56252e3b37e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Engineering Technology & Industrial Distribution; Electronic Systems Engineering Technology; Affiliated Faculty, Electrical and Computer Engineering; Affiliated Faculty, Mechanical Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_04599680a296fe57bc752527",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_bdf17f0175a7516cbca2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering and Materials Science & Engineering; O'Donnell Foundation Chair II; Member, National Academy of Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_1346cc93c5064f57f7f43da7",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_c064a96a23e25b06ab04",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_6cd869c5e5695c3c3b2b6d2c",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_c232d439a4d75550889b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Royce E. Wisenbaker Professor II; Affiliated Faculty, Biomedical Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_b2af4b2269c084f20f2f9589"
+        ]
+      },
+      {
+        "person_id": "person_c2349731aea052cdbe22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Member, National Academy of Engineering; Wofford Cain Chair IV; University Distinguished Professor; Regents Professor. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_857c34e34d75f31abf9e205b"
+        ]
+      },
+      {
+        "person_id": "person_c3a0bf88f4cb5a33a4e8",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Assistant Professor, Performance Visualization and Fine Arts; Affiliated Faculty, Computer Science & Engineering and Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_67ba9dac7207effb3b8b1c36",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_c53e44a088a35fc0b010",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_3ca41a4097024914972d442f",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_c56e4a6e1c7d5fb5be81",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_758d4180791691815d5a0c19"
+        ]
+      },
+      {
+        "person_id": "person_c5a033e6b21b5fe88994",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4b5c4095a593e69288daffd0",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_c80d6f42ac04547cbc76",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Professor, Electrical & Computer Engineering at Qatar; Occidental Petroleum Professorship in STEM Leadership. Designated by College Station ECE as Affiliated Faculty; Professor of ECE at the Texas A&M Qatar branch campus (same institution; catalog: Professor, ECE-Qatar Campus). Settled ruling: affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a76469560bb1b624aa1b07f",
+          "shared_frozen_2c5d361c1288d4a434fb1438",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_c824e53a4b6a508cab8b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_de0d308de880edca294421a1"
+        ]
+      },
+      {
+        "person_id": "person_cc66348ab0745dc3912c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4d8d587f982e31b6870c42b0",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_cd0356b170ec57dfa801",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Raytheon Company Professorship. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_10474693d477b8e6f0c0da6b",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_d0519c0e036a5f61a09e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Delbert A. Whitaker Chair. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_f8f7725af96e7cb7ba8611ea"
+        ]
+      },
+      {
+        "person_id": "person_d8ce4e1e75335318aa98",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_2c65f52cc233b521426ed70a",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_d8d31b159a43520d84d6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering; TI Professor II in Analog Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_f028fe781adbffb1a08444c2"
+        ]
+      },
+      {
+        "person_id": "person_d979f0a95f2556ec9e12",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty', 'Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_674de8a9f8f6d6d0ac2c42c9",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_ddd1e3b9ed455aff831e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_ba64e90c13f27960ffb100f0"
+        ]
+      },
+      {
+        "person_id": "person_de7cb4ac914f529da1e9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Assistant Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_bca7188a1e1dd919a91c6c9f"
+        ]
+      },
+      {
+        "person_id": "person_e0c14f77698a5657b5d7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_052bfc9d91e8126a3e0503ce",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_e2d43efa641a5c0eaaa6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Member, National Academy of Engineering; Harry E. Bovay, Jr. Chair; University Distinguished Professor; Regents Professor. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_c158e20b0ffd3af6a7168cda"
+        ]
+      },
+      {
+        "person_id": "person_e6dd129fe3e355c398e7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Associate Dean for Faculty Success; Professor, Electrical & Computer Engineering; Albers Family Endowed Faculty Fellow. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_637d1eaf381d356e16e3133d",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_e7687face4d35b61b38e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Mechanical Engineering; Leland T. Jordan Career Development Professor; Affiliated Faculty, Biomedical Engineering, Computer Science & Engineering, and Electrical & Computer Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_4c50964332423394e5cccbb0",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_ea1ec14ac1ee59f4a4ca",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty', 'Leadership']; titles: Professor, Electrical & Computer Engineering; Associate Head for AI; Edgar and Yolanda Sanchez Endowed Chair; Presidential Professor for Teaching Excellence (PPTE). Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_dd020d0ad8467f98e5dd8918"
+        ]
+      },
+      {
+        "person_id": "person_ef410fbf803a5c209fb8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering; Regents Professor. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_838003684790919855e0a01a"
+        ]
+      },
+      {
+        "person_id": "person_f05b0d87405257478035",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Moore Professor. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_39a2d6c0a920d3ed24b496f3",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_f06ca7c5b4505699b7cb",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Professor, Engineering Technology & Industrial Distribution; Corrie & Jim Furber '64 Faculty Fellow; Multidisciplinary Engineering Technology; Affiliated Faculty, Electrical & Computer Engineering; Affiliated Faculty, Mechanical Engineering. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_5f1bec8e3383173382a2046e",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_f2a3f4592c9a5674b83c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Senior Lecturer, Electrical & Computer Engineering. Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_91a3ce60489c1e14d12a40b3"
+        ]
+      },
+      {
+        "person_id": "person_f4b208e6549650768a85",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Hewlett Packard Enterprise Company Chair. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_cc81c8a848800d5749518155"
+        ]
+      },
+      {
+        "person_id": "person_f84595a3bdc450208cc4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Associate Department Head for Undergraduate Studies Engineering Technology & Industrial Distribution,; Professor, Engineering Technology & Industrial Distribution; Electronic Systems Engineering Technology. Officially designated ECE Affiliated Faculty holding a current Texas A&M professorial appointment in another unit.",
+        "source_ids": [
+          "shared_frozen_258db75eb65378cde09c057f",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_f8766df23d485b189d40",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Professor, Electrical & Computer Engineering; Eric D. Rubin '06 Endowed Professor; Affiliated Faculty, Computer Science & Engineering. Regular ECE professorial appointment.",
+        "source_ids": [
+          "shared_frozen_20834b3fb42c46bd567d330d",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_fb2c765b5fd45c4a99da",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Affiliated Faculty']; titles: Adjunct Associate Professor, Electrical & Computer Engineering. Adjunct appointment.",
+        "source_ids": [
+          "shared_frozen_73457cead4d1ab75e6901d30",
+          "shared_frozen_80487246f08c18178120c5ba"
+        ]
+      },
+      {
+        "person_id": "person_fcda87b86af5505095a6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Emeritus Faculty']; titles: Professor Emeritus, Electrical & Computer Engineering. Emeritus appointment.",
+        "source_ids": [
+          "shared_frozen_52b4319f9ff07b8383c1f8d4",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      },
+      {
+        "person_id": "person_ffc8bbe14746519bba05",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "profile-data.json ECE tagSet ['Faculty']; titles: Instructional Assistant Professor, Electrical & Computer Engineering; Managing Director of Intelligent Electromagnetic Sensor Laboratories (iEMSL). Teaching-track title (instructional/lecturer/practice).",
+        "source_ids": [
+          "shared_frozen_39c1cf6854fe46f634ef04d8",
+          "shared_frozen_73457cead4d1ab75e6901d30"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_73457cead4d1ab75e6901d30",
+        "url": "https://engineering.tamu.edu/profile-data.json",
+        "observed_at": "2026-11-23T10:59:42.476951+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "97277ed996e7906b11401498bf0e8376afcde37beeea8d2f30f5758b6f5e553f"
+      },
+      {
+        "id": "shared_frozen_8fc239c291f2c4185a555284",
+        "url": "https://engineering.tamu.edu/electrical/profiles/index.html",
+        "observed_at": "2026-11-23T10:59:42.903954+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "be6d284d6e4ff3bf2999a02741144d7d0030cde010e8623b37516e081097955a"
+      },
+      {
+        "id": "shared_frozen_1a76469560bb1b624aa1b07f",
+        "url": "https://catalog.tamu.edu/graduate/faculty",
+        "observed_at": "2026-11-23T11:23:24.796800+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2a0ca68ca30b7a4740c3a56d242568d5af724228abd260f0b961d06da1e15e85"
+      },
+      {
+        "id": "shared_frozen_b3cb0902d6717a80d1b33b6b",
+        "url": "https://prod.facultyaffairs.cloud.tamu.edu/_files/documents/cas-faculty-evaluation-guidelines.pdf",
+        "observed_at": "2026-11-23T11:23:27.452297+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d11b43743eae02e30421b72a6f7199eb1cba178555aded07c4b5e3835ea78d1b"
+      },
+      {
+        "id": "shared_frozen_002c0660381f4c966978020b",
+        "url": "https://engineering.tamu.edu/electrical/profiles/lusher-john.html",
+        "observed_at": "2026-11-23T10:59:43.264555+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d045f85eec726e939d896e07bddd4bd3ffdef5e2ac247e50154ce70d0b712183"
+      },
+      {
+        "id": "shared_frozen_0261c93d391baf73748038f5",
+        "url": "https://engineering.tamu.edu/electrical/profiles/roy-sandip.html",
+        "observed_at": "2026-11-23T10:59:43.634709+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f80b597401bf66f7c9e9f07061637b712819533a3ebeceef6edd48052c1ec963"
+      },
+      {
+        "id": "shared_frozen_04599680a296fe57bc752527",
+        "url": "https://engineering.tamu.edu/etid/profiles/zhou-yue.html",
+        "observed_at": "2026-11-23T11:23:26.819798+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "90b67be8aedff75a4629aad68b17dd98bb2510462c574be08e6d1851e7e5b894"
+      },
+      {
+        "id": "shared_frozen_052bfc9d91e8126a3e0503ce",
+        "url": "https://engineering.tamu.edu/electrical/profiles/skhatri.html",
+        "observed_at": "2026-11-23T10:59:43.700742+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ff375fe7f607b351db9091eea6719ff97dcf522febfb5c8bc87af4ba2efcd799"
+      },
+      {
+        "id": "shared_frozen_062a3422a882590a5e70e390",
+        "url": "https://engineering.tamu.edu/electrical/profiles/peeples-joshua.html",
+        "observed_at": "2026-11-23T10:59:43.470356+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "17f3a43cc4387350b2b1ff4a0aa2ea978915baa07f0999d37c945e66f08f84db"
+      },
+      {
+        "id": "shared_frozen_07ffdd3fd3e5fcc70a40ae30",
+        "url": "https://engineering.tamu.edu/mechanical/profiles/lan-shoufeng.html",
+        "observed_at": "2026-11-23T11:23:27.244232+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "340c326d79a85a77d625f70f83713f85fa0a69d2bdc8fd192dc9699920ae4116"
+      },
+      {
+        "id": "shared_frozen_0b22370d2ad48c3f326c26fd",
+        "url": "https://engineering.tamu.edu/contact/profiles/bishop-robert.html",
+        "observed_at": "2026-11-23T11:23:24.802723+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cdc654324d03e251c08c5bd5e80287e0511a8b082040d846561d8f44f86dab37"
+      },
+      {
+        "id": "shared_frozen_0cc1a051836b9aa8134490d9",
+        "url": "https://engineering.tamu.edu/electrical/profiles/bouhali-othmane.html",
+        "observed_at": "2026-11-23T10:59:42.685609+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cd7e4ce061349f278268116526f1df8b3a692e45993d58525aff1473e259b7cf"
+      },
+      {
+        "id": "shared_frozen_0d10ec859315ba0b98bda138",
+        "url": "https://engineering.tamu.edu/electrical/profiles/paramesh-jeyanandh.html",
+        "observed_at": "2026-11-23T10:59:43.423436+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "25e134a7e97fbf5ef9a150954ca06c578a578158b3cbabc1402c6019dc0db66f"
+      },
+      {
+        "id": "shared_frozen_0e200892c2d2cc8ceff249b9",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rentzepis-peter.html",
+        "observed_at": "2026-11-23T10:59:43.579304+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a65e03f2365ac1584e05ae92aa455c72c669a2c79d0dfb45bad8bb6862af6895"
+      },
+      {
+        "id": "shared_frozen_0eddc5a5a894f4f8eb73cf31",
+        "url": "https://engineering.tamu.edu/electrical/profiles/bjyoon.html",
+        "observed_at": "2026-11-23T10:59:42.685286+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "caede3dcfd5eef9212b1c9568f1c2c3fc180c7ebfb7629d9903f0d13af85ada9"
+      },
+      {
+        "id": "shared_frozen_10474693d477b8e6f0c0da6b",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kbutlerpurry.html",
+        "observed_at": "2026-11-23T10:59:43.082977+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "115fc898ca2e2e3fde6beda64b90b8791b14f821c319816f8589bc672ea3b54f"
+      },
+      {
+        "id": "shared_frozen_1346cc93c5064f57f7f43da7",
+        "url": "https://engineering.tamu.edu/electrical/profiles/katehi-linda.html",
+        "observed_at": "2026-11-23T10:59:43.060606+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d782d4928b458f76dd4919bba4524b010d1aede90afd3da6f767f8a91572cb27"
+      },
+      {
+        "id": "shared_frozen_1732dad529adb0491ad8b216",
+        "url": "https://engineering.tamu.edu/electrical/profiles/pcantrell.html",
+        "observed_at": "2026-11-23T10:59:43.457686+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e8ea7066413a5535751cfdf6c1305e5e754a92c06977dcc113eab3d8397cce57"
+      },
+      {
+        "id": "shared_frozen_1c2ef863a4d829722e3295be",
+        "url": "https://engineering.tamu.edu/electrical/profiles/massaoudi-mohamed.html",
+        "observed_at": "2026-11-23T10:59:43.289755+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "461c8c5563ca59056849a4262bf7af924128e868cffc24ad49e1b125db1d114e"
+      },
+      {
+        "id": "shared_frozen_1dc17a375222c00b4ef3e50c",
+        "url": "https://engineering.tamu.edu/electrical/profiles/moreira-oscar.html",
+        "observed_at": "2026-11-23T10:59:43.360000+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "663dd46f274d06d1120bc3faf1b57fa177f0bf64ce2d601d38d781eb7b22cc64"
+      },
+      {
+        "id": "shared_frozen_20834b3fb42c46bd567d330d",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jhu.html",
+        "observed_at": "2026-11-23T10:59:42.998803+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5b85de6b65b749a99da83d91c21f0c276f4f842b6ca4b029d562db63beba76da"
+      },
+      {
+        "id": "shared_frozen_20e73c142b7933853a51ab1f",
+        "url": "https://engineering.tamu.edu/electrical/profiles/tian-chao.html",
+        "observed_at": "2026-11-23T10:59:43.770913+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5dfc1a4d9de94e764ad8c1b17181240432576fe3a3d1cd9d32744cfbf6a8440b"
+      },
+      {
+        "id": "shared_frozen_235ccd826db954b1da5c8cf0",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rnevels.html",
+        "observed_at": "2026-11-23T10:59:43.620803+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "166f4d565eb17211645a99e996904b9a60ee96f6851baa7976118fa29e6008b6"
+      },
+      {
+        "id": "shared_frozen_258db75eb65378cde09c057f",
+        "url": "https://engineering.tamu.edu/etid/profiles/wzhan.html",
+        "observed_at": "2026-11-23T11:23:26.785274+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "24a851dda8942a5f0cb46d79ed77ab07476f984a5ed0becc82382239c1c733a7"
+      },
+      {
+        "id": "shared_frozen_25b0df9cffd96b3f4e519fe4",
+        "url": "https://engineering.tamu.edu/petroleum/profiles/misra-sid.html",
+        "observed_at": "2026-11-23T11:23:27.393032+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "51938d800df9456e3b95b99d98127330f653d4464675063032ebae5e0b0e830e"
+      },
+      {
+        "id": "shared_frozen_2b5dae3268a473219ad81ce3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/xie-le.html",
+        "observed_at": "2026-11-23T10:59:43.878966+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2372cd2368700b033068d50f86f1bce6a475633b808c78947df552f312f92e95"
+      },
+      {
+        "id": "shared_frozen_2c5d361c1288d4a434fb1438",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jboutros.html",
+        "observed_at": "2026-11-23T10:59:42.956346+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f672adf000fff9bed6546835d3c936b91b3f482dd77bfec55d3ca692d05d9dbb"
+      },
+      {
+        "id": "shared_frozen_2c65f52cc233b521426ed70a",
+        "url": "https://engineering.tamu.edu/electrical/profiles/lstotts.html",
+        "observed_at": "2026-11-23T10:59:43.264760+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1cf01288ac3faa4b47d1fa49a4bb1ecac48e22961c44b560a721d4b3fe50f4df"
+      },
+      {
+        "id": "shared_frozen_2daee0bbb76f528e087b7d20",
+        "url": "https://engineering.tamu.edu/electrical/profiles/akarsilayan.html",
+        "observed_at": "2026-11-23T10:59:42.602277+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cb303a6436ea5356f2576ae2b18c4a91ce4876a006ada77564a8681f8b9d5c17"
+      },
+      {
+        "id": "shared_frozen_2ebee1124214527974d70a08",
+        "url": "https://engineering.tamu.edu/electrical/profiles/murali-varun.html",
+        "observed_at": "2026-11-23T10:59:43.403494+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0018d74dc1b67af76e864902bd1a8ac67f4e7b594ca15302c526a28a315107e2"
+      },
+      {
+        "id": "shared_frozen_37c24f93f112493807d01aa3",
+        "url": "https://engineering.tamu.edu/biomedical/profiles/cote-gerard-l.html",
+        "observed_at": "2026-11-23T11:23:24.800790+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "252ac72db515cab1676557abadb0d4cf10609e8d7b3f2a40c7a47a09a5ff54be"
+      },
+      {
+        "id": "shared_frozen_39a2d6c0a920d3ed24b496f3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/begovic-miroslav.html",
+        "observed_at": "2026-11-23T10:59:42.602909+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b6e80d7573d15a1fa771df1b961b03851bf07dc324c5f8d691a2b6946042e48a"
+      },
+      {
+        "id": "shared_frozen_39c1cf6854fe46f634ef04d8",
+        "url": "https://engineering.tamu.edu/electrical/profiles/iskander-marco.html",
+        "observed_at": "2026-11-23T10:59:42.932807+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f49d9b26b90464b13875cbefe0d5f91f3b055bb1007bd9b8270cd128de09ee77"
+      },
+      {
+        "id": "shared_frozen_39e386e4b16122a730c6f2ee",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rajendran-jeyavijayan.html",
+        "observed_at": "2026-11-23T10:59:43.541611+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2a5c5b5a9700807c6d41a0c0fac0aaaead38accbebbdd1b5c81ba507041ae2fc"
+      },
+      {
+        "id": "shared_frozen_3c8b45afb8f3e20fe405d8d8",
+        "url": "https://engineering.tamu.edu/electrical/profiles/csu.html",
+        "observed_at": "2026-11-23T10:59:42.744690+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "efb553343914ff60cddeead196f64517952c1d1d81f6062d65f550183eb7160e"
+      },
+      {
+        "id": "shared_frozen_3ca41a4097024914972d442f",
+        "url": "https://engineering.tamu.edu/electrical/profiles/cmadsen.html",
+        "observed_at": "2026-11-23T10:59:42.686026+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a57a3145b8946240b249b67d7febaa4d9fdc25b3dde17e36c5f3c76338fa0db0"
+      },
+      {
+        "id": "shared_frozen_431a8445a72376eb83a2bf37",
+        "url": "https://engineering.tamu.edu/electrical/profiles/garg-raghav.html",
+        "observed_at": "2026-11-23T10:59:42.813171+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b2b8795864aadbda1a8aa6f9f4dc5595aadb68bf80f3d391c2666d59be48a337"
+      },
+      {
+        "id": "shared_frozen_44780a4f0c91c4bbcc7b8854",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jsilvamartinez.html",
+        "observed_at": "2026-11-23T10:59:43.020370+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "30bef0a4f22166511c5997e12032fdfebb5a9f80747ee4c7bdc53f76de8a2d7e"
+      },
+      {
+        "id": "shared_frozen_44eada2fb3f0a6f0fb82defe",
+        "url": "https://engineering.tamu.edu/electrical/profiles/sshakkottai.html",
+        "observed_at": "2026-11-23T10:59:43.713322+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9a6b943262c886721a2f4671a48f7bc47c89c357b3f884bc55629e0533141c28"
+      },
+      {
+        "id": "shared_frozen_4547d41335926ee22be04ad6",
+        "url": "https://engineering.tamu.edu/electrical/profiles/gong-jiarui.html",
+        "observed_at": "2026-11-23T10:59:42.856345+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ae135352ad7d917916360c92a943f2ea773fa10acd5be07e302d8ef53835b7a3"
+      },
+      {
+        "id": "shared_frozen_456391227f51e8a9aca44651",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kentesari.html",
+        "observed_at": "2026-11-23T10:59:43.087829+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9f31fcc854b0b2b977b8fe995bd160c27442b3d4edf070a919bc251e85fbc9e6"
+      },
+      {
+        "id": "shared_frozen_488d0047a71067b7255f354e",
+        "url": "https://engineering.tamu.edu/electrical/profiles/duffield-nick.html",
+        "observed_at": "2026-11-23T10:59:42.765677+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6a39e007105b0723039f5c6b680860978f83949e6994d1c28651b6b76e2bb8de"
+      },
+      {
+        "id": "shared_frozen_4abb821aacbd6c635493e463",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kalathil-dileep.html",
+        "observed_at": "2026-11-23T10:59:43.041716+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a1b468e4f743cffadfcd39447e7e174a195263faf3dd322fc2d7017952b37efe"
+      },
+      {
+        "id": "shared_frozen_4b5c4095a593e69288daffd0",
+        "url": "https://engineering.tamu.edu/electrical/profiles/ubraganeto.html",
+        "observed_at": "2026-11-23T10:59:43.795287+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "309b3feb23e41a70893ac8b00aa7f8922a5042c4daa6e348f749b014d2076561"
+      },
+      {
+        "id": "shared_frozen_4c50964332423394e5cccbb0",
+        "url": "https://engineering.tamu.edu/mechanical/profiles/wang-ya.html",
+        "observed_at": "2026-11-23T11:23:27.332494+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a842985ca6a4021d5099758970ceb59f26a8677382032163f5e2c356ce2b6732"
+      },
+      {
+        "id": "shared_frozen_4d8d587f982e31b6870c42b0",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kmichalski.html",
+        "observed_at": "2026-11-23T10:59:43.128137+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "09466ae142a2978cd648b2dc4f3ac41d88ca9456054fa6f97f88f760e8d54b5f"
+      },
+      {
+        "id": "shared_frozen_50a2e96a379516172a6413ba",
+        "url": "https://engineering.tamu.edu/biomedical/profiles/Hoyt-Kenneth.html",
+        "observed_at": "2026-11-23T11:23:24.798941+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5f13da7ecaac0575e9338afd3a82d28d83e31c5a1e32237e205d677f2eb164f3"
+      },
+      {
+        "id": "shared_frozen_51180fb67159c5193e7f01f0",
+        "url": "https://engineering.tamu.edu/materials/profiles/xqian.html",
+        "observed_at": "2026-11-23T11:23:27.108087+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0cbfee69e84964be237dd9c88d4abe3a3d092c116308b17d6eeb3cf7e210e3ef"
+      },
+      {
+        "id": "shared_frozen_52b4319f9ff07b8383c1f8d4",
+        "url": "https://engineering.tamu.edu/electrical/profiles/adpatton.html",
+        "observed_at": "2026-11-23T10:59:42.601253+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "382f1f3394c39f2ff4d431954160ba1ef20d8d745adc4981f535b53288f8b3c6"
+      },
+      {
+        "id": "shared_frozen_5600b8f74b45a54a03e8ed10",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kwatson.html",
+        "observed_at": "2026-11-23T10:59:43.193878+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "95c99a71cae4c58213e76240a238c5cf55cfd0aea43b940f1a3289a6e0859596"
+      },
+      {
+        "id": "shared_frozen_571ab6dbf29da205bd99565a",
+        "url": "https://engineering.tamu.edu/electrical/profiles/sokolov-alexei.html",
+        "observed_at": "2026-11-23T10:59:43.701012+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "22c536f4bfa8e6f54690cc88be7ff03ea97a00cec8b38e66763167d5e2c7bfd4"
+      },
+      {
+        "id": "shared_frozen_57e3e757007cca8fec43bb6c",
+        "url": "https://engineering.tamu.edu/electrical/profiles/benner-carl.html",
+        "observed_at": "2026-11-23T10:59:42.680232+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8e5bc231f45fca12d0aefd0b3bbc7d56b4eb871fb28ddd28190b7a4c31499db6"
+      },
+      {
+        "id": "shared_frozen_584ab0796f88b0401f63a29c",
+        "url": "https://engineering.tamu.edu/etid/profiles/kabir-elnaz.html",
+        "observed_at": "2026-11-23T11:23:25.542459+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b81b2138bf4312cc012ddef7bf85ed2c6844ff75f00fc6686f42d219f996a418"
+      },
+      {
+        "id": "shared_frozen_58afd18ebcb09c7553802461",
+        "url": "https://engineering.tamu.edu/electrical/profiles/menon-arya.html",
+        "observed_at": "2026-11-23T10:59:43.334259+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b09220cda2110f2a0d15da6eca510fd7bb3bd89022917ac99beaf113df0667bb"
+      },
+      {
+        "id": "shared_frozen_5945832c58313175556492ad",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kalafatis-stavros.html",
+        "observed_at": "2026-11-23T10:59:43.026681+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "856e9517f47113aa53e8186669fb486a6929fee3220f46f825fa5d2a78ad6081"
+      },
+      {
+        "id": "shared_frozen_599ea789c2f287364630f671",
+        "url": "https://engineering.tamu.edu/electrical/profiles/davis-katherine.html",
+        "observed_at": "2026-11-23T10:59:42.761339+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d290bca334b1bfa7d0d7471cf6a656067c9725f69c9e3abfd4e05d92550dd9bc"
+      },
+      {
+        "id": "shared_frozen_5bc10c393c7334854f7a2c21",
+        "url": "https://engineering.tamu.edu/electrical/profiles/fan-zhiwen.html",
+        "observed_at": "2026-11-23T10:59:42.812793+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "291e7221d30afa920f287f9224eb3af6c7a3a15fb96512a66a115fed5e05a57d"
+      },
+      {
+        "id": "shared_frozen_5bf9d07fe303f789ff8ae2a3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/zhang-han.html",
+        "observed_at": "2026-11-23T10:59:43.895714+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8f54ae4e89b6d31fa6a79d0f873f339e984e6d0817564cd38d7276be0fd628eb"
+      },
+      {
+        "id": "shared_frozen_5d00f73b5db494543aab18ae",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jji.html",
+        "observed_at": "2026-11-23T10:59:43.015242+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8498ed5d9dfae1e7ec7763c4cba009ffdd2df9d526b7fe73a045ebfbccd80ae9"
+      },
+      {
+        "id": "shared_frozen_5f1bec8e3383173382a2046e",
+        "url": "https://engineering.tamu.edu/etid/profiles/pandey-gaurav.html",
+        "observed_at": "2026-11-23T11:23:25.682952+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bc688d6da04c2c5338f3e9ac6ba7341fe80062bb93dab7c5326f4dd129392dbd"
+      },
+      {
+        "id": "shared_frozen_637d1eaf381d356e16e3133d",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jchamberland.html",
+        "observed_at": "2026-11-23T10:59:42.956570+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "617f86e9c1a36163baa9a44633f47cc16813109a4980466636f565e16d180ecb"
+      },
+      {
+        "id": "shared_frozen_66af4e90cc1cafd227db685e",
+        "url": "https://engineering.tamu.edu/electrical/profiles/oeknoyan.html",
+        "observed_at": "2026-11-23T10:59:43.403963+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6a350314e5835ba5f03cfcf20c68cefd6f3b36fdb60f3e41b794e6a62c6e13bb"
+      },
+      {
+        "id": "shared_frozen_674de8a9f8f6d6d0ac2c42c9",
+        "url": "https://engineering.tamu.edu/electrical/profiles/phemmer.html",
+        "observed_at": "2026-11-23T10:59:43.505097+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "11f2a9d1fb44cbbb5516cf159e57f8577369f420a2c0ca8e067d47c55a79b02f"
+      },
+      {
+        "id": "shared_frozen_67ba9dac7207effb3b8b1c36",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kumar-suryansh.html",
+        "observed_at": "2026-11-23T10:59:43.166885+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "be100642fef744c31e55b2ff49774d2b6566d744062439d2d6ad464357af71e8"
+      },
+      {
+        "id": "shared_frozen_6cd869c5e5695c3c3b2b6d2c",
+        "url": "https://engineering.tamu.edu/electrical/profiles/shoyos.html",
+        "observed_at": "2026-11-23T10:59:43.696320+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b3b232a5e3c4a2462921b83488cedb9c2a289899be25c39e1401cc8f4b6265ba"
+      },
+      {
+        "id": "shared_frozen_6df73efebb69c1a23abef0a3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/pgratz.html",
+        "observed_at": "2026-11-23T10:59:43.478343+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f19f7c3b312d2d1ff4fa38d276b4681f1aae526714f89c2ae9064bafcd09f0ea"
+      },
+      {
+        "id": "shared_frozen_6ed5fff9e869f2e548a2c9ee",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rbalog.html",
+        "observed_at": "2026-11-23T10:59:43.557128+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "65bc36bebd2f6521274299e83e533fb65e423c9fbb064a3c4891ced27850b07d"
+      },
+      {
+        "id": "shared_frozen_705fea773543137cf08d54f3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/xzhang.html",
+        "observed_at": "2026-11-23T10:59:43.885683+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ecfc18986f04851078d4ef136b931dd51a6b91ab6b496f48aa890142d6079478"
+      },
+      {
+        "id": "shared_frozen_709b5508a3275190e0d4aa71",
+        "url": "https://engineering.tamu.edu/electrical/profiles/asprintson.html",
+        "observed_at": "2026-11-23T10:59:42.602658+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d12788fa3f48a966dd6e8cbc23f1d35eb37f3f39f3233c5e985d451023c6a373"
+      },
+      {
+        "id": "shared_frozen_716d86c9e0522554bf2f3a58",
+        "url": "https://engineering.tamu.edu/electrical/profiles/reddy-narasimha.html",
+        "observed_at": "2026-11-23T10:59:43.562573+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f5cc0a9df879ae36c7bdd62be9d2540a0ce75f7a6155dc1f03944b39fbddce11"
+      },
+      {
+        "id": "shared_frozen_74dc7f745bbb4114e9be44f7",
+        "url": "https://engineering.tamu.edu/electrical/profiles/lin-pao-tai.html",
+        "observed_at": "2026-11-23T10:59:43.258778+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8a6fdfa13bc4099c2513e54f7d703aa7fef33c1046d5694b76b87b46ca5ccfd1"
+      },
+      {
+        "id": "shared_frozen_75510f36ae9b673899c7e592",
+        "url": "https://engineering.tamu.edu/electrical/profiles/mehsani.html",
+        "observed_at": "2026-11-23T10:59:43.325549+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b40b26aeb855a07381182c8c10cee5881406096b9136e33a33b563ffabdf62e3"
+      },
+      {
+        "id": "shared_frozen_755f318552850eb319a497f1",
+        "url": "https://engineering.tamu.edu/electrical/profiles/khan-irfan.html",
+        "observed_at": "2026-11-23T10:59:43.095641+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a67cbb32cee7a36e768f5bb2bc91b0ffe129065445f1d08136d213ce613b4c2c"
+      },
+      {
+        "id": "shared_frozen_758d4180791691815d5a0c19",
+        "url": "https://engineering.tamu.edu/electrical/profiles/eserpedin.html",
+        "observed_at": "2026-11-23T10:59:42.810590+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "375325f03192031feb6dde04ff61a80922756de86ad7f68e30595a131bce6c84"
+      },
+      {
+        "id": "shared_frozen_7661febc0634dcfd25de7776",
+        "url": "https://engineering.tamu.edu/electrical/profiles/pkumar.html",
+        "observed_at": "2026-11-23T10:59:43.510810+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9c9ee3dbc4bab055e387009957368d1c7cf040d4b99cdabc45bd578b028afa69"
+      },
+      {
+        "id": "shared_frozen_784db17662984c0fb11d50d2",
+        "url": "https://engineering.tamu.edu/electrical/profiles/shen-yang.html",
+        "observed_at": "2026-11-23T10:59:43.653457+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ac2fc5606dd80f6881c52774e6946cdad49ff964f0d91e2f66ec707e83e665e9"
+      },
+      {
+        "id": "shared_frozen_7d1cf4b22e59a9f166500bd8",
+        "url": "https://engineering.tamu.edu/electrical/profiles/htoliyat.html",
+        "observed_at": "2026-11-23T10:59:42.879024+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7d93affb88240f12d6f626a146c2c54e1a8214cb6c8801161d2b0444195a0901"
+      },
+      {
+        "id": "shared_frozen_80487246f08c18178120c5ba",
+        "url": "https://engineering.tamu.edu/electrical/profiles/hampel-arias-zigfried.html",
+        "observed_at": "2026-11-23T10:59:42.878816+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0bcc4db166da792a0639abbc84bc77c12fb309e2005f49485cdaf994105fa58d"
+      },
+      {
+        "id": "shared_frozen_838003684790919855e0a01a",
+        "url": "https://engineering.tamu.edu/electrical/profiles/mweichold.html",
+        "observed_at": "2026-11-23T10:59:43.398865+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "597cb27b5cc013cb4f1bb28f2395d3924e2a85bd0dd19bc10864784ef528a2aa"
+      },
+      {
+        "id": "shared_frozen_84cf9d9cbc0a0c48f1e3d5c2",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kchang.html",
+        "observed_at": "2026-11-23T10:59:43.083511+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e6b6f7c94e9ba120e72b13fb4e342f6aea487a35953337927c248081e75547f0"
+      },
+      {
+        "id": "shared_frozen_857c34e34d75f31abf9e205b",
+        "url": "https://engineering.tamu.edu/electrical/profiles/mkezunovic.html",
+        "observed_at": "2026-11-23T10:59:43.336042+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "236d9dc8116b92de06486d766e4eabf9ce0b8e9842b63371969ce4192a3d141e"
+      },
+      {
+        "id": "shared_frozen_8962bd8d0353fec5c762f2a2",
+        "url": "https://engineering.tamu.edu/electrical/profiles/tliu.html",
+        "observed_at": "2026-11-23T10:59:43.770643+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a4db0949927fa871a7c7cbe6b4ccfa094b6f8cc1ab80e5c8a2eae299db7f0377"
+      },
+      {
+        "id": "shared_frozen_8a308ad5ef83436739554310",
+        "url": "https://engineering.tamu.edu/etid/profiles/ekin-sabit.html",
+        "observed_at": "2026-11-23T11:23:24.918500+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b5cc9d900388c0b2d978531bea6eb759a87ded9e2c28383692f8c9edd8b306fe"
+      },
+      {
+        "id": "shared_frozen_8ade114c73bd5e25a187252d",
+        "url": "https://engineering.tamu.edu/materials/profiles/lin-yuxuan-cosmi.html",
+        "observed_at": "2026-11-23T11:23:26.979607+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d1f85b399eafbb751044743ed3b60223fd89df458e6a08e6c3e600d2625aaee5"
+      },
+      {
+        "id": "shared_frozen_8c451da643ef249878735934",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jhowze.html",
+        "observed_at": "2026-11-23T10:59:42.956810+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d9947a162ef41a217af9e3c92225b59551d0d2fd20b7f654f06514c42d52aa3a"
+      },
+      {
+        "id": "shared_frozen_91a3ce60489c1e14d12a40b3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jang-wonhyeok.html",
+        "observed_at": "2026-11-23T10:59:42.949723+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "91f2c89032755d71cc6dc5d6316f84e0b19ecec747fcbee5797415d811e399d9"
+      },
+      {
+        "id": "shared_frozen_96d4f5d1850506bb1fbc5059",
+        "url": "https://engineering.tamu.edu/etid/profiles/karim-muhammad-faeyz.html",
+        "observed_at": "2026-11-23T11:23:25.599619+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7f5681b5fc853826f7029dc6efb0981606fa95430572a875afdca18667de3312"
+      },
+      {
+        "id": "shared_frozen_9af167ce3095814ca1a28812",
+        "url": "https://engineering.tamu.edu/electrical/profiles/sarkka-simo.html",
+        "observed_at": "2026-11-23T10:59:43.636662+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6b29fea0f42640cab6640c874c672d5e254f04f2f60db140eb18ba26b5a5c4d8"
+      },
+      {
+        "id": "shared_frozen_9e1b2fadf503d90e7dc55af2",
+        "url": "https://engineering.tamu.edu/electrical/profiles/chen-xin.html",
+        "observed_at": "2026-11-23T10:59:42.685797+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "520a5817984ba12b14658a4c9e4e4dfc473b5b18ae3ccfad684814a3e3e3a234"
+      },
+      {
+        "id": "shared_frozen_9f3b81d9f723b52709871905",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jafari-roozbeh.html",
+        "observed_at": "2026-11-23T10:59:42.933173+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "41c4a9135e5a0da5e8e7efaf3cb885e46098812338bd61f747eabea06ffb649c"
+      },
+      {
+        "id": "shared_frozen_9f86081d5f0d052182661b22",
+        "url": "https://engineering.tamu.edu/etid/profiles/song-xingyong.html",
+        "observed_at": "2026-11-23T11:23:26.551804+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "771d01f14420da9fe281198ae17ab18e2f3375935c69010d8a8c6ebc9c31463d"
+      },
+      {
+        "id": "shared_frozen_a1b763e212720d1e41fa5717",
+        "url": "https://engineering.tamu.edu/electrical/profiles/jzou.html",
+        "observed_at": "2026-11-23T10:59:43.022704+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ec68f7da30169e79c3de75b399abe4ec6b350e2b9250886157b06bbb5ff70385"
+      },
+      {
+        "id": "shared_frozen_a69e222cdf73223b84ffb2ee",
+        "url": "https://engineering.tamu.edu/electrical/profiles/eden-gary.html",
+        "observed_at": "2026-11-23T10:59:42.805542+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f95b8162edf56555d7907e00616f1e3950af7c5c67f4a2b9c8d4d7cdab4ddfb3"
+      },
+      {
+        "id": "shared_frozen_a8d762d66599b0e28ad86912",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rmercer.html",
+        "observed_at": "2026-11-23T10:59:43.588573+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b6da24d3881c6b5ecba73b065c6cab8055966cf50a47d293058ca50caade84b3"
+      },
+      {
+        "id": "shared_frozen_aa3e30cb4c0578b712f69329",
+        "url": "https://engineering.tamu.edu/etid/profiles/shsieh.html",
+        "observed_at": "2026-11-23T11:23:26.490178+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bb974c367b9206f6884f87feb955116f8392432a1c4e588bbe3ba42a7bf39422"
+      },
+      {
+        "id": "shared_frozen_b2af4b2269c084f20f2f9589",
+        "url": "https://engineering.tamu.edu/electrical/profiles/swright.html",
+        "observed_at": "2026-11-23T10:59:43.744520+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "64780db6e8a48d66ff2396d1fa2f6fa38d7b985ab13cd818b0733ef18d1aedf9"
+      },
+      {
+        "id": "shared_frozen_b712f89528d40e55fee0ca04",
+        "url": "https://engineering.tamu.edu/electrical/profiles/koohi-milad.html",
+        "observed_at": "2026-11-23T10:59:43.162687+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "92db8a97290f2fd854d98dea26fd2de7ceed3540d59262cc21739ea455d7ca6a"
+      },
+      {
+        "id": "shared_frozen_ba64e90c13f27960ffb100f0",
+        "url": "https://engineering.tamu.edu/electrical/profiles/lkish.html",
+        "observed_at": "2026-11-23T10:59:43.263681+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b5f950aca6047bcc97d69d4a882fe26ea75a6c73ba446540bbaae24cac9e9781"
+      },
+      {
+        "id": "shared_frozen_bc8e91f9d1199a043358141d",
+        "url": "https://engineering.tamu.edu/electrical/profiles/ihou.html",
+        "observed_at": "2026-11-23T10:59:42.884200+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ee4653561e9ae8edf0216fe3f4de63854611274d0565e769a933df6cbc583c70"
+      },
+      {
+        "id": "shared_frozen_bca7188a1e1dd919a91c6c9f",
+        "url": "https://engineering.tamu.edu/electrical/profiles/birchfield-adam.html",
+        "observed_at": "2026-11-23T10:59:42.680546+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3342a38cd16e09b54bbf765a5ce619cb0b9192eac89b62b3220dc37da2ec181f"
+      },
+      {
+        "id": "shared_frozen_bfb8828c119c3010b44004c0",
+        "url": "https://engineering.tamu.edu/etid/profiles/hammad-eman.html",
+        "observed_at": "2026-11-23T11:23:24.918830+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "875eafb823b3d2cacf74a86ec503fe14add1bf997d93f9345c0f7c6c11acadaf"
+      },
+      {
+        "id": "shared_frozen_c158e20b0ffd3af6a7168cda",
+        "url": "https://engineering.tamu.edu/electrical/profiles/drussell.html",
+        "observed_at": "2026-11-23T10:59:42.761058+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c5389434f1e040e8c030eefed07415203c309399afcff58ee40e119219fd9b45"
+      },
+      {
+        "id": "shared_frozen_c2a4310e52a4e739e72123d2",
+        "url": "https://engineering.tamu.edu/electrical/profiles/ahan.html",
+        "observed_at": "2026-11-23T10:59:42.601679+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1111748ef7acb5588c4e071c03f113e47f21d4a22d52a2a3625f385f60e19997"
+      },
+      {
+        "id": "shared_frozen_c3a6f0e969dfe108b9cce515",
+        "url": "https://engineering.tamu.edu/electrical/profiles/mlu.html",
+        "observed_at": "2026-11-23T10:59:43.339364+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fca968dfd72dfb0f57c5aec0e0cbe04ec605a26227271232cf6364e15a4e1d48"
+      },
+      {
+        "id": "shared_frozen_c5361a6a51f76814fe9432e9",
+        "url": "https://engineering.tamu.edu/electrical/profiles/pottathuparambil-robin.html",
+        "observed_at": "2026-11-23T10:59:43.522484+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9a8fa8388638dfd8469d81c882421df94c30d63688c6a0ab03b4fa4a58e631fe"
+      },
+      {
+        "id": "shared_frozen_c814e91310a059b3ba44e88a",
+        "url": "https://engineering.tamu.edu/electrical/profiles/qian-xiaoning.html",
+        "observed_at": "2026-11-23T10:59:43.539130+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bb10deb26428480cfc5970366664155d9b7ce24fc4896c0ac977832e4ac24f4e"
+      },
+      {
+        "id": "shared_frozen_cc81c8a848800d5749518155",
+        "url": "https://engineering.tamu.edu/electrical/profiles/williams-r-stanley.html",
+        "observed_at": "2026-11-23T10:59:43.823689+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "81f8ec9f233fe26599e43f20ba2b8d5da553a41dccd4e57a522d53f0095feda1"
+      },
+      {
+        "id": "shared_frozen_cd078b58f6add1af73d91281",
+        "url": "https://engineering.tamu.edu/electrical/profiles/tao-jian.html",
+        "observed_at": "2026-11-23T10:59:43.746418+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "19e2515afe7d39f11a28ebc4765b6abb41c6b398d808def8a2bb186ad95e897b"
+      },
+      {
+        "id": "shared_frozen_d0a2e24be13f9f779b578a94",
+        "url": "https://engineering.tamu.edu/electrical/profiles/park-hangue.html",
+        "observed_at": "2026-11-23T10:59:43.439264+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "397ff55b8063d7c5808cc0b6695a7f545899b3b5f51589df73bed890b7dd7122"
+      },
+      {
+        "id": "shared_frozen_d1ea4f2ae90d77104d92f783",
+        "url": "https://engineering.tamu.edu/electrical/profiles/gchoi.html",
+        "observed_at": "2026-11-23T10:59:42.820493+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "16aa6e107e37df84ce6af48d06c9fbbb134b0e999311bf4f3a80f9020f954175"
+      },
+      {
+        "id": "shared_frozen_d2135f3d7609ad2a02c749d6",
+        "url": "https://engineering.tamu.edu/industrial/profiles/eksin-ceyhun.html",
+        "observed_at": "2026-11-23T11:23:26.855978+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5917253db0c4fae3dab78adba6c55e68bd88f0e8cd82bebcdf3a7153f4448498"
+      },
+      {
+        "id": "shared_frozen_d78f9581978f3eb10f676958",
+        "url": "https://engineering.tamu.edu/electrical/profiles/adatta.html",
+        "observed_at": "2026-11-23T10:59:42.600914+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e2c6a7260f4620d81b567512f674f8135b3c1ce1b53b7dbb8e59c8c6054d5be3"
+      },
+      {
+        "id": "shared_frozen_d8f6b0234e910c4a999a0fa7",
+        "url": "https://engineering.tamu.edu/electrical/profiles/huang-garng.html",
+        "observed_at": "2026-11-23T10:59:42.879821+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "438612dc359d4839dd62ff98480dc13b1b4945d99cb2a98f634c7908d5afa7f5"
+      },
+      {
+        "id": "shared_frozen_da91aa087304472ff9d8e4da",
+        "url": "https://engineering.tamu.edu/electrical/profiles/penjeti.html",
+        "observed_at": "2026-11-23T10:59:43.477891+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "81a42bd3db9220b7f3d87e75aeeb285d1136465d978f35e8a90ef2a2c3efe858"
+      },
+      {
+        "id": "shared_frozen_dd020d0ad8467f98e5dd8918",
+        "url": "https://engineering.tamu.edu/electrical/profiles/knarayanan.html",
+        "observed_at": "2026-11-23T10:59:43.142436+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "35a5a05601cd19d0a4da83544df4f6b92c074c42994498e21968590980624de5"
+      },
+      {
+        "id": "shared_frozen_de0d308de880edca294421a1",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rrighetti.html",
+        "observed_at": "2026-11-23T10:59:43.636342+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e69394e762160f8a926b0319e3cc2d834c0701a5bc5745eeeb861b40dff99aac"
+      },
+      {
+        "id": "shared_frozen_dea16c6616335e70c4b199b3",
+        "url": "https://engineering.tamu.edu/electrical/profiles/zhang-zhe.html",
+        "observed_at": "2026-11-23T10:59:43.896038+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0b5a615ea4e914dd1f39957c8fcc970a5f8929c6e56aea7ba8e942cf7200638e"
+      },
+      {
+        "id": "shared_frozen_e18453d76ff6e2af73bb40cc",
+        "url": "https://engineering.tamu.edu/electrical/profiles/johnson-matthew.html",
+        "observed_at": "2026-11-23T10:59:43.018604+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a0a788e0d518710ffd5c2ed7b5c032a595b96579d066a3bba065458b066cb1a3"
+      },
+      {
+        "id": "shared_frozen_ebaa6b5040b7e08e9f5bc2a9",
+        "url": "https://engineering.tamu.edu/electrical/profiles/overbye-thomas.html",
+        "observed_at": "2026-11-23T10:59:43.407758+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "006b9a2751e7403d202fbd079fec0b66a669c906d70ed6bc506a2152b9f32da7"
+      },
+      {
+        "id": "shared_frozen_ec13002867f3afe3b2dc8713",
+        "url": "https://engineering.tamu.edu/electrical/profiles/rharris.html",
+        "observed_at": "2026-11-23T10:59:43.584184+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d0e8c8a8556e2371a745ae266eb9ee4fa62d1a69be0be58f4fe97284307ce2e5"
+      },
+      {
+        "id": "shared_frozen_f028fe781adbffb1a08444c2",
+        "url": "https://engineering.tamu.edu/electrical/profiles/cnguyen.html",
+        "observed_at": "2026-11-23T10:59:42.732679+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "614d2103ec2520dc7baa4625a23e4718dcf1fc78954fc8bdf0fd7745a9cdddbf"
+      },
+      {
+        "id": "shared_frozen_f27995c66a310beb0dddad3a",
+        "url": "https://engineering.tamu.edu/electrical/profiles/csingh.html",
+        "observed_at": "2026-11-23T10:59:42.735731+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3ff17b29bddb0e4af40db91d3af78de2ad0e06f3348cfe526c9c370a04b7e41a"
+      },
+      {
+        "id": "shared_frozen_f299803956c37a98d5edd1be",
+        "url": "https://engineering.tamu.edu/electrical/profiles/miller-scott.html",
+        "observed_at": "2026-11-23T10:59:43.335875+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bd82eee03aac727b7f7a68467aeca3e92b5f05f63a6c193295cf815fc4e5f122"
+      },
+      {
+        "id": "shared_frozen_f67b46314ba5a8a2efaa5fb0",
+        "url": "https://engineering.tamu.edu/electrical/profiles/tyler-john.html",
+        "observed_at": "2026-11-23T10:59:43.772148+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "eb0e250b727729a45e3c212b5fde6d52defbe2b50b968f6ca786875e40ac6c01"
+      },
+      {
+        "id": "shared_frozen_f6fdf7fb725e0a7399bae14e",
+        "url": "https://engineering.tamu.edu/electrical/profiles/spalermo.html",
+        "observed_at": "2026-11-23T10:59:43.705346+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5257e6d8d307781c680009b5d2c782bfa4a3bb0c406d254760d5cfa82c4bfda0"
+      },
+      {
+        "id": "shared_frozen_f8f7725af96e7cb7ba8611ea",
+        "url": "https://engineering.tamu.edu/electrical/profiles/georghiades-costas.html",
+        "observed_at": "2026-11-23T10:59:42.836730+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1916f5140e9d6be5b6f7f55d8d7681700e8ed17b78d9ca7223ce0b036074faad"
+      },
+      {
+        "id": "shared_frozen_fa7f66ee46a8ce6c665b1b8e",
+        "url": "https://engineering.tamu.edu/electrical/profiles/shi-weiping.html",
+        "observed_at": "2026-11-23T10:59:43.661739+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9a780679716fbf1d5a3acd5cd2a9b4fb6dbb637efcb6e54bc33c247c58f16f62"
+      },
+      {
+        "id": "shared_frozen_fc2bad0ecb6aeb838de4ca24",
+        "url": "https://engineering.tamu.edu/electrical/profiles/kpandey.html",
+        "observed_at": "2026-11-23T10:59:43.162978+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "286b8f37817dbb057a86e60a77915460c088e0f0c393f7353ae34f615628ddb2"
+      },
+      {
+        "id": "shared_frozen_ff6964b2002500cc5d447b01",
+        "url": "https://engineering.tamu.edu/electrical/profiles/yi-suin.html",
+        "observed_at": "2026-11-23T10:59:43.885323+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c3d05b5ef4e27aab93691ffb09befb921211f2be2d6b8e49066db5e3c7092f77"
+      },
+      {
+        "id": "shared_frozen_fff79d5a19bfa5b1eca05a50",
+        "url": "https://engineering.tamu.edu/electrical/profiles/knowka.html",
+        "observed_at": "2026-11-23T10:59:43.152994+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1f392e7e6df94ae94d7594402422d03ade8986b3d6fca1501ec348ff8c25765b"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "person_8da4966593565340a81f",
+        "description": "profile-data.json entry lacks tagSets (tag: electrical, Faculty); enumerated via tag and confirmed by profile and graduate catalog (Assistant Professor, Electrical & Computer Eng)."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_3a2160169f7e569ebb97",
+        "description": "TAMU graduate catalog (captured) still lists \"Peeples, Joshua K, Assistant Professor Electrical & Computer Eng\"; the current directory/profile show only \"Affiliated Faculty, ECE\". Applied the settled ruling (excluded/affiliate); catalog entry likely lags a departure."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Enumerated 126 ECE profiles from pinned profile-data.json (non-Staff electrical tagSets: Faculty, Affiliated Faculty, Emeritus Faculty, Qatar Faculty, Leadership, plus one untagged electrical/Faculty entry); matches expected_primary_profile_urls exactly. 34 Staff entries excluded from enumeration."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_d560d89fd49c4ef3a2a8f1d3cc35cdbc",
+    "candidate_sha256": "350d1f319aaa9037014695370d94719b24135a842024fd6f7b109ce58ba16673",
+    "transport": "t3",
+    "run_id": "node:delegated-task:command%3Amcp%3A81c1b876-7755-4b73-8b77-31cc6ed303e0%3Adelegate-task%3Av5-t20-tamu_vt_psu_final-47041cc4",
+    "model": "claude-opus-5-5",
+    "finished_at": "2026-11-23T11:31:57.029184+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/137f3c26660666b82699ef4438394abc8d80bfc48ed092a7fb169ba383c62a7f.json",
+      "sha256": "137f3c26660666b82699ef4438394abc8d80bfc48ed092a7fb169ba383c62a7f"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/137f3c26660666b82699ef4438394abc8d80bfc48ed092a7fb169ba383c62a7f.json",
+    "sha256": "137f3c26660666b82699ef4438394abc8d80bfc48ed092a7fb169ba383c62a7f"
+  }
+}

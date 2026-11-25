@@ -1,0 +1,802 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/18f28b0d0c81b71a6ce42f7009e204809ac696f4136b3d0b2932a6ab873dcd6a.json",
+    "sha256": "18f28b0d0c81b71a6ce42f7009e204809ac696f4136b3d0b2932a6ab873dcd6a"
+  },
+  "brief": {
+    "file": "audits/briefs/d5b91653bfa1d49db727a65a1d7387f5b0b4f70e2e0328d881bc4cf4ae5999ba.json",
+    "sha256": "d5b91653bfa1d49db727a65a1d7387f5b0b4f70e2e0328d881bc4cf4ae5999ba"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_f65dd401767e4a8aa19b86bcdcd9c3de",
+    "candidate_sha256": "dfbe75ad59b232ef3c4416378ab2831f099cc6b390377be01da8ec7ed61c974d",
+    "reviewer_id": "claude-haiku-drexel-audit",
+    "reviewed_at": "2026-11-25T04:57:56+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=5",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=5",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=5",
+        "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=5"
+      ],
+      "checked_list_ids": [
+        "ece-directory"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_d2f6600027355abbb5ed",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Assistant Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Directory and official profile list Civil, Architectural and Environmental Engineering and Electrical and Computer Engineering; neither source states a primary department elsewhere and the entry is type Faculty, not a secondary/joint list, so the convention applies.",
+        "source_ids": [
+          "src-list-p1",
+          "src-profile-chen"
+        ]
+      },
+      {
+        "person_id": "person_50bc35eec44f57fea6f0",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Teaching Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_83165c1f2d835ba68f31",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Associate Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_0da2d62977ab56a9b79b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_dd0a85c6632f5091b6ee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Interim Dean of Drexel Engineering; The E. Warren Colehower Chair Professor, Electrical and Computer Engineering' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Official profile states the ECE professorial chair; the dean role does not drive the decision.",
+        "source_ids": [
+          "src-list-p1",
+          "src-profile-dandekar"
+        ]
+      },
+      {
+        "person_id": "person_a4db5799400d54c09b05",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_1497afe81e0b560aab48",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Associate Professor, Associate Department Head for Graduate Affairs and Research' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_3b56447f979f52a88b32",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Associate Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_930a70fdb2225cd69709",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Arthur J. Rowland Professor of Electrical and Computer Engineering' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Named professorship with professorial rank.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_c02b6960577b5e59a3e2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor, Director of CASTLE' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_4a7ee49cffbd5b80a29a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_10ae3d80fd5d5865ac84",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_c9859b28b0ec5532a3d9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_73f2603d57ad5edaa643",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Bruce Eisenstein Endowed Chair, Professor of Electrical and Computer Engineering' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Endowed chair with professorial rank.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_0521bcd28a6a5af7bcdc",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Adjunct Faculty, ECE) lists 'Adjunct Instructor'; adjunct is the only ECE-related role, so excluded.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_da4d3d2c742a5c01ad49",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_237f54ec5c305832a1cd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_183d3678750857daac78",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry lists the ECE department with type 'Affiliated Faculty' and professorial title 'Professor, Computer Science'. The ECE department's official affiliated designation with a professorial rank qualifies under affiliate_professor. Official profile also lists Electrical and Computer Engineering. A CS professor qualifies only with this official ECE affiliation, which is present. Would change to excluded only if the ECE affiliated listing were shown to be a generic lab or network membership.",
+        "source_ids": [
+          "src-list-p2",
+          "src-profile-johnson"
+        ]
+      },
+      {
+        "person_id": "person_ef958aadac4b5519a50a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Associate Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_d9996163b66f5e1ebd2b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor, Department Head, Electrical and Computer Engineering' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Department head with professorial rank.",
+        "source_ids": [
+          "src-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_e39365448a8d568b88aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor, Director of ExCITe Center' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_f6283ba1e2e450e18013",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Adjunct Faculty, ECE) lists 'Director of Regulatory Compliance and Radiation Safety Officer'; adjunct is the only ECE-related role, so excluded. Non-professorial administrative title; academic_professional would also exclude.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_abf7cf646cf65165842e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry lists the ECE department with type 'Affiliated Faculty' and professorial title 'Richard B. Beard Professor, School of Biomedical Engineering, Science & Health Systems'. The ECE department's official affiliated designation with a professorial rank qualifies under affiliate_professor. Named professorship; official profile lists Electrical and Computer Engineering. Would change to excluded only if the ECE affiliated listing were shown to be generic.",
+        "source_ids": [
+          "src-list-p3",
+          "src-profile-lewin"
+        ]
+      },
+      {
+        "person_id": "person_88a72ac2547950af8147",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Adjunct Faculty, ECE) lists 'Adjunct Instructor'; adjunct is the only ECE-related role, so excluded.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_b4d9dfaf5a47524781ef",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Adjunct Faculty, ECE) lists '(blank title)'; adjunct is the only ECE-related role, so excluded. Official profile shows no professorial title; no professorial ECE appointment is established.",
+        "source_ids": [
+          "src-list-p3",
+          "src-profile-lui"
+        ]
+      },
+      {
+        "person_id": "person_56b420ac14db5a8aa9fb",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Adjunct Faculty, ECE) lists 'Adjunct Professor'; adjunct is the only ECE-related role, so excluded. An adjunct professorial title is adjunct, not regular.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_ebfe0efd424e56288c48",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry lists the ECE department with type 'Affiliated Faculty' and professorial title 'Professor, Computer Science'. The ECE department's official affiliated designation with a professorial rank qualifies under affiliate_professor. Official profile also lists Electrical and Computer Engineering. Same basis as Johnson; would change to excluded only if the ECE affiliated listing were shown to be generic.",
+        "source_ids": [
+          "src-list-p3",
+          "src-profile-mancoridis"
+        ]
+      },
+      {
+        "person_id": "person_fac2113f5a04586b8caf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_f7fece6475725e1eaa21",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_473b87b7a87556268b45",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Associate Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_000183e3908d51499621",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry lists the ECE department with type 'Affiliated Faculty' and professorial title 'Professor, School of Biomedical Engineering, Science & Health Systems'. The ECE department's official affiliated designation with a professorial rank qualifies under affiliate_professor. Official profile lists Electrical and Computer Engineering. Would change to excluded only if the ECE affiliated listing were shown to be generic.",
+        "source_ids": [
+          "src-list-p4",
+          "src-profile-pourrezaei"
+        ]
+      },
+      {
+        "person_id": "person_944fb5e422885bea86d3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Teaching Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_88912a731f1e515295a3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_d452cd25fd785859ab15",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Associate Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_d956bef7b1d85ffb85dc",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_3e7ae87051665e60a067",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Associate Professor, Interim Associate Dean for Enrollment Management and Graduate Education' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Official profile confirms Associate Professor in ECE; the administrative role does not change the decision.",
+        "source_ids": [
+          "src-list-p4",
+          "src-profile-shackleford"
+        ]
+      },
+      {
+        "person_id": "person_7a9b3cca25485eca923e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_7d2638fc80e157f2ab9c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_ec1d5029ed9b57c78faf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_8e77a61abfee5550897b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p4"
+        ]
+      },
+      {
+        "person_id": "person_6572e96873f65854b603",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Directory entry (type Emeriti Faculty, ECE) lists 'Professor Emeritus'; emeritus is excluded and the appointment is past.",
+        "source_ids": [
+          "src-list-p5"
+        ]
+      },
+      {
+        "person_id": "person_7437619f10d953148ca7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Official profile (Professor, Electrical and Computer Engineering) confirms the rank; the directory title was truncated to 'Professor,'.",
+        "source_ids": [
+          "src-list-p5",
+          "src-profile-walsh"
+        ]
+      },
+      {
+        "person_id": "person_f293802ccdd85d4b9abd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Professor, Drexel Vice Provost for Undergraduate Curriculum and Education' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current. Administrative role does not replace the professorial rank.",
+        "source_ids": [
+          "src-list-p5"
+        ]
+      },
+      {
+        "person_id": "person_2828d35babee55d68d2d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory entry on the ECE department roster (type Faculty) lists professorial title 'Assistant Professor' with Electrical and Computer Engineering; department-roster convention applies, so regular/ece/current.",
+        "source_ids": [
+          "src-list-p5"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-list-p1",
+        "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+        "observed_at": "2026-11-25T04:56:22+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "JSON results array (ten records per page; totalResults 44)",
+        "response_sha256": "c26a6223f05a8e64dbbdd2f2e7ee8ae67c7fe281f9ec6823d791e73a5cd347f5"
+      },
+      {
+        "id": "src-list-p2",
+        "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=2",
+        "observed_at": "2026-11-25T04:56:23+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "JSON results array (ten records per page; totalResults 44)",
+        "response_sha256": "28f2cfc6e8a94aa42b89c9f2eb9a9cfc5612fa1e84c9de851af0973c6b900db6"
+      },
+      {
+        "id": "src-list-p3",
+        "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=3",
+        "observed_at": "2026-11-25T04:56:23+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "JSON results array (ten records per page; totalResults 44)",
+        "response_sha256": "7c3e42c23f251ee83c512fcbad77b1cd26faa3f0f26050e6ba1dc8ca3fc5489d"
+      },
+      {
+        "id": "src-list-p4",
+        "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=4",
+        "observed_at": "2026-11-25T04:56:23+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "JSON results array (ten records per page; totalResults 44)",
+        "response_sha256": "32853ab05c7f6b8cbdaceb7951b3777e70af4899fe71c1f8eaff7167de9974d6"
+      },
+      {
+        "id": "src-list-p5",
+        "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=5",
+        "observed_at": "2026-11-25T04:56:24+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "JSON results array (ten records per page; totalResults 44)",
+        "response_sha256": "240bf28df2e8523d706768900d91cca7fb880bbf072508151c17014215965ab1"
+      },
+      {
+        "id": "src-list-p6",
+        "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty?page=6",
+        "observed_at": "2026-11-25T04:56:24+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "JSON results array (empty; end of paging)",
+        "response_sha256": "e714495ef3cc6b3e937b676bf2f7ef1e83bb8dffc19a30c3f851ff4866702804"
+      },
+      {
+        "id": "src-profile-chen",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/C/chen-zhiwei/",
+        "observed_at": "2026-11-25T04:56:55+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "143afd3308cab711d70b3e8acdf4f867aed9920f80194554df0274dc1c6e6187"
+      },
+      {
+        "id": "src-profile-dandekar",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/D/dandekar-kapil/",
+        "observed_at": "2026-11-25T04:56:56+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "aadc3ac9f23119d898c18b45739b56185abb4866bfa687548df95ef686cb51cf"
+      },
+      {
+        "id": "src-profile-shackleford",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/S/shackleford-james/",
+        "observed_at": "2026-11-25T04:56:56+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "7b7bef6751f8891521bc6214a14786b8e635ebe80b0477f46c254d38ec6a7d32"
+      },
+      {
+        "id": "src-profile-johnson",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/J/johnson-jeremy/",
+        "observed_at": "2026-11-25T04:56:57+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "75e110e7752d75b2689699969ac1dfdd68fff92baff2ecdc2b49fc9ffaa6c4de"
+      },
+      {
+        "id": "src-profile-mancoridis",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/M/mancoridis-spiros/",
+        "observed_at": "2026-11-25T04:56:57+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "d6fede162bba65d7ad5173b12d688a81ad6ed90af60433e0ad013466d371bd17"
+      },
+      {
+        "id": "src-profile-lewin",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/L/lewin-peter/",
+        "observed_at": "2026-11-25T04:56:58+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "bf1a8e0982d89bdbf6f70d12ee1c462e5c65794b185080df54c3efbd7ed26e88"
+      },
+      {
+        "id": "src-profile-pourrezaei",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/P/pourrezaei-kambiz/",
+        "observed_at": "2026-11-25T04:56:59+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "0491cce7866920e66a06c0c7a71b051ced6660270ccc3b8435da5e9c3140a254"
+      },
+      {
+        "id": "src-profile-lui",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/L/lui-michael/",
+        "observed_at": "2026-11-25T04:57:00+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "0c49c52ec90fbaf35d6c49d3318d7d7260e80918a5032624fa4978e7a4b2934d"
+      },
+      {
+        "id": "src-profile-walsh",
+        "url": "https://drexel.edu/engineering/about/faculty-staff/W/walsh-john/",
+        "observed_at": "2026-11-25T04:57:01+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "page title, role and department lines",
+        "response_sha256": "add6991109b6466ab8cf2b193d52b096161669a999435a0fa3bbc8f4269ef279"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Directory API enumerated fully: pages 1-5 returned 10, 10, 10, 10 and 4 records (44 total, matching totalResults 44); page 6 returned no results, ending paging. All 44 brief people matched by name; no omissions found."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Owner determinations dated 2026-11-25 (Abd Arkadan, Tim Kane, Mehdi Abolhassani, Rohan Reddy Kalavakonda) are not in this brief and were not applied."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Profile pages were fetched for nine people with borderline entries (Chen, Dandekar, Shackleford, Johnson, Mancoridis, Lewin, Pourrezaei, Lui, Walsh). Other decisions rest on the directory entry and its title, type and department fields."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_d2f6600027355abbb5ed",
+        "description": "Chen, Zhiwei: regular/ece/current under the department-roster convention. Dual CEE and ECE listing with no primary-department statement elsewhere. Would change to joint_secondary only if the ECE roster designated him secondary."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_183d3678750857daac78",
+        "description": "Johnson, Jeremy: affiliate_professor/ece/current. CS professor listed under the ECE department as Affiliated Faculty. Would change to excluded only if the ECE affiliated listing were shown to be a generic lab membership."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ebfe0efd424e56288c48",
+        "description": "Mancoridis, Spiros: affiliate_professor/ece/current on the same basis as Johnson."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_abf7cf646cf65165842e",
+        "description": "Lewin, Peter: affiliate_professor/ece/current. Named professorship listed as Affiliated Faculty under ECE."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_000183e3908d51499621",
+        "description": "Pourrezaei, Kambiz: affiliate_professor/ece/current. Professor listed as Affiliated Faculty under ECE."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_dd0a85c6632f5091b6ee",
+        "description": "Dandekar, Kapil R.: regular/ece/current. Dean role does not drive the decision; the official profile states the ECE professorial chair."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b4d9dfaf5a47524781ef",
+        "description": "Lui, Michael: excluded as adjunct. Directory title is blank, type Adjunct Faculty, and the profile shows no professorial title. Would change only if an official source showed a professorial ECE appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_f6283ba1e2e450e18013",
+        "description": "Lambert, Kent: excluded as adjunct. Administrative title with Adjunct Faculty type; academic_professional would also exclude."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_56b420ac14db5a8aa9fb",
+        "description": "Madihian, Mohammad: excluded as adjunct despite the Adjunct Professor title, since adjunct is not a regular professorial appointment."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_f65dd401767e4a8aa19b86bcdcd9c3de",
+    "candidate_sha256": "dfbe75ad59b232ef3c4416378ab2831f099cc6b390377be01da8ec7ed61c974d",
+    "transport": "t3",
+    "run_id": "agent_a984852226a19f953",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T04:58:24.781703+00:00",
+    "exit_code": 0
+  }
+}

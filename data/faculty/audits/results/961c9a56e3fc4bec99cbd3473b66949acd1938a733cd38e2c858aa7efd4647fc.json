@@ -1,0 +1,2292 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/56686b37e83c21cda9537fb633b9c217a87b7bf331ac2fd8f557bf81f39b03a3.json",
+    "sha256": "56686b37e83c21cda9537fb633b9c217a87b7bf331ac2fd8f557bf81f39b03a3"
+  },
+  "brief": {
+    "file": "audits/briefs/bd0960c44f6c7674ef272c2f0d9b7c2c9bd891ea6842d65fe191dc82c72f6c60.json",
+    "sha256": "bd0960c44f6c7674ef272c2f0d9b7c2c9bd891ea6842d65fe191dc82c72f6c60"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_561bb058e84b4d1794c7d75e6311b87e",
+    "candidate_sha256": "11fc97a6ad9c7f353bafebef9c653e5815fca9433554a22ed3a2737231cd07b0",
+    "reviewer_id": "independent-ucsb-audit",
+    "reviewed_at": "2026-11-23T21:55:00.242081+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.ucsb.edu/people/faculty/allen-gersho",
+        "https://ece.ucsb.edu/people/faculty/andrew-teel",
+        "https://ece.ucsb.edu/people/faculty/arthur-gossard",
+        "https://ece.ucsb.edu/people/faculty/bassam-bamieh",
+        "https://ece.ucsb.edu/people/faculty/behrooz-parhami",
+        "https://ece.ucsb.edu/people/faculty/bongjin-kim",
+        "https://ece.ucsb.edu/people/faculty/bs-manjunath",
+        "https://ece.ucsb.edu/people/faculty/chandra-krintz",
+        "https://ece.ucsb.edu/people/faculty/christopher-palmstrom",
+        "https://ece.ucsb.edu/people/faculty/clint-schow",
+        "https://ece.ucsb.edu/people/faculty/daniel-blumenthal",
+        "https://ece.ucsb.edu/people/faculty/dmitri-strukov",
+        "https://ece.ucsb.edu/people/faculty/doug-baney",
+        "https://ece.ucsb.edu/people/faculty/elaheh-ahmadi",
+        "https://ece.ucsb.edu/people/faculty/elizabeth-belding",
+        "https://ece.ucsb.edu/people/faculty/erez-berg",
+        "https://ece.ucsb.edu/people/faculty/eric-mcfarland",
+        "https://ece.ucsb.edu/people/faculty/forrest-brewer",
+        "https://ece.ucsb.edu/people/faculty/francesco-bullo",
+        "https://ece.ucsb.edu/people/faculty/frank-ordung",
+        "https://ece.ucsb.edu/people/faculty/galan-moody",
+        "https://ece.ucsb.edu/people/faculty/george-matthaei",
+        "https://ece.ucsb.edu/people/faculty/glen-wade",
+        "https://ece.ucsb.edu/people/faculty/glenn-heidbreder",
+        "https://ece.ucsb.edu/people/faculty/haewon-jeong",
+        "https://ece.ucsb.edu/people/faculty/herbert-kroemer",
+        "https://ece.ucsb.edu/people/faculty/hua-lee",
+        "https://ece.ucsb.edu/people/faculty/ian-rhodes",
+        "https://ece.ucsb.edu/people/faculty/ilan-ben-yaacov",
+        "https://ece.ucsb.edu/people/faculty/james-buckwalter",
+        "https://ece.ucsb.edu/people/faculty/james-candy",
+        "https://ece.ucsb.edu/people/faculty/james-merz",
+        "https://ece.ucsb.edu/people/faculty/james-preiss",
+        "https://ece.ucsb.edu/people/faculty/jason-marden",
+        "https://ece.ucsb.edu/people/faculty/jerry-gibson",
+        "https://ece.ucsb.edu/people/faculty/joao-hespanha",
+        "https://ece.ucsb.edu/people/faculty/john-bowers",
+        "https://ece.ucsb.edu/people/faculty/john-shynk",
+        "https://ece.ucsb.edu/people/faculty/john-skalnik",
+        "https://ece.ucsb.edu/people/faculty/jon-schuller",
+        "https://ece.ucsb.edu/people/faculty/jonathan-balkind",
+        "https://ece.ucsb.edu/people/faculty/jonathan-klamkin",
+        "https://ece.ucsb.edu/people/faculty/jorge-fontana",
+        "https://ece.ucsb.edu/people/faculty/katharine-schmidtke",
+        "https://ece.ucsb.edu/people/faculty/katie-byl",
+        "https://ece.ucsb.edu/people/faculty/kaustav-banerjee",
+        "https://ece.ucsb.edu/people/faculty/kenneth-rose",
+        "https://ece.ucsb.edu/people/faculty/kerem-camsari",
+        "https://ece.ucsb.edu/people/faculty/kwang-ting-tim-cheng",
+        "https://ece.ucsb.edu/people/faculty/larry-coldren",
+        "https://ece.ucsb.edu/people/faculty/larry-rabiner",
+        "https://ece.ucsb.edu/people/faculty/li-c-wang",
+        "https://ece.ucsb.edu/people/faculty/loai-salem",
+        "https://ece.ucsb.edu/people/faculty/louise-moser",
+        "https://ece.ucsb.edu/people/faculty/luke-theogarajan",
+        "https://ece.ucsb.edu/people/faculty/mahnoosh-alizadeh",
+        "https://ece.ucsb.edu/people/faculty/margaret-marek-sadowska",
+        "https://ece.ucsb.edu/people/faculty/mark-rodwell",
+        "https://ece.ucsb.edu/people/faculty/michael-beyeler",
+        "https://ece.ucsb.edu/people/faculty/michael-melliar-smith",
+        "https://ece.ucsb.edu/people/faculty/miguel-eckstein",
+        "https://ece.ucsb.edu/people/faculty/misha-sra",
+        "https://ece.ucsb.edu/people/faculty/nadir-dagli",
+        "https://ece.ucsb.edu/people/faculty/niels-volkmann",
+        "https://ece.ucsb.edu/people/faculty/nina-miolane",
+        "https://ece.ucsb.edu/people/faculty/nitin-kataria",
+        "https://ece.ucsb.edu/people/faculty/peng-li",
+        "https://ece.ucsb.edu/people/faculty/petar-kokotovic",
+        "https://ece.ucsb.edu/people/faculty/pierre-petroff",
+        "https://ece.ucsb.edu/people/faculty/pochi-yeh",
+        "https://ece.ucsb.edu/people/faculty/pradeep-sen",
+        "https://ece.ucsb.edu/people/faculty/qian-yu",
+        "https://ece.ucsb.edu/people/faculty/ramtin-pedarsani",
+        "https://ece.ucsb.edu/people/faculty/ranjit-deshmukh",
+        "https://ece.ucsb.edu/people/faculty/richard-mirin",
+        "https://ece.ucsb.edu/people/faculty/robert-york",
+        "https://ece.ucsb.edu/people/faculty/rod-alferness",
+        "https://ece.ucsb.edu/people/faculty/roger-wood",
+        "https://ece.ucsb.edu/people/faculty/ron-iltis",
+        "https://ece.ucsb.edu/people/faculty/sanjit-mitra",
+        "https://ece.ucsb.edu/people/faculty/shiv-chandrasekaran",
+        "https://ece.ucsb.edu/people/faculty/shuji-nakamura",
+        "https://ece.ucsb.edu/people/faculty/spencer-l-smith",
+        "https://ece.ucsb.edu/people/faculty/stephen-long",
+        "https://ece.ucsb.edu/people/faculty/steven-butner",
+        "https://ece.ucsb.edu/people/faculty/steven-denbaars",
+        "https://ece.ucsb.edu/people/faculty/steven-horvath",
+        "https://ece.ucsb.edu/people/faculty/tim-sherwood",
+        "https://ece.ucsb.edu/people/faculty/tobia-marcucci",
+        "https://ece.ucsb.edu/people/faculty/umesh-mishra",
+        "https://ece.ucsb.edu/people/faculty/upamanyu-madhow",
+        "https://ece.ucsb.edu/people/faculty/venkatesh-narayanamurti",
+        "https://ece.ucsb.edu/people/faculty/william-wang",
+        "https://ece.ucsb.edu/people/faculty/yao-qin",
+        "https://ece.ucsb.edu/people/faculty/yasamin-mostofi",
+        "https://ece.ucsb.edu/people/faculty/yogananda-isukapalli",
+        "https://ece.ucsb.edu/people/faculty/yon-visell",
+        "https://ece.ucsb.edu/people/faculty/zheng-zhang"
+      ],
+      "checked_list_ids": [
+        "directory",
+        "faculty",
+        "affiliate",
+        "adjunct",
+        "emeritus"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_ff602bf4214659de9578",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_020",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_b12f5da1bd865f68a600",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_083",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_85f930d2b5385462a56d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_062",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_358ef215e0905ab2a3cb",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_047",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_3c573516cbce5d0281bd",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_010",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_9cbf29fc79135041a959",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_052",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_ffc4c76c310f5f6d82f4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department adjunct category and profile identify an excluded adjunct appointment.",
+        "source_ids": [
+          "source_019",
+          "source_003"
+        ]
+      },
+      {
+        "person_id": "person_e0fe99d1693e589ab2f3",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_021",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_5ad6be3199f65828b5a1",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official directory identifies a teaching professor or lecturer, excluded by policy.",
+        "source_ids": [
+          "source_035",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_fc0b1bfe52895b96b03b",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty roster lists Berg, and UCSB Materials identifies him as professor in both Materials and ECE; precise regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "source_022",
+          "source_006",
+          "source_105"
+        ]
+      },
+      {
+        "person_id": "person_f5fb99b202e85e089c73",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_065",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_b81071c8d1975eeeab3a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_017",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_ef73370977b15a3a85fd",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_043",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_cb2c1ed61fbf5bc78879",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_024",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_40d0a97922ce5262885c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_036",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_1a7c8ff209675452bc36",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_025",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_0a32e30e05575b8399a3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_091",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_d31f9ac684e457bbb95c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_051",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_7502304646245cd59ee2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_054",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_a37ec534c28754edb4e8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department adjunct category and profile identify an excluded adjunct appointment.",
+        "source_ids": [
+          "source_037",
+          "source_003"
+        ]
+      },
+      {
+        "person_id": "person_9ca6ba23a67857af95c0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_087",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_f59a97390c1255898865",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_055",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_4c2fcd22dc6251deb903",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy. Profile lists research professor; both research-only and emeritus categories are excluded.",
+        "source_ids": [
+          "source_056",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_8fc47c627b1b5680bda1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_069",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_ad03547542965e84814c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_092",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_1054e7ed064c5dcc91d3",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_080",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_fb0b2f38a0545fa38603",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_067",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_2554869bbfc45d12a127",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_049",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_3981511268705e9da50a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_007",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_2ce6d3233f68567da577",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_041",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_f8dd0a051654513bb1ec",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_009",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_5ffa2df316b35ca1ac13",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_030",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_4d8167c8f4535019a829",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_042",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_db4ccb8173e756e5a26d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_093",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_1ae53b15dd5f5c3e84f9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_085",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_663ec6e1e1e85ef89a66",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official directory identifies a teaching professor or lecturer, excluded by policy.",
+        "source_ids": [
+          "source_102",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_41453683487b5fde87f6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_031",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_79d5d31ab74f5e7bbe93",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official directory identifies a teaching professor or lecturer, excluded by policy.",
+        "source_ids": [
+          "source_072",
+          "source_002"
+        ]
+      },
+      {
+        "person_id": "person_449acef7144f5653b0fe",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department places Kim under adjunct faculty; the profile still says assistant professor. KAIST reports UCSB assistant professorship through 2024 and KAIST associate professorship from 2025. Adjunct listing is more specific; no current regular appointment established.",
+        "source_ids": [
+          "source_012",
+          "source_003",
+          "source_001"
+        ]
+      },
+      {
+        "person_id": "person_948c9473dbf5574ba14f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_048",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_3558228834ae599db0bf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_074",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_e42c253371445d6896ae",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_014",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_945094d1c8a158c7bf72",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_032",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_9d4dc0bbee235b8da81c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_033",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_8b5d1e4312365404b13a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_073",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_70534a40c01c5571bf48",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_090",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_1af66f8e3852505cb5a1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_097",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_2eafc9d7862a5d6e8a5b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_013",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_886905954baa5bfab011",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_095",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_3601548668455a59b8e8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_040",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_8d2986976c9252b7b25e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_063",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_48614ddf63b15112a892",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_028",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_fa77969885d6596b8c7a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_023",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_3bd4bf2a533151b2ac42",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_066",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_6efdca95a0ca5dac88fe",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_038",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_baca174fd8d9537f9297",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_071",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_e3044da4b6f35055867b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty roster lists Mirin, and a 2026 UCSB seminar identifies him as ECE professor and notes his recent return to UCSB.",
+        "source_ids": [
+          "source_081",
+          "source_006",
+          "source_106"
+        ]
+      },
+      {
+        "person_id": "person_d1b3542e814758528d3f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_096",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_3887a02e930456e4b69b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_086",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_384197bb4b6f56768794",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_027",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_b94aeed3613b5b48b274",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_060",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_da61d0565bf95408a5b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_101",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_fb600ab5099b51559b1c",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_088",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_6b89a6aabd545dc997a3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_098",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_0a4879b71a0b578b957a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_026",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_a4741fdd916450a784bb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_015",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_8e2fcd51149d523aa055",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_011",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_6006b12dea7c5e119817",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_079",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_09de312792a65c10a9c0",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_075",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_5a6650c6ad495f59af51",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_039",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_a51773ae78ac50948cd6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_100",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_54e5272e19c05b96bde6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_057",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_cd165637121f58b7bb9d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_034",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_f3fce76a5efb5380b101",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_064",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_86ce814a7b895f768ce4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy. Profile retains the generic title Distinguished Professor; the explicit emeriti category is more specific.",
+        "source_ids": [
+          "source_053",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_f24ef10b1565585e9ec1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_059",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_1e39a65b9470584ebffa",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department adjunct category and profile identify an excluded adjunct appointment.",
+        "source_ids": [
+          "source_050",
+          "source_003"
+        ]
+      },
+      {
+        "person_id": "person_deeb3fc0ff825d29a12e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_016",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_d242c4f9c8985d398196",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_046",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_3bc4fc5b4d9b5bab863d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_077",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_5b76ec3e393c5f74add2",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_094",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_13709b21cd795bb39cec",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_044",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_ce0091d380495fff96ca",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_045",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_7a668676cd68578bbeee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_089",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_a37bece8bad95948a14e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department lists affiliated faculty; UCSB engineering profile establishes a current associate professorship in computer science.",
+        "source_ids": [
+          "source_068",
+          "source_004",
+          "source_000"
+        ]
+      },
+      {
+        "person_id": "person_27323d1cb76b511fa2dd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_018",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_54d46e5d3c3453bdbc24",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_008",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_7ed9e35db2675a808267",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_061",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_58ccc48bb9a858fc8bd4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_103",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_b6a4bcc5f0c05a008369",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_070",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_694b8f9a62e85de6b787",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_029",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_6bb76d9f252f56d8acae",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_058",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_fe5c152d19a557ffa31b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department affiliated faculty roster identifies an affiliated professor.",
+        "source_ids": [
+          "source_099",
+          "source_004"
+        ]
+      },
+      {
+        "person_id": "person_012a0fb07cf15451aaf2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_084",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_3687be1e2c1056b2abff",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_076",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_b268fe6579a8500d9865",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Department explicitly places this person on its emeriti faculty list; excluded by policy.",
+        "source_ids": [
+          "source_082",
+          "source_005"
+        ]
+      },
+      {
+        "person_id": "person_bc61b964223a5a67ad3a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_078",
+          "source_006"
+        ]
+      },
+      {
+        "person_id": "person_1e8504d145235c438fa7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Department faculty list identifies a current professor.",
+        "source_ids": [
+          "source_104",
+          "source_006"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "source_000",
+        "url": "https://engineering.ucsb.edu/people/misha-sra",
+        "observed_at": "2026-11-23T21:54:08.843820+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "b03952299467fb611a5aff250ac04102ae2fe99e9aba87cc922e6359f2d26956"
+      },
+      {
+        "id": "source_001",
+        "url": "https://pure.kaist.ac.kr/en/persons/bongjin-kim/",
+        "observed_at": "2026-11-23T21:54:09.621302+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "cd4a2e6378a5c7a440b1151de2f55c15063846fef453f887cbc66edd2adf564a"
+      },
+      {
+        "id": "source_002",
+        "url": "https://www.ece.ucsb.edu/people",
+        "observed_at": "2026-11-23T21:53:15.116100+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "1589ffe9fe27883b1eab1dbd2e81fbd7cde301abd23dd2efbbdcc4a1d7ce4c7b"
+      },
+      {
+        "id": "source_003",
+        "url": "https://www.ece.ucsb.edu/people/adjunct",
+        "observed_at": "2026-11-23T21:53:14.692256+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "cd7938820026b074fad2c8a4b42a02359c1e3d01e98ae9f50f88cee0e3df73dd"
+      },
+      {
+        "id": "source_004",
+        "url": "https://www.ece.ucsb.edu/people/affiliated",
+        "observed_at": "2026-11-23T21:53:14.807312+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "391a0632416401763a2fd824b3f19a68353b03322cd472b8e496098b2b1c48d4"
+      },
+      {
+        "id": "source_005",
+        "url": "https://www.ece.ucsb.edu/people/emeriti",
+        "observed_at": "2026-11-23T21:53:14.806301+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "909b07890005d7223e42cef416b0963df973439f7941c1fa937abbf152fd2fea"
+      },
+      {
+        "id": "source_006",
+        "url": "https://www.ece.ucsb.edu/people/faculty",
+        "observed_at": "2026-11-23T21:53:14.704898+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "0f359fce8d54fc3c42591a1a9e24a94137647d0f627f96a136ce44da4aabd16f"
+      },
+      {
+        "id": "source_007",
+        "url": "https://www.ece.ucsb.edu/people/faculty/allen-gersho",
+        "observed_at": "2026-11-23T21:53:14.806676+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "7fd8a742cfd724d5571e2a2988e955f06c9440d7bf8db85153c883deb8a35f2a"
+      },
+      {
+        "id": "source_008",
+        "url": "https://www.ece.ucsb.edu/people/faculty/andrew-teel",
+        "observed_at": "2026-11-23T21:53:15.105127+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "2f1d0665019ee7fef36efebaff78de81602510d800bd548948e2dc05a011a812"
+      },
+      {
+        "id": "source_009",
+        "url": "https://www.ece.ucsb.edu/people/faculty/arthur-gossard",
+        "observed_at": "2026-11-23T21:53:15.006795+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "86889a6356ce3ee3d464fe95a1b0b4595bbe0b9ae13db260588f0cc93e7b3fcb"
+      },
+      {
+        "id": "source_010",
+        "url": "https://www.ece.ucsb.edu/people/faculty/bassam-bamieh",
+        "observed_at": "2026-11-23T21:53:14.918506+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d9555bdb356a58539a7ffa4795e62016e85befae784ca4b0db8bd3b68aa8bbec"
+      },
+      {
+        "id": "source_011",
+        "url": "https://www.ece.ucsb.edu/people/faculty/behrooz-parhami",
+        "observed_at": "2026-11-23T21:53:15.054250+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "df547a0e4743f0684d6187143cbcbd8cae7e1b57493b480ed7ca29781183bcb1"
+      },
+      {
+        "id": "source_012",
+        "url": "https://www.ece.ucsb.edu/people/faculty/bongjin-kim",
+        "observed_at": "2026-11-23T21:53:15.349044+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "c98fdf70408aa25f88aa7bce0e34f58a8856b99498e6383ed2b2d1f2c81f898e"
+      },
+      {
+        "id": "source_013",
+        "url": "https://www.ece.ucsb.edu/people/faculty/bs-manjunath",
+        "observed_at": "2026-11-23T21:53:15.385684+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "31cda3d73660e469f9760cc1cb47313ac45dec8af563e55a9a6a1dc507c62d90"
+      },
+      {
+        "id": "source_014",
+        "url": "https://www.ece.ucsb.edu/people/faculty/chandra-krintz",
+        "observed_at": "2026-11-23T21:53:15.084175+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "9c0f9edf39ea19193c0c25f2504e5195edfa0b99f40d0a5ff35998016ffa479f"
+      },
+      {
+        "id": "source_015",
+        "url": "https://www.ece.ucsb.edu/people/faculty/christopher-palmstrom",
+        "observed_at": "2026-11-23T21:53:14.851108+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "a25f07f4f560f762a0965601a8821146e87f00671436ec4145feb14ddd016460"
+      },
+      {
+        "id": "source_016",
+        "url": "https://www.ece.ucsb.edu/people/faculty/clint-schow",
+        "observed_at": "2026-11-23T21:53:15.257526+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "004cc0de559579ee641082a2dfa69506c3889dcbda01fd5ccd473c7816f9cbac"
+      },
+      {
+        "id": "source_017",
+        "url": "https://www.ece.ucsb.edu/people/faculty/daniel-blumenthal",
+        "observed_at": "2026-11-23T21:53:14.697216+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "02440ae88c6d7477ee0aa0d3d73e6c5036becde3316f4d4b6a3fa83314cb2eb6"
+      },
+      {
+        "id": "source_018",
+        "url": "https://www.ece.ucsb.edu/people/faculty/dmitri-strukov",
+        "observed_at": "2026-11-23T21:53:15.261921+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "0d071ab8e1d0323a8b270109c3070a3f313ec9f7821357f4b1c0fd78949ed409"
+      },
+      {
+        "id": "source_019",
+        "url": "https://www.ece.ucsb.edu/people/faculty/doug-baney",
+        "observed_at": "2026-11-23T21:53:15.307922+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "948aa0ebaa850a670912b6ac49b00e0a66d3a90c063d53d6dfddc309e0226fcc"
+      },
+      {
+        "id": "source_020",
+        "url": "https://www.ece.ucsb.edu/people/faculty/elaheh-ahmadi",
+        "observed_at": "2026-11-23T21:53:15.059415+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "91c9eaed637ee1796b2f78b84e683465746bec4eccfb5456c9b888ee9eda1e18"
+      },
+      {
+        "id": "source_021",
+        "url": "https://www.ece.ucsb.edu/people/faculty/elizabeth-belding",
+        "observed_at": "2026-11-23T21:53:15.260468+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "602907b7d9950c3599ae9d76c2f9b9db50e41d650b521ec7c27a412de8c84685"
+      },
+      {
+        "id": "source_022",
+        "url": "https://www.ece.ucsb.edu/people/faculty/erez-berg",
+        "observed_at": "2026-11-23T21:53:14.696763+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "fc09162893fcf27314b996d7b520a00a06f864581350b82cfc1ab6fdcfd96cab"
+      },
+      {
+        "id": "source_023",
+        "url": "https://www.ece.ucsb.edu/people/faculty/eric-mcfarland",
+        "observed_at": "2026-11-23T21:53:15.309487+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d9a366637c8890e8d4f0cc7bcee8df4546c7b3a45ae383a743a27694c613b7e9"
+      },
+      {
+        "id": "source_024",
+        "url": "https://www.ece.ucsb.edu/people/faculty/forrest-brewer",
+        "observed_at": "2026-11-23T21:53:15.043173+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "1c2937e9d331a2e5e354ddb5d363f3ffb0463f49ec57ef8fb53110f8cdbe46f2"
+      },
+      {
+        "id": "source_025",
+        "url": "https://www.ece.ucsb.edu/people/faculty/francesco-bullo",
+        "observed_at": "2026-11-23T21:53:15.261456+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "40d59c043f82a312518e2d2b52e7e4cba3c8ac074d96dabc4ca5e2a765eb6f7a"
+      },
+      {
+        "id": "source_026",
+        "url": "https://www.ece.ucsb.edu/people/faculty/frank-ordung",
+        "observed_at": "2026-11-23T21:53:14.917460+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d4a60a0f1ae01ed4b017cdd11ca26e49e6e84e705599a6ed1a37739606c6a8f0"
+      },
+      {
+        "id": "source_027",
+        "url": "https://www.ece.ucsb.edu/people/faculty/galan-moody",
+        "observed_at": "2026-11-23T21:53:15.350580+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "03956072df8dcbc9727f1cbd6eabeb6b2e9842d1e943313d2549574dce96d205"
+      },
+      {
+        "id": "source_028",
+        "url": "https://www.ece.ucsb.edu/people/faculty/george-matthaei",
+        "observed_at": "2026-11-23T21:53:14.695143+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "a9828bcecf6f05deb00b81bd4e1106c415584d59fa39b63b7ca733a765618951"
+      },
+      {
+        "id": "source_029",
+        "url": "https://www.ece.ucsb.edu/people/faculty/glen-wade",
+        "observed_at": "2026-11-23T21:53:14.916512+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "bef63aa8e7f97ca8058f6c2406f970bebb166359216a24164512c5dfcb48711a"
+      },
+      {
+        "id": "source_030",
+        "url": "https://www.ece.ucsb.edu/people/faculty/glenn-heidbreder",
+        "observed_at": "2026-11-23T21:53:15.009259+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "57b3891594acda6df9bc6e5110d311d501a62f5a62617452baebc2897839474c"
+      },
+      {
+        "id": "source_031",
+        "url": "https://www.ece.ucsb.edu/people/faculty/haewon-jeong",
+        "observed_at": "2026-11-23T21:53:15.308425+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "adc7a6b4d078612f72959ae09a149c0c5d2b471a846e57a15fe0d101cf5fb815"
+      },
+      {
+        "id": "source_032",
+        "url": "https://www.ece.ucsb.edu/people/faculty/herbert-kroemer",
+        "observed_at": "2026-11-23T21:53:15.101663+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d23c9c9dfcfa469c829468da9770a50d0f7543e6217be9cc94f34d21f48f8601"
+      },
+      {
+        "id": "source_033",
+        "url": "https://www.ece.ucsb.edu/people/faculty/hua-lee",
+        "observed_at": "2026-11-23T21:53:14.696473+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "445a287d6854a700bc01ba2c18f097aee155e42062e33f0744d5779a855193ad"
+      },
+      {
+        "id": "source_034",
+        "url": "https://www.ece.ucsb.edu/people/faculty/ian-rhodes",
+        "observed_at": "2026-11-23T21:53:14.696039+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "96b1db6089e7fb5b3cf748fd072b4aa43da751f72f3b01789b9223d98bc580a2"
+      },
+      {
+        "id": "source_035",
+        "url": "https://www.ece.ucsb.edu/people/faculty/ilan-ben-yaacov",
+        "observed_at": "2026-11-23T21:53:15.007046+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "03882c78693a5a6b0659ed98500b44f08f85109330a59034d74c2e6fead6fe23"
+      },
+      {
+        "id": "source_036",
+        "url": "https://www.ece.ucsb.edu/people/faculty/james-buckwalter",
+        "observed_at": "2026-11-23T21:53:14.918053+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "88831f3042932df1e3d7f13da2fe8fa6117edbb4c934d6d6597800924a7240a6"
+      },
+      {
+        "id": "source_037",
+        "url": "https://www.ece.ucsb.edu/people/faculty/james-candy",
+        "observed_at": "2026-11-23T21:53:14.806156+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "050e929226f9ce3ad98979e385e1e832abae0d372c4590c774501bf48815724a"
+      },
+      {
+        "id": "source_038",
+        "url": "https://www.ece.ucsb.edu/people/faculty/james-merz",
+        "observed_at": "2026-11-23T21:53:15.043441+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "74f64d17c3f208421c33f4febca60d088918c0d007fa962f4793ae33d6d96d6c"
+      },
+      {
+        "id": "source_039",
+        "url": "https://www.ece.ucsb.edu/people/faculty/james-preiss",
+        "observed_at": "2026-11-23T21:53:15.354029+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "4134c23577407f4af699eeef1d241e163b277b97abdb938bff6cbf97c86ef0cd"
+      },
+      {
+        "id": "source_040",
+        "url": "https://www.ece.ucsb.edu/people/faculty/jason-marden",
+        "observed_at": "2026-11-23T21:53:15.349122+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "a3f1d86e158c5d0d8e0cd735bb49db3b86049f61bf096a82772349e34c0ce7c2"
+      },
+      {
+        "id": "source_041",
+        "url": "https://www.ece.ucsb.edu/people/faculty/jerry-gibson",
+        "observed_at": "2026-11-23T21:53:15.261787+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "39a8b1f11ea10fa94c4fec9f55d0a692ac1564f74dbb5166c2cff996d60fe0a8"
+      },
+      {
+        "id": "source_042",
+        "url": "https://www.ece.ucsb.edu/people/faculty/joao-hespanha",
+        "observed_at": "2026-11-23T21:53:15.010229+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d4189415316b7db5af18c4da97c40dfc1783dc68b3c3103a2d2aeacd51cd9560"
+      },
+      {
+        "id": "source_043",
+        "url": "https://www.ece.ucsb.edu/people/faculty/john-bowers",
+        "observed_at": "2026-11-23T21:53:15.056354+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "b3534ae7ac59a56379f247e2bbdd031c71c1eff2cbe37881346e61e2d2990e6e"
+      },
+      {
+        "id": "source_044",
+        "url": "https://www.ece.ucsb.edu/people/faculty/john-shynk",
+        "observed_at": "2026-11-23T21:53:15.013764+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "34affcd084b9806d65ae3813511918f381db12e09b18ce9f18859edbc802981a"
+      },
+      {
+        "id": "source_045",
+        "url": "https://www.ece.ucsb.edu/people/faculty/john-skalnik",
+        "observed_at": "2026-11-23T21:53:14.807491+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "c5c06a17ba1ae12d8a155e9020973d195db85dc6e2518bdd9301c4ef526af3d2"
+      },
+      {
+        "id": "source_046",
+        "url": "https://www.ece.ucsb.edu/people/faculty/jon-schuller",
+        "observed_at": "2026-11-23T21:53:14.850988+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "83b61fd36435bd335aff2ff2632385152ee1a5cbd2fc30c0cc19f940e2e79cb4"
+      },
+      {
+        "id": "source_047",
+        "url": "https://www.ece.ucsb.edu/people/faculty/jonathan-balkind",
+        "observed_at": "2026-11-23T21:53:15.347915+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "6cc4ac701264fd60abbcb8ec05a84de0dc530ed4fa5a8646eeb021f9328a218c"
+      },
+      {
+        "id": "source_048",
+        "url": "https://www.ece.ucsb.edu/people/faculty/jonathan-klamkin",
+        "observed_at": "2026-11-23T21:53:15.306397+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "0615b293de4db41113d6f99f1a5f8007d4bc1253a845bb8cc7c3d409feb22035"
+      },
+      {
+        "id": "source_049",
+        "url": "https://www.ece.ucsb.edu/people/faculty/jorge-fontana",
+        "observed_at": "2026-11-23T21:53:15.307468+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "fd0c95796aa79e0006fddae89f9f153931a5940c57d031c95a5489db1ace69a1"
+      },
+      {
+        "id": "source_050",
+        "url": "https://www.ece.ucsb.edu/people/faculty/katharine-schmidtke",
+        "observed_at": "2026-11-23T21:53:15.352354+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "670d26056d53b808aa7886c40ddd43f32460089c0d1bb16b93ba504788294ec9"
+      },
+      {
+        "id": "source_051",
+        "url": "https://www.ece.ucsb.edu/people/faculty/katie-byl",
+        "observed_at": "2026-11-23T21:53:14.697062+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "1a06fde73bfc8d2a689bd49661fa592f08ae224641aa8c172f1163b45ea7fc8e"
+      },
+      {
+        "id": "source_052",
+        "url": "https://www.ece.ucsb.edu/people/faculty/kaustav-banerjee",
+        "observed_at": "2026-11-23T21:53:14.802766+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "0923ee3d06838cac480ddc5b20d7c1919da5d13ccefa19e6b1ce2f725c5a52d1"
+      },
+      {
+        "id": "source_053",
+        "url": "https://www.ece.ucsb.edu/people/faculty/kenneth-rose",
+        "observed_at": "2026-11-23T21:53:14.848742+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "ac284ab341a77593bc63acf112f9cc751e7546cadc24530d1b87eb0f87f81120"
+      },
+      {
+        "id": "source_054",
+        "url": "https://www.ece.ucsb.edu/people/faculty/kerem-camsari",
+        "observed_at": "2026-11-23T21:53:15.354223+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "b293578075975e3f6144d370e7ef3b54a92110a3d8841de0381b13ec92ecb214"
+      },
+      {
+        "id": "source_055",
+        "url": "https://www.ece.ucsb.edu/people/faculty/kwang-ting-tim-cheng",
+        "observed_at": "2026-11-23T21:53:14.803658+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "a7649ae9d7e408b09c581f9b5d234c40236f1be1458bf054f62b105f8de021cf"
+      },
+      {
+        "id": "source_056",
+        "url": "https://www.ece.ucsb.edu/people/faculty/larry-coldren",
+        "observed_at": "2026-11-23T21:53:15.307793+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d030058ba994e17cf3768748633ed3646a3e11053e54faf8fb67f4037433d521"
+      },
+      {
+        "id": "source_057",
+        "url": "https://www.ece.ucsb.edu/people/faculty/larry-rabiner",
+        "observed_at": "2026-11-23T21:53:15.052962+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "31816d061b04e03c0b732a5ce9c3c334166b8f0eaab516cbfc7f0cec5c99c832"
+      },
+      {
+        "id": "source_058",
+        "url": "https://www.ece.ucsb.edu/people/faculty/li-c-wang",
+        "observed_at": "2026-11-23T21:53:15.005328+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "76859bc4c3c5ab7d77f473bdf724fadec35f8b649a23fa4d31e9faabd1028731"
+      },
+      {
+        "id": "source_059",
+        "url": "https://www.ece.ucsb.edu/people/faculty/loai-salem",
+        "observed_at": "2026-11-23T21:53:15.354168+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "e5d2fc0b233149ce7e0c5f9cc0a2043edd9a5f4c7870caad2cc2274bdb3604a4"
+      },
+      {
+        "id": "source_060",
+        "url": "https://www.ece.ucsb.edu/people/faculty/louise-moser",
+        "observed_at": "2026-11-23T21:53:15.262475+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "ec31cdeb7b64ae656df020d6a09a8f73b61ef36d951aad4b251293ae341ff7b8"
+      },
+      {
+        "id": "source_061",
+        "url": "https://www.ece.ucsb.edu/people/faculty/luke-theogarajan",
+        "observed_at": "2026-11-23T21:53:15.350201+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "b5efab77b83d7ffdcac581bad60ba7ff63d82e9048c805864d11de163b7e9f6f"
+      },
+      {
+        "id": "source_062",
+        "url": "https://www.ece.ucsb.edu/people/faculty/mahnoosh-alizadeh",
+        "observed_at": "2026-11-23T21:53:15.004978+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "c68af4edbb32071a5f66e916fc766b998e1b7f255ebb4e42f1952307a325f091"
+      },
+      {
+        "id": "source_063",
+        "url": "https://www.ece.ucsb.edu/people/faculty/margaret-marek-sadowska",
+        "observed_at": "2026-11-23T21:53:15.008215+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "ec2e6fccec1272727f0300ac2239cc9a223c7e745f87922dfbf9bb3620e0510c"
+      },
+      {
+        "id": "source_064",
+        "url": "https://www.ece.ucsb.edu/people/faculty/mark-rodwell",
+        "observed_at": "2026-11-23T21:53:15.059764+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "17e98bebb78cb8213aa43f7762e539e2653556f3c429124eff2be281bc130ca8"
+      },
+      {
+        "id": "source_065",
+        "url": "https://www.ece.ucsb.edu/people/faculty/michael-beyeler",
+        "observed_at": "2026-11-23T21:53:14.918702+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "e5b699a700a74dad8c143dae4f8c262db9f0d1b1a88ee421d54ac38783ff35d2"
+      },
+      {
+        "id": "source_066",
+        "url": "https://www.ece.ucsb.edu/people/faculty/michael-melliar-smith",
+        "observed_at": "2026-11-23T21:53:15.099789+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "af5de51b16226223a5177920f379ed1c048a24ad0b25876d321e7664cbdd3ca6"
+      },
+      {
+        "id": "source_067",
+        "url": "https://www.ece.ucsb.edu/people/faculty/miguel-eckstein",
+        "observed_at": "2026-11-23T21:53:15.261641+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "192492bcd61f16d030abf037677c01c59725f750585292822ab6fe17b8ffb8e7"
+      },
+      {
+        "id": "source_068",
+        "url": "https://www.ece.ucsb.edu/people/faculty/misha-sra",
+        "observed_at": "2026-11-23T21:53:15.006620+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "1dc4307d5a34cc4b6785deeef288e262faa85b06ed8beec0d003cf8525b5ae19"
+      },
+      {
+        "id": "source_069",
+        "url": "https://www.ece.ucsb.edu/people/faculty/nadir-dagli",
+        "observed_at": "2026-11-23T21:53:14.849396+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d3f5bb333ce121e8704a8a2d6068b239d8592c2d1f20a59265db78c42d45ef7e"
+      },
+      {
+        "id": "source_070",
+        "url": "https://www.ece.ucsb.edu/people/faculty/niels-volkmann",
+        "observed_at": "2026-11-23T21:53:14.695867+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "9317f34bbfb9173746df2706f05913f2eeb7cfd2a3930c8a7c1bb9db3847bed1"
+      },
+      {
+        "id": "source_071",
+        "url": "https://www.ece.ucsb.edu/people/faculty/nina-miolane",
+        "observed_at": "2026-11-23T21:53:15.003832+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "09ae4c8ccbfcf71e3a3d92724a5b04d7a833a718022d783e84c66ba5be8ffeb6"
+      },
+      {
+        "id": "source_072",
+        "url": "https://www.ece.ucsb.edu/people/faculty/nitin-kataria",
+        "observed_at": "2026-11-23T21:53:15.094975+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "82d704be2ef68dbb6b98e684ea9d8bf5024e26ceb7c0d1360f941e1b38289e26"
+      },
+      {
+        "id": "source_073",
+        "url": "https://www.ece.ucsb.edu/people/faculty/peng-li",
+        "observed_at": "2026-11-23T21:53:15.060124+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "a42c17c4acc5bd4595a59069eee98c8e91c3446380740b390afacec495244d5a"
+      },
+      {
+        "id": "source_074",
+        "url": "https://www.ece.ucsb.edu/people/faculty/petar-kokotovic",
+        "observed_at": "2026-11-23T21:53:15.303760+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "38908bfe013f6d76a4ac9cd9e66074b827919799f7296a4b99a4b1c780fbb644"
+      },
+      {
+        "id": "source_075",
+        "url": "https://www.ece.ucsb.edu/people/faculty/pierre-petroff",
+        "observed_at": "2026-11-23T21:53:15.104418+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "91a05ecab3181b09193918524c985ec34383b8fbcd32c4f9815709be9cb2fbcd"
+      },
+      {
+        "id": "source_076",
+        "url": "https://www.ece.ucsb.edu/people/faculty/pochi-yeh",
+        "observed_at": "2026-11-23T21:53:15.309097+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "e4bd8f7532d9b1e13ffcb19167dd8d1ac468fc27c1331db5cd1d09f72f5b19e7"
+      },
+      {
+        "id": "source_077",
+        "url": "https://www.ece.ucsb.edu/people/faculty/pradeep-sen",
+        "observed_at": "2026-11-23T21:53:15.305039+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "31d4d7587b53991755e83f46430b57b82fde424f5c99bc343d2ac54f269dd831"
+      },
+      {
+        "id": "source_078",
+        "url": "https://www.ece.ucsb.edu/people/faculty/qian-yu",
+        "observed_at": "2026-11-23T21:53:14.805044+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "e1258c2714da21eabca3d2da9dc3566ffd7cde4ab224784350525cc6c0c46d59"
+      },
+      {
+        "id": "source_079",
+        "url": "https://www.ece.ucsb.edu/people/faculty/ramtin-pedarsani",
+        "observed_at": "2026-11-23T21:53:14.807848+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "e5b8e1256a2ffdec500461888649040563ed02ea0ad6fed527d1713b68a50564"
+      },
+      {
+        "id": "source_080",
+        "url": "https://www.ece.ucsb.edu/people/faculty/ranjit-deshmukh",
+        "observed_at": "2026-11-23T21:53:15.102266+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "1b6f12ce73b0b420143de1563c385f00d84504245d4f93708d6f06b6e06e3673"
+      },
+      {
+        "id": "source_081",
+        "url": "https://www.ece.ucsb.edu/people/faculty/richard-mirin",
+        "observed_at": "2026-11-23T21:53:15.263520+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "48dd78ab743388d4ae01f81c78d1ba0ca4ae1431fcfc0727aaaebbe19b40e6e0"
+      },
+      {
+        "id": "source_082",
+        "url": "https://www.ece.ucsb.edu/people/faculty/robert-york",
+        "observed_at": "2026-11-23T21:53:16.083576+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "e451e1fa678de3b4b6bf7a9ca3fbd45ff29ede7daff73453fb880800e87f6e0d"
+      },
+      {
+        "id": "source_083",
+        "url": "https://www.ece.ucsb.edu/people/faculty/rod-alferness",
+        "observed_at": "2026-11-23T21:53:14.802989+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "ffaecdfda02d0b680ae3c478c585cb7f2c7837883f4ea08ff13f2b4758285ae6"
+      },
+      {
+        "id": "source_084",
+        "url": "https://www.ece.ucsb.edu/people/faculty/roger-wood",
+        "observed_at": "2026-11-23T21:53:15.058062+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "916b7227ba5eef00c89cf020794c1e88c39a7f9655dd1d042157ab0e1209d138"
+      },
+      {
+        "id": "source_085",
+        "url": "https://www.ece.ucsb.edu/people/faculty/ron-iltis",
+        "observed_at": "2026-11-23T21:53:15.262614+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d991ae4680928a32f6e0bc752b84ec43817a867a6df70b43e4e660420c0360cf"
+      },
+      {
+        "id": "source_086",
+        "url": "https://www.ece.ucsb.edu/people/faculty/sanjit-mitra",
+        "observed_at": "2026-11-23T21:53:15.306230+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "5bf62a4c6ede45040316acde353a5a07f8ac28d3d4576cf4b036a166bc43741e"
+      },
+      {
+        "id": "source_087",
+        "url": "https://www.ece.ucsb.edu/people/faculty/shiv-chandrasekaran",
+        "observed_at": "2026-11-23T21:53:15.084584+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "3741ea2ab353d7660d3ba64020f77ce327b34a0cc0ce462820cad9a8e9c3b34f"
+      },
+      {
+        "id": "source_088",
+        "url": "https://www.ece.ucsb.edu/people/faculty/shuji-nakamura",
+        "observed_at": "2026-11-23T21:53:15.261298+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "9f1c676a511a33e9987b0a8214bce34883395d9fd8e251389895b4a8efa2f634"
+      },
+      {
+        "id": "source_089",
+        "url": "https://www.ece.ucsb.edu/people/faculty/spencer-l-smith",
+        "observed_at": "2026-11-23T21:53:14.889982+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "1f29d729334a97732df307ec2a2fbd2ff7afa801f69c81bc8f1668114b8686d2"
+      },
+      {
+        "id": "source_090",
+        "url": "https://www.ece.ucsb.edu/people/faculty/stephen-long",
+        "observed_at": "2026-11-23T21:53:14.850170+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "d25cd0498f60642aed8b1aaca43dfe31f142d0e605e4a4a2acd8b6d4e245a868"
+      },
+      {
+        "id": "source_091",
+        "url": "https://www.ece.ucsb.edu/people/faculty/steven-butner",
+        "observed_at": "2026-11-23T21:53:14.806891+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "c145ecea270ee9d4d5d5bb3d0e9baf601151e1d2ac23af8ab02a0ac3b669d417"
+      },
+      {
+        "id": "source_092",
+        "url": "https://www.ece.ucsb.edu/people/faculty/steven-denbaars",
+        "observed_at": "2026-11-23T21:53:15.000744+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "ebf08142015cc15c9035593e6338d5a5fcd614c39778b63711ba5bbd07ac72f0"
+      },
+      {
+        "id": "source_093",
+        "url": "https://www.ece.ucsb.edu/people/faculty/steven-horvath",
+        "observed_at": "2026-11-23T21:53:15.309632+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "4c16e46b211df79b6839e1763d44cc4d04012ea449c839524af50d991c8f48f3"
+      },
+      {
+        "id": "source_094",
+        "url": "https://www.ece.ucsb.edu/people/faculty/tim-sherwood",
+        "observed_at": "2026-11-23T21:53:15.008006+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "41953a13d78e8e0be2f660ccce8ada551f3d99cd5a207da25f47c3796b0fbe7c"
+      },
+      {
+        "id": "source_095",
+        "url": "https://www.ece.ucsb.edu/people/faculty/tobia-marcucci",
+        "observed_at": "2026-11-23T21:53:15.352477+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "eba305377c45be4ffb9b4deb90dbcfe8081dbe15ba6c5db25cd61f7e21d866dc"
+      },
+      {
+        "id": "source_096",
+        "url": "https://www.ece.ucsb.edu/people/faculty/umesh-mishra",
+        "observed_at": "2026-11-23T21:53:15.060651+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "56d501ae42d13de06c8490b158ab4ef28d29f8c0896d3b3ee7ebdac1f455b8fa"
+      },
+      {
+        "id": "source_097",
+        "url": "https://www.ece.ucsb.edu/people/faculty/upamanyu-madhow",
+        "observed_at": "2026-11-23T21:53:15.101860+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "57c9548c18035006436f3a716557ea97113487e4f982d0226ecae97f20d13846"
+      },
+      {
+        "id": "source_098",
+        "url": "https://www.ece.ucsb.edu/people/faculty/venkatesh-narayanamurti",
+        "observed_at": "2026-11-23T21:53:15.257744+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "91ae041baa5e995585f48b78b04e128640687310662017772f340db351fa5544"
+      },
+      {
+        "id": "source_099",
+        "url": "https://www.ece.ucsb.edu/people/faculty/william-wang",
+        "observed_at": "2026-11-23T21:53:14.692641+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "8299c12dfd86ed19d33e5dd7da4e0a0a6d0a7a83a5c79cb3fe257720a0014056"
+      },
+      {
+        "id": "source_100",
+        "url": "https://www.ece.ucsb.edu/people/faculty/yao-qin",
+        "observed_at": "2026-11-23T21:53:15.347203+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "fc0ce2351559f03198c169ed53637205aedbe1f5e520fd7105634d3e2d5c9cee"
+      },
+      {
+        "id": "source_101",
+        "url": "https://www.ece.ucsb.edu/people/faculty/yasamin-mostofi",
+        "observed_at": "2026-11-23T21:53:15.053199+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "a8ab3ef9674576bbcf202050957e3514c31888c508b38c6952d9a037af4b28cb"
+      },
+      {
+        "id": "source_102",
+        "url": "https://www.ece.ucsb.edu/people/faculty/yogananda-isukapalli",
+        "observed_at": "2026-11-23T21:53:14.850431+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "71a0c9fc4caf87d0dfa2d36f49c47b65d165142a1bbd2f83b4b089b718e824e4"
+      },
+      {
+        "id": "source_103",
+        "url": "https://www.ece.ucsb.edu/people/faculty/yon-visell",
+        "observed_at": "2026-11-23T21:53:15.096345+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "57774ef76f9107d0ad6fbacdae90ec3bd4fae476d6c0e0364751b2b979e5e3c4"
+      },
+      {
+        "id": "source_104",
+        "url": "https://www.ece.ucsb.edu/people/faculty/zheng-zhang",
+        "observed_at": "2026-11-23T21:53:14.693762+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "66ec52042d818826b3dd3723457f65b7c21350690db9a8048b441e42f176cdfb"
+      },
+      {
+        "id": "source_105",
+        "url": "https://www.materials.ucsb.edu/news/trio-new-faculty-bolster-materials-department%20",
+        "observed_at": "2026-11-23T21:54:08.220218+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "eab3c74fccbff2c008e207849cb5a8cbcafba9d4997384c15188f50bfc085a35"
+      },
+      {
+        "id": "source_106",
+        "url": "https://www.ssleec.ucsb.edu/news/events/compound-semiconductor-seminar-professor-richard-mirin",
+        "observed_at": "2026-11-23T21:54:07.639167+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Official university page; faculty listing and/or individual title",
+        "response_sha256": "aa0f513c7f7152518ec991b0047b7f55c7c7d51f87269e3dde4abc569a6316fc"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "person_449acef7144f5653b0fe",
+        "description": "Department places Kim under adjunct faculty; the profile still says assistant professor. KAIST reports UCSB assistant professorship through 2024 and KAIST associate professorship from 2025. Adjunct listing is more specific; no current regular appointment established."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_86ce814a7b895f768ce4",
+        "description": "Department explicitly places this person on its emeriti faculty list; excluded by policy. Profile retains the generic title Distinguished Professor; the explicit emeriti category is more specific."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Searched for officially announced incoming ECE professors; found no qualifying additional appointment. This is a search result, not proof that none exists."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_561bb058e84b4d1794c7d75e6311b87e",
+    "candidate_sha256": "11fc97a6ad9c7f353bafebef9c653e5815fca9433554a22ed3a2737231cd07b0",
+    "transport": "codex",
+    "run_id": "/root/ucsb_resume_audit",
+    "model": "gpt-6.1-terra",
+    "finished_at": "2026-11-23T21:55:00.242081+00:00",
+    "exit_code": 0
+  }
+}

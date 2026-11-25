@@ -1,0 +1,2331 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/87eed64fc7eba9fec40d84812baed478378c0068c19b63c4a6b7a76804840be9.json",
+    "sha256": "87eed64fc7eba9fec40d84812baed478378c0068c19b63c4a6b7a76804840be9"
+  },
+  "brief": {
+    "file": "audits/briefs/d6719e7c55218bc5ca30ae8de4e09ea53c831542df21a76483ea3f593187e832.json",
+    "sha256": "d6719e7c55218bc5ca30ae8de4e09ea53c831542df21a76483ea3f593187e832"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_bb2edf167d3945d99ec6ec64d06317b4",
+    "candidate_sha256": "1fff1d618c1c09074f23b5ffe5edab2999a198d66f1e20245ad55f314a8743b3",
+    "reviewer_id": "claude-opus-5-5-v5-t20-verify",
+    "reviewed_at": "2026-11-23T11:31:25.855288+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://cals.cornell.edu/c-lindsay-anderson",
+        "https://cals.cornell.edu/people/carl-batt",
+        "https://cals.cornell.edu/people/yu-jiang",
+        "https://cs.cornell.edu/%7Esrm",
+        "https://cs.cornell.edu/andru",
+        "https://cs.cornell.edu/~asampson",
+        "https://cs.cornell.edu/~cdesa",
+        "https://cs.cornell.edu/~hweather",
+        "https://cs.cornell.edu/~rdz",
+        "https://cs.cornell.edu/~snavely",
+        "https://duffield.cornell.edu/people/a-kevin-tang",
+        "https://duffield.cornell.edu/people/aaron-b-wagner",
+        "https://duffield.cornell.edu/people/adam-wojciech-bojanczyk",
+        "https://duffield.cornell.edu/people/alyosha-christopher-molnar",
+        "https://duffield.cornell.edu/people/alyssa-b-apsel",
+        "https://duffield.cornell.edu/people/amal-el-ghazaly",
+        "https://duffield.cornell.edu/people/amit-lal",
+        "https://duffield.cornell.edu/people/andreas-malikopoulos",
+        "https://duffield.cornell.edu/people/anna-scaglione",
+        "https://duffield.cornell.edu/people/anne-bracy",
+        "https://duffield.cornell.edu/people/anthony-p-reeves",
+        "https://duffield.cornell.edu/people/bruce-robert-land",
+        "https://duffield.cornell.edu/people/cara-m-nunez",
+        "https://duffield.cornell.edu/people/carl-bernard",
+        "https://duffield.cornell.edu/people/charles-eugene-seyler",
+        "https://duffield.cornell.edu/people/charles-r-johnson",
+        "https://duffield.cornell.edu/people/charles-wharton",
+        "https://duffield.cornell.edu/people/christopher-batten",
+        "https://duffield.cornell.edu/people/clifford-r-pollock",
+        "https://duffield.cornell.edu/people/daniel-dongyuel-lee",
+        "https://duffield.cornell.edu/people/david-a-hammer",
+        "https://duffield.cornell.edu/people/david-erickson",
+        "https://duffield.cornell.edu/people/david-forbes-delchamps",
+        "https://duffield.cornell.edu/people/david-lee-hysell",
+        "https://duffield.cornell.edu/people/debdeep-jena",
+        "https://duffield.cornell.edu/people/edwin-chihchuan-kan",
+        "https://duffield.cornell.edu/people/eilyan-bitar",
+        "https://duffield.cornell.edu/people/elizabeth-farrell-helbling",
+        "https://duffield.cornell.edu/people/eric-sander-lavine",
+        "https://duffield.cornell.edu/people/farhan-rana",
+        "https://duffield.cornell.edu/people/fengqi-you",
+        "https://duffield.cornell.edu/people/francesca-parise",
+        "https://duffield.cornell.edu/people/francesco-monticone",
+        "https://duffield.cornell.edu/people/gennady-shvets",
+        "https://duffield.cornell.edu/people/hadas-kress-gazit",
+        "https://duffield.cornell.edu/people/hsiao-dong-chiang",
+        "https://duffield.cornell.edu/people/huili-grace-xing",
+        "https://duffield.cornell.edu/people/hunter-adams",
+        "https://duffield.cornell.edu/people/jack-hare",
+        "https://duffield.cornell.edu/people/jacob-mays",
+        "https://duffield.cornell.edu/people/jae-sun-seo",
+        "https://duffield.cornell.edu/people/james-c-hwang",
+        "https://duffield.cornell.edu/people/james-richard-shealy",
+        "https://duffield.cornell.edu/people/jayadev-acharya",
+        "https://duffield.cornell.edu/people/jiaxin-lin",
+        "https://duffield.cornell.edu/people/jimy-encomendero",
+        "https://duffield.cornell.edu/people/jose-f-martinez",
+        "https://duffield.cornell.edu/people/joseph-m-ballantyne",
+        "https://duffield.cornell.edu/people/joseph-skovira",
+        "https://duffield.cornell.edu/people/karan-mehta",
+        "https://duffield.cornell.edu/people/kazuki-nomoto",
+        "https://duffield.cornell.edu/people/khurram-khan-afridi",
+        "https://duffield.cornell.edu/people/kirstin-hagelskjaer-petersen",
+        "https://duffield.cornell.edu/people/kyra-gan",
+        "https://duffield.cornell.edu/people/lang-tong",
+        "https://duffield.cornell.edu/people/mark-campbell",
+        "https://duffield.cornell.edu/people/mark-wilde",
+        "https://duffield.cornell.edu/people/mert-sabuncu",
+        "https://duffield.cornell.edu/people/michael-g-spencer",
+        "https://duffield.cornell.edu/people/mohamed-abdelfattah",
+        "https://duffield.cornell.edu/people/mohamed-i-ibrahim",
+        "https://duffield.cornell.edu/people/mohammad-alian",
+        "https://duffield.cornell.edu/people/nils-napp",
+        "https://duffield.cornell.edu/people/peter-doerschuk-2",
+        "https://duffield.cornell.edu/people/peter-g-jessel",
+        "https://duffield.cornell.edu/people/peter-mcmahon",
+        "https://duffield.cornell.edu/people/qing-zhao",
+        "https://duffield.cornell.edu/people/richard-douglas-robinson",
+        "https://duffield.cornell.edu/people/sandip-tiwari",
+        "https://duffield.cornell.edu/people/sid-banerjee",
+        "https://duffield.cornell.edu/people/silvia-ferrari",
+        "https://duffield.cornell.edu/people/stephen-b-wicker",
+        "https://duffield.cornell.edu/people/steven-graham-adie",
+        "https://duffield.cornell.edu/people/tianyi-chen",
+        "https://duffield.cornell.edu/people/udit-gupta",
+        "https://duffield.cornell.edu/people/vikram-krishnamurthy",
+        "https://duffield.cornell.edu/people/vladimir-vladimirovich-protasenko",
+        "https://duffield.cornell.edu/people/w-kent-fuchs",
+        "https://duffield.cornell.edu/people/zhiru-zhang",
+        "https://duffield.cornell.edu/people/ziv-goldfeld",
+        "https://duffield.cornell.edu/people/zygmunt-j-haas",
+        "https://giuliaguidi.github.io",
+        "https://gradschool.weill.cornell.edu/faculty/yi-wang",
+        "https://human.cornell.edu/people/hk932",
+        "https://kristinamonakhova.com/kristina",
+        "https://physics.cornell.edu/michelle-wang",
+        "https://psychology.cornell.edu/thomas-cleland",
+        "https://radiology.weill.cornell.edu/research/biomedical-ultrasound-research-laboratory-burl/jonathan-mamou-laboratory",
+        "https://sdean.website",
+        "https://sites.google.com/site/tapomayukh",
+        "https://stat.cornell.edu/people/field-faculty/amy-kuceyeski",
+        "https://vivo.weill.cornell.edu/display/cwid-few2001",
+        "https://vivo.weill.cornell.edu/display/cwid-qiz4006"
+      ],
+      "checked_list_ids": [
+        "faculty_staff"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_9c12dac649fe51acb5ba",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Mohamed Abdelfattah under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_fd77c0affdc60d917bd53f57"
+        ]
+      },
+      {
+        "person_id": "person_784c2bddf29250aab955",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jayadev Acharya under \"Core Faculty\" with title \"Associate Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b1dd082fb721f88e130986d1"
+        ]
+      },
+      {
+        "person_id": "person_f93dc0a6b9d059ffad82",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Hunter Adams under \"Core Faculty\" with title \"Assistant Teaching Professor\". Teaching-track/practice title (teaching or Professor of Practice) is excluded under v5.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_ec30d1efe94283b97ab2fe8c"
+        ]
+      },
+      {
+        "person_id": "person_e724e2d16845521ca8fb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Khurram Khan Afridi under \"Core Faculty\" with title \"Associate Director and Director of Undergraduate Studies; Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_eb4986efddefbb2863e73a1a"
+        ]
+      },
+      {
+        "person_id": "person_d7e4ce9fce36526fa48a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Mohammad Alian under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b5c769de66b879b19150f629"
+        ]
+      },
+      {
+        "person_id": "person_070d06518eaf52d88f3e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Alyssa B. Apsel under \"Core Faculty\" with title \"IBM Professor of Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_4e5fdcb2eb27d90fa51747ca"
+        ]
+      },
+      {
+        "person_id": "person_9aea04bc5f7b5cc28f75",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Christopher Batten under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_1731b1c6a82a8a83f628eea7"
+        ]
+      },
+      {
+        "person_id": "person_01d3fed69e76542f84d5",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Carl Bernard under \"Core Faculty\" with title \"Associate Teaching Professor; Senior Research Associate\". Teaching-track/practice title (teaching or Professor of Practice) is excluded under v5.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_2925baba32ec1bd4e9ad56cd"
+        ]
+      },
+      {
+        "person_id": "person_87298d48bc97549988d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Eilyan Bitar under \"Core Faculty\" with title \"Associate Professor; Croll Sesquicentennial Faculty Fellow\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_c860a393134d59263a843b1e"
+        ]
+      },
+      {
+        "person_id": "person_2a4fb77e03dc5f36afac",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Anne Bracy under \"Core Faculty\" with title \"Associate Teaching Professor\". Teaching-track/practice title (teaching or Professor of Practice) is excluded under v5.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_bdfe5bc2d2da8b56aadb3bdb"
+        ]
+      },
+      {
+        "person_id": "person_79d85538626f52c791f3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Tianyi Chen under \"Core Faculty\" with title \"Associate Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_cd3bc7dbcd221bc688f072cc"
+        ]
+      },
+      {
+        "person_id": "person_4873afb0c54250c49bd8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Hsiao-Dong Chiang under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_501fd914ea5b24a247ab5014"
+        ]
+      },
+      {
+        "person_id": "person_c84bf31969565da9938f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists David Forbes Delchamps under \"Core Faculty\" with title \"Advising Coordinator; Associate Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b75795e45211607ff114a163"
+        ]
+      },
+      {
+        "person_id": "person_5fdd91742d415ef6b267",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Peter Doerschuk under \"Core Faculty\" with title \"Professor\". Core Faculty listing names ECE alongside another school/department; official multi-unit appointment recorded as joint_secondary without guessing regular-vs-courtesy subtype.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_c41f47b73431ce8e220891f7"
+        ]
+      },
+      {
+        "person_id": "person_624c721852d551db8dc2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Amal El-Ghazaly under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_3ef70ec3083945cfe22b4ba0"
+        ]
+      },
+      {
+        "person_id": "person_bce2dc3485f650868f5a",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Silvia Ferrari under \"Core Faculty\" with title \"Samuel B. Eckert Professor in Engineering\". Core Faculty listing names ECE alongside another school/department; official multi-unit appointment recorded as joint_secondary without guessing regular-vs-courtesy subtype.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_801e476154a09e4a70dc77b7"
+        ]
+      },
+      {
+        "person_id": "person_ba0abc5bae185933a731",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Ziv Goldfeld under \"Core Faculty\" with title \"Associate Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_077167bed4c1b6d2710b0806"
+        ]
+      },
+      {
+        "person_id": "person_36b4ed0efc3f511a8cab",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Udit Gupta under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_de8d722266da3a8be0833c75"
+        ]
+      },
+      {
+        "person_id": "person_b90e9d39178d5bb4ba5c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists David A. Hammer under \"Core Faculty\" with title \"J. Carlton Ward, Jr. Professor of Nuclear Energy Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_a775506ed0ce996befaf877a"
+        ]
+      },
+      {
+        "person_id": "person_2b03978cdfd157b3809d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jack Hare under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_2d59d97a932055b768f8eac8"
+        ]
+      },
+      {
+        "person_id": "person_7feea63222735e46b5e4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Elizabeth Farrell Helbling under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_f14703a9ed11c903f89118f9"
+        ]
+      },
+      {
+        "person_id": "person_77733d692c785fd4b486",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Mohamed I. Ibrahim under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_d7d0dc74b711bef95e4a93ca"
+        ]
+      },
+      {
+        "person_id": "person_dc4b5a270ef050418b82",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Debdeep Jena under \"Core Faculty\" with title \"David E. Burr Professor of Engineering\". Core Faculty listing names ECE alongside another school/department; official multi-unit appointment recorded as joint_secondary without guessing regular-vs-courtesy subtype.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b8b8890ee7930081fa35faae"
+        ]
+      },
+      {
+        "person_id": "person_86dd3620f4495ad3a6f7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Edwin Chihchuan Kan under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_95f1a554347d9be96cdb4527"
+        ]
+      },
+      {
+        "person_id": "person_22a15d2a2472562e8009",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Vikram Krishnamurthy under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_399314a5d8036318df8a509e"
+        ]
+      },
+      {
+        "person_id": "person_e122300bbf7e5b72b1f8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Amit Lal under \"Core Faculty\" with title \"Robert M. Scharf 1977 Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_49ce6ffcb3bd477603242cd6"
+        ]
+      },
+      {
+        "person_id": "person_2c8fb24f500d55dca01f",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Eric Sander Lavine under \"Core Faculty\" with title \"Assistant Research Professor\". Research-professor title is a research-only appointment, excluded under v5.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_4918f04d54c899f54b72a490"
+        ]
+      },
+      {
+        "person_id": "person_f56c10d206a950419615",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Daniel Dongyuel Lee under \"Core Faculty\" with title \"Tisch University Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_2b801bd3dcf5222d5ba37411"
+        ]
+      },
+      {
+        "person_id": "person_ba92f6fc59705c17b181",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jiaxin Lin under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_e167f6edd24a86c61df0771e"
+        ]
+      },
+      {
+        "person_id": "person_3ec1f2f56d585992ba38",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists José F. Martínez under \"Core Faculty\" with title \"Lee Teng-hui Professor of Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_e6b36ba64d5e6ae217b693ef"
+        ]
+      },
+      {
+        "person_id": "person_81f38164bf4b5d02a1fb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Karan Mehta under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_dc6ad8172b716b18a93ba964"
+        ]
+      },
+      {
+        "person_id": "person_e0c93e74080e5ce897ae",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Alyosha Christopher Molnar under \"Core Faculty\" with title \"Ilda and Charles Lee Professor of Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_2a9bc3114486aae03a4ddfdc"
+        ]
+      },
+      {
+        "person_id": "person_7b00af4899a755adb304",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Francesco Monticone under \"Core Faculty\" with title \"Director of Graduate Studies; Associate Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_81f9d99e805fed87853bd5c9"
+        ]
+      },
+      {
+        "person_id": "person_097a1e369ff45d89a51d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Nils Napp under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_0ccd606b80ae483246db88f7"
+        ]
+      },
+      {
+        "person_id": "person_e25a3c7d7f005813bada",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Francesca Parise under \"Core Faculty\" with title \"Assistant Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_7500e34bf0e5cd7dbe324db6"
+        ]
+      },
+      {
+        "person_id": "person_81b3fc595d245ead8e49",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Kirstin Hagelskjaer Petersen under \"Core Faculty\" with title \"Associate Professor; Aref and Manon Lahham Faculty Fellow\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_0045bdaf8cb34355526b4bcc"
+        ]
+      },
+      {
+        "person_id": "person_2c7552765ef5520c894d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Farhan Rana under \"Core Faculty\" with title \"Ellis L. Phillips Sr. Director of the School of Electrical and Computer Engineering; Joseph P. Ripley Professor of Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_23f2b89350ebbc70ffbd35c1"
+        ]
+      },
+      {
+        "person_id": "person_1d899871a930584fbaa0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Mert Sabuncu under \"Core Faculty\" with title \"Associate Dean for Research at Cornell Tech; Andrew H. and Ann R. Tisch Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_9e98c366a503073784c9cb3b"
+        ]
+      },
+      {
+        "person_id": "person_b0f1dae751665f4da341",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Anna Scaglione under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_9e641ab493d40a91e70e4c03"
+        ]
+      },
+      {
+        "person_id": "person_9ed5fdf391c3518fa3d7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jae-sun Seo under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_26a9eb82399b3b5952f4239a"
+        ]
+      },
+      {
+        "person_id": "person_0e2acd37acad5c9d9b2d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Joseph Skovira under \"Core Faculty\" with title \"Director of Master of Engineering Program; Professor of Practice\". Teaching-track/practice title (teaching or Professor of Practice) is excluded under v5.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_51c850d8f7b7f226ba994edc"
+        ]
+      },
+      {
+        "person_id": "person_1d2aacb2cc10596f9ab6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists A. Kevin Tang under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_0f8e13c4b2d54bc7fdde5f20"
+        ]
+      },
+      {
+        "person_id": "person_4f8be96783845e4193a3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Lang Tong under \"Core Faculty\" with title \"Irwin and Joan Jacobs Professor of Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_9b7b6042ec5dfb0f42188824"
+        ]
+      },
+      {
+        "person_id": "person_76f3f186f4ce56b99394",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Aaron B. Wagner under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_9a59f079641aa4fbc8ec561b"
+        ]
+      },
+      {
+        "person_id": "person_1e44216d23ef54cd97fb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Mark Wilde under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_20e184e54e1fe833c231487a"
+        ]
+      },
+      {
+        "person_id": "person_ab391a0f444653be8e8e",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Huili Grace Xing under \"Core Faculty\" with title \"William L. Quackenbush Professor of Engineering\". Core Faculty listing names ECE alongside another school/department; official multi-unit appointment recorded as joint_secondary without guessing regular-vs-courtesy subtype.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_f6d0803947bd9edfe61910e4"
+        ]
+      },
+      {
+        "person_id": "person_8773133beb9b55ed9a5d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Zhiru Zhang under \"Core Faculty\" with title \"Professor\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_64dff219d2648373b40d8ab3"
+        ]
+      },
+      {
+        "person_id": "person_79c2bd49c9af5fd49e06",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Qing Zhao under \"Core Faculty\" with title \"Joseph C. Ford Professor of Engineering\". Professorial Core Faculty appointment in the School of ECE; regular.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_d3b4210d6c2e11cdb43eea22"
+        ]
+      },
+      {
+        "person_id": "person_87507bb4f36150fe816f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Steven Graham Adie under \"Graduate Field Faculty\" with title \"Associate Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_f5fa536608d76bdd9e3fff6d"
+        ]
+      },
+      {
+        "person_id": "person_d0799f93ebde55378a29",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists C. Lindsay Anderson under \"Graduate Field Faculty\" with title \"Chair of the Department of Biological and Environmental Engineering; Professor, Biological and Environmental Engineering; House Professor Dean, William Keeton House\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_1d30a438c75ed2a8c6595314"
+        ]
+      },
+      {
+        "person_id": "person_bf2cc434081b5e35aee4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Carl Batt under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_7c35fbf39b844f35b0f2e84a"
+        ]
+      },
+      {
+        "person_id": "person_eadf34b2a76a59448403",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Sid Banerjee under \"Graduate Field Faculty\" with title \"Associate Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_46613cfc0dd93d2a2a65526a"
+        ]
+      },
+      {
+        "person_id": "person_3566970dbf6a5d3f95f4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Tapomayukh Bhattacharjee under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_4378fbb366f0bace4078358e"
+        ]
+      },
+      {
+        "person_id": "person_05d636312dc456d4a4b8",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Mark Campbell under \"Graduate Field Faculty\" with title \"John A. Mellowes ’60 Professor in Mechanical Engineering\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_35e12c63240ce0169547a01e"
+        ]
+      },
+      {
+        "person_id": "person_a6881dc9dd8f56ce9c75",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Thomas Cleland under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_beba9f072081b55f45d12b2f"
+        ]
+      },
+      {
+        "person_id": "person_9d5e5e87aa085588baee",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Sarah Dean under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_8e59b76aa8878452e9fe4c55"
+        ]
+      },
+      {
+        "person_id": "person_f4cd3cd6b8ba5339846d",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Christopher De Sa under \"Graduate Field Faculty\" with title \"Associate Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_35a7ac0eeed51767ef19a964"
+        ]
+      },
+      {
+        "person_id": "person_628f2cb4f69c5be7ad73",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists David Erickson under \"Graduate Field Faculty\" with title \"Sibley College Professor of Mechanical Engineering\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_6745afc608a4cc7c0954a726"
+        ]
+      },
+      {
+        "person_id": "person_6fd06df35f7a54afb842",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Kyra Gan under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_fba2d9a7f1009e060b13afd3"
+        ]
+      },
+      {
+        "person_id": "person_56c1d31afd2f50a19099",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Hadas Kress-Gazit under \"Graduate Field Faculty\" with title \"Associate Dean for Diversity and Academic Affairs; Geoffrey S.M. Hedrick Senior Endowed Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_1778a3458788af9dbf55fc90"
+        ]
+      },
+      {
+        "person_id": "person_1c2012b3bd01586baf01",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Giulia Guidi under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_c02832715f180322e410c020"
+        ]
+      },
+      {
+        "person_id": "person_613978dd08af5891a58b",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists James C. Hwang under \"Graduate Field Faculty\" with title \"Research Professor\". Listed as Graduate Field Faculty and profile shows ECE graduate field affiliation, but the official title is Research Professor, a research-only appointment excluded under v5 category rules.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_fdaa6bed510aef23e8289e95"
+        ]
+      },
+      {
+        "person_id": "person_3e1363f614b0564296bc",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists David Lee Hysell under \"Graduate Field Faculty\" with title \"Thomas R Briggs Professor in Engineering\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_ec71c9f71f8e28caf0dd80bd"
+        ]
+      },
+      {
+        "person_id": "person_470e4ce6e25559659f7c",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Yu Jiang under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_99ad637737e83067024470e1"
+        ]
+      },
+      {
+        "person_id": "person_07aff2fa0f8e5357af61",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Cindy Hsin-Liu Kao under \"Graduate Field Faculty\" with title \"Associate Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_1353854b2b1fdc646292bab5"
+        ]
+      },
+      {
+        "person_id": "person_0c3014abee8c59d39f76",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Amy Kuceyeski under \"Graduate Field Faculty\" with title \"Adjunct Professor – Computational Biology; Professor of Mathematics in Radiology\". Directory title is Adjunct Professor; adjunct appointments are excluded (settled ruling).",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_801b85cb7dbb1cd83337e2af"
+        ]
+      },
+      {
+        "person_id": "person_a0cb638141fd5d32ba05",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Andreas Malikopoulos under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_c1ef7751bf6caac6886df250"
+        ]
+      },
+      {
+        "person_id": "person_86b0f156c2d55427a5d6",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jonathan Mamou under \"Graduate Field Faculty\" with title \"Professor of Electrical Engineering in Radiology\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a"
+        ]
+      },
+      {
+        "person_id": "person_92f17a8ed3ea5440bf21",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Stephen Marschner under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_19be68f9a6c8349b22061d6f"
+        ]
+      },
+      {
+        "person_id": "person_6c24e33cfcf4594497f5",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Peter McMahon under \"Graduate Field Faculty\" with title \"Director of Undergraduate Studies; Associate Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_576069250cf582a95b082310"
+        ]
+      },
+      {
+        "person_id": "person_b75eea8eda405f3792b9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jacob Mays under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_e0ce4be9bc51b808ee8fd2c0"
+        ]
+      },
+      {
+        "person_id": "person_4a34ecd3a1fd59bdb6b1",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Kristina Monakhova under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_352af4b6e273c7aa3e74b860"
+        ]
+      },
+      {
+        "person_id": "person_73af53286abc56b1ac00",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Andrew C. Myers under \"Graduate Field Faculty\" with title \"Class of 1912 Professor of Engineering\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_d289a94eee736582fbdedc7e"
+        ]
+      },
+      {
+        "person_id": "person_df6fe1b42bcb500d92e4",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Cara M. Nunez under \"Graduate Field Faculty\" with title \"Assistant Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_4981dff017ab3c9a205ab0c6"
+        ]
+      },
+      {
+        "person_id": "person_facbe6782a995cb8b508",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Richard Douglas Robinson under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_2950d52460c4944b3d91ac00"
+        ]
+      },
+      {
+        "person_id": "person_24b53994998359b8967b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Adrian Sampson under \"Graduate Field Faculty\" with title \"Associate Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_207ac65a01cfb04125dd3ea9"
+        ]
+      },
+      {
+        "person_id": "person_df9ba76b6b7f50dfa278",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Gennady Shvets under \"Graduate Field Faculty\" with title \"J. Preston Levis Professor of Engineering; Director, Laboratory of Plasma Studies\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_00e432dcf6d1d5bf954fec07"
+        ]
+      },
+      {
+        "person_id": "person_53e51386733152489e6c",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Noah Snavely under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_6c976d84e964cc50f2d01ccd"
+        ]
+      },
+      {
+        "person_id": "person_36744d297bde58088111",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Fei Wang under \"Graduate Field Faculty\" with title \"Professor of Health Informatics, Department of Population Health Sciences at Weill Cornell Medicine\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_4f397865ca4f4e19b9023e79"
+        ]
+      },
+      {
+        "person_id": "person_4a600185115d5be18943",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Michelle Wang under \"Graduate Field Faculty\" with title \"James Gilbert White Distinguished Professor of the Physical Sciences; Howard Hughes Medical Institute Investigator\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_9543abdecf7a5d4233907db5"
+        ]
+      },
+      {
+        "person_id": "person_da051808fbb857d79f97",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Yi Wang under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a"
+        ]
+      },
+      {
+        "person_id": "person_bd427e58710d59e1a86f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Hakim Weatherspoon under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_55348a94fa88a50fd055860c"
+        ]
+      },
+      {
+        "person_id": "person_22fa5c6228b654bab294",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Fengqi You under \"Graduate Field Faculty\" with title \"Roxanne E. and Michael J. Zak Professor in Energy Systems Engineering; Chair of Ph.D. Studies, Systems Engineering\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_a0d1cd5cd850fed7edca40d4"
+        ]
+      },
+      {
+        "person_id": "person_4b620bd8ef465e8b9ab5",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Ramin Zabih under \"Graduate Field Faculty\" with title \"Professor\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b7407ffac7f737c327f128b3"
+        ]
+      },
+      {
+        "person_id": "person_5e43d2a9d6115886b931",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Qingyu Zhao under \"Graduate Field Faculty\" with title \"Assistant Professor of Artificial Intelligence in Radiology, Radiology\". Officially listed by Cornell ECE as Graduate Field faculty (ECE field members eligible for ECE PhD special committees, per settled ruling); professorial title, so affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_8f5d4599277ae8ddbc94fd8b"
+        ]
+      },
+      {
+        "person_id": "person_d4e2d02234ec587ea87f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Joseph M. Ballantyne under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_c7cada582b42f9ec3e91b88d"
+        ]
+      },
+      {
+        "person_id": "person_95737290ae225d6191e4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Adam Wojciech Bojanczyk under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_a3f64bdc75059f04719c4936"
+        ]
+      },
+      {
+        "person_id": "person_d97021539141519695c6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists W. Kent Fuchs under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b24ab7a7ff6f3de0870c7482"
+        ]
+      },
+      {
+        "person_id": "person_af26978fdf1e5f96b700",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Zygmunt J. Haas under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_2df1ded3793ec2989ccc1b0c"
+        ]
+      },
+      {
+        "person_id": "person_85660da44e7c56018beb",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Peter G. Jessel under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_06e139a511825239d106ed11"
+        ]
+      },
+      {
+        "person_id": "person_52c0ca2861225923ac25",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Charles R. Johnson under \"Emeriti Faculty\" with title \"Geoffrey S.M. Hedrick Senior Professor Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_de8f93f25630d9637499080b"
+        ]
+      },
+      {
+        "person_id": "person_e319a6170ee355d69db4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Bruce Robert Land under \"Emeriti Faculty\" with title \"Emeritus Senior Lecturer\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_ac560f137178b67fd87b46f7"
+        ]
+      },
+      {
+        "person_id": "person_a6f3e751776c54eaae99",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Clifford R. Pollock under \"Emeriti Faculty\" with title \"Ilda And Charles Lee Professor of Engineering Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_365aaf2f551bf2258d7eea4c"
+        ]
+      },
+      {
+        "person_id": "person_d3c75d6b43315344af98",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Anthony P. Reeves under \"Emeriti Faculty\" with title \"Emeritus Professor\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_78ce611d63896b553c94754f"
+        ]
+      },
+      {
+        "person_id": "person_7ea937a556f9516ca437",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Charles Eugene Seyler under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_97efc80adb26105a66c5d420"
+        ]
+      },
+      {
+        "person_id": "person_5bbfa51c2b6f57428fae",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists James Richard Shealy under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_15e1bb6bf07486ebaed96f6f"
+        ]
+      },
+      {
+        "person_id": "person_4bcd1519e0ef5e3d9b3a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Michael G. Spencer under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_152c26b1b21e17c75fe40979"
+        ]
+      },
+      {
+        "person_id": "person_9c5ec344b71b58518554",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Sandip Tiwari under \"Emeriti Faculty\" with title \"Charles N. Mellowes Emeritus Professor of Engineering\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b4acc6ce0789ffbc84d13523"
+        ]
+      },
+      {
+        "person_id": "person_c239fe3b2b1d544cb988",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Charles Wharton under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_b757e4efc9ba65a0c0bbb283"
+        ]
+      },
+      {
+        "person_id": "person_380f75c32b6f506b99ba",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Stephen B. Wicker under \"Emeriti Faculty\" with title \"Emeritus\". Emeritus status; excluded and recorded as past.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_9be52d5febe5d77503866b2c"
+        ]
+      },
+      {
+        "person_id": "person_dd1a3ad3de58563fbb43",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Jimy Encomendero under \"Research and Teaching Professionals\" with title \"Research Associate\". Research associate staff title, not a professorial appointment.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_36fcf72bbbf00a866850d256"
+        ]
+      },
+      {
+        "person_id": "person_2eec142f201e55a9b199",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Kazuki Nomoto under \"Research and Teaching Professionals\" with title \"Research Associate\". Research associate staff title, not a professorial appointment.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_faed71d9e799d606e4753c37"
+        ]
+      },
+      {
+        "person_id": "person_dd66edebf5cc5db8a4e7",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Pinned Cornell ECE faculty-staff directory lists Vladimir Protasenko under \"Research and Teaching Professionals\" with title \"Senior Research Associate\". Research associate staff title, not a professorial appointment.",
+        "source_ids": [
+          "shared_frozen_1a55d7295203183871fc006a",
+          "shared_frozen_02ad21f6c231e6993ca4a3e6"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_0045bdaf8cb34355526b4bcc",
+        "url": "https://www.duffield.cornell.edu/people/kirstin-hagelskjaer-petersen",
+        "observed_at": "2026-11-23T10:59:56.059185+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f9e4398e9a13877052061954b68248a2a298b793d0d69de0091927e7d656654d"
+      },
+      {
+        "id": "shared_frozen_00e432dcf6d1d5bf954fec07",
+        "url": "https://www.duffield.cornell.edu/people/gennady-shvets",
+        "observed_at": "2026-11-23T10:59:55.722249+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "41c70afe3874eb0c089615a1e6ad4c9fe6e0c44f405a4f05cfd15b9ea0e94ca1"
+      },
+      {
+        "id": "shared_frozen_02ad21f6c231e6993ca4a3e6",
+        "url": "https://www.duffield.cornell.edu/people/vladimir-vladimirovich-protasenko",
+        "observed_at": "2026-11-23T10:59:56.637225+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1508b271e8e6457cdb75df0a67715c33ca5fffccdb9c0427482fd754e04cafc6"
+      },
+      {
+        "id": "shared_frozen_06e139a511825239d106ed11",
+        "url": "https://www.duffield.cornell.edu/people/peter-g-jessel",
+        "observed_at": "2026-11-23T10:59:56.303252+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cc6448eba0a24e21c822495134fb16d3a51c0a95c71e4ac02c8c00c653ed4ee4"
+      },
+      {
+        "id": "shared_frozen_077167bed4c1b6d2710b0806",
+        "url": "https://www.duffield.cornell.edu/people/ziv-goldfeld",
+        "observed_at": "2026-11-23T10:59:56.731319+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6f9ef55c15ea5595136c072254c9d78810c56e1194a668158113d591b659e514"
+      },
+      {
+        "id": "shared_frozen_0ccd606b80ae483246db88f7",
+        "url": "https://www.duffield.cornell.edu/people/nils-napp",
+        "observed_at": "2026-11-23T10:59:56.284764+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6ca588956efca1eb6201f571ae321a70a6c2fee4fd75daf42eb6f4fede75a85a"
+      },
+      {
+        "id": "shared_frozen_0f8e13c4b2d54bc7fdde5f20",
+        "url": "https://www.duffield.cornell.edu/people/a-kevin-tang",
+        "observed_at": "2026-11-23T10:59:54.919188+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "14fc67921414fb52c4f24f7e7b3aaef671a5102085a7ce7f5b2fef55d214df1b"
+      },
+      {
+        "id": "shared_frozen_1353854b2b1fdc646292bab5",
+        "url": "https://www.human.cornell.edu/people/hk932",
+        "observed_at": "2026-11-23T10:59:56.801985+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "da63851c93af4839197f5e63bb0a2b4c4c993b7e592c537e0de8dc3346a96099"
+      },
+      {
+        "id": "shared_frozen_152c26b1b21e17c75fe40979",
+        "url": "https://www.duffield.cornell.edu/people/michael-g-spencer",
+        "observed_at": "2026-11-23T10:59:56.211255+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cce632cdf84b7ab8cb7693513e2122a065315c1d21a2c7c7672c691e5bb8a91d"
+      },
+      {
+        "id": "shared_frozen_15e1bb6bf07486ebaed96f6f",
+        "url": "https://www.duffield.cornell.edu/people/james-richard-shealy",
+        "observed_at": "2026-11-23T10:59:55.876472+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c77bd2e22d55865b1bcabad39c47ce349b9592a902885d4f06ace339180cf5f9"
+      },
+      {
+        "id": "shared_frozen_1731b1c6a82a8a83f628eea7",
+        "url": "https://www.duffield.cornell.edu/people/christopher-batten",
+        "observed_at": "2026-11-23T10:59:55.257767+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f4873a967034baa97f3d5828ec91a9da31110d1e087f2250c2b604d7a2e74cc5"
+      },
+      {
+        "id": "shared_frozen_1778a3458788af9dbf55fc90",
+        "url": "https://www.duffield.cornell.edu/people/hadas-kress-gazit",
+        "observed_at": "2026-11-23T10:59:55.724431+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f97c13091526f8fb4a281a613eb445b9d1b05386e3011bfcfc18f1fadcc7bc48"
+      },
+      {
+        "id": "shared_frozen_19be68f9a6c8349b22061d6f",
+        "url": "https://www.cs.cornell.edu/%7Esrm",
+        "observed_at": "2026-11-23T10:59:53.636316+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0556877976d69c3e54284ba800e1cba8cfc44477ba922661ea687f2651e593b8"
+      },
+      {
+        "id": "shared_frozen_1a55d7295203183871fc006a",
+        "url": "https://www.duffield.cornell.edu/ece/faculty-staff",
+        "observed_at": "2026-11-23T10:59:53.296717+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "53d2540695aa004e9edd401a60f68aaae1a391f01fa83532a0d4fafbea6e3713"
+      },
+      {
+        "id": "shared_frozen_1d30a438c75ed2a8c6595314",
+        "url": "https://cals.cornell.edu/c-lindsay-anderson",
+        "observed_at": "2026-11-23T10:59:53.401038+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ed7d3c294412de7dcafb2c708b0b8a8774b0f51065b6703af451c6a0f405a037"
+      },
+      {
+        "id": "shared_frozen_207ac65a01cfb04125dd3ea9",
+        "url": "https://www.cs.cornell.edu/~asampson",
+        "observed_at": "2026-11-23T10:59:53.931763+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "eb4bda2c1656bf373aecf6d5c37f5c965384d1f25b60fd885422538a86cda263"
+      },
+      {
+        "id": "shared_frozen_20e184e54e1fe833c231487a",
+        "url": "https://www.duffield.cornell.edu/people/mark-wilde",
+        "observed_at": "2026-11-23T10:59:56.156209+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "74f7870e801fed017a46b6dcab1047a3952f72b6e065fb0b08be85bb61f63f3b"
+      },
+      {
+        "id": "shared_frozen_23f2b89350ebbc70ffbd35c1",
+        "url": "https://www.duffield.cornell.edu/people/farhan-rana",
+        "observed_at": "2026-11-23T10:59:55.600083+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "24efd29f54729221601e2bfec816db421aa3cfe4d6c66193c0a223d771af97f4"
+      },
+      {
+        "id": "shared_frozen_26a9eb82399b3b5952f4239a",
+        "url": "https://www.duffield.cornell.edu/people/jae-sun-seo",
+        "observed_at": "2026-11-23T10:59:55.871759+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "14e09bc30366394ff1cf5e65cc5a4996487e37cc7a4dbbf68b43f9c85e343cab"
+      },
+      {
+        "id": "shared_frozen_2925baba32ec1bd4e9ad56cd",
+        "url": "https://www.duffield.cornell.edu/people/carl-bernard",
+        "observed_at": "2026-11-23T10:59:55.199581+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "280c2af511cb5eeed583cced4d218ee49dac53c18cc5ef634108d21c169141cc"
+      },
+      {
+        "id": "shared_frozen_2950d52460c4944b3d91ac00",
+        "url": "https://www.duffield.cornell.edu/people/richard-douglas-robinson",
+        "observed_at": "2026-11-23T10:59:56.359167+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "017f214d3811b4f27c05418c0c2fde69337d1c625a5611ed8b8082981e28a526"
+      },
+      {
+        "id": "shared_frozen_2a9bc3114486aae03a4ddfdc",
+        "url": "https://www.duffield.cornell.edu/people/alyosha-christopher-molnar",
+        "observed_at": "2026-11-23T10:59:55.038893+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7e90127086e73557a861cacc31cca04c341acd9b26980ab891aca0da9fd7e411"
+      },
+      {
+        "id": "shared_frozen_2b801bd3dcf5222d5ba37411",
+        "url": "https://www.duffield.cornell.edu/people/daniel-dongyuel-lee",
+        "observed_at": "2026-11-23T10:59:55.304513+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ba26160b00a24dc9a410e5ae5ebf24006cad6a2919c53dfc99f02a45106e2365"
+      },
+      {
+        "id": "shared_frozen_2d59d97a932055b768f8eac8",
+        "url": "https://www.duffield.cornell.edu/people/jack-hare",
+        "observed_at": "2026-11-23T10:59:55.827335+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3e63483a8f71c5b0398b47ec841e2af4e9fd52673584e34bcd312692375da30f"
+      },
+      {
+        "id": "shared_frozen_2df1ded3793ec2989ccc1b0c",
+        "url": "https://www.duffield.cornell.edu/people/zygmunt-j-haas",
+        "observed_at": "2026-11-23T10:59:56.745507+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ab3a5214b6663117a39c74425bd3becbcb333152b3544acbe9b2942150c35abe"
+      },
+      {
+        "id": "shared_frozen_352af4b6e273c7aa3e74b860",
+        "url": "https://kristinamonakhova.com/kristina",
+        "observed_at": "2026-11-23T10:59:53.402910+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0820584a00b2ecc6a86d18b2e3d2960b3102d6d08c9342ea758113a8338bce61"
+      },
+      {
+        "id": "shared_frozen_35a7ac0eeed51767ef19a964",
+        "url": "https://www.cs.cornell.edu/~cdesa",
+        "observed_at": "2026-11-23T10:59:54.031868+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "92e23e7844bd831217f9ad053f061e61a0b2c3cae3d2e86517a5313e8a626705"
+      },
+      {
+        "id": "shared_frozen_35e12c63240ce0169547a01e",
+        "url": "https://www.duffield.cornell.edu/people/mark-campbell",
+        "observed_at": "2026-11-23T10:59:56.126631+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8703630686ed613dc1e302633ab1140f9efb7d3490b29fff8ba91dc343b30ef9"
+      },
+      {
+        "id": "shared_frozen_365aaf2f551bf2258d7eea4c",
+        "url": "https://www.duffield.cornell.edu/people/clifford-r-pollock",
+        "observed_at": "2026-11-23T10:59:55.282221+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "78b9c16ccf39165d66e257fcb4a1042ecbb3624766fc5e3a33c2208f4c75e33d"
+      },
+      {
+        "id": "shared_frozen_36fcf72bbbf00a866850d256",
+        "url": "https://www.duffield.cornell.edu/people/jimy-encomendero",
+        "observed_at": "2026-11-23T10:59:55.957990+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2593b6a12dd7eff4017d08a399c29f42eaed76dfedbe261d5abd5feb9f950b03"
+      },
+      {
+        "id": "shared_frozen_399314a5d8036318df8a509e",
+        "url": "https://www.duffield.cornell.edu/people/vikram-krishnamurthy",
+        "observed_at": "2026-11-23T10:59:56.531136+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5692fcd3703a699b005e7a3281fa9a21bcf62019fe52be53fa5b314e3b5ed2f3"
+      },
+      {
+        "id": "shared_frozen_3ef70ec3083945cfe22b4ba0",
+        "url": "https://www.duffield.cornell.edu/people/amal-el-ghazaly",
+        "observed_at": "2026-11-23T10:59:55.073713+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "58e5399c1681d35e7a582566afe4797498e21ac8e37759295a3368603f7f5e95"
+      },
+      {
+        "id": "shared_frozen_4378fbb366f0bace4078358e",
+        "url": "https://sites.google.com/site/tapomayukh",
+        "observed_at": "2026-11-23T10:59:53.513367+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "504f3272084e8e89fd9fa525fef6ef864c0c2bd58d9fef2567371308b55e014c"
+      },
+      {
+        "id": "shared_frozen_46613cfc0dd93d2a2a65526a",
+        "url": "https://www.duffield.cornell.edu/people/sid-banerjee",
+        "observed_at": "2026-11-23T10:59:56.396303+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e382ba71b33cc1b97d8b65cf36b294ceaf23311a3d3461d081991f704efef538"
+      },
+      {
+        "id": "shared_frozen_4918f04d54c899f54b72a490",
+        "url": "https://www.duffield.cornell.edu/people/eric-sander-lavine",
+        "observed_at": "2026-11-23T10:59:55.575061+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7c1bb14d31de03e8467cd13256c2fd4e446889b20e24aadaec2a99466d38262d"
+      },
+      {
+        "id": "shared_frozen_4981dff017ab3c9a205ab0c6",
+        "url": "https://www.duffield.cornell.edu/people/cara-m-nunez",
+        "observed_at": "2026-11-23T10:59:55.194414+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "49faebb44676fc86690ce34e78b84f616301fcdf7f3dc46b7fbe28750b530448"
+      },
+      {
+        "id": "shared_frozen_49ce6ffcb3bd477603242cd6",
+        "url": "https://www.duffield.cornell.edu/people/amit-lal",
+        "observed_at": "2026-11-23T10:59:55.087075+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6b648ac0b8da2521fa18fb67ce512b7dad63af885aff43b153946ebb51b58815"
+      },
+      {
+        "id": "shared_frozen_4e5fdcb2eb27d90fa51747ca",
+        "url": "https://www.duffield.cornell.edu/people/alyssa-b-apsel",
+        "observed_at": "2026-11-23T10:59:55.045670+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c2b6ca054eb6cb3c87444ce9b428f890958da4cc0b407d3f9adbc175b5c5a2ab"
+      },
+      {
+        "id": "shared_frozen_4f397865ca4f4e19b9023e79",
+        "url": "https://vivo.weill.cornell.edu/display/cwid-few2001",
+        "observed_at": "2026-11-23T10:59:53.589800+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f0d23f8549cb46eaf24bc7099dcce287d1b64ddf7c85a9fb2ae25a8b3dceac24"
+      },
+      {
+        "id": "shared_frozen_501fd914ea5b24a247ab5014",
+        "url": "https://www.duffield.cornell.edu/people/hsiao-dong-chiang",
+        "observed_at": "2026-11-23T10:59:55.730325+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d5b63461d0d4198203d9c65d0ae535e8ba26daa28684d2c6bedcc1dfc3730793"
+      },
+      {
+        "id": "shared_frozen_51c850d8f7b7f226ba994edc",
+        "url": "https://www.duffield.cornell.edu/people/joseph-skovira",
+        "observed_at": "2026-11-23T10:59:56.003039+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "471ae9a374ab154d98f3e641747cdb255f49f8d0d65c81ec2d59cb85537ead9f"
+      },
+      {
+        "id": "shared_frozen_55348a94fa88a50fd055860c",
+        "url": "https://www.cs.cornell.edu/~hweather",
+        "observed_at": "2026-11-23T10:59:54.245542+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "517c167c855ae54996b75bf40f67fc3535c725c7232f11ddd6a98af2e5eddd79"
+      },
+      {
+        "id": "shared_frozen_576069250cf582a95b082310",
+        "url": "https://www.duffield.cornell.edu/people/peter-mcmahon",
+        "observed_at": "2026-11-23T10:59:56.346548+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "674c0afbc4a0a505f164ac95ccceed7c37f37b09d6fb33f6779c8231ae430e2d"
+      },
+      {
+        "id": "shared_frozen_64dff219d2648373b40d8ab3",
+        "url": "https://www.duffield.cornell.edu/people/zhiru-zhang",
+        "observed_at": "2026-11-23T10:59:56.731027+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c4a1faadf635e6af36d68d71fa421e1ae10b193cb6b8db2870262aa399d15651"
+      },
+      {
+        "id": "shared_frozen_6745afc608a4cc7c0954a726",
+        "url": "https://www.duffield.cornell.edu/people/david-erickson",
+        "observed_at": "2026-11-23T10:59:55.331509+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "55a43c5247b6c017657a3398f9dff1351ccdf81a37cdd179429e85226b69d424"
+      },
+      {
+        "id": "shared_frozen_6c976d84e964cc50f2d01ccd",
+        "url": "https://www.cs.cornell.edu/~snavely",
+        "observed_at": "2026-11-23T10:59:54.509364+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f807b7863e05e4c18177bd447c116717ccddb7382b56579f5be0e953e34b4cee"
+      },
+      {
+        "id": "shared_frozen_7500e34bf0e5cd7dbe324db6",
+        "url": "https://www.duffield.cornell.edu/people/francesca-parise",
+        "observed_at": "2026-11-23T10:59:55.643216+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "eb2600530e21c529e77d1a25f947413affad6b27f4abc775d183241dad44e289"
+      },
+      {
+        "id": "shared_frozen_78ce611d63896b553c94754f",
+        "url": "https://www.duffield.cornell.edu/people/anthony-p-reeves",
+        "observed_at": "2026-11-23T10:59:55.139611+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "142253f08c205c319cd212cd6f24a1830e3736fd7908ecf58f934d71c2ec66f5"
+      },
+      {
+        "id": "shared_frozen_7c35fbf39b844f35b0f2e84a",
+        "url": "https://cals.cornell.edu/people/carl-batt",
+        "observed_at": "2026-11-23T10:59:53.401435+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "18ae609c48d66e1338aada6daa56fa937fe891c2668b4e56605fd4cf3b1447f3"
+      },
+      {
+        "id": "shared_frozen_801b85cb7dbb1cd83337e2af",
+        "url": "https://stat.cornell.edu/people/field-faculty/amy-kuceyeski",
+        "observed_at": "2026-11-23T10:59:53.515478+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0ba5c2affd46b48070c813772809f42391c2c68163b43fa932969cf0714c0667"
+      },
+      {
+        "id": "shared_frozen_801e476154a09e4a70dc77b7",
+        "url": "https://www.duffield.cornell.edu/people/silvia-ferrari",
+        "observed_at": "2026-11-23T10:59:56.397942+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "92e579d1a2f9304abef7caa527a02bbbe833499ad216b95cfdfca498ffe69ae2"
+      },
+      {
+        "id": "shared_frozen_81f9d99e805fed87853bd5c9",
+        "url": "https://www.duffield.cornell.edu/people/francesco-monticone",
+        "observed_at": "2026-11-23T10:59:55.701434+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "00b6ddd6b8106cc1108ecdf623182ea8c6ebc2c004eea36b5a96c4893868129d"
+      },
+      {
+        "id": "shared_frozen_8e59b76aa8878452e9fe4c55",
+        "url": "https://sdean.website",
+        "observed_at": "2026-11-23T10:59:53.481144+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "37aca2d1ac9134131a364eb550b3238fa1e1bbd7578e43d724ef266ec5d08fe6"
+      },
+      {
+        "id": "shared_frozen_8f5d4599277ae8ddbc94fd8b",
+        "url": "https://vivo.weill.cornell.edu/display/cwid-qiz4006",
+        "observed_at": "2026-11-23T10:59:53.630439+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ba15d44f5691ce4c04ef19db3c03cc272eb81fe43bd48f49a400263bf933c5c5"
+      },
+      {
+        "id": "shared_frozen_9543abdecf7a5d4233907db5",
+        "url": "https://physics.cornell.edu/michelle-wang",
+        "observed_at": "2026-11-23T10:59:53.425945+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "441d25d6cc8e5bd0dab59e1e10dadb626f471afeac30b4b7efc65a834cd5e51f"
+      },
+      {
+        "id": "shared_frozen_95f1a554347d9be96cdb4527",
+        "url": "https://www.duffield.cornell.edu/people/edwin-chihchuan-kan",
+        "observed_at": "2026-11-23T10:59:55.482934+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "778c0c1a6fea5a7aa52a8dd6892761e50230455bc91a0135eff1209f3f6abf63"
+      },
+      {
+        "id": "shared_frozen_97efc80adb26105a66c5d420",
+        "url": "https://www.duffield.cornell.edu/people/charles-eugene-seyler",
+        "observed_at": "2026-11-23T10:59:55.206199+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3a8ecfde8e22ccce084c6c83fb7fed65b6f45b16f93c510a4f3aae8145eff88c"
+      },
+      {
+        "id": "shared_frozen_99ad637737e83067024470e1",
+        "url": "https://cals.cornell.edu/people/yu-jiang",
+        "observed_at": "2026-11-23T10:59:53.401894+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "463a5df150fe60a8cc36aad65a1f702335bcdc6b92e098446c85cf6e90148b49"
+      },
+      {
+        "id": "shared_frozen_9a59f079641aa4fbc8ec561b",
+        "url": "https://www.duffield.cornell.edu/people/aaron-b-wagner",
+        "observed_at": "2026-11-23T10:59:54.952337+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d6c5590beb2f214591b1ec2363d2b7a75cb8f30d49c76f2ab17c56a058440b4c"
+      },
+      {
+        "id": "shared_frozen_9b7b6042ec5dfb0f42188824",
+        "url": "https://www.duffield.cornell.edu/people/lang-tong",
+        "observed_at": "2026-11-23T10:59:56.114750+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "853a3d3de1650aeee80aba048f27d8b064da2f45f462b43a043a58dae80bd16e"
+      },
+      {
+        "id": "shared_frozen_9be52d5febe5d77503866b2c",
+        "url": "https://www.duffield.cornell.edu/people/stephen-b-wicker",
+        "observed_at": "2026-11-23T10:59:56.465681+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b11d38a80331a062e054f87ea56527d3caac8a78a4f0d1d1ded689f80fbdea07"
+      },
+      {
+        "id": "shared_frozen_9e641ab493d40a91e70e4c03",
+        "url": "https://www.duffield.cornell.edu/people/anna-scaglione",
+        "observed_at": "2026-11-23T10:59:55.117882+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cb05f1292e7eabc4dc74790a92dfc57ae8976d2466469c727a738ff65b816ae6"
+      },
+      {
+        "id": "shared_frozen_9e98c366a503073784c9cb3b",
+        "url": "https://www.duffield.cornell.edu/people/mert-sabuncu",
+        "observed_at": "2026-11-23T10:59:56.179046+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "30ee1bd1bb7d0b9dede04b0191aefd5f9e10cc51e3f3c330e7e11f39ef65fb4f"
+      },
+      {
+        "id": "shared_frozen_a0d1cd5cd850fed7edca40d4",
+        "url": "https://www.duffield.cornell.edu/people/fengqi-you",
+        "observed_at": "2026-11-23T10:59:55.608798+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e83690f59320bc45047e71e0acb05b85cd81b3b54cc76f3005b6b7f02b3a4135"
+      },
+      {
+        "id": "shared_frozen_a3f64bdc75059f04719c4936",
+        "url": "https://www.duffield.cornell.edu/people/adam-wojciech-bojanczyk",
+        "observed_at": "2026-11-23T10:59:55.006111+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2d21ea711bca94ddd70a8a3995a792cf9418365d6bbaa2bacd9d1a03f9e4039b"
+      },
+      {
+        "id": "shared_frozen_a775506ed0ce996befaf877a",
+        "url": "https://www.duffield.cornell.edu/people/david-a-hammer",
+        "observed_at": "2026-11-23T10:59:55.314278+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "067557a91c4129f424590054a89cca3580c6329e91e7f4816988574403c79aeb"
+      },
+      {
+        "id": "shared_frozen_ac560f137178b67fd87b46f7",
+        "url": "https://www.duffield.cornell.edu/people/bruce-robert-land",
+        "observed_at": "2026-11-23T10:59:55.149621+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ba75f951d283aafe9509e32b9b7da23329006e3fdd92b60d20703f68f9087a00"
+      },
+      {
+        "id": "shared_frozen_b1dd082fb721f88e130986d1",
+        "url": "https://www.duffield.cornell.edu/people/jayadev-acharya",
+        "observed_at": "2026-11-23T10:59:55.881702+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "96afc0c2695d8e0801c4a5881a22a268347d89ef09082a999d663309427dfca3"
+      },
+      {
+        "id": "shared_frozen_b24ab7a7ff6f3de0870c7482",
+        "url": "https://www.duffield.cornell.edu/people/w-kent-fuchs",
+        "observed_at": "2026-11-23T10:59:56.702883+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e564db1b82c962de9240bc7880bc38cdb9c2f8a2ff4eadc0e9f0483932d3d96f"
+      },
+      {
+        "id": "shared_frozen_b4acc6ce0789ffbc84d13523",
+        "url": "https://www.duffield.cornell.edu/people/sandip-tiwari",
+        "observed_at": "2026-11-23T10:59:56.387506+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c8ca72928903f9ab9c44e8e21059dc790ac976be43045abcb605692b0c22fcfe"
+      },
+      {
+        "id": "shared_frozen_b5c769de66b879b19150f629",
+        "url": "https://www.duffield.cornell.edu/people/mohammad-alian",
+        "observed_at": "2026-11-23T10:59:56.255888+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4177d724352347cf7a664797362d3ed2dc4f8afd2b3f07ec778dfb950034b842"
+      },
+      {
+        "id": "shared_frozen_b7407ffac7f737c327f128b3",
+        "url": "https://www.cs.cornell.edu/~rdz",
+        "observed_at": "2026-11-23T10:59:54.363706+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d618188b566c3f7fd1d5463803062523ec8e3c78451757f41ebbec9cb62b1cde"
+      },
+      {
+        "id": "shared_frozen_b75795e45211607ff114a163",
+        "url": "https://www.duffield.cornell.edu/people/david-forbes-delchamps",
+        "observed_at": "2026-11-23T10:59:55.371559+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7e273a1422af4e783df8849f06dbcc72d3b1932ba91be911fbff2d12e9121532"
+      },
+      {
+        "id": "shared_frozen_b757e4efc9ba65a0c0bbb283",
+        "url": "https://www.duffield.cornell.edu/people/charles-wharton",
+        "observed_at": "2026-11-23T10:59:55.251742+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4a86ed5bb433ad0b22f448a357ca25ef800cd4f140d86454665a0d3c0dec5a8d"
+      },
+      {
+        "id": "shared_frozen_b8b8890ee7930081fa35faae",
+        "url": "https://www.duffield.cornell.edu/people/debdeep-jena",
+        "observed_at": "2026-11-23T10:59:55.426089+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "22674a57a65afebab9881b0b8591b1208b4a75f685bab7316c352b4c4c9b7c60"
+      },
+      {
+        "id": "shared_frozen_bdfe5bc2d2da8b56aadb3bdb",
+        "url": "https://www.duffield.cornell.edu/people/anne-bracy",
+        "observed_at": "2026-11-23T10:59:55.119721+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9d0becd2dd2064ac4cc94e3e43c10e65d4c8e1787b1ad4962396b8992cd2f876"
+      },
+      {
+        "id": "shared_frozen_beba9f072081b55f45d12b2f",
+        "url": "https://psychology.cornell.edu/thomas-cleland",
+        "observed_at": "2026-11-23T10:59:53.456067+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e418eaa4ea4ac0625ee6d6111fd76f7b5826afb0e37b035748dba1e751c1fcfc"
+      },
+      {
+        "id": "shared_frozen_c02832715f180322e410c020",
+        "url": "https://giuliaguidi.github.io",
+        "observed_at": "2026-11-23T10:59:53.403287+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6f7ba9472cf08cc47b14f93cfe8fd68acd0f194cb5f4dec89bb6d6d5368572f8"
+      },
+      {
+        "id": "shared_frozen_c1ef7751bf6caac6886df250",
+        "url": "https://www.duffield.cornell.edu/people/andreas-malikopoulos",
+        "observed_at": "2026-11-23T10:59:55.105038+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "99de42f79c10532d33583a22d8a1f61fa0741e18087c30767d659dfe312e58cc"
+      },
+      {
+        "id": "shared_frozen_c41f47b73431ce8e220891f7",
+        "url": "https://www.duffield.cornell.edu/people/peter-doerschuk-2",
+        "observed_at": "2026-11-23T10:59:56.294236+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "edee031c16167f06453cc687f26356594312a92bde6a7418abee271d0a975383"
+      },
+      {
+        "id": "shared_frozen_c7cada582b42f9ec3e91b88d",
+        "url": "https://www.duffield.cornell.edu/people/joseph-m-ballantyne",
+        "observed_at": "2026-11-23T10:59:55.971024+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e47e9fd04d0a593725189687f6437d54302886df67f41eee207c498182e699bf"
+      },
+      {
+        "id": "shared_frozen_c860a393134d59263a843b1e",
+        "url": "https://www.duffield.cornell.edu/people/eilyan-bitar",
+        "observed_at": "2026-11-23T10:59:55.499906+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "065ff3761cb15296730358f565fe7beaf300f014aac4e26f1edddc8ff3e11060"
+      },
+      {
+        "id": "shared_frozen_cd3bc7dbcd221bc688f072cc",
+        "url": "https://www.duffield.cornell.edu/people/tianyi-chen",
+        "observed_at": "2026-11-23T10:59:56.499908+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b14caeb3a8a0f3aad2267445fa8e80ac4c874a4d67c42d7fc0411d829228cd4e"
+      },
+      {
+        "id": "shared_frozen_d289a94eee736582fbdedc7e",
+        "url": "https://www.cs.cornell.edu/andru",
+        "observed_at": "2026-11-23T10:59:53.692545+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "37c163d7047a248dffe407c3bbe06f249a9e551cdad18cdf82583434b8ee2fa2"
+      },
+      {
+        "id": "shared_frozen_d3b4210d6c2e11cdb43eea22",
+        "url": "https://www.duffield.cornell.edu/people/qing-zhao",
+        "observed_at": "2026-11-23T10:59:56.347605+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c7bbd55602e68e47d95d32c6342842eee30ae4638ec5bf09e7b349f1ad21f6c0"
+      },
+      {
+        "id": "shared_frozen_d7d0dc74b711bef95e4a93ca",
+        "url": "https://www.duffield.cornell.edu/people/mohamed-i-ibrahim",
+        "observed_at": "2026-11-23T10:59:56.233488+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "95db8f15ad0381c04f8d6c89aae3f75e21fe688e3317d3415f1807dbef157668"
+      },
+      {
+        "id": "shared_frozen_dc6ad8172b716b18a93ba964",
+        "url": "https://www.duffield.cornell.edu/people/karan-mehta",
+        "observed_at": "2026-11-23T10:59:56.016710+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "857273bdeea4872cd962031a85cea1c3a0df37ca6d48d6f1e1eef95beb1eeb89"
+      },
+      {
+        "id": "shared_frozen_de8d722266da3a8be0833c75",
+        "url": "https://www.duffield.cornell.edu/people/udit-gupta",
+        "observed_at": "2026-11-23T10:59:56.507108+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cce55f0778802094e2e2ed5751b5568f6c7304bc4eefbf3db915724f991ce2d7"
+      },
+      {
+        "id": "shared_frozen_de8f93f25630d9637499080b",
+        "url": "https://www.duffield.cornell.edu/people/charles-r-johnson",
+        "observed_at": "2026-11-23T10:59:55.211285+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "195ccaf98f0c650394c87fb697df920179f009f555326a31601fe569ed7ac68d"
+      },
+      {
+        "id": "shared_frozen_e0ce4be9bc51b808ee8fd2c0",
+        "url": "https://www.duffield.cornell.edu/people/jacob-mays",
+        "observed_at": "2026-11-23T10:59:55.828920+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bc1659125ef4952cb345c406d38dde3c6fc62690b85edb79f3abe2b006acf6b1"
+      },
+      {
+        "id": "shared_frozen_e167f6edd24a86c61df0771e",
+        "url": "https://www.duffield.cornell.edu/people/jiaxin-lin",
+        "observed_at": "2026-11-23T10:59:55.956258+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1f96bbc3f165b9e4c7be1a8731bd8f3ad7ab8fb51c9af31e5901fd730263a460"
+      },
+      {
+        "id": "shared_frozen_e6b36ba64d5e6ae217b693ef",
+        "url": "https://www.duffield.cornell.edu/people/jose-f-martinez",
+        "observed_at": "2026-11-23T10:59:55.966360+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dfbe9ff89ccb2f09deee76adb9663d703c4a34218e105352ab075d5a185d66ef"
+      },
+      {
+        "id": "shared_frozen_eb4986efddefbb2863e73a1a",
+        "url": "https://www.duffield.cornell.edu/people/khurram-khan-afridi",
+        "observed_at": "2026-11-23T10:59:56.050637+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "96cdf7de7334d4f4db6505d91fcd6099c3fef41b1c3c6d9291634f246a2c2509"
+      },
+      {
+        "id": "shared_frozen_ec30d1efe94283b97ab2fe8c",
+        "url": "https://www.duffield.cornell.edu/people/hunter-adams",
+        "observed_at": "2026-11-23T10:59:55.825464+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "250630e5dd04eecb3672b99dabf2ed217f325ad0f48afe6afe266f53b1e5e99c"
+      },
+      {
+        "id": "shared_frozen_ec71c9f71f8e28caf0dd80bd",
+        "url": "https://www.duffield.cornell.edu/people/david-lee-hysell",
+        "observed_at": "2026-11-23T10:59:55.413696+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e871d318197f010c8a4414c299e6e1a2ac1a170f102d937f00407dfd17fa2af4"
+      },
+      {
+        "id": "shared_frozen_f14703a9ed11c903f89118f9",
+        "url": "https://www.duffield.cornell.edu/people/elizabeth-farrell-helbling",
+        "observed_at": "2026-11-23T10:59:55.535023+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fc3daac026426dc5b3b5f1e9196f5b05e7f38d05d56bb5a9cd378b9dfb0fecbb"
+      },
+      {
+        "id": "shared_frozen_f5fa536608d76bdd9e3fff6d",
+        "url": "https://www.duffield.cornell.edu/people/steven-graham-adie",
+        "observed_at": "2026-11-23T10:59:56.483003+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "846c2d013a7d516596c08e6c197895833cfa2b38a7b4dd5459ca55e9ec7255c0"
+      },
+      {
+        "id": "shared_frozen_f6d0803947bd9edfe61910e4",
+        "url": "https://www.duffield.cornell.edu/people/huili-grace-xing",
+        "observed_at": "2026-11-23T10:59:55.810437+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6e106964f429b2b0179898f1061ef8775e71b00f1d9dd67e9fd4edb9658f9f1f"
+      },
+      {
+        "id": "shared_frozen_faed71d9e799d606e4753c37",
+        "url": "https://www.duffield.cornell.edu/people/kazuki-nomoto",
+        "observed_at": "2026-11-23T10:59:56.023058+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d21dbb8e1accab959fb2960036fbb74d121da945fab6934fb397c59be4230dc0"
+      },
+      {
+        "id": "shared_frozen_fba2d9a7f1009e060b13afd3",
+        "url": "https://www.duffield.cornell.edu/people/kyra-gan",
+        "observed_at": "2026-11-23T10:59:56.078751+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "784613797fcd4c855cb15d9c39f94dabc6a694578f86a16e2ae6de837598c67f"
+      },
+      {
+        "id": "shared_frozen_fd77c0affdc60d917bd53f57",
+        "url": "https://www.duffield.cornell.edu/people/mohamed-abdelfattah",
+        "observed_at": "2026-11-23T10:59:56.231552+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a3eb8d8b5b56df17c506a7f05121ad22e60c55e1d2f05c78e7e6d29918052712"
+      },
+      {
+        "id": "shared_frozen_fdaa6bed510aef23e8289e95",
+        "url": "https://www.duffield.cornell.edu/people/james-c-hwang",
+        "observed_at": "2026-11-23T10:59:55.873478+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "283522dfee5f394073e068b4f7575a8f353ac032b538c23236917210ced6ab3c"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "person_86b0f156c2d55427a5d6",
+        "description": "Weill radiology lab profile URL is not among pinned captures (profile_url_aliases maps it to the ECE directory); decision relies on the captured primary ECE directory entry \"Professor of Electrical Engineering in Radiology\" under Graduate Field Faculty."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_da051808fbb857d79f97",
+        "description": "Weill graduate-school profile URL is not among pinned captures (profile_url_aliases maps it to the ECE directory); decision relies on the captured primary ECE directory entry \"Professor\" under Graduate Field Faculty."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_613978dd08af5891a58b",
+        "description": "Graduate Field Faculty entry with title \"Research Professor\" (Materials Science and Engineering); classified excluded/research_only rather than affiliate_professor because research-only professorial titles are excluded by the v5 category rules."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_2c8fb24f500d55dca01f",
+        "description": "Core Faculty entry with title \"Assistant Research Professor\"; classified excluded/research_only."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Directory enumeration verified from pinned capture shared_frozen_1a55d7295203183871fc006a: 48 Core Faculty, 37 Graduate Field Faculty, 15 Emeriti Faculty, 3 Research and Teaching Professionals = 103 entries, exactly matching required_person_ids and expected_primary_profile_urls; 13 Staff/Affiliated Staff entries are non-academic administrative roles and out of scope."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_bb2edf167d3945d99ec6ec64d06317b4",
+    "candidate_sha256": "1fff1d618c1c09074f23b5ffe5edab2999a198d66f1e20245ad55f314a8743b3",
+    "transport": "t3",
+    "run_id": "node:delegated-task:command%3Amcp%3A81c1b876-7755-4b73-8b77-31cc6ed303e0%3Adelegate-task%3Av5-t20-cornell-final2-ced99ba7",
+    "model": "claude-opus-5-5",
+    "finished_at": "2026-11-23T11:31:41.154654+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/1c02df437b0d6a6bd50658e75c3338d121c276902c98b9c6e08fc2571539438d.json",
+      "sha256": "1c02df437b0d6a6bd50658e75c3338d121c276902c98b9c6e08fc2571539438d"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/1c02df437b0d6a6bd50658e75c3338d121c276902c98b9c6e08fc2571539438d.json",
+    "sha256": "1c02df437b0d6a6bd50658e75c3338d121c276902c98b9c6e08fc2571539438d"
+  }
+}

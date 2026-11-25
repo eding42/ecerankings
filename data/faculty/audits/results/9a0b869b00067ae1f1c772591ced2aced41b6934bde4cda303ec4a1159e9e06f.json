@@ -1,0 +1,2094 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/88d7fa98af7a82986c9d5a904439497ac05d6dc5b92697bce37e370732135631.json",
+    "sha256": "88d7fa98af7a82986c9d5a904439497ac05d6dc5b92697bce37e370732135631"
+  },
+  "brief": {
+    "file": "audits/briefs/77dfd401ea7ade0b5d3ed8681342b08f33f22e3559e13934c6679e8fa47133aa.json",
+    "sha256": "77dfd401ea7ade0b5d3ed8681342b08f33f22e3559e13934c6679e8fa47133aa"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_ec93d3632e8e453a91200e023a0e674d",
+    "candidate_sha256": "83fc92d3a25507393d2aaba4c76b0472178f7176820b2de47b1a610172be8d12",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:49:16.442145+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.osu.edu/news/2026/09/ece-welcomes-assistant-professor-daniel-zhou",
+        "https://ece.osu.edu/news/2026/10/ece-welcomes-professor-subhanshu-gupta",
+        "https://ece.osu.edu/people/agarwal.334",
+        "https://ece.osu.edu/people/ahmad.46",
+        "https://ece.osu.edu/people/anderson.67",
+        "https://ece.osu.edu/people/arafin.1",
+        "https://ece.osu.edu/people/arehart.5",
+        "https://ece.osu.edu/people/berger-wolf.1",
+        "https://ece.osu.edu/people/berger.143",
+        "https://ece.osu.edu/people/bibyk.1",
+        "https://ece.osu.edu/people/brillson.1",
+        "https://ece.osu.edu/people/brocanelli.1",
+        "https://ece.osu.edu/people/burkholder.1",
+        "https://ece.osu.edu/people/chen.118",
+        "https://ece.osu.edu/people/chowdhury.24",
+        "https://ece.osu.edu/people/clymer.1",
+        "https://ece.osu.edu/people/coifman.1",
+        "https://ece.osu.edu/people/collins.3",
+        "https://ece.osu.edu/people/compton.1",
+        "https://ece.osu.edu/people/cornetet.1",
+        "https://ece.osu.edu/people/darpino.2",
+        "https://ece.osu.edu/people/degroat.1",
+        "https://ece.osu.edu/people/ekici.2",
+        "https://ece.osu.edu/people/ertin.1",
+        "https://ece.osu.edu/people/eryilmaz.2",
+        "https://ece.osu.edu/people/eryilmaz.4",
+        "https://ece.osu.edu/people/fayed.1",
+        "https://ece.osu.edu/people/fiorentini.2",
+        "https://ece.osu.edu/people/goswami.78",
+        "https://ece.osu.edu/people/grassman.5",
+        "https://ece.osu.edu/people/gupta.11",
+        "https://ece.osu.edu/people/gupta.706",
+        "https://ece.osu.edu/people/hsu.2",
+        "https://ece.osu.edu/people/illindala.1",
+        "https://ece.osu.edu/people/johnson.1374",
+        "https://ece.osu.edu/people/kassas.2",
+        "https://ece.osu.edu/people/kasten.1",
+        "https://ece.osu.edu/people/keyhani.1",
+        "https://ece.osu.edu/people/khalil.18",
+        "https://ece.osu.edu/people/khan.1",
+        "https://ece.osu.edu/people/kiourti.1",
+        "https://ece.osu.edu/people/klein.7",
+        "https://ece.osu.edu/people/koksal.2",
+        "https://ece.osu.edu/people/krishna.53",
+        "https://ece.osu.edu/people/krishnamurthy.1",
+        "https://ece.osu.edu/people/lee.146",
+        "https://ece.osu.edu/people/lee.8763",
+        "https://ece.osu.edu/people/liang.889",
+        "https://ece.osu.edu/people/liu.1736",
+        "https://ece.osu.edu/people/long.22",
+        "https://ece.osu.edu/people/lu.173",
+        "https://ece.osu.edu/people/mao.550",
+        "https://ece.osu.edu/people/martinez.158",
+        "https://ece.osu.edu/people/mayhan.1",
+        "https://ece.osu.edu/people/mcghee.2",
+        "https://ece.osu.edu/people/mixon.23",
+        "https://ece.osu.edu/people/moses.2",
+        "https://ece.osu.edu/people/musah.3",
+        "https://ece.osu.edu/people/myers.1079",
+        "https://ece.osu.edu/people/nahar.2",
+        "https://ece.osu.edu/people/newman.8",
+        "https://ece.osu.edu/people/olson.4",
+        "https://ece.osu.edu/people/orin.1",
+        "https://ece.osu.edu/people/ozguner.2",
+        "https://ece.osu.edu/people/passino.1",
+        "https://ece.osu.edu/people/pathak.2",
+        "https://ece.osu.edu/people/peake.1",
+        "https://ece.osu.edu/people/potter.36",
+        "https://ece.osu.edu/people/pulcherio.1",
+        "https://ece.osu.edu/people/qin.324",
+        "https://ece.osu.edu/people/rajan.21",
+        "https://ece.osu.edu/people/reano.1",
+        "https://ece.osu.edu/people/redmill.1",
+        "https://ece.osu.edu/people/ringel.5",
+        "https://ece.osu.edu/people/roblin.1",
+        "https://ece.osu.edu/people/rojas-teran.1",
+        "https://ece.osu.edu/people/schniter.1",
+        "https://ece.osu.edu/people/sebo.1",
+        "https://ece.osu.edu/people/sertel.1",
+        "https://ece.osu.edu/people/shanker.32",
+        "https://ece.osu.edu/people/shroff.11",
+        "https://ece.osu.edu/people/tahmina.1",
+        "https://ece.osu.edu/people/tawfik.10",
+        "https://ece.osu.edu/people/teixeira.5",
+        "https://ece.osu.edu/people/valco.1",
+        "https://ece.osu.edu/people/villarroel.1",
+        "https://ece.osu.edu/people/volakis.1",
+        "https://ece.osu.edu/people/wang.1248",
+        "https://ece.osu.edu/people/wang.3596",
+        "https://ece.osu.edu/people/yardim.7",
+        "https://ece.osu.edu/people/yener.5",
+        "https://ece.osu.edu/people/yurkovich.1",
+        "https://ece.osu.edu/people/zhang.564",
+        "https://ece.osu.edu/people/zhang.8952",
+        "https://ece.osu.edu/people/zhao.2592",
+        "https://ece.osu.edu/people/zheng.5",
+        "https://ece.osu.edu/people/zia.23"
+      ],
+      "checked_list_ids": [
+        "faculty",
+        "emeritus"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_7b901fc27f135951b527",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_005"
+        ]
+      },
+      {
+        "person_id": "person_1ac9c1144fda503bbe9d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Biomedical Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_006"
+        ]
+      },
+      {
+        "person_id": "person_f5a24620e35d594a9d91",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Associate Chair of Instruction, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_007"
+        ]
+      },
+      {
+        "person_id": "person_118230c1f8e75fadab24",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_008"
+        ]
+      },
+      {
+        "person_id": "person_b41270c8744051f68558",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (College of Engineering | Research Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_009"
+        ]
+      },
+      {
+        "person_id": "person_1a7275f1f1ff5d0d878b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_011"
+        ]
+      },
+      {
+        "person_id": "person_9132cb5a1e1052df8cdf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Academic Director, Academic Affairs Administration | Professor, Computer Science and Engineering | Professor, Evolution Ecology and Organismal Biology | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_010"
+        ]
+      },
+      {
+        "person_id": "person_36c060c299ec55daad36",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_012"
+        ]
+      },
+      {
+        "person_id": "person_826d0724d6dc52768c68",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Professor & CMR Scholar, Physics Administration | Professor, Physics | Quick Links).",
+        "source_ids": [
+          "src_013"
+        ]
+      },
+      {
+        "person_id": "person_1f619d422cd854f79259",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Assistant Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_014"
+        ]
+      },
+      {
+        "person_id": "person_88fa7ebb1b545177a287",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (College of Engineering | Research Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_016"
+        ]
+      },
+      {
+        "person_id": "person_4db6a3cd1417514cac7d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Materials Science and Engineering | Assistant Professor, Electrical and Computer Engineering | Associate Professor, Physics | Quick Links).",
+        "source_ids": [
+          "src_017"
+        ]
+      },
+      {
+        "person_id": "person_064bfa1150545ca297f0",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_018"
+        ]
+      },
+      {
+        "person_id": "person_0f52b6eaf5e1540bbd48",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Civil Environmental and Geodetic Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_019"
+        ]
+      },
+      {
+        "person_id": "person_706c018c8bb05aba8c76",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-tenure-track Research Assistant Professor (settled OSU ruling).",
+        "source_ids": [
+          "src_023"
+        ]
+      },
+      {
+        "person_id": "person_d849c3dca47f56a988c5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_024"
+        ]
+      },
+      {
+        "person_id": "person_a48ef0702bd252ec8ccb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Associate Chair of Faculty Affairs, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_025"
+        ]
+      },
+      {
+        "person_id": "person_6cbb7a3d20cf533ebf42",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_026"
+        ]
+      },
+      {
+        "person_id": "person_f2e5868340ef53e2892c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_027"
+        ]
+      },
+      {
+        "person_id": "person_421fa080099255b3a266",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professional Practice Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_028"
+        ]
+      },
+      {
+        "person_id": "person_ae9681c288c957bdae62",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_029"
+        ]
+      },
+      {
+        "person_id": "person_8df5edcff71059a69786",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_030"
+        ]
+      },
+      {
+        "person_id": "person_09a05ade400953628177",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Assistant Professor, Mechanical and Aerospace Engineering | Assistant Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_031"
+        ]
+      },
+      {
+        "person_id": "person_6ab044a2a0f55971a5c9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Materials Science and Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_032"
+        ]
+      },
+      {
+        "person_id": "person_e269f2508c6e502da462",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_034"
+        ]
+      },
+      {
+        "person_id": "person_9e2e6fe7f66150bc8b5e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_036"
+        ]
+      },
+      {
+        "person_id": "person_4ac59f67ee285b11a278",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Burn and Sue Lin Endowed ElectroScience Laboratory Professorship, College of Engineering | Quick Links).",
+        "source_ids": [
+          "src_037"
+        ]
+      },
+      {
+        "person_id": "person_249aca1087545d0eb45d",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (College of Engineering | Professor, Electrical and Computer Engineering | The Transportation Research Center, Inc. Chair in Intelligent Transportation Systems, College of Engineering | Awards | Publications | Journal | Conference | Magazine Articles | Book Chapters | M.S. Theses | Ph.D. Dissertations | Posters | Patents | Research Group | Open Positions | Current Senior Researchers | Current Postdoctoral Scholars | Current Graduate Students | Alumni | Sponsored Projects | Quick Links).",
+        "source_ids": [
+          "src_038"
+        ]
+      },
+      {
+        "person_id": "person_e2809bdf607758cd98c4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_041"
+        ]
+      },
+      {
+        "person_id": "person_0111064189a15621b29c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE faculty (College of Engineering Innovation Scholar, ECE).",
+        "source_ids": [
+          "src_043"
+        ]
+      },
+      {
+        "person_id": "person_40ad7d704e375abba15e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_045"
+        ]
+      },
+      {
+        "person_id": "person_4d2461dc2f555ccd941e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | The George R. Smith Chair in Engineering, College of Engineering | Vice President Titles, Enterprise for Research, Innovation, and Knowledge | Quick Links).",
+        "source_ids": [
+          "src_046"
+        ]
+      },
+      {
+        "person_id": "person_b4a3fb73a06d5985aff7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_047"
+        ]
+      },
+      {
+        "person_id": "person_38f81c6a13ce5b2fae4b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_049"
+        ]
+      },
+      {
+        "person_id": "person_dff818de3cda5988ad1f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_048"
+        ]
+      },
+      {
+        "person_id": "person_839330bf3a6a5819aab4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_050"
+        ]
+      },
+      {
+        "person_id": "person_b9a56a67361e5fd99502",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_051"
+        ]
+      },
+      {
+        "person_id": "person_39eb705a88b353c2b201",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_053"
+        ]
+      },
+      {
+        "person_id": "person_0933ef6760345ed4a3b3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Assistant Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_054"
+        ]
+      },
+      {
+        "person_id": "person_b77dd49206105ff39ac3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_055"
+        ]
+      },
+      {
+        "person_id": "person_6a8bd81948df5654b5fa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Mathematics | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_058"
+        ]
+      },
+      {
+        "person_id": "person_3ca96b4479f955589c9a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_060"
+        ]
+      },
+      {
+        "person_id": "person_1e002641363a5546af2a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Materials Science and Engineering | Professor, Physics | Instructor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_061"
+        ]
+      },
+      {
+        "person_id": "person_ffe374dc2193532bbd62",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (College of Engineering | Research Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_062"
+        ]
+      },
+      {
+        "person_id": "person_53e5d985c8135a098e53",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Professor, Evolution, Ecology and Organismal Biology | Books | Publications | Funded Projects | Graduate Students, Postdocs | Courses | Professional Activities | Quick Links).",
+        "source_ids": [
+          "src_067"
+        ]
+      },
+      {
+        "person_id": "person_fe7581b5690254368acd",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_070"
+        ]
+      },
+      {
+        "person_id": "person_6a6df2a64f585f5c9e0e",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/practice/lecturer appointment (College of Engineering | Lecturer, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_071"
+        ]
+      },
+      {
+        "person_id": "person_82fa8b01992150cb9112",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Civil Environmental and Geodetic Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_072"
+        ]
+      },
+      {
+        "person_id": "person_3bb315b1401e54489d72",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Distinguished Professor of Engineering, Electrical and Computer Engineering | Assistant Professor, Materials Science and Engineering | Quick Links).",
+        "source_ids": [
+          "src_073"
+        ]
+      },
+      {
+        "person_id": "person_823e34ab70165e3a9004",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Academic Director, The Ohio State University | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_074"
+        ]
+      },
+      {
+        "person_id": "person_0e89ee4394d75c5f9a03",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_075"
+        ]
+      },
+      {
+        "person_id": "person_9e159b59271b56148af2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | IMR Executive Director and Assoc VP, The Ohio State University | Professor, Electrical and Computer Engineering | The Neal A. Smith Chair in Electrical Engineering, College of Engineering | Professor, Materials Science and Engineering | Professor, Physics | Quick Links).",
+        "source_ids": [
+          "src_076"
+        ]
+      },
+      {
+        "person_id": "person_0986b886af675bc986ff",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Books | Book Chapters | Journal Articles | Device Characterization and Modeling | Oscillator Characterization and Design | Microwave Power Amplifiers: Theory & Design | Linearization and Behavior Modeling | Conference Proceedings | Quick Links).",
+        "source_ids": [
+          "src_077"
+        ]
+      },
+      {
+        "person_id": "person_ef9c3a6753fe57b9b8a9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_078"
+        ]
+      },
+      {
+        "person_id": "person_619db8de68e154a6a229",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_079"
+        ]
+      },
+      {
+        "person_id": "person_887df347c8b654649eb9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_080"
+        ]
+      },
+      {
+        "person_id": "person_8099cd358c2e5e649913",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_081"
+        ]
+      },
+      {
+        "person_id": "person_07a36cc303d55a429269",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | The Elizabeth and John Tinkham Endowed Professorship in Engineering, College of Engineering | Chair, College of Engineering | Quick Links).",
+        "source_ids": [
+          "src_082"
+        ]
+      },
+      {
+        "person_id": "person_cd47a412577a5accaf75",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Ohio Eminent Scholar in Networking and Communication, Electrical and Computer Engineering | Ohio Eminent Scholar, Computer Science and Engineering | Professor, Computer Science and Engineering | Quick Links).",
+        "source_ids": [
+          "src_083"
+        ]
+      },
+      {
+        "person_id": "person_4fbe823e4f7058e5871f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/practice/lecturer appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Lecturer, Marion Campus | Quick Links).",
+        "source_ids": [
+          "src_084"
+        ]
+      },
+      {
+        "person_id": "person_3c77c795b12a5be69af7",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (College of Engineering | Research Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_085"
+        ]
+      },
+      {
+        "person_id": "person_db83b3c65a715c558a4d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Academic Director Titles, Electrical and Computer Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_086"
+        ]
+      },
+      {
+        "person_id": "person_a833d0946d1f5e27b7de",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professional Practice Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_088"
+        ]
+      },
+      {
+        "person_id": "person_4a8cbdf9163c57d89ec3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Distinguished Professor of Engineering, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_090"
+        ]
+      },
+      {
+        "person_id": "person_de7c24464dcc5bf5804f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Professor, Computer Science and Engineering | Quick Links).",
+        "source_ids": [
+          "src_091"
+        ]
+      },
+      {
+        "person_id": "person_589a0d3eeba45dedb81c",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (College of Engineering | Research Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_092"
+        ]
+      },
+      {
+        "person_id": "person_758d39afbcb9546890e3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Professor, Computer Science and Engineering | Roy and Lois Chope Chair in Engineering, College of Engineering | Professor, Integrated Systems Engineering | Quick Links).",
+        "source_ids": [
+          "src_093"
+        ]
+      },
+      {
+        "person_id": "person_265cf2d1edd05dba9581",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Associate Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_095"
+        ]
+      },
+      {
+        "person_id": "person_45fc47f11ddf582ebf7b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_096"
+        ]
+      },
+      {
+        "person_id": "person_30025534809651a5aba4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professor, Electrical and Computer Engineering | Professor, Materials Science and Engineering | Quick Links).",
+        "source_ids": [
+          "src_097"
+        ]
+      },
+      {
+        "person_id": "person_4d10a2a571855aa388ab",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular ECE professorial appointment (College of Engineering | Professional Practice Assistant Professor, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_099"
+        ]
+      },
+      {
+        "person_id": "person_258a7c3c98e0521d9f41",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Emeritus, Electrical and Computer Engineering | Faculty Emeritus, College of Engineering | Quick Links).",
+        "source_ids": [
+          "src_015"
+        ]
+      },
+      {
+        "person_id": "person_02f4bb8af22150f888ce",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_020"
+        ]
+      },
+      {
+        "person_id": "person_5f5b4abd200b5f4493d3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_021"
+        ]
+      },
+      {
+        "person_id": "person_9888850bd3d85273ab51",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_022"
+        ]
+      },
+      {
+        "person_id": "person_37c93314929b5c69b658",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_033"
+        ]
+      },
+      {
+        "person_id": "person_9a3f3dae5c7752a39dca",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_035"
+        ]
+      },
+      {
+        "person_id": "person_909690ffa9095f37b72c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_039"
+        ]
+      },
+      {
+        "person_id": "person_0647061a49dc51c69745",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_040"
+        ]
+      },
+      {
+        "person_id": "person_ea6247fa6a5053e996b0",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_042"
+        ]
+      },
+      {
+        "person_id": "person_c24df50b25115db6aa57",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_044"
+        ]
+      },
+      {
+        "person_id": "person_e0ce752705e051ae992e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_052"
+        ]
+      },
+      {
+        "person_id": "person_da9714b0a5d954d090a1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_056"
+        ]
+      },
+      {
+        "person_id": "person_3a8416245107561f9574",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_057"
+        ]
+      },
+      {
+        "person_id": "person_421ae4cb22de5a608279",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_059"
+        ]
+      },
+      {
+        "person_id": "person_f12dad6dda7452c1bcb2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Professor Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_063"
+        ]
+      },
+      {
+        "person_id": "person_582ca9caa64e527fb56c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_064"
+        ]
+      },
+      {
+        "person_id": "person_6d599341818a520da7aa",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_065"
+        ]
+      },
+      {
+        "person_id": "person_4817d11009355a60b1ea",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_066"
+        ]
+      },
+      {
+        "person_id": "person_7f2f74d2d1f454a49111",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Professor Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_068"
+        ]
+      },
+      {
+        "person_id": "person_943794145723515c8890",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_069"
+        ]
+      },
+      {
+        "person_id": "person_1c945a5870a05e1e8049",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_087"
+        ]
+      },
+      {
+        "person_id": "person_54c30c81fa1855769b65",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Professor, Electrical and Computer Engineering | Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_089"
+        ]
+      },
+      {
+        "person_id": "person_5d48e6e8b7dd5e65a0b9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_094"
+        ]
+      },
+      {
+        "person_id": "person_6d4d48482e53566eb862",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Emeritus faculty (College of Engineering | Faculty Emeritus, Electrical and Computer Engineering | Quick Links).",
+        "source_ids": [
+          "src_098"
+        ]
+      },
+      {
+        "person_id": "person_2f0f2bd2700d5ab5812d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Assistant Professor in ECE (Sep 2026 ECE news, settled OSU ruling).",
+        "source_ids": [
+          "src_003"
+        ]
+      },
+      {
+        "person_id": "person_4e1f6943385e59ef8495",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Ohio Research Scholar and Professor in ECE (Oct 2026 ECE news, settled OSU ruling).",
+        "source_ids": [
+          "src_004"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_001",
+        "url": "https://ece.osu.edu/directory/faculty",
+        "observed_at": "2026-11-24T08:40:33.010544+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "610f5baa62c041ae27f5f941abefa31aa6619ed084f696cf3ab9c20633f0e4e9"
+      },
+      {
+        "id": "src_002",
+        "url": "https://ece.osu.edu/directory/faculty-emeritus",
+        "observed_at": "2026-11-24T08:40:33.016178+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "478693e228753b26b1fa2ebb6010e32f0ddf9e813902c5fc0de97eb1496ca5cd"
+      },
+      {
+        "id": "src_003",
+        "url": "https://ece.osu.edu/news/2026/09/ece-welcomes-assistant-professor-daniel-zhou",
+        "observed_at": "2026-11-24T08:40:33.019282+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "1ea0ec6842b703acbf7fb9a69ee70efde84b459ffd47a03593db73f475ae20f6"
+      },
+      {
+        "id": "src_004",
+        "url": "https://ece.osu.edu/news/2026/10/ece-welcomes-professor-subhanshu-gupta",
+        "observed_at": "2026-11-24T08:40:33.018255+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "3d18972f97044ba1937ed4b3a3dcc2de13759f2d109ddf125bcc74f2e477e4f1"
+      },
+      {
+        "id": "src_005",
+        "url": "https://ece.osu.edu/people/agarwal.334",
+        "observed_at": "2026-11-24T08:40:33.013074+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "ed54eac55b1379527f78886663f40190ed756aaa0c6350609405558fa3623e9d"
+      },
+      {
+        "id": "src_006",
+        "url": "https://ece.osu.edu/people/ahmad.46",
+        "observed_at": "2026-11-24T08:40:33.011262+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "099843c7b9ee68e24d0bacff3f999e80d86e27bdb87e14b49ba13db5aa89342e"
+      },
+      {
+        "id": "src_007",
+        "url": "https://ece.osu.edu/people/anderson.67",
+        "observed_at": "2026-11-24T08:40:33.003807+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "2fd5fa2a330353ff45aea93c16dfa1ecc9d7d3616fde08a51beb07b71bd5f26a"
+      },
+      {
+        "id": "src_008",
+        "url": "https://ece.osu.edu/people/arafin.1",
+        "observed_at": "2026-11-24T08:40:33.014434+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "b0ae8d41e02da4f1d6d0ef4de6031510698cd4e161c14e1d377789f385f73cfb"
+      },
+      {
+        "id": "src_009",
+        "url": "https://ece.osu.edu/people/arehart.5",
+        "observed_at": "2026-11-24T08:40:33.002475+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "dc294c18cab1c4e941381f7d319428287eb47438dba204a18e3ab65f98a3b12b"
+      },
+      {
+        "id": "src_010",
+        "url": "https://ece.osu.edu/people/berger-wolf.1",
+        "observed_at": "2026-11-24T08:40:33.016223+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "9a019b1e6083c784385cc6e1497acdffbe83229ea35869caf42e95a27b316613"
+      },
+      {
+        "id": "src_011",
+        "url": "https://ece.osu.edu/people/berger.143",
+        "observed_at": "2026-11-24T08:40:33.016942+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "dea521ecb693a67659b17807e27b74561e7c33042b109279e64be96cf1d1f64f"
+      },
+      {
+        "id": "src_012",
+        "url": "https://ece.osu.edu/people/bibyk.1",
+        "observed_at": "2026-11-24T08:40:33.014935+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "6130a99e087b10eb4391388f3a40f67862b9de2561b42e6989e783752acd20af"
+      },
+      {
+        "id": "src_013",
+        "url": "https://ece.osu.edu/people/brillson.1",
+        "observed_at": "2026-11-24T08:40:33.121437+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c222dbe399d6c36dfb046ba991adf5c3855d41b7381a76cc1db1e22a304c6f45"
+      },
+      {
+        "id": "src_014",
+        "url": "https://ece.osu.edu/people/brocanelli.1",
+        "observed_at": "2026-11-24T08:40:33.087325+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "bb5d8326a30d571fe68143694e6f43ce874fa9e2480ebb1ecc6cbb582a0895f5"
+      },
+      {
+        "id": "src_015",
+        "url": "https://ece.osu.edu/people/burkholder.1",
+        "observed_at": "2026-11-24T08:40:33.094708+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "12712cb196fcdac2f1e8b3e82199be0fb6a8a057df8fc08ce1f3f6411603842d"
+      },
+      {
+        "id": "src_016",
+        "url": "https://ece.osu.edu/people/chen.118",
+        "observed_at": "2026-11-24T08:40:33.115517+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c7295b5da3720d6225f26d0da6dc24da516074ecd92d5efdbd37469b818c8864"
+      },
+      {
+        "id": "src_017",
+        "url": "https://ece.osu.edu/people/chowdhury.24",
+        "observed_at": "2026-11-24T08:40:33.087462+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "589947cb52927070f9fbdb1f9ea9442716df7aff3d253599d6db7f5bd88a424c"
+      },
+      {
+        "id": "src_018",
+        "url": "https://ece.osu.edu/people/clymer.1",
+        "observed_at": "2026-11-24T08:40:33.089618+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "901db7acf450caacd4221a14eb21579a5a91f34ff80634f1ee9f4029360710ea"
+      },
+      {
+        "id": "src_019",
+        "url": "https://ece.osu.edu/people/coifman.1",
+        "observed_at": "2026-11-24T08:40:33.111023+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c13fad1524ba643d62425ca4119dc2ef4b40584ed073e85b8edf4a84efcdb8af"
+      },
+      {
+        "id": "src_020",
+        "url": "https://ece.osu.edu/people/collins.3",
+        "observed_at": "2026-11-24T08:40:33.116726+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "57bf28e8929d42ab44c74ec53cb42ded1cdf447c3090fb35de72470ff85b1eb2"
+      },
+      {
+        "id": "src_021",
+        "url": "https://ece.osu.edu/people/compton.1",
+        "observed_at": "2026-11-24T08:40:33.101927+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "5f6aea3d990a846a0ba86cee4f3ca6a8c9118d428ef4a4b0c1de27a6947431df"
+      },
+      {
+        "id": "src_022",
+        "url": "https://ece.osu.edu/people/cornetet.1",
+        "observed_at": "2026-11-24T08:40:33.106529+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "b1a77ab5c3212e6036c02a241345b4a6ffc7808616d7b0914db5db97ec59e614"
+      },
+      {
+        "id": "src_023",
+        "url": "https://ece.osu.edu/people/darpino.2",
+        "observed_at": "2026-11-24T08:40:33.102582+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "99d8a85dbfd05e99270e13e0480cf94dba96106d5c900199108c9c21fdd821b3"
+      },
+      {
+        "id": "src_024",
+        "url": "https://ece.osu.edu/people/degroat.1",
+        "observed_at": "2026-11-24T08:40:33.110655+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "56c59d68a9e1bfe2b2da00c7edb8c824d9a62d5a0a91039af941abcc5d170fbe"
+      },
+      {
+        "id": "src_025",
+        "url": "https://ece.osu.edu/people/ekici.2",
+        "observed_at": "2026-11-24T08:40:33.186433+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "d571b582da3ca82c7c6bcd011bcd15b58eebf07dbdc3623843d5e2dca1fd637e"
+      },
+      {
+        "id": "src_026",
+        "url": "https://ece.osu.edu/people/ertin.1",
+        "observed_at": "2026-11-24T08:40:33.192779+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "7747a4e80ee568ecbd4b84cce5b3bb8ae8640bed1eb45e64ca1e242693329720"
+      },
+      {
+        "id": "src_027",
+        "url": "https://ece.osu.edu/people/eryilmaz.2",
+        "observed_at": "2026-11-24T08:40:33.180435+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "18b621c9859d410f94ff8dfd8c34c92de3f1532812b40fd801303a8a826802d8"
+      },
+      {
+        "id": "src_028",
+        "url": "https://ece.osu.edu/people/eryilmaz.4",
+        "observed_at": "2026-11-24T08:40:33.185627+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "48072f813700364a7869c29325829e08f0fc25bfc14e69c07f46f1e7deb8f4bc"
+      },
+      {
+        "id": "src_029",
+        "url": "https://ece.osu.edu/people/fayed.1",
+        "observed_at": "2026-11-24T08:40:33.192683+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "5621d51232aaabf4fa45b7c037a7a5467c5838b38fb6ea19a6dc5f02f854f085"
+      },
+      {
+        "id": "src_030",
+        "url": "https://ece.osu.edu/people/fiorentini.2",
+        "observed_at": "2026-11-24T08:40:33.182837+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c0e39ac42b046287c266ae655dc7c3d2648f361f0badd1f5550ac4b0210dbd66"
+      },
+      {
+        "id": "src_031",
+        "url": "https://ece.osu.edu/people/goswami.78",
+        "observed_at": "2026-11-24T08:40:33.187965+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "d66856813fb0983e5baef89610935bb32ae771361182d73001217a47a830d967"
+      },
+      {
+        "id": "src_032",
+        "url": "https://ece.osu.edu/people/grassman.5",
+        "observed_at": "2026-11-24T08:40:33.194639+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "ea6c8454ff5d9d64f38f497e4966927f6b7797bacd5e73b59958c10f802e7048"
+      },
+      {
+        "id": "src_033",
+        "url": "https://ece.osu.edu/people/gupta.11",
+        "observed_at": "2026-11-24T08:40:33.183080+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "07b294217442361d1865b94eaaff367f7cc62d9275d4914a5a12b5c6dc247b88"
+      },
+      {
+        "id": "src_034",
+        "url": "https://ece.osu.edu/people/gupta.706",
+        "observed_at": "2026-11-24T08:40:33.184160+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "0b33e0c3ebb4ec384ff1fed38e8a9077ccc9d26cc9af01688383b16cbd5bb8ef"
+      },
+      {
+        "id": "src_035",
+        "url": "https://ece.osu.edu/people/hsu.2",
+        "observed_at": "2026-11-24T08:40:33.197363+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "51fb09032612db287dea3b80bc4f9a928624732e7e448071e25cf3c5650de456"
+      },
+      {
+        "id": "src_036",
+        "url": "https://ece.osu.edu/people/illindala.1",
+        "observed_at": "2026-11-24T08:40:33.189162+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "1c4da3ff4c72d3aae6ac6d7c8003ca78d86cbebfefb43ccb18de3e88ed615008"
+      },
+      {
+        "id": "src_037",
+        "url": "https://ece.osu.edu/people/johnson.1374",
+        "observed_at": "2026-11-24T08:40:33.292968+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "8303186fb337fe3689e7936cb2adba63d806f811b34c9f52a85888fa5a66ecbe"
+      },
+      {
+        "id": "src_038",
+        "url": "https://ece.osu.edu/people/kassas.2",
+        "observed_at": "2026-11-24T08:40:33.255868+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "163879a7b1df52d9f825147b6a1ca824024d69cd231ee959478ec0ed122bdfa4"
+      },
+      {
+        "id": "src_039",
+        "url": "https://ece.osu.edu/people/kasten.1",
+        "observed_at": "2026-11-24T08:40:33.289005+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "7d515dfebcc566a6e0f61ed566e3a6be0bc368a3e3208c665c121318cf901bc5"
+      },
+      {
+        "id": "src_040",
+        "url": "https://ece.osu.edu/people/keyhani.1",
+        "observed_at": "2026-11-24T08:40:33.258628+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "a853979bb90706fba7e2f783b5feccb3c789116269a654a1f008d787fceabf23"
+      },
+      {
+        "id": "src_041",
+        "url": "https://ece.osu.edu/people/khalil.18",
+        "observed_at": "2026-11-24T08:40:33.246145+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "695f765b75f737f1bd41c279bb39bce42a43f3c797d4bcf63b49d877e99f5b51"
+      },
+      {
+        "id": "src_042",
+        "url": "https://ece.osu.edu/people/khan.1",
+        "observed_at": "2026-11-24T08:40:33.267940+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "15784d0516ca1ee749f93af9e29e545e7243edea905f17468c9e9e4d9caa70ab"
+      },
+      {
+        "id": "src_043",
+        "url": "https://ece.osu.edu/people/kiourti.1",
+        "observed_at": "2026-11-24T08:40:33.245291+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "2c7732256f4246af367c03ddfac08322e03410294592084a6c862da90207fd19"
+      },
+      {
+        "id": "src_044",
+        "url": "https://ece.osu.edu/people/klein.7",
+        "observed_at": "2026-11-24T08:40:33.251549+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "070b8874701b7c49dde3759b39159168e10b82605388204945875d6155572047"
+      },
+      {
+        "id": "src_045",
+        "url": "https://ece.osu.edu/people/koksal.2",
+        "observed_at": "2026-11-24T08:40:33.258669+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c802452b7f28a82703f04f813535ed61fa49b9fc9372b53b82ad55ed995ee663"
+      },
+      {
+        "id": "src_046",
+        "url": "https://ece.osu.edu/people/krishna.53",
+        "observed_at": "2026-11-24T08:40:33.251759+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "ecf751cdc291b0a573152f358e178a2d250a721d9632557ec776932f68a4b3b7"
+      },
+      {
+        "id": "src_047",
+        "url": "https://ece.osu.edu/people/krishnamurthy.1",
+        "observed_at": "2026-11-24T08:40:33.269340+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "43beafc73c5931a7e951fed25cfb6565191aa083d78f069d0c95bda502fce6a4"
+      },
+      {
+        "id": "src_048",
+        "url": "https://ece.osu.edu/people/lee.146",
+        "observed_at": "2026-11-24T08:40:33.256061+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c46dae094ec068542b84afb2ff9212910b9e1cac21227b759e7262bfebbaa279"
+      },
+      {
+        "id": "src_049",
+        "url": "https://ece.osu.edu/people/lee.8763",
+        "observed_at": "2026-11-24T08:40:33.297584+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "7c35e60f7c3025c769b7df67d985fad74888e6106fe3b5e7942fccc000386a25"
+      },
+      {
+        "id": "src_050",
+        "url": "https://ece.osu.edu/people/liang.889",
+        "observed_at": "2026-11-24T08:40:33.300006+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "b471c9dc084737e0c456eb688dfe441027ca6c9362f24b23d253fb0652c003e6"
+      },
+      {
+        "id": "src_051",
+        "url": "https://ece.osu.edu/people/liu.1736",
+        "observed_at": "2026-11-24T08:40:33.312740+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c6c78116c24f0546bc925156cb9a5295ea8d4a595c1c66a7893902581627b5bf"
+      },
+      {
+        "id": "src_052",
+        "url": "https://ece.osu.edu/people/long.22",
+        "observed_at": "2026-11-24T08:40:33.319581+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "65853a2b337ffcbefdec6c726fc236809def4e7025ecbc991091b547646d6279"
+      },
+      {
+        "id": "src_053",
+        "url": "https://ece.osu.edu/people/lu.173",
+        "observed_at": "2026-11-24T08:40:33.310878+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "4d033580abddc3c93765e8e2274c87cd8f9b4934b736dd59c93e51e2b378f3c1"
+      },
+      {
+        "id": "src_054",
+        "url": "https://ece.osu.edu/people/mao.550",
+        "observed_at": "2026-11-24T08:48:29.823651+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "11b793f36865c5a5e050e6d0084e7ac903a809c3ef765f96149a9723551a52d4"
+      },
+      {
+        "id": "src_055",
+        "url": "https://ece.osu.edu/people/martinez.158",
+        "observed_at": "2026-11-24T08:40:33.312408+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "f7bbdb557432e05e6f9c113740c094d9b626790641a485d0b2349dd09b9bede1"
+      },
+      {
+        "id": "src_056",
+        "url": "https://ece.osu.edu/people/mayhan.1",
+        "observed_at": "2026-11-24T08:40:33.320324+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "b39f0be8d0c6826aeb2238e69ac515083460037dbc241b7842a6fbccb8a1fa38"
+      },
+      {
+        "id": "src_057",
+        "url": "https://ece.osu.edu/people/mcghee.2",
+        "observed_at": "2026-11-24T08:48:30.889164+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "74245ca3814108b84eb56eafa1d396f60e010c643a6a3c536edb34603555ea30"
+      },
+      {
+        "id": "src_058",
+        "url": "https://ece.osu.edu/people/mixon.23",
+        "observed_at": "2026-11-24T08:48:31.998695+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "3677de61094749a5ed15b454f1043912b1f7d5c446d036d221b690734fcbe5ee"
+      },
+      {
+        "id": "src_059",
+        "url": "https://ece.osu.edu/people/moses.2",
+        "observed_at": "2026-11-24T08:48:33.080325+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "b58f4c6632b24c9097abd39d8c04184bccb91778eaf35295cb304fa09af0f174"
+      },
+      {
+        "id": "src_060",
+        "url": "https://ece.osu.edu/people/musah.3",
+        "observed_at": "2026-11-24T08:48:34.165790+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "040e25a572c3f04eaee32d0fed9de28f7b79abec6aa160a3ea802dacf987d8ec"
+      },
+      {
+        "id": "src_061",
+        "url": "https://ece.osu.edu/people/myers.1079",
+        "observed_at": "2026-11-24T08:48:35.278860+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "24a46ffdd2af78d9cea1aab11b7784733fa683b48d7fb8e7b3c3065e8a69d4d2"
+      },
+      {
+        "id": "src_062",
+        "url": "https://ece.osu.edu/people/nahar.2",
+        "observed_at": "2026-11-24T08:48:36.386476+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "104107a8ae87ace6a3dc3986f506cedf51542deca54192aff860d3b35d47f0d4"
+      },
+      {
+        "id": "src_063",
+        "url": "https://ece.osu.edu/people/newman.8",
+        "observed_at": "2026-11-24T08:48:37.479718+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "9065084bc2199315d9c719c496b44050c824390683eb9688a101a7b1bba4e3c9"
+      },
+      {
+        "id": "src_064",
+        "url": "https://ece.osu.edu/people/olson.4",
+        "observed_at": "2026-11-24T08:48:38.536065+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "e3079d7ea0e1a0a6f6450fd0219cb8af81176d76901e724fda5992f622219cf4"
+      },
+      {
+        "id": "src_065",
+        "url": "https://ece.osu.edu/people/orin.1",
+        "observed_at": "2026-11-24T08:48:39.613279+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "b4e3f4f9033152752fea74b5575e5adbd17e5fe676fdba78486676efa88e91c8"
+      },
+      {
+        "id": "src_066",
+        "url": "https://ece.osu.edu/people/ozguner.2",
+        "observed_at": "2026-11-24T08:48:40.693374+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "d093d50082fdb6bae2b243a2da9668be4281d887b587130a949ec8ff19c1cee9"
+      },
+      {
+        "id": "src_067",
+        "url": "https://ece.osu.edu/people/passino.1",
+        "observed_at": "2026-11-24T08:48:41.762656+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "5469061dd35510c9a9ef97e87a58f08c7d2dfc89b7dbcc63ab631d22952d6c97"
+      },
+      {
+        "id": "src_068",
+        "url": "https://ece.osu.edu/people/pathak.2",
+        "observed_at": "2026-11-24T08:48:42.849801+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "58f4f6f1b9009e265b2c736f4ff55a262cb945be49b3a66e7575dbd091b5bfcb"
+      },
+      {
+        "id": "src_069",
+        "url": "https://ece.osu.edu/people/peake.1",
+        "observed_at": "2026-11-24T08:48:43.910273+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "c6f5364d4d8793bc9cae00fb4b9a8f07960a8994f8af2c067fb0690472311457"
+      },
+      {
+        "id": "src_070",
+        "url": "https://ece.osu.edu/people/potter.36",
+        "observed_at": "2026-11-24T08:48:45.214811+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "9fe3805dbe8c2dbe1496f4716456cf31d23fb9cbbfc5d0b34a434080934f29be"
+      },
+      {
+        "id": "src_071",
+        "url": "https://ece.osu.edu/people/pulcherio.1",
+        "observed_at": "2026-11-24T08:48:46.325885+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "9e78e3bc5261e8845f01863840166211e21bebfd3825506431377086cdb112de"
+      },
+      {
+        "id": "src_072",
+        "url": "https://ece.osu.edu/people/qin.324",
+        "observed_at": "2026-11-24T08:48:47.415602+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "49d5d3d838cadb54fe5f4e4d7b991493890e7bf344d4f06b8778b93593b1541e"
+      },
+      {
+        "id": "src_073",
+        "url": "https://ece.osu.edu/people/rajan.21",
+        "observed_at": "2026-11-24T08:48:48.474677+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "489bc03d2fe8e8878bc630a3df9f141ae98d342789f98f5566a832b5c2b872a8"
+      },
+      {
+        "id": "src_074",
+        "url": "https://ece.osu.edu/people/reano.1",
+        "observed_at": "2026-11-24T08:48:49.551202+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "3c7bb3c44c6dfb688e941a0d2b844bab0bfbcc149da902bacea544cb7a498ea5"
+      },
+      {
+        "id": "src_075",
+        "url": "https://ece.osu.edu/people/redmill.1",
+        "observed_at": "2026-11-24T08:48:50.640260+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "05a80621d995ad05bacec6321ec025cd1354ee794a3acad821f1f2054029fe92"
+      },
+      {
+        "id": "src_076",
+        "url": "https://ece.osu.edu/people/ringel.5",
+        "observed_at": "2026-11-24T08:48:51.699115+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "a98b1dcd4255317ead809645ce7da676782b2958a12a8a31ac60360d705a5241"
+      },
+      {
+        "id": "src_077",
+        "url": "https://ece.osu.edu/people/roblin.1",
+        "observed_at": "2026-11-24T08:48:52.757418+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "3f0023a5e123b41904e62edfc9fde7ba566f61ffe991319a5162b5a947a09995"
+      },
+      {
+        "id": "src_078",
+        "url": "https://ece.osu.edu/people/rojas-teran.1",
+        "observed_at": "2026-11-24T08:48:53.853569+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "ac76c34b81a90427e59386918f03a67d41d2d6a98ad160681f58124a8a0ca8d9"
+      },
+      {
+        "id": "src_079",
+        "url": "https://ece.osu.edu/people/schniter.1",
+        "observed_at": "2026-11-24T08:48:54.944445+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "566551c8d0591f3457d1bddf5a5c2a4894993da79d68fdebb136d553be3d8046"
+      },
+      {
+        "id": "src_080",
+        "url": "https://ece.osu.edu/people/sebo.1",
+        "observed_at": "2026-11-24T08:48:56.007303+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "ab64615fe883714ce4ed6fca91c63fb8c7077a8fc87df0772a81a081a8b6b559"
+      },
+      {
+        "id": "src_081",
+        "url": "https://ece.osu.edu/people/sertel.1",
+        "observed_at": "2026-11-24T08:48:57.065312+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "e8367dae6ef7cc91c6afc1fee1ee1886117fd22ccac7e648347f951bdb76b8d3"
+      },
+      {
+        "id": "src_082",
+        "url": "https://ece.osu.edu/people/shanker.32",
+        "observed_at": "2026-11-24T08:48:58.129553+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "e64f2cccf08e805d59f6f5d9f1591c36954d47589eab26e22e7553336052304e"
+      },
+      {
+        "id": "src_083",
+        "url": "https://ece.osu.edu/people/shroff.11",
+        "observed_at": "2026-11-24T08:48:59.200766+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "a8581c5d699f472ccb80dc0d4bb015a064f3cdfb317ff6fc8beca0b708ff7707"
+      },
+      {
+        "id": "src_084",
+        "url": "https://ece.osu.edu/people/tahmina.1",
+        "observed_at": "2026-11-24T08:49:00.276415+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "87839050b60f1645b04dc43a57623003a553fb2cb7fa9cb465597e89adaa44ee"
+      },
+      {
+        "id": "src_085",
+        "url": "https://ece.osu.edu/people/tawfik.10",
+        "observed_at": "2026-11-24T08:49:01.366664+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "9d99bb9166c4dd93dbb1007ed57739234e7f756b942e4cf046ec73d999846b51"
+      },
+      {
+        "id": "src_086",
+        "url": "https://ece.osu.edu/people/teixeira.5",
+        "observed_at": "2026-11-24T08:49:02.430618+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "447e55d9415bbd53a9fe883963cad5fa4604532c25129d908beccd8c6b44e0bd"
+      },
+      {
+        "id": "src_087",
+        "url": "https://ece.osu.edu/people/valco.1",
+        "observed_at": "2026-11-24T08:49:03.489343+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "9a8b96675cff0bc46e2cbe39e75d6c6cfe535486140d7132b71a4d2bfeda406d"
+      },
+      {
+        "id": "src_088",
+        "url": "https://ece.osu.edu/people/villarroel.1",
+        "observed_at": "2026-11-24T08:49:04.604735+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "7df258bf4af95b84ef87fb515287ad6690c1cc01e1eec261c26cf5a1fbb0432e"
+      },
+      {
+        "id": "src_089",
+        "url": "https://ece.osu.edu/people/volakis.1",
+        "observed_at": "2026-11-24T08:49:05.678501+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "63bb94c1c8f090d2b2178f3ce5cb9ab653bb0e07ad3c57abb3e19ac0e0eec23c"
+      },
+      {
+        "id": "src_090",
+        "url": "https://ece.osu.edu/people/wang.1248",
+        "observed_at": "2026-11-24T08:49:06.746988+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "99f9d817ef8febe831328085436029b27b61e8f68c4c9ac337c1b243a81f328d"
+      },
+      {
+        "id": "src_091",
+        "url": "https://ece.osu.edu/people/wang.3596",
+        "observed_at": "2026-11-24T08:49:07.821758+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "bd55e09d1cc4bf7c31f3da39201d79fa157e2fabe7136cd2b181e1649f5f71d6"
+      },
+      {
+        "id": "src_092",
+        "url": "https://ece.osu.edu/people/yardim.7",
+        "observed_at": "2026-11-24T08:49:08.930483+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "65bd159dbdd53da2167bb6f6fe87ed544d6dc8474d9006a815c25012dbc5f4b2"
+      },
+      {
+        "id": "src_093",
+        "url": "https://ece.osu.edu/people/yener.5",
+        "observed_at": "2026-11-24T08:49:09.989534+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "599113dd3629387aa4289bcb7c8650ff8aad38bbac7a1053008e805f08c6f6dc"
+      },
+      {
+        "id": "src_094",
+        "url": "https://ece.osu.edu/people/yurkovich.1",
+        "observed_at": "2026-11-24T08:49:11.082469+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "a9f6e5b33b1e3755e183eedc283dbe62bff1d2fe6a650275ea5b21781d714fc2"
+      },
+      {
+        "id": "src_095",
+        "url": "https://ece.osu.edu/people/zhang.564",
+        "observed_at": "2026-11-24T08:49:12.138148+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "54c219d4da99e9b8163d7d476ae1bb6a3f5c4b7e1e9931c6bde6049c3c50b8df"
+      },
+      {
+        "id": "src_096",
+        "url": "https://ece.osu.edu/people/zhang.8952",
+        "observed_at": "2026-11-24T08:49:13.236616+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "164cbf0835b4f358befe120c6986a432dd6ff04733f4a37df4c065a9afedb1bb"
+      },
+      {
+        "id": "src_097",
+        "url": "https://ece.osu.edu/people/zhao.2592",
+        "observed_at": "2026-11-24T08:49:14.321247+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "a3043769c1d809d6e7ede04b9f5365544f0e6f79711620b13d3ee3edbdbd2ee5"
+      },
+      {
+        "id": "src_098",
+        "url": "https://ece.osu.edu/people/zheng.5",
+        "observed_at": "2026-11-24T08:49:15.376713+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "adef638f4034cf02dde199fb76b6116e17fdb2e2b90186b861c6bbea470bf884"
+      },
+      {
+        "id": "src_099",
+        "url": "https://ece.osu.edu/people/zia.23",
+        "observed_at": "2026-11-24T08:49:16.442145+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "document",
+        "response_sha256": "f523e570d1fd3d5b7a6c653058d6e132e0a23e616ce6dc995c7641afb52c84a9"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_ec93d3632e8e453a91200e023a0e674d",
+    "candidate_sha256": "83fc92d3a25507393d2aaba4c76b0472178f7176820b2de47b1a610172be8d12",
+    "transport": "t3",
+    "run_id": "audit-osu-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:49:16.442145+00:00",
+    "exit_code": 0
+  }
+}
