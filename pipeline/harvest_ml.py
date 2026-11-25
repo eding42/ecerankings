@@ -90,6 +90,15 @@ PMLR_ICML_VOLUMES = {2013: 28, 2014: 32, 2015: 37, 2016: 48, 2017: 70, 2018: 80,
 # track set, each with its source; a count alone never passes the membership
 # gate -- every row must also carry a publisher membership ID.
 EDITIONS = {
+    ("iclr", 2016): {
+        "adapter": "iclr_2016_archive",
+        "url": "https://iclr.cc/archive/www/2016.html",
+        "include_tracks": ["Conference"],
+        "s2_venue": "ICLR",
+        "expected": [{"count": 80, "scope": "included",
+                      "source": "https://iclr.cc/archive/www/lib/exe/fetch.php%3Fmedia%3Diclr2016%3Aopening.pdf",
+                      "note": "Senior program chair's opening slides, conference track (slide 2)."}],
+    },
     ("iclr", 2025): {
         "adapter": "proceedings_listing",
         "url": "https://proceedings.iclr.cc/paper_files/paper/2025",
@@ -435,6 +444,80 @@ def append_jsonl(path, row):
 
 # --------------------------------------------------------------------------
 # Membership adapters
+
+class ICLR2016ArchiveParser(HTMLParser):
+    """Read only the ordered list following the conference-track heading."""
+
+    def __init__(self):
+        super().__init__(convert_charrefs=True)
+        self.section = False
+        self.in_list = False
+        self.done = False
+        self.current = None
+        self.field = None
+        self.entries = []
+
+    def handle_starttag(self, tag, attrs):
+        attrs = dict(attrs)
+        if tag == "h3" and attrs.get("id") == "accepted_papers_conference_track":
+            self.section = True
+        elif self.section and not self.done and tag == "ol" and not self.in_list:
+            self.in_list = True
+        elif self.in_list and tag == "li":
+            self.current = {"href": None, "title": "", "authors": ""}
+        elif self.current is not None and tag == "a" and self.current["href"] is None:
+            self.current["href"] = attrs.get("href")
+            self.field = "title"
+        elif self.current is not None and tag == "br":
+            self.field = "authors"
+
+    def handle_endtag(self, tag):
+        if tag == "a" and self.field == "title":
+            self.field = None
+        elif tag == "li" and self.current is not None:
+            self.entries.append(self.current)
+            self.current = None
+            self.field = None
+        elif tag == "ol" and self.in_list:
+            self.in_list = False
+            self.done = True
+
+    def handle_data(self, data):
+        if self.current is not None and self.field:
+            self.current[self.field] += data
+
+
+def parse_iclr_2016_archive(body, url):
+    parser = ICLR2016ArchiveParser()
+    parser.feed(body)
+    if not parser.done:
+        raise HarvestError("ICLR 2016 conference-track list missing or incomplete")
+    rows = []
+    for entry in parser.entries:
+        match = re.fullmatch(r"https?://(?:www\.)?arxiv\.org/abs/(\d{4}\.\d{4,5})(?:v\d+)?/?", entry["href"] or "")
+        if not match or not entry["title"].strip() or not entry["authors"].strip():
+            raise HarvestError("Malformed ICLR 2016 conference-track entry")
+        ident = match.group(1)
+        authors = split_listing_authors(entry["authors"])
+        original_authors = list(authors)
+        # The archive includes an institution as a person in one byline and
+        # repeats a person in another. The conference-labeled papers resolve
+        # those two errors without changing the membership list.
+        if ident == "1511.05493" and authors.count("CIFAR") == 1:
+            authors.remove("CIFAR")
+        if ident == "1511.06744" and authors.count("Jamie Shotton") == 2:
+            authors.pop(len(authors) - 1 - authors[::-1].index("Jamie Shotton"))
+        correction = ({"archive_authors": original_authors,
+                       "evidence": f"https://arxiv.org/abs/{ident}; conference-labeled PDF author block"}
+                      if authors != original_authors else None)
+        rows.append({"paper_key": f"iclr:2016:{ident}", "membership_id": ident,
+                     "membership_url": url + "#accepted_papers_conference_track",
+                     # The linked arXiv version is not established as the final
+                     # publisher PDF; do not treat it as PDF affiliation evidence.
+                     "pdf_url": None, "preprint_url": f"https://arxiv.org/abs/{ident}",
+                     "track": "Conference", "title": " ".join(entry["title"].split()),
+                     "authors": authors, "byline_correction": correction, "publisher_doi": None})
+    return rows
 
 class ListingParser(HTMLParser):
     """proceedings.iclr.cc / proceedings.neurips.cc year or book listing.
@@ -810,6 +893,9 @@ def stage_membership(ed):
         rows = parse_pmlr(body.decode("utf8"), ed.venue, ed.year, cfg["volume"])
     elif cfg["adapter"] == "openreview_api":
         rows = parse_openreview_api(ed)
+    elif cfg["adapter"] == "iclr_2016_archive":
+        _, body = ed.fetcher.get(cfg["url"])
+        rows = parse_iclr_2016_archive(body.decode("utf8"), cfg["url"])
     else:
         raise HarvestError(f"Unknown adapter {cfg['adapter']}")
     if cfg.get("crossref_doi"):
@@ -974,6 +1060,13 @@ def stage_discover(ed, key=None, max_search_calls=400, s2_match=False, max_match
         append_jsonl(ed.discovery_path, row)
         done[member["paper_key"]] = row
         counts[f"{status}:{source}"] += 1
+
+    if ed.config.get("adapter") == "iclr_2016_archive":
+        for member in pending:
+            cand = {"doi": arxiv_doi(member["membership_id"]),
+                    "title": member["title"], "authors": member["authors"]}
+            record(member, "publisher-archive-link", cand, 1.0, 1.0)
+        pending = []
 
     for source, builder in (("legacy-s2-cache", lambda: legacy_index(ed.venue, ed.year)),
                             ("s2-bulk", lambda: s2_bulk_index(ed))):
@@ -1186,6 +1279,8 @@ def stage_pdf(ed, workers=PDF_WORKERS, keep_pdfs=False, offline=False):
         pdf_path = ed.pdf_dir / f"{member['membership_id']}.pdf"
         if pdf_path.exists():
             body, source = pdf_path.read_bytes(), "local"
+        elif not member.get("pdf_url"):
+            raise HarvestError("No verified publisher PDF URL for this paper")
         elif offline:
             raise HarvestError("--offline and PDF not downloaded")
         else:

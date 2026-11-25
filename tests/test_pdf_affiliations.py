@@ -261,6 +261,12 @@ class Extract(unittest.TestCase):
         r = pa.extract(COLUMNS, ["Rong Tang", "Somebody Else"])
         self.assertNotEqual(r["confidence"], "high")
 
+    def test_affiliation_footnote_requires_image_review(self):
+        text = COLUMNS + "\n    ∗\n      Rong Tang is also a student at Stanford University.\n"
+        r = pa.extract(text, ["Rong Tang", "Lizhen Lin", "Yun Yang"])
+        self.assertEqual(r["confidence"], "partial")
+        self.assertIn("footnote", r["reason"])
+
     def test_dangling_marks_are_stripped(self):
         self.assertEqual(pa._clean_affiliation("University of Science and Technology of China 1 3"),
                          "University of Science and Technology of China")
@@ -428,6 +434,11 @@ class KeyedLegendLayoutsTest(unittest.TestCase):
         self.assertEqual(clean("Institute of Bio- and Geosciences"), "Institute of Bio- and Geosciences")
         self.assertEqual(clean("Cornell University"), "Cornell University")
         self.assertEqual(clean("{dipankar.das,naveen.k.mellempudi"), "")
+        self.assertEqual(clean("Google Deepmind, London, UK, {countzero, jjhunt, apritzel, heess"),
+                         "Google Deepmind, London, UK")
+        self.assertEqual(clean("University of California, Irvine arXiv:1511.00830v5 [stat.ML] 4 Feb 2016"),
+                         "University of California, Irvine")
+        self.assertEqual(clean("arXiv:1511.06644v6 [cs.LG]"), "")
 
     def test_mark_ranges_expand(self):
         text = ("David Klindt * 1-3 , Matthias Bethge 1,2,4-5\n"
