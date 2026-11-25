@@ -7,7 +7,7 @@
 
 ## 1. Overview & Phased Implementation
 
-BiologyRankings (hosted at `https://ecerankings.org/biology/`, with optional standalone domain `biologyrankings.eding.dev` pending DNS routing) provides an institutional ranking of biosciences and biomedical programs based on fractional author credit in selective peer-reviewed journals, mirroring `ecerankings.org` and `csrankings.org`.
+BiologyRankings (hosted at `https://ecerankings.eding.dev/biology/`, with optional standalone domain `biologyrankings.eding.dev` pending DNS routing) provides an institutional ranking of biosciences and biomedical programs based on fractional author credit in selective peer-reviewed journals, mirroring `ecerankings.org` and `csrankings.org`.
 
 | Phase | Scope | Status | Notes |
 | :--- | :--- | :---: | :--- |
@@ -171,7 +171,7 @@ These venues were formally audited by the bibliometric review and **permanently 
 
 ## 5. Architectural Policies Confirmed
 
-1. **Geometric Mean Scoring:** Just like `ecerankings.org`, institutional scores are the geometric mean of `(1 + adj_count)` across selected subfields minus one, resisting single-area dominance.
+1. **Geometric Mean Scoring:** Just like the ECE ranking, institutional scores are the geometric mean of `(1 + adj_count)` across selected subfields minus one, resisting single-area dominance.
 2. **Author Attribution:** Fractional author credit (`1/N`) at time of publication, split evenly among co-authors.
 3. **Academic vs. All Centers Toggle:**
    * **Academic Only (`type=education`):** Ranks universities without research hospitals/commercial labs.
