@@ -169,12 +169,18 @@ Never use `git add -A`. Exclude `.env`, `.tmp/`, `ai_temp/`, local settings,
 scope, unresolved editions, coverage/credit deltas, and validation results in
 the PR. Commit, push, and merge only at their authorized levels.
 
+**Main is the live site.** Merge the PR into `main` before deploying, and deploy
+only from an up-to-date `main` checkout with a clean tree (`git switch main &&
+git pull`). Never deploy from a feature branch or uncommitted files; the live site
+must always match `main`.
+
 For an approved Cloudflare publication, package the accepted public files and
 deploy with Wrangler. The repo has no Wrangler config file; Wrangler is still
 the maintainer's chosen deploy tool, so do not substitute the `cf` CLI.
 
 
 ```sh
+git switch main && git pull --ff-only && git status --short   # must be empty
 node pipeline/prerender_site.mjs
 python3 pipeline/package_site.py --out dist
 npx wrangler pages deploy dist --project-name ecerankings --branch main
