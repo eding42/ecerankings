@@ -40,38 +40,11 @@ INSTITUTION_ROLLUP = {
     "https://openalex.org/I1283280774": "https://openalex.org/I136199984",  # Brigham and Women's Hospital -> Harvard
     "https://openalex.org/I4210117453": "https://openalex.org/I136199984",  # Dana-Farber Cancer Institute -> Harvard
     "https://openalex.org/I1288882113": "https://openalex.org/I136199984",  # Boston Children's Hospital -> Harvard
-    "https://openalex.org/I1282245388": "https://openalex.org/I136199984",  # Beth Israel Deaconess Medical Center -> Harvard
     "https://openalex.org/I48633490":   "https://openalex.org/I136199984",  # Mass General Brigham -> Harvard
     # Stanford Medicine
     "https://openalex.org/I4210137306": "https://openalex.org/I97018004",   # Stanford Medicine -> Stanford University
     # Johns Hopkins Medicine
     "https://openalex.org/I2799853436": "https://openalex.org/I145311948",  # Johns Hopkins Medicine -> Johns Hopkins University
-    # Cornell
-    "https://openalex.org/I4210164223": "https://openalex.org/I205783295",  # Weill Cornell Medicine -> Cornell University
-    # Penn
-    "https://openalex.org/I4210129206": "https://openalex.org/I79510175",   # Hospital of Univ of Pennsylvania -> Penn
-    # Yale
-    "https://openalex.org/I4210145889": "https://openalex.org/I32971472",   # Yale New Haven Health -> Yale University
-    # Pittsburgh
-    "https://openalex.org/I4210143521": "https://openalex.org/I170897317",  # UPMC -> University of Pittsburgh
-    # UCLA
-    "https://openalex.org/I4210137532": "https://openalex.org/I161048801",  # UCLA Health -> UCLA
-    # UC San Diego
-    "https://openalex.org/I4210137449": "https://openalex.org/I36234482",   # UCSD Health -> UCSD
-    # UCSF
-    "https://openalex.org/I4210137482": "https://openalex.org/I180670191",  # UCSF Health -> UCSF
-    # NYU
-    "https://openalex.org/I4210141675": "https://openalex.org/I57206974",   # NYU Langone -> NYU
-    # Michigan
-    "https://openalex.org/I4210137349": "https://openalex.org/I27837315",   # Michigan Medicine -> University of Michigan
-    # Duke
-    "https://openalex.org/I4210140227": "https://openalex.org/I170201317",  # Duke Health -> Duke University
-    # Washington University in St. Louis
-    "https://openalex.org/I4210162590": "https://openalex.org/I204465549",  # Barnes-Jewish Hospital -> WashU
-    # Vanderbilt
-    "https://openalex.org/I4210156064": "https://openalex.org/I9093155",    # Vanderbilt Univ Medical Center -> Vanderbilt
-    # Colorado
-    "https://openalex.org/I4210133038": "https://openalex.org/I96673550",   # UCHealth -> CU Anschutz
 }
 
 # Accredited degree-granting medical institutions / graduate schools misclassified by OpenAlex
@@ -80,31 +53,14 @@ ACADEMIC_ALLOWLIST = {
     "https://openalex.org/I1343551460": "The University of Texas MD Anderson Cancer Center",
     "https://openalex.org/I1334819555": "Memorial Sloan Kettering Cancer Center",
     "https://openalex.org/I123431417": "Scripps Research Institute",
-    "https://openalex.org/I1311060955": "Mayo Clinic College of Medicine and Science",
 }
 
+# Display names for the rollup targets. Every ID in these three tables is pinned
+# to its OpenAlex name by tests/test_biology_institution_ids.py.
 CANONICAL_NAMES = {
     "https://openalex.org/I136199984": "Harvard University",
     "https://openalex.org/I97018004": "Stanford University",
     "https://openalex.org/I145311948": "Johns Hopkins University",
-    "https://openalex.org/I205783295": "Cornell University",
-    "https://openalex.org/I79510175": "University of Pennsylvania",
-    "https://openalex.org/I32971472": "Yale University",
-    "https://openalex.org/I161048801": "University of California, Los Angeles",
-    "https://openalex.org/I36234482": "University of California, San Diego",
-    "https://openalex.org/I180670191": "University of California, San Francisco",
-    "https://openalex.org/I57206974": "New York University",
-    "https://openalex.org/I27837315": "University of Michigan",
-    "https://openalex.org/I170201317": "Duke University",
-    "https://openalex.org/I170897317": "University of Pittsburgh",
-    "https://openalex.org/I204465549": "Washington University in St. Louis",
-    "https://openalex.org/I9093155": "Vanderbilt University",
-    "https://openalex.org/I96673550": "University of Colorado Anschutz Medical Campus",
-    "https://openalex.org/I867280407": "The University of Texas Southwestern Medical Center",
-    "https://openalex.org/I1343551460": "The University of Texas MD Anderson Cancer Center",
-    "https://openalex.org/I1334819555": "Memorial Sloan Kettering Cancer Center",
-    "https://openalex.org/I123431417": "Scripps Research Institute",
-    "https://openalex.org/I1311060955": "Mayo Clinic College of Medicine and Science",
 }
 
 def load_registry(path):
