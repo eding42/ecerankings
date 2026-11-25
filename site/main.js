@@ -12,4 +12,5 @@ initRankingsApp({
   hasHospitalRollup: false,
   hasSectorFilter: true,
   hasPrerenderedTable: true,
+  facultyDataPath: 'faculty/current.json',
 });

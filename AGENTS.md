@@ -103,7 +103,16 @@ The repository maintains ranking engines across multiple academic disciplines un
 * **Geometric mean scoring:** `(∏(1 + s_i))^(1/n) - 1` across areas, where `n` is the count of *selected* areas (including those scoring zero).
 * **Default areas:** Only include areas with `default_on: true` (currently **18 of 19 areas**; `flagship` is off by default). Verify against `data/areas.json`.
 * **Publication credit:** Each paper is worth 1.0, split evenly among its listed authors ($1/N$). Each author's share is credited to the institutions they explicitly listed on that publication.
-* **Institutions, not departments:** Rankings reflect whole institutions, not ECE department rosters or faculty listings.
+* **Institutions, not departments:** Rankings reflect whole institutions, not ECE department rosters. Faculty headcounts (see Faculty context) are separate context shown beside a school; they never change credit or rank.
+
+---
+
+## Faculty context
+
+- Follow [the counting policy](data/faculty/policy.json) and [school queue](data/faculty/school-queue.json). Count **ECE-affiliated faculty**, including official affiliated/below-the-line, courtesy and joint/secondary professorial EE/ECE appointments, with an explicit EE boundary in combined departments. CS-only contributors without an official EE/ECE affiliation, generic lab affiliates and other excluded roles remain excluded; preserve exact appointment categories without guessing subtypes.
+- Include announced incoming professors in eligible categories, preserving incoming status, start dates, and subtotals. Keep stable identities, claim-level evidence, conflicts, and dated decisions; publication topics alone do not establish membership. Earlier narrower counts require broader-source coverage review before export under the new policy.
+- `faculty_refresh.py observe` starts a separate agent audit; reconcile its recorded result before acceptance or `faculty_registry.py export`. Unresolved coverage is not zero. Counts stay fixed across publication filters and do not change ranking credit.
+- Scope and implementation status live in the existing [roadmap](docs/faculty-vision-roadmap.md) and [architecture](docs/faculty-software-architecture.md). Historical roster queries are deferred; preserve observations without inferring employment intervals from capture dates.
 
 ---
 

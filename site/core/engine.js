@@ -9,6 +9,7 @@ import {
 import { computeAnnualRanks, institutionHistory, renderRankHistory } from './rank-history.js';
 import { renderComparison, compareSchools, ALL_AREAS } from './comparison.js';
 import { createYearStrip, denseStart } from './year-strip.js';
+import { facultyIndex, renderFacultyContext } from './faculty.js';
 
 const PAGE_SIZE = 100;
 const COMPARE_MAX = 4;
@@ -42,6 +43,7 @@ const DEFAULT_CONFIG = {
   hasSectorFilter: true,
   hasPrerenderedTable: false,
   dataPath: 'data/',
+  facultyDataPath: null,
 };
 
 const app = {
@@ -49,6 +51,7 @@ const app = {
   areas: [],          // [{id, name, cluster, defaultOn, venues}] in registry order
   areaById: new Map(),
   institutions: {},
+  faculty: new Map(), // latest accepted current counts, independent of publication filters
   data: new Map(),    // area id -> rows, only after a successful load
   venueData: new Map(), // "area:venue" -> rows
   pending: new Map(), // area id -> in-flight promise (dedupes concurrent fetches)
@@ -180,10 +183,22 @@ async function loadManifest() {
   }
 }
 
+async function loadFacultyContext(config = app.config) {
+  if (!config.facultyDataPath) return;
+  try {
+    const payload = await fetchJson(config.facultyDataPath);
+    if (app.config !== config) return;
+    app.faculty = facultyIndex(payload, config.fieldId);
+    if (app.result && typeof document !== 'undefined') renderTable();
+  } catch { /* Faculty context is optional; ranking availability is independent. */ }
+}
+
 // ---- Init ------------------------------------------------------------------
 
 async function init(config = {}) {
   app.config = { ...DEFAULT_CONFIG, ...config };
+  app.faculty = new Map();
+  void loadFacultyContext(app.config);
   bindStaticEvents();
   let registry;
   try {
@@ -1137,6 +1152,7 @@ function detailRow(r, did) {
     `<dl class="institution-totals" aria-label="Institution totals">` +
     `<div><dt><abbr data-metric="adj-count" tabindex="0" title="Each paper is worth 1, split evenly among its authors and their institutions.">Adjusted count</abbr></dt><dd>${fmt1.format(r.adjTotal)}</dd></div>` +
     `<div><dt><abbr data-metric="papers" tabindex="0" title="Distinct papers with at least one author at this institution.">Papers</abbr></dt><dd>${fmtInt.format(r.pubTotal)}</dd></div></dl>` +
+    renderFacultyContext(app.faculty.get(r.id)) +
     `<table class="breakdown"><caption>Credit by research area</caption>` +
     `<thead><tr><th scope="col">Area</th><th scope="col" class="num">Rank</th><th scope="col" class="num"><abbr data-metric="adj-count" tabindex="0" title="Each paper is worth 1, split evenly among its authors and their institutions.">Adj. count</abbr></th><th scope="col" class="num"><abbr data-metric="papers" tabindex="0" title="Distinct papers with at least one author at this institution.">Papers</abbr></th></tr></thead>` +
     `<tbody>${body}</tbody></table></td></tr>`;
@@ -1509,6 +1525,7 @@ export {
   getDisabledVenuesForArea,
   loadAreaData,
   loadManifest,
+  loadFacultyContext,
   applyManifest,
   readHash,
   writeHash,

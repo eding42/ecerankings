@@ -4,6 +4,7 @@ import { test } from 'node:test';
 import vm from 'node:vm';
 import * as history from '../site/rank-history.js';
 import * as ranking from '../site/rank.js';
+import * as faculty from '../site/core/faculty.js';
 
 const mainSource = readFileSync(new URL('../site/core/engine.js', import.meta.url), 'utf8');
 const rows = {
@@ -22,7 +23,7 @@ const institutions = { a: { name: 'A', country: 'US' }, b: { name: 'B', country:
 
 function currentApp() {
   const context = vm.createContext({
-    ...history, ...ranking, console, setTimeout, clearTimeout,
+    ...history, ...ranking, ...faculty, console, setTimeout, clearTimeout,
     document: { readyState: 'loading', addEventListener() {} }
   });
   const script = mainSource
@@ -140,4 +141,21 @@ test('expanded details render the trend first and cache against the displayed se
   app.state.result = { sel: app.state.sel, data: app.state.data, rows: app.compute(), annualRanks: null };
   app.context.detailRow(app.state.result.rows[0], 'test-detail');
   assert.equal(app.state.result.annualRanks.length, 1);
+});
+
+test('expanded faculty count remains current while the displayed publication window changes', () => {
+  const app = currentApp();
+  app.state.faculty = new Map([['a', { metric_id: 'ece_affiliated_faculty', headcount: 12, incoming_headcount: 2, current_headcount: 10, observed_on: '2026-11-22', roster_url: 'https://university.edu/faculty' }]]);
+  for (const from of [2020, 2023]) {
+    app.state.sel = { ...app.state.sel, from, to: 2023 };
+    app.state.result = { sel: app.state.sel, data: app.state.data, rows: app.compute() };
+    const school = app.state.result.rows.find(row => row.id === 'a');
+    const before = JSON.stringify(app.state.result.rows);
+    const html = app.context.detailRow(school, 'test-faculty');
+    assert.match(html, /<strong>12<\/strong> ECE-affiliated faculty \(2 incoming\)/);
+    assert.match(html, /Observed Nov 22, 2026/);
+    assert.equal(JSON.stringify(app.state.result.rows), before);
+    const unsupported = app.state.result.rows.find(row => row.id === 'b');
+    assert.doesNotMatch(app.context.detailRow(unsupported, 'unsupported'), /faculty-context/);
+  }
 });
