@@ -210,7 +210,7 @@ def main():
     journal = json.loads(args.journal_manifest.read_text())
     for venue, years in journal.get('years', {}).items():
         for year, row in years.items():
-            if row.get('status') == 'complete' and venues[venue]['kind'] == 'journal':
+            if row.get('status') == 'complete' and venues.get(venue, {}).get('kind') == 'journal':
                 fresh[(venue, year)] = (args.journal_cache / venue / year / 'works.jsonl', row['sha256'])
                 operations[(venue, year)] = 'journal_source_query'
     conference = json.loads(args.conference_manifest.read_text())
@@ -256,8 +256,9 @@ def main():
             # Crossref establishes journal membership for registry-declared
             # fallback years. A smaller native OpenAlex result is an enrichment
             # source, not evidence that the missing publisher DOIs vanished.
-            entry = venues[venue].get('years', {}).get(year, {})
-            if old and venues[venue]['kind'] == 'journal' and entry.get('source') == 'crossref':
+            venue_entry = venues.get(venue, {})
+            entry = venue_entry.get('years', {}).get(year, {})
+            if old and venue_entry.get('kind') == 'journal' and entry.get('source') == 'crossref':
                 present = {norm_doi(w.get('doi')) for w in works if norm_doi(w.get('doi'))}
                 retained = [w for w in old if norm_doi(w.get('doi')) not in present]
                 works.extend(retained)

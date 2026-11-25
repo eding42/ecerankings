@@ -12,6 +12,14 @@ admit another paper or change the author-credit denominator.
 - NeurIPS: the official proceedings book and configured track labels.
 - Affiliations: identity-checked OpenAlex work authorships or the final publisher
   PDF. PDF evidence takes precedence; `--prefer-openalex` reverses that choice.
+- User ruling (2026-11-24): for early conferences whose official accepted-papers
+  page lists a paper but links only to arXiv (no camera-ready PDF exists), the
+  linked arXiv version is accepted as publisher-PDF evidence when the paper is on
+  that official accepted list and the version predates the conference. Record it
+  explicitly as review-version evidence in the source manifest, with its hash and
+  the printed "Under review as a conference paper at …" first-page wording; never
+  silently relabel it camera-ready. Applies to the seven ICLR 2016 papers whose
+  first pages carry that wording.
 - Semantic Scholar supplies DOI/arXiv discovery hints only. Author-profile
   affiliations cannot earn historical credit.
 

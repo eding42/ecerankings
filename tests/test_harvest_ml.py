@@ -47,6 +47,34 @@ def oa_candidate(doi, title="Generalization of GFlowNets", year=2024, names=("Ti
 
 
 class Parsers(unittest.TestCase):
+    def test_iclr_2016_archive_selects_conference_and_ignores_code_links(self):
+        source = '''<h3 id="workshop">Workshop</h3><ol><li>Ignore</li></ol>
+        <h3 id="accepted_papers_conference_track">Conference</h3><div><ol>
+        <li><div><a href="http://arxiv.org/abs/1511.07122">Paper title</a>
+        <a href="https://github.com/example">[code]</a><br/>Alice Example, Bob Author</div></li>
+        </ol></div><h3>Other</h3><ol><li>Ignore</li></ol>'''
+        rows = harvest_ml.parse_iclr_2016_archive(source, "https://iclr.cc/archive/www/2016.html")
+        self.assertEqual(len(rows), 1)
+        self.assertEqual(rows[0]["title"], "Paper title")
+        self.assertEqual(rows[0]["authors"], ["Alice Example", "Bob Author"])
+        self.assertEqual(rows[0]["membership_id"], "1511.07122")
+        self.assertIsNone(rows[0]["pdf_url"])
+
+    def test_iclr_2016_archive_rejects_missing_or_invalid_list(self):
+        with self.assertRaises(harvest_ml.HarvestError):
+            harvest_ml.parse_iclr_2016_archive("<ol></ol>", "https://example.org")
+        with self.assertRaises(harvest_ml.HarvestError):
+            harvest_ml.parse_iclr_2016_archive('<h3 id="accepted_papers_conference_track"></h3><ol><li>bad</li></ol>', "https://example.org")
+
+    def test_iclr_2016_byline_corrections_preserve_archive_evidence(self):
+        source = '''<h3 id="accepted_papers_conference_track"></h3><ol>
+        <li><a href="https://arxiv.org/abs/1511.05493">Paper A</a><br/>Yujia Li, CIFAR</li>
+        <li><a href="https://arxiv.org/abs/1511.06744">Paper B</a><br/>Jamie Shotton, Alice, Jamie Shotton</li></ol>'''
+        rows = harvest_ml.parse_iclr_2016_archive(source, "https://example.org")
+        self.assertEqual(rows[0]["authors"], ["Yujia Li"])
+        self.assertEqual(rows[0]["byline_correction"]["archive_authors"], ["Yujia Li", "CIFAR"])
+        self.assertEqual(rows[1]["authors"], ["Jamie Shotton", "Alice"])
+
     def test_listing_parses_tracks_authors_and_double_escaped_names(self):
         rows = harvest_ml.parse_listing(LISTING, "https://proceedings.iclr.cc/paper_files/paper/2025", "iclr", 2025)
         self.assertEqual([r["track"] for r in rows], ["Conference", "Position_Paper_Track"])
@@ -102,6 +130,18 @@ class Stages(unittest.TestCase):
     def tearDown(self):
         harvest_ml.EDITIONS.pop(("iclr", 1999), None)
         self.tmp.cleanup()
+
+    def test_archive_identifier_goes_directly_to_discovery(self):
+        harvest_ml.EDITIONS[("iclr", 1999)]["adapter"] = "iclr_2016_archive"
+        row = member(key="iclr:1999:1511.07122")
+        row["membership_id"] = "1511.07122"
+        harvest_ml.atomic_write_lines(self.ed.membership_path, [row])
+        with patch.object(harvest_ml, "legacy_index", side_effect=AssertionError("unexpected lookup")):
+            harvest_ml.stage_discover(self.ed)
+        result = harvest_ml.read_jsonl(self.ed.discovery_path)[0]
+        self.assertEqual(result["arxiv_doi"], "10.48550/arxiv.1511.07122")
+        self.assertEqual(result["source"], "publisher-archive-link")
+        self.assertTrue(self.ed.is_done("discover"))
 
     def test_s2_match_supplies_identifier_only_and_errors_are_retried(self):
         paper = {"paperId": "p1", "title": "Generalization of GFlowNets", "externalIds": {"ArXiv": "2401.00001v2"},

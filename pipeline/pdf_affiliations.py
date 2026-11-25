@@ -35,7 +35,7 @@ import unicodedata
 
 PDFTOTEXT = "pdftotext"
 # Bump when extraction logic changes; harvest_ml re-extracts stored text.
-EXTRACTOR_VERSION = 8
+EXTRACTOR_VERSION = 11
 
 
 _ABSTRACT = re.compile(r"^\s*A\s*B\s*S\s*T\s*R\s*A\s*C\s*T\b", re.I)
@@ -165,6 +165,11 @@ def _clean_affiliation(text):
     # An email group's local parts ("{dipankar.das,naveen.k") are not a place.
     if text.lstrip().startswith("{"):
         return ""
+    # Rotated arXiv stamps sometimes get joined to the author block.
+    text = re.sub(r"\s*arXiv:\s*\d{4}\.\d{4,5}(?:v\d+)?(?:\s*\[[^]]+\])?.*$", "", text, flags=re.I)
+    # Wrapped grouped email addresses can follow an institution on the same
+    # extracted line, before the line containing the closing brace and @.
+    text = re.sub(r"\s*[,;]?\s*\{[^}]*$", "", text)
     text = re.sub(r"\b(?:https?://|www\.)\S+", " ", text)
     text = re.sub(r"[\s,.]+\b(?:corre\b|corre-|correspond\w*|e-?mail)\b.*$", "", text, flags=re.I)
     # A word broken across lines in a two-column footnote ("Univer- sity").
@@ -726,6 +731,23 @@ def _standalone(text, named=True):
     return bool(_ORG.search(text)) or not named
 
 
+def _affiliation_footnote_needs_review(text):
+    """Flag page-bottom affiliation notes the header parser cannot attribute.
+
+    Layout text can place the symbol on its own line. Restrict the scan to
+    notes after the abstract so normal body mentions do not change confidence.
+    """
+    lines = text.splitlines()
+    start = next((i for i, line in enumerate(lines) if _ABSTRACT.match(line)), len(lines))
+    for i in range(start + 1, len(lines)):
+        if not re.match(r'^\s*[*∗†‡]\s*(?:\S|$)', lines[i]):
+            continue
+        note = ' '.join(line.strip() for line in lines[i:i + 3])
+        if re.search(r'\b(?:universit\w*|institut\w*|college|CIFAR)\b', note, re.I):
+            return True
+    return False
+
+
 def extract(text, authors):
     """Map byline authors to affiliation strings from first-page layout text.
 
@@ -762,7 +784,11 @@ def extract(text, authors):
             out["affiliations"][k] = values
     covered = sum(1 for v in out["affiliations"] if v)
     if covered == len(authors) and out["anchored"] == len(authors):
-        out["confidence"] = "high"
+        if _affiliation_footnote_needs_review(text):
+            out["confidence"] = "partial"
+            out["reason"] = "possible affiliation footnote requires image review"
+        else:
+            out["confidence"] = "high"
     elif covered:
         out["confidence"] = "partial"
         out["reason"] = f"{covered}/{len(authors)} authors with affiliations, {out['anchored']} anchored"

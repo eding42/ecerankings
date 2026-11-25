@@ -28,6 +28,13 @@ Below, `<field>`, `<cache>` and `<site-data>` stand for one row of this table.
 Stage explicit paths and present the change before committing. Push requires
 its own confirmation. Never infer production publication from a review-branch push.
 
+`main` is the main site: `origin/main` must always reflect the published public
+copy. Before starting or pushing a new copy, fetch and reconcile the working
+branch with `origin/main` (the local `main` checkout may be stale; check
+`git rev-list --left-right --count origin/main...HEAD`). Merge the accepted
+release into `main` through its approved PR before packaging or deploying; never
+deploy from a feature branch or worktree.
+
 ## 1. Prepare and collect
 
 ```sh
@@ -167,7 +174,8 @@ rebuilt on a machine that holds `cache_biosciences/`.
 Never use `git add -A`. Exclude `.env`, `.tmp/`, `ai_temp/`, local settings,
 `data/institutions.json`, and generated dependency/build directories. State the
 scope, unresolved editions, coverage/credit deltas, and validation results in
-the PR. Commit, push, and merge only at their authorized levels.
+the PR. Commit, push, and merge only at their authorized levels. Confirm the
+accepted release is merged into `main` before packaging a new copy.
 
 **Main is the live site.** Merge the PR into `main` before deploying, and deploy
 only from an up-to-date `main` checkout with a clean tree (`git switch main &&
