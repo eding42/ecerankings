@@ -1,0 +1,2655 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/d0bd85a9c6e109e29c2a8b3abdc4b4957824ab042964ab36da0ae0683c1d1e2e.json",
+    "sha256": "d0bd85a9c6e109e29c2a8b3abdc4b4957824ab042964ab36da0ae0683c1d1e2e"
+  },
+  "brief": {
+    "file": "audits/briefs/e16f1d14cbade38e3b5069c1f83e7701b9512cac89be894d5a3b9ec3cc913683.json",
+    "sha256": "e16f1d14cbade38e3b5069c1f83e7701b9512cac89be894d5a3b9ec3cc913683"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_ad596b07675d4745914dbf2fb2c50264",
+    "candidate_sha256": "f84b1e405f1831cccfdb09b1e7d6f344ac5b670685b23badaadfed17ac5dfad3",
+    "reviewer_id": "claude-opus-5-5-v5-verify",
+    "reviewed_at": "2026-11-23T10:01:39.730406+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/acarias.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/adim.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/alp.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/anantharam.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/arcak.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/asir.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/attwood.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ayazifar.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/baolshausen.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/barsky.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bayen.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bechet.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/binyu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bkante.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bokor.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/boles.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/boser.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/brecht.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/budinger.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/camoalon.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/caoyuan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chang-hasnain.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chua.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chuang.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chunleiliu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/courtade.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ctnguyen.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/darrell.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/dcal.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/efros.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/elghaoui.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/eric-y-ma.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/fearing.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/gireeja.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/gopala.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/gray.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/grisha.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/guanghan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/haoningtang.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/hartmann.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/hu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/irfan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/javey.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jcchien.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jiantao.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jptennant.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jr.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/katermurch.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/keller.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/keutzer.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/king.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lau.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lewis.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lieberman.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/loiannog.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lplee.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/malik.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/mekhail.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/mengjieyu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/messerschmitt.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/meyer.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/mlustig.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/morgan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/muller.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/muppala.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/niknejad.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/oldham.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/osama.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pilawa.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pister.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pkhanna.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pnuzzo.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/poolla.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/prabal.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/qianxu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/rabaey.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ramchandran.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/rikky.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/rjfull.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/salahuddin.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sanders.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sangiovanni-vicentelli.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/schwarz.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sconolly.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/seshia.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/skarandikar.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sojoudi.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/songmei.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/tomlin.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/vcoleman.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/vonmeier.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/waller.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/walrand.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wawrzynek.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wong.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wu-f.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/yablonovitch.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/yjo.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ysshao.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/zaijun.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/zakhor.html"
+      ],
+      "checked_list_ids": [
+        "roster",
+        "current",
+        "ee_current"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_46ae015469325db2b91e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Behcet Acikmese: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_aed45860a399c1b0fe398dca"
+        ]
+      },
+      {
+        "person_id": "person_5731e6734e8c53b7826e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "incoming",
+        "effective_from_json": "{\"year\":2027,\"precision\":\"year\"}",
+        "rationale": "Carmen Amo Alonso: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular Assistant Professor appointment announced as incoming; official profile states \"Carmen Amo Alonso is (incoming 2027) an Assistant Professor\". Included as incoming, start 2027 (year precision).",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_b752bcafbf89d54ff50499f6"
+        ]
+      },
+      {
+        "person_id": "person_faf22245d3ae5d0ab397",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Venkat Anantharam: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_661f3e95bb78a15ef511c746"
+        ]
+      },
+      {
+        "person_id": "person_43349167a5c45ec784b0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Gopala Krishna Anumanchipalli: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d875088697f8ad022b0aa9f4"
+        ]
+      },
+      {
+        "person_id": "person_34fb5dfab3385d479913",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Mekhail Anwar: Official EE directory title \"Adjunct Professor\" (3 pinned lists); adjunct appointment. All three pinned EECS lists and the profile header say \"Adjunct Professor\"; only the undated biography says \"Associate Professor in Residence\". The specific official title takes precedence over the undated biography -> excluded/adjunct.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_8fbf66cf7c4d4ea747ce8c67"
+        ]
+      },
+      {
+        "person_id": "person_b8b6b35539055bb8a53b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Murat Arcak: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_411ecd06e385407b168885a8"
+        ]
+      },
+      {
+        "person_id": "person_4dd3df6fd9b15228ae0f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Ana Claudia Arias: Official EE directory title \"Professor, Chair\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_7ed1c49d5aed65cdc15419de"
+        ]
+      },
+      {
+        "person_id": "person_8a2694dbc37b5a1781d8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David Attwood: Official EE directory title \"Professor in Residence Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_14d496071f440dce90ab34d1"
+        ]
+      },
+      {
+        "person_id": "person_5c2cf82195315cd981ad",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Babak Ayazifar: Official EE directory title \"Teaching Professor\" (3 pinned lists); teaching-line appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_17386a0522bfd2f28a0af8f3"
+        ]
+      },
+      {
+        "person_id": "person_7f0478f80ec25b86b210",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Ruzena Bajcsy: Official EE directory title \"Professor Emerita\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_c537566c4f9c08a4af364b12"
+        ]
+      },
+      {
+        "person_id": "person_a08c21c2cd3f516abbbb",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Brian A. Barsky: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d8961647678979ea3f49c6e6"
+        ]
+      },
+      {
+        "person_id": "person_b75dfb069a605c95951e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Alexandre Bayen: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_92279b446b9b7a11169c6389"
+        ]
+      },
+      {
+        "person_id": "person_bd2a82e21f2c5616add0",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jeffrey Bokor: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d190a00115d27a19b9c697d8"
+        ]
+      },
+      {
+        "person_id": "person_234f2f2dfbea5e28b688",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Jessica Boles: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_6ac52ec53819cbe5c7713d7d"
+        ]
+      },
+      {
+        "person_id": "person_41543b61690c5d2c8ec3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Bernhard Boser: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_6b68511baaf2d52ea18c1df2"
+        ]
+      },
+      {
+        "person_id": "person_b2e3264821825f40a283",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Thomas F. Budinger: Official EE directory title \"Professor in Residence Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_64d9e7bea69fae1dab4eee92"
+        ]
+      },
+      {
+        "person_id": "person_b081c312b13d5659aa14",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Duncan Callaway: Official EE directory title \"Below the Line, Associate Professor\" (3 pinned lists); official below-the-line EECS affiliation; included as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_a636290a8a61d32e8c7dc59e"
+        ]
+      },
+      {
+        "person_id": "person_04b4bcb9ff85520887f3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Yuan Cao: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_0a33603dfdedeb665775e1b1"
+        ]
+      },
+      {
+        "person_id": "person_4749c1fbb28654128bc5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Constance Chang-Hasnain: Official EE directory title \"Professor Emerita\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_a7e5e14d80388154faa802d4"
+        ]
+      },
+      {
+        "person_id": "person_837e7f447997546688e8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Zaijun Chen: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_945c23b6620c8e5855344505"
+        ]
+      },
+      {
+        "person_id": "person_f5c789a8c84b51358368",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Jun-Chau Chien: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_b2307731a84386febb8cce62"
+        ]
+      },
+      {
+        "person_id": "person_4b0206bb39985ced8707",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Leon O. Chua: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_e16dcff68822adc87ff87c55"
+        ]
+      },
+      {
+        "person_id": "person_06dabcf82ca25fa89c6f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "John Chuang: Official EE directory title \"Below the Line, Professor\" (3 pinned lists); official below-the-line EECS affiliation; included as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_7ccba50f6f4c22b85ee10308"
+        ]
+      },
+      {
+        "person_id": "person_83f5136293765292b9c4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Victoria Coleman: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_542555fda9b2eb9f4586298c"
+        ]
+      },
+      {
+        "person_id": "person_3e0b9184e8db5f6eb304",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Steven Conolly: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_4135188978b63c3ca7b80242"
+        ]
+      },
+      {
+        "person_id": "person_6d0c3853b5e85703b38d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Thomas Courtade: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_fe638075dcd20379a894ff04"
+        ]
+      },
+      {
+        "person_id": "person_0b86507c0bd95f5686d7",
+        "decision": "included",
+        "category": "in_residence",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Trevor Darrell: Official EE directory title \"Professor in Residence\" (3 pinned lists); in-residence professorial appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_358ec60d5705238e876b04e1"
+        ]
+      },
+      {
+        "person_id": "person_4515c029e7295d7e9f51",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Alex Dimakis: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_2d0080326881157cdec98640"
+        ]
+      },
+      {
+        "person_id": "person_9cb08de2988c5fa4b276",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Prabal Dutta: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_513fc8db637d8a42cae3d143"
+        ]
+      },
+      {
+        "person_id": "person_64cbb7b3e5e05b6ba20d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Alexei (Alyosha) Efros: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_cda705ea0ebf648c82525d9e"
+        ]
+      },
+      {
+        "person_id": "person_2ac40fe7bd2d53cfb374",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Laurent El Ghaoui: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_c1c0e1f05fd8c21f03811a71"
+        ]
+      },
+      {
+        "person_id": "person_98da729815915e1093b2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Ronald S. Fearing: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_41d76fd98fabf6508e05520e"
+        ]
+      },
+      {
+        "person_id": "person_09d93a2ad5eb5df3bf3e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Robert Full: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_a4e34d319ee8ac852d7993f5"
+        ]
+      },
+      {
+        "person_id": "person_d764983cf6955aaa8a85",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Paul R. Gray: Official EE directory title \"Professor Emeritus, Executive Vice Chancellor and Provost Emeritus\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d417a1f224017fbb3a535de4"
+        ]
+      },
+      {
+        "person_id": "person_d5324226646757dfaa67",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Björn Hartmann: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_309215b45467e7ab2ca70bda"
+        ]
+      },
+      {
+        "person_id": "person_5be57762b35750aca934",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Chenming Hu: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_282e2f401cadde204328de2d"
+        ]
+      },
+      {
+        "person_id": "person_fafc3ffd48bd52258ff9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Ali Javey: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_22dcacfc4916d34d18d78670"
+        ]
+      },
+      {
+        "person_id": "person_f4c15cdcefa15c848c3d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jiantao Jiao: Official EE directory title \"Adjunct Assistant Professor\" (3 pinned lists); adjunct appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_f6fb79faa54eb6b91dae4d19"
+        ]
+      },
+      {
+        "person_id": "person_5c85f99d16f2501e8564",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "YoungJu Jo: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_cc93a121250dda606dfebe07"
+        ]
+      },
+      {
+        "person_id": "person_383ab6e4d87e5d44befc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Boubacar Kanté: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_a8f2ea8b76fa57cd021b9de7"
+        ]
+      },
+      {
+        "person_id": "person_d98b899b2fcc5ccaa934",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Sagar Karandikar: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_e9bfed61bc33bc357276995c"
+        ]
+      },
+      {
+        "person_id": "person_c5201be55e035b62bfe6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Edward L. Keller: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_e6a4b11dd3262c913f761db3"
+        ]
+      },
+      {
+        "person_id": "person_52d2751bd1885267b150",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kurt Keutzer: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_a1097429e6ee1eae43098ac4"
+        ]
+      },
+      {
+        "person_id": "person_1d699d704c545265ac9f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Asir Intisar Khan: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_c4f9743feed3edaf7a0c2760"
+        ]
+      },
+      {
+        "person_id": "person_7f122d73261457119092",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Preeya Khanna: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d193159e79ba282d6439fdaf"
+        ]
+      },
+      {
+        "person_id": "person_496165cfd548577c9ca2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Tsu-Jae King Liu: Official EE directory title \"Professor Emerita\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_9760826eac4b3f6922039676"
+        ]
+      },
+      {
+        "person_id": "person_90f17209f9b95d9a8e83",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Kam Y. Lau: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_d5e82dd98266326ac372e83f"
+        ]
+      },
+      {
+        "person_id": "person_06ad121d9b535c4b9376",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Edward A. Lee: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_58a2ba3292298bbec427d8a8"
+        ]
+      },
+      {
+        "person_id": "person_5e4ed57099695d18b712",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Luke Lee: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_d402d206027b5b0c31dbf948"
+        ]
+      },
+      {
+        "person_id": "person_a31152930a7c500cb795",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Edwin R. Lewis: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_bc3373f72e8c665e2e4ccd38"
+        ]
+      },
+      {
+        "person_id": "person_b7240adc35715bedb7a4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Michael A. Lieberman: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_44b6b68820d1902b6a7d1923"
+        ]
+      },
+      {
+        "person_id": "person_d0346fb39e105eff8ade",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Chunlei Liu: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_a30d9db7839b3139067cb4c6"
+        ]
+      },
+      {
+        "person_id": "person_0b47eb2de0dc58a0b089",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Giuseppe Loianno: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_b4bfbb6a4daa3aef9146cf97"
+        ]
+      },
+      {
+        "person_id": "person_3c14affa7dab5e42af64",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Michael Lustig: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_eb68b36ab160fd7421be6176"
+        ]
+      },
+      {
+        "person_id": "person_33b2c633f77255749c6b",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Eric Y. Ma: Official EE directory title \"Below The Line Assistant Professor\" (3 pinned lists); official EECS profile states he \"joined UC Berkeley full-time as Assistant Professor in Physics and by courtesy EECS\"; directory title \"Below The Line Assistant Professor\". Explicit courtesy designation retained (policy: preserve explicit courtesy); included either way.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_443e238bc6c4f5a4e9797e3b"
+        ]
+      },
+      {
+        "person_id": "person_3cb2043b08bf5bbc9d3e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Jitendra Malik: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_3a5d7938ab710a27a1262cc2"
+        ]
+      },
+      {
+        "person_id": "person_671fc8d2c6115bc08d28",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Song Mei: Official EE directory title \"Below The Line Assistant Professor\" (3 pinned lists); official below-the-line EECS affiliation; included as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_9654de71c0add07de5905476"
+        ]
+      },
+      {
+        "person_id": "person_17787232e047547e98ce",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Guanghan Meng: Official EE directory title \"Below The Line Assistant Professor\" (3 pinned lists); official below-the-line EECS affiliation; included as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_4cd3c5e8eab7f4b687ae708c"
+        ]
+      },
+      {
+        "person_id": "person_8150efa3f6c15c9ca187",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "David G. Messerschmitt: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_dc9755625f06ad513602e53a"
+        ]
+      },
+      {
+        "person_id": "person_2dd3b7d108f55887a990",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Robert G. Meyer: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_79ace0294dd8efd867332981"
+        ]
+      },
+      {
+        "person_id": "person_88a5fa69aa5d5ae8bab5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Nelson Morgan: Official EE directory title \"Professor in Residence Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_0a1fc59563b3bb3935f1d409"
+        ]
+      },
+      {
+        "person_id": "person_20c0d6273f925d2bafe7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Richard S. Muller: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_c3f707920d9212f3f87fb612"
+        ]
+      },
+      {
+        "person_id": "person_aca4417668ab5a628d20",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Rikky Muller: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_2e49fe3d374adf310d995d81"
+        ]
+      },
+      {
+        "person_id": "person_76064f0598ea52108495",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Aditya Varma Muppala: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_f86ebec35fd1f15eb8f55b6b"
+        ]
+      },
+      {
+        "person_id": "person_4d0f7213a89855c4b21a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kater Murch: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_656ae3a3bd6c82b91a00f48c"
+        ]
+      },
+      {
+        "person_id": "person_b1337dbbc6ba5054b1e3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Clark Nguyen: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_b531d2cc52f0ac8d6a06b4fb"
+        ]
+      },
+      {
+        "person_id": "person_95554cc847115417b30c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Ali Niknejad: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_c9e70a8538a19e85d397b073"
+        ]
+      },
+      {
+        "person_id": "person_c11de7c4f97c5f0f8bd2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Borivoje Nikolic: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_e8e04965905c7a6a6e780bc4"
+        ]
+      },
+      {
+        "person_id": "person_469f042e559f521c8ac1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Pierluigi Nuzzo: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_ebab610c0f09fa6f97f4ac9c"
+        ]
+      },
+      {
+        "person_id": "person_a675d912b7f15638850c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "William G. Oldham: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_0ddc794ea5684a5806cd5180"
+        ]
+      },
+      {
+        "person_id": "person_0de79c683bcd5deb8f75",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Bruno Olshausen: Official EE directory title \"Below the Line, Professor\" (3 pinned lists); official below-the-line EECS affiliation; included as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_162dffc83deb316159b5fcca"
+        ]
+      },
+      {
+        "person_id": "person_d9cac4a6390559c78529",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Robert Pilawa-Podgurski: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_cd50da053c2ab1954819495e"
+        ]
+      },
+      {
+        "person_id": "person_10e355c5c9f25446af33",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kristofer Pister: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d45df95db19ce0681a8d659f"
+        ]
+      },
+      {
+        "person_id": "person_564cbaa9813258668721",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kameshwar Poolla: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_0abd3331f866325f9bce45a7"
+        ]
+      },
+      {
+        "person_id": "person_7cd131eeb96d53aa88f8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jan M. Rabaey: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f1511e2da0904e9ecd1cdaf4"
+        ]
+      },
+      {
+        "person_id": "person_f34f27d27b7e5bfd9171",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Kannan Ramchandran: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_417ec5ccbb31c709c7bd83fa"
+        ]
+      },
+      {
+        "person_id": "person_a72ad46995245ee0a3e6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Gireeja Ranade: Official EE directory title \"Associate Teaching Professor\" (3 pinned lists); teaching-line appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_ab68c0e904018fdabff6ed26"
+        ]
+      },
+      {
+        "person_id": "person_4521106d1d315d5fa058",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Benjamin Recht: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_309ac815126594900362fb2f"
+        ]
+      },
+      {
+        "person_id": "person_8ad406055b095a0f84e6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Jaijeet Roychowdhury: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_6fc5863d7f0529bfc7c6b63b"
+        ]
+      },
+      {
+        "person_id": "person_9ec25cfc9610529da6f7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Anant Sahai: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_d1112d2701410aa04710ff7f"
+        ]
+      },
+      {
+        "person_id": "person_cfe802a20c635761bf1d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Sayeef Salahuddin: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_bac9807fe1257120cdbc9ac4"
+        ]
+      },
+      {
+        "person_id": "person_ebb23eff124f51089a98",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Seth R. Sanders: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_e7dc946c2275dab4d33c539b"
+        ]
+      },
+      {
+        "person_id": "person_8005d7ce28b15f01ae22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Alberto L. Sangiovanni-Vincentelli: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_be66b79f23ad9bc3e1c983e8"
+        ]
+      },
+      {
+        "person_id": "person_4cfcf6b222ca5b549c61",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "S. Shankar Sastry: Official EE directory title \"Professor, Director\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_c5c967fc82b9849482549403"
+        ]
+      },
+      {
+        "person_id": "person_ddf55fff7f8a584e81b7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Steven E. Schwarz: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_a8297feda5a35da906708855"
+        ]
+      },
+      {
+        "person_id": "person_af27def6079c5557b4b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Sanjit A. Seshia: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_1c56aed0ed15bd166cf92acf"
+        ]
+      },
+      {
+        "person_id": "person_76632a8c8b225b2bbc5a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Osama Shana'a: Official EE directory title \"Adjunct Associate Professor\" (3 pinned lists); adjunct appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_37bff6f6ce5ff2246e90f7cb"
+        ]
+      },
+      {
+        "person_id": "person_7e6aff6dfdf15764a707",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Sophia Shao: Official EE directory title \"Associate Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_595ad0e5fbfea0d538bd9fcd"
+        ]
+      },
+      {
+        "person_id": "person_5c094d83d3e85f13a072",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Irfan Siddiqi: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_351c0cfa8c529399c70e057b"
+        ]
+      },
+      {
+        "person_id": "person_35ddce9f331c58f7a756",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Alp Sipahigil: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_5328a41b1b8ad1c917ba486b"
+        ]
+      },
+      {
+        "person_id": "person_3ae337cbde775b929c9a",
+        "decision": "included",
+        "category": "in_residence",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Somayeh Sojoudi: Official EE directory title \"Associate Professor in Residence\" (3 pinned lists); in-residence professorial appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_da81e995f1370f181937398a"
+        ]
+      },
+      {
+        "person_id": "person_19700e550b9153caab3c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Costas J. Spanos: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_fdbd80f8231a6309da731b14"
+        ]
+      },
+      {
+        "person_id": "person_aa6e81f8525e5ce9b62d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Haoning Tang: Official EE directory title \"Adjunct Assistant Professor\" (3 pinned lists); adjunct appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_837f37865c4a015a2e980729"
+        ]
+      },
+      {
+        "person_id": "person_1295b29de4205ba399c6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jean-Paul Tennant: Official EE directory title \"Lecturer\" (3 pinned lists); teaching-line appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_5dc095436788b99c04f0900e"
+        ]
+      },
+      {
+        "person_id": "person_f7d5cfcbbd445016b529",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Grigory Tikhomirov: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_5a43a8d4395a7fad23866fb3"
+        ]
+      },
+      {
+        "person_id": "person_af34793a19605b1189f8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Claire Tomlin: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_0caf38f64658809f00d50a3e"
+        ]
+      },
+      {
+        "person_id": "person_4696074f08fb56cca19b",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Alexandra von Meier: Official EE directory title \"Adjunct Professor, Retired\" (1 pinned list); former adjunct appointment (profile: \"was an Adjunct Professor\"); adjunct is excluded.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_9ae3da71de7ce097524b3f40"
+        ]
+      },
+      {
+        "person_id": "person_ac3850c989435efb9dc9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Laura Waller: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_0a6b56208e664875f2ed0a79"
+        ]
+      },
+      {
+        "person_id": "person_31d24d23e22d54a4b566",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jean Walrand: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_9a7b244f3ecb99416826d667"
+        ]
+      },
+      {
+        "person_id": "person_ce539601276d585dad0a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "John Wawrzynek: Official EE directory title \"Professor, CS Division Chair\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_74ffab569c88040f086a20a1"
+        ]
+      },
+      {
+        "person_id": "person_77b8229a47085506b004",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Eugene Wong: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_453c606388a6164afea303a3"
+        ]
+      },
+      {
+        "person_id": "person_0c34819e2b555534af50",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Felix F. Wu: Official EE directory title \"Professor Emeritus\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_a8fb49e4f426da5ea699e77d"
+        ]
+      },
+      {
+        "person_id": "person_ce6130071a7657c4a1aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Ming C. Wu: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_6e5dde6058541c9cb040f58b"
+        ]
+      },
+      {
+        "person_id": "person_e7d949bf8fbe57cba20c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "incoming",
+        "effective_from_json": "{\"year\":2027,\"precision\":\"year\"}",
+        "rationale": "Qian Xu: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular Assistant Professor appointment announced as incoming; official profile states \"incoming Assistant Professor of Electrical Engineering and Computer Sciences ... starting in Fall 2027\". Included as incoming, start 2027 (year precision).",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_661e80a4e55aec56a8d8db36"
+        ]
+      },
+      {
+        "person_id": "person_14cbd789fe8a5486b079",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Eli Yablonovitch: Official EE directory title \"Professor Emeritus, Professor in the Graduate School\" (3 pinned lists); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_e290ed82d6ff032c4b35c84e"
+        ]
+      },
+      {
+        "person_id": "person_6f4eb234e90653f68ce1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Bin Yu: Official EE directory title \"Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_116a0ba36c6d79224edc3ad2"
+        ]
+      },
+      {
+        "person_id": "person_3901547d280354a3a741",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Mengjie Yu: Official EE directory title \"Assistant Professor\" (3 pinned lists); regular professorial EE/EECS appointment; included.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+          "shared_frozen_65e00f58efb03ade63b086ee",
+          "shared_frozen_9d196924f953660ad6e709e3"
+        ]
+      },
+      {
+        "person_id": "person_f816acaa3e04544cbb77",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Avideh Zakhor: Official EE directory title \"Professor Emerita\" (1 pinned list); emeritus appointment; excluded category.",
+        "source_ids": [
+          "shared_frozen_dd1605b705b408b6ba699984",
+          "shared_frozen_ed9b61e9c74700a2216d0a4a"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_dd1605b705b408b6ba699984",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/faculty.html",
+        "observed_at": "2026-11-23T04:10:29.793208+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4d172ee9ea61457002c18f5022ab868e72765eb397027422f9ac07d5f6063627"
+      },
+      {
+        "id": "shared_frozen_f0c74c1286a3bb7a7ba47f9b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/list.html",
+        "observed_at": "2026-11-23T04:10:29.947092+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "259a9c5daa3b294f557449df0c9eaee019f04e69735ed9085f580484f7d8dc02"
+      },
+      {
+        "id": "shared_frozen_65e00f58efb03ade63b086ee",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/list.html",
+        "observed_at": "2026-11-23T04:10:30.132996+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a66237f05383a5ef34bb9e02c2358aaebe34f3e8e3d1abbbec1e37a6c6ce55e0"
+      },
+      {
+        "id": "shared_frozen_6abfadfedd4671ae4c2acd8b",
+        "url": "https://grad.berkeley.edu/wp-content/uploads/Scenarios-to-Illustrate-Eligibilty-for-PhD-QE-and-Dissertation-Committees.pdf",
+        "observed_at": "2026-11-23T04:10:30.299161+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "563ad0bd52cb3d5cc7b95fb2c2ac3f06a328f7f889a441787d10497e3e827973"
+      },
+      {
+        "id": "shared_frozen_7ed1c49d5aed65cdc15419de",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/acarias.html",
+        "observed_at": "2026-11-23T04:10:30.299553+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e2e1c475b82237269f78f4108e6ee398b95a62f1f58fefd76e9e5849020e000c"
+      },
+      {
+        "id": "shared_frozen_2d0080326881157cdec98640",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/adim.html",
+        "observed_at": "2026-11-23T04:10:30.299953+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0b6cc36ca7bfe3af0edbe4b1564876f0371158461a0f3e57427d108452b7b7a6"
+      },
+      {
+        "id": "shared_frozen_5328a41b1b8ad1c917ba486b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/alp.html",
+        "observed_at": "2026-11-23T04:10:30.300395+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e0667572cea1f471053522e9ca625f4505dc3d30fa6703fea9211f24b0ce6aa8"
+      },
+      {
+        "id": "shared_frozen_661f3e95bb78a15ef511c746",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/anantharam.html",
+        "observed_at": "2026-11-23T04:10:30.300731+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "16db22872baedcc96d759e5a991203533a733b4b7fa9e3259cfc5f83d7882699"
+      },
+      {
+        "id": "shared_frozen_411ecd06e385407b168885a8",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/arcak.html",
+        "observed_at": "2026-11-23T04:10:30.301056+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a6c32c75a359fc426922dc74139a82f7f924c4ff5ec928ed75fdd51626b9f389"
+      },
+      {
+        "id": "shared_frozen_c4f9743feed3edaf7a0c2760",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/asir.html",
+        "observed_at": "2026-11-23T04:10:30.431177+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "49b56864ed7fa1dfa5c886b354abeeda57af31ef8e6ed3e38d4351a9bf9d4deb"
+      },
+      {
+        "id": "shared_frozen_14d496071f440dce90ab34d1",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/attwood.html",
+        "observed_at": "2026-11-23T04:10:30.431385+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "34a1e715a8d26ef17290ed6b8c916430516c5d41e195947713ef4e2563507f4b"
+      },
+      {
+        "id": "shared_frozen_17386a0522bfd2f28a0af8f3",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/ayazifar.html",
+        "observed_at": "2026-11-23T04:10:30.431568+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b6e9fabe4dfb076633bca85df1d48ea13732ad6d40c6d6be493c752136cd49af"
+      },
+      {
+        "id": "shared_frozen_c537566c4f9c08a4af364b12",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html",
+        "observed_at": "2026-11-23T04:10:30.434862+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b1b12b3b5778c342bb057571737d3ab12bc868eab67953f7976f55cce7ba0506"
+      },
+      {
+        "id": "shared_frozen_162dffc83deb316159b5fcca",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/baolshausen.html",
+        "observed_at": "2026-11-23T04:10:30.438649+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "37cc0283fc9bf03ffea79ec8adca049a640de786d03a478a24a97fa504cc535d"
+      },
+      {
+        "id": "shared_frozen_d8961647678979ea3f49c6e6",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/barsky.html",
+        "observed_at": "2026-11-23T04:10:30.442623+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b37ba8a665418a9443fa600a3a8e65d8e35d396e1ad3ba22d5e9bc3066cb8ab6"
+      },
+      {
+        "id": "shared_frozen_92279b446b9b7a11169c6389",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/bayen.html",
+        "observed_at": "2026-11-23T04:10:30.536668+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0e589612ed27efb3e96bd14591d621ff80850c14fbfe057b3d83ed27198113c9"
+      },
+      {
+        "id": "shared_frozen_aed45860a399c1b0fe398dca",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/bechet.html",
+        "observed_at": "2026-11-23T04:10:30.540886+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0b83fd07782b663640b70c9b3f421b865894492fc352fb0aee40388cb8430ae5"
+      },
+      {
+        "id": "shared_frozen_116a0ba36c6d79224edc3ad2",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/binyu.html",
+        "observed_at": "2026-11-23T04:10:30.546062+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a88a9a81d3bdaa3d243aae458e262bd49ac343d407e830be952f49e050a03c04"
+      },
+      {
+        "id": "shared_frozen_a8f2ea8b76fa57cd021b9de7",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/bkante.html",
+        "observed_at": "2026-11-23T04:10:30.546297+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "581c8c07d45686fb49ef705ba1a937813a0ee6bd2fcbec9b457e26e3625e286c"
+      },
+      {
+        "id": "shared_frozen_d190a00115d27a19b9c697d8",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/bokor.html",
+        "observed_at": "2026-11-23T04:10:30.565019+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c961dee33dd666aac07e534c19a53e467ef5f9384216df095747d07c71d38415"
+      },
+      {
+        "id": "shared_frozen_6ac52ec53819cbe5c7713d7d",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/boles.html",
+        "observed_at": "2026-11-23T04:10:30.592707+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c517fb439e5218666ed9702a6cac25faf4318b3657fe67d32ee33db9fe50f919"
+      },
+      {
+        "id": "shared_frozen_6b68511baaf2d52ea18c1df2",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/boser.html",
+        "observed_at": "2026-11-23T04:10:30.650842+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d82ef2a78900807dc9adadd65dc330555373b944ada6834dccb0c457e35b70c0"
+      },
+      {
+        "id": "shared_frozen_309ac815126594900362fb2f",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/brecht.html",
+        "observed_at": "2026-11-23T04:10:30.651107+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0c21ea0e0c4c1e45a34db4373bd347117dcb9ffb125a6b58507dcda7f055bc69"
+      },
+      {
+        "id": "shared_frozen_64d9e7bea69fae1dab4eee92",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/budinger.html",
+        "observed_at": "2026-11-23T04:10:30.681845+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7047326914da67aaf400017ef2938b98e77088d55aaa7c0f62363c4f0a44c8ff"
+      },
+      {
+        "id": "shared_frozen_b752bcafbf89d54ff50499f6",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/camoalon.html",
+        "observed_at": "2026-11-23T04:10:30.682074+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "16e91b9396b9bbb947c01b57a14110cfecfbfc0eee322cf930b1f50039e44fa6"
+      },
+      {
+        "id": "shared_frozen_0a33603dfdedeb665775e1b1",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/caoyuan.html",
+        "observed_at": "2026-11-23T04:10:30.710396+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d5b607063972a486377086aeb4ed5f12e96cc060ec80fd99df622bff446f4b7a"
+      },
+      {
+        "id": "shared_frozen_a7e5e14d80388154faa802d4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/chang-hasnain.html",
+        "observed_at": "2026-11-23T04:10:30.711012+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0c53ba2c05bb843647b91c3ccbfed71f634a8ea01a7847ff5d20fcad294e2b75"
+      },
+      {
+        "id": "shared_frozen_e16dcff68822adc87ff87c55",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/chua.html",
+        "observed_at": "2026-11-23T04:10:30.756718+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f04ef1e0db387dd2ec9d0b2a44ee75ee67d75a271a91a75f1c9ff97a53cf9d27"
+      },
+      {
+        "id": "shared_frozen_7ccba50f6f4c22b85ee10308",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/chuang.html",
+        "observed_at": "2026-11-23T04:10:30.760679+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6b95ba538f07f1971c81dceeea01e75ce0d9219b403010d24cde53d61da86131"
+      },
+      {
+        "id": "shared_frozen_a30d9db7839b3139067cb4c6",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/chunleiliu.html",
+        "observed_at": "2026-11-23T04:10:30.799406+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "434ec12a0ea386c8cb85b8ef645aa2def63a380dd35a9530f4d83406b1b4c01f"
+      },
+      {
+        "id": "shared_frozen_fe638075dcd20379a894ff04",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/courtade.html",
+        "observed_at": "2026-11-23T04:10:30.803436+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "693ea429d6aacf9a0a847eb0fa28cfa432992bcff2e6d2e8da4c85fc5c6d275c"
+      },
+      {
+        "id": "shared_frozen_b531d2cc52f0ac8d6a06b4fb",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/ctnguyen.html",
+        "observed_at": "2026-11-23T04:10:30.814657+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4fddecd059c0b1edf459116d464256c064b31325edc2685309140f5a31e1f993"
+      },
+      {
+        "id": "shared_frozen_358ec60d5705238e876b04e1",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/darrell.html",
+        "observed_at": "2026-11-23T04:10:30.818636+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4db24a02b0635295bd285a87720dd7620fd974eb8c39b081daad94150d30be52"
+      },
+      {
+        "id": "shared_frozen_a636290a8a61d32e8c7dc59e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/dcal.html",
+        "observed_at": "2026-11-23T04:10:30.872091+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1865d50d2e543d08374a973224e44aafb89934a3df62fd3086f1b42f2c490bae"
+      },
+      {
+        "id": "shared_frozen_cda705ea0ebf648c82525d9e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/efros.html",
+        "observed_at": "2026-11-23T04:10:30.880642+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a7b14bdca2f7de6b9ed9d67b3f3163a2024da73f7e0d701eb97e13c1bc8a7971"
+      },
+      {
+        "id": "shared_frozen_c1c0e1f05fd8c21f03811a71",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/elghaoui.html",
+        "observed_at": "2026-11-23T04:10:30.904245+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "431c9840abd471fd1c345ef308b24dbefd182c90ffeb5860389119ab7d8f2f9d"
+      },
+      {
+        "id": "shared_frozen_443e238bc6c4f5a4e9797e3b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/eric-y-ma.html",
+        "observed_at": "2026-11-23T04:10:30.904606+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d04f9bb20f1b0e34bac4674fb452e4bbe0d8bac218ccdce3e04ae25709fcefbf"
+      },
+      {
+        "id": "shared_frozen_41d76fd98fabf6508e05520e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/fearing.html",
+        "observed_at": "2026-11-23T04:10:30.930574+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "df1d7dc9102274a7f6c1c6c5801aab3513e2b3995f876b8b9bab3d237e05c53f"
+      },
+      {
+        "id": "shared_frozen_ab68c0e904018fdabff6ed26",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/gireeja.html",
+        "observed_at": "2026-11-23T04:10:30.930774+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2a752bf9e3558e8b8f9e990e42dbb80f31cec30cf161bd411908c55fc19f4a00"
+      },
+      {
+        "id": "shared_frozen_d875088697f8ad022b0aa9f4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/gopala.html",
+        "observed_at": "2026-11-23T04:10:30.988911+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a2e05bccca27b8415818b339c82068a6bf028b00b1024f49b14cf657fb1f108a"
+      },
+      {
+        "id": "shared_frozen_d417a1f224017fbb3a535de4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/gray.html",
+        "observed_at": "2026-11-23T04:10:30.995097+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "063715555d37dcec6983c87351fac1f811589359090b58d9e3c3ba8eaac2f1ba"
+      },
+      {
+        "id": "shared_frozen_5a43a8d4395a7fad23866fb3",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/grisha.html",
+        "observed_at": "2026-11-23T04:10:31.029663+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e60d0a630e0e6c018b2bdd5e994ff46cc63ba11e7dfb5500cc46299a84d07f08"
+      },
+      {
+        "id": "shared_frozen_4cd3c5e8eab7f4b687ae708c",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/guanghan.html",
+        "observed_at": "2026-11-23T04:10:31.029869+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "02e5efbdf56375ff1ede8b9a4942c8f6d703794cab25ea8176a3e948e4509bf1"
+      },
+      {
+        "id": "shared_frozen_837f37865c4a015a2e980729",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/haoningtang.html",
+        "observed_at": "2026-11-23T04:10:31.037338+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ae8410ffa8583fcdc575f6f5df5be8f876d5c196663e11a7cf7bdb7ec7825049"
+      },
+      {
+        "id": "shared_frozen_309215b45467e7ab2ca70bda",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/hartmann.html",
+        "observed_at": "2026-11-23T04:10:31.038166+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e8cb6491a98f9634ff28480a7ea59cc549fcee0346a9bf658dc7d07e7f3795dd"
+      },
+      {
+        "id": "shared_frozen_282e2f401cadde204328de2d",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/hu.html",
+        "observed_at": "2026-11-23T04:10:31.098182+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c64cda2372af9145c8b824aa2a2ad30ccad51e8360c689520754b4a0ccbe23f4"
+      },
+      {
+        "id": "shared_frozen_351c0cfa8c529399c70e057b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/irfan.html",
+        "observed_at": "2026-11-23T04:10:31.119803+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bff21968056112a9f4b6405209281a4fc37121cb3ce96591fffa1e7b5fafc25d"
+      },
+      {
+        "id": "shared_frozen_22dcacfc4916d34d18d78670",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/javey.html",
+        "observed_at": "2026-11-23T04:10:31.155767+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e7b0fc2db1ecde1260f44c6227ae01549ef24a629681749d8468cecd299c574d"
+      },
+      {
+        "id": "shared_frozen_b2307731a84386febb8cce62",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/jcchien.html",
+        "observed_at": "2026-11-23T04:10:31.155990+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d1fe7543a16b80a39770d5827629468573d08692d042db5738baa946545623c5"
+      },
+      {
+        "id": "shared_frozen_f6fb79faa54eb6b91dae4d19",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/jiantao.html",
+        "observed_at": "2026-11-23T04:10:31.161965+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "538fd88ad4f6bad31c88b2fe06b376b8589422512d366b4c7bcccde280fe30ce"
+      },
+      {
+        "id": "shared_frozen_5dc095436788b99c04f0900e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/jptennant.html",
+        "observed_at": "2026-11-23T04:10:31.162277+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8ceddb0bc0ef52f874873f4ed430b20a862b98f5ba97cbbeccfc51940c7c0267"
+      },
+      {
+        "id": "shared_frozen_6fc5863d7f0529bfc7c6b63b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/jr.html",
+        "observed_at": "2026-11-23T04:10:31.205570+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "80b0f189c9e3eb073400449bb7620658f645b01ca99ba8f76ce1e44e12437ab6"
+      },
+      {
+        "id": "shared_frozen_656ae3a3bd6c82b91a00f48c",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/katermurch.html",
+        "observed_at": "2026-11-23T04:10:31.311820+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8020d25b08fe5eef170bc3db4a24965a22e7130dfd7e524f808de9eec429f53e"
+      },
+      {
+        "id": "shared_frozen_e6a4b11dd3262c913f761db3",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/keller.html",
+        "observed_at": "2026-11-23T04:10:31.324087+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5e0119bdd0024e9815bc8fc9fa782d3705299513dd1536ab6fdeaf885c9e7a2e"
+      },
+      {
+        "id": "shared_frozen_a1097429e6ee1eae43098ac4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/keutzer.html",
+        "observed_at": "2026-11-23T04:10:31.324403+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "68742fdb12c717a2d6dcc48c76e94554b5e87b3d1aa3538a06b2d30b6c6481ff"
+      },
+      {
+        "id": "shared_frozen_9760826eac4b3f6922039676",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/king.html",
+        "observed_at": "2026-11-23T04:10:31.330201+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7b117e149485faf7720403c321c4ab30b1c6758314214abb4a7ef120a4198ca6"
+      },
+      {
+        "id": "shared_frozen_d5e82dd98266326ac372e83f",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/lau.html",
+        "observed_at": "2026-11-23T04:10:31.330678+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "16a501582762192cbeb6b00070f44e61731c4e0a9184b46994ffc04ffbf585a7"
+      },
+      {
+        "id": "shared_frozen_58a2ba3292298bbec427d8a8",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html",
+        "observed_at": "2026-11-23T04:10:31.331405+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f90aa198ccc7755c807643b5739dcbe4010110a22e4d792fc3f62cb9543ea299"
+      },
+      {
+        "id": "shared_frozen_bc3373f72e8c665e2e4ccd38",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/lewis.html",
+        "observed_at": "2026-11-23T04:10:31.445729+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e73c9e04bf42e8b8dc0d7ff9a5a1a8a57059076e129e72dd0cd7cb34c4449dd3"
+      },
+      {
+        "id": "shared_frozen_44b6b68820d1902b6a7d1923",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/lieberman.html",
+        "observed_at": "2026-11-23T04:10:31.449807+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c3c9e04aa0f8511c56b583cc4652d10dfed722a3c984ddcc53b1126c78b2148c"
+      },
+      {
+        "id": "shared_frozen_b4bfbb6a4daa3aef9146cf97",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/loiannog.html",
+        "observed_at": "2026-11-23T04:10:31.450098+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8509707e9ae6dfe80f2caf32e78bc06d04a400fe4a49c9051b8fc7cda32b7d33"
+      },
+      {
+        "id": "shared_frozen_d402d206027b5b0c31dbf948",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/lplee.html",
+        "observed_at": "2026-11-23T04:10:31.455980+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "858398191c29655c83ab8ba30e84d701003038ab7cdfb402ee502fee58ca363e"
+      },
+      {
+        "id": "shared_frozen_3a5d7938ab710a27a1262cc2",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/malik.html",
+        "observed_at": "2026-11-23T04:10:31.457891+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "27dd531e8b0a65c169e6b7cb99eb410ffe0321ade770dde88caf9a77f6e46963"
+      },
+      {
+        "id": "shared_frozen_8fbf66cf7c4d4ea747ce8c67",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/mekhail.html",
+        "observed_at": "2026-11-23T04:10:31.462202+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5e5450cce1901e5979ad03d80edcadd01086dae4d01bca6a9bae81a4cde06262"
+      },
+      {
+        "id": "shared_frozen_9d196924f953660ad6e709e3",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/mengjieyu.html",
+        "observed_at": "2026-11-23T04:10:31.562366+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "689453c7d4355e57b401c0106b0bc071465eec0172e6c17ea75c2c45764fe573"
+      },
+      {
+        "id": "shared_frozen_dc9755625f06ad513602e53a",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/messerschmitt.html",
+        "observed_at": "2026-11-23T04:10:31.562538+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "05091abe7c3862bf3999c3c8d652ac7c8455ca9bd4b4c3b17766d71fadb6fcc5"
+      },
+      {
+        "id": "shared_frozen_79ace0294dd8efd867332981",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/meyer.html",
+        "observed_at": "2026-11-23T04:10:31.562757+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "47ee05c4f6706d88964f0c2584f06aebe88126fdfcddd7f68dedeebd2d81bbd5"
+      },
+      {
+        "id": "shared_frozen_eb68b36ab160fd7421be6176",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/mlustig.html",
+        "observed_at": "2026-11-23T04:10:31.566212+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "836c08f2eef2786f01d4097caa9c46d8287e320b5ae1a1feb70ab999ec679613"
+      },
+      {
+        "id": "shared_frozen_0a1fc59563b3bb3935f1d409",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/morgan.html",
+        "observed_at": "2026-11-23T04:10:31.573226+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "55bb1b89c2b9a12147e33ba7c2913f1a6b994d04b09c929d1fbecd89ad5fd0fc"
+      },
+      {
+        "id": "shared_frozen_c3f707920d9212f3f87fb612",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/muller.html",
+        "observed_at": "2026-11-23T04:10:31.621143+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "85408ca09fdcf9644844df505dd829de98c6ef619ffbfc8bff96b1c256266195"
+      },
+      {
+        "id": "shared_frozen_f86ebec35fd1f15eb8f55b6b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/muppala.html",
+        "observed_at": "2026-11-23T04:10:31.660919+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "14989e437d6157406736f05d0eba74987cee56b0c040befcf31f2561b8a8862e"
+      },
+      {
+        "id": "shared_frozen_c9e70a8538a19e85d397b073",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/niknejad.html",
+        "observed_at": "2026-11-23T04:10:31.664955+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d3a790f356e7b8035099f0237c5f30ab7c19c91258cf30dd461485f07cb5a816"
+      },
+      {
+        "id": "shared_frozen_e8e04965905c7a6a6e780bc4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html",
+        "observed_at": "2026-11-23T04:10:31.672751+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ed6c42ba7a6a3bb73711f615f15ebcbc7515515c879bccab36d88ba93792156e"
+      },
+      {
+        "id": "shared_frozen_0ddc794ea5684a5806cd5180",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/oldham.html",
+        "observed_at": "2026-11-23T04:10:31.676513+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "564aa196b011be791e56a90a36f65dc36b616f9accfe7985b4225b37f7119244"
+      },
+      {
+        "id": "shared_frozen_37bff6f6ce5ff2246e90f7cb",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/osama.html",
+        "observed_at": "2026-11-23T04:10:31.680421+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c026d4effded3114f84d1b6980c0f1bc0cfdd6f67677fc0290d6c08d5ff494e4"
+      },
+      {
+        "id": "shared_frozen_cd50da053c2ab1954819495e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/pilawa.html",
+        "observed_at": "2026-11-23T04:10:31.756880+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "128bc95f0f79c885e970057b4460345147d563ce979f973231d1430af72ff8ba"
+      },
+      {
+        "id": "shared_frozen_d45df95db19ce0681a8d659f",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/pister.html",
+        "observed_at": "2026-11-23T04:10:31.792831+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bfb004c498ba814ce8cce15aba752109f06eab5a25dbe9949097b3ebbf1b017c"
+      },
+      {
+        "id": "shared_frozen_d193159e79ba282d6439fdaf",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/pkhanna.html",
+        "observed_at": "2026-11-23T04:10:31.796854+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1c55bd62fe0673ba0c2ac6c7e9914098658000faada7303ae0810fb945e222bc"
+      },
+      {
+        "id": "shared_frozen_ebab610c0f09fa6f97f4ac9c",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/pnuzzo.html",
+        "observed_at": "2026-11-23T04:10:31.797117+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9e2b900690d767fcb799ff8ebac063d0e69d9e58fa8af246b8b085d809d32a8f"
+      },
+      {
+        "id": "shared_frozen_0abd3331f866325f9bce45a7",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/poolla.html",
+        "observed_at": "2026-11-23T04:10:31.797262+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9b23cbaa1ca52d5a7d3ab46a028b9b95d1be017a1e7877eec3705809a6a7fd8e"
+      },
+      {
+        "id": "shared_frozen_513fc8db637d8a42cae3d143",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/prabal.html",
+        "observed_at": "2026-11-23T04:10:31.801258+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "90a78d77766b275bd7442ebaf511714e85bec422d61b0a1ee217c6adee0683fd"
+      },
+      {
+        "id": "shared_frozen_661e80a4e55aec56a8d8db36",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/qianxu.html",
+        "observed_at": "2026-11-23T04:10:31.864828+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b2af05efd51fe76fcd57a1f3a989968b6347186e6fb8a5bcb87af18fd9a70481"
+      },
+      {
+        "id": "shared_frozen_f1511e2da0904e9ecd1cdaf4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/rabaey.html",
+        "observed_at": "2026-11-23T04:10:31.902424+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "283d64b0daff92b2f49247a53537cff4c1fbbf80736608ff7d06ef328662f35c"
+      },
+      {
+        "id": "shared_frozen_417ec5ccbb31c709c7bd83fa",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/ramchandran.html",
+        "observed_at": "2026-11-23T04:10:31.921989+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "38de72524e7d00b088af096365011cf660559e31087e8172081486686d15df4e"
+      },
+      {
+        "id": "shared_frozen_2e49fe3d374adf310d995d81",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/rikky.html",
+        "observed_at": "2026-11-23T04:10:31.931228+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "83bfc8c2c165a98f24fa32673cf9ee03219a4a92d43e210aa716b50d00fc40e9"
+      },
+      {
+        "id": "shared_frozen_a4e34d319ee8ac852d7993f5",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/rjfull.html",
+        "observed_at": "2026-11-23T04:10:31.931453+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "28ca457405b75c5a13820d7410b376aa3d6bced529c2cd91062a0d85770ef5ce"
+      },
+      {
+        "id": "shared_frozen_d1112d2701410aa04710ff7f",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html",
+        "observed_at": "2026-11-23T04:10:31.931677+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "42d63d1885a26471eae8bb0c065c60c691f8c6e288912c47120fc75c2f2a7209"
+      },
+      {
+        "id": "shared_frozen_bac9807fe1257120cdbc9ac4",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/salahuddin.html",
+        "observed_at": "2026-11-23T04:10:31.984492+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3754e8463a1de5b1db984e5b13ba66d03eae1c5749dc613c69afcfe154ac6135"
+      },
+      {
+        "id": "shared_frozen_e7dc946c2275dab4d33c539b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/sanders.html",
+        "observed_at": "2026-11-23T04:10:32.011433+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8199b993d0ec8bb4c9e0adf36c76c50b5172f925a3b93c45db5d90be766a94f2"
+      },
+      {
+        "id": "shared_frozen_be66b79f23ad9bc3e1c983e8",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/sangiovanni-vicentelli.html",
+        "observed_at": "2026-11-23T04:10:32.029148+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "54a61464f1ce7e9a1703cd1b4da8dea213808879296ba74c21feff9b805ff12b"
+      },
+      {
+        "id": "shared_frozen_c5c967fc82b9849482549403",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html",
+        "observed_at": "2026-11-23T04:10:32.029414+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "895b2f1a7683d9df68f046239845f463c1f2ee4cd4d3a2f77bc42fc62fb9dd9f"
+      },
+      {
+        "id": "shared_frozen_a8297feda5a35da906708855",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/schwarz.html",
+        "observed_at": "2026-11-23T04:10:32.038399+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c2acc1257faf971bc526524194508adac414c1f557d631ba8637ad33e68a8ad0"
+      },
+      {
+        "id": "shared_frozen_4135188978b63c3ca7b80242",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/sconolly.html",
+        "observed_at": "2026-11-23T04:10:32.042244+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9ab42112ede05d163ff856983c24a738f93ed3192673c05a674b88ae95e2492e"
+      },
+      {
+        "id": "shared_frozen_1c56aed0ed15bd166cf92acf",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/seshia.html",
+        "observed_at": "2026-11-23T04:10:32.099550+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7cbcc8667fe0cdcb3a78279f28cbb6cd1121637220b26e7ad603ad0a47e8473d"
+      },
+      {
+        "id": "shared_frozen_e9bfed61bc33bc357276995c",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/skarandikar.html",
+        "observed_at": "2026-11-23T04:10:32.123205+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "17e9893d5a5a56e7ce6141cd7ffd6794d8190e096b109fae3685c002f90e278f"
+      },
+      {
+        "id": "shared_frozen_da81e995f1370f181937398a",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/sojoudi.html",
+        "observed_at": "2026-11-23T04:10:32.144320+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ddf9d619791af1f600b2c2e64744d3c186894d571a1fee781be3a99c6b8496ae"
+      },
+      {
+        "id": "shared_frozen_9654de71c0add07de5905476",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/songmei.html",
+        "observed_at": "2026-11-23T04:10:32.147522+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8826ad2a579b9d5e43c392c05b7b9808952e88c3957ef94a5c1b715e688a4433"
+      },
+      {
+        "id": "shared_frozen_fdbd80f8231a6309da731b14",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html",
+        "observed_at": "2026-11-23T04:10:32.152344+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fe8cbd999c29952616ac996ed45a582c874fb1951c613325f41b6c0697b8e452"
+      },
+      {
+        "id": "shared_frozen_0caf38f64658809f00d50a3e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/tomlin.html",
+        "observed_at": "2026-11-23T04:10:32.237938+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2017659a314d29e93b617305fe25dcd12cc794c5d1e661d9505581ad9343858a"
+      },
+      {
+        "id": "shared_frozen_542555fda9b2eb9f4586298c",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/vcoleman.html",
+        "observed_at": "2026-11-23T04:10:32.241929+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "54da2748a196fc64dd92cb79c40290ad2913cfb4921b56c8c9022cad445524e6"
+      },
+      {
+        "id": "shared_frozen_9ae3da71de7ce097524b3f40",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/vonmeier.html",
+        "observed_at": "2026-11-23T04:10:32.242135+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dcfa6d28a2848f9f3b962be807b621e3fb42b40d3c0946c66089fb1fe73e9fb3"
+      },
+      {
+        "id": "shared_frozen_0a6b56208e664875f2ed0a79",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/waller.html",
+        "observed_at": "2026-11-23T04:10:32.242267+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "aa2818799293e05f5406dbc76ddfe95b58bdcb222af439106eaedcf930448604"
+      },
+      {
+        "id": "shared_frozen_9a7b244f3ecb99416826d667",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/walrand.html",
+        "observed_at": "2026-11-23T04:10:32.340333+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1caa80ddd34ac12ebb715c72325bbc5a32e567b590b45ec3e2d3e4c9ff04dded"
+      },
+      {
+        "id": "shared_frozen_74ffab569c88040f086a20a1",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/wawrzynek.html",
+        "observed_at": "2026-11-23T04:10:32.344097+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dab03a9b1f519b2624e0557145385826bf10eee022205006605726fee62ba640"
+      },
+      {
+        "id": "shared_frozen_453c606388a6164afea303a3",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/wong.html",
+        "observed_at": "2026-11-23T04:10:32.344247+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ad657d0585986e2291d8db028866c0e0a5f7e790dabf059eb93a117320c9ce25"
+      },
+      {
+        "id": "shared_frozen_a8fb49e4f426da5ea699e77d",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/wu-f.html",
+        "observed_at": "2026-11-23T04:10:32.347888+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0509ada3645d251210d75c2cdec0ee64a4f2694c93845016d907212c5f9c76ad"
+      },
+      {
+        "id": "shared_frozen_6e5dde6058541c9cb040f58b",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/wu.html",
+        "observed_at": "2026-11-23T04:10:32.414579+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1a876c7256d5f60d4115ec31f44b4222e1c2aa3f12c5f32b7c47cc314d57a3d1"
+      },
+      {
+        "id": "shared_frozen_e290ed82d6ff032c4b35c84e",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/yablonovitch.html",
+        "observed_at": "2026-11-23T04:10:32.438237+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9fb2e0afa312f4d5db0ddc52dec2620539207c5e33a19872ac19529fbccd4798"
+      },
+      {
+        "id": "shared_frozen_cc93a121250dda606dfebe07",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/yjo.html",
+        "observed_at": "2026-11-23T04:10:32.449488+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "871c2cbe162526cbdeaf8c32e707f037431e6968e59b7640264880d19a5a23b1"
+      },
+      {
+        "id": "shared_frozen_595ad0e5fbfea0d538bd9fcd",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/ysshao.html",
+        "observed_at": "2026-11-23T04:10:32.453330+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "775e5f6dc77a4a98c9230d573e459f9dafd7b66eca8e23f948814a499c093213"
+      },
+      {
+        "id": "shared_frozen_945c23b6620c8e5855344505",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/zaijun.html",
+        "observed_at": "2026-11-23T04:10:32.453616+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c0a6b76e638da30ef250e990639b557d25d3656e01c190f7e02d8165a25b03da"
+      },
+      {
+        "id": "shared_frozen_ed9b61e9c74700a2216d0a4a",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Homepages/zakhor.html",
+        "observed_at": "2026-11-23T04:10:32.517756+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bc9d3afd8542c571d7ac596e938d9dd2522e6a68f80318223e482f8318c4159b"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Enumeration: all 112 pinned captures re-hashed (0 mismatches). EE roster (EE/faculty.html) yields 108 entries = 108 required people = expected_primary_profile_urls; every person has a single consistent title across the roster, EECS current list and EE current list. Profiles scanned in full for incoming/adjunct/courtesy/emeritus/retired/below-the-line wording."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_5731e6734e8c53b7826e",
+        "description": "Carmen Amo Alonso: directory \"Assistant Professor\"; official EECS profile announces start in 2027 -> included/regular/incoming, effective 2027 (year)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_34fb5dfab3385d479913",
+        "description": "Mekhail Anwar: \"Adjunct Professor\" on roster, EECS current list, EE current list and profile header; undated bio \"Associate Professor in Residence\" does not override -> excluded/adjunct/not_in_core."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_33b2c633f77255749c6b",
+        "description": "Eric Y. Ma: directory \"Below The Line Assistant Professor\"; official profile \"Assistant Professor in Physics and by courtesy EECS\". Explicit courtesy controls the category -> included/courtesy/current. Both readings are included categories; count unaffected."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4696074f08fb56cca19b",
+        "description": "Alexandra von Meier: directory and profile header \"Adjunct Professor, Retired\"; bio \"was an Adjunct Professor\" -> excluded/adjunct, current_state past (former appointment)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_e7d949bf8fbe57cba20c",
+        "description": "Qian Xu: directory \"Assistant Professor\"; official EECS profile announces start in 2027 -> included/regular/incoming, effective 2027 (year)."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Counts: included=65 (incoming=2); breakdown excluded/adjunct/not_in_core=4; excluded/adjunct/past=1; excluded/emeritus/not_in_core=35; excluded/teaching/not_in_core=3; included/affiliate_professor/current=5; included/courtesy/current=1; included/in_residence/current=2; included/regular/current=55; included/regular/incoming=2. No unresolved records."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_ad596b07675d4745914dbf2fb2c50264",
+    "candidate_sha256": "f84b1e405f1831cccfdb09b1e7d6f344ac5b670685b23badaadfed17ac5dfad3",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A81c1b876-7755-4b73-8b77-31cc6ed303e0%253Adelegate-task%253Av5-verify-bs-opus-20103000:ordinal:1",
+    "model": "claude-opus-5-5",
+    "finished_at": "2026-11-23T10:02:03.474208+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/f7856e3d111b6ffa63e28eee291205f12589daa54ec88d135402a1bbfa814ce5.json",
+      "sha256": "f7856e3d111b6ffa63e28eee291205f12589daa54ec88d135402a1bbfa814ce5"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/f7856e3d111b6ffa63e28eee291205f12589daa54ec88d135402a1bbfa814ce5.json",
+    "sha256": "f7856e3d111b6ffa63e28eee291205f12589daa54ec88d135402a1bbfa814ce5"
+  }
+}

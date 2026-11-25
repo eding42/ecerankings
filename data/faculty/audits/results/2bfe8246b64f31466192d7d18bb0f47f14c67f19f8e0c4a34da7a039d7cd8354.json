@@ -1,0 +1,3601 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/84615e4a53784dea908512bd0e1db474ce2e3c7bc489535340ea7ad003a473a1.json",
+    "sha256": "84615e4a53784dea908512bd0e1db474ce2e3c7bc489535340ea7ad003a473a1"
+  },
+  "brief": {
+    "file": "audits/briefs/d43f80f63d8dc3e432e9b170680a9f40d9a136a7cabe4835e1cfe3f461ac7546.json",
+    "sha256": "d43f80f63d8dc3e432e9b170680a9f40d9a136a7cabe4835e1cfe3f461ac7546"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_d935394cbf20447bb4ef251a8e3caac8",
+    "candidate_sha256": "0055fe741aa0fcd382d692c00092cb406b2889c350297ff3eb7eb4165bde27d2",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:48:39.304845+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://csc.ncsu.edu/people/yliu322",
+        "https://ece.ncsu.edu/people/aaysu",
+        "https://ece.ncsu.edu/people/acgurbuz",
+        "https://ece.ncsu.edu/people/achakra2",
+        "https://ece.ncsu.edu/people/adhoffle",
+        "https://ece.ncsu.edu/people/adixit4",
+        "https://ece.ncsu.edu/people/agdean",
+        "https://ece.ncsu.edu/people/ahk",
+        "https://ece.ncsu.edu/people/ajawad",
+        "https://ece.ncsu.edu/people/ajbandod",
+        "https://ece.ncsu.edu/people/ajrindos",
+        "https://ece.ncsu.edu/people/algray2",
+        "https://ece.ncsu.edu/people/amitra2",
+        "https://ece.ncsu.edu/people/ansilver",
+        "https://ece.ncsu.edu/people/avazque2",
+        "https://ece.ncsu.edu/people/aybozkur",
+        "https://ece.ncsu.edu/people/bafloyd",
+        "https://ece.ncsu.edu/people/baran",
+        "https://ece.ncsu.edu/people/bdheard",
+        "https://ece.ncsu.edu/people/bgreaves",
+        "https://ece.ncsu.edu/people/bjbaliga",
+        "https://ece.ncsu.edu/people/bkim33",
+        "https://ece.ncsu.edu/people/blhughes",
+        "https://ece.ncsu.edu/people/bpleques",
+        "https://ece.ncsu.edu/people/bsakpa",
+        "https://ece.ncsu.edu/people/bsmith27",
+        "https://ece.ncsu.edu/people/candice",
+        "https://ece.ncsu.edu/people/chow",
+        "https://ece.ncsu.edu/people/cmgallip",
+        "https://ece.ncsu.edu/people/cmortizm",
+        "https://ece.ncsu.edu/people/cmpignat",
+        "https://ece.ncsu.edu/people/cmwilli5",
+        "https://ece.ncsu.edu/people/cwong9",
+        "https://ece.ncsu.edu/people/dchopki2",
+        "https://ece.ncsu.edu/people/ddstanci",
+        "https://ece.ncsu.edu/people/dfarfur",
+        "https://ece.ncsu.edu/people/dgyu",
+        "https://ece.ncsu.edu/people/dhcansev",
+        "https://ece.ncsu.edu/people/dktownse",
+        "https://ece.ncsu.edu/people/dllubkem",
+        "https://ece.ncsu.edu/people/dricket",
+        "https://ece.ncsu.edu/people/dvashae",
+        "https://ece.ncsu.edu/people/dyeun",
+        "https://ece.ncsu.edu/people/dzbaron",
+        "https://ece.ncsu.edu/people/easter",
+        "https://ece.ncsu.edu/people/edbuckne",
+        "https://ece.ncsu.edu/people/efg",
+        "https://ece.ncsu.edu/people/eghysel",
+        "https://ece.ncsu.edu/people/egrant",
+        "https://ece.ncsu.edu/people/ejlobato",
+        "https://ece.ncsu.edu/people/enicole",
+        "https://ece.ncsu.edu/people/ericro",
+        "https://ece.ncsu.edu/people/fakish",
+        "https://ece.ncsu.edu/people/fhsiao",
+        "https://ece.ncsu.edu/people/fjliving",
+        "https://ece.ncsu.edu/people/fyyamane",
+        "https://ece.ncsu.edu/people/gadunko",
+        "https://ece.ncsu.edu/people/gaybarr2",
+        "https://ece.ncsu.edu/people/gbyrd",
+        "https://ece.ncsu.edu/people/gebottom",
+        "https://ece.ncsu.edu/people/gjiafrat",
+        "https://ece.ncsu.edu/people/glisson",
+        "https://ece.ncsu.edu/people/gmandic",
+        "https://ece.ncsu.edu/people/hauser",
+        "https://ece.ncsu.edu/people/hcui9",
+        "https://ece.ncsu.edu/people/hdai",
+        "https://ece.ncsu.edu/people/hhuang11",
+        "https://ece.ncsu.edu/people/hkim51",
+        "https://ece.ncsu.edu/people/htseng3",
+        "https://ece.ncsu.edu/people/hzhou",
+        "https://ece.ncsu.edu/people/iguvenc",
+        "https://ece.ncsu.edu/people/ihusain2",
+        "https://ece.ncsu.edu/people/jbcarlso",
+        "https://ece.ncsu.edu/people/jcchang",
+        "https://ece.ncsu.edu/people/jedmond2",
+        "https://ece.ncsu.edu/people/jjadams2",
+        "https://ece.ncsu.edu/people/jjag",
+        "https://ece.ncsu.edu/people/jjwierer",
+        "https://ece.ncsu.edu/people/jkfelder",
+        "https://ece.ncsu.edu/people/jkt",
+        "https://ece.ncsu.edu/people/jlreyno4",
+        "https://ece.ncsu.edu/people/jshortl",
+        "https://ece.ncsu.edu/people/jtuck",
+        "https://ece.ncsu.edu/people/jvveliad",
+        "https://ece.ncsu.edu/people/kekas",
+        "https://ece.ncsu.edu/people/kjmolnar",
+        "https://ece.ncsu.edu/people/ksundar2",
+        "https://ece.ncsu.edu/people/kwk",
+        "https://ece.ncsu.edu/people/kzhou22",
+        "https://ece.ncsu.edu/people/ldai",
+        "https://ece.ncsu.edu/people/llunard",
+        "https://ece.ncsu.edu/people/lwwhite",
+        "https://ece.ncsu.edu/people/mal",
+        "https://ece.ncsu.edu/people/mbecchi",
+        "https://ece.ncsu.edu/people/mbs",
+        "https://ece.ncsu.edu/people/mco",
+        "https://ece.ncsu.edu/people/mcutita",
+        "https://ece.ncsu.edu/people/mdaniel6",
+        "https://ece.ncsu.edu/people/mdevets",
+        "https://ece.ncsu.edu/people/mhcohen2",
+        "https://ece.ncsu.edu/people/mlsichit",
+        "https://ece.ncsu.edu/people/muth",
+        "https://ece.ncsu.edu/people/mwchandr",
+        "https://ece.ncsu.edu/people/mwkudeno",
+        "https://ece.ncsu.edu/people/myadav",
+        "https://ece.ncsu.edu/people/ngonzal9",
+        "https://ece.ncsu.edu/people/nlu2",
+        "https://ece.ncsu.edu/people/oneal",
+        "https://ece.ncsu.edu/people/ooralka",
+        "https://ece.ncsu.edu/people/oozdemi",
+        "https://ece.ncsu.edu/people/osburn",
+        "https://ece.ncsu.edu/people/padreher",
+        "https://ece.ncsu.edu/people/paulf",
+        "https://ece.ncsu.edu/people/pccolter",
+        "https://ece.ncsu.edu/people/pdbowman",
+        "https://ece.ncsu.edu/people/pgill2",
+        "https://ece.ncsu.edu/people/pgkoupi",
+        "https://ece.ncsu.edu/people/qgu3",
+        "https://ece.ncsu.edu/people/ragupta",
+        "https://ece.ncsu.edu/people/rajib-mikail",
+        "https://ece.ncsu.edu/people/rdcallaw",
+        "https://ece.ncsu.edu/people/rdoden",
+        "https://ece.ncsu.edu/people/rjmearma",
+        "https://ece.ncsu.edu/people/rkhosla",
+        "https://ece.ncsu.edu/people/rwheath2",
+        "https://ece.ncsu.edu/people/sar",
+        "https://ece.ncsu.edu/people/sasha",
+        "https://ece.ncsu.edu/people/sbhatta4",
+        "https://ece.ncsu.edu/people/scheung3",
+        "https://ece.ncsu.edu/people/skais",
+        "https://ece.ncsu.edu/people/slin23",
+        "https://ece.ncsu.edu/people/smirbag",
+        "https://ece.ncsu.edu/people/smlukic",
+        "https://ece.ncsu.edu/people/spavlid",
+        "https://ece.ncsu.edu/people/sroy27",
+        "https://ece.ncsu.edu/people/ssschiff",
+        "https://ece.ncsu.edu/people/sta",
+        "https://ece.ncsu.edu/people/svenkat4",
+        "https://ece.ncsu.edu/people/swhunte3",
+        "https://ece.ncsu.edu/people/szgurbuz",
+        "https://ece.ncsu.edu/people/tkm",
+        "https://ece.ncsu.edu/people/twu19",
+        "https://ece.ncsu.edu/people/vkshah2",
+        "https://ece.ncsu.edu/people/vmisra",
+        "https://ece.ncsu.edu/people/wchen55",
+        "https://ece.ncsu.edu/people/wdavis",
+        "https://ece.ncsu.edu/people/wditto",
+        "https://ece.ncsu.edu/people/wes",
+        "https://ece.ncsu.edu/people/winser",
+        "https://ece.ncsu.edu/people/wjturne2",
+        "https://ece.ncsu.edu/people/wspitts2",
+        "https://ece.ncsu.edu/people/wtang8",
+        "https://ece.ncsu.edu/people/wwang",
+        "https://ece.ncsu.edu/people/wyu2",
+        "https://ece.ncsu.edu/people/xshen5",
+        "https://ece.ncsu.edu/people/xwang4",
+        "https://ece.ncsu.edu/people/yliu335",
+        "https://ece.ncsu.edu/people/zpantic"
+      ],
+      "checked_list_ids": [
+        "primary_faculty",
+        "supporting_faculty"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_7b2f3db185695a04b5fb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_081",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_d91119402fb55544a393",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_006",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_56bb741ecdcd5e5088ee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_014",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_1e9c11d755d95b068e0d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_022",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_8756468f68755eac9c44",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_048",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_f4225621ae14586f9d28",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_099",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_45e44ca868ca5ccbaa6d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Duke Energy Distinguished Professor'.",
+        "source_ids": [
+          "src_133",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_2e29dcf3f6bb5538a5e8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Co-Director, ASSIST Center and IConS'.",
+        "source_ids": [
+          "src_020",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_dfb530bb2bdc559389aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_064",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_a709ed591b1f5742ba11",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Senior Lecturer'.",
+        "source_ids": [
+          "src_078",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_cfe2f859ea30504abbeb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Department Head for Research'.",
+        "source_ids": [
+          "src_008",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_f7a3dbf7f59a54b1a32d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Amein Family Term Professorship in Robotics; Assistant Professor'.",
+        "source_ids": [
+          "src_150",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_b35d1e9257375ea6b283",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_134",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_3cdda7cf4ff65b869068",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_105",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_c9ef97c3f11c50b08581",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_070",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_57bfcdafa2f556d69897",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Teaching Professor'.",
+        "source_ids": [
+          "src_102",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_e24c69e53a715267b70e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_071",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_c948890138ec5c3496a2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Co-Director: ASSIST and IConS, Distinguished Professor'.",
+        "source_ids": [
+          "src_103",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_2d3ed253ea0a5a13bae5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_151",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_5dc51002a38051969044",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_011",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_50d87af99e9857f38939",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_132",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_fe54f702ee2b565ca39d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor of the Practice'.",
+        "source_ids": [
+          "src_080",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_67a9918f67b15957a2d1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_047",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_29840aacf2245afaad50",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_040",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_f0409ea2bc2d556c8ea2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Alton and Mildred Lancaster Professor'.",
+        "source_ids": [
+          "src_021",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_cb8fe280187c57ccbc22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'About Department History Facilities Spotlight <li class=\"et_pb_menu_page_id-2610'.",
+        "source_ids": [
+          "src_118",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_b8f078bd1c855845aae2",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile lists only Interim Director, Engineering Entrepreneurship Program without an ECE professorial rank.",
+        "source_ids": [
+          "src_121",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_18ae8dd9747d5117b902",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_122",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_f53ad1a396b3510698cf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_123",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_2d41239a0788514fb3b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Director, ECE Senior Design'.",
+        "source_ids": [
+          "src_124",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_18bfb0abba455bf1abbe",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_145",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_78c17f4497ea5132867d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assoc Professor'.",
+        "source_ids": [
+          "src_007",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_f6d67621167151e69b64",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Cirrus Logic, Inc. Distinguished Professor'.",
+        "source_ids": [
+          "src_076",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_322e57a0d0915e01bf0d",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Research Professor, Dir. PREES Lab'.",
+        "source_ids": [
+          "src_038",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_3ab937f1ceb85742803d",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Asst Research Professor'.",
+        "source_ids": [
+          "src_059",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_3e0c45095ced5790aad6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Director, FREEDM Center'.",
+        "source_ids": [
+          "src_077",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_7efcfa48dfee55b8849a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Goodnight Distinguished Chair in Quantum Computing'.",
+        "source_ids": [
+          "src_135",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_c3b2b830b74b5ac2ad88",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_093",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_56fe087aaab150e7b120",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_026",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_608062dd71525e9fb602",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'NNF Director'.",
+        "source_ids": [
+          "src_058",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_5cc4be0c2d035256acbc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_012",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_891c7b63d0d7599ca04b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'John and Catherine Amein Family Distinguished Professor'.",
+        "source_ids": [
+          "src_109",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_c3863ff18b775b48b6c1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_136",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_65eb00a721ca5c34889b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_162",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_0c26323102ce59ea9408",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_055",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_90f3396362ef5cc193a0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_112",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_c8f957315dfb58cd97af",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Lampe Distinguished Professor; Deputy Director, FREEDM'.",
+        "source_ids": [
+          "src_138",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_45a04bf012bc5a0ca1ec",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Teaching Professor'.",
+        "source_ids": [
+          "src_084",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_178905feb8515c728080",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_137",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_1e8233f91c8e55b5bb8a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Interim Dean of Engineering'.",
+        "source_ids": [
+          "src_149",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_5fbdb8e0d9af5a1487a1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_017",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_ea7703f51c065b5fbb33",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Progress Energy Distinguished Professor'.",
+        "source_ids": [
+          "src_107",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_db7f4dae5fc15ac98bcf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'McPherson Family Distinguished Professor in Engineering Entrepreneurship'.",
+        "source_ids": [
+          "src_114",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_8344c6ec0dc252dbb26f",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Research Professor'.",
+        "source_ids": [
+          "src_115",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_e9038a98c2cf5f7591dd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_101",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_24cfb98ec96158ac8958",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_163",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_e3a34af488e6561cb370",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor and University Faculty Scholar'.",
+        "source_ids": [
+          "src_139",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_6544fc5b64c757e0b376",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Asst Teaching Professor'.",
+        "source_ids": [
+          "src_086",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_9ebdc2a5ff0158f5b73d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_045",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_6b7eac3e5b015b9a82cb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_057",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_4546644d8e4a55e7b90b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_140",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_bd64354ba1a059129373",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_148",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_ed0b8a32841d5219b2c9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_106",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_94a1dc5e7c8d5717baa3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_030",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_f1d996d824725422a449",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_157",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_9891c125bfe558eba26c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Lecturer'.",
+        "source_ids": [
+          "src_043",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_5184e186da8051c4a974",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Interim Department Head'.",
+        "source_ids": [
+          "src_088",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_3db6b30908e65c68a8ae",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_046",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_1ed597c7b7a75fda9927",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_019",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_9359924660af5e429df7",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assoc Teaching Professor'.",
+        "source_ids": [
+          "src_056",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_bc82261ad855527f8b65",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Executive Director & CTO'.",
+        "source_ids": [
+          "src_089",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_c12e4caa1df25e83b933",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_143",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_383af717b18551da9c26",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_031",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_6f4bc6d27c195b18ac24",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_158",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_16c917af6ad65db588f3",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor of the Practice'.",
+        "source_ids": [
+          "src_097",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_687b06add5cc53e1911f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Professor'.",
+        "source_ids": [
+          "src_083",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_78c0ac5688c25d598ae4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Goodnight Distinguished Professor of Agricultural Analytics'.",
+        "source_ids": [
+          "src_036",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_74cfe827fc1c54babd06",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_037",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_bd63bae4025655b3ad67",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assoc Professor'.",
+        "source_ids": [
+          "src_147",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_36db1a8b9016575b8284",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Interim Associate Department Head for Graduate Affairs'.",
+        "source_ids": [
+          "src_041",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_8085a25f7a3d56029e88",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Research Associate Professor'.",
+        "source_ids": [
+          "src_159",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_60b9f43011a95824a80d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Assistant Professor'.",
+        "source_ids": [
+          "src_094",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_9ceaab67aa8555438c64",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /faculty/ directory with 'Associate Head for Undergraduate Affairs'.",
+        "source_ids": [
+          "src_075",
+          "src_004"
+        ]
+      },
+      {
+        "person_id": "person_2e2eba8fe1965752a2bf",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/; CVM directory (cvm.ncsu.edu/directory/bsakpa/) shows College of Veterinary Medicine with no ECE appointment.",
+        "source_ids": [
+          "src_005",
+          "src_003",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_e4937e6d92db56b3b5d6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Professor Emeritus'.",
+        "source_ids": [
+          "src_142",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_76dfa80539d85bbfaaaf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus of ECE'.",
+        "source_ids": [
+          "src_154",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_069e90ec154e57cdbc17",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /supporting-faculty/ directory with 'Associate Professor'.",
+        "source_ids": [
+          "src_013",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_175978742a8a5ebd8079",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Progress Energy Distinguished University Professor Emeritus'.",
+        "source_ids": [
+          "src_025",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_e59600e7f0455c5b9112",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Teaching Professor'.",
+        "source_ids": [
+          "src_065",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_32ed93c78aec57a2856c",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Lecturer'.",
+        "source_ids": [
+          "src_120",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_b7532e4b6fb15d4597fc",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assistant Teaching Professor'.",
+        "source_ids": [
+          "src_050",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_05adabccc5a7523d97fa",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Assistant Professor'.",
+        "source_ids": [
+          "src_126",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_023cf25ab0b55d70b0a7",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Associate Professor'.",
+        "source_ids": [
+          "src_042",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_97d04173f78f5d62b062",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Associate Professor'.",
+        "source_ids": [
+          "src_108",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_b700d25d991454feb8e2",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_079",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_fd030177bb925f69b043",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_032",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_2f1925492b95548fadbb",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assistant Research Professor'.",
+        "source_ids": [
+          "src_119",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_ae8368e145f45cefbd7a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_095",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_1a946070b57e539aa4fa",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_104",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_33e024ba71e753efa629",
+        "decision": "excluded",
+        "category": "departed",
+        "membership": "outside_ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/ and ece.ncsu.edu/people/wlditto/ returns 404; legacy supporting-faculty entry is stale.",
+        "source_ids": [
+          "src_005",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_420fd9821cfc5b71ad31",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Teaching Professor'.",
+        "source_ids": [
+          "src_010",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_d412d1414a4957ec8e34",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Research Professor'.",
+        "source_ids": [
+          "src_117",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_ef5040db03595d5fa629",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Lecturer'.",
+        "source_ids": [
+          "src_062",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_f3d2c624921b5e7faa78",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Professor Emeritus'.",
+        "source_ids": [
+          "src_049",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_35df30f7c54a56ea9fcc",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/; UNC BME profile (bme.unc.edu/bme-person/caterina-gallippi/) shows BME with no current ECE appointment.",
+        "source_ids": [
+          "src_005",
+          "src_001",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_12ffed0e67bf5e72a9b4",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE profile lists Professor and CSC profile explicitly states CS and ECE at NC State.",
+        "source_ids": [
+          "src_051",
+          "src_164",
+          "src_166"
+        ]
+      },
+      {
+        "person_id": "person_9887fb9a46d35d6cb39d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_053",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_ba58962684545f0b8009",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_067",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_5599d2152f705f6a98ae",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Associate Professor'.",
+        "source_ids": [
+          "src_111",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_cbe6d2ffded951a58186",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_082",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_37d4726c20245456abdc",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_054",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_0f9f059e58805f1590ef",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Associate Professor'.",
+        "source_ids": [
+          "src_016",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_4a71c66c7caa594a967a",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Coordinator of Undergraduate Advising' without ECE professorial rank.",
+        "source_ids": [
+          "src_128",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_8c9a87bdbbc15bd7beb9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_069",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_94053ae329b45fedbe3d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Lecturer'.",
+        "source_ids": [
+          "src_023",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_e93dc1538c145d0a8702",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_130",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_e116765f8ca6540b8be1",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Lecturer'.",
+        "source_ids": [
+          "src_009",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_20fc8bbc2871510b8b3d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor; Professor of BME'.",
+        "source_ids": [
+          "src_072",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_e40e36f2e1cc55a6a814",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_027",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_7cfc6fe3b91a51419afb",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_144",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_53b48e41ba3f5d029b0e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_066",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_9a7f85ec0f7255cf961c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor of the Practice'.",
+        "source_ids": [
+          "src_090",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_7a7a4ec27a145d07bac8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Research Professor Emeritus'.",
+        "source_ids": [
+          "src_129",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_af67a22865d056ec94b6",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Associate Professor'.",
+        "source_ids": [
+          "src_073",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_1c8cf2dfa88258b7bde5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_028",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_94ea821928285508828e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_098",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_b05a20c757655facb3a3",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Assistant Professor'.",
+        "source_ids": [
+          "src_060",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_2e23bb0799c05266ab3a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Research Professor Emeritus'.",
+        "source_ids": [
+          "src_044",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_89f5ca1642085029ac0b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_096",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_4b13c9b43bb357759704",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assistant Teaching Professor'.",
+        "source_ids": [
+          "src_068",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_cddd942af7f05b27b669",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Assistant Professor'.",
+        "source_ids": [
+          "src_125",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_80c37c94031e5ae39bc6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'McPherson Family Distinguished Professor Emeritus'.",
+        "source_ids": [
+          "src_146",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_b289d17dd9845bfbb1aa",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Teaching Professor'.",
+        "source_ids": [
+          "src_091",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_ca77484b1fdf5375a2d4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/ and ece.ncsu.edu/people/jboneal/ returns 404 (Professor Emeritus).",
+        "source_ids": [
+          "src_005",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_0d77eb0b05dc5a78b209",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Lecturer'.",
+        "source_ids": [
+          "src_127",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_7d3d40abc6a9559a9eb8",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /supporting-faculty/ directory with 'Research Assistant Professor'.",
+        "source_ids": [
+          "src_034",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_53729b088a555e55ae0b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_116",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_47c71741389e5307bb7f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Faculty'.",
+        "source_ids": [
+          "src_035",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_03be311430be5d058b64",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Research Professor'.",
+        "source_ids": [
+          "src_156",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_0676ed701f7353ef93fa",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_131",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_058bc72868e65270bfbd",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/; CSC profile (www.csc.ncsu.edu/people/bgreaves) lists Associate Professor of Computer Science with no ECE appointment.",
+        "source_ids": [
+          "src_005",
+          "src_165",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_504d1551e86656408501",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Associate Teaching Professor'.",
+        "source_ids": [
+          "src_015",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_f4a47495251c50a89f95",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_141",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_c92f1414ea055014b32e",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/ (and csc.ncsu.edu/people/xshen5 returns 404); legacy supporting-faculty entry without current ECE appointment.",
+        "source_ids": [
+          "src_005",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_33690b553fc65ffc8e4b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Lecturer'.",
+        "source_ids": [
+          "src_087",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_5217ff4565aa5e739c07",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on ECE /supporting-faculty/ directory with 'Associate Professor of Practice'.",
+        "source_ids": [
+          "src_018",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_5c407228a9e555b2bf46",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_153",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_60717601825a58e38233",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_039",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_9ab3f82b61d55e5cb616",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_100",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_29f839024b5d5f30a325",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assistant Teaching Professor'.",
+        "source_ids": [
+          "src_092",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_8b9e2abc43c051dabf5b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Professor Emeritus'.",
+        "source_ids": [
+          "src_085",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_166878cd177e5a2d8daa",
+        "decision": "excluded",
+        "category": "departed",
+        "membership": "outside_ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Absent from active ece.ncsu.edu/people/; departed NC State for UC Riverside (profiles.ucr.edu/app/home/profile/hungweit).",
+        "source_ids": [
+          "src_005",
+          "src_168",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_cd73dc7f024b5e8193f4",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assistant Teaching Professor'.",
+        "source_ids": [
+          "src_155",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_3015cd42240859a0b52a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Professor'.",
+        "source_ids": [
+          "src_161",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_62dcfc0b30d85a5c9589",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Adjunct Associate Professor'.",
+        "source_ids": [
+          "src_110",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_6433e4f26776572f8587",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Assistant Research Professor'.",
+        "source_ids": [
+          "src_061",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_fe2d066be509554f9f9b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Profile lists 'Teaching Professor'.",
+        "source_ids": [
+          "src_063",
+          "src_164"
+        ]
+      },
+      {
+        "person_id": "person_2bf5f3345454500897a3",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "CSC profile https://csc.ncsu.edu/people/yliu322 lists Assistant Professor in Computer Science; absent from ECE directories.",
+        "source_ids": [
+          "src_002"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_001",
+        "url": "https://bme.unc.edu/bme-person/caterina-gallippi/",
+        "observed_at": "2026-11-24T08:44:30.178855+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "404ffa47c1153558be7702ef35a340d233e102a880cdd573d81f02acbea36fd9"
+      },
+      {
+        "id": "src_002",
+        "url": "https://csc.ncsu.edu/people/yliu322",
+        "observed_at": "2026-11-24T08:44:30.182814+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "01fc420139ee359915566a0fdc40a457d45cb45f7189ba25222c22cc8e0bdb0b"
+      },
+      {
+        "id": "src_003",
+        "url": "https://cvm.ncsu.edu/directory/bsakpa/",
+        "observed_at": "2026-11-24T08:44:30.180047+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "bf14aa93ecd506754027282ee4a7d788906fb5a4475968872ce47e4c9a298a06"
+      },
+      {
+        "id": "src_004",
+        "url": "https://ece.ncsu.edu/faculty/",
+        "observed_at": "2026-11-24T08:44:30.176443+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9d594cffa7be1d5cc376c567c30d584cde1e76afa83ee6cb703ad3cb7fa73227"
+      },
+      {
+        "id": "src_005",
+        "url": "https://ece.ncsu.edu/people/",
+        "observed_at": "2026-11-24T08:44:30.177795+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9d594cffa7be1d5cc376c567c30d584cde1e76afa83ee6cb703ad3cb7fa73227"
+      },
+      {
+        "id": "src_006",
+        "url": "https://ece.ncsu.edu/people/aaysu",
+        "observed_at": "2026-11-24T08:44:30.183319+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3274e80e70a80687ac4d2d6ce930879c9f5a15789e0590fc4280994b82e6accf"
+      },
+      {
+        "id": "src_007",
+        "url": "https://ece.ncsu.edu/people/acgurbuz",
+        "observed_at": "2026-11-24T08:44:30.183759+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4657a11958331b16dfde4000283939fe46211e11d675d713f44770bcd5b7c142"
+      },
+      {
+        "id": "src_008",
+        "url": "https://ece.ncsu.edu/people/achakra2",
+        "observed_at": "2026-11-24T08:44:30.236452+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "a767a9699a6c0fc8272160dfbc056b51cadc108b4ce06a462a074a0957a0b062"
+      },
+      {
+        "id": "src_009",
+        "url": "https://ece.ncsu.edu/people/adhoffle",
+        "observed_at": "2026-11-24T08:44:30.355560+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9a8bcb5d9463f223e17e7ef0320e1e35a7193d87e8451964cf095ae9779d935d"
+      },
+      {
+        "id": "src_010",
+        "url": "https://ece.ncsu.edu/people/adixit4",
+        "observed_at": "2026-11-24T08:44:30.357060+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ff98a4f169ef38cc76912bafd085b2e790da285af54b0eae559117a446563161"
+      },
+      {
+        "id": "src_011",
+        "url": "https://ece.ncsu.edu/people/agdean",
+        "observed_at": "2026-11-24T08:44:30.429858+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9b67133918fdf55e95d701902a5ed6e1787e1cc6edcd4c2523bc6499c9be8468"
+      },
+      {
+        "id": "src_012",
+        "url": "https://ece.ncsu.edu/people/ahk",
+        "observed_at": "2026-11-24T08:44:31.165268+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "41af3de1270e480d93be816dca07ea40c1be378bbb82dc497d339b3df1c2ef93"
+      },
+      {
+        "id": "src_013",
+        "url": "https://ece.ncsu.edu/people/ajawad",
+        "observed_at": "2026-11-24T08:44:31.392895+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "fea319264efce9bdfb98afea1f4c0603eb71e96a8beb226d32e62460b9c3f2de"
+      },
+      {
+        "id": "src_014",
+        "url": "https://ece.ncsu.edu/people/ajbandod",
+        "observed_at": "2026-11-24T08:44:31.467830+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "87c6ccd7810394d790dace66c281581176a070aa3a60f6bc22467453af882fd5"
+      },
+      {
+        "id": "src_015",
+        "url": "https://ece.ncsu.edu/people/ajrindos",
+        "observed_at": "2026-11-24T08:44:31.529136+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9008a1f1043f06d85d830822022c09ee6b23f31d75b0d7d462c27e8cffb6e67c"
+      },
+      {
+        "id": "src_016",
+        "url": "https://ece.ncsu.edu/people/algray2",
+        "observed_at": "2026-11-24T08:44:31.547360+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "dc3e338ad1498195599d56158b12bc4534005bbfa4c4e6a7054da5a225fe682c"
+      },
+      {
+        "id": "src_017",
+        "url": "https://ece.ncsu.edu/people/amitra2",
+        "observed_at": "2026-11-24T08:44:41.910303+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "454a9cbdfefe723b5cdaad71f2456d0c5373969596aa02e5fa606a7820f311af"
+      },
+      {
+        "id": "src_018",
+        "url": "https://ece.ncsu.edu/people/ansilver",
+        "observed_at": "2026-11-24T08:44:44.937382+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "df7d32e379a0e3b2dba80b1ddf45ece65081ef7f96f95a6f426aa1ed4b954889"
+      },
+      {
+        "id": "src_019",
+        "url": "https://ece.ncsu.edu/people/avazque2",
+        "observed_at": "2026-11-24T08:44:45.281089+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "caa8016e3076b5e414491555dd18d9c83e461f69dd2096a18da23cf8528beda7"
+      },
+      {
+        "id": "src_020",
+        "url": "https://ece.ncsu.edu/people/aybozkur",
+        "observed_at": "2026-11-24T08:44:45.296216+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "706e417310449098e884fa7e4d2f46a32f78908a49b2fb4ac7477c6d4aa90023"
+      },
+      {
+        "id": "src_021",
+        "url": "https://ece.ncsu.edu/people/bafloyd",
+        "observed_at": "2026-11-24T08:44:45.672217+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "672332c00e994fb432e754fed4c51e7520c6c94b9a17b726fb2fd7a77b343811"
+      },
+      {
+        "id": "src_022",
+        "url": "https://ece.ncsu.edu/people/baran",
+        "observed_at": "2026-11-24T08:44:45.827519+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b494267ea9a7f96b7757466bc0e438b7b951a77f33f7a07f080e91840227b72c"
+      },
+      {
+        "id": "src_023",
+        "url": "https://ece.ncsu.edu/people/bdheard",
+        "observed_at": "2026-11-24T08:44:46.476765+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "87d10e3ecd2eec95306402f4a5d90766e08d049d5e2b0342f9e967077c521a84"
+      },
+      {
+        "id": "src_024",
+        "url": "https://ece.ncsu.edu/people/bgreaves",
+        "observed_at": "2026-11-24T08:44:47.490661+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4cfca9a5e4e9cded7bb06c40daca0662de369833d900094cb557c6303aca51a0"
+      },
+      {
+        "id": "src_025",
+        "url": "https://ece.ncsu.edu/people/bjbaliga",
+        "observed_at": "2026-11-24T08:44:47.561102+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1406011bedb41b0b3417341be6694742fe6603c6d9427c381cb8a7ded4103f44"
+      },
+      {
+        "id": "src_026",
+        "url": "https://ece.ncsu.edu/people/bkim33",
+        "observed_at": "2026-11-24T08:44:47.647341+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f139d045c5174cf7df8d2b259445a4927781489c7e18daa3cadbf3cec776cc4a"
+      },
+      {
+        "id": "src_027",
+        "url": "https://ece.ncsu.edu/people/blhughes",
+        "observed_at": "2026-11-24T08:44:48.057670+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "bd34eb1a2476224cfacfacf5554e8bc74aced7ebc45f4bedd814afc886980f94"
+      },
+      {
+        "id": "src_028",
+        "url": "https://ece.ncsu.edu/people/bpleques",
+        "observed_at": "2026-11-24T08:44:48.334058+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "149f1130e8322e74e5803fd57b2f6f7751eb83321530cca145a3de1955332212"
+      },
+      {
+        "id": "src_029",
+        "url": "https://ece.ncsu.edu/people/bsakpa",
+        "observed_at": "2026-11-24T08:44:53.766814+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "32df12525cbcb426394f9fdf267a2e8bd276489150fe50898730dec397f58029"
+      },
+      {
+        "id": "src_030",
+        "url": "https://ece.ncsu.edu/people/bsmith27",
+        "observed_at": "2026-11-24T08:44:54.542441+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "c83bbbae5522aa33592934393d018fd743d721fe86dce614bdf0ca83ff04d737"
+      },
+      {
+        "id": "src_031",
+        "url": "https://ece.ncsu.edu/people/candice",
+        "observed_at": "2026-11-24T08:44:57.612421+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6b4ce276ea6357a695f60a347839f9eba5b91b55ed3431969d9841b3d861e3b6"
+      },
+      {
+        "id": "src_032",
+        "url": "https://ece.ncsu.edu/people/chow",
+        "observed_at": "2026-11-24T08:44:59.736351+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "375117d9a31c0593a21b2570cfc943500013a86779c8b9b9707590664af7d266"
+      },
+      {
+        "id": "src_033",
+        "url": "https://ece.ncsu.edu/people/cmgallip",
+        "observed_at": "2026-11-24T08:44:59.965389+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "523d5029b8d57c0a1a71deef91dd3b82c2188b83108c66e998426aa06325f984"
+      },
+      {
+        "id": "src_034",
+        "url": "https://ece.ncsu.edu/people/cmortizm",
+        "observed_at": "2026-11-24T08:45:00.952064+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "06d3ae0afcfd237abdd7052389a43756a05f7e6e309c7b8caa913462dd279ce1"
+      },
+      {
+        "id": "src_035",
+        "url": "https://ece.ncsu.edu/people/cmpignat",
+        "observed_at": "2026-11-24T08:45:00.959299+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "759293856d9625a36a7aac45d706a6d6aa049880b81146ffe0a9ca36b6c3b509"
+      },
+      {
+        "id": "src_036",
+        "url": "https://ece.ncsu.edu/people/cmwilli5",
+        "observed_at": "2026-11-24T08:45:01.791919+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ce79ccb82c180021bbf78601ac630ed293c87d43651a8f276b07ed57fb67b99f"
+      },
+      {
+        "id": "src_037",
+        "url": "https://ece.ncsu.edu/people/cwong9",
+        "observed_at": "2026-11-24T08:45:02.004134+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "873aa4ee4e54817713b08cf224f7f1aebf9262d5474569fe1c8f5a8941521a7d"
+      },
+      {
+        "id": "src_038",
+        "url": "https://ece.ncsu.edu/people/dchopki2",
+        "observed_at": "2026-11-24T08:45:03.451179+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "fe2bab45c3da059e0ec166962b7f091381fad6ec6dc6340ce586d031cede576e"
+      },
+      {
+        "id": "src_039",
+        "url": "https://ece.ncsu.edu/people/ddstanci",
+        "observed_at": "2026-11-24T08:45:03.557268+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "34b7e90bb492138925510f451e89b993ff3413a759fb7662f0cf9e29fcacf000"
+      },
+      {
+        "id": "src_040",
+        "url": "https://ece.ncsu.edu/people/dfarfur",
+        "observed_at": "2026-11-24T08:45:03.986865+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "56165b69f77b53e071f974e029ad39b395ff8957b01cd1670b2bdd2f89f3788c"
+      },
+      {
+        "id": "src_041",
+        "url": "https://ece.ncsu.edu/people/dgyu",
+        "observed_at": "2026-11-24T08:45:04.951511+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "01763007a3c4b971b059863c5be052ecafb54423cfc390ada55b1eb81a3dbb91"
+      },
+      {
+        "id": "src_042",
+        "url": "https://ece.ncsu.edu/people/dhcansev",
+        "observed_at": "2026-11-24T08:45:05.135279+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3f9fa2b86dd2209799310692bfa972127e762e2ad2dad724088a73475cc531ff"
+      },
+      {
+        "id": "src_043",
+        "url": "https://ece.ncsu.edu/people/dktownse",
+        "observed_at": "2026-11-24T08:45:08.895898+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "a43c4aef0f47f8e317590366d97876493737bc663b7b9058ad8a973980468a7d"
+      },
+      {
+        "id": "src_044",
+        "url": "https://ece.ncsu.edu/people/dllubkem",
+        "observed_at": "2026-11-24T08:45:09.715684+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6958a3da8478621c7d7b9b1ebe4e9e1350795401f0239d684d73a6cf9ecac939"
+      },
+      {
+        "id": "src_045",
+        "url": "https://ece.ncsu.edu/people/dricket",
+        "observed_at": "2026-11-24T08:45:14.598717+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "c6afcf0fc227a59a402ce6b8d926cbd9ae69a1c0e4a1c983a3df568954fc2dec"
+      },
+      {
+        "id": "src_046",
+        "url": "https://ece.ncsu.edu/people/dvashae",
+        "observed_at": "2026-11-24T08:45:14.803162+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9f3716c4e36451639e0c9955875135f2853fe5eb62ee506de41d0857f8f715d5"
+      },
+      {
+        "id": "src_047",
+        "url": "https://ece.ncsu.edu/people/dyeun",
+        "observed_at": "2026-11-24T08:45:15.297190+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e491edd9c0633206e6d3f76c7b4f0bb0ba6f5372f43fefac7fc84f86434d53e9"
+      },
+      {
+        "id": "src_048",
+        "url": "https://ece.ncsu.edu/people/dzbaron",
+        "observed_at": "2026-11-24T08:45:15.585169+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "215348faf4975eb0370294d24b7b88c532e034ea2abfc1f00e4307059a2c7bcb"
+      },
+      {
+        "id": "src_049",
+        "url": "https://ece.ncsu.edu/people/easter",
+        "observed_at": "2026-11-24T08:45:16.744051+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f8d1b60b329d41a67f6d03ac856c0c07014de217d9a1a700f078ab763f56d623"
+      },
+      {
+        "id": "src_050",
+        "url": "https://ece.ncsu.edu/people/edbuckne",
+        "observed_at": "2026-11-24T08:45:17.156257+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "0f7ae35601f4aece60641890be3a4fa434776dab5b485a7067977c84f96f4108"
+      },
+      {
+        "id": "src_051",
+        "url": "https://ece.ncsu.edu/people/efg",
+        "observed_at": "2026-11-24T08:45:18.647742+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7308c5d4fe5dfbef4ec7993ee3159e58c1f5144486d0a7a012d07737e360215f"
+      },
+      {
+        "id": "src_052",
+        "url": "https://ece.ncsu.edu/people/efg/",
+        "observed_at": "2026-11-24T08:44:30.180689+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7308c5d4fe5dfbef4ec7993ee3159e58c1f5144486d0a7a012d07737e360215f"
+      },
+      {
+        "id": "src_053",
+        "url": "https://ece.ncsu.edu/people/eghysel",
+        "observed_at": "2026-11-24T08:45:19.124668+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ff966077a7ac456963ae15d76eec27bed7c48e2e7ccbd7d8359d7df35b952b49"
+      },
+      {
+        "id": "src_054",
+        "url": "https://ece.ncsu.edu/people/egrant",
+        "observed_at": "2026-11-24T08:45:19.562044+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b7e78f146c3e64a41fbb76a8a9d3d0b73c88b95f91d4443cbbaa5840306ae18c"
+      },
+      {
+        "id": "src_055",
+        "url": "https://ece.ncsu.edu/people/ejlobato",
+        "observed_at": "2026-11-24T08:45:20.169987+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6aeae5e1c9ef469a93098e2905b9275f8f8144e6bf3702954538fc6347a7746d"
+      },
+      {
+        "id": "src_056",
+        "url": "https://ece.ncsu.edu/people/enicole",
+        "observed_at": "2026-11-24T08:45:21.089522+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "0d31e85872b34e6ea653e7a249864cf8d7a8d29a3c8c38a88732d9a45ac495fd"
+      },
+      {
+        "id": "src_057",
+        "url": "https://ece.ncsu.edu/people/ericro",
+        "observed_at": "2026-11-24T08:45:22.954006+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "8ec3c7c337a61deab844a2e9084a6233e1280a5219dddf08aaeb8950c7889c56"
+      },
+      {
+        "id": "src_058",
+        "url": "https://ece.ncsu.edu/people/fakish",
+        "observed_at": "2026-11-24T08:45:24.014911+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "bba6be23c251f231eec999bb3f257c9eb534c9e75500c06253792c2cbe0c38c4"
+      },
+      {
+        "id": "src_059",
+        "url": "https://ece.ncsu.edu/people/fhsiao",
+        "observed_at": "2026-11-24T08:45:25.436091+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ad72a03341d96df1202411c176e24ad8a1764edd7fcbbaad7827fe02dea61e6a"
+      },
+      {
+        "id": "src_060",
+        "url": "https://ece.ncsu.edu/people/fjliving",
+        "observed_at": "2026-11-24T08:45:30.247150+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6b705605f46c56190c25cdb4b5678cbe148bf0f32601adda98e6b3dc4637b866"
+      },
+      {
+        "id": "src_061",
+        "url": "https://ece.ncsu.edu/people/fyyamane",
+        "observed_at": "2026-11-24T08:45:30.286879+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "2c816d3d1084ad2cbb0d4705bbea80c70ced84d26d0e83dfbcadb444c87c6fca"
+      },
+      {
+        "id": "src_062",
+        "url": "https://ece.ncsu.edu/people/gadunko",
+        "observed_at": "2026-11-24T08:45:30.666141+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "2ff69865ce41fad3ac48b1aac86e633a26c55e83f45192f6c8b5bf304340ff11"
+      },
+      {
+        "id": "src_063",
+        "url": "https://ece.ncsu.edu/people/gaybarr2",
+        "observed_at": "2026-11-24T08:45:30.835065+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "04d6f70f973e7a4c8a93d9e32ff5a388d9a33281d7d71f363f6344225383b192"
+      },
+      {
+        "id": "src_064",
+        "url": "https://ece.ncsu.edu/people/gbyrd",
+        "observed_at": "2026-11-24T08:45:32.142655+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ec4574f02449abe774a65d6990c55352045229868247cef1bd376057ec68f680"
+      },
+      {
+        "id": "src_065",
+        "url": "https://ece.ncsu.edu/people/gebottom",
+        "observed_at": "2026-11-24T08:45:33.923149+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b8701ed9fd1aef3249092859b69bbad9d737f107bd1a356dd46046da1ee0ac58"
+      },
+      {
+        "id": "src_066",
+        "url": "https://ece.ncsu.edu/people/gjiafrat",
+        "observed_at": "2026-11-24T08:45:34.677524+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d9618dc8042ae2bc67d2950e957a93ab591acaa8997f56e0f3f974f2409500a2"
+      },
+      {
+        "id": "src_067",
+        "url": "https://ece.ncsu.edu/people/glisson",
+        "observed_at": "2026-11-24T08:45:36.630707+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f7dbcdc2fb6fe0111ec882f6705075c09d848f9f5742c1ed54b4758e6aafb41f"
+      },
+      {
+        "id": "src_068",
+        "url": "https://ece.ncsu.edu/people/gmandic",
+        "observed_at": "2026-11-24T08:45:36.690320+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9cef0e10d94f20408a37d00ca7e05056b81b7d13d3fc04f708b98f87b369271d"
+      },
+      {
+        "id": "src_069",
+        "url": "https://ece.ncsu.edu/people/hauser",
+        "observed_at": "2026-11-24T08:45:39.206043+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "bf1eaa957c29bd5a0fdbf7e7706b36e3ebe923ff07720e62060adf3cf07911c4"
+      },
+      {
+        "id": "src_070",
+        "url": "https://ece.ncsu.edu/people/hcui9",
+        "observed_at": "2026-11-24T08:45:39.878243+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e62fb793bab63463e36746757a895dee30fe53385a4f499ddee006ca3c510fe6"
+      },
+      {
+        "id": "src_071",
+        "url": "https://ece.ncsu.edu/people/hdai",
+        "observed_at": "2026-11-24T08:45:40.648873+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4a8317f66551db8d9c290bc7e20cef9f1ebd47d9824f1cb72a72b3b6e57cbedb"
+      },
+      {
+        "id": "src_072",
+        "url": "https://ece.ncsu.edu/people/hhuang11",
+        "observed_at": "2026-11-24T08:45:45.867372+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3a6250a1d4f66a1098b9f7b153da0aab91e32fe58ac352ee12d478d6efe72573"
+      },
+      {
+        "id": "src_073",
+        "url": "https://ece.ncsu.edu/people/hkim51",
+        "observed_at": "2026-11-24T08:45:46.061590+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "2b8fe35f20b64cdcceecff1d576fede8c55043fea66b7b478e7f3b1a67f8b199"
+      },
+      {
+        "id": "src_074",
+        "url": "https://ece.ncsu.edu/people/htseng3",
+        "observed_at": "2026-11-24T08:45:46.180463+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3840ea01fd7c5d4446a3af0ac6460ef738bf131c99243de2a9f590ee1304a733"
+      },
+      {
+        "id": "src_075",
+        "url": "https://ece.ncsu.edu/people/hzhou",
+        "observed_at": "2026-11-24T08:45:46.525714+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "80fe4a1c7a4f30094933f13ccb6647e4ba7032c4c53bdc2682df6e55cfa1d595"
+      },
+      {
+        "id": "src_076",
+        "url": "https://ece.ncsu.edu/people/iguvenc",
+        "observed_at": "2026-11-24T08:45:48.505817+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "896ce0b0474147d0e4660f8307d60f314bd468c50e80453625c26e83525432c6"
+      },
+      {
+        "id": "src_077",
+        "url": "https://ece.ncsu.edu/people/ihusain2",
+        "observed_at": "2026-11-24T08:45:48.992563+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "685413fcd1a6ec60d8811ad78994f5e48bdeb4eba0ea6b42ed7530a6ea39751d"
+      },
+      {
+        "id": "src_078",
+        "url": "https://ece.ncsu.edu/people/jbcarlso",
+        "observed_at": "2026-11-24T08:45:49.413874+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "93e2a337d079b6ce1cec785df7b433e310515a3b0eee3d73760cca8755775a8a"
+      },
+      {
+        "id": "src_079",
+        "url": "https://ece.ncsu.edu/people/jcchang",
+        "observed_at": "2026-11-24T08:45:51.015843+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "59aaea67644b618188070d03d10a34f058354ac55e27966ea8f054f1ac137fa2"
+      },
+      {
+        "id": "src_080",
+        "url": "https://ece.ncsu.edu/people/jedmond2",
+        "observed_at": "2026-11-24T08:45:51.277096+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "94677f088d90568611231865e336be48abd2338e78d1530576d73f0716bb8ba0"
+      },
+      {
+        "id": "src_081",
+        "url": "https://ece.ncsu.edu/people/jjadams2",
+        "observed_at": "2026-11-24T08:45:51.301737+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "91a21d02a7418c79b8b73d95c62518a9d8fd23152da95042f9c44183fc8c9145"
+      },
+      {
+        "id": "src_082",
+        "url": "https://ece.ncsu.edu/people/jjag",
+        "observed_at": "2026-11-24T08:45:51.869882+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "8158fca564249e425468863301ac50d275b0e9cd322f60b038512b0d908d36ce"
+      },
+      {
+        "id": "src_083",
+        "url": "https://ece.ncsu.edu/people/jjwierer",
+        "observed_at": "2026-11-24T08:45:53.206537+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "5fccd8510e621d6379cbf1d2849be8cd66bbf4bde119efcb13152731e68f4e24"
+      },
+      {
+        "id": "src_084",
+        "url": "https://ece.ncsu.edu/people/jkfelder",
+        "observed_at": "2026-11-24T08:45:53.584640+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7db3b69976cbe0b4880db2d96abfc3dd80f922132b250ee74deac27d6534e699"
+      },
+      {
+        "id": "src_085",
+        "url": "https://ece.ncsu.edu/people/jkt",
+        "observed_at": "2026-11-24T08:45:55.672314+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1546998eaac88f2d42a24c1e2bdef313c45558b95a05eb9c7331c08c84ef33df"
+      },
+      {
+        "id": "src_086",
+        "url": "https://ece.ncsu.edu/people/jlreyno4",
+        "observed_at": "2026-11-24T08:45:57.184678+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "23d1494e1824c68b6ec65c2cb836eef0068c69aa0d91f3c58e41c90624bdc950"
+      },
+      {
+        "id": "src_087",
+        "url": "https://ece.ncsu.edu/people/jshortl",
+        "observed_at": "2026-11-24T08:46:00.051991+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f27c6e10fb01cf31b785e8787b367be72cd427970b3c6e1aea99d44218b2cfef"
+      },
+      {
+        "id": "src_088",
+        "url": "https://ece.ncsu.edu/people/jtuck",
+        "observed_at": "2026-11-24T08:46:01.568043+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "68c7ba057bdf040b816b56b13eeafdaf39a8af35e2f3b68d783696d7fb9c616d"
+      },
+      {
+        "id": "src_089",
+        "url": "https://ece.ncsu.edu/people/jvveliad",
+        "observed_at": "2026-11-24T08:46:02.298031+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "774d8239d9a486a7963f7cfbe713c849f290710f63b7ecb096da64fdd851d9e6"
+      },
+      {
+        "id": "src_090",
+        "url": "https://ece.ncsu.edu/people/kekas",
+        "observed_at": "2026-11-24T08:46:03.663724+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "eecbd600ef26478b444e499a90802735fc0f5a37c00acd08e1962418370da148"
+      },
+      {
+        "id": "src_091",
+        "url": "https://ece.ncsu.edu/people/kjmolnar",
+        "observed_at": "2026-11-24T08:46:04.173991+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3c17363d72409540d11a7f9e3265cdf0a387b0f9ec196c42809560cc788ddd13"
+      },
+      {
+        "id": "src_092",
+        "url": "https://ece.ncsu.edu/people/ksundar2",
+        "observed_at": "2026-11-24T08:46:04.278306+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3907ea8b163c8977f503ed0e380bbce21022210f3678fb88ff2204191681025d"
+      },
+      {
+        "id": "src_093",
+        "url": "https://ece.ncsu.edu/people/kwk",
+        "observed_at": "2026-11-24T08:46:05.575717+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "af6379b6b59cec92941ec80e422682e074e0852037d2ec25de2cfd70db0bba44"
+      },
+      {
+        "id": "src_094",
+        "url": "https://ece.ncsu.edu/people/kzhou22",
+        "observed_at": "2026-11-24T08:46:05.820214+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f496ad25f9aa2f274abe8ed22706a3b827f6bdacfbfffddc6737ddea067d0ea2"
+      },
+      {
+        "id": "src_095",
+        "url": "https://ece.ncsu.edu/people/ldai",
+        "observed_at": "2026-11-24T08:46:07.688291+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4cb699544999e4c477fda9da7d4c1e970774f134802870d2d3b506f4b0c7c0b4"
+      },
+      {
+        "id": "src_096",
+        "url": "https://ece.ncsu.edu/people/llunard",
+        "observed_at": "2026-11-24T08:46:08.115912+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "aa1c0c9e16a990f719b47d36a97b29481ba1a0dc527a33d399fc3910de464d82"
+      },
+      {
+        "id": "src_097",
+        "url": "https://ece.ncsu.edu/people/lwwhite",
+        "observed_at": "2026-11-24T08:46:08.619802+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "578936a92e0e1c74de565d2a196c6cdc8d291fe1a8f537a76f04a3e83e89694b"
+      },
+      {
+        "id": "src_098",
+        "url": "https://ece.ncsu.edu/people/mal",
+        "observed_at": "2026-11-24T08:46:12.950032+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b46b249632fe5509352f12f3776a6335fb8dafe8a72688e2287c8ce6c9d95028"
+      },
+      {
+        "id": "src_099",
+        "url": "https://ece.ncsu.edu/people/mbecchi",
+        "observed_at": "2026-11-24T08:46:14.926464+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d406a2c7d29a84f918ef1c9943da5f1dd63ee6a83b819fca4b91a12fb78ce699"
+      },
+      {
+        "id": "src_100",
+        "url": "https://ece.ncsu.edu/people/mbs",
+        "observed_at": "2026-11-24T08:46:17.515990+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "12cbf62acd5b8edaa7ef5bcb9d94750dadc001bb59f0d12799402534a6f3ba6a"
+      },
+      {
+        "id": "src_101",
+        "url": "https://ece.ncsu.edu/people/mco",
+        "observed_at": "2026-11-24T08:46:18.948639+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9b248c4427599658e24915c39ea2c46441dfc532ef742886cfcf9ae0c0edcc67"
+      },
+      {
+        "id": "src_102",
+        "url": "https://ece.ncsu.edu/people/mcutita",
+        "observed_at": "2026-11-24T08:46:18.971219+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "974092a241bd022ec2e9b27d898e034c555a7b2202694c599bfcec3d4545c7d1"
+      },
+      {
+        "id": "src_103",
+        "url": "https://ece.ncsu.edu/people/mdaniel6",
+        "observed_at": "2026-11-24T08:46:19.108968+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "503da6649afb8eb0f9496d5ffe53bd16ca5cbbe27515d4b9e350f3bc7276e0cf"
+      },
+      {
+        "id": "src_104",
+        "url": "https://ece.ncsu.edu/people/mdevets",
+        "observed_at": "2026-11-24T08:46:19.221310+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "57d74dd2649065853235b02f2bf9f2527edbee832ecd31f713c3c975ad1f42b7"
+      },
+      {
+        "id": "src_105",
+        "url": "https://ece.ncsu.edu/people/mhcohen2",
+        "observed_at": "2026-11-24T08:46:20.803915+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "fe63cf3979baa74fbe416e8b2291ceb89a000e7a3e2821af482e69d6be1d2522"
+      },
+      {
+        "id": "src_106",
+        "url": "https://ece.ncsu.edu/people/mlsichit",
+        "observed_at": "2026-11-24T08:46:21.146735+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b211011103ed3c97cf1b27fce76aded0c6f495b6e1f7e41eed3c922a30b6981d"
+      },
+      {
+        "id": "src_107",
+        "url": "https://ece.ncsu.edu/people/muth",
+        "observed_at": "2026-11-24T08:46:21.693849+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "487c00bf4fb96251795a2e5d6d8dbf93e5ee372964e133e1a7d201a61c9df1de"
+      },
+      {
+        "id": "src_108",
+        "url": "https://ece.ncsu.edu/people/mwchandr",
+        "observed_at": "2026-11-24T08:46:23.301333+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "78c5995075323821d523fee57e583a8664d41621c0199ecfcdfa6da587777535"
+      },
+      {
+        "id": "src_109",
+        "url": "https://ece.ncsu.edu/people/mwkudeno",
+        "observed_at": "2026-11-24T08:46:25.754715+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "a85c26f7f82c9834242ebbcf507ff29aa90fa23d2aef04726bcb34bc1a50b961"
+      },
+      {
+        "id": "src_110",
+        "url": "https://ece.ncsu.edu/people/myadav",
+        "observed_at": "2026-11-24T08:46:27.118304+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e440e0b28610a180eef25a1a521d15ea60f395b22f059d06466917296e0c964f"
+      },
+      {
+        "id": "src_111",
+        "url": "https://ece.ncsu.edu/people/ngonzal9",
+        "observed_at": "2026-11-24T08:46:29.171797+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7b021b6018865f9e1c7ade244c30408ba7cb2824b36301be41f4c045d37612cd"
+      },
+      {
+        "id": "src_112",
+        "url": "https://ece.ncsu.edu/people/nlu2",
+        "observed_at": "2026-11-24T08:46:32.645753+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "70677073e55f81ee3c973ff5e32947f58091ef1ddb4f4caeb4c002c5fe426e52"
+      },
+      {
+        "id": "src_113",
+        "url": "https://ece.ncsu.edu/people/oneal",
+        "observed_at": "2026-11-24T08:46:32.802521+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4f70a6d976679ff61074b6603a4f2375d293ce1563fabbca3bdd8dd9e86e60a2"
+      },
+      {
+        "id": "src_114",
+        "url": "https://ece.ncsu.edu/people/ooralka",
+        "observed_at": "2026-11-24T08:46:33.119067+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9825991bb09dbfa1835950d6b2ca86b1858f750173d88700a25f3c7998934a7a"
+      },
+      {
+        "id": "src_115",
+        "url": "https://ece.ncsu.edu/people/oozdemi",
+        "observed_at": "2026-11-24T08:46:33.256517+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "621f736628c12eaf80fa75b0f7d078e8b3c4c387916d9e6e4ebec5c640e94497"
+      },
+      {
+        "id": "src_116",
+        "url": "https://ece.ncsu.edu/people/osburn",
+        "observed_at": "2026-11-24T08:46:33.582733+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "32cc3c6c7ea6fd8571eec54703445ea0e6dd93280e990f85c2883cf95ec4c337"
+      },
+      {
+        "id": "src_117",
+        "url": "https://ece.ncsu.edu/people/padreher",
+        "observed_at": "2026-11-24T08:46:34.980906+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "707e3de700ee4e1db0daf59d33e6803fbc56bcc1856212b9caf2f5909923ae45"
+      },
+      {
+        "id": "src_118",
+        "url": "https://ece.ncsu.edu/people/paulf",
+        "observed_at": "2026-11-24T08:46:35.038767+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b708c915b599be56bffe981ac523216f397404ac08e9be8783a468f1bde0cdfc"
+      },
+      {
+        "id": "src_119",
+        "url": "https://ece.ncsu.edu/people/pccolter",
+        "observed_at": "2026-11-24T08:46:36.460942+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "9e3e2ecf7e2d40f274744622f4514e36a9ceb7cd5e221400050cc793141b5ab9"
+      },
+      {
+        "id": "src_120",
+        "url": "https://ece.ncsu.edu/people/pdbowman",
+        "observed_at": "2026-11-24T08:46:36.485931+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b85639cb7b4eaafea9288f3678d40d918d913eb71f6746e2794e97045d107cb4"
+      },
+      {
+        "id": "src_121",
+        "url": "https://ece.ncsu.edu/people/pgill2",
+        "observed_at": "2026-11-24T08:46:40.208682+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "5861a20b50fb6238477a44167804bb5c126cf9de7f579011830b0cf8207f34a2"
+      },
+      {
+        "id": "src_122",
+        "url": "https://ece.ncsu.edu/people/pgkoupi",
+        "observed_at": "2026-11-24T08:46:40.805308+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "6b5361fb53bcf1ec83b264d078951d36e250b47e9733ca0f0194e29e713613ae"
+      },
+      {
+        "id": "src_123",
+        "url": "https://ece.ncsu.edu/people/qgu3",
+        "observed_at": "2026-11-24T08:46:42.174968+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e903d7650b42b23149454d35a741314f3b0cd568e294759eeeda00be40ea5ca5"
+      },
+      {
+        "id": "src_124",
+        "url": "https://ece.ncsu.edu/people/ragupta",
+        "observed_at": "2026-11-24T08:46:44.705565+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4961c447367b1a006d94239290877bb5503ed030f0846aa490baca83aacae42a"
+      },
+      {
+        "id": "src_125",
+        "url": "https://ece.ncsu.edu/people/rajib-mikail",
+        "observed_at": "2026-11-24T08:46:46.285729+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "a117c635c43177e5b3aad937b838891035bbfc81cf42bf58259bd7983fc91bf0"
+      },
+      {
+        "id": "src_126",
+        "url": "https://ece.ncsu.edu/people/rdcallaw",
+        "observed_at": "2026-11-24T08:46:46.925102+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "a44e47e64aadefd8b9b0c90a20038f60da27d0564bd8dae86866fba2b0fdfb82"
+      },
+      {
+        "id": "src_127",
+        "url": "https://ece.ncsu.edu/people/rdoden",
+        "observed_at": "2026-11-24T08:46:47.078361+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "618cba80409230255d9844ca9491b23a327359e2fa8c6dfa9edbd3329ffa582d"
+      },
+      {
+        "id": "src_128",
+        "url": "https://ece.ncsu.edu/people/rjmearma",
+        "observed_at": "2026-11-24T08:46:47.169603+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "395ac70928923f5f8b6b54deecf27a0dc7142bc7de3bb8f85036d845d593ca54"
+      },
+      {
+        "id": "src_129",
+        "url": "https://ece.ncsu.edu/people/rkhosla",
+        "observed_at": "2026-11-24T08:46:47.542400+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "f33d72eb1ae5d9388fc524b5263f89e750413e982f76b324160084002c5d4056"
+      },
+      {
+        "id": "src_130",
+        "url": "https://ece.ncsu.edu/people/rwheath2",
+        "observed_at": "2026-11-24T08:46:47.567521+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3025312e6d99bb7ba2ec2194e7fe26973ffe0abafec7475199fe8ebe8774cb0a"
+      },
+      {
+        "id": "src_131",
+        "url": "https://ece.ncsu.edu/people/sar",
+        "observed_at": "2026-11-24T08:46:49.078211+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "765e22aad566e205de478648a1ec30821343c9d0019ce82ea215ddfe625508d1"
+      },
+      {
+        "id": "src_132",
+        "url": "https://ece.ncsu.edu/people/sasha",
+        "observed_at": "2026-11-24T08:46:50.347040+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "5e69ea86063ba78d55a78806d139f8084eef913585646dd4ca83af0b4170c5f9"
+      },
+      {
+        "id": "src_133",
+        "url": "https://ece.ncsu.edu/people/sbhatta4",
+        "observed_at": "2026-11-24T08:46:50.451079+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "53b2a8dc124b31075586dc8935a5e353f61d8a0ba76882bddc70bcbefdca5ac0"
+      },
+      {
+        "id": "src_134",
+        "url": "https://ece.ncsu.edu/people/scheung3",
+        "observed_at": "2026-11-24T08:46:51.114004+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4ecfc155aa8347f762e3b044af661054c6723817f446c930331cd5686b2d06e8"
+      },
+      {
+        "id": "src_135",
+        "url": "https://ece.ncsu.edu/people/skais",
+        "observed_at": "2026-11-24T08:46:55.941176+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b1c22d1272863397f43d4212739f8c29954a45db1d3cd95a27314cc8530de8c0"
+      },
+      {
+        "id": "src_136",
+        "url": "https://ece.ncsu.edu/people/slin23",
+        "observed_at": "2026-11-24T08:46:57.769587+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "698b84b3939e9e64f45fcb0873d493315d16640e67d24d99da717d3ac7253939"
+      },
+      {
+        "id": "src_137",
+        "url": "https://ece.ncsu.edu/people/smirbag",
+        "observed_at": "2026-11-24T08:47:01.300188+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "e7ce637d970055fdc239b0f34100d7f1649ac86ec2e3f63253279df1bf7bfe36"
+      },
+      {
+        "id": "src_138",
+        "url": "https://ece.ncsu.edu/people/smlukic",
+        "observed_at": "2026-11-24T08:47:02.089775+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "c3bd13cfde4aa487963cb7b84a0b0948bfdc0871bc2e24a2e065fc2b3e2c5508"
+      },
+      {
+        "id": "src_139",
+        "url": "https://ece.ncsu.edu/people/spavlid",
+        "observed_at": "2026-11-24T08:47:02.793093+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "59dc30280c3871287128becac544f63d4fa2f8dc0af2ab679c710ad0e8025fac"
+      },
+      {
+        "id": "src_140",
+        "url": "https://ece.ncsu.edu/people/sroy27",
+        "observed_at": "2026-11-24T08:47:03.072975+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "2e95592649fa7194f1ab7ee7e190086f36683606668d5bf70f3be7bcd4cc28b5"
+      },
+      {
+        "id": "src_141",
+        "url": "https://ece.ncsu.edu/people/ssschiff",
+        "observed_at": "2026-11-24T08:47:04.102454+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "eaaa9fc7c93791c6a5d5c73280eb4fc6e1637508ec9163c5470f6ac7796652a8"
+      },
+      {
+        "id": "src_142",
+        "url": "https://ece.ncsu.edu/people/sta",
+        "observed_at": "2026-11-24T08:47:04.687877+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "4e82e3cc944ad96a522f84e5f3adc9d5c22bbc1bd3f64246582a0e11a6371815"
+      },
+      {
+        "id": "src_143",
+        "url": "https://ece.ncsu.edu/people/svenkat4",
+        "observed_at": "2026-11-24T08:47:05.068810+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "82ac8be3f4f7ef49c1ba28168dd9841d32bb78eef7ed40806ff73e86085d045e"
+      },
+      {
+        "id": "src_144",
+        "url": "https://ece.ncsu.edu/people/swhunte3",
+        "observed_at": "2026-11-24T08:47:06.603190+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "69b50bc2f759200f48d7e28f12535a8fb95c7477bb7ef543c42804695f44979e"
+      },
+      {
+        "id": "src_145",
+        "url": "https://ece.ncsu.edu/people/szgurbuz",
+        "observed_at": "2026-11-24T08:47:07.443806+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "dcac0557427ef8447381c676a151cd01dc9409fb6cf488adadf08e8baca7261b"
+      },
+      {
+        "id": "src_146",
+        "url": "https://ece.ncsu.edu/people/tkm",
+        "observed_at": "2026-11-24T08:47:07.927627+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ff213024cdd3becafaa7a813c8a2b8fffdf2e3482a5bff9bf45ac22afe3c13f1"
+      },
+      {
+        "id": "src_147",
+        "url": "https://ece.ncsu.edu/people/twu19",
+        "observed_at": "2026-11-24T08:47:13.129879+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "25e20a3a3c6f58677247abe7e613c0d88362ee27084bb3656cd25aae768219d8"
+      },
+      {
+        "id": "src_148",
+        "url": "https://ece.ncsu.edu/people/vkshah2",
+        "observed_at": "2026-11-24T08:47:13.404077+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "7bd7bb8e27e21f768ca5fb4cb68cc39eea760cbae60fd1cb6a6feb236d9c00b2"
+      },
+      {
+        "id": "src_149",
+        "url": "https://ece.ncsu.edu/people/vmisra",
+        "observed_at": "2026-11-24T08:47:16.900344+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "aa0b9bf77a486b665b3f2a3b54adbda9b602ae0de5c626c576252c4d91be0d30"
+      },
+      {
+        "id": "src_150",
+        "url": "https://ece.ncsu.edu/people/wchen55",
+        "observed_at": "2026-11-24T08:47:17.678507+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "736527eeb9016006c8db23aa35bfc271ce64488cc79a5d7e209b41b78015add4"
+      },
+      {
+        "id": "src_151",
+        "url": "https://ece.ncsu.edu/people/wdavis",
+        "observed_at": "2026-11-24T08:47:18.459960+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d00fc1f5a42f75d227067ff72304c9a028f414c3bd736f726305989eb62e27dc"
+      },
+      {
+        "id": "src_152",
+        "url": "https://ece.ncsu.edu/people/wditto",
+        "observed_at": "2026-11-24T08:47:18.811833+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "ec35b7a1728046e2fb83214029274eac208c5110f6640d0ca0c121545a037a72"
+      },
+      {
+        "id": "src_153",
+        "url": "https://ece.ncsu.edu/people/wes",
+        "observed_at": "2026-11-24T08:47:18.897962+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1b674b20c3a022a442f1c659d14463aa439e585e0d31f016cd69b6dfc886c456"
+      },
+      {
+        "id": "src_154",
+        "url": "https://ece.ncsu.edu/people/winser",
+        "observed_at": "2026-11-24T08:47:20.161560+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "cfbba510f61791618b42688db7355a205223b7ec0bca9ae006788acc47408e54"
+      },
+      {
+        "id": "src_155",
+        "url": "https://ece.ncsu.edu/people/wjturne2",
+        "observed_at": "2026-11-24T08:47:20.396626+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b4cf1a5b2d48d0f3af19711dcfc31a7257409e044071771af600bcb6541d6edd"
+      },
+      {
+        "id": "src_156",
+        "url": "https://ece.ncsu.edu/people/wspitts2",
+        "observed_at": "2026-11-24T08:47:22.434552+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "05ce750a8b65ee31b0c5b1cb33b3fad87d527ec4bbee64599d9a00be1acb838c"
+      },
+      {
+        "id": "src_157",
+        "url": "https://ece.ncsu.edu/people/wtang8",
+        "observed_at": "2026-11-24T08:47:23.212896+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "fd51d8fae79e92b7efee98840ee9bb505079c1a1a2016583a7296996910e1691"
+      },
+      {
+        "id": "src_158",
+        "url": "https://ece.ncsu.edu/people/wwang",
+        "observed_at": "2026-11-24T08:47:26.454416+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "b5a7e310276f0c02d061bc75083b7479fe731d0afec07312a72b8a6950d409f5"
+      },
+      {
+        "id": "src_159",
+        "url": "https://ece.ncsu.edu/people/wyu2",
+        "observed_at": "2026-11-24T08:47:28.449463+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "d7fb0f6c4b2b220ca793391612bdaa1bcc03e289f7bd400ae5a2906236adec09"
+      },
+      {
+        "id": "src_160",
+        "url": "https://ece.ncsu.edu/people/xshen5",
+        "observed_at": "2026-11-24T08:47:28.953094+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "557b4acd35932980c4286d07c5c3dd4dcf0dba3737e7419773f484534f77edbc"
+      },
+      {
+        "id": "src_161",
+        "url": "https://ece.ncsu.edu/people/xwang4",
+        "observed_at": "2026-11-24T08:47:32.472009+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "77e8ef5ca06a37b00e13d24303a00baf6662411e6475731cfdef0c14fa5e9e40"
+      },
+      {
+        "id": "src_162",
+        "url": "https://ece.ncsu.edu/people/yliu335",
+        "observed_at": "2026-11-24T08:47:32.773055+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "faa344bbcdd7b93fff64ef7386ec82f5c32e58f0d5ada01cd6f8fd4311982ee5"
+      },
+      {
+        "id": "src_163",
+        "url": "https://ece.ncsu.edu/people/zpantic",
+        "observed_at": "2026-11-24T08:47:33.600499+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "518fdc9a290e58a8f513904b253c78633d74bdbff5080e95e11e6bf8ee45eeb4"
+      },
+      {
+        "id": "src_164",
+        "url": "https://ece.ncsu.edu/supporting-faculty/",
+        "observed_at": "2026-11-24T08:44:30.177168+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "3b829ceaf0bfd501d8d29275f4933bd6896ad4eae73da304d288409b4ad8bcdf"
+      },
+      {
+        "id": "src_165",
+        "url": "https://www.csc.ncsu.edu/people/bgreaves",
+        "observed_at": "2026-11-24T08:44:30.181228+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "11873f89c83f81bb93e9f669f2662af0fd2c26f1a404bedee33ca6ca3e357192"
+      },
+      {
+        "id": "src_166",
+        "url": "https://www.csc.ncsu.edu/people/efg",
+        "observed_at": "2026-11-24T08:44:30.181837+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "405b717b742bfe0d4cd5d3c67491532e79d42fea3de919d56851a1846bfe92b9"
+      },
+      {
+        "id": "src_167",
+        "url": "https://www.csc.ncsu.edu/people/ryu5",
+        "observed_at": "2026-11-24T08:44:30.182327+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "1425718e11a89bbbe0ff93b27dea43904f65f0d2ae20771c15b8dbd10134ad1d"
+      },
+      {
+        "id": "src_168",
+        "url": "https://profiles.ucr.edu/app/home/profile/hungweit",
+        "observed_at": "2026-11-24T08:50:18.822960+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "full_page",
+        "response_sha256": "0379adb357ae669b25df875a78385f1a266899270c7fe1f27289133f83543d70"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_d935394cbf20447bb4ef251a8e3caac8",
+    "candidate_sha256": "0055fe741aa0fcd382d692c00092cb406b2889c350297ff3eb7eb4165bde27d2",
+    "transport": "t3",
+    "run_id": "audit-ncstate-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:48:39.304845+00:00",
+    "exit_code": 0
+  }
+}

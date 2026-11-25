@@ -1,0 +1,867 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/a0a0bf4d5f0e72902b13fe76c109d5f6fb2f3d119ef5113b188e4d27be7bb4ae.json",
+    "sha256": "a0a0bf4d5f0e72902b13fe76c109d5f6fb2f3d119ef5113b188e4d27be7bb4ae"
+  },
+  "brief": {
+    "file": "audits/briefs/9caf113197b4a98a97a8be9b3f2a24fdcbeae999c758711b21c4088a658341ae.json",
+    "sha256": "9caf113197b4a98a97a8be9b3f2a24fdcbeae999c758711b21c4088a658341ae"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_c0e1e7c65d944fbf894549215a11a701",
+    "candidate_sha256": "25140577713b8eed0fd6cbca145f1a29499c48fa13b4159a7e64aa5f4d6f75ab",
+    "reviewer_id": "haiku-audit-rpi-2",
+    "reviewed_at": "2026-11-24T22:05:27+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people",
+        "https://ecse.rpi.edu/people/joint-appointment",
+        "https://ecse.rpi.edu/people/joint-appointment",
+        "https://ecse.rpi.edu/people/joint-appointment",
+        "https://ecse.rpi.edu/people/joint-appointment",
+        "https://ecse.rpi.edu/people/joint-appointment",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti",
+        "https://ecse.rpi.edu/people/emeriti"
+      ],
+      "checked_list_ids": [
+        "faculty",
+        "joint",
+        "emeriti"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_63229b2565dc595ab14d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor and Department Head, The Douglas A. Mercer ’77 Department of Electrical, Computer, and Systems Engineering\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_0050902941fc59f6aef9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Associate Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_1c520c482e6c5fbe8ef3",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Professor of Practice\" is Professor of Practice, a non-tenure academic professional rank, which is excluded (academic_professional).",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_e06908b1517d56578d48",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Lecturer\" is a teaching rank (Lecturer/Senior Lecturer), excluded as teaching.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_96b57109938655b6b565",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_a9637ea5c03c5b63b04d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Associate Professor and GlobalFoundries Endowed Dean’s Faculty Fellow in Electrical, Computer, and Systems Engineering\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_d8d4516dd5ad59c6a9f2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Assistant Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_0fac1a0e225f58d8a236",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_906fb63e98cd5e37ae9c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor and Associate Dean for Research and Graduate Studies\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_486abd8b6bc9532a8122",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Professor of Practice\" is Professor of Practice, a non-tenure academic professional rank, which is excluded (academic_professional).",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_253284e13a9d567dbcff",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_782ebbfd17a95da8a19a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Director, Center for Lighting Enabled Systems & Applications (LESA), Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_1d5b28a4a30353e3a1ad",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Adjunct Professor\" is Adjunct Professor, excluded as adjunct.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_2ee91ec209405245bb05",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Assistant Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_a08e055b101f57b0aef0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor, Curriculum Chair, IEEE Fellow\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_c033eeb3f1f055269c15",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Head of the university (title: \"President of Rensselaer Polytechnic Institute\"), with no professorial appointment on the ECSE roster. The faculty.rpi.edu profile lists ECSE only under \"Other affiliations\". Per the policy example for an administrative role with only Other affiliations, excluded as affiliate (generic affiliation, not affiliate_professor). Membership ece reflects the official ECSE affiliation, not inclusion.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_schmidt_profile"
+        ]
+      },
+      {
+        "person_id": "person_41d39e7a4edf5ffaa291",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Professor of Practice\" is Professor of Practice, a non-tenure academic professional rank, which is excluded (academic_professional).",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_365e56a3625150cdb62a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Lecturer\" is a teaching rank (Lecturer/Senior Lecturer), excluded as teaching.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_fe457768cad35ac7afed",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor and Constellation Chair in Future Chips\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_fc4b0d174bba555c8667",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Assistant Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_be24f53b9e3c50d9bd08",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Lecturer\" is a teaching rank (Lecturer/Senior Lecturer), excluded as teaching.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_2166dfb48f83555abb5e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_242273c5359756b9bda3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor and Constellation Chair, Future Chips\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_e7cbc52dee9359e9937f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor and Director, Center for Future Energy Systems (CFES)\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_03df06e1704452dfbde1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor (ECSE & CS) and Associate Dean for Academic Affairs\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_fab39a31cf8b5ed5afba",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_8deb5a7b81d65d24a8cb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_61b0a1fbf0b659ccba52",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Russell Sage Professor, Electrical, Computer, and Systems Engineering\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_128a2f5b8fd05d4a963b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE main faculty list title \"Sr. Lecturer\" is a teaching rank (Lecturer/Senior Lecturer), excluded as teaching.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_301341258ad15ff09586",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_67236a3014dd55cbacdf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Assistant Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_7d21d15401a6543eb60a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_c5d4beb6e3045cdb8c70",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Associate Professor and Richard P. Felak’66, '67G and Joan C. Felak Endowed Faculty Fellow in Electric Power Engineering\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_d072f6cf56a95d51938b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial rank on the official ECSE main faculty list (\"Assistant Professor\") is an official EE/ECE professorial appointment: category regular, included, current.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_b15ab7d4aa4b5df48f15",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE joint-appointment page lists this person with professorial title \"Assistant Professor\", and the faculty.rpi.edu profile shows Other affiliations: Electrical, Computer, and Systems Engineering. The official page establishes a professorial joint/secondary EE/ECE appointment without an explicit courtesy designation, so category joint_secondary, included, current.",
+        "source_ids": [
+          "src_joint_list",
+          "src_ivanov_profile"
+        ]
+      },
+      {
+        "person_id": "person_aca32fb9fc7f5fea8b98",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE joint-appointment page lists this person with professorial title \"Professor\", and the faculty.rpi.edu profile shows Other affiliations: Electrical, Computer, and Systems Engineering. The official page establishes a professorial joint/secondary EE/ECE appointment without an explicit courtesy designation, so category joint_secondary, included, current.",
+        "source_ids": [
+          "src_joint_list",
+          "src_magdon_profile"
+        ]
+      },
+      {
+        "person_id": "person_ca91c8cfa8eb549b8400",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE joint-appointment page lists this person with professorial title \"Professor\", and the faculty.rpi.edu profile shows Other affiliations: Electrical, Computer, and Systems Engineering. The official page establishes a professorial joint/secondary EE/ECE appointment without an explicit courtesy designation, so category joint_secondary, included, current.",
+        "source_ids": [
+          "src_joint_list",
+          "src_mishra_profile"
+        ]
+      },
+      {
+        "person_id": "person_25b20405c2225e20a093",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE joint-appointment page lists this person with professorial title \"Clark & Crossan Endowed Chair Professor, Director of Biomedical Imaging Center, Editor-in-Chief of IEEE Trans. Medical Imaging\", and the faculty.rpi.edu profile shows Other affiliations: Electrical, Computer, and Systems Engineering. The official page establishes a professorial joint/secondary EE/ECE appointment without an explicit courtesy designation, so category joint_secondary, included, current.",
+        "source_ids": [
+          "src_joint_list",
+          "src_gewang_profile"
+        ]
+      },
+      {
+        "person_id": "person_a605767cfbfb59aeb8dd",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official faculty.rpi.edu profile (bio) states an explicit \"courtesy appointment in ECSE Department\" as a Professor (Computer Science), and lists ECSE under Other affiliations. Explicit courtesy designation retained, included, current. The joint-appointment page lists him with title \"Associate Director, IDEA. Director, Data Science Research Center\".",
+        "source_ids": [
+          "src_joint_list",
+          "src_yener_profile"
+        ]
+      },
+      {
+        "person_id": "person_9f3efa652879529b864c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_a625205bb855581a833f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_3c8373045b0654cfbc5a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_8310977b29705267b29a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_9fa895ba7c2b55a6a38a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_44f4477fe461570c9433",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_dadd544cbbf95003af0f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_e1c8d3ae2dd6562a99d5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_56062efef4485a5288c1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_7472f6232b875e77bee8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_5acd7c4a44a654ab847a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_4f28b3579f7256098cda",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_65c3384193025bf58108",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists Paul Schoch under emeriti (title on that page: \"Associate Professor and Director, Center for Initiatives in Pre-College Education (CIPCE)\"), an excluded emeritus appointment. The faculty.rpi.edu profile shows a generic active title \"Associate Professor and Director, CIPCE\" with no emeritus wording. Under source_precedence a specific official appointment type (emeritus) disambiguates a generic roster title, so excluded as emeritus, past. Conflict recorded in findings for human review.",
+        "source_ids": [
+          "src_emeriti_list",
+          "src_schoch_profile"
+        ]
+      },
+      {
+        "person_id": "person_9b8fcba7a8b5539a8f65",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      },
+      {
+        "person_id": "person_93ed25d5a495530aa8b1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official ECSE emeriti page lists this person as emeritus (\"Professor Emeritus\"), which is an excluded status (emeritus); current_state past.",
+        "source_ids": [
+          "src_emeriti_list"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_faculty_list",
+        "url": "https://ecse.rpi.edu/people",
+        "observed_at": "2026-11-24T22:03:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "main faculty list: 34 div.personbox cards (name, position title)",
+        "response_sha256": "3741d8da5a99c93e3289265abde6777bc2a0aea2f007b09d6d6ba31fe8f1625d"
+      },
+      {
+        "id": "src_joint_list",
+        "url": "https://ecse.rpi.edu/people/joint-appointment",
+        "observed_at": "2026-11-24T22:03:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "joint-appointment list: 5 div.personbox cards (name, position title)",
+        "response_sha256": "655d52656d7af828a55342047cfe1dae7690721cb3ccf009fe013c84edc1bf2d"
+      },
+      {
+        "id": "src_emeriti_list",
+        "url": "https://ecse.rpi.edu/people/emeriti",
+        "observed_at": "2026-11-24T22:03:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "emeriti list: 15 div.personbox cards (name, position title)",
+        "response_sha256": "ae2d2571914e7a23c06d174ff5ebd823dcd76b8cad9a410bac23cb5133aecf4d"
+      },
+      {
+        "id": "src_yener_profile",
+        "url": "https://faculty.rpi.edu/bulent-yener",
+        "observed_at": "2026-11-24T22:03:36+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "bio: \"Professor in the Department of Computer Science with a courtesy appointment in ECSE Department\"; Other affiliations: Electrical, Computer, and Systems Engineering",
+        "response_sha256": "5be047dc4dea6c066973a98d886b38072ea60e72b0f3943f93303750425898ad"
+      },
+      {
+        "id": "src_schmidt_profile",
+        "url": "https://faculty.rpi.edu/martin-schmidt",
+        "observed_at": "2026-11-24T22:03:36+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "title: President of Rensselaer Polytechnic Institute; Other affiliations: Electrical, Computer, and Systems Engineering; no professorial title",
+        "response_sha256": "8332b62719f819cf05bc58bacb3468b867b67eea75829e62a6391abdfebf7394"
+      },
+      {
+        "id": "src_schoch_profile",
+        "url": "https://faculty.rpi.edu/paul-schoch",
+        "observed_at": "2026-11-24T22:03:36+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "title: Associate Professor and Director, CIPCE; department: Electrical, Computer, and Systems Engineering; no emeritus wording on profile",
+        "response_sha256": "e006aae511ca842a9a403bf5eb48acbdd27217f94a411d6d422027734c64b5cc"
+      },
+      {
+        "id": "src_ivanov_profile",
+        "url": "https://faculty.rpi.edu/radoslav-ivanov",
+        "observed_at": "2026-11-24T22:04:34+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "title: Assistant Professor (Computer Science); Other affiliations: Electrical, Computer, and Systems Engineering; no courtesy wording",
+        "response_sha256": "9f6ec34d9fdec512b6e255751cdd27ef222c8cac2ab7a5c86c2c16ffcfee86d9"
+      },
+      {
+        "id": "src_magdon_profile",
+        "url": "https://faculty.rpi.edu/malik-magdon-ismail",
+        "observed_at": "2026-11-24T22:04:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "title: Professor (Computer Science); Other affiliations: Mathematical Sciences, Electrical, Computer, and Systems Engineering; no courtesy wording",
+        "response_sha256": "47114adf63dd3e3226b8869bf74a27ccdfd7bd50355c8064bb8066fdcbea5115"
+      },
+      {
+        "id": "src_mishra_profile",
+        "url": "https://faculty.rpi.edu/sandipan-mishra",
+        "observed_at": "2026-11-24T22:04:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "title: Professor (Mechanical, Aerospace and Nuclear Engineering); Other affiliations: Electrical, Computer, and Systems Engineering, CSCMS; no courtesy wording",
+        "response_sha256": "ec23000c1a46590ba350137849d31c5db50e2b7079690c2a599dd05017f5466b"
+      },
+      {
+        "id": "src_gewang_profile",
+        "url": "https://faculty.rpi.edu/ge-wang",
+        "observed_at": "2026-11-24T22:04:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "title: Clark & Crossan Endowed Chair Professor (Biomedical Engineering); Other affiliations: Electrical, Computer, and Systems Engineering, CCI, Computer Science; no courtesy wording",
+        "response_sha256": "a054392bdddfdbea774253628ea4c618ae8dbea2bf4c4c2585002ad2e259217e"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No omissions: all 34 main-list, 5 joint-list and 15 emeriti-list entries matched brief.people by name, and every brief.people entry appears on exactly one list."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c033eeb3f1f055269c15",
+        "description": "Martin A. Schmidt (RPI President) appears on the main ECSE list and his profile lists ECSE under Other affiliations only. No professorial appointment; excluded as affiliate. Evidence: src_faculty_list, src_schmidt_profile."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_a605767cfbfb59aeb8dd",
+        "description": "Bulent Yener: included as courtesy (current). Official faculty.rpi.edu bio says Professor in Computer Science with a courtesy appointment in ECSE. The joint-appointment page lists him without subtype; the explicit courtesy wording controls. Evidence: src_joint_list, src_yener_profile."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_65c3384193025bf58108",
+        "description": "Paul Schoch conflict: the official ECSE emeriti page lists him as emeritus, while his faculty.rpi.edu profile and the emeriti page entry show generic title Associate Professor and Director, CIPCE with no emeritus wording. Resolved as excluded emeritus (past) because a specific official appointment type disambiguates a generic title under source_precedence. The profile is not contradicted by any dated statement, so this should be confirmed by a human reviewer before public counting; if the profile were preferred he would be regular, included, current."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Professor of Practice titles (Celik, Kanai, Neti) were mapped to category academic_professional; Lecturer and Senior Lecturer titles were mapped to teaching. Both are excluded, so the decision is unaffected by the choice between the two policy wordings."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Retrieval: the three required list pages and three supporting profile pages downloaded with HTTP 200. Four optional joint-appointment profiles (Ivanov, Magdon-Ismail, Mishra, Ge Wang) also downloaded with HTTP 200; none contains explicit courtesy wording, so their category is joint_secondary. No 403 or unavailable responses occurred. Profiles for other people were not fetched; list titles were sufficient for those decisions."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No incoming or announced-start appointments were visible on the three list pages or the fetched profiles, so no effective dates were recorded (effective_from_json \"null\") and no incoming subtotal applies."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_c0e1e7c65d944fbf894549215a11a701",
+    "candidate_sha256": "25140577713b8eed0fd6cbca145f1a29499c48fa13b4159a7e64aa5f4d6f75ab",
+    "transport": "t3",
+    "run_id": "agent_a8b0442ba1f178898",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-24T22:06:48.534566+00:00",
+    "exit_code": 0
+  }
+}

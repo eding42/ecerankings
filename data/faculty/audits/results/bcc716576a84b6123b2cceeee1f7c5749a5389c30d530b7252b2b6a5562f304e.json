@@ -1,0 +1,1548 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/0200fcc07433aff89eeab813de3b58b20c8ef767b9662bea1d0005a5f67fd6ae.json",
+    "sha256": "0200fcc07433aff89eeab813de3b58b20c8ef767b9662bea1d0005a5f67fd6ae"
+  },
+  "brief": {
+    "file": "audits/briefs/25f8783475829c416d7b2833502766e1223e8b243877485f825bbaebe73e8497.json",
+    "sha256": "25f8783475829c416d7b2833502766e1223e8b243877485f825bbaebe73e8497"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_7cff7bf0f08a499a86863c1bcdf03859",
+    "candidate_sha256": "9f4cb36e3bdecee2b632dd2b070f1bd49968f24513d8b4610154aa6c07a153d8",
+    "reviewer_id": "claude-sonnet-4-6-audit-agent",
+    "reviewed_at": "2026-11-23T04:22:23.756423+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/acarias.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/adim.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/alp.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/anantharam.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/arcak.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/asir.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/attwood.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ayazifar.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bajcsy.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/baolshausen.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/barsky.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bayen.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bechet.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/binyu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bkante.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/bokor.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/boles.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/boser.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/brecht.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/budinger.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/camoalon.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/caoyuan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chang-hasnain.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chua.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chuang.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/chunleiliu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/courtade.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ctnguyen.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/darrell.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/dcal.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/efros.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/elghaoui.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/eric-y-ma.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/fearing.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/gireeja.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/gopala.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/gray.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/grisha.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/guanghan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/haoningtang.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/hartmann.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/hu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/irfan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/javey.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jcchien.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jiantao.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jptennant.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/jr.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/katermurch.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/keller.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/keutzer.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/king.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lau.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lee.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lewis.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lieberman.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/loiannog.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/lplee.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/malik.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/mekhail.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/mengjieyu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/messerschmitt.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/meyer.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/mlustig.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/morgan.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/muller.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/muppala.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/niknejad.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/nikolic.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/oldham.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/osama.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pilawa.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pister.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pkhanna.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/pnuzzo.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/poolla.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/prabal.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/qianxu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/rabaey.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ramchandran.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/rikky.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/rjfull.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sahai.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/salahuddin.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sanders.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sangiovanni-vicentelli.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sastry.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/schwarz.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sconolly.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/seshia.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/skarandikar.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/sojoudi.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/songmei.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/spanos.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/tomlin.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/vcoleman.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/vonmeier.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/waller.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/walrand.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wawrzynek.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wong.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wu-f.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/wu.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/yablonovitch.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/yjo.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/ysshao.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/zaijun.html",
+        "https://www2.eecs.berkeley.edu/Faculty/Homepages/zakhor.html"
+      ],
+      "checked_list_ids": [
+        "roster",
+        "ee_current"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_04b4bcb9ff85520887f3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_06ad121d9b535c4b9376",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_06dabcf82ca25fa89c6f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Below the Line, Professor\". Classified as joint_secondary (Below the Line at Berkeley = secondary/joint appointment in EE, primary appointment in another department). Official EE faculty list designates ECE membership. Subtype not specified; using joint_secondary per policy.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_09d93a2ad5eb5df3bf3e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_0b47eb2de0dc58a0b089",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_0b86507c0bd95f5686d7",
+        "decision": "included",
+        "category": "in_residence",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor in Residence\". Classified as in_residence (Professor in Residence). Included under policy v4 as in_residence category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_0c34819e2b555534af50",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_0de79c683bcd5deb8f75",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Below the Line, Professor\". Classified as joint_secondary (Below the Line at Berkeley = secondary/joint appointment in EE, primary appointment in another department). Official EE faculty list designates ECE membership. Subtype not specified; using joint_secondary per policy.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_10e355c5c9f25446af33",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_1295b29de4205ba399c6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Lecturer\". Classified as teaching/lecturer based on official title. Policy excludes teaching category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_14cbd789fe8a5486b079",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_17787232e047547e98ce",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Below The Line Assistant Professor\". Classified as joint_secondary (Below the Line at Berkeley = secondary/joint appointment in EE, primary appointment in another department). Official EE faculty list designates ECE membership. Subtype not specified; using joint_secondary per policy.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_19700e550b9153caab3c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_1d699d704c545265ac9f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_20c0d6273f925d2bafe7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_234f2f2dfbea5e28b688",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_2ac40fe7bd2d53cfb374",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_2dd3b7d108f55887a990",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_31d24d23e22d54a4b566",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_33b2c633f77255749c6b",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Below The Line Assistant Professor\". Classified as joint_secondary (Below the Line at Berkeley = secondary/joint appointment in EE, primary appointment in another department). Official EE faculty list designates ECE membership. Subtype not specified; using joint_secondary per policy.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_34fb5dfab3385d479913",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Adjunct Professor\". Classified as adjunct based on \"Adjunct\" in official title. Policy excludes adjunct category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_35ddce9f331c58f7a756",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_383ab6e4d87e5d44befc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_3901547d280354a3a741",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_3ae337cbde775b929c9a",
+        "decision": "included",
+        "category": "in_residence",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor in Residence\". Classified as in_residence (Professor in Residence). Included under policy v4 as in_residence category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_3c14affa7dab5e42af64",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_3cb2043b08bf5bbc9d3e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_3e0b9184e8db5f6eb304",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_41543b61690c5d2c8ec3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_43349167a5c45ec784b0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_4515c029e7295d7e9f51",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_4521106d1d315d5fa058",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_4696074f08fb56cca19b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Adjunct Professor, Retired\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_469f042e559f521c8ac1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_46ae015469325db2b91e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_4749c1fbb28654128bc5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emerita\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_496165cfd548577c9ca2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emerita\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_4b0206bb39985ced8707",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_4cfcf6b222ca5b549c61",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor, Director\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_4d0f7213a89855c4b21a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_4dd3df6fd9b15228ae0f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor, Chair\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_52d2751bd1885267b150",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_564cbaa9813258668721",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_5731e6734e8c53b7826e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_5be57762b35750aca934",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_5c094d83d3e85f13a072",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_5c2cf82195315cd981ad",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Teaching Professor\". Classified as teaching/lecturer based on official title. Policy excludes teaching category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_5c85f99d16f2501e8564",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_5e4ed57099695d18b712",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_64cbb7b3e5e05b6ba20d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_671fc8d2c6115bc08d28",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Below The Line Assistant Professor\". Classified as joint_secondary (Below the Line at Berkeley = secondary/joint appointment in EE, primary appointment in another department). Official EE faculty list designates ECE membership. Subtype not specified; using joint_secondary per policy.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_6d0c3853b5e85703b38d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_6f4eb234e90653f68ce1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_76064f0598ea52108495",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_76632a8c8b225b2bbc5a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Adjunct Associate Professor\". Classified as adjunct based on \"Adjunct\" in official title. Policy excludes adjunct category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_77b8229a47085506b004",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_7cd131eeb96d53aa88f8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_7e6aff6dfdf15764a707",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_7f0478f80ec25b86b210",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emerita\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_7f122d73261457119092",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_8005d7ce28b15f01ae22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_8150efa3f6c15c9ca187",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_837e7f447997546688e8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_83f5136293765292b9c4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_88a5fa69aa5d5ae8bab5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor in Residence Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_8a2694dbc37b5a1781d8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor in Residence Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_8ad406055b095a0f84e6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_90f17209f9b95d9a8e83",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_95554cc847115417b30c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_98da729815915e1093b2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_9cb08de2988c5fa4b276",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_9ec25cfc9610529da6f7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_a08c21c2cd3f516abbbb",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_a31152930a7c500cb795",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_a675d912b7f15638850c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_a72ad46995245ee0a3e6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Teaching Professor\". Classified as teaching/lecturer based on official title. Policy excludes teaching category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_aa6e81f8525e5ce9b62d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Adjunct Assistant Professor\". Classified as adjunct based on \"Adjunct\" in official title. Policy excludes adjunct category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_ac3850c989435efb9dc9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_aca4417668ab5a628d20",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_af27def6079c5557b4b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_af34793a19605b1189f8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_b081c312b13d5659aa14",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Below the Line, Associate Professor\". Classified as joint_secondary (Below the Line at Berkeley = secondary/joint appointment in EE, primary appointment in another department). Official EE faculty list designates ECE membership. Subtype not specified; using joint_secondary per policy.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_b1337dbbc6ba5054b1e3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_b2e3264821825f40a283",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor in Residence Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_b7240adc35715bedb7a4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_b75dfb069a605c95951e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_b8b6b35539055bb8a53b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_bd2a82e21f2c5616add0",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Professor in the Graduate School\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_c11de7c4f97c5f0f8bd2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_c5201be55e035b62bfe6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_ce539601276d585dad0a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor, CS Division Chair\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_ce6130071a7657c4a1aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_cfe802a20c635761bf1d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_d0346fb39e105eff8ade",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_d5324226646757dfaa67",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Associate Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_d764983cf6955aaa8a85",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus, Executive Vice Chancellor and Provost Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_d98b899b2fcc5ccaa934",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_d9cac4a6390559c78529",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_ddf55fff7f8a584e81b7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_e7d949bf8fbe57cba20c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_ebb23eff124f51089a98",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emeritus\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_f34f27d27b7e5bfd9171",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_f4c15cdcefa15c848c3d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Adjunct Assistant Professor\". Classified as adjunct based on \"Adjunct\" in official title. Policy excludes adjunct category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_f5c789a8c84b51358368",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_f7d5cfcbbd445016b529",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Assistant Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_f816acaa3e04544cbb77",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor Emerita\". Classified as emeritus based on official title containing \"Emerit\" or \"Retired\". Policy excludes emeritus category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html"
+        ]
+      },
+      {
+        "person_id": "person_faf22245d3ae5d0ab397",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      },
+      {
+        "person_id": "person_fafc3ffd48bd52258ff9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official title on EECS Berkeley EE faculty page: \"Professor\". Standard professorial appointment (Professor/Associate/Assistant Professor). Included as regular category.",
+        "source_ids": [
+          "src_berkeley_ee_faculty_html",
+          "src_berkeley_ee_list_html"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_berkeley_ee_faculty_html",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/faculty.html",
+        "response_sha256": "4d172ee9ea61457002c18f5022ab868e72765eb397027422f9ac07d5f6063627",
+        "observed_at": "2026-11-23T04:12:49.994957+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Primary EE faculty list; all 108 EE-designated faculty listed with names, photos, and titles"
+      },
+      {
+        "id": "src_berkeley_ee_list_html",
+        "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/list.html",
+        "response_sha256": "a66237f05383a5ef34bb9e02c2358aaebe34f3e8e3d1abbbec1e37a6c6ce55e0",
+        "observed_at": "2026-11-23T04:12:55.790132+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "EE current faculty list with appointment titles; 80 currently active EE faculty"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No explicitly labeled incoming faculty found on official EE faculty pages (www2.eecs.berkeley.edu/Faculty/Lists/EE/faculty.html and ee_list) as of observation date. Primary roster enumeration complete: 108 people on EE Faculty List. 65 included (57 regular, 2 in_residence, 6 joint_secondary), 43 excluded (36 emeritus/retired, 4 adjunct, 3 teaching/lecturer)."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_7cff7bf0f08a499a86863c1bcdf03859",
+    "candidate_sha256": "9f4cb36e3bdecee2b632dd2b070f1bd49968f24513d8b4610154aa6c07a153d8",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A6b9ae618-28f4-434c-b367-f351167a2697%253Adelegate-task%253A5246768a-1c7f-43ba-961c-83093200cf9e:ordinal:1",
+    "model": "claude-sonnet-4-6",
+    "started_at": "2026-11-23T04:12:07.630Z",
+    "finished_at": "2026-11-23T04:27:07.588Z",
+    "exit_code": 0
+  }
+}

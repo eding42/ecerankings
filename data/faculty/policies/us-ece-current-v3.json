@@ -1,0 +1,28 @@
+{
+  "id": "us-ece-current-v3",
+  "version": 3,
+  "scope": "Current US EE/ECE faculty context, including officially announced incoming faculty",
+  "unit_authority": "Official university EE/ECE faculty designation or explicit EE/ECE appointment",
+  "included_categories": ["regular", "in_residence"],
+  "included_appointment_states": ["current", "incoming"],
+  "excluded_categories": ["adjunct", "courtesy", "affiliate", "teaching", "research_only", "research_staff", "academic_professional", "emeritus", "retired_working", "visiting", "departed"],
+  "incoming_rule": "Include officially announced incoming regular or in-residence EE/ECE professors. Retain incoming status and the announced start date when known; do not mark the appointment as already started. Incoming courtesy, adjunct, visiting and other excluded appointment types remain excluded.",
+  "membership_values": ["ece", "cs_only", "outside_ece", "unresolved"],
+  "decision_values": ["included", "excluded", "unresolved"],
+  "claim_states": ["supported", "corroborated", "disputed", "unresolved"],
+  "source_types": ["official_department", "official_university_profile", "official_university_announcement", "official_research_group", "university_hosted_personal", "university_linked_personal", "orcid_assertion", "publisher_metadata", "bibliographic"],
+  "school_states": ["discovery_pending", "source_ready", "collecting", "review_required", "verified", "needs_update", "blocked", "out_of_scope"],
+  "source_precedence": [
+    "Specific official appointment type or effective-date information disambiguates a generic roster title.",
+    "Official designated EE/ECE roster or EE track establishes membership in a combined department.",
+    "A specific official adjunct, courtesy, affiliated, emeritus, or future-start designation takes precedence over an undated generic biography.",
+    "Conflicting equally specific official claims remain unresolved until reviewed.",
+    "Personal sites, ORCID, and bibliographic records corroborate individual claims and reveal omissions; they do not independently override official EE/ECE membership."
+  ],
+  "joint_appointments": "Include genuine non-courtesy EE/ECE appointments jointly held with CS or another unit; count each person once per institution without inferring FTE.",
+  "publication_membership_rule": "ECE-venue authorship is discovery evidence only. CS-only professors do not enter this faculty roster.",
+  "temporal_scope": "Latest accepted roster observation, including announced incoming appointments and a separate incoming subtotal. Publication-year filters do not change faculty counts. Historical school rosters are deferred.",
+  "change_authority": "User instruction: include incoming professors. Eligibility changed from v2; university appointment facts and future dates are retained.",
+  "ranking_effect": "None. Existing institution-level publication credit and scoring are unchanged.",
+  "public_count_gate": "All candidate entries adjudicated, full official source enumeration checked, no unresolved inclusion decisions, evidence references valid, and independent review reconciled."
+}

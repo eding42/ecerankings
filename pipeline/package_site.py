@@ -93,8 +93,53 @@ def sister_files(site):
 CORE_FILES = [
     'core/engine.js', 'core/rank.js', 'core/rank-history.js', 'core/rank-history.css',
     'core/comparison.js', 'core/comparison.css', 'core/year-strip.js', 'core/year-strip.css',
-    'core/coverage.js', 'core/styles.css',
+    'core/coverage.js', 'core/faculty.js', 'core/styles.css',
 ]
+
+
+def faculty_files(site):
+    """Validate the optional faculty enrichment under its own artifact manifest."""
+    root = site / 'faculty'
+    if not root.exists():
+        return []
+    if root.is_symlink() or {p.name for p in root.iterdir()} != {'current.json', 'manifest.json'}:
+        raise ValueError('Unexpected or incomplete faculty enrichment bundle')
+    if any(p.is_symlink() or not p.is_file() for p in root.iterdir()):
+        raise ValueError('Faculty bundle must contain regular files')
+    manifest = json.loads((root / 'manifest.json').read_text())
+    payload = json.loads((root / 'current.json').read_text())
+    expected = manifest.get('artifacts', {}).get('current.json', {}).get('sha256')
+    if expected != hashlib.sha256((root / 'current.json').read_bytes()).hexdigest():
+        raise ValueError('Faculty manifest hash mismatch')
+    if manifest.get('validation', {}).get('status') != 'passed':
+        raise ValueError('Validated faculty evidence is required')
+    if manifest.get('field') != 'ece' or payload.get('field') != 'ece' or payload.get('schema_version') != 1:
+        raise ValueError('Invalid faculty field/schema')
+    if not manifest.get('policy_id') or payload.get('policy_id') != manifest['policy_id']:
+        raise ValueError('Faculty policy mismatch')
+    metrics = {'us-ece-current-v3': 'ece_regular_faculty', 'us-ece-affiliated-v4': 'ece_affiliated_faculty', 'us-ece-affiliated-v5': 'ece_affiliated_faculty'}
+    policy_id = manifest['policy_id']
+    metric = payload.get('metric_id', 'ece_regular_faculty' if policy_id == 'us-ece-current-v3' else None)
+    if policy_id not in metrics or metric != metrics[policy_id] or manifest.get('metric_id', metric) != metric:
+        raise ValueError('Faculty metric/policy mismatch')
+    seen = set()
+    for school in payload.get('schools', []):
+        iid = school.get('institution_id')
+        if iid in seen or not re.fullmatch(r'https://openalex.org/I\d+', iid or ''):
+            raise ValueError('Invalid or duplicate faculty institution')
+        seen.add(iid)
+        if type(school.get('headcount')) is not int or school['headcount'] < 0:
+            raise ValueError('Unresolved faculty count in public bundle')
+        incoming = school.get('incoming_headcount', 0)
+        current = school.get('current_headcount', school['headcount'] - incoming) if type(incoming) is int else None
+        if type(incoming) is not int or incoming < 0 or type(current) is not int or current < 0 or current + incoming != school['headcount']:
+            raise ValueError('Invalid current/incoming faculty count breakdown')
+        if school.get('policy_id') != manifest['policy_id']:
+            raise ValueError('Faculty record policy mismatch')
+        datetime.date.fromisoformat(school['observed_on'])
+        if not school.get('roster_url', '').startswith('https://'):
+            raise ValueError('Faculty count requires official source link')
+    return ['faculty/current.json', 'faculty/manifest.json']
 
 
 def package(site, output):
@@ -106,6 +151,7 @@ def package(site, output):
     public += CORE_FILES
     registry, data = data_files(site)
     public += data
+    public += faculty_files(site)
     public += sister_files(site)
     # Institution pages come from prerender_site.mjs, together with the ranking in index.html.
     pages = sorted(p.relative_to(site).as_posix() for p in (site / 'institution').rglob('*') if p.is_file())

@@ -1,0 +1,1828 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/0881761a5fd84253d230814fe4f6c40c1cb768b3f1153ca91d2efad785829e5f.json",
+    "sha256": "0881761a5fd84253d230814fe4f6c40c1cb768b3f1153ca91d2efad785829e5f"
+  },
+  "brief": {
+    "file": "audits/briefs/68fc23c985d89a1b9df526b3a9b58cd8edfdabaa7f3974663a80397debe01799.json",
+    "sha256": "68fc23c985d89a1b9df526b3a9b58cd8edfdabaa7f3974663a80397debe01799"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_743445b726894c3898eac9931fce3059",
+    "candidate_sha256": "887dfe7b8cd1eb8c2c4e10421a497d4ab0669c69898447eb73ec296a06a2d0de",
+    "reviewer_id": "claude-sonnet-4-6-audit-agent",
+    "reviewed_at": "2026-11-23T04:23:43.207367+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.utexas.edu/people/faculty/abhay-samant",
+        "https://ece.utexas.edu/people/faculty/adela-ben-yakar",
+        "https://ece.utexas.edu/people/faculty/alan-bovik",
+        "https://ece.utexas.edu/people/faculty/alex-dimakis",
+        "https://ece.utexas.edu/people/faculty/alex-j-hanson",
+        "https://ece.utexas.edu/people/faculty/alex-q-huang",
+        "https://ece.utexas.edu/people/faculty/alfonso-cuevas",
+        "https://ece.utexas.edu/people/faculty/amy-zhang",
+        "https://ece.utexas.edu/people/faculty/ananth-dodabalapur",
+        "https://ece.utexas.edu/people/faculty/andreas-gerstlauer",
+        "https://ece.utexas.edu/people/faculty/andrew-dunn",
+        "https://ece.utexas.edu/people/faculty/archie-l-holmes-jr",
+        "https://ece.utexas.edu/people/faculty/aryan-mokhtari",
+        "https://ece.utexas.edu/people/faculty/atlas-wang",
+        "https://ece.utexas.edu/people/faculty/august-shi",
+        "https://ece.utexas.edu/people/faculty/brian-evans",
+        "https://ece.utexas.edu/people/faculty/brian-johnson",
+        "https://ece.utexas.edu/people/faculty/calvin-lin",
+        "https://ece.utexas.edu/people/faculty/cheng-guo",
+        "https://ece.utexas.edu/people/faculty/christine-julien",
+        "https://ece.utexas.edu/people/faculty/constantine-caramanis",
+        "https://ece.utexas.edu/people/faculty/daniel-wasserman",
+        "https://ece.utexas.edu/people/faculty/david-burghoff",
+        "https://ece.utexas.edu/people/faculty/david-soloveichik",
+        "https://ece.utexas.edu/people/faculty/david-z-pan",
+        "https://ece.utexas.edu/people/faculty/deji-akinwande",
+        "https://ece.utexas.edu/people/faculty/diana-marculescu",
+        "https://ece.utexas.edu/people/faculty/don-fussell",
+        "https://ece.utexas.edu/people/faculty/donglei-emma-fan",
+        "https://ece.utexas.edu/people/faculty/earl-swartzlander",
+        "https://ece.utexas.edu/people/faculty/edison-thomaz",
+        "https://ece.utexas.edu/people/faculty/edward-yu",
+        "https://ece.utexas.edu/people/faculty/emanuel-tutuc",
+        "https://ece.utexas.edu/people/faculty/emanuele-galiffi",
+        "https://ece.utexas.edu/people/faculty/evan-speight",
+        "https://ece.utexas.edu/people/faculty/guandao-yang",
+        "https://ece.utexas.edu/people/faculty/gustavo-de-veciana",
+        "https://ece.utexas.edu/people/faculty/haley-eazor",
+        "https://ece.utexas.edu/people/faculty/hao-zhu",
+        "https://ece.utexas.edu/people/faculty/haris-vikalo",
+        "https://ece.utexas.edu/people/faculty/hyeji-kim",
+        "https://ece.utexas.edu/people/faculty/inderjit-dhillon",
+        "https://ece.utexas.edu/people/faculty/james-tunnell",
+        "https://ece.utexas.edu/people/faculty/javad-mohammadi",
+        "https://ece.utexas.edu/people/faculty/jaydeep-kulkarni",
+        "https://ece.utexas.edu/people/faculty/jean-anne-incorvia",
+        "https://ece.utexas.edu/people/faculty/jeffrey-andrews",
+        "https://ece.utexas.edu/people/faculty/jon-tamir",
+        "https://ece.utexas.edu/people/faculty/jonathan-baker",
+        "https://ece.utexas.edu/people/faculty/jonathan-valvano",
+        "https://ece.utexas.edu/people/faculty/jose-del-r-millan",
+        "https://ece.utexas.edu/people/faculty/joydeep-ghosh",
+        "https://ece.utexas.edu/people/faculty/jun-wang",
+        "https://ece.utexas.edu/people/faculty/kaushik-chowdhury",
+        "https://ece.utexas.edu/people/faculty/keshav-pingali",
+        "https://ece.utexas.edu/people/faculty/kristen-grauman",
+        "https://ece.utexas.edu/people/faculty/kun-woo-cho",
+        "https://ece.utexas.edu/people/faculty/leonard-frank-register",
+        "https://ece.utexas.edu/people/faculty/lili-qiu",
+        "https://ece.utexas.edu/people/faculty/lillian-chin",
+        "https://ece.utexas.edu/people/faculty/linran-fan",
+        "https://ece.utexas.edu/people/faculty/lizy-john",
+        "https://ece.utexas.edu/people/faculty/mark-f-hamilton",
+        "https://ece.utexas.edu/people/faculty/mark-mcdermott",
+        "https://ece.utexas.edu/people/faculty/mattan-erez",
+        "https://ece.utexas.edu/people/faculty/michael-cullinan",
+        "https://ece.utexas.edu/people/faculty/michael-orshansky",
+        "https://ece.utexas.edu/people/faculty/milos-gligoric",
+        "https://ece.utexas.edu/people/faculty/mingyuan-zhou",
+        "https://ece.utexas.edu/people/faculty/mohit-tiwari",
+        "https://ece.utexas.edu/people/faculty/nanshu-lu",
+        "https://ece.utexas.edu/people/faculty/neal-hall",
+        "https://ece.utexas.edu/people/faculty/neeraja-yadwadkar",
+        "https://ece.utexas.edu/people/faculty/neil-zhao",
+        "https://ece.utexas.edu/people/faculty/nina-telang",
+        "https://ece.utexas.edu/people/faculty/nur-touba",
+        "https://ece.utexas.edu/people/faculty/pedro-santacruz",
+        "https://ece.utexas.edu/people/faculty/peter-stone",
+        "https://ece.utexas.edu/people/faculty/poulami-das",
+        "https://ece.utexas.edu/people/faculty/preston-wilson",
+        "https://ece.utexas.edu/people/faculty/radu-marculescu",
+        "https://ece.utexas.edu/people/faculty/ramesh-yerraballi",
+        "https://ece.utexas.edu/people/faculty/ray-chen",
+        "https://ece.utexas.edu/people/faculty/ruochen-lu",
+        "https://ece.utexas.edu/people/faculty/saad-saleh",
+        "https://ece.utexas.edu/people/faculty/samantha-santacruz",
+        "https://ece.utexas.edu/people/faculty/sandeep-chinchali",
+        "https://ece.utexas.edu/people/faculty/sanjay-banerjee",
+        "https://ece.utexas.edu/people/faculty/sanjay-shakkottai",
+        "https://ece.utexas.edu/people/faculty/sarfraz-khurshid",
+        "https://ece.utexas.edu/people/faculty/sensen-li",
+        "https://ece.utexas.edu/people/faculty/seth-bank",
+        "https://ece.utexas.edu/people/faculty/shwetadwip-chowdhury",
+        "https://ece.utexas.edu/people/faculty/shyam-shankar",
+        "https://ece.utexas.edu/people/faculty/sriram-vishwanath",
+        "https://ece.utexas.edu/people/faculty/sujay-sanghavi",
+        "https://ece.utexas.edu/people/faculty/surya-santoso",
+        "https://ece.utexas.edu/people/faculty/suzanne-barber",
+        "https://ece.utexas.edu/people/faculty/todd-humphreys",
+        "https://ece.utexas.edu/people/faculty/ufuk-topcu",
+        "https://ece.utexas.edu/people/faculty/vijay-garg",
+        "https://ece.utexas.edu/people/faculty/vivek-telang",
+        "https://ece.utexas.edu/people/faculty/warren-hunt-jr",
+        "https://ece.utexas.edu/people/faculty/william-fagelson",
+        "https://ece.utexas.edu/people/faculty/xiuling-li",
+        "https://ece.utexas.edu/people/faculty/yale-patt",
+        "https://ece.utexas.edu/people/faculty/yaoyao-jia",
+        "https://ece.utexas.edu/people/faculty/yicheng-zhu",
+        "https://ece.utexas.edu/people/faculty/yuebing-zheng"
+      ],
+      "checked_list_ids": [
+        "roster",
+        "core"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_009f35aa921050bbae18",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Biomedical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_andrew-dunn"
+        ]
+      },
+      {
+        "person_id": "person_0aacc93c891058839242",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_0f23ac8944ad5b7daa10",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_0f770a7197695331aa98",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_0f79faa3fc2650dbb86d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_114943bd86dd5569949c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_168df056adbf5a76a0ad",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_18d7826485d4509ab767",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Adjunct Professor\". Adjunct appointments are excluded under policy v4. Listed on full ECE faculty directory but not in ECE-primary filter.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_1d17b2504f6e567c9e85",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\" with primary department in Statistics and Data Sciences. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_mingyuan-zhou"
+        ]
+      },
+      {
+        "person_id": "person_1e5d6526433056e48324",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_1fb4330e0d0258a28948",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_208dde96960a5948b0ee",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\" with primary department in Biomedical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_james-tunnell"
+        ]
+      },
+      {
+        "person_id": "person_235660ee59e154e7a064",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_25ec5846206858e2bb29",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_26575611afa85d17bbe9",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_peter-stone"
+        ]
+      },
+      {
+        "person_id": "person_288cf7fd4daf54529760",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_2a0b0e0d448757ddab16",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_2a59bf13eb3e58ba8624",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_2bae0a834ab35099a5b5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_2be0823a999a5810bbaa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_2d65465979f15798b57e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Adjunct Faculty\". Adjunct appointments are excluded under policy v4. Listed on full ECE faculty directory but not in ECE-primary filter.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_32e6cf15aa965da385b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_36cbedbb7bec52d2868d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_385185792ab454cba9de",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_38b98ebde08553749589",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_3b37fc2f598657a9874c",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\" with primary department in Civil/Architectural/Environmental Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_javad-mohammadi"
+        ]
+      },
+      {
+        "person_id": "person_3c9fc89ce6ea5317b16d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Mechanical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_yuebing-zheng"
+        ]
+      },
+      {
+        "person_id": "person_3e0ffbe2f3d05d15bb32",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_3e7bb339ef2c53f388e4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_3ef4429ffb73592998ef",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_42de8d178871599ca00d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Mechanical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_mark-f-hamilton"
+        ]
+      },
+      {
+        "person_id": "person_45d16771806456798d49",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_4768fd12595450e38fb4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Adjunct Professor\". Adjunct appointments are excluded under policy v4. Listed on full ECE faculty directory but not in ECE-primary filter.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_4cb7ba68a5835efab0ff",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_4e09c732b9fc5fce897e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_5512f154d4ec57858820",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Mechanical Engineering / Biomedical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_adela-ben-yakar"
+        ]
+      },
+      {
+        "person_id": "person_5592884175b15c7883b0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_55c08445fd7d5987a63f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Associate Professor of Instruction\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_55f294c78cec5c5a89dd",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_don-fussell"
+        ]
+      },
+      {
+        "person_id": "person_55f3bcdd4e6e566db551",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_581a82ea3d2556dc9e10",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_58badba53cb754158b23",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_5a582b379d955de6b1c0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_5d000be82fa85156893d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Professor of Instruction\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_5eec59564686588c819d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_62669ff46ea2519bb10e",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Professor of Instruction\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_6627b26b362450338f4d",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Adjunct Professor\". Adjunct appointments are excluded under policy v4. Listed on full ECE faculty directory but not in ECE-primary filter.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_663453e38d3e57e8ae87",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_69d61242662a56d28b22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_7072e8f02b295d06bdca",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_lili-qiu"
+        ]
+      },
+      {
+        "person_id": "person_759859e72a015d1c9b25",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Assistant Professor of Instruction\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_79fbe48ca457526b944b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_7a9e22986e74585589ad",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_7f48c01e59b0507aa96e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_85ed4720fe7659b6aaf7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_86b38ea634005d9194d6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_88fd2412bdb156adb6f8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_893743caeff855e482f0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_8b4a1e2c03945df08d98",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_kristen-grauman"
+        ]
+      },
+      {
+        "person_id": "person_8b7a0bf3b76355fd9146",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_8c17748673e55df5b507",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_8e30d7b994bc5d5c978b",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\" with primary department in Speech, Language, and Hearing Sciences. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_jun-wang"
+        ]
+      },
+      {
+        "person_id": "person_8fcc06a019e059138563",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Professor of Practice\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_9269546a4891520fb7db",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Professor of Practice\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_97a469a5591a56ea8f8f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\" with primary department in Biomedical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_samantha-santacruz"
+        ]
+      },
+      {
+        "person_id": "person_9881fe10db6859dabc77",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Aerospace Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_ufuk-topcu"
+        ]
+      },
+      {
+        "person_id": "person_9909b3e8ac8f53d88303",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_990bb00120dd5e82b163",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_9c5e1743ffb456fbae1d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_9e0c281003855233b598",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Aerospace Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_todd-humphreys"
+        ]
+      },
+      {
+        "person_id": "person_9fe303ed5a1f5004ae49",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_a8c47840561358c181da",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_keshav-pingali"
+        ]
+      },
+      {
+        "person_id": "person_a8df0a41f0615ed99769",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_acc61627a92e53218a4b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Professor of Practice\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_aced9aab6aeb5da3a22c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_ae953d8289865a2da582",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_b04080e285f3581a98c7",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\" with primary department in Mechanical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_michael-cullinan"
+        ]
+      },
+      {
+        "person_id": "person_b04c587328b45f27b624",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Associate Professor of Instruction\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_b1961756435652b5b418",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Professor of Practice\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_b1d5383e524359c99f3d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_b24ec8d56b3a5bb18935",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_babb6dfcda1b5d3d80e4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_bbe413118dd05b5ebb20",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_bbf4f42e56175922aa4d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Mechanical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_preston-wilson"
+        ]
+      },
+      {
+        "person_id": "person_c01cac4697625c069a50",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_c19ef2f3fea85427a077",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_c1ed90f7873a515983ef",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_cce0212c61e45f8dab70",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_cd266101d53e59b39fa4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_d05e224357b35d8abb25",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor of Practice Emeritus\". Emeritus appointments are excluded under policy v4.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_d0c6971e64f85aed9ac0",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Mechanical Engineering. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_donglei-emma-fan"
+        ]
+      },
+      {
+        "person_id": "person_d1af432ecbff5549a2fa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_d2c0cff605c85612a535",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_d5a2778373db5c8da84f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_warren-hunt-jr"
+        ]
+      },
+      {
+        "person_id": "person_d6484681573a54fdb4fc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_dded050fe58c531193fc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_dea4a19d56d857119ae6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_e232ad602d745f979539",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_e272a68193df53c7b1db",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official position on ECE faculty directory: \"Associate Professor of Instruction\". Teaching/practice/instruction appointments are excluded under policy v4 (teaching/academic_professional category). Primary ECE appointment.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_e3dcb295f58055f690ef",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_calvin-lin"
+        ]
+      },
+      {
+        "person_id": "person_eadb36e0f5805b548b16",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_ed3722cba55b521db7dd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_ed3efef3bdd75408adfb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_ee3f0fce2033581691f1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_f3f2b3c2d11a5fc080f9",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\" with primary department in Computer Science. Listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary: official ECE joint/secondary professorial appointment; regular-versus-courtesy subtype not established from available sources. Official ECE listing establishes ECE membership.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty",
+          "src_profile_inderjit-dhillon"
+        ]
+      },
+      {
+        "person_id": "person_f722d3584d345dbf83b6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_fbb2bb021812595e92b2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Assistant Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_fccba104e793518eb4b2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      },
+      {
+        "person_id": "person_fd7ac65bfc8a52539541",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official position: \"Associate Professor\". Primary ECE appointment (appears on ECE-primary filtered view). Standard professorial appointment included as regular category.",
+        "source_ids": [
+          "src_texas_all_faculty",
+          "src_texas_ece_faculty"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_texas_all_faculty",
+        "url": "https://ece.utexas.edu/people/faculty",
+        "response_sha256": "db67e9458284beca56722a1cab965b2ff4586f53346292783135c49e79fd3703",
+        "observed_at": "2026-11-23T04:12:57.221053+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Full ECE faculty directory; 109 faculty including joint/affiliated appointments; positions extracted from facpos field"
+      },
+      {
+        "id": "src_texas_ece_faculty",
+        "url": "https://ece.utexas.edu/people/faculty/ece",
+        "response_sha256": "32c2c98ac6f89931ea3768d9c85eed0570abff0dbea8b386659d43665a449338",
+        "observed_at": "2026-11-23T04:12:58.176711+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ECE primary faculty filter; 83 faculty with primary ECE appointments"
+      },
+      {
+        "id": "src_profile_adela-ben-yakar",
+        "url": "https://ece.utexas.edu/people/faculty/adela-ben-yakar",
+        "response_sha256": "5b418f4e689f7936dd306f8d2148d318c567fd08402312701bd93b3f2ab519cc",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_andrew-dunn",
+        "url": "https://ece.utexas.edu/people/faculty/andrew-dunn",
+        "response_sha256": "9a0a00dbdb7d970cd34ff68367226645b1a0a20b26fae0e54818e0d4b6c5f717",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_calvin-lin",
+        "url": "https://ece.utexas.edu/people/faculty/calvin-lin",
+        "response_sha256": "5065ed9a24df15a16f9bcd31e77560ad38a58d2baede99f3d4235bd943e27080",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_don-fussell",
+        "url": "https://ece.utexas.edu/people/faculty/don-fussell",
+        "response_sha256": "5df5106f5c5c44f15f4a1f7f3c44023c0b283665d60f7b47b016659607cbb59e",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_donglei-emma-fan",
+        "url": "https://ece.utexas.edu/people/faculty/donglei-emma-fan",
+        "response_sha256": "4c24aacb9b9c498ccd5b94eacb8cd312dbc62f4f2682ac3d41a7754e6c699df8",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_inderjit-dhillon",
+        "url": "https://ece.utexas.edu/people/faculty/inderjit-dhillon",
+        "response_sha256": "a09cb148c9cecad906d06ea5771b6d25f8fe56a6ae212b017bc3b15c5e82e40b",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_james-tunnell",
+        "url": "https://ece.utexas.edu/people/faculty/james-tunnell",
+        "response_sha256": "e5187e796e139a8a7864182d3b092214d37d7e2f057210395462b75b0550abfa",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_javad-mohammadi",
+        "url": "https://ece.utexas.edu/people/faculty/javad-mohammadi",
+        "response_sha256": "05e7fd0d5c35a20aa197e5b499d5b4822eefad7b5b622f1eead558101585827c",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_jun-wang",
+        "url": "https://ece.utexas.edu/people/faculty/jun-wang",
+        "response_sha256": "e0112f3f10402bdc94129948b2ffdd90c04e75c12d1b039d4de2bd2daf47a490",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_keshav-pingali",
+        "url": "https://ece.utexas.edu/people/faculty/keshav-pingali",
+        "response_sha256": "74d3d532541ffdda2cfda9bb98f7cc5bf1b46e424e703b6f2b3e55b231e64625",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_kristen-grauman",
+        "url": "https://ece.utexas.edu/people/faculty/kristen-grauman",
+        "response_sha256": "de645583e9279b72240f8542f471313ce8fbb695dad7c2cf0016781bb8f5b122",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_lili-qiu",
+        "url": "https://ece.utexas.edu/people/faculty/lili-qiu",
+        "response_sha256": "7d7b11db99a642148288405db570223448d772ad3bfa4f8a1946e741861c0601",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_mark-f-hamilton",
+        "url": "https://ece.utexas.edu/people/faculty/mark-f-hamilton",
+        "response_sha256": "93dcdd28a41fb9c1a88011ce715e4b94110dbf54029d8c80e1fd70e85a524bff",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_michael-cullinan",
+        "url": "https://ece.utexas.edu/people/faculty/michael-cullinan",
+        "response_sha256": "e5c1350c1ab369c5ad808dfc1c010c85fd0b9cfb8d4d6af5ac263de28ff1f4b5",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_mingyuan-zhou",
+        "url": "https://ece.utexas.edu/people/faculty/mingyuan-zhou",
+        "response_sha256": "80a538e84fd26ae561509825bfc59675c43379673d8639b0bf1f06b58243f621",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_peter-stone",
+        "url": "https://ece.utexas.edu/people/faculty/peter-stone",
+        "response_sha256": "b7f8d12c04a250daa52a9cd32dfa9893c3fbcbf6afec0350213008080b100db1",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_preston-wilson",
+        "url": "https://ece.utexas.edu/people/faculty/preston-wilson",
+        "response_sha256": "e67d00fc7edac6b5cd2e5769ec4e8bb7a954dc1ffaeafa014160cfd5a308aa1b",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_samantha-santacruz",
+        "url": "https://ece.utexas.edu/people/faculty/samantha-santacruz",
+        "response_sha256": "7bf6aa7caa5663cc065242e45e19943c597a23e9c2ccb31d9dfd5a46fe9f856a",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_todd-humphreys",
+        "url": "https://ece.utexas.edu/people/faculty/todd-humphreys",
+        "response_sha256": "a706d4c7524443dd80dfc1c4c9259a75091a00ca1d896101c3010d1106b1a397",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_ufuk-topcu",
+        "url": "https://ece.utexas.edu/people/faculty/ufuk-topcu",
+        "response_sha256": "2cb44ae05906f5f7109c646e7a12bcbcaebb56a43e27a195f7618e33e33ce4eb",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_warren-hunt-jr",
+        "url": "https://ece.utexas.edu/people/faculty/warren-hunt-jr",
+        "response_sha256": "c1e646392d789e0c6eebae457dfc5e4f1615835a4864c53bd2a9d9b9b646c198",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      },
+      {
+        "id": "src_profile_yuebing-zheng",
+        "url": "https://ece.utexas.edu/people/faculty/yuebing-zheng",
+        "response_sha256": "9d7f70b769eced0e472afaa462228fc94110b98310b8db213c3de3ca6a98920b",
+        "observed_at": "2026-11-23T04:19:18.943001+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Individual profile; confirms primary department affiliation for joint/secondary classification"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_55f294c78cec5c5a89dd",
+        "description": "Don Fussell: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_f3f2b3c2d11a5fc080f9",
+        "description": "Inderjit Dhillon: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_a8c47840561358c181da",
+        "description": "Keshav Pingali: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_8b4a1e2c03945df08d98",
+        "description": "Kristen Grauman: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_7072e8f02b295d06bdca",
+        "description": "Lili Qiu: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_26575611afa85d17bbe9",
+        "description": "Peter Stone: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_d5a2778373db5c8da84f",
+        "description": "Warren Hunt Jr: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "policy_ambiguity",
+        "person_id": "person_e3dcb295f58055f690ef",
+        "description": "Calvin Lin: primary department is Computer Science; listed on official ECE faculty directory (ece.utexas.edu/people/faculty) but not in ECE-primary filtered view. Classified as joint_secondary based on official ECE listing. Individual profile confirms CS primary department. No explicit courtesy/joint subtype found. If this is a CS-only appointment with no genuine ECE joint appointment, the decision should be revised to excluded."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No explicitly labeled incoming faculty found on official ECE faculty pages (ece.utexas.edu/people/faculty and ece.utexas.edu/people/faculty/ece) as of observation date. Official announcements page not checked; possible incoming faculty may exist via announcement channels."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_743445b726894c3898eac9931fce3059",
+    "candidate_sha256": "887dfe7b8cd1eb8c2c4e10421a497d4ab0669c69898447eb73ec296a06a2d0de",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A6b9ae618-28f4-434c-b367-f351167a2697%253Adelegate-task%253A5246768a-1c7f-43ba-961c-83093200cf9e:ordinal:1",
+    "model": "claude-sonnet-4-6",
+    "started_at": "2026-11-23T04:12:07.630Z",
+    "finished_at": "2026-11-23T04:27:07.588Z",
+    "exit_code": 0
+  }
+}

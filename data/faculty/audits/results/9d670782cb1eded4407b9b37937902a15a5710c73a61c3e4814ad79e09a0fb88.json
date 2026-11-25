@@ -1,0 +1,719 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/7d3ddd2088b99c583f96110f01e9e096aff323006e97c186fd7e75887f27f81e.json",
+    "sha256": "7d3ddd2088b99c583f96110f01e9e096aff323006e97c186fd7e75887f27f81e"
+  },
+  "brief": {
+    "file": "audits/briefs/0eea6c08b8548334c83402683d938341d4b24275a2e8d5245307daa4067099a0.json",
+    "sha256": "0eea6c08b8548334c83402683d938341d4b24275a2e8d5245307daa4067099a0"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_17d33b6579844c75a0b5c4b7f0d1fc0a",
+    "candidate_sha256": "55ab6cfdeaedc7a45d3bbd6331fdac170272640c9aa667965951d9bf7b75f630",
+    "reviewer_id": "haiku-audit-utsa-2",
+    "reviewed_at": "2026-11-25T02:29:31+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty",
+        "https://klesse.utsa.edu/electrical/faculty?section=courtesy",
+        "https://klesse.utsa.edu/electrical/faculty?section=courtesy",
+        "https://klesse.utsa.edu/electrical/faculty?section=courtesy",
+        "https://klesse.utsa.edu/electrical/faculty?section=courtesy",
+        "https://klesse.utsa.edu/electrical/faculty?section=courtesy"
+      ],
+      "checked_list_ids": [
+        "faculty",
+        "courtesy"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_eb1ebb3f4e525b4386bf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Associate Professor\" on the official EE faculty list (Faculty heading). Regular professorial rank in the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_2801302b1b235267ae43",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card titles \"Klesse Endowed Professor\" and NAI fellow. Official profile states \"Klesse Endowed Professor, Electrical Engineering\": endowed chair with professorial rank in the main list.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_akopian_profile"
+        ]
+      },
+      {
+        "person_id": "person_871dc9700d26599cacfe",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor\" (GreenStar Endowed Fellow in Energy is a fellowship, not a rank change). Regular professor in the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_10f54f33f12d551189eb",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor of Instruction\": instruction-track title, excluded as academic_professional under the project convention.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_b5fce86da94d55ae8721",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Distinguished Research Professor\" is a research-professor title, excluded as research_only. The official profile gives no rank line, only contact details, so no EE professorial appointment is established beyond the EE roster listing.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_bhalla_profile"
+        ]
+      },
+      {
+        "person_id": "person_df42782061d059bdb13f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor\", Department Chair, Mary Lou Clarke Endowed Distinguished Professorship. Regular professor in the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_e4322c14c5885e858624",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Associate Professor\" (Cloud Technology Endowed Fellow). Regular professorial rank in the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_325f813d298853d8965d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_f5d53c9e140d5852941a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor\" (GreenStar Endowed Associate Professor in Energy). Regular professor in the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_a4f74f76cf415766b12c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Associate Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_936f9eb246835287a7cc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card titles \"Robert E. Clarke Endowed Professor\" and \"Professor\" (MatE Program Director is administrative). Regular professor in the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_b340baaad9785929a839",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor of Instruction\" (Undergraduate Advisor of Record, Assistant Chair are administrative). Instruction-track title excluded under the convention for Professor of Instruction; the teaching category would also exclude it.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_28b9132d27a1582385bf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_cb2e1559447b59e08efa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor\" on the official EE faculty list (Faculty heading), which establishes membership in the combined department. The university-hosted personal site (ceid.utsa.edu/yjin) gives \"Professor, Department of Electrical and Computer Engineering\", which corroborates the rank and does not conflict with the EE roster. Would change only if an official source placed her solely in another department.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_jin_site"
+        ]
+      },
+      {
+        "person_id": "person_982676df8b5b5143b6f6",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor of Instruction\": excluded as academic_professional under the convention.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_eab3a1d07f5a5325bac1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor and Graduate Advisor of Record\" on the official EE faculty list. The university-hosted personal site (ceid.utsa.edu/wlin) states he is currently a professor of Electrical and Computer Engineering, which corroborates without conflict.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_lin_site"
+        ]
+      },
+      {
+        "person_id": "person_0b483dbb567d5d909699",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Associate Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_919c4540e12b549485a6",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Associate Professor of Practice\"; official profile states \"Associate Professor of Practice, Electrical Engineering\". Practice-track title, excluded as academic_professional.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_michael_profile"
+        ]
+      },
+      {
+        "person_id": "person_60a392baff4156a6ace0",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor In Practice\"; official profile states \"Professor In Practice, Electrical Engineering\". Practice-track title (Professor of the Practice variant), excluded as academic_professional.",
+        "source_ids": [
+          "src_faculty_list",
+          "src_morton_profile"
+        ]
+      },
+      {
+        "person_id": "person_4fdc13a1c30d56289010",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_e4676d26fe3f54b3b1ed",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_465d8fb618a6583d9e23",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor of Research\" is a research-professor title, excluded as research_only. The card links to no profile.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_bc56c5f9ac1e54819b37",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Emeritus Professor\": emeritus, excluded.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_843eec4a6ecf50c4a9b6",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor of Instruction\": instruction-track title, excluded as academic_professional under the convention.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_58ca8589d1d35a89bd64",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_2c505e355db15c379ea0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_0b5524d7248c5724be7b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Associate Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_9310a0ff32d0518f9e50",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Card title \"Assistant Professor\" on the main list.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_4f452194eb435b87b48e",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff card \"Sr. Administrative Manager\" under the Staff heading; no professorial appointment.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_48bf649c18775292af7d",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff card \"Senior Program Coordinator\" under the Staff heading; no professorial appointment.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_03be24dd924b5ff9b8f7",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff card \"Senior Program Manager\" under the Staff heading; no professorial appointment.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_dc774eef49605e528501",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff card \"Lab Services Supervisor II\" under the Staff heading; no professorial appointment.",
+        "source_ids": [
+          "src_faculty_list"
+        ]
+      },
+      {
+        "person_id": "person_7932eecb7c235e4a965a",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the department's own \"Courtesy Appointment\" heading with rank \"Professor\". The linked physics URL redirects to the physics department landing page and does not name him, so the rank rests on the EE courtesy list. Courtesy qualifies under the policy.",
+        "source_ids": [
+          "src_courtesy_list",
+          "src_ayon_physics"
+        ]
+      },
+      {
+        "person_id": "person_1343ee3fe8bd5afd8756",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the department's \"Courtesy Appointment\" heading with rank \"Associate Professor\". No profile link is given, so the rank rests on the EE courtesy list. Distinct from Ruyan Guo (regular, included earlier).",
+        "source_ids": [
+          "src_courtesy_list"
+        ]
+      },
+      {
+        "person_id": "person_4fed340bb0595d9bbc9a",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the department's \"Courtesy Appointment\" heading with rank \"Associate Professor\". The linked cs.utsa.edu URL redirects to the CS department landing page and does not name him, so the rank rests on the EE courtesy list.",
+        "source_ids": [
+          "src_courtesy_list",
+          "src_rad_cs"
+        ]
+      },
+      {
+        "person_id": "person_41716966859f56b8b764",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the department's \"Courtesy Appointment\" heading with rank \"Assistant Professor\". His own profile shows \"Assistant Professor, Architecture and Planning\" with no EE line; the profile does not deny the EE courtesy designation, so the explicit department courtesy listing and the professorial rank both hold.",
+        "source_ids": [
+          "src_courtesy_list",
+          "src_wibranek_profile"
+        ]
+      },
+      {
+        "person_id": "person_89000fe9ce7c5533bd8c",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed under the department's \"Courtesy Appointment\" heading with rank \"Professor\". The linked cs.utsa.edu URL redirects to the CS department landing page and does not name him, so the rank rests on the EE courtesy list.",
+        "source_ids": [
+          "src_courtesy_list",
+          "src_yuen_cs"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src_faculty_list",
+        "url": "https://klesse.utsa.edu/electrical/faculty/",
+        "observed_at": "2026-11-25T02:28:09+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Person cards under h2 'Faculty' (28) and h2 'Staff' (4); plain-list sections below",
+        "response_sha256": "eeab2162df3ec8841468ffc113b79e3950fdbe99865599a54f51b296b0171328"
+      },
+      {
+        "id": "src_courtesy_list",
+        "url": "https://klesse.utsa.edu/electrical/faculty/?section=courtesy",
+        "observed_at": "2026-11-25T02:28:09+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "h3 'Courtesy Appointment' list: Ayon, Arturo A, Professor; Guo, Yuanxiong, Associate Professor; Rad, Paul, Associate Professor; Wibranek, Bastian, Assistant Professor; Yuen, Timothy T, Professor (same bytes as the faculty page)",
+        "response_sha256": "eeab2162df3ec8841468ffc113b79e3950fdbe99865599a54f51b296b0171328"
+      },
+      {
+        "id": "src_ayon_physics",
+        "url": "https://www.utsa.edu/physics/faculty/ArturoAyon.html",
+        "observed_at": "2026-11-25T02:28:09+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Requested URL redirects to https://sciences.utsa.edu/physics-astronomy/ (department landing page). Name 'Ayon' does not appear; no rank or appointment for him is shown.",
+        "response_sha256": "2f60acef83bb711804d2d0bf8c67f9ceaaa11e63626bb1644660094168310422"
+      },
+      {
+        "id": "src_rad_cs",
+        "url": "https://cs.utsa.edu/people/faculty/rad-paul-1247",
+        "observed_at": "2026-11-25T02:28:10+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Requested URL redirects to https://caicc.utsa.edu/computer-science/ (department landing page). Name 'Rad' does not appear; no rank shown.",
+        "response_sha256": "525f307a1caffed6287d8215dfd190e570979ef5af7d14cde0ffb32a5de8013e"
+      },
+      {
+        "id": "src_yuen_cs",
+        "url": "https://cs.utsa.edu/people/faculty/yuen-timothy-945",
+        "observed_at": "2026-11-25T02:28:11+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Requested URL redirects to https://caicc.utsa.edu/computer-science/ (department landing page). Name 'Yuen' does not appear; no rank shown.",
+        "response_sha256": "525f307a1caffed6287d8215dfd190e570979ef5af7d14cde0ffb32a5de8013e"
+      },
+      {
+        "id": "src_wibranek_profile",
+        "url": "https://klesse.utsa.edu/faculty/profiles/wibranek-bastian.html",
+        "observed_at": "2026-11-25T02:28:12+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Title line: 'Assistant Professor, Architecture and Planning'. No Electrical Engineering or courtesy line on the profile.",
+        "response_sha256": "3d5eb267fa3376beffacc9a019b7a16e5e90c8b6793796429280cee16c4171e6"
+      },
+      {
+        "id": "src_akopian_profile",
+        "url": "https://klesse.utsa.edu/faculty/profiles/akopian-david.html",
+        "observed_at": "2026-11-25T02:28:46+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Title line: 'Klesse Endowed Professor, Electrical Engineering'",
+        "response_sha256": "5b659c4d7c8f7a5499fa7174ebae694094806cbf0643687384a6aed565430c0d"
+      },
+      {
+        "id": "src_bhalla_profile",
+        "url": "https://klesse.utsa.edu/faculty/profiles/bhalla-amar.html",
+        "observed_at": "2026-11-25T02:28:47+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Name block: no rank or department line; contact details only",
+        "response_sha256": "76ef4f4b5583836f4cf6d8e1fdf9660478f9a0c6388d41ad6eed7cf6298cb620"
+      },
+      {
+        "id": "src_michael_profile",
+        "url": "https://klesse.utsa.edu/faculty/profiles/michael-christoper.html",
+        "observed_at": "2026-11-25T02:28:47+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Title line: 'Associate Professor of Practice, Electrical Engineering'",
+        "response_sha256": "618d5c545b97d7ddc0ba5c08809909ddd0a5b4ed80406111a84fadcafcae27b1"
+      },
+      {
+        "id": "src_morton_profile",
+        "url": "https://klesse.utsa.edu/faculty/profiles/morton-paul.html",
+        "observed_at": "2026-11-25T02:28:47+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Title line: 'Professor In Practice, Electrical Engineering'",
+        "response_sha256": "b8aaf6463a405bdfdb6b48f118acb83661664c4e4720260faf40df5c6726b5ab"
+      },
+      {
+        "id": "src_jin_site",
+        "url": "https://ceid.utsa.edu/yjin",
+        "observed_at": "2026-11-25T02:28:48+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Title block: 'Professor' / 'Department of Electrical and Computer Engineering' (university-hosted personal site, corroborative only; redirects to /yjin/)",
+        "response_sha256": "9a748fd1ed8312aa73cc850e6a33eafb6873f974fdb57f0be81432ba4a7d52d7"
+      },
+      {
+        "id": "src_lin_site",
+        "url": "https://ceid.utsa.edu/wlin",
+        "observed_at": "2026-11-25T02:28:48+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Biography: 'currently a professor of Electrical and Computer Engineering at the University of Texas at San Antonio' (university-hosted personal site, corroborative only; redirects to /wlin/)",
+        "response_sha256": "834a77193baacc20240b39e83c302261d7cfdeed3f75032f4472ee40e717ad85"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "decision",
+        "person_id": "person_2801302b1b235267ae43",
+        "description": "Included as regular. The card shows only \"Klesse Endowed Professor\" plus a fellowship, but the official profile states \"Klesse Endowed Professor, Electrical Engineering\" (re-fetched this run; unchanged). Would change to unresolved only if the official EE roster conflicted."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b5fce86da94d55ae8721",
+        "description": "Excluded as research_only on the card title \"Distinguished Research Professor\". The profile (re-fetched, unchanged) has no rank line. Would change only if an official source stated a non-research EE professorial appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_cb2e1559447b59e08efa",
+        "description": "Included as regular on the main-list card \"Professor\". The personal site (re-fetched; bytes differ from the prior run but the title block is unchanged) reads \"Professor, Department of Electrical and Computer Engineering\", which corroborates. Would change only if an official source placed her solely in the separate computer engineering department."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_eab3a1d07f5a5325bac1",
+        "description": "Included as regular on the main-list card \"Professor and Graduate Advisor of Record\". The personal site (re-fetched, unchanged) states he is currently a professor of Electrical and Computer Engineering. Same boundary as Jin."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b340baaad9785929a839",
+        "description": "Excluded. \"Assistant Professor of Instruction\" is an instruction-track title, excluded as academic_professional by analogy to Professor of Instruction (teaching would also exclude it). Assistant Chair and Undergraduate Advisor are administrative."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_919c4540e12b549485a6",
+        "description": "Excluded as academic_professional. Card and profile (re-fetched) both say \"Associate Professor of Practice\", a practice-track title, not regular or courtesy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_60a392baff4156a6ace0",
+        "description": "Excluded as academic_professional. Profile (re-fetched) states \"Professor In Practice, Electrical Engineering\", a practice-track professorship excluded by convention."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_465d8fb618a6583d9e23",
+        "description": "Excluded as research_only on the card title \"Assistant Professor of Research\". The card links to no profile."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_bc56c5f9ac1e54819b37",
+        "description": "Excluded as emeritus with current_state past. The card title is \"Emeritus Professor\"; no active appointment is shown."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_7932eecb7c235e4a965a",
+        "description": "Included as courtesy (current). The department's own Courtesy Appointment heading and the rank \"Professor\" are shown. The linked physics URL redirects to the physics department landing page, which does not name him, so no individual page confirms the rank. Would change only if the EE courtesy designation were withdrawn."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_1343ee3fe8bd5afd8756",
+        "description": "Included as courtesy (current) on the Courtesy Appointment heading with rank \"Associate Professor\". No profile link is given, so the rank rests on the EE list alone. Not the same person as Ruyan Guo."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4fed340bb0595d9bbc9a",
+        "description": "Included as courtesy (current) on the Courtesy Appointment heading with rank \"Associate Professor\". The linked cs.utsa.edu URL redirects to the CS department landing page and does not name him, so the rank rests on the EE list. Would change only if the courtesy designation were withdrawn."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_41716966859f56b8b764",
+        "description": "Included as courtesy (current). The EE Courtesy Appointment heading and rank \"Assistant Professor\" are shown. His own profile lists \"Assistant Professor, Architecture and Planning\" and no EE line, which is a primary-unit difference, not a denial of the EE courtesy designation. Would change if an official source withdrew the EE courtesy appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_89000fe9ce7c5533bd8c",
+        "description": "Included as courtesy (current) on the Courtesy Appointment heading with rank \"Professor\". The linked cs.utsa.edu URL redirects to the CS department landing page and does not name him, so the rank rests on the EE list. Would change only if the courtesy designation were withdrawn."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Adjunct and Adjoint Professors (7 names) and Industrial Teaching Faculty (8 names) are on the faculty page but not in the brief, so they are not enumerated as records and not treated as omissions. Adjunct and Adjoint: Frye, Michael (Adjoint Professor); Brothers, Louis (Adjunct Professor); Miserlis, Dimitrios (Assistant Professor, listed under the adjunct heading); Griffith, Henry (Lecturer); Benavidez, Patrick J (Asst. Professor of Instruction); Hansen, Lars K (Professor of Practice); Parsi, Joseph (Adjunct Assistant Professor). Industrial Teaching Faculty: Applonie, Demir, Eratne, Hestilow, Ibaroudene, Khosravi Eghbal, Ortega, Sahraei Manjili (all Lecturer). None of these 15 names matches a brief person."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "The courtesy list source contains an HTML-commented entry \"Choo, Raymond, Professor\" (business.utsa.edu link). It is not rendered, so it is not on the page as displayed and is not counted."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Count comment check: the HTML comment reads \"Faculty Group - Filtered (38)\" but the page does not show 10 more faculty. The page has 32 rendered person cards (28 Faculty, 4 Staff), none hidden by display:none or d-none. The Staff comment reads \"(5)\" and renders 4 cards. The Zhifeng Han staff card links to profiles/wibranek-bastian.html, another person's profile; the brief uses the EE page URL for him, so the decision is unaffected. The 38 figure cannot be reconciled from visible content."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No incoming or announced appointments, joint or secondary appointments, or explicit affiliate or below-the-line designations appear on the page or the courtesy section. No record uses those states, and effective_from_json is null for all records. Profiles fetched this run: Akopian, Bhalla, Michael, Morton, Jin, Lin, Ayon (redirected), Rad (redirected), Yuen (redirected), Wibranek."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_17d33b6579844c75a0b5c4b7f0d1fc0a",
+    "candidate_sha256": "55ab6cfdeaedc7a45d3bbd6331fdac170272640c9aa667965951d9bf7b75f630",
+    "transport": "t3",
+    "run_id": "agent_aa7e804d08486053c",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T02:29:48.629111+00:00",
+    "exit_code": 0
+  }
+}

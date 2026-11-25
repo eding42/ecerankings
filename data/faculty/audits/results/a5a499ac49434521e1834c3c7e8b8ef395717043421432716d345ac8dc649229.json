@@ -1,0 +1,499 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/462d6b926181891ff4db2f10385e837cdb97e9242481c39f1a39fa909bc8ccf4.json",
+    "sha256": "462d6b926181891ff4db2f10385e837cdb97e9242481c39f1a39fa909bc8ccf4"
+  },
+  "brief": {
+    "file": "audits/briefs/14a59a99a9b29d2ea5ecbbd0710e40e0d54d8a43b040ce9e879a08526b66cf0f.json",
+    "sha256": "14a59a99a9b29d2ea5ecbbd0710e40e0d54d8a43b040ce9e879a08526b66cf0f"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_8bfcb917371c49ce845b6f18e16cdd09",
+    "candidate_sha256": "fe53d70b94857cd4261ef56289f2c2730199a0b72764e8f00d6e39e370f20f57",
+    "reviewer_id": "haiku-audit-lsu",
+    "reviewed_at": "2026-11-25T02:19:29+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js"
+      ],
+      "checked_list_ids": [
+        "faculty-az"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_f50cc723da9754539d90",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor' is a teaching-track title (Instructor); teaching is excluded by policy.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_a08e43ccd70550fb98c3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Professor Emeritus' (row also carries the Emeriti filter class, consistent). Emeritus is an excluded category; state past.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_95fdf95559775c30b9de",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor' is a teaching-track title (Instructor); teaching is excluded by policy.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_e482146d8c2c5dba86c3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Professor Emeritus' (row also carries the Emeriti filter class, consistent). Emeritus is an excluded category; state past.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_c744d3fad44b53378317",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Michel B. Voorhies Distinguished Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_3e1425201b45537c8ed6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Assistant Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_3ae1b2ee36dd57eea3e7",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor-Adjunct'; the only ECE-related role is adjunct, which is excluded by policy (adjunct). Not counted as teaching or professorial.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_e035ade2bd7d5bd1a256",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Division Associate Chairman, Entergy Louisiana Associate Professor in Power Engineering' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_7c55ef95a21d50f0937d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'F. Hugh Coughlin/CLECO Distinguished Professor, IEEE Fellow' is a named professorship with professorial rank. The row also carries the internal 'Emeriti' filter class, which conflicts with the displayed rank. The class is a department filter label, not an appointment statement; neither the downloaded script nor any other retrieved page states emeritus status (gu.php returned 404). Under source_precedence the specific displayed appointment title governs over the generic filter tag: regular, current. Would change to excluded/emeritus (past) if an official source states emeritus status. Row has no course listings (as Ajmera and Czarnecki also do); this is not evidence of rank.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_7acb8748e9ba51299219",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'ISC Constructors Associate Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_3bb550f2dd365dd4b3dc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Associate Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_6423b65aa2845fcfaac3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Assistant Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_6169c1f9e630567a96d4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Associate Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_0c42df34778f5ac18d4b",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor-Adjunct'; the only ECE-related role is adjunct, which is excluded by policy (adjunct). Not counted as teaching or professorial.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_54b1fad5b0c25f72af38",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'P.E., Professor, Newton B Thomas Professorship' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_8ee54b6873d0549eba61",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Associate Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_c8629bbc569a5241b6d4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor-Adjunct'; the only ECE-related role is adjunct, which is excluded by policy (adjunct). Not counted as teaching or professorial.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_f6991966a8515b8583b6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Michel B. Voorhies Distinguished Professor' is a named professorship with professorial rank. The row also carries the internal 'Emeriti' filter class, which conflicts with the displayed rank. The class is a department filter label, not an appointment statement; no retrieved official statement says emeritus (naraghi-pour.php returned 404). Under source_precedence the specific displayed appointment title governs: regular, current. Would change to excluded/emeritus (past) if an official source states emeritus status. Row has no course listings; this is not evidence of rank.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_92515361f6c0592ba102",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor, Undergraduate Advisor' is a teaching-track title (Instructor); teaching is excluded by policy.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_98a2cd07ecb55a529f21",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Mark & Carolyn Guidry Associate Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_df15283f58e35111a931",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Assistant Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_daaceb640d295429ab59",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'John E. and Beatrice L. Ritter Distinguished Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_55443a6f2d5d53ae8949",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor-Adjunct'; the only ECE-related role is adjunct, which is excluded by policy (adjunct). Not counted as teaching or professorial.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_b21e6871c01057cf8ad5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Instructor-Adjunct'; the only ECE-related role is adjunct, which is excluded by policy (adjunct). Not counted as teaching or professorial.",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_ef73f9293e875e40a983",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Chevron Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_73705eec2882577299d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Elaine T. and Donald Cecil Delaune Distinguished Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_4307e5e563e250e7b206",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Professor, Rubicon Professorship' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_5e5bea362bae5204b142",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Division Chairman, Michel B. Voorhies Distinguished Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_bec30571a3eb544c977a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Associate Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      },
+      {
+        "person_id": "person_3e86ec21642c5d97bd48",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Displayed rank 'Assistant Professor' is a professorial title in the ECE department's official A-Z roster; regular ECE professor, current (not an emeritus, teaching or adjunct title).",
+        "source_ids": [
+          "lsu-faculty-az-js"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "lsu-faculty-az-js",
+        "url": "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+        "observed_at": "2026-11-25T02:17:54+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Whole script (page_html string concatenation decoded to HTML); tr.fac-az-row rows, div.name anchor text, div.nrank displayed rank, fac-az-key-* filter classes",
+        "response_sha256": "07ce39b83a022f24846c2b0926ec0c95ac0d37848e3896c97293b96a95e049f0"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Retrieval: https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js (brief.lists, primary) downloaded with curl -sS -L -m 90 at 2026-11-25T02:17:54Z (after brief.created_at 2026-11-25T02:17:28Z); 83,812 bytes; SHA-256 07ce39b8... (response_sha256 in sources)."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Parse: the script is 392 page_html += string statements (plus the var declaration), decoded with a stdlib Python decoder into 72,956 characters of HTML. The table contains exactly 30 tr.fac-az-row entries, each with a name link, a div.nrank title and a fac-az-key-* filter class set. There are no section headings in the list; statuses come from the row's displayed rank."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Enumeration: all 30 displayed names match the brief's 30 required people exactly (after no normalization beyond whitespace), so there are no omissions and no list source failure. Expected_primary_profile_urls in the brief lists the URL without 'www.'; the exact brief.lists URL (with 'www.') was downloaded as instructed."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Profile pages: https://www.ece.lsu.edu/fac/gu.php, naraghi-pour.php and ajmera.php each returned HTTP 404 'File not found.' at 2026-11-25T02:18Z. They are not cited; no profile evidence was available for any person. Profile pages were not otherwise attempted."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Counts from displayed ranks: 20 professorial rows (regular, current; includes Gu and Naraghi-Pour), 2 Professor Emeritus (excluded, past: Ajmera, Czarnecki), 3 Instructor (teaching, excluded: Abdelwahab, Bonner, OLoughlin), 5 Instructor-Adjunct (adjunct, excluded: Duarte, McAnelly, Morell, Salehi, Stewart). Included total 20, of which none incoming (no start dates in the script)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_7c55ef95a21d50f0937d",
+        "description": "Borderline: displayed rank is a professorial named chair, but the row carries the internal 'Emeriti' filter class. Decided regular/current by source_precedence (specific displayed appointment title over generic filter label). Outcome changes to excluded/past only if an official source states emeritus status."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_f6991966a8515b8583b6",
+        "description": "Borderline: displayed rank is a professorial named chair, but the row carries the internal 'Emeriti' filter class. Decided regular/current by source_precedence. Outcome changes to excluded/past only if an official source states emeritus status."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_3ae1b2ee36dd57eea3e7",
+        "description": "Instructor-Adjunct: excluded as adjunct per policy (not counted as teaching or professorial)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_0c42df34778f5ac18d4b",
+        "description": "Instructor-Adjunct: excluded as adjunct per policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c8629bbc569a5241b6d4",
+        "description": "Instructor-Adjunct: excluded as adjunct per policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_55443a6f2d5d53ae8949",
+        "description": "Instructor-Adjunct: excluded as adjunct per policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b21e6871c01057cf8ad5",
+        "description": "Instructor-Adjunct: excluded as adjunct per policy."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_8bfcb917371c49ce845b6f18e16cdd09",
+    "candidate_sha256": "fe53d70b94857cd4261ef56289f2c2730199a0b72764e8f00d6e39e370f20f57",
+    "transport": "t3",
+    "run_id": "agent_a25f072a2ef1ae071",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T02:19:55.093352+00:00",
+    "exit_code": 0
+  }
+}

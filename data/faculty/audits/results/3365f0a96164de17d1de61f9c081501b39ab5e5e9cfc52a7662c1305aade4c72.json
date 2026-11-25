@@ -1,0 +1,3599 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/c3ef211f035ed9957f59368724f4ecb1573f348e5d2c94d512c5e55e78ca79e8.json",
+    "sha256": "c3ef211f035ed9957f59368724f4ecb1573f348e5d2c94d512c5e55e78ca79e8"
+  },
+  "brief": {
+    "file": "audits/briefs/e6fcc1c8d7bc1e394288330967059115cf069655751c262d40037169dd33e33f.json",
+    "sha256": "e6fcc1c8d7bc1e394288330967059115cf069655751c262d40037169dd33e33f"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_f51622f5af0142d1b4f19799c983924a",
+    "candidate_sha256": "df52249729f9f128dbcafc82a94f1de961cf3394a33012bf3e90a30066d78044",
+    "reviewer_id": "claude-opus-5-5-v5-t20-verify",
+    "reviewed_at": "2026-11-23T11:31:13.412267+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.vt.edu/people/faculty.html",
+        "https://ece.vt.edu/people/profile/abbott.html",
+        "https://ece.vt.edu/people/profile/adams.html",
+        "https://ece.vt.edu/people/profile/agah.html",
+        "https://ece.vt.edu/people/profile/amer-zayegh.html",
+        "https://ece.vt.edu/people/profile/ampadu.html",
+        "https://ece.vt.edu/people/profile/aneja.html",
+        "https://ece.vt.edu/people/profile/bailey.html",
+        "https://ece.vt.edu/people/profile/baker.html",
+        "https://ece.vt.edu/people/profile/ball.html",
+        "https://ece.vt.edu/people/profile/baumann.html",
+        "https://ece.vt.edu/people/profile/boker.html",
+        "https://ece.vt.edu/people/profile/budhu.html",
+        "https://ece.vt.edu/people/profile/buehrer.html",
+        "https://ece.vt.edu/people/profile/burgos.html",
+        "https://ece.vt.edu/people/profile/centeno.html",
+        "https://ece.vt.edu/people/profile/chantem.html",
+        "https://ece.vt.edu/people/profile/connors.html",
+        "https://ece.vt.edu/people/profile/cooper.html",
+        "https://ece.vt.edu/people/profile/dasilva.html",
+        "https://ece.vt.edu/people/profile/david-blankenship.html",
+        "https://ece.vt.edu/people/profile/dean-warren-dixon.html",
+        "https://ece.vt.edu/people/profile/dhillon.html",
+        "https://ece.vt.edu/people/profile/dimaricm.html",
+        "https://ece.vt.edu/people/profile/dongd.html",
+        "https://ece.vt.edu/people/profile/dunning.html",
+        "https://ece.vt.edu/people/profile/ellingson.html",
+        "https://ece.vt.edu/people/profile/francis-hou.html",
+        "https://ece.vt.edu/people/profile/garcia.html",
+        "https://ece.vt.edu/people/profile/gerdes.html",
+        "https://ece.vt.edu/people/profile/giles.html",
+        "https://ece.vt.edu/people/profile/had.html",
+        "https://ece.vt.edu/people/profile/has.html",
+        "https://ece.vt.edu/people/profile/hou.html",
+        "https://ece.vt.edu/people/profile/hsiao.html",
+        "https://ece.vt.edu/people/profile/hu.html",
+        "https://ece.vt.edu/people/profile/hudait.html",
+        "https://ece.vt.edu/people/profile/jiar.html",
+        "https://ece.vt.edu/people/profile/jiax.html",
+        "https://ece.vt.edu/people/profile/jinming.html",
+        "https://ece.vt.edu/people/profile/jones.html",
+        "https://ece.vt.edu/people/profile/lai.html",
+        "https://ece.vt.edu/people/profile/lanzerotti.html",
+        "https://ece.vt.edu/people/profile/lester.html",
+        "https://ece.vt.edu/people/profile/li.html",
+        "https://ece.vt.edu/people/profile/limes.html",
+        "https://ece.vt.edu/people/profile/lin.html",
+        "https://ece.vt.edu/people/profile/liuc.html",
+        "https://ece.vt.edu/people/profile/liul.html",
+        "https://ece.vt.edu/people/profile/manteghi.html",
+        "https://ece.vt.edu/people/profile/martin.html",
+        "https://ece.vt.edu/people/profile/mehrizi.html",
+        "https://ece.vt.edu/people/profile/michaels.html",
+        "https://ece.vt.edu/people/profile/midkiff.html",
+        "https://ece.vt.edu/people/profile/milburn.html",
+        "https://ece.vt.edu/people/profile/mili.html",
+        "https://ece.vt.edu/people/profile/ming-xu.html",
+        "https://ece.vt.edu/people/profile/minseong-park.html",
+        "https://ece.vt.edu/people/profile/nazhandali.html",
+        "https://ece.vt.edu/people/profile/ngo.html",
+        "https://ece.vt.edu/people/profile/orlowski.html",
+        "https://ece.vt.edu/people/profile/paul.html",
+        "https://ece.vt.edu/people/profile/plassmann.html",
+        "https://ece.vt.edu/people/profile/poon.html",
+        "https://ece.vt.edu/people/profile/raghunathan.html",
+        "https://ece.vt.edu/people/profile/rahman.html",
+        "https://ece.vt.edu/people/profile/ransbottom.html",
+        "https://ece.vt.edu/people/profile/ravindran.html",
+        "https://ece.vt.edu/people/profile/reed.html",
+        "https://ece.vt.edu/people/profile/ruohoniemi.html",
+        "https://ece.vt.edu/people/profile/saad.html",
+        "https://ece.vt.edu/people/profile/safaaijazi.html",
+        "https://ece.vt.edu/people/profile/sands.html",
+        "https://ece.vt.edu/people/profile/sarker.html",
+        "https://ece.vt.edu/people/profile/scales.html",
+        "https://ece.vt.edu/people/profile/shaolb.html",
+        "https://ece.vt.edu/people/profile/smith.html",
+        "https://ece.vt.edu/people/profile/soysal.html",
+        "https://ece.vt.edu/people/profile/stavrou.html",
+        "https://ece.vt.edu/people/profile/stilwell.html",
+        "https://ece.vt.edu/people/profile/talty.html",
+        "https://ece.vt.edu/people/profile/tarun-cousik.html",
+        "https://ece.vt.edu/people/profile/thweatt.html",
+        "https://ece.vt.edu/people/profile/tryfona.html",
+        "https://ece.vt.edu/people/profile/walling.html",
+        "https://ece.vt.edu/people/profile/wang.html",
+        "https://ece.vt.edu/people/profile/wanga.html",
+        "https://ece.vt.edu/people/profile/wangh.html",
+        "https://ece.vt.edu/people/profile/wangy.html",
+        "https://ece.vt.edu/people/profile/williams.html",
+        "https://ece.vt.edu/people/profile/wyatt.html",
+        "https://ece.vt.edu/people/profile/xiong.html",
+        "https://ece.vt.edu/people/profile/xu.html",
+        "https://ece.vt.edu/people/profile/xuan.html",
+        "https://ece.vt.edu/people/profile/yang.html",
+        "https://ece.vt.edu/people/profile/yi.html",
+        "https://ece.vt.edu/people/profile/yug.html",
+        "https://ece.vt.edu/people/profile/yuw.html",
+        "https://ece.vt.edu/people/profile/zeng.html",
+        "https://ece.vt.edu/people/profile/zhangr.html",
+        "https://ece.vt.edu/people/profile/zhangyu-guan.html",
+        "https://ece.vt.edu/people/profile/zhou.html",
+        "https://ece.vt.edu/people/profile/zhu.html",
+        "https://ece.vt.edu/people/profile/zhu0.html"
+      ],
+      "checked_list_ids": [
+        "faculty"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_043a28eaf00d50ba9f9a",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Mazen Farhood\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_044ecb1dbe6c5defbdbf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_a0bb21a6a901e8beec942e2f"
+        ]
+      },
+      {
+        "person_id": "person_05bced70e9395085884d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Joseph Loring Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_41dd8b16627e2824d7892cac",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_06029f51e86451ab878b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; Bradley Senior Fellow Director, Power and Energy Center (PEC); tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c52d084b15d697b523cafbe3"
+        ]
+      },
+      {
+        "person_id": "person_08a7e44f0b605f5f9d60",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Wenjing Lou\" as \"W.C. English Endowed Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_08fefa0262485b7b98b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c53dd5f079e835952e73cf6d"
+        ]
+      },
+      {
+        "person_id": "person_0b6a25150d00523194ce",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Professor; Assistant Graduate Director for MS Programs. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c16b50dd98877d5286fb8e63"
+        ]
+      },
+      {
+        "person_id": "person_0e89692c671259d0a2eb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_92f0c25e4f4073da399fac61"
+        ]
+      },
+      {
+        "person_id": "person_0e97552cdc7a5c0f9942",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Fred C. Lee\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_0ebb69da379c51768fb6",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section; linked profile title \"Research Associate\" (non-professorial research staff). Same person as the profile-URL Cousik record.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_0f2b62bb0163555d9ec1",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Boran Fan\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_10c56f84209e572c9a86",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_8ae89ba2d55608fd3a2ae251"
+        ]
+      },
+      {
+        "person_id": "person_10fb9ab90fb75428940d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_3bde71f17dd983abdf45c11c",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_12537efc364c54e29c13",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Shirish S. Sathaye Junior Faculty Fellow; Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_17aca8a1a84e66d394dc2d24",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_129851b28a0b5f229275",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_71e8f46385369490399ff2e5"
+        ]
+      },
+      {
+        "person_id": "person_1770d0a3d0ee51639dfc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_26e94e8461f341bde36e7f97",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_19e746a6e9e95217960f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_a2d66562f029ab84e08b33fa"
+        ]
+      },
+      {
+        "person_id": "person_1d4592e9baf85ce0b60f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Grant A. Dove Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2525d36681ffcdc92a2f4e35",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_1f6d42a3451c5558ac41",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Chad Spooner\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_1f709d20bcfa58cb9de8",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_a2cad380c3e55ac93c9b4027"
+        ]
+      },
+      {
+        "person_id": "person_1f89da1f9c3a57199c15",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Matthew Hicks\" as \"Associate Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_1fa129e3d18e5ce3ac21",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Andrew J. Young Professor; Bradley Senior Faculty Fellow; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_df61880fb1ee003d27b291a7"
+        ]
+      },
+      {
+        "person_id": "person_23a6b7d7dd815b41ba9a",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Edson Horta\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_23c659dd8daf5e81bdbb",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"William A. Davis\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_25836094c6175e20964a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_940007cd1c19db47fd5c9511"
+        ]
+      },
+      {
+        "person_id": "person_2646898d675e58fbb83c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_54369c6d02eb3e6c6523023d"
+        ]
+      },
+      {
+        "person_id": "person_2798837d18cc5cf390fc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_276bb979057d73535bc6b5e4",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_2c4259051bac5270801b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Dushan Boroyevich\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_2dc5606bef5252ccb580",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_b4a8b07990d34751df2eb86e"
+        ]
+      },
+      {
+        "person_id": "person_2e27899565c45e86838c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Peter Athanas\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_2fe6776bd9205b6a8c66",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Edwards Fox\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_303b6c850160539d9adb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Bradley Professor of Cybersecurity and Executive Director of the Commonwealth Cyber Initiative; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_6b5720eab7f02d5cfeafcaab"
+        ]
+      },
+      {
+        "person_id": "person_304480dceb6f5a64a8b9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_7339ebeb519261158ae38c54"
+        ]
+      },
+      {
+        "person_id": "person_30e26ef6f52850ba946f",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Joseph Gaeddert\" as \"Assistant Director, Spectrum Dominance Division\"; non-professorial research/center staff title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_32de1ed26eca5b77ad73",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_ba70fcb05ebb91943922dfb5"
+        ]
+      },
+      {
+        "person_id": "person_34ab1c5662ad5046b0ef",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_f19af49cd1cfaca8b7674e6a"
+        ]
+      },
+      {
+        "person_id": "person_34b67efd8b5c5d5dbbf7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_b18ae176589c5f7077ed2cda"
+        ]
+      },
+      {
+        "person_id": "person_35a5459293985cbd8067",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Daniel Weimer\" (Emeritus Faculty; Research Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_39496d604de35aeeb362",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Hesham Rakha\" as \"Samuel Reynolds Pritchard Professor of Engineering\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_3a7134b29fb35e029ac3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_392df6cfcd30fb9809d069e8",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_3bbd3f309e875738b183",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c2e2ae8af2dce05b1b695a91"
+        ]
+      },
+      {
+        "person_id": "person_3cb2959bc8995bc29ce8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Virginia Microelectronics Consortium Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_e38da5dbbfaa9d64e80055e7"
+        ]
+      },
+      {
+        "person_id": "person_3cb879aa346555e5abe1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_e9ec110c3165b20012a060ba"
+        ]
+      },
+      {
+        "person_id": "person_3cfdfa2f47a05a6f884e",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Justin Carstens\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_3d0a4a48f79e59c3a60e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_99426ec0a4a30d70cac13c3b"
+        ]
+      },
+      {
+        "person_id": "person_3ec409e589385af7acb3",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Ricardo Burdisso\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_407bc702e1555133a53e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_2c6b99916c57ca9069d47bb3",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_40b2ab8ead9a58b38c51",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Assistant Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_6441ae7fcd9409830d92951c"
+        ]
+      },
+      {
+        "person_id": "person_412e4cbc8dfc5187a552",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Ming Xiao\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_456dfc18653051f4981a",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Jacek Kibilda\" as \"Research Associate Professor\"; research-track title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_463d0cab78de56d9becc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor & Bradley Senior Faculty Fellow; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_37c4f5c795e08caee6ccb944",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_4aee0e5e69fa55778b42",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Benjamin Knapp\" only as \"Executive Director, ICAT\"; no professorial rank is stated in the captured official sources.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_4b40fef9152a531dbd56",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Jeonghyeon Ahn\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_4bad8d457d945a65a08a",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Shibaji Chakraborty\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_4fa855b111225e69a157",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_cf3303f115ac09505dce3e76"
+        ]
+      },
+      {
+        "person_id": "person_4ff1526cd9eb5a0bb5ca",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_9ebf219a3eed2456424acb20"
+        ]
+      },
+      {
+        "person_id": "person_50e404a672005f008a8f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_7dd94fa506481c338bce4454"
+        ]
+      },
+      {
+        "person_id": "person_512ef71f4c285790af11",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Fariborz Loharbi Pour\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_5330b0cce1945dab940f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Thaddeus Black\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_5519cbd602eb52c9a2c4",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: (no title field). VT catalog lists him as a Collegiate (teaching-track) Assistant/Associate Professor.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_cbb295a36bf75aef5be94fe1"
+        ]
+      },
+      {
+        "person_id": "person_57aec7261c3f5fa18899",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Bo Wen\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_596e987724a35a1aa7a9",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Bo Ji Professor / boji@vt.edu\" (name and rank run together). Explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_59cff87c60f4513f82cf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Charles W. Bostian\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_5a1c3e18bdb95285a9ae",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_9d66c41fff0a8791a14cd911"
+        ]
+      },
+      {
+        "person_id": "person_5a751db7f17e5b7caf98",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Wile Sehery\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_5b638005d1485c7b82d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Clayton Ayre Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_51ec8508913d054a7071abd8"
+        ]
+      },
+      {
+        "person_id": "person_5b639749580e57c99c7a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Ihsan Akbar\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_5ffb33b7320e5eb381fe",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Timothy Pratt\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_601080a83ed0573d9948",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_7e80b0172b1828ceed678173"
+        ]
+      },
+      {
+        "person_id": "person_65a578b28d27531bac06",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Richard O. Claus\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_6708704869e35d758293",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_00f1f5335a96c90798417c20",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_6770008b79c45c03a6dc",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Mark T. Jones\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_68e45cd8f9e153029484",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_ecd9bd8dfd9251362c10a202"
+        ]
+      },
+      {
+        "person_id": "person_6d584b691a265a9d9851",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Assistant Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_63f99806b2d9b13b91051a2f"
+        ]
+      },
+      {
+        "person_id": "person_6e170d05bf355d71b56f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Warren L. Stutzman\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_6e769df5ef8652c1bcfa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_6d5f16085ce0ee33bebc6098"
+        ]
+      },
+      {
+        "person_id": "person_6ee595ceb180541cb47d",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Rolf Mueller\" as \"Raymond E. and Shirley B. Lynn Professor of Mechanical Engineering\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_6fca10650d38528e80f3",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Pavlo Ponomarenko\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_719a2defa16b59fab67e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: James S. Tucker Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c79ac29788175f547f68e690"
+        ]
+      },
+      {
+        "person_id": "person_73c6eff79fe351ebba85",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Department Head for Graduate Studies and Fred C. Lee Chair in Electrical and Computer Engineering; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_5fc560f9e9b4b1b7701f019f"
+        ]
+      },
+      {
+        "person_id": "person_753143ee386058d5886f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_102b3981816b4197c5fdc685",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_7ac0409525b559249102",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Yi Shi\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_7b40c4f183f65df6916d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_7a69606bb185a13fc092860a"
+        ]
+      },
+      {
+        "person_id": "person_7e1971498cd75836954e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor & Bradley Faculty Fellow of Education; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_4d9340ecacb2b65879575bcd"
+        ]
+      },
+      {
+        "person_id": "person_7e9b658b2a9d5c5e82cd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_a06c39d428699f7fcc1853f3"
+        ]
+      },
+      {
+        "person_id": "person_7eae2750f77751178d37",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Nico Naus\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_8118085676ff51f5b15a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_cbd2655f14f9be98ab096034"
+        ]
+      },
+      {
+        "person_id": "person_8317db3971cb5a158a57",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Hoda Hassan\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_84116e99c12a5d0bb48a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_9e322b9c1a5ed12fa26c5729"
+        ]
+      },
+      {
+        "person_id": "person_844bd72d088958ad814b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_8c498245a77fbee086496f62"
+        ]
+      },
+      {
+        "person_id": "person_85199e7709325623b92a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Hugh P. and Ethel C. Kelly Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_9f1ee9419348f517dd71d524"
+        ]
+      },
+      {
+        "person_id": "person_8670ff6445865e7eac89",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Assistant Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_08a7b4854ba5bd56984c9e6f",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_89204f67dcaa5190b1a3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_218db43f12c0a9a16126e9b1",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_8e1e3458580358aabadd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor and Director, NSI Spectrum Dominance Division; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_8558a8f05c382c126ab3cabd"
+        ]
+      },
+      {
+        "person_id": "person_8f1d127462fe51b5abec",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_5691c808f5c1092fd86e4d9a"
+        ]
+      },
+      {
+        "person_id": "person_906a9b6a2f9554eb9fd3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_585cba6ec2ab34e19e628753"
+        ]
+      },
+      {
+        "person_id": "person_9076de7917c7575cb830",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"C. Robert Clauer\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_91be708c07a65677976d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Instructor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_08e80f148e77ecedc30748de",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_92c0e0be799950d98aec",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Assistant Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_383a67d5b8b64b6e53ed4c83",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_942b451e4ddb5552bc9d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"A. A. (Louis) Beex\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_951ba5b444ec54aea9b8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Krishnan Ramu\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_95685668814a5933855b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Department Head & Graduate Program Director; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_86748d0f5546126da4a4f4f1"
+        ]
+      },
+      {
+        "person_id": "person_977517024a70548c8fd9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Department Head for Academic Operations; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_150a2c2c7536e816525ef0e4",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_9da18d396c0a5c038bb9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_b770841610a8d113df92eb16"
+        ]
+      },
+      {
+        "person_id": "person_9e08fd37188459d59162",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Dan Stable\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_9e0d5ff28b115373a4ea",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Roanoke Electric Steel Research Professor; meta: ['Roanoke Electric Steel Research Professor']. 2026-27 VT catalog lists him as Professor Emeritus (\"Roanoke Electric Steel Professor in Engineering Emeritus: L. F. Lester\").",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_700ff4cdecf1a6e90af5b758"
+        ]
+      },
+      {
+        "person_id": "person_a095616f1b84529a9bad",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Dean of College of Engineering; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4be8d4524d782f36adc6e343",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_a0ed1f145ac95e01b77c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_cf7a6129dcc3fecec95bcd5b"
+        ]
+      },
+      {
+        "person_id": "person_a24c9cf69cd05ffc9f5a",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"David Gilham\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_a45030b7fda859f0ab76",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"William (Chris) Headly\" as \"Associate Director, Spectrum Dominance Division\"; non-professorial research/center staff title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_a568a41f5b095df6b618",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_f8de7c73dde201f7abbf40f8"
+        ]
+      },
+      {
+        "person_id": "person_a57ea8017aed5ea98fa5",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Associate Department Head for Undergraduate Studies. VT catalog lists him as a Collegiate (teaching-track) Assistant/Associate Professor.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_48f9df0b4c0414eb3f8232f8",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_a626d71c7cbe5196b444",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Aloizio Pereira De Silvia\" as \"CCI xG Testbed director\"; non-professorial research/center staff title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_a661d0a6330358268540",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Advanced Instructor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_98f8a4a70c3d516beecfde2b"
+        ]
+      },
+      {
+        "person_id": "person_a79bf2df745d511bacba",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c26997a58b68897022b5658a"
+        ]
+      },
+      {
+        "person_id": "person_a7d9c7240f485b848340",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"S.M. Shajedul Hasan\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ab93e61a1ff35223a1dc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_cd819dabf44d23406241de5e"
+        ]
+      },
+      {
+        "person_id": "person_ac74f0d612c655fb8363",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Xioguang Wang\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ace258874f535edabb60",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Brad Tilley\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b1f5a143397d546c9c30",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Kevin Kochersberger\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b2f379701ab753e989a5",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"F. William Stephenson\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b394d91706525228a834",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_64e98e22e3bd881c8f7d6787"
+        ]
+      },
+      {
+        "person_id": "person_b397dc32b6975c0c8779",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: University President and Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c2133e76cf3fb252dbd5a669"
+        ]
+      },
+      {
+        "person_id": "person_b4463433aa455edbb52a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: W. Martin Johnson Professor of Engineering; Associate Dean for Research and Innovation; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_acfe51b836a69e2260d72bcf"
+        ]
+      },
+      {
+        "person_id": "person_b4dac52d168b5e77a491",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_61b7d48fc419352b4e33de15"
+        ]
+      },
+      {
+        "person_id": "person_b5718c9126fc5bfba293",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Dimitrios Nikolopoulos\" as \"John W. Hancock Professor of Engineering\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b5a260c598b152988492",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Gary S. Brown\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b5f41e049cc550edad2a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Sedki M. Riad\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b5f75cde43c45bbe8bce",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Instructor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_367023bf02467585f6294a69",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_b8f68df0bac952148418",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_df00c65a14baae89e3a9cdcd"
+        ]
+      },
+      {
+        "person_id": "person_b9bbdbe2990d5ac0b0e7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor & Steven O. Lane Junior Faculty Fellow; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_559c39182dda1bda51bdd800"
+        ]
+      },
+      {
+        "person_id": "person_b9dd84111c35576aaac6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Profile title: American Electric Power Professor; meta: ['American Electric Power Professor Emeritus']. 2026-27 VT catalog lists him as Professor Emeritus (\"American Electric Power Professor Emeritus: Chen-Ching Liu\").",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_66c0af2706a90d7a8a6d05a9"
+        ]
+      },
+      {
+        "person_id": "person_bada069e115154afbaae",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Bradley Davis\" as \"Research Associate Professor, Spectrum Dominance Division\"; research-track title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_bc077c6df9f1547aa4bd",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Instructor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_9c1207b6a0bfb6e10ba7898a"
+        ]
+      },
+      {
+        "person_id": "person_bcd869300dcf5296b988",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Xueling Shi\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_bce21006d1c452b9b8d0",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Ali Butt\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_be4d800511aa5ba9844a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_37ccf320720b9c1f71cc674a",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_be680e7d382351769f26",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Joseph G. Tront\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_bf7c0811921e5ab7b493",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_e5cc590040b2b4c46177220b"
+        ]
+      },
+      {
+        "person_id": "person_c01d8501302b59118fcc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_b4f7951738cda1a261bb193e"
+        ]
+      },
+      {
+        "person_id": "person_c10e6e659dee5797b301",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Gao Xiang\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c157ff227e29514c8cc2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c40f95d40532551cbc1f2463"
+        ]
+      },
+      {
+        "person_id": "person_c31083823665520b9ae8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4779faaaf14fbb7925efa264",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c33e71647d8a5182987f",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Brentha Thurairajha\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c456fb1b1ed6590e9d73",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Zhonghua Xu\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c6ad755be00a598f9dd3",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Eric Burger\" as \"Research Director\"; non-professorial research/center staff title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c82cd7f33a525f669f49",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Cameron D. Patterson\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c87a1a93a2e85e23ac4b",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Wu-chun Feng\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_c9ec6f9a84b357cb91f7",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Qingyu Liu\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ca45d12abbdc5a0ab29d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Assistant Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_d35397e553bd315310ef74f4"
+        ]
+      },
+      {
+        "person_id": "person_ca59c3a38f08512aabd0",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Randy Marchany\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ca7ce72ba1865b689c1d",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Carl Dietrich\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ca99c60615295f2a8e32",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Robert P. Broadwater\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_cae52e76624a57cd96ed",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_47a5e76eb09c3684a5da9472",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_cb2e59d715455433955c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty. Not linked from faculty.html; VT catalog lists Q. Li among ECE Professors and as Elizabeth and James E. Turner Jr. Faculty Fellow.",
+        "source_ids": [
+          "shared_frozen_15f6467eee7da6901ff23bb7",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_cbbd244307555172963e",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Daniel Jakubisin\" as \"Research Assistant Professor, Spectrum Dominance Division\"; research-track title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_cc02827b6de35e32bc7e",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Pinhas Ben-Tzvi\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_cc8fdfcc92b1535db520",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_c8851bf25f1001cb39a74f51"
+        ]
+      },
+      {
+        "person_id": "person_ceae517e8dff5b1684c7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Willis G. Worcester Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_cd6e114426ee055b7679e4f3"
+        ]
+      },
+      {
+        "person_id": "person_d8e0e948cae057518016",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_66c330b9ffbf41ca539e87ca"
+        ]
+      },
+      {
+        "person_id": "person_da20600a44965170b1d9",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Randy Yamada\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_dc77754f31ab59d9a4e6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Arun G. Phadke\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_dca1e6ab1d165090a1e3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"Loannis M. Besieris\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_dcfb16f48a765724bed7",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title \"Research Associate\", tagged Research Faculty; listed in faculty.html Research Faculty. Non-professorial research staff.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_e2d848e89cb49ea265f5d2e4"
+        ]
+      },
+      {
+        "person_id": "person_ddeda4acd82b5d498570",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Sarnaduti Brahma\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_de4228c4691b51f4af24",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: J. Byron Maupin Professor of Engineering; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_b7f3c00f71265804cf97b708"
+        ]
+      },
+      {
+        "person_id": "person_dea92c3c119e51c18d7e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Emeritus Faculty section lists \"David A. de Wolf\" (Emeritus Faculty).",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_df5f78cc24dc5c23bb53",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Assistant Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_ba23763af2efc2315c828a5b"
+        ]
+      },
+      {
+        "person_id": "person_e1fe9cb9ffa65a8584bc",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Feras Batarseh\" as \"Associate Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_e3ce0cdb22935271a24a",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Seunghoon Baek\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_e5633d2808ad584a96dc",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Yi Shi Research Associate Professor / yshi@vt.edu\"; research-track title, not a professorial courtesy appointment under policy.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_e59b5f5bbcf653d49f58",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_15f230a8644b9c5fc1437a33",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_e79d24c133e55955a9f4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Bradley Distinguished Professor of Electrical and Computer Engineering; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_209678a334d5547b468c19a5",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_e812a9d744865140a95f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Department Head and Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_3760282971905f6466ac8cbb",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_e8371ae04c125ba2a6dc",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Harshal Kaushik\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_eb01ccfd08c658819b35",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Shuo Gu\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ec3800617545577cb04a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Mohamed Abdelkader\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ec7fa63b121a5f2c8990",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Craig Woosley\" as \"Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ed2803fb8d4559ca8188",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_609c4d8bbc4ce4c8228233ce"
+        ]
+      },
+      {
+        "person_id": "person_ed4aa46d55a857ab914d",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Bharat Kunduri\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_eda82647f3b7564096ca",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Qin Yuan\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ee81533a59e552d783d3",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Md Zoheb Hassan\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f106fb69baf15e3dbadc",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Alfred Wicks\" as \"Associate Professor\"; explicit ECE courtesy professorial appointment.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f17acd1f6c58506b8df8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Kenneth Schulz\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f2889309753e5fd7b20b",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Nishithkumar\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f432b081128d59b19aae",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Courtesy Appointments lists \"Joao Santos\" as \"Research Assistant Professor\"; research-track title.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f542c502aa2953468f53",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Associate Professor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_19379d88730428d497fcd593",
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f63982ab579359a58655",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_324e9a989a266a3897aeb0a1",
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_f6513d97496d5f1a82c0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE directory profile title: Associate Professor; tagged Faculty.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_d6c1165ed99730375058f83c"
+        ]
+      },
+      {
+        "person_id": "person_fa4f76890ae45116a42e",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Mohammadreza Ashouri\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_fce2237555a15a6ea140",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Bodong Shang\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_fd783aeda19651979628",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Instructor. Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_d424d25e3d5880e00e27635c"
+        ]
+      },
+      {
+        "person_id": "person_fdec7ee175075d2c8a31",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Profile title: Collegiate Professor & Director of Admissions - Masters of Engineering Program (Blacksburg). Collegiate/instructor teaching-track appointment.",
+        "source_ids": [
+          "shared_frozen_2aec28dc8ce082e9c5b76696",
+          "shared_frozen_4c2ffd128d88f4b46acd135d",
+          "shared_frozen_a244787122adf0bc1411c779"
+        ]
+      },
+      {
+        "person_id": "person_fdff3395474b517d83c7",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Adjunct Faculty section lists \"Mustafa ElNainay\".",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      },
+      {
+        "person_id": "person_ff3e27d6ea085d299f29",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "faculty.html Research Faculty section lists \"Mai Abdelmalek\"; research-track appointment, no regular/courtesy professorial listing.",
+        "source_ids": [
+          "shared_frozen_4c2ffd128d88f4b46acd135d"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_4c2ffd128d88f4b46acd135d",
+        "url": "https://ece.vt.edu/people/faculty.html",
+        "observed_at": "2026-11-23T10:59:44.100847+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "42349cc528963eae4be3e2de8489234f515dd165edcbc5dd13fc5af933ff3418"
+      },
+      {
+        "id": "shared_frozen_2aec28dc8ce082e9c5b76696",
+        "url": "https://catalog.vt.edu/undergraduate/college-engineering/electrical-computer-engineering",
+        "observed_at": "2026-11-23T11:23:25.470913+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "53eaca51cfe76ec2c4a5c9738f3dfe9d2ab5ac6d01eec39e746c9ef48c78331f"
+      },
+      {
+        "id": "shared_frozen_571bed49ce8ef0bf2e3173a9",
+        "url": "https://ece.vt.edu/people.html",
+        "observed_at": "2026-11-23T10:59:45.225589+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d8b3f2bd784e1e3af7cea01ce268e1b9eb0fdcf4cd12c468ed7da609f958a83d"
+      },
+      {
+        "id": "shared_frozen_00f1f5335a96c90798417c20",
+        "url": "https://ece.vt.edu/people/profile/safaaijazi.html",
+        "observed_at": "2026-11-23T10:59:50.270336+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "01f216876a2a9eba461cd153b64173593a6209ac0b71b29b39c33bb6f24b059f"
+      },
+      {
+        "id": "shared_frozen_08a7b4854ba5bd56984c9e6f",
+        "url": "https://ece.vt.edu/people/profile/amer-zayegh.html",
+        "observed_at": "2026-11-23T10:59:45.225471+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "515e9d5da30fbdcf2900927314e87401c90ec3d8c34ac2e003fe6e1e7b578527"
+      },
+      {
+        "id": "shared_frozen_08e80f148e77ecedc30748de",
+        "url": "https://ece.vt.edu/people/profile/david-blankenship.html",
+        "observed_at": "2026-11-23T10:59:46.483344+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "011c79fb05ad0dcfcfba8d7fc24363cd8af3448b01e1d190e74fad2ab577a174"
+      },
+      {
+        "id": "shared_frozen_102b3981816b4197c5fdc685",
+        "url": "https://ece.vt.edu/people/profile/burgos.html",
+        "observed_at": "2026-11-23T10:59:46.059830+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d67f9f67477ee48af07a3534df1f84892088adc92e39e23d4d48999bd1caf8eb"
+      },
+      {
+        "id": "shared_frozen_150a2c2c7536e816525ef0e4",
+        "url": "https://ece.vt.edu/people/profile/centeno.html",
+        "observed_at": "2026-11-23T10:59:46.098600+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f9aca6c12c554c16e9a91a54fd10739b94eed11eedb750607fd27beb39e92adc"
+      },
+      {
+        "id": "shared_frozen_15f230a8644b9c5fc1437a33",
+        "url": "https://ece.vt.edu/people/profile/wyatt.html",
+        "observed_at": "2026-11-23T10:59:51.761340+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "621797643e7afac51043613295f154dd994569d871dd3937395153fdaaf471b6"
+      },
+      {
+        "id": "shared_frozen_15f6467eee7da6901ff23bb7",
+        "url": "https://ece.vt.edu/people/profile/li.html",
+        "observed_at": "2026-11-23T11:23:24.857839+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "abdb366911890022810d43bb76b68895260d7086861bd9fca65461a8fd28419e"
+      },
+      {
+        "id": "shared_frozen_17aca8a1a84e66d394dc2d24",
+        "url": "https://ece.vt.edu/people/profile/jinming.html",
+        "observed_at": "2026-11-23T10:59:47.867088+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9924523dd51d473fe45bd79924cb55bbea487e943bf2440c2c63ebb72e175227"
+      },
+      {
+        "id": "shared_frozen_19379d88730428d497fcd593",
+        "url": "https://ece.vt.edu/people/profile/aneja.html",
+        "observed_at": "2026-11-23T10:59:45.674491+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f2dd35b403fad52f469816353b73497fbe858f35c4c951bb83b08058bb274b63"
+      },
+      {
+        "id": "shared_frozen_209678a334d5547b468c19a5",
+        "url": "https://ece.vt.edu/people/profile/hou.html",
+        "observed_at": "2026-11-23T10:59:47.436138+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "df77cfb2bb3b67f439dfd5558b8ea042fa7199b46848576365a94c8e8257620e"
+      },
+      {
+        "id": "shared_frozen_218db43f12c0a9a16126e9b1",
+        "url": "https://ece.vt.edu/people/profile/ming-xu.html",
+        "observed_at": "2026-11-23T10:59:49.214465+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "49ec860f04a9a4b28ae264370c7604afd1fdc2dc8e073a65da43eaa1ae5a66c6"
+      },
+      {
+        "id": "shared_frozen_2525d36681ffcdc92a2f4e35",
+        "url": "https://ece.vt.edu/people/profile/wangy.html",
+        "observed_at": "2026-11-23T10:59:51.464960+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5a7d91214f8b01a453f69159229d596771a3ea425ce4fa0183b1922ba56dd262"
+      },
+      {
+        "id": "shared_frozen_26e94e8461f341bde36e7f97",
+        "url": "https://ece.vt.edu/people/profile/bailey.html",
+        "observed_at": "2026-11-23T10:59:45.680954+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "682a84b2216cc20fd959d4b2e784e5b344e38e61d36fd6335ef1eac0065cdf3a"
+      },
+      {
+        "id": "shared_frozen_276bb979057d73535bc6b5e4",
+        "url": "https://ece.vt.edu/people/profile/hudait.html",
+        "observed_at": "2026-11-23T10:59:47.490426+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "08e3a607e7ea31eadfef9de623732485c35f97bd0343fa43cb8ed35006713b7a"
+      },
+      {
+        "id": "shared_frozen_2c6b99916c57ca9069d47bb3",
+        "url": "https://ece.vt.edu/people/profile/limes.html",
+        "observed_at": "2026-11-23T10:59:48.313623+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b04c928cc414481ba2c04fee5075391cf307972826651ee0b25d9339f516d49f"
+      },
+      {
+        "id": "shared_frozen_324e9a989a266a3897aeb0a1",
+        "url": "https://ece.vt.edu/people/profile/xu.html",
+        "observed_at": "2026-11-23T10:59:51.904453+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8fb3933084623dfc51d8bcee430f5e1b63a093cb7f50437e624aa4c5469dd4bd"
+      },
+      {
+        "id": "shared_frozen_367023bf02467585f6294a69",
+        "url": "https://ece.vt.edu/people/profile/yuw.html",
+        "observed_at": "2026-11-23T10:59:52.214619+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a4f897f6271e28ee607cf8168839a09a8ef9facd872db94887e25447f46ebeac"
+      },
+      {
+        "id": "shared_frozen_3760282971905f6466ac8cbb",
+        "url": "https://ece.vt.edu/people/profile/hu.html",
+        "observed_at": "2026-11-23T10:59:47.490104+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3be54b3c3192f33aeade4ed2c780fb47717c5f7c0a863a2c8ce10f6a8d558d9c"
+      },
+      {
+        "id": "shared_frozen_37c4f5c795e08caee6ccb944",
+        "url": "https://ece.vt.edu/people/profile/ravindran.html",
+        "observed_at": "2026-11-23T10:59:50.097625+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "51dc8ecb8d625ec8ea94e62fef4755aa698910c09d92216f09fdfda8d9dbbddc"
+      },
+      {
+        "id": "shared_frozen_37ccf320720b9c1f71cc674a",
+        "url": "https://ece.vt.edu/people/profile/jiar.html",
+        "observed_at": "2026-11-23T10:59:47.801397+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "84b00cd701ff7cfc20c6a6b1925ce78c0742e6bfa7c8b9309358453a387b6e5c"
+      },
+      {
+        "id": "shared_frozen_383a67d5b8b64b6e53ed4c83",
+        "url": "https://ece.vt.edu/people/profile/has.html",
+        "observed_at": "2026-11-23T10:59:47.412408+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1ea532362b147045111c0a38184d731269f3ebd5935c12f37e38e1569c3c8d25"
+      },
+      {
+        "id": "shared_frozen_392df6cfcd30fb9809d069e8",
+        "url": "https://ece.vt.edu/people/profile/jiax.html",
+        "observed_at": "2026-11-23T10:59:47.860392+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f0a2e811ed330ba8f55039c0a75be935f60456f895c7a8e6b13d1285a83b7e9c"
+      },
+      {
+        "id": "shared_frozen_3bde71f17dd983abdf45c11c",
+        "url": "https://ece.vt.edu/people/profile/xuan.html",
+        "observed_at": "2026-11-23T10:59:51.907780+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d87962f5c7427d025d215394ab16b64387abececf6621c7af4e6979f0926d932"
+      },
+      {
+        "id": "shared_frozen_41dd8b16627e2824d7892cac",
+        "url": "https://ece.vt.edu/people/profile/rahman.html",
+        "observed_at": "2026-11-23T10:59:49.728955+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "611c1a8c334db9ecc284811bf83cf56f02a3f55dfbe15395e1650055efc82ae0"
+      },
+      {
+        "id": "shared_frozen_4779faaaf14fbb7925efa264",
+        "url": "https://ece.vt.edu/people/profile/yug.html",
+        "observed_at": "2026-11-23T11:23:24.916507+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "aab3ea310497f4523e4069ac4bdbd8f5ead59d346bbc9d410f29f89464748293"
+      },
+      {
+        "id": "shared_frozen_47a5e76eb09c3684a5da9472",
+        "url": "https://ece.vt.edu/people/profile/stavrou.html",
+        "observed_at": "2026-11-23T10:59:50.979400+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2e1ea825337f565525fb0f234064774e7d402f5de1dacfe97fbc07a8bc68f778"
+      },
+      {
+        "id": "shared_frozen_48f9df0b4c0414eb3f8232f8",
+        "url": "https://ece.vt.edu/people/profile/ball.html",
+        "observed_at": "2026-11-23T10:59:45.683517+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a4a0f98bc894e0e5a99bd4945c3f9483c32a0d5e36fe423d4232e8ecf3d535cc"
+      },
+      {
+        "id": "shared_frozen_4be8d4524d782f36adc6e343",
+        "url": "https://ece.vt.edu/people/profile/dean-warren-dixon.html",
+        "observed_at": "2026-11-23T10:59:46.498948+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "016cb20c6b990e75ac30ab3ec8d47fbf183049a024c9307eb91779bd2903fe01"
+      },
+      {
+        "id": "shared_frozen_4d9340ecacb2b65879575bcd",
+        "url": "https://ece.vt.edu/people/profile/martin.html",
+        "observed_at": "2026-11-23T10:59:48.767856+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5f164764a8b7f566305b337150b21186e0236d44a6c97e95517706cc27e79387"
+      },
+      {
+        "id": "shared_frozen_51ec8508913d054a7071abd8",
+        "url": "https://ece.vt.edu/people/profile/wanga.html",
+        "observed_at": "2026-11-23T10:59:51.462889+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4f3d2e2a59a19ca76cce88f49b458e830a2cb85dc5e18f15a13b4d9ac38aeb29"
+      },
+      {
+        "id": "shared_frozen_54369c6d02eb3e6c6523023d",
+        "url": "https://ece.vt.edu/people/profile/cooper.html",
+        "observed_at": "2026-11-23T10:59:46.138839+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4fc09391ef0f46fe4ede8109e63279adbfac62352198f1bd232094eb9f43d05b"
+      },
+      {
+        "id": "shared_frozen_559c39182dda1bda51bdd800",
+        "url": "https://ece.vt.edu/people/profile/budhu.html",
+        "observed_at": "2026-11-23T10:59:45.692873+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b6b29f69792ebb3ba421c79891fdccc180a0a6af7b460832582ffa60037819a7"
+      },
+      {
+        "id": "shared_frozen_5691c808f5c1092fd86e4d9a",
+        "url": "https://ece.vt.edu/people/profile/dongd.html",
+        "observed_at": "2026-11-23T10:59:46.548453+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a6221b26cdcc1eaef13234c0afd9e4f0096420e76448e8fcaf76bb6e2b09ebab"
+      },
+      {
+        "id": "shared_frozen_585cba6ec2ab34e19e628753",
+        "url": "https://ece.vt.edu/people/profile/gerdes.html",
+        "observed_at": "2026-11-23T10:59:46.973471+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "21d3de8ee882bd4ec98b46afb1b985bd9125453f112dcad3441edbfbf8c65388"
+      },
+      {
+        "id": "shared_frozen_5fc560f9e9b4b1b7701f019f",
+        "url": "https://ece.vt.edu/people/profile/buehrer.html",
+        "observed_at": "2026-11-23T10:59:46.043896+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cada31a50e6b0ba6a80926a1c2a4883a3fca91c75242ad07cfe5ddc8e2ec8cb2"
+      },
+      {
+        "id": "shared_frozen_609c4d8bbc4ce4c8228233ce",
+        "url": "https://ece.vt.edu/people/profile/ellingson.html",
+        "observed_at": "2026-11-23T10:59:46.939473+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c81f859771f52294b851249b8a825d82d78c765766591b8a255efedcb2ca22d3"
+      },
+      {
+        "id": "shared_frozen_61b7d48fc419352b4e33de15",
+        "url": "https://ece.vt.edu/people/profile/zhu.html",
+        "observed_at": "2026-11-23T10:59:52.643881+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a0216bbb6937427ed977f9e3470c703a0e68a71fad806486493aa9cb699712e5"
+      },
+      {
+        "id": "shared_frozen_63f99806b2d9b13b91051a2f",
+        "url": "https://ece.vt.edu/people/profile/raghunathan.html",
+        "observed_at": "2026-11-23T10:59:49.710007+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6b7486b2fbfcdbd680a37d4143ee695a973dfef8bcdc1da96baf4817b517ebbc"
+      },
+      {
+        "id": "shared_frozen_6441ae7fcd9409830d92951c",
+        "url": "https://ece.vt.edu/people/profile/boker.html",
+        "observed_at": "2026-11-23T10:59:45.685928+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cb5b25312d075ea3465a00ee2a1d5cdfd9e12339924113b4a1f577a95a7c8869"
+      },
+      {
+        "id": "shared_frozen_64e98e22e3bd881c8f7d6787",
+        "url": "https://ece.vt.edu/people/profile/soysal.html",
+        "observed_at": "2026-11-23T10:59:50.847318+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "505da9999fa5c5d40e8e66b594f1ee4427fd69113656b503b8a57e242ce0ce72"
+      },
+      {
+        "id": "shared_frozen_66c0af2706a90d7a8a6d05a9",
+        "url": "https://ece.vt.edu/people/profile/liuc.html",
+        "observed_at": "2026-11-23T10:59:48.353469+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d1e47b59f821cf4b571f963bbf8c0f290c988bcfa71d5a81018a2c30ac6993d1"
+      },
+      {
+        "id": "shared_frozen_66c330b9ffbf41ca539e87ca",
+        "url": "https://ece.vt.edu/people/profile/mili.html",
+        "observed_at": "2026-11-23T10:59:48.868442+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5186331031721a866c9d32771a4e16dc846bd121cf1307476ba609d5d468e822"
+      },
+      {
+        "id": "shared_frozen_6b5720eab7f02d5cfeafcaab",
+        "url": "https://ece.vt.edu/people/profile/dasilva.html",
+        "observed_at": "2026-11-23T10:59:46.425237+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1287beaa524ba8c0d90daa9fe56efe8702e06f229ebc397c2318091bd59b61c0"
+      },
+      {
+        "id": "shared_frozen_6d5f16085ce0ee33bebc6098",
+        "url": "https://ece.vt.edu/people/profile/hsiao.html",
+        "observed_at": "2026-11-23T10:59:47.458025+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a0639a0c0ddf2c59cf78529cc5df0a24f0122864fe3d0f64867ae866cc7b1e57"
+      },
+      {
+        "id": "shared_frozen_700ff4cdecf1a6e90af5b758",
+        "url": "https://ece.vt.edu/people/profile/lester.html",
+        "observed_at": "2026-11-23T10:59:48.249958+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4ad49bc9943677538145203c7bb8713d9c532447c5b70c948faf6d232ea11987"
+      },
+      {
+        "id": "shared_frozen_71e8f46385369490399ff2e5",
+        "url": "https://ece.vt.edu/people/profile/stilwell.html",
+        "observed_at": "2026-11-23T10:59:50.988127+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "27534bcc387160045371b49a899ec3b3bfdab719e6e43781ef6601484ac30147"
+      },
+      {
+        "id": "shared_frozen_7339ebeb519261158ae38c54",
+        "url": "https://ece.vt.edu/people/profile/baker.html",
+        "observed_at": "2026-11-23T10:59:45.681326+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "61652a7a26260c32b4e116f9d3ced1dad4dd5dd6f7029fab69da9ab53eebc8bc"
+      },
+      {
+        "id": "shared_frozen_7a69606bb185a13fc092860a",
+        "url": "https://ece.vt.edu/people/profile/williams.html",
+        "observed_at": "2026-11-23T10:59:51.619990+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0b0e6383885210898dd098ecf8c7702d678dc03641e1262ea280fa718b4654e4"
+      },
+      {
+        "id": "shared_frozen_7dd94fa506481c338bce4454",
+        "url": "https://ece.vt.edu/people/profile/ruohoniemi.html",
+        "observed_at": "2026-11-23T10:59:50.136732+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d01a94a53e92fca8b5ca5ee0691936826f5be8e30163a2ef96f8add1979c737c"
+      },
+      {
+        "id": "shared_frozen_7e80b0172b1828ceed678173",
+        "url": "https://ece.vt.edu/people/profile/saad.html",
+        "observed_at": "2026-11-23T10:59:50.178164+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fd54872f2c55f6c6ba0f281dcd8c79e1a0df3a1c7c5f9088f2efece5401467a9"
+      },
+      {
+        "id": "shared_frozen_8558a8f05c382c126ab3cabd",
+        "url": "https://ece.vt.edu/people/profile/michaels.html",
+        "observed_at": "2026-11-23T10:59:48.795455+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8171d94d0380093e8f1a94352e058f1ddfa687372176be78c9472bebabd00565"
+      },
+      {
+        "id": "shared_frozen_86748d0f5546126da4a4f4f1",
+        "url": "https://ece.vt.edu/people/profile/plassmann.html",
+        "observed_at": "2026-11-23T10:59:49.660667+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8fc85703e784699156ab6b70015c68f607a27193590e53c6be853faf56619e9c"
+      },
+      {
+        "id": "shared_frozen_8ae89ba2d55608fd3a2ae251",
+        "url": "https://ece.vt.edu/people/profile/zeng.html",
+        "observed_at": "2026-11-23T10:59:52.334838+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "590fe26f0a23dac39d5e6247884e69c7961b8187671bdb2ecde56c9a777a4dab"
+      },
+      {
+        "id": "shared_frozen_8c498245a77fbee086496f62",
+        "url": "https://ece.vt.edu/people/profile/zhou.html",
+        "observed_at": "2026-11-23T10:59:52.431384+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2130d83c816acb3f1aae8629e9c083a745abee0486611f6f77d9f5cfbed7c693"
+      },
+      {
+        "id": "shared_frozen_92f0c25e4f4073da399fac61",
+        "url": "https://ece.vt.edu/people/profile/wangh.html",
+        "observed_at": "2026-11-23T10:59:51.464700+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fee1e46ae9474a6da0e02d409863bfcefa8eef5c4dff35baae590fa9f22c7a19"
+      },
+      {
+        "id": "shared_frozen_940007cd1c19db47fd5c9511",
+        "url": "https://ece.vt.edu/people/profile/ngo.html",
+        "observed_at": "2026-11-23T10:59:49.283477+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "59e08b7ac78f81c26e82fd0bcf015c94e5a2dbcff26a439718502808c192f230"
+      },
+      {
+        "id": "shared_frozen_98f8a4a70c3d516beecfde2b",
+        "url": "https://ece.vt.edu/people/profile/thweatt.html",
+        "observed_at": "2026-11-23T10:59:51.013697+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7477d53e0034f9b8016220cc7819e09bb9ea28e35ce8e93f15d1d353c2f9d390"
+      },
+      {
+        "id": "shared_frozen_99426ec0a4a30d70cac13c3b",
+        "url": "https://ece.vt.edu/people/profile/abbott.html",
+        "observed_at": "2026-11-23T10:59:45.223925+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "85f388c7df8fba93ee48560e6a9c24d2fe7f8b8c863c3be0ff339abd7f7a995b"
+      },
+      {
+        "id": "shared_frozen_9c1207b6a0bfb6e10ba7898a",
+        "url": "https://ece.vt.edu/people/profile/milburn.html",
+        "observed_at": "2026-11-23T10:59:48.857926+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9040fc9912a8be6d866f218afaaa7e4f0634ae1a6b096b1c69a1d0d5d84e8e4f"
+      },
+      {
+        "id": "shared_frozen_9d66c41fff0a8791a14cd911",
+        "url": "https://ece.vt.edu/people/profile/connors.html",
+        "observed_at": "2026-11-23T10:59:46.128629+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "324761002ab575b644912ca64ce83d01e61bd3f96ddb6ddcc000522dd8ea361b"
+      },
+      {
+        "id": "shared_frozen_9e322b9c1a5ed12fa26c5729",
+        "url": "https://ece.vt.edu/people/profile/dunning.html",
+        "observed_at": "2026-11-23T10:59:46.847398+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d71b8c3ca099bf84482fd94deaaaf54aab4232574fdbec8ba0eaf62235f86442"
+      },
+      {
+        "id": "shared_frozen_9ebf219a3eed2456424acb20",
+        "url": "https://ece.vt.edu/people/profile/ampadu.html",
+        "observed_at": "2026-11-23T10:59:45.226008+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a9e3bd142244d76eebd012c11ee7a9ab423ec76a8f0c539faa769601a246c375"
+      },
+      {
+        "id": "shared_frozen_9f1ee9419348f517dd71d524",
+        "url": "https://ece.vt.edu/people/profile/zhangr.html",
+        "observed_at": "2026-11-23T10:59:52.399744+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "58b9c693728c5b9eb524072435b0c92e2622ab54b374cbd44e60fe628fd0ef0a"
+      },
+      {
+        "id": "shared_frozen_a06c39d428699f7fcc1853f3",
+        "url": "https://ece.vt.edu/people/profile/garcia.html",
+        "observed_at": "2026-11-23T10:59:46.967695+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e1f0539dd57c6cac353e545abe338ee37e0c48f4b63b446791bfa7078c258512"
+      },
+      {
+        "id": "shared_frozen_a0bb21a6a901e8beec942e2f",
+        "url": "https://ece.vt.edu/people/profile/dimaricm.html",
+        "observed_at": "2026-11-23T10:59:46.524180+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ce4583aa9c21544a0c766bb3791b329805593489f1aaeeffd0c5d21a01a6326b"
+      },
+      {
+        "id": "shared_frozen_a244787122adf0bc1411c779",
+        "url": "https://ece.vt.edu/people/profile/talty.html",
+        "observed_at": "2026-11-23T10:59:50.996465+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0751ea7af752dceba02067e2d0500d3937ae24e025c7098a511f3961c96d9712"
+      },
+      {
+        "id": "shared_frozen_a2cad380c3e55ac93c9b4027",
+        "url": "https://ece.vt.edu/people/profile/tryfona.html",
+        "observed_at": "2026-11-23T10:59:51.169373+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4f34272181103801d503f3a29cf0bdc393e16a66541d60511d03cfa391ee6c72"
+      },
+      {
+        "id": "shared_frozen_a2d66562f029ab84e08b33fa",
+        "url": "https://ece.vt.edu/people/profile/wang.html",
+        "observed_at": "2026-11-23T10:59:51.451904+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ad8615c8ac9354c36386b649e0eb6228d45e32b96697ad0ac613bd4df67bc6c8"
+      },
+      {
+        "id": "shared_frozen_acfe51b836a69e2260d72bcf",
+        "url": "https://ece.vt.edu/people/profile/dhillon.html",
+        "observed_at": "2026-11-23T10:59:46.504171+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "da823806ea12a8c448314cd28e66c245f027f83537c514b9c79dc74acf05cf01"
+      },
+      {
+        "id": "shared_frozen_b18ae176589c5f7077ed2cda",
+        "url": "https://ece.vt.edu/people/profile/nazhandali.html",
+        "observed_at": "2026-11-23T10:59:49.255903+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6e62db3512c40185633f736ba8f47b89bd1e877815ccc20aebd6019f839ad43a"
+      },
+      {
+        "id": "shared_frozen_b4a8b07990d34751df2eb86e",
+        "url": "https://ece.vt.edu/people/profile/orlowski.html",
+        "observed_at": "2026-11-23T10:59:49.304592+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "20a5a774a7191d4a9e30ca4fea54c1e2333e66ee31193a91fe09f8e98e989c9f"
+      },
+      {
+        "id": "shared_frozen_b4f7951738cda1a261bb193e",
+        "url": "https://ece.vt.edu/people/profile/zhu0.html",
+        "observed_at": "2026-11-23T10:59:52.650982+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5b8dd19d1d3336949698a712077f6e72dbdad6d046a4243280b785c09e62c3c9"
+      },
+      {
+        "id": "shared_frozen_b770841610a8d113df92eb16",
+        "url": "https://ece.vt.edu/people/profile/shaolb.html",
+        "observed_at": "2026-11-23T10:59:50.558798+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cda9f67fa185586c98c769bf94ef5711fb1667400c47cdbc7225f20cbd4efa7e"
+      },
+      {
+        "id": "shared_frozen_b7f3c00f71265804cf97b708",
+        "url": "https://ece.vt.edu/people/profile/scales.html",
+        "observed_at": "2026-11-23T10:59:50.558576+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "58b96ff326e09f71e3d154a412b483766781d98bc1d0dac641776486edfee2c3"
+      },
+      {
+        "id": "shared_frozen_ba23763af2efc2315c828a5b",
+        "url": "https://ece.vt.edu/people/profile/minseong-park.html",
+        "observed_at": "2026-11-23T10:59:49.235236+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "096670fb0c8aca27a658d277c2a1e1389fad73fa96d6779402f8e6abba3bc794"
+      },
+      {
+        "id": "shared_frozen_ba70fcb05ebb91943922dfb5",
+        "url": "https://ece.vt.edu/people/profile/yi.html",
+        "observed_at": "2026-11-23T10:59:52.134395+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c22187378fd30dddabf134055fac0d5039bcec4d3ee50242d6ac8dad2511a52f"
+      },
+      {
+        "id": "shared_frozen_c16b50dd98877d5286fb8e63",
+        "url": "https://ece.vt.edu/people/profile/jones.html",
+        "observed_at": "2026-11-23T10:59:47.899706+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cd9f194266dff39a591f78f6149d60184421755e778698981ee7d3769cd094c6"
+      },
+      {
+        "id": "shared_frozen_c2133e76cf3fb252dbd5a669",
+        "url": "https://ece.vt.edu/people/profile/sands.html",
+        "observed_at": "2026-11-23T10:59:50.513447+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f73e34746fc6ce179d5e3b92be5d0fd6a5303050dfcf9e9a928623209bcee0a0"
+      },
+      {
+        "id": "shared_frozen_c26997a58b68897022b5658a",
+        "url": "https://ece.vt.edu/people/profile/midkiff.html",
+        "observed_at": "2026-11-23T10:59:48.797382+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d9368f5c4d494e4fe894e4cc338aded2d34f5f63b6466272dea70240e71c1179"
+      },
+      {
+        "id": "shared_frozen_c2e2ae8af2dce05b1b695a91",
+        "url": "https://ece.vt.edu/people/profile/yang.html",
+        "observed_at": "2026-11-23T10:59:51.958116+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ab939efbbf53e1564efc108d992985d0677e4f1e156f15914737fab2035f1feb"
+      },
+      {
+        "id": "shared_frozen_c40f95d40532551cbc1f2463",
+        "url": "https://ece.vt.edu/people/profile/smith.html",
+        "observed_at": "2026-11-23T10:59:50.715063+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "95344f6565d09520c7c31be22de108765479f534aa792b2429610cb646b74ccf"
+      },
+      {
+        "id": "shared_frozen_c52d084b15d697b523cafbe3",
+        "url": "https://ece.vt.edu/people/profile/mehrizi.html",
+        "observed_at": "2026-11-23T10:59:48.786162+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "449f0122ba1e81394e130575c02dead0b36b67e0c60159da5b3e1bdf63c962d2"
+      },
+      {
+        "id": "shared_frozen_c53dd5f079e835952e73cf6d",
+        "url": "https://ece.vt.edu/people/profile/had.html",
+        "observed_at": "2026-11-23T10:59:47.351713+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1279fce4e0928acc3f04b974ca17fe04bf403472ab863a49e6480c46e918de9f"
+      },
+      {
+        "id": "shared_frozen_c79ac29788175f547f68e690",
+        "url": "https://ece.vt.edu/people/profile/lai.html",
+        "observed_at": "2026-11-23T10:59:47.925001+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fbf722223923be7c94b679d69b5bb3c492a195d365c1ffe19a13ba521e8f4678"
+      },
+      {
+        "id": "shared_frozen_c8851bf25f1001cb39a74f51",
+        "url": "https://ece.vt.edu/people/profile/paul.html",
+        "observed_at": "2026-11-23T10:59:49.386154+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ff29ce5183fea0e15ed166c3130e02ee7b8b68ee197e9b8d892b7c6ab5fab882"
+      },
+      {
+        "id": "shared_frozen_cbb295a36bf75aef5be94fe1",
+        "url": "https://ece.vt.edu/people/profile/ransbottom.html",
+        "observed_at": "2026-11-23T10:59:49.822335+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1d3e3d201d46059b4bb43c8241a752ec9e85bee1b90a50d5027847260a71e93b"
+      },
+      {
+        "id": "shared_frozen_cbd2655f14f9be98ab096034",
+        "url": "https://ece.vt.edu/people/profile/xiong.html",
+        "observed_at": "2026-11-23T10:59:51.880755+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "78c997b3903fb840bcbec0bb8fc16feccd3b2bf36a2de9f567d857c95b46f0be"
+      },
+      {
+        "id": "shared_frozen_cd6e114426ee055b7679e4f3",
+        "url": "https://ece.vt.edu/people/profile/reed.html",
+        "observed_at": "2026-11-23T10:59:50.134861+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ca459fa113277965949fec88e75e1831dd978b9f8c325b4bddf3a3500308dc5e"
+      },
+      {
+        "id": "shared_frozen_cd819dabf44d23406241de5e",
+        "url": "https://ece.vt.edu/people/profile/walling.html",
+        "observed_at": "2026-11-23T10:59:51.302524+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "51c48805fc5a329dfeaed39da86c5ce1a75557855b8ea47c8923ac5f2658abe5"
+      },
+      {
+        "id": "shared_frozen_cf3303f115ac09505dce3e76",
+        "url": "https://ece.vt.edu/people/profile/adams.html",
+        "observed_at": "2026-11-23T10:59:45.224382+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8193f5a83f420712d84d773b37c5d480ab1fd7fc27d9bc5cc469e1be65d01dbf"
+      },
+      {
+        "id": "shared_frozen_cf7a6129dcc3fecec95bcd5b",
+        "url": "https://ece.vt.edu/people/profile/francis-hou.html",
+        "observed_at": "2026-11-23T10:59:46.947343+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d00481a38d21d6f605cbba2b79b00527731b801e25a6a18dab43aab2e17f5128"
+      },
+      {
+        "id": "shared_frozen_d35397e553bd315310ef74f4",
+        "url": "https://ece.vt.edu/people/profile/giles.html",
+        "observed_at": "2026-11-23T10:59:46.992252+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "866ce7f6cef53e3e621e65a0507b6cc0cc85a7f922502a78da5cf5140c02af30"
+      },
+      {
+        "id": "shared_frozen_d424d25e3d5880e00e27635c",
+        "url": "https://ece.vt.edu/people/profile/sarker.html",
+        "observed_at": "2026-11-23T10:59:50.543384+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0a71d9f988326ad318ef96657ade90c9e1c5fd4eab676bc96c2986b5bf1103f2"
+      },
+      {
+        "id": "shared_frozen_d6c1165ed99730375058f83c",
+        "url": "https://ece.vt.edu/people/profile/zhangyu-guan.html",
+        "observed_at": "2026-11-23T10:59:52.431183+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8e20ca5fc76c440c59737b2f930bf1846eccf37147b7e738aa249a8a422f8eea"
+      },
+      {
+        "id": "shared_frozen_df00c65a14baae89e3a9cdcd",
+        "url": "https://ece.vt.edu/people/profile/lin.html",
+        "observed_at": "2026-11-23T10:59:48.335949+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0a2bb1ca779f786f719a98d63e8b124e62200e52365f63760db62caa44aed7b6"
+      },
+      {
+        "id": "shared_frozen_df61880fb1ee003d27b291a7",
+        "url": "https://ece.vt.edu/people/profile/liul.html",
+        "observed_at": "2026-11-23T10:59:48.386683+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f85cc77b56f07febfe441b7959ca7b80d66b8601cdb7bdfd72ed0b3b9a48fe98"
+      },
+      {
+        "id": "shared_frozen_e2d848e89cb49ea265f5d2e4",
+        "url": "https://ece.vt.edu/people/profile/tarun-cousik.html",
+        "observed_at": "2026-11-23T11:23:24.896779+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fe85036ada769ca418fd85137c71ca5e2b0c118b1f55d2ede8d2e8bbacc49e14"
+      },
+      {
+        "id": "shared_frozen_e38da5dbbfaa9d64e80055e7",
+        "url": "https://ece.vt.edu/people/profile/agah.html",
+        "observed_at": "2026-11-23T10:59:45.224843+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "15f60cd6fb410379781cd3b6adbddfcf96bb7e225a4a6abdfe0c2f05619bcc35"
+      },
+      {
+        "id": "shared_frozen_e5cc590040b2b4c46177220b",
+        "url": "https://ece.vt.edu/people/profile/baumann.html",
+        "observed_at": "2026-11-23T11:23:24.821728+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4ded6993c3e267aad8f8b346431542365d9f92a5c1f3494d9d67d43537846665"
+      },
+      {
+        "id": "shared_frozen_e9ec110c3165b20012a060ba",
+        "url": "https://ece.vt.edu/people/profile/manteghi.html",
+        "observed_at": "2026-11-23T10:59:48.403848+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "84dd76638471f95a1659b6fd3de6b1b629144ed4e1786c01a9e666450fff1ebe"
+      },
+      {
+        "id": "shared_frozen_ecd9bd8dfd9251362c10a202",
+        "url": "https://ece.vt.edu/people/profile/chantem.html",
+        "observed_at": "2026-11-23T10:59:46.101533+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1d766b1758c3c9b98b419283ceabb2c2a1fa6f5521633e5bd577045ce76312bf"
+      },
+      {
+        "id": "shared_frozen_f19af49cd1cfaca8b7674e6a",
+        "url": "https://ece.vt.edu/people/profile/poon.html",
+        "observed_at": "2026-11-23T10:59:49.687156+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0a04225d35d5ca2046beb593949d7b1b279f76d9770fafa6d47a3bc03d23fe14"
+      },
+      {
+        "id": "shared_frozen_f8de7c73dde201f7abbf40f8",
+        "url": "https://ece.vt.edu/people/profile/lanzerotti.html",
+        "observed_at": "2026-11-23T10:59:47.950661+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "49b84163d5d475b2dbc2add189a27a9f16b3225e7d0951cbf4086b629594b48a"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "person_596e987724a35a1aa7a9",
+        "description": "Directory entry identity \"Bo Ji Professor\" is a name/rank concatenation in the page markup; the person is Bo Ji (Professor)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4aee0e5e69fa55778b42",
+        "description": "Benjamin Knapp: ECE courtesy entry carries only an administrative title (\"Executive Director, ICAT\"); no captured source establishes a professorial rank, so excluded as academic_professional. Reclassify to courtesy if an official source shows a professorial appointment."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_e5633d2808ad584a96dc",
+        "description": "\"Yi Shi Research Associate Professor\" (courtesy section) is a name/title concatenation and very likely the same person as the Adjunct Faculty entry \"Yi Shi\"; both are excluded, so the possible duplicate does not affect counts."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_cb2e59d715455433955c",
+        "description": "Qiang Li (li.html) is absent from the captured faculty.html listings but appears in the 2026-27 VT ECE catalog Professors list; included as regular."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Enumerated faculty.html alphabetical (99 profile links) plus research-area listings (adds Baumann, Yu; dhillon/mili links without .html), Emeritus, Research, Adjunct and Courtesy text sections; li.html added from catalog. Matches expected_primary_profile_urls."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Tarun Cousik appears both as a profile record and as a Research Faculty directory entry; Daniel Weimer appears in both Emeritus and Research Faculty sections (single record, emeritus). All duplicates are excluded categories."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_f51622f5af0142d1b4f19799c983924a",
+    "candidate_sha256": "df52249729f9f128dbcafc82a94f1de961cf3394a33012bf3e90a30066d78044",
+    "transport": "t3",
+    "run_id": "node:delegated-task:command%3Amcp%3A81c1b876-7755-4b73-8b77-31cc6ed303e0%3Adelegate-task%3Av5-t20-tamu_vt_psu_final-47041cc4",
+    "model": "claude-opus-5-5",
+    "finished_at": "2026-11-23T11:31:57.259576+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/b7579b07eca83d7a702a1af604e9b0af20e7de9dea421afe75760d07da5d407f.json",
+      "sha256": "b7579b07eca83d7a702a1af604e9b0af20e7de9dea421afe75760d07da5d407f"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/b7579b07eca83d7a702a1af604e9b0af20e7de9dea421afe75760d07da5d407f.json",
+    "sha256": "b7579b07eca83d7a702a1af604e9b0af20e7de9dea421afe75760d07da5d407f"
+  }
+}

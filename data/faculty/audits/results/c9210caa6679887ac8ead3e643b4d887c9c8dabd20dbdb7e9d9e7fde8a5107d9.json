@@ -1,0 +1,1265 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/31143dddf2ac78f9f19758252773273b964c125054fb48000a954ac9b1d52ac6.json",
+    "sha256": "31143dddf2ac78f9f19758252773273b964c125054fb48000a954ac9b1d52ac6"
+  },
+  "brief": {
+    "file": "audits/briefs/a8fd642ab8e1b463954032d2fa38679e5905cee2633112ae8bc474fb5c149231.json",
+    "sha256": "a8fd642ab8e1b463954032d2fa38679e5905cee2633112ae8bc474fb5c149231"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_6b158b4798d14d2ca3542bd046122c59",
+    "candidate_sha256": "e0fcd79bdd165c8b75238f1888a2c6fe09e2088358d0a74412eb5071b107b42b",
+    "reviewer_id": "claude-haiku-jhu-audit",
+    "reviewed_at": "2026-11-25T08:16:06+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/faculty",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/people/ece-affiliates",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/research/research-staff",
+        "https://engineering.jhu.edu/ece/people/professor-emeriti",
+        "https://engineering.jhu.edu/ece/people/professor-emeriti",
+        "https://engineering.jhu.edu/ece/people/professor-emeriti",
+        "https://engineering.jhu.edu/ece/people/professor-emeriti"
+      ],
+      "checked_list_ids": [
+        "primary",
+        "secondary",
+        "research-staff",
+        "emeriti"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_e213115b859e5093adb3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_1e17c36d78215a70a714",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'John C. Malone Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_ec1ba9c65be15d238534",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching-track title 'Assistant Teaching Professor' on the ECE primary roster; teaching titles are excluded by project convention.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_5f4e8b63fdb457e08a1a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Bloomberg Distinguished Professor and Former Interim Director of the Data Science and AI Institute' on the ECE primary-appointment roster (department-roster convention). Listed under two departments including ECE (Department Of Electrical And Computer Engineering; Department Of Biomedical Engineering), so ECE membership is established.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_94a4e821d52b5f578ff5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention). Listed under two departments including ECE (Department Of Materials Science And Engineering; Department Of Electrical And Computer Engineering), so ECE membership is established.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_b56bc1177ce55d3784ce",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_5f9cf84f5d9c53278cf9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Associate Professor' on the ECE primary-appointment roster (department-roster convention). Listed under two departments including ECE (Department Of Civil And Systems Engineering; Department Of Electrical And Computer Engineering), so ECE membership is established.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_bef67cb0d837553fb923",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Charles Renn Faculty Scholar and Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_bd237f8f2d2959c2be77",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Julian S. Smith Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_b4f47f5459335c57b994",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_5768b5a1f7f056078ed3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_b52de69ff8f1578b83b3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_229a0ba6ef2d5db6a837",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_1ecbfd01833550139156",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_57bb118d7c0f52e9a698",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching-track title 'Lecturer (Part-Time)' on the ECE primary roster; teaching titles are excluded by project convention.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_5efcfc7b5ad957248c89",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_262efeb32bbb5db5aa5a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Department Head and Edward J. Schaefer Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_73b72fa0590c56d5a842",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Jacob Suter Jammer Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_b36fd97fe5f256f08db5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_fa21a1eeb219514dabdf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_c6a1651cb47a5106bee7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_47ff70071e7f569f9d68",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_6c96d88d561c5a079a16",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_e008cdc1d9f95b3a94ed",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching-track title 'Assistant Teaching Professor' on the ECE primary roster; teaching titles are excluded by project convention.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_642622dd21ff5f4f89b3",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Primary-list title 'Bessie Darling Massey Professor and Director' is listed on the ECE primary roster, but the only department line captured is DEPARTMENT OF BIOMEDICAL ENGINEERING; no ECE appointment is shown. Per the shared-evidence note for this school, not an ECE faculty member of this roster. The policy has no outside-unit category, so 'academic_professional' is used as the closest excluded category; the membership value carries the substance.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_048dd9e524e956fc8d66",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_7830baf021ff5d589964",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-professor title 'Assistant Research Professor' on the ECE primary roster; research professor titles are excluded (research_only).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_32bdcbffad4d57c7bb47",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_db934803d93c50268753",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-professor title 'Assistant Research Professor' on the ECE primary roster; research professor titles are excluded (research_only).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_8eed44343a5255ae9705",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'William B. Kouwenhoven Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_6c2e0780510658818aa7",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching-track title 'Assistant Teaching Professor' on the ECE primary roster; teaching titles are excluded by project convention.",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_c94a64b4c62957c48c90",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-professor title 'Assistant Research Professor' on the ECE primary roster; research professor titles are excluded (research_only).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_3c13302b94215f80a1db",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Benjamin T. Rome Dean and Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_fbcea515e9725a098cc4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_9043ac4074fa52c3a386",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_474e9b1752905560a631",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_874ad305d78052eb9c75",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-professor title 'Assistant Research Professor' on the ECE primary roster; research professor titles are excluded (research_only).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_8400602e35ad5ffc804d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Marshal Salant Faculty Scholar and Associate Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_50ba57db08dd55d983ca",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_f0c9d57052de528ebbac",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-professor title 'Assistant Research Professor' on the ECE primary roster; research professor titles are excluded (research_only).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_2d3426021a99500b8e06",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_52a458621dc655e680f9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_b0e825bad5b957d0b923",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Professor emeritus. Primary-list title 'Professor Emeritus' (ECE primary roster) and the ECE professor-emeriti list both state emeritus status; counted once. Emeritus is excluded under the policy.",
+        "source_ids": [
+          "shared_primary",
+          "shared_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_485d38b7b4cd5d36ba5b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Regular professorial title 'Assistant Professor' on the ECE primary-appointment roster (department-roster convention).",
+        "source_ids": [
+          "shared_primary"
+        ]
+      },
+      {
+        "person_id": "person_791b503c19d65b4d960f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Associate Professor; School of Medicine' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_864e625f2f8c5b6e9c25",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Professor; Department of Mechanical Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_6b53dbbc14bf582fa4e8",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor; Department of Oncology' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_0d5aba972bb05154be8d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor; Department of Neurology' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_bd49809d97ac5fc28f43",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Associate Professor; Department of Civil and Systems Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_fe62b4ad0b6f50dbaee7",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor; Department of Biomedical Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_61d455dbc13653739d30",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Associate Professor and Carol Crofte Linde Faculty Scholar; Department of Mechanical Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_abc3eeb069265fc9b5cb",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor; Department of Anesthesiology and Critical Care Medicine' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_9a46dc0647fd59c2a68a",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Professor; Department of Biomedical Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_0761624a1e6b548d8dbe",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor; Department of Applied Mathematics and Statistics' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_6ce9521e50ce510db986",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Professor, Department of Applied Mathematics and Statistics' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_1a5c1235b51f5c539b60",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial title 'Research Scientist; Human Language Technology Center of Excellence' on the ECE secondary-appointment list; excluded as research staff.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_2c22aac31b4f5b38a936",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor; Neurosurgery and Biomedical Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_900df1a7a17554e6b667",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Professor; Department of Neuroscience' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_c8b1dd748fec5e07ab89",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Professor; Departments of Neuroscience and Psychological and Brain Sciences' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_aaf17a8042675a2c9188",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Associate Professor; Department of Radiology and Radiological Sciences' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_7b24d8e6737f5127b12e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial title 'Senior Staff Scientist; Applied Physics Laboratory' on the ECE secondary-appointment list; excluded as research staff.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_d1e8e98525e75272a1ee",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Associate Professor; Department of Anesthesiology and Critical Care Medicine' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_5c56f01b3c075e47ad6d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Louis M. Sardella Professor; Department of Mechanical Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_02e4a6dc37d55cc6b800",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial title 'Research Scientist; Human Language Technology Center of Excellence' on the ECE secondary-appointment list; excluded as research staff.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_c6c8e89124f55899921d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Professorial title 'Assistant Professor, Biomedical Engineering; Assistant Professor, Materials Science and Engineering' on the ECE secondary/joint-appointment list (ece-affiliates). Joint/secondary professorial appointment; the regular-versus-courtesy subtype is not stated by the official source, so joint_secondary is recorded.",
+        "source_ids": [
+          "shared_secondary"
+        ]
+      },
+      {
+        "person_id": "person_d3028b0ab596576a9b98",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_df46c712ab2c53d29e5d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Associate Research Scientist' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_a892e05af75a560ab50d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_e83e1ea5d1615717b72b",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_a712019b338d50a5a464",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Assistant Research Scientist' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_517a382227905f6eb29e",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Associate Research Scientist' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_7aed3a54d7475f3fa039",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_03f0a33b4fdd5ad3b4d6",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_d1a636739a735f34a40c",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_a939b45c7e5a5dff8c8d",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Non-professorial research role 'Postdoctoral Fellow' on the ECE research-staff list; excluded.",
+        "source_ids": [
+          "shared_research_staff"
+        ]
+      },
+      {
+        "person_id": "person_8b0f660d002a562080a2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Emeritus title 'Professor Emeritus' on the ECE professor-emeriti list; excluded as emeritus.",
+        "source_ids": [
+          "shared_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_5d14e1470141560382f3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Emeritus title 'Professor Emeritus' on the ECE professor-emeriti list; excluded as emeritus.",
+        "source_ids": [
+          "shared_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_166d3f8890685ea88e87",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Emeritus title 'Professor Emeritus' on the ECE professor-emeriti list; excluded as emeritus.",
+        "source_ids": [
+          "shared_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_4f710421b77b5715a67c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Emeritus title 'Edward J. Schaefer Professor Emeritus' on the ECE professor-emeriti list; excluded as emeritus.",
+        "source_ids": [
+          "shared_emeriti"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_primary",
+        "url": "https://engineering.jhu.edu/ece/faculty/",
+        "observed_at": "2026-11-25T08:00:50+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "captures/primary.json (list 'primary')",
+        "response_sha256": null,
+        "capture_format": "browser_dom",
+        "capture_sha256": "488cf42940638485cef908cedc05dbdd9b86a3572a8a345e5ea3f8ce4308fdaf",
+        "capture_tool": "Claude in Chrome (agent-extracted list text, JSON)"
+      },
+      {
+        "id": "shared_secondary",
+        "url": "https://engineering.jhu.edu/ece/people/ece-affiliates/",
+        "observed_at": "2026-11-25T08:01:28+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "captures/secondary.json (list 'secondary')",
+        "response_sha256": null,
+        "capture_format": "browser_dom",
+        "capture_sha256": "11b19339cc2804cea46dfdee78c9d0fb68f90be186b6728d87f28023e19a1fee",
+        "capture_tool": "Claude in Chrome (agent-extracted list text, JSON)"
+      },
+      {
+        "id": "shared_research_staff",
+        "url": "https://engineering.jhu.edu/ece/research/research-staff/",
+        "observed_at": "2026-11-25T08:01:28+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "captures/research-staff.json (list 'research-staff')",
+        "response_sha256": null,
+        "capture_format": "browser_dom",
+        "capture_sha256": "230a320432c66f3723024d149cb12a0aa3b11885253c9c1cfc4f9304358b85e0",
+        "capture_tool": "Claude in Chrome (agent-extracted list text, JSON)"
+      },
+      {
+        "id": "shared_emeriti",
+        "url": "https://engineering.jhu.edu/ece/people/professor-emeriti/",
+        "observed_at": "2026-11-25T08:01:28+00:00",
+        "request_json": "{\"method\": \"GET\", \"form\": {}}",
+        "locator": "captures/emeriti.json (list 'emeriti')",
+        "response_sha256": null,
+        "capture_format": "browser_dom",
+        "capture_sha256": "69d606bbba4a029a9ff8a92e3e96a095be834f8c7bde8b41622f9139bc5f24bb",
+        "capture_tool": "Claude in Chrome (agent-extracted list text, JSON)"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "List 'primary' (https://engineering.jhu.edu/ece/faculty/): 44 entries enumerated from the shared browser capture; capture file SHA-256 recomputed and matches shared-sources capture_sha256. No pager, load-more or filter was used on this page per the capture metadata."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "List 'secondary' (https://engineering.jhu.edu/ece/people/ece-affiliates/): 21 entries enumerated from the shared browser capture; capture file SHA-256 recomputed and matches shared-sources capture_sha256. No pager, load-more or filter was used on this page per the capture metadata."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "List 'research-staff' (https://engineering.jhu.edu/ece/research/research-staff/): 10 entries enumerated from the shared browser capture; capture file SHA-256 recomputed and matches shared-sources capture_sha256. No pager, load-more or filter was used on this page per the capture metadata."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "List 'emeriti' (https://engineering.jhu.edu/ece/people/professor-emeriti/): 5 entries enumerated from the shared browser capture; capture file SHA-256 recomputed and matches shared-sources capture_sha256. No pager, load-more or filter was used on this page per the capture metadata."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Enumeration: 44 primary + 21 secondary + 10 research-staff + 5 emeriti = 80 entries, 79 distinct people. James West appears on both the primary and emeriti lists and is counted once (emeritus). Every brief person appears on a capture and every capture name is in the brief; no omissions."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Profile pages were not fetched: for this school only the shared browser captures are cited as evidence (profile pages are blocked). Decisions rest on the list titles and department lines."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_6c2e0780510658818aa7",
+        "description": "Captured primary-list entry has no per-person profile URL; the brief's directory entry id is used. Decision rests on the primary-list title 'Assistant Teaching Professor' and department line."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_642622dd21ff5f4f89b3",
+        "description": "Decision: excluded, membership outside_ece. The primary-list entry (title 'Bessie Darling Massey Professor and Director') captures only the line 'DEPARTMENT OF BIOMEDICAL ENGINEERING' with no ECE department line, so he is not an ECE faculty member of this roster per the shared-evidence note. Category 'academic_professional' is the closest excluded category available; the policy has no outside-unit category. This would change only if an ECE department line or ECE professorial appointment were shown on the ECE roster."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b0e825bad5b957d0b923",
+        "description": "Decision: excluded as emeritus (past). He is on the primary list ('Professor Emeritus') and on the professor-emeriti list ('Professor Emeritus'); one person."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_485d38b7b4cd5d36ba5b",
+        "description": "Regular: 'Assistant Professor' on the ECE primary roster; no other department line."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_3c13302b94215f80a1db",
+        "description": "Regular: 'Benjamin T. Rome Dean and Professor' on the ECE primary roster, with a professorial rank and ECE as the department; the dean role does not change this."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_262efeb32bbb5db5aa5a",
+        "description": "Regular: 'Department Head and Edward J. Schaefer Professor' on the ECE primary roster; department head with a professorial rank."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_5f4e8b63fdb457e08a1a",
+        "description": "Regular: 'Bloomberg Distinguished Professor and Former Interim Director...' on the ECE primary roster with ECE and Biomedical Engineering department lines; ECE membership established by the primary roster."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_94a4e821d52b5f578ff5",
+        "description": "Regular: 'Assistant Professor' with two department lines (Materials Science and Engineering; Electrical and Computer Engineering); ECE primary roster establishes ECE membership."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_5f9cf84f5d9c53278cf9",
+        "description": "Regular: 'Associate Professor' with two department lines (Civil and Systems Engineering; Electrical and Computer Engineering); ECE primary roster establishes ECE membership."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c6c8e89124f55899921d",
+        "description": "joint_secondary: secondary-list entry 'Assistant Professor, Biomedical Engineering; Assistant Professor, Materials Science and Engineering'. Two professorial titles in other units; subtype regular/courtesy not stated, so joint_secondary."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_791b503c19d65b4d960f",
+        "description": "joint_secondary: secondary-list entry 'Associate Professor; School of Medicine'. Professorial rank on the ECE secondary list; subtype not stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6ce9521e50ce510db986",
+        "description": "joint_secondary: secondary-list 'Professor, Department of Applied Mathematics and Statistics'; professorial rank on the ECE secondary list."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_1a5c1235b51f5c539b60",
+        "description": "Excluded (research_staff): 'Research Scientist; Human Language Technology Center of Excellence' on the ECE secondary list is non-professorial."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_02e4a6dc37d55cc6b800",
+        "description": "Excluded (research_staff): 'Research Scientist; Human Language Technology Center of Excellence' on the ECE secondary list is non-professorial."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_7b24d8e6737f5127b12e",
+        "description": "Excluded (research_staff): 'Senior Staff Scientist; Applied Physics Laboratory' on the ECE secondary list is non-professorial."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_bef67cb0d837553fb923",
+        "description": "Regular: 'Charles Renn Faculty Scholar and Professor' on the ECE primary roster."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6c2e0780510658818aa7",
+        "description": "Excluded (teaching): 'Assistant Teaching Professor' on the ECE primary roster; teaching-track title excluded by convention."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "Excluded category 'teaching' (4 people): Lucas Buccafusca; Robert Glaser; Daniel Mendat; Sathappan Ramesh. Excluded under the policy; no ruling depends on the regular-versus-courtesy question."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "Excluded category 'research_only' (5 people): Laureano Moro-Velazquez; Philippe Pouliquen; William Redman; Thomas Thebaud; Jesús Villalba. Excluded under the policy; no ruling depends on the regular-versus-courtesy question."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "Excluded category 'research_staff' (13 people): Matthew Maciejewski; David Shrekenhamer; Matthew Wiesner; Md Ashikuzman; Aaron Carass; Alex Guadio; Ajay Gunalan; Moira-Phoebe Huet; Mawia Khairasleed; Yaning Wang; Pankaj Warbal; Shuwen Wei; Jinwei Zhang. Excluded under the policy; no ruling depends on the regular-versus-courtesy question."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "joint_secondary (18 people) on the ECE secondary-appointment list with professorial titles; regular-versus-courtesy subtype not stated by the source, so recorded as joint_secondary rather than guessed. Included under the policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "Regular (33 people): ECE primary-appointment roster with professorial titles, department-roster convention."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_6b158b4798d14d2ca3542bd046122c59",
+    "candidate_sha256": "e0fcd79bdd165c8b75238f1888a2c6fe09e2088358d0a74412eb5071b107b42b",
+    "transport": "t3",
+    "run_id": "agent_a3864b67a438722d4",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T08:16:28.018500+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/9a8246ed9f92d88c37186fd394c605795df7bf3fe1ffe880fcbbf294b7240350.json",
+      "sha256": "9a8246ed9f92d88c37186fd394c605795df7bf3fe1ffe880fcbbf294b7240350"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/9a8246ed9f92d88c37186fd394c605795df7bf3fe1ffe880fcbbf294b7240350.json",
+    "sha256": "9a8246ed9f92d88c37186fd394c605795df7bf3fe1ffe880fcbbf294b7240350"
+  }
+}

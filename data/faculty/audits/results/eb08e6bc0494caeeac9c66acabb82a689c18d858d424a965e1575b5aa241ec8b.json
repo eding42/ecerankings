@@ -1,0 +1,2497 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/3bf3df0836a44c8b6c02c01207ecb1d0832aed59d899bc6e6188ae9fec161330.json",
+    "sha256": "3bf3df0836a44c8b6c02c01207ecb1d0832aed59d899bc6e6188ae9fec161330"
+  },
+  "brief": {
+    "file": "audits/briefs/c29a81a892c6cb70538ef1db302819562e3c67b7ea533e3e247808adb1e71302.json",
+    "sha256": "c29a81a892c6cb70538ef1db302819562e3c67b7ea533e3e247808adb1e71302"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_1d1443bfd0f1433ba288eb5286499c65",
+    "candidate_sha256": "b41f856a790c9e954df45fbac1bffb4d14b97f91103eebae3af8686e176834bc",
+    "reviewer_id": "claude-sonnet-5-5-v5-verify",
+    "reviewed_at": "2026-11-23T10:03:30.812168+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://samueli.ucla.edu/people/abeer-alwan",
+        "https://samueli.ucla.edu/people/achuta-kadambi",
+        "https://samueli.ucla.edu/people/alan-laub",
+        "https://samueli.ucla.edu/people/alan-n-willson-jr",
+        "https://samueli.ucla.edu/people/ali-mosleh",
+        "https://samueli.ucla.edu/people/ali-sayed",
+        "https://samueli.ucla.edu/people/ankur-mehta",
+        "https://samueli.ucla.edu/people/asad-a-abidi",
+        "https://samueli.ucla.edu/people/asad-m-madni",
+        "https://samueli.ucla.edu/people/aydin-babakhani",
+        "https://samueli.ucla.edu/people/aydogan-ozcan",
+        "https://samueli.ucla.edu/people/babak-daneshrad",
+        "https://samueli.ucla.edu/people/bahman-gharesifard",
+        "https://samueli.ucla.edu/people/bahram-jalali",
+        "https://samueli.ucla.edu/people/behzad-razavi",
+        "https://samueli.ucla.edu/people/benjamin-williams",
+        "https://samueli.ucla.edu/people/chandrashekhar-joshi",
+        "https://samueli.ucla.edu/people/chee-wei-wong",
+        "https://samueli.ucla.edu/people/chih-kong-yang",
+        "https://samueli.ucla.edu/people/christina-fragouli",
+        "https://samueli.ucla.edu/people/corey-arnold",
+        "https://samueli.ucla.edu/people/dan-goebel",
+        "https://samueli.ucla.edu/people/dana-cairns-watson",
+        "https://samueli.ucla.edu/people/danijela-cabric",
+        "https://samueli.ucla.edu/people/dariush-divsalar",
+        "https://samueli.ucla.edu/people/dee-son-pan",
+        "https://samueli.ucla.edu/people/dejan-markovic",
+        "https://samueli.ucla.edu/people/donald-m-wiberg",
+        "https://samueli.ucla.edu/people/douglas-lichtman",
+        "https://samueli.ucla.edu/people/elaheh-ahmadi",
+        "https://samueli.ucla.edu/people/eli-yablonovitch",
+        "https://samueli.ucla.edu/people/ezio-biglieri",
+        "https://samueli.ucla.edu/people/farid-mesghali",
+        "https://samueli.ucla.edu/people/flavio-lorenzelli",
+        "https://samueli.ucla.edu/people/francis-chen",
+        "https://samueli.ucla.edu/people/fred-allen",
+        "https://samueli.ucla.edu/people/gabor-temes",
+        "https://samueli.ucla.edu/people/gregory-pottie",
+        "https://samueli.ucla.edu/people/harold-fetterman",
+        "https://samueli.ucla.edu/people/henry-samueli",
+        "https://samueli.ucla.edu/people/hooman-darabi",
+        "https://samueli.ucla.edu/people/ian-roberts",
+        "https://samueli.ucla.edu/people/ingrid-verbauwhede",
+        "https://samueli.ucla.edu/people/izhak-rubin",
+        "https://samueli.ucla.edu/people/jason-chou",
+        "https://samueli.ucla.edu/people/jason-jangho-choi",
+        "https://samueli.ucla.edu/people/jason-jingsheng-cong",
+        "https://samueli.ucla.edu/people/jason-petta",
+        "https://samueli.ucla.edu/people/jason-woo",
+        "https://samueli.ucla.edu/people/jia-ming-liu",
+        "https://samueli.ucla.edu/people/john-villasenor",
+        "https://samueli.ucla.edu/people/jonathan-kao",
+        "https://samueli.ucla.edu/people/kambiz-shoarinejad",
+        "https://samueli.ucla.edu/people/kang-wang",
+        "https://samueli.ucla.edu/people/katsushi-arisaka",
+        "https://samueli.ucla.edu/people/kung-yao",
+        "https://samueli.ucla.edu/people/lara-dolecek",
+        "https://samueli.ucla.edu/people/lei-he",
+        "https://samueli.ucla.edu/people/leo-zhou",
+        "https://samueli.ucla.edu/people/lieven-vandenberghe",
+        "https://samueli.ucla.edu/people/lin-yang",
+        "https://samueli.ucla.edu/people/lixia-zhang",
+        "https://samueli.ucla.edu/people/liz-izhikevich",
+        "https://samueli.ucla.edu/people/m-c-frank-chang",
+        "https://samueli.ucla.edu/people/majid-sarrafzadeh",
+        "https://samueli.ucla.edu/people/mani-srivastava",
+        "https://samueli.ucla.edu/people/mark-gyure",
+        "https://samueli.ucla.edu/people/marko-sokolich",
+        "https://samueli.ucla.edu/people/mihaela-van-der-schaar",
+        "https://samueli.ucla.edu/people/mike-briggs",
+        "https://samueli.ucla.edu/people/mona-jarrahi",
+        "https://samueli.ucla.edu/people/nader-sehatbakhsh",
+        "https://samueli.ucla.edu/people/omid-abari",
+        "https://samueli.ucla.edu/people/panagiotis-christofides",
+        "https://samueli.ucla.edu/people/paulo-tabuada",
+        "https://samueli.ucla.edu/people/pedram-khalili",
+        "https://samueli.ucla.edu/people/prineha-narang",
+        "https://samueli.ucla.edu/people/puneet-gupta",
+        "https://samueli.ucla.edu/people/rajeev-jain",
+        "https://samueli.ucla.edu/people/richard-wesel",
+        "https://samueli.ucla.edu/people/robert-candler",
+        "https://samueli.ucla.edu/people/rongming-chu",
+        "https://samueli.ucla.edu/people/sam-emaminejad",
+        "https://samueli.ucla.edu/people/sean-wang",
+        "https://samueli.ucla.edu/people/sergio-carbajo",
+        "https://samueli.ucla.edu/people/shervin-moloudi",
+        "https://samueli.ucla.edu/people/stefano-soatto",
+        "https://samueli.ucla.edu/people/stephen-jacobsen",
+        "https://samueli.ucla.edu/people/subramanian-iyer",
+        "https://samueli.ucla.edu/people/sudhakar-pamarti",
+        "https://samueli.ucla.edu/people/suhas-diggavi",
+        "https://samueli.ucla.edu/people/vwani-roychowdhury",
+        "https://samueli.ucla.edu/people/warren-mori",
+        "https://samueli.ucla.edu/people/wentai-liu",
+        "https://samueli.ucla.edu/people/william-kaiser",
+        "https://samueli.ucla.edu/people/xiang-anthony-chen",
+        "https://samueli.ucla.edu/people/xiaofan-cui",
+        "https://samueli.ucla.edu/people/yahya-rahmat-samii",
+        "https://samueli.ucla.edu/people/yair-rivenson",
+        "https://samueli.ucla.edu/people/yang-zhang",
+        "https://samueli.ucla.edu/people/yuan-tian",
+        "https://samueli.ucla.edu/people/yuanxun-wang",
+        "https://samueli.ucla.edu/people/zachary-taylor"
+      ],
+      "checked_list_ids": [
+        "ece",
+        "joint"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_6474c1c5e7485112b79b",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_66576615793c57ce41bd21aa"
+        ]
+      },
+      {
+        "person_id": "person_4ccd31fcf0685297b4eb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_3e68f92688059503a8560b0d"
+        ]
+      },
+      {
+        "person_id": "person_6033199982d9572e8706",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, joint-ece; profile title \"Distinguished Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_e4b8fb1e19bd7e1ec7d5864c"
+        ]
+      },
+      {
+        "person_id": "person_93b6d5d833ae5ffebfb6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, lecturer-ece; profile title \"Lecturer\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_3e5aeb40668aaac09dc3742a"
+        ]
+      },
+      {
+        "person_id": "person_e23bf8f7e7315b6a998f",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_2c1eb96992797ae68f7bca1a"
+        ]
+      },
+      {
+        "person_id": "person_ff5dc43d430256f6b709",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, joint-ece; profile title \"Professor of Law\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_17bd1644224203e6079a1822"
+        ]
+      },
+      {
+        "person_id": "person_a8af93ee622a5a86800d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_c35761beef7f1d5a3ca13607"
+        ]
+      },
+      {
+        "person_id": "person_71f4090a7c91578ab560",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_48a9d62752b514de8876341c"
+        ]
+      },
+      {
+        "person_id": "person_377614ce3fe2518aa989",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor / Area Director for Signals and Systems\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_b79ed16fd21b1e1410c1268e"
+        ]
+      },
+      {
+        "person_id": "person_8083ddc6c9bb5be3a21e",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, joint-ece; profile title \"Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_d87e9182b6b65da464da3a74"
+        ]
+      },
+      {
+        "person_id": "person_e73872520f195b738d6d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_ae7a5e82abba1338edc3ee65"
+        ]
+      },
+      {
+        "person_id": "person_0d23554c09255aa69345",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+          "shared_frozen_77aada4d0a35a6c17a62b862"
+        ]
+      },
+      {
+        "person_id": "person_3f6ad9d22ef654d18ca4",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Adjunct Associate Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_aba36ec745832f521987047f"
+        ]
+      },
+      {
+        "person_id": "person_5a259eb34c15501c8d6f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, cs, ece, joint-cs; profile title \"Associate Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_14e3fa65bf0b1a9d38690361"
+        ]
+      },
+      {
+        "person_id": "person_4fdd34cecf0f5883b0e3",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, lecturer-ece; profile title \"Lecturer\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_0555648bb9d5f03bd22e4edc"
+        ]
+      },
+      {
+        "person_id": "person_42e374dd0fd654229724",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_b58e12148e1028317f55c0a4"
+        ]
+      },
+      {
+        "person_id": "person_3f9485e14a205aca8b5b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, lecturer-ece; profile title \"Continuing Lecturer\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_2bcb3d8468f7ee6e5bca0065"
+        ]
+      },
+      {
+        "person_id": "person_b2113e7b92de5ced9d9d",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, lecturer-ece; profile title \"Continuing Lecturer\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_ff5f2cd5eeea1ec19e8c00f3"
+        ]
+      },
+      {
+        "person_id": "person_c09d533533ea53cfbd9f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Teaching Professor\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_07d17c6d1ae211df8693b0fd"
+        ]
+      },
+      {
+        "person_id": "person_c7da95cfad2f548bb660",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, lecturer-ece; profile title \"Continuing Lecturer\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_f677acbc6a07c9ffb64fc090"
+        ]
+      },
+      {
+        "person_id": "person_28bba2fa3e0658d49a52",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, lecturer-ece; profile title \"Continuing Lecturer\". Lecturer/teaching-track appointment; excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_7efabec52773e7ef26fec667"
+        ]
+      },
+      {
+        "person_id": "person_51f16984a4b75d4e97c0",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_a8c714ed0bf5574d67e00f5c"
+        ]
+      },
+      {
+        "person_id": "person_e9edcdfd59f35c1cbf99",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece, ieo-ece; profile title \"Associate Professor / Inclusive Excellence Officer\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_d7efefe8a6f0a1c6e4a06c61"
+        ]
+      },
+      {
+        "person_id": "person_b402d9682eed5ecf9eb7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+          "shared_frozen_6e668685462d3ddbd7dc0a51"
+        ]
+      },
+      {
+        "person_id": "person_33f34c6b133a5d1dbc50",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece; profile title \"Professor\". Listed on the authoritative ECE directory with a Professor title and no adjunct, lecturer, emeriti or joint designation.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_1e203125868453e4c6070f7c",
+          "shared_frozen_4f235d488ac75534aa8d2415",
+          "shared_frozen_583a9f22780f4338a1fd50b2"
+        ]
+      },
+      {
+        "person_id": "person_b27e1a421abd5ab58a37",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Assistant Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_b6e66786459a960e2e106628"
+        ]
+      },
+      {
+        "person_id": "person_ee10aee3a65257888161",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-cs, cs, ece, joint-ece; profile title \"Associate Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_949f9835d15ffedefac0e669"
+        ]
+      },
+      {
+        "person_id": "person_aa306b33183558f0b65a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, cs, ece, joint-cs; profile title \"Associate Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_5037862cdaf8b3d9970a916e"
+        ]
+      },
+      {
+        "person_id": "person_c6e90cd6b42c5dc08332",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: affiliate-ece, be, ece, joint-be; profile title \"Professor\". The official ECE directory carries the affiliate-ece designation for a Professor whose home unit is Bioengineering, which is an affiliate/below-the-line professorial designation.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_2e970a816eea89c07ce923db"
+        ]
+      },
+      {
+        "person_id": "person_1bb6b386e3075f7ca008",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, joint-ece; profile title \"Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_562618278a8415350ff33db2"
+        ]
+      },
+      {
+        "person_id": "person_8cc60ee38e7555a78c6a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, cs, ece, joint-cs; profile title \"Associate Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_52784f7d3a4c0192b4772b27"
+        ]
+      },
+      {
+        "person_id": "person_270e05ea4a295375b057",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, cs, ece, joint-cs; profile title \"Associate Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_a08b6697fbf9b2ba56e8777c"
+        ]
+      },
+      {
+        "person_id": "person_a9241e23db34538a9627",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: cbe, chair-cbe, core-cbe, ece, joint-ece; profile title \"Distinguished Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_6a65c38acc249addfbf668e9"
+        ]
+      },
+      {
+        "person_id": "person_b6dc9d20968b5932be95",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: cee, core-mse, ece, joint-cee, joint-ece, joint-mae, mae, mse; profile title \"Distinguished Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_91fb09da30ab704968fd6125"
+        ]
+      },
+      {
+        "person_id": "person_0cbe906986715089acd8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_80702c9ad2d239e73ab19f44"
+        ]
+      },
+      {
+        "person_id": "person_8ab248243be053f4a9c4",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-cs, cs, ece, joint-ece; profile title \"Distinguished Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3c34c61b34477d114373ee54",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_dfb668f36de23f2f3cfebd9e"
+        ]
+      },
+      {
+        "person_id": "person_63ca11aed69f55b589e7",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-cs, cs, ece, joint-ece; profile title \"Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_995eb3d91d730a62d3925a4e"
+        ]
+      },
+      {
+        "person_id": "person_f8cd6936f7b75918bf59",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-cs, cs, ece, joint-ece, vice-chair-cs; profile title \"Distinguished Professor/Vice Chair for Graduate Programs\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_5815c873350df04113a9252b"
+        ]
+      },
+      {
+        "person_id": "person_63f57925504f528591f2",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-cs, cs, ece, joint-ece; profile title \"Distinguished Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_d2b4c022002f7d17a6120c6d"
+        ]
+      },
+      {
+        "person_id": "person_748efadf5264570e8806",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_2d55b508ad7f3f5541d2c4f0"
+        ]
+      },
+      {
+        "person_id": "person_66dd930ec44b5203a984",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_d560a796168e6c505aadbd23"
+        ]
+      },
+      {
+        "person_id": "person_7302c772a3bb5fe29719",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_8a2ebf24f482e56343541441"
+        ]
+      },
+      {
+        "person_id": "person_e01877bc55245b11a586",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_1424c75c5dc506486732b023"
+        ]
+      },
+      {
+        "person_id": "person_bf3b40948a325240970b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_af8a269ee32f5286e24116fa"
+        ]
+      },
+      {
+        "person_id": "person_478e722e93505b62abf7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_46658212402d11881e382508"
+        ]
+      },
+      {
+        "person_id": "person_a6a700edc17054aa80cf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_0727112de059f9d28bb4b567"
+        ]
+      },
+      {
+        "person_id": "person_fdde55402d655dceb198",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_71f2734321ff206a061aeb2b"
+        ]
+      },
+      {
+        "person_id": "person_07905ad538825941b86a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_3830fdb1c0c2c5606a107771",
+          "shared_frozen_0a3bdb75529c24a527ce203f"
+        ]
+      },
+      {
+        "person_id": "person_5c6acb01a05e59868bae",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_a09dd641fbe0033596542d77"
+        ]
+      },
+      {
+        "person_id": "person_01674ac11ad15c50b6d9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_479d2d0519d52d33499b5ba2"
+        ]
+      },
+      {
+        "person_id": "person_fcb74fc3057e5ae39580",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece; profile title \"Professor\". Listed on the authoritative ECE directory with a Professor title and no adjunct, lecturer, emeriti or joint designation.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_2b0db76e8470583eb8026bb9",
+          "shared_frozen_4f235d488ac75534aa8d2415",
+          "shared_frozen_583a9f22780f4338a1fd50b2"
+        ]
+      },
+      {
+        "person_id": "person_754868bcd9dc5c24a5fe",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece; profile title \"Professor\". Listed on the authoritative ECE directory with a Professor title and no adjunct, lecturer, emeriti or joint designation.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_6d314b3405214330915e5474",
+          "shared_frozen_4f235d488ac75534aa8d2415",
+          "shared_frozen_583a9f22780f4338a1fd50b2"
+        ]
+      },
+      {
+        "person_id": "person_b803cf9ce0845c23968a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Assistant Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_d4b7e3c99523f508fca94021"
+        ]
+      },
+      {
+        "person_id": "person_80fe042e940158c0b3f6",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Distinguished Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_be549c3125783564bae68beb"
+        ]
+      },
+      {
+        "person_id": "person_f19507116c8b5ff7a945",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece; profile title \"Professor\". Listed on the authoritative ECE directory with a Professor title and no adjunct, lecturer, emeriti or joint designation.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_6fab135e53ea9142e41ecf82",
+          "shared_frozen_4f235d488ac75534aa8d2415",
+          "shared_frozen_583a9f22780f4338a1fd50b2"
+        ]
+      },
+      {
+        "person_id": "person_af3d0eedc7525fd6b764",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, adjunct-mae, ece, joint-ece, mae; profile title \"Adjunct Professor\". Adjunct appointment; adjunct roles are excluded even though the person also appears on the joint-ece list.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_3d4731abbd7b24875abb16d8",
+          "shared_frozen_d1fc3b45d9a03c4f99ec5b86"
+        ]
+      },
+      {
+        "person_id": "person_12fe7633d9d7514ead8e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: adjunct-ece, ece; profile title \"Adjunct Professor\". Adjunct appointment; adjunct roles are excluded.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_3c6b0dccfe9b8b083637caa8"
+        ]
+      },
+      {
+        "person_id": "person_9637437b089255a8ae5c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece; profile title \"Professor\". Listed on the authoritative ECE directory with a Professor title and no adjunct, lecturer, emeriti or joint designation.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_7055a3bd8e90202e638e2529",
+          "shared_frozen_4f235d488ac75534aa8d2415",
+          "shared_frozen_583a9f22780f4338a1fd50b2"
+        ]
+      },
+      {
+        "person_id": "person_f2d445c236bb553896fa",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_77430e914707f4c30a1c63d0"
+        ]
+      },
+      {
+        "person_id": "person_1192aa78583e5dfaa074",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_27913509b1870efa85a953ed",
+          "shared_frozen_7a86dea6f7222b3146233971"
+        ]
+      },
+      {
+        "person_id": "person_fc2d407be2ad5b20be26",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_514fba0d7e47ca318a47a3f9"
+        ]
+      },
+      {
+        "person_id": "person_99fa213be4ea5ace9870",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor / Area Director for Physical and Wave Electronics\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_5b9ddd1a31a84f6af7f59d49"
+        ]
+      },
+      {
+        "person_id": "person_46b1328e47bb5eb2b7b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: chair-ece, core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_df6e53930b2ee032a7e2eead"
+        ]
+      },
+      {
+        "person_id": "person_a34e52924b135ff78320",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_e4f11bb403357e6bc709bb3b"
+        ]
+      },
+      {
+        "person_id": "person_1ef167f422b55a9b84dc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_bf24ecc9fd2018e08ce910b5"
+        ]
+      },
+      {
+        "person_id": "person_a0275e1a866e5da5ae68",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece, joint-mse, mse; profile title \"Distinguished Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_7355c61b3b84ef7dc5aa045b"
+        ]
+      },
+      {
+        "person_id": "person_5d408dc23109599ab75a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_0cb1435a40024f564597f854"
+        ]
+      },
+      {
+        "person_id": "person_9cab3d1dc38058539471",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_d8b5a613614755539f325619"
+        ]
+      },
+      {
+        "person_id": "person_97edb36e9c7a590d9463",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: cs, ece, emeriti-cs, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_c4b9d2dd8152b13eef6f7d16"
+        ]
+      },
+      {
+        "person_id": "person_ca352db694c957f0a90f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_5e205773dbc29ec79d678420"
+        ]
+      },
+      {
+        "person_id": "person_47b645f9b5d4524d871a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, cs, ece, joint-cs, vice-chair-ece; profile title \"Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_40b72bedce483594a7570a81"
+        ]
+      },
+      {
+        "person_id": "person_48b1ab48208f5b20a051",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+          "shared_frozen_89e016ac0d6269b7f20deefb"
+        ]
+      },
+      {
+        "person_id": "person_565128f965b5589cac43",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_5b8d248d71ecdba666f2c89d"
+        ]
+      },
+      {
+        "person_id": "person_5b4d79e96bbe5d01b22e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_c800f511e056011f180e59ec"
+        ]
+      },
+      {
+        "person_id": "person_75be90a4937e54378b7a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_40a4e6756a543cfe48a9b72b"
+        ]
+      },
+      {
+        "person_id": "person_e22e9587444154858cf2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Distinguished Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_758d89049e7f9660fdd7dab2"
+        ]
+      },
+      {
+        "person_id": "person_bc66403d9994561e9232",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_50c15689f052e0c3b50b71f3"
+        ]
+      },
+      {
+        "person_id": "person_dcf54f82596453e0a10d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece, vice-chair-ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_33623dd67a4966aa03940ebe"
+        ]
+      },
+      {
+        "person_id": "person_cbb4ebf0bfa4523f9581",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_83238dbba80de814f9690e51"
+        ]
+      },
+      {
+        "person_id": "person_cc41d38ecc105590856f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece, joint-mae, mae; profile title \"Associate Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_7ec4dae75ac04d8c0e350fa0"
+        ]
+      },
+      {
+        "person_id": "person_610265e4460f586485bd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor / Area Director for Circuits and Embedded Systems\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_9ea1dae4194fc15b9a1e53e2"
+        ]
+      },
+      {
+        "person_id": "person_346e44c681d3520195c0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Distinguished Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_3185fbe47c74b4c5aadc274c"
+        ]
+      },
+      {
+        "person_id": "person_973573ecffe250e39f87",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, cs, ece, joint-cs; profile title \"Associate Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_203e80320641bee21a6fb6ea"
+        ]
+      },
+      {
+        "person_id": "person_07f154bc016d591ba20c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_05a3b060a345bd4dfa8b9211",
+          "shared_frozen_9a6d845ce418cf8d85152d87"
+        ]
+      },
+      {
+        "person_id": "person_71810576940d5b17a788",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Distinguished Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_1bc0267d8eb62cbbec01a67f"
+        ]
+      },
+      {
+        "person_id": "person_7eaef0fec3455854b03b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_c4e74ea9dbd9a6b8e2095780"
+        ]
+      },
+      {
+        "person_id": "person_be2b69ff3e4558af9f05",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece, joint-mse, mse; profile title \"Distinguished Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_7882d87135dce5c2f3ef505c"
+        ]
+      },
+      {
+        "person_id": "person_176c9b34d8b45caeb044",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_cc708ffcd5b790f3ced3c3d5"
+        ]
+      },
+      {
+        "person_id": "person_a5218309b248520a8c52",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_d3a91bf93219e3de11f7ea39"
+        ]
+      },
+      {
+        "person_id": "person_d1a48553f3c75e6c9afc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_8c76235a0ffb0a8cad81d17a"
+        ]
+      },
+      {
+        "person_id": "person_8611633adda751089093",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_342e9f1b52ba748024696e74"
+        ]
+      },
+      {
+        "person_id": "person_6106670dc3745fefb94a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_de0e7cbe3cc673f50aec4dbc"
+        ]
+      },
+      {
+        "person_id": "person_8d2c691cc3605770b905",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_09f3f75d8a29fbc226f66964"
+        ]
+      },
+      {
+        "person_id": "person_7760c80cce6650a4a619",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: ece, emeriti-ece; profile title \"Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_f7b633cf0a7c2917a6d148ab"
+        ]
+      },
+      {
+        "person_id": "person_93544a1ec9a750faae16",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Distinguished Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_ec26a470ae46841e99a5a2fe"
+        ]
+      },
+      {
+        "person_id": "person_de6eba87542156dca577",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: affiliate-be, be, core-ece, ece, joint-mae, mae; profile title \"Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_bca40fe28c6ab40f4ffee410",
+          "shared_frozen_2fad790cef8e419d9236c839"
+        ]
+      },
+      {
+        "person_id": "person_68b5d90115d15149abe2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece, vice-chair-ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_354a89e290fcfab7643cc603"
+        ]
+      },
+      {
+        "person_id": "person_ea369c3b7e83513e85f4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_e666979f1634df5530ffb42e"
+        ]
+      },
+      {
+        "person_id": "person_83aaf07a4d9a51d8a299",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Distinguished Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_9441d3bd84c08b91ed963f3c"
+        ]
+      },
+      {
+        "person_id": "person_5915924a9d225f6199aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: core-ece, ece; profile title \"Distinguished Chancellor’s Professor\". Core ECE faculty (core-ece).",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_ef8f585e149d8cb2321f30d1"
+        ]
+      },
+      {
+        "person_id": "person_1f446d62aa5651adb8d7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: be, core-ece, ece, joint-be; profile title \"Professor\". Core ECE faculty (core-ece). Additional joint/affiliate listings elsewhere do not change the core ECE appointment.",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_147b4f8d68907aeec4a15779"
+        ]
+      },
+      {
+        "person_id": "person_43c70b8683615ce3967d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: be, ece, emeriti-be, emeriti-ece; profile title \"Distinguished Professor Emeritus\". Listed on the emeriti-ece directory with an emeritus title; emeritus appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_375313c00af037dee169d5e5"
+        ]
+      },
+      {
+        "person_id": "person_e8119a9c16ad5d2f908b",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official Samueli ECE directory categories: be, core-be, ece, joint-ece; profile title \"Distinguished Professor\". Listed on the official joint-ece directory (primary home elsewhere); an official professorial ECE joint appointment qualifies and the regular-versus-courtesy subtype is not established.",
+        "source_ids": [
+          "shared_frozen_4e359d96a2926c19094827db",
+          "shared_frozen_3f5d456e38739cdca63586a7",
+          "shared_frozen_75bedb89d530adf41cb0a62d"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_1a1fc43f2cdca0df3e25ac6a",
+        "url": "https://samueli.ucla.edu/seas_department/ece/",
+        "observed_at": "2026-11-23T04:13:51.629664+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "82091d8fc5a5bdad86d6c094dd01288f3bf0154aac90a15b3ae588a52829c055"
+      },
+      {
+        "id": "shared_frozen_9e102d6c6d5ebba5c3f16caf",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/2/",
+        "observed_at": "2026-11-23T04:13:51.712145+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5979e413a19cfb6c95ec3f73690826407cbd5ecb9bb4f5ce88a649a644627081"
+      },
+      {
+        "id": "shared_frozen_3c34c61b34477d114373ee54",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/3/",
+        "observed_at": "2026-11-23T04:13:52.711199+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "22528dc80381fab5ef2ea1af15afb9fd42aac7a7ba7ab57b3a92275568fce3a3"
+      },
+      {
+        "id": "shared_frozen_3830fdb1c0c2c5606a107771",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/4/",
+        "observed_at": "2026-11-23T04:13:53.650886+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4206c095ff8a61fe9d1289413eec9b49e8b29aedf55f6205897c5b3b28ca6c55"
+      },
+      {
+        "id": "shared_frozen_27913509b1870efa85a953ed",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/5/",
+        "observed_at": "2026-11-23T04:13:54.482044+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3956bd1df09e22f39d6bc9190934f2821123e8f0d45e81ef08e60319e414e80a"
+      },
+      {
+        "id": "shared_frozen_ff24fa1c8dcc2fa3d0fe0983",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/6/",
+        "observed_at": "2026-11-23T04:13:55.378207+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "254fa3fe96a5f5b4a0a3aa6d09c5b5aac50bd0ab9d61c2333ec68b1fc8d53709"
+      },
+      {
+        "id": "shared_frozen_05a3b060a345bd4dfa8b9211",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/7/",
+        "observed_at": "2026-11-23T04:13:56.408611+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "30fc40a8c98e22c4cd1dab7d808a73a0b632f59194fd4f71d1f165d35323604a"
+      },
+      {
+        "id": "shared_frozen_bca40fe28c6ab40f4ffee410",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/8/",
+        "observed_at": "2026-11-23T04:13:57.250447+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b8a0a68fa3c58e134c32026a1c95f6f72acca4a680a1e298f6235e59516b89e5"
+      },
+      {
+        "id": "shared_frozen_4e359d96a2926c19094827db",
+        "url": "https://samueli.ucla.edu/seas_department/ece/page/9/",
+        "observed_at": "2026-11-23T04:13:58.283246+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f73a2e95cfcf893f0f794892328186213f260ef09a4936a505290ed75726a4c9"
+      },
+      {
+        "id": "shared_frozen_3d4731abbd7b24875abb16d8",
+        "url": "https://samueli.ucla.edu/seas_department/joint-ece/",
+        "observed_at": "2026-11-23T04:13:59.095504+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d3eb9d58e250a70a7aa0ab3480c6018b141abaffda9108b6874a60f8800bd404"
+      },
+      {
+        "id": "shared_frozen_3f5d456e38739cdca63586a7",
+        "url": "https://samueli.ucla.edu/seas_department/joint-ece/page/2/",
+        "observed_at": "2026-11-23T04:13:59.183043+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "397febaf8111d8cc8850c4919247b38ccac83fe4b3ef617ee3e3d91dff2ea6b9"
+      },
+      {
+        "id": "shared_frozen_4f235d488ac75534aa8d2415",
+        "url": "https://ee.ucla.edu/albertl-faculty",
+        "observed_at": "2026-11-23T04:14:00.017548+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "08d1c014b6ab70282c311cf71f48817ded16d127c6e46615a050fa514a64e932"
+      },
+      {
+        "id": "shared_frozen_583a9f22780f4338a1fd50b2",
+        "url": "https://ee.ucla.edu/emeriti-faculty",
+        "observed_at": "2026-11-23T04:14:00.018040+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f25a6311d7396f168153cb5c1e197a709456abf7a6a277060d9ab43d2a7b7f04"
+      },
+      {
+        "id": "shared_frozen_39391f82d2b6158d7644797b",
+        "url": "https://ee.ucla.edu/ucla-electrical-engineering-at-a-glance",
+        "observed_at": "2026-11-23T04:14:00.018476+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7f541decb7cd16741aad9e85810fb8614dd2f165618b15de6d4fc4a50011e4c1"
+      },
+      {
+        "id": "shared_frozen_9441d3bd84c08b91ed963f3c",
+        "url": "https://samueli.ucla.edu/people/abeer-alwan",
+        "observed_at": "2026-11-23T04:14:00.018815+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2fae086b6213d2e13e48563cf027ebbaa3afc40fad60a88eae6204c2e1305b37"
+      },
+      {
+        "id": "shared_frozen_a08b6697fbf9b2ba56e8777c",
+        "url": "https://samueli.ucla.edu/people/achuta-kadambi",
+        "observed_at": "2026-11-23T04:14:00.019130+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d35f08ed5ed6b914136288042392188f552109c74b7c12e2edfb510ac724c1b7"
+      },
+      {
+        "id": "shared_frozen_af8a269ee32f5286e24116fa",
+        "url": "https://samueli.ucla.edu/people/alan-laub",
+        "observed_at": "2026-11-23T04:14:00.019572+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b505e5bfdd3e7e5304afe161301f94b47f8868667bb9452e9f17266312069c74"
+      },
+      {
+        "id": "shared_frozen_2d55b508ad7f3f5541d2c4f0",
+        "url": "https://samueli.ucla.edu/people/alan-n-willson-jr",
+        "observed_at": "2026-11-23T04:14:00.132092+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "358e32862a48dd96b6487f57a64420d1d261a7113a6da80367e547ff1738d79b"
+      },
+      {
+        "id": "shared_frozen_91fb09da30ab704968fd6125",
+        "url": "https://samueli.ucla.edu/people/ali-mosleh",
+        "observed_at": "2026-11-23T04:14:00.233271+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "de48eea8d875667d660b2a42c848134e8d07b7fca6b57d0587e3f60a78fcd860"
+      },
+      {
+        "id": "shared_frozen_89e016ac0d6269b7f20deefb",
+        "url": "https://samueli.ucla.edu/people/ali-sayed",
+        "observed_at": "2026-11-23T04:14:00.237248+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e24c89667f04c8cfa9148f9b774af5fbd549916a1c87d53f8b3882f66ef26cbb"
+      },
+      {
+        "id": "shared_frozen_7ec4dae75ac04d8c0e350fa0",
+        "url": "https://samueli.ucla.edu/people/ankur-mehta",
+        "observed_at": "2026-11-23T04:14:00.288437+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "76fffcb93ff94eedce3baed263216b9a65f9445df955638067e9073654dc531c"
+      },
+      {
+        "id": "shared_frozen_ef8f585e149d8cb2321f30d1",
+        "url": "https://samueli.ucla.edu/people/asad-a-abidi",
+        "observed_at": "2026-11-23T04:14:00.292479+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a351eaed2799b9011bdb0c9bb102bc7a87aac46d0b531d0fdd5481f8a0b344a7"
+      },
+      {
+        "id": "shared_frozen_be549c3125783564bae68beb",
+        "url": "https://samueli.ucla.edu/people/asad-m-madni",
+        "observed_at": "2026-11-23T04:14:00.338167+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "edf8d3d075995bd01a7640ddf3513393f160259ecd9bc511da631b840dd2ed72"
+      },
+      {
+        "id": "shared_frozen_e666979f1634df5530ffb42e",
+        "url": "https://samueli.ucla.edu/people/aydin-babakhani",
+        "observed_at": "2026-11-23T04:14:00.419631+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f63f962aea86cb468a9f204d94e93a4660603314753693c24de593e80a1ffea7"
+      },
+      {
+        "id": "shared_frozen_147b4f8d68907aeec4a15779",
+        "url": "https://samueli.ucla.edu/people/aydogan-ozcan",
+        "observed_at": "2026-11-23T04:14:00.424273+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "db24bfbb820259c1d38961d431b9c0e25ee1feffaa3af6c0c42cf0785416dd55"
+      },
+      {
+        "id": "shared_frozen_f7b633cf0a7c2917a6d148ab",
+        "url": "https://samueli.ucla.edu/people/babak-daneshrad",
+        "observed_at": "2026-11-23T04:14:00.443322+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1cce50c9046f5658143ef8fe3c82efefe5f27e9c0bd3e48f4f5c8cfda597f1b5"
+      },
+      {
+        "id": "shared_frozen_1e203125868453e4c6070f7c",
+        "url": "https://samueli.ucla.edu/people/bahman-gharesifard",
+        "observed_at": "2026-11-23T04:14:00.447269+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "41631f520e69c391d819ba5a96a6265ef33a4bc77cdd80a9270aeb9c36dbc34a"
+      },
+      {
+        "id": "shared_frozen_375313c00af037dee169d5e5",
+        "url": "https://samueli.ucla.edu/people/bahram-jalali",
+        "observed_at": "2026-11-23T04:14:00.473140+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d51ecb00d305edf2ffd8231057dc0d0b766835e8f5bb45c3b5d4b32487938008"
+      },
+      {
+        "id": "shared_frozen_40a4e6756a543cfe48a9b72b",
+        "url": "https://samueli.ucla.edu/people/behzad-razavi",
+        "observed_at": "2026-11-23T04:14:00.559671+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "aa850f4bab2bf18b8c57c684108ada9117dba2d5b27861d6ec0c6a663e038c14"
+      },
+      {
+        "id": "shared_frozen_df6e53930b2ee032a7e2eead",
+        "url": "https://samueli.ucla.edu/people/benjamin-williams",
+        "observed_at": "2026-11-23T04:14:00.563744+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "77209abb69ff23ed485d23f02cd03579af7d43a4d61d831c3ba78333f0347861"
+      },
+      {
+        "id": "shared_frozen_1bc0267d8eb62cbbec01a67f",
+        "url": "https://samueli.ucla.edu/people/chandrashekhar-joshi",
+        "observed_at": "2026-11-23T04:14:00.619371+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d729a7709cdfefaafc1efca2ed2e24bae1c3144714247f4d1afbc3ef8affa0d2"
+      },
+      {
+        "id": "shared_frozen_5b9ddd1a31a84f6af7f59d49",
+        "url": "https://samueli.ucla.edu/people/chee-wei-wong",
+        "observed_at": "2026-11-23T04:14:00.706365+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f8b2878c688afdd86ccd875e43d71a8e5769db92c609c3442842b5f6f5c0ccde"
+      },
+      {
+        "id": "shared_frozen_7a86dea6f7222b3146233971",
+        "url": "https://samueli.ucla.edu/people/chih-kong-yang",
+        "observed_at": "2026-11-23T04:14:00.730590+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "594e55b53af7113237425f13a9bba82932cf4d10171c92a495bdfccdc2047229"
+      },
+      {
+        "id": "shared_frozen_8c76235a0ffb0a8cad81d17a",
+        "url": "https://samueli.ucla.edu/people/christina-fragouli",
+        "observed_at": "2026-11-23T04:14:00.739060+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "65dcba9c900cca5194fe7e5429bbf533b2b4cf2cf64d847b75eec0a7d6e9ffbc"
+      },
+      {
+        "id": "shared_frozen_2e970a816eea89c07ce923db",
+        "url": "https://samueli.ucla.edu/people/corey-arnold",
+        "observed_at": "2026-11-23T04:14:00.906917+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f414cb77abe40039d7f7beef5dd4dba4d55578c547f391acf5898609b70b7419"
+      },
+      {
+        "id": "shared_frozen_d1fc3b45d9a03c4f99ec5b86",
+        "url": "https://samueli.ucla.edu/people/dan-goebel",
+        "observed_at": "2026-11-23T04:14:00.915237+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f33f5ae4fd23e975d730917b3634e3e01bd40e4bc06497a1839b6f3627d59967"
+      },
+      {
+        "id": "shared_frozen_f677acbc6a07c9ffb64fc090",
+        "url": "https://samueli.ucla.edu/people/dana-cairns-watson",
+        "observed_at": "2026-11-23T04:14:00.925930+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e2401fc5a1632f1ffab210efce54f4705e6ca8051a65140a1303bba86f95438e"
+      },
+      {
+        "id": "shared_frozen_354a89e290fcfab7643cc603",
+        "url": "https://samueli.ucla.edu/people/danijela-cabric",
+        "observed_at": "2026-11-23T04:14:01.023837+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3c856a7653bf9f409a3b22b131a50a7068d8fd02702d06d02e2b850494ce95d0"
+      },
+      {
+        "id": "shared_frozen_3c6b0dccfe9b8b083637caa8",
+        "url": "https://samueli.ucla.edu/people/dariush-divsalar",
+        "observed_at": "2026-11-23T04:14:01.091576+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a3c570f924ad037d8f95931462f4161169bcc98c0d912b019450068b5f976404"
+      },
+      {
+        "id": "shared_frozen_1424c75c5dc506486732b023",
+        "url": "https://samueli.ucla.edu/people/dee-son-pan",
+        "observed_at": "2026-11-23T04:14:01.209441+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "51fa0f2d92198f6e79e09d0e8a41f8ed6dd7772631eed45dc6eb48f2a3e31377"
+      },
+      {
+        "id": "shared_frozen_9ea1dae4194fc15b9a1e53e2",
+        "url": "https://samueli.ucla.edu/people/dejan-markovic",
+        "observed_at": "2026-11-23T04:14:01.249894+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "811ee5e3fc330a0907ec63ab1e58b1d2975c6fae1a58a9689fa4e40aadb6e8e1"
+      },
+      {
+        "id": "shared_frozen_d560a796168e6c505aadbd23",
+        "url": "https://samueli.ucla.edu/people/donald-m-wiberg",
+        "observed_at": "2026-11-23T04:14:01.366561+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "77a7d9a809b7504695cf5bf1be759686631ce6c88014368aea5e8c2d678d26e3"
+      },
+      {
+        "id": "shared_frozen_17bd1644224203e6079a1822",
+        "url": "https://samueli.ucla.edu/people/douglas-lichtman",
+        "observed_at": "2026-11-23T04:14:01.489344+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "43409aaff335f2abd87aa13f74dc7b59c57f766bdc7a110c931a08367b1b9b13"
+      },
+      {
+        "id": "shared_frozen_aba36ec745832f521987047f",
+        "url": "https://samueli.ucla.edu/people/elaheh-ahmadi",
+        "observed_at": "2026-11-23T04:14:01.552356+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "33bf3df2594f2876cea5b1f2c5a57b8c7885d9557221e1e5fe8fd062f8264a30"
+      },
+      {
+        "id": "shared_frozen_479d2d0519d52d33499b5ba2",
+        "url": "https://samueli.ucla.edu/people/eli-yablonovitch",
+        "observed_at": "2026-11-23T04:14:01.649359+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2b4089c904e1ffb76c0e913fc752b3cbe8db1ac5310c1282df0c8f6d26454cd4"
+      },
+      {
+        "id": "shared_frozen_7055a3bd8e90202e638e2529",
+        "url": "https://samueli.ucla.edu/people/ezio-biglieri",
+        "observed_at": "2026-11-23T04:14:01.672590+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4969e0119b0756856b1bc15103faf1870f4338fd29b97374c7f0011191c7e819"
+      },
+      {
+        "id": "shared_frozen_2bcb3d8468f7ee6e5bca0065",
+        "url": "https://samueli.ucla.edu/people/farid-mesghali",
+        "observed_at": "2026-11-23T04:14:01.687347+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "be5e154cbe7574a0481863940cb5b7b93c00df5e88f6ed6257cb8385b6fe51ed"
+      },
+      {
+        "id": "shared_frozen_ff5f2cd5eeea1ec19e8c00f3",
+        "url": "https://samueli.ucla.edu/people/flavio-lorenzelli",
+        "observed_at": "2026-11-23T04:14:01.895889+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ccb8f5e6373e55c14b88bcf74f5bc2bcef47c79d6a17549f9b4b395f50f07c2d"
+      },
+      {
+        "id": "shared_frozen_0a3bdb75529c24a527ce203f",
+        "url": "https://samueli.ucla.edu/people/francis-chen",
+        "observed_at": "2026-11-23T04:14:01.938625+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cd4b67b93b92b9132f6c41542e81600b52626551109a82cafa068d27feb318eb"
+      },
+      {
+        "id": "shared_frozen_a09dd641fbe0033596542d77",
+        "url": "https://samueli.ucla.edu/people/fred-allen",
+        "observed_at": "2026-11-23T04:14:02.055636+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5b881c042ea879a9f62667b45afcde3b3d253dda5c028aeb1184b5cf19040fe7"
+      },
+      {
+        "id": "shared_frozen_8a2ebf24f482e56343541441",
+        "url": "https://samueli.ucla.edu/people/gabor-temes",
+        "observed_at": "2026-11-23T04:14:02.063491+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "15f3d8cd62e90ac3c6cce2db0953c246c12e08a80ab1fd781646be6688a01df9"
+      },
+      {
+        "id": "shared_frozen_50c15689f052e0c3b50b71f3",
+        "url": "https://samueli.ucla.edu/people/gregory-pottie",
+        "observed_at": "2026-11-23T04:14:02.182025+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cc6daf2d67a2a0f7375f8634eb043841153f861f9099bbe68faec2c6fe508f5d"
+      },
+      {
+        "id": "shared_frozen_71f2734321ff206a061aeb2b",
+        "url": "https://samueli.ucla.edu/people/harold-fetterman",
+        "observed_at": "2026-11-23T04:14:02.186088+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ecd4cb7141efd0dcaa33572e62db8b8d01a28f821c6d4267e6d583c2b0a633f3"
+      },
+      {
+        "id": "shared_frozen_80702c9ad2d239e73ab19f44",
+        "url": "https://samueli.ucla.edu/people/henry-samueli",
+        "observed_at": "2026-11-23T04:14:02.202804+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "facde5164e8c601246a83410114ab06e73512fb7e42c5f54cc3a8f5e471fad65"
+      },
+      {
+        "id": "shared_frozen_07d17c6d1ae211df8693b0fd",
+        "url": "https://samueli.ucla.edu/people/hooman-darabi",
+        "observed_at": "2026-11-23T04:14:02.318515+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "aeaa45ac2dacc61eb1d1b9f852be77ec484ef147216b881da70ef22a5fa6b84e"
+      },
+      {
+        "id": "shared_frozen_77aada4d0a35a6c17a62b862",
+        "url": "https://samueli.ucla.edu/people/ian-roberts",
+        "observed_at": "2026-11-23T04:14:02.327066+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "423cb7e9555093b72445c99f80cb358fcf13da82d3416841f9b464a40a23b157"
+      },
+      {
+        "id": "shared_frozen_2b0db76e8470583eb8026bb9",
+        "url": "https://samueli.ucla.edu/people/ingrid-verbauwhede",
+        "observed_at": "2026-11-23T04:14:02.347806+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ed195a9e2d9719f59b6fcc9a67a10391bc11d1e1b97593bbc5770c8fc2146ea3"
+      },
+      {
+        "id": "shared_frozen_5b8d248d71ecdba666f2c89d",
+        "url": "https://samueli.ucla.edu/people/izhak-rubin",
+        "observed_at": "2026-11-23T04:14:02.454620+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3246362bb802b39da555cce390f0c2b89af2e62b9b17cb11004d63cfe2436a9b"
+      },
+      {
+        "id": "shared_frozen_66576615793c57ce41bd21aa",
+        "url": "https://samueli.ucla.edu/people/jason-chou",
+        "observed_at": "2026-11-23T04:14:02.514914+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "76798c2ff54dfe4916b4cdd0e6f9bbd8a714a5caefdb9290254977ed6fbd8e32"
+      },
+      {
+        "id": "shared_frozen_c35761beef7f1d5a3ca13607",
+        "url": "https://samueli.ucla.edu/people/jason-jangho-choi",
+        "observed_at": "2026-11-23T04:14:02.565641+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "266115fd156e4d4899ffabe5bcaa6edfe5b9330b2143c0a9a49f1193ac7a1551"
+      },
+      {
+        "id": "shared_frozen_d2b4c022002f7d17a6120c6d",
+        "url": "https://samueli.ucla.edu/people/jason-jingsheng-cong",
+        "observed_at": "2026-11-23T04:14:02.657206+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8949e6111922c232ecad7cd15607be839112e4097487cdbfb37a6c4c409f8888"
+      },
+      {
+        "id": "shared_frozen_e4b8fb1e19bd7e1ec7d5864c",
+        "url": "https://samueli.ucla.edu/people/jason-petta",
+        "observed_at": "2026-11-23T04:14:02.738140+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f0345df43119431737d9087b5d3eb03b136cc4e142bb67b7d22228653fc839b1"
+      },
+      {
+        "id": "shared_frozen_514fba0d7e47ca318a47a3f9",
+        "url": "https://samueli.ucla.edu/people/jason-woo",
+        "observed_at": "2026-11-23T04:14:02.757381+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a625732af7d956260ec471cbd95c7076a303a8d573cc3cb8db5a6d7ac7ace8e7"
+      },
+      {
+        "id": "shared_frozen_3185fbe47c74b4c5aadc274c",
+        "url": "https://samueli.ucla.edu/people/jia-ming-liu",
+        "observed_at": "2026-11-23T04:14:02.864813+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8cc12823eff4b6b84d2698b6b0ef15cf740445d1e662f3c69190d32d3d9bacd5"
+      },
+      {
+        "id": "shared_frozen_0cb1435a40024f564597f854",
+        "url": "https://samueli.ucla.edu/people/john-villasenor",
+        "observed_at": "2026-11-23T04:14:02.874171+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "04ea7bae4eac7bfe383b473d4a4c4af7c4af801a831f9761d176de412f7b4040"
+      },
+      {
+        "id": "shared_frozen_203e80320641bee21a6fb6ea",
+        "url": "https://samueli.ucla.edu/people/jonathan-kao",
+        "observed_at": "2026-11-23T04:14:02.884930+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0251146a5834c5be7bfeba2f49008e5c5fc891cf4705a64406837ab6ed1266d1"
+      },
+      {
+        "id": "shared_frozen_0555648bb9d5f03bd22e4edc",
+        "url": "https://samueli.ucla.edu/people/kambiz-shoarinejad",
+        "observed_at": "2026-11-23T04:14:02.988921+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "087ecdbb9895d8391b7fb676dfc65897305a16d475df4841fc94ef610de6ed1c"
+      },
+      {
+        "id": "shared_frozen_7355c61b3b84ef7dc5aa045b",
+        "url": "https://samueli.ucla.edu/people/kang-wang",
+        "observed_at": "2026-11-23T04:14:02.992873+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5a9cfc4444eedcd89cd94b2c1e9ddd702c35e17b45aa9e2cb0453c726e473a4e"
+      },
+      {
+        "id": "shared_frozen_562618278a8415350ff33db2",
+        "url": "https://samueli.ucla.edu/people/katsushi-arisaka",
+        "observed_at": "2026-11-23T04:14:03.080996+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d9e93f3f5ecaf6c72844ae523fb14fda526f119292234d29b09c915f083f8669"
+      },
+      {
+        "id": "shared_frozen_77430e914707f4c30a1c63d0",
+        "url": "https://samueli.ucla.edu/people/kung-yao",
+        "observed_at": "2026-11-23T04:14:03.094632+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "03a699303961de549a3acc5855e108415a8dbf6cb9d04df49d1b547067209ece"
+      },
+      {
+        "id": "shared_frozen_de0e7cbe3cc673f50aec4dbc",
+        "url": "https://samueli.ucla.edu/people/lara-dolecek",
+        "observed_at": "2026-11-23T04:14:03.128140+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0ac3055a43d44f039c017529320b90f302a2e892228819c0732d2d47e5faee9d"
+      },
+      {
+        "id": "shared_frozen_cc708ffcd5b790f3ced3c3d5",
+        "url": "https://samueli.ucla.edu/people/lei-he",
+        "observed_at": "2026-11-23T04:14:03.156905+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9eb1ead996c815d34d7eca381bab4a8eb33ae0f865594e47be38289c1a61038e"
+      },
+      {
+        "id": "shared_frozen_48a9d62752b514de8876341c",
+        "url": "https://samueli.ucla.edu/people/leo-zhou",
+        "observed_at": "2026-11-23T04:14:03.190380+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "51782d1b529c2780aaf6e6ed6a8bbb0b3f42b777264052572130ed274be3c505"
+      },
+      {
+        "id": "shared_frozen_d8b5a613614755539f325619",
+        "url": "https://samueli.ucla.edu/people/lieven-vandenberghe",
+        "observed_at": "2026-11-23T04:14:03.233534+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "409440ed3b08a0888b63bfcce1180d347afefe6f890769d07294df0fe2d9501e"
+      },
+      {
+        "id": "shared_frozen_5037862cdaf8b3d9970a916e",
+        "url": "https://samueli.ucla.edu/people/lin-yang",
+        "observed_at": "2026-11-23T04:14:03.266976+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5e1ebc3edd3745527e4840bef55947de64f67484ce51e6d51c3d5ebf1ac84cbb"
+      },
+      {
+        "id": "shared_frozen_dfb668f36de23f2f3cfebd9e",
+        "url": "https://samueli.ucla.edu/people/lixia-zhang",
+        "observed_at": "2026-11-23T04:14:03.294367+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c0075d2c5a7ba432c94fedecdf7910539a81d8caf29db8bd102f80eb1d82ec9f"
+      },
+      {
+        "id": "shared_frozen_b79ed16fd21b1e1410c1268e",
+        "url": "https://samueli.ucla.edu/people/liz-izhikevich",
+        "observed_at": "2026-11-23T04:14:03.319909+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "28a51f79dba7f17ad0ebd4a94fadcb619e74de85a008668445bd7175907708cd"
+      },
+      {
+        "id": "shared_frozen_ec26a470ae46841e99a5a2fe",
+        "url": "https://samueli.ucla.edu/people/m-c-frank-chang",
+        "observed_at": "2026-11-23T04:14:03.366885+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "08d0ac31237f01754fdac259a78f6387f8ad9577188779ae3884ab648cca3046"
+      },
+      {
+        "id": "shared_frozen_5815c873350df04113a9252b",
+        "url": "https://samueli.ucla.edu/people/majid-sarrafzadeh",
+        "observed_at": "2026-11-23T04:14:03.403952+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0230bf60850898b74833d85228e5d7e6e17bd1b7a0c65f3bf65902a598a8ffd0"
+      },
+      {
+        "id": "shared_frozen_40b72bedce483594a7570a81",
+        "url": "https://samueli.ucla.edu/people/mani-srivastava",
+        "observed_at": "2026-11-23T04:14:03.408065+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cddd5a964127f674c1570b331c30de9df5211ceaae04592e178947259a89884f"
+      },
+      {
+        "id": "shared_frozen_a8c714ed0bf5574d67e00f5c",
+        "url": "https://samueli.ucla.edu/people/mark-gyure",
+        "observed_at": "2026-11-23T04:14:03.412819+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f72fa69c08804270c1fe3f720600e8f1d32015fb4cb89f9dc829a76d0ed774e8"
+      },
+      {
+        "id": "shared_frozen_b58e12148e1028317f55c0a4",
+        "url": "https://samueli.ucla.edu/people/marko-sokolich",
+        "observed_at": "2026-11-23T04:14:03.493802+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a772e48ec5f025d9a2b51d9ae28699dfbaa0912cda19830b54a65e7eb3121981"
+      },
+      {
+        "id": "shared_frozen_c4b9d2dd8152b13eef6f7d16",
+        "url": "https://samueli.ucla.edu/people/mihaela-van-der-schaar",
+        "observed_at": "2026-11-23T04:14:03.511077+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b90fdb186227b9822a7c021caa20b694db14c0b132ac751593f65e918e162e53"
+      },
+      {
+        "id": "shared_frozen_7efabec52773e7ef26fec667",
+        "url": "https://samueli.ucla.edu/people/mike-briggs",
+        "observed_at": "2026-11-23T04:14:03.519726+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9cf89aac36441ea34ba13949ec5adf9860ac53bc0ae5024c4c4d8b8ef883082a"
+      },
+      {
+        "id": "shared_frozen_c4e74ea9dbd9a6b8e2095780",
+        "url": "https://samueli.ucla.edu/people/mona-jarrahi",
+        "observed_at": "2026-11-23T04:14:03.603255+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "033999c4db893853890dc0eacb2752ddf283b38dacde146a769f16b0f2986a9f"
+      },
+      {
+        "id": "shared_frozen_b6e66786459a960e2e106628",
+        "url": "https://samueli.ucla.edu/people/nader-sehatbakhsh",
+        "observed_at": "2026-11-23T04:14:03.669384+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "20009d5502fb0caff88871a63f233b05428cb6ee3b9b9a42579d0f3961c7df29"
+      },
+      {
+        "id": "shared_frozen_949f9835d15ffedefac0e669",
+        "url": "https://samueli.ucla.edu/people/omid-abari",
+        "observed_at": "2026-11-23T04:14:03.673580+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b41b14964914ac3fec042bea3b1a59331e480c0c30e5d12ea6a8869f4216079a"
+      },
+      {
+        "id": "shared_frozen_6a65c38acc249addfbf668e9",
+        "url": "https://samueli.ucla.edu/people/panagiotis-christofides",
+        "observed_at": "2026-11-23T04:14:03.733640+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d3a12e020a717efd357e19e023ab4f8b39b7644fbce83e26268d5a49f66d2124"
+      },
+      {
+        "id": "shared_frozen_5e205773dbc29ec79d678420",
+        "url": "https://samueli.ucla.edu/people/paulo-tabuada",
+        "observed_at": "2026-11-23T04:14:03.739454+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5ffebe3600b58421090021bd2aedb7a770b345c83846242b9dc396a9a30009e5"
+      },
+      {
+        "id": "shared_frozen_6fab135e53ea9142e41ecf82",
+        "url": "https://samueli.ucla.edu/people/pedram-khalili",
+        "observed_at": "2026-11-23T04:14:03.800215+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "03a58decae2ea9de990ac5981b21233d59fbccf5833ee4788e1a2ce5669c322a"
+      },
+      {
+        "id": "shared_frozen_d87e9182b6b65da464da3a74",
+        "url": "https://samueli.ucla.edu/people/prineha-narang",
+        "observed_at": "2026-11-23T04:14:03.842452+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b4ad04f8a26c50bf9ae392966de6484552793b0fca1c43bb1d638d5fb20c3c49"
+      },
+      {
+        "id": "shared_frozen_d3a91bf93219e3de11f7ea39",
+        "url": "https://samueli.ucla.edu/people/puneet-gupta",
+        "observed_at": "2026-11-23T04:14:03.872084+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ae94e252a90099811bb6ebdea58b210172cc9a700e549fb397a3b0b0ed5e1173"
+      },
+      {
+        "id": "shared_frozen_46658212402d11881e382508",
+        "url": "https://samueli.ucla.edu/people/rajeev-jain",
+        "observed_at": "2026-11-23T04:14:03.872345+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9e78f9ee04279ac601711b611834634badb8776316d42a3d13e11c08b5604e30"
+      },
+      {
+        "id": "shared_frozen_e4f11bb403357e6bc709bb3b",
+        "url": "https://samueli.ucla.edu/people/richard-wesel",
+        "observed_at": "2026-11-23T04:14:03.989119+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "38246582fcfa00ed5dc6d160d19b47e34853ee919a233808b497cb5335c16950"
+      },
+      {
+        "id": "shared_frozen_2fad790cef8e419d9236c839",
+        "url": "https://samueli.ucla.edu/people/robert-candler",
+        "observed_at": "2026-11-23T04:14:03.993012+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1520d0c82be276cad033658d8d36019a09a746fb051f12d7695bfbc67cbd23e1"
+      },
+      {
+        "id": "shared_frozen_3e68f92688059503a8560b0d",
+        "url": "https://samueli.ucla.edu/people/rongming-chu",
+        "observed_at": "2026-11-23T04:14:04.037652+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "633322125292a0e164eba76d6593fe44ade0aa46abfaaea26ba3dcf50f5ef20d"
+      },
+      {
+        "id": "shared_frozen_342e9f1b52ba748024696e74",
+        "url": "https://samueli.ucla.edu/people/sam-emaminejad",
+        "observed_at": "2026-11-23T04:14:04.050115+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "97a849b726a9a0ec0aac96356b98d4db615d1afc167a1ed7306600b1c979025d"
+      },
+      {
+        "id": "shared_frozen_3e5aeb40668aaac09dc3742a",
+        "url": "https://samueli.ucla.edu/people/sean-wang",
+        "observed_at": "2026-11-23T04:14:04.102614+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8ddb26aa11b465a5dc5a276d3e777acf1490760c1a3a116bd47b46b5562386c8"
+      },
+      {
+        "id": "shared_frozen_d7efefe8a6f0a1c6e4a06c61",
+        "url": "https://samueli.ucla.edu/people/sergio-carbajo",
+        "observed_at": "2026-11-23T04:14:04.155505+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "aef6dd0d527ab2e427492fcf214bc49bd95a38351720e4cd1e2ccd2879e14938"
+      },
+      {
+        "id": "shared_frozen_d4b7e3c99523f508fca94021",
+        "url": "https://samueli.ucla.edu/people/shervin-moloudi",
+        "observed_at": "2026-11-23T04:14:04.164532+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bdb81c18f0136a6d68871dc36c557d3ce22dd108745b16df214ec26eab4f3c02"
+      },
+      {
+        "id": "shared_frozen_995eb3d91d730a62d3925a4e",
+        "url": "https://samueli.ucla.edu/people/stefano-soatto",
+        "observed_at": "2026-11-23T04:14:04.199531+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "46fcdab4205f3b16f3da76a236b220cf681667ce54cecedb81780c1b94f549bb"
+      },
+      {
+        "id": "shared_frozen_0727112de059f9d28bb4b567",
+        "url": "https://samueli.ucla.edu/people/stephen-jacobsen",
+        "observed_at": "2026-11-23T04:14:04.237042+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a49ae33ed79e5b48874e426c628350cc62d7d8c93126f973ffd7e2df48ad588a"
+      },
+      {
+        "id": "shared_frozen_7882d87135dce5c2f3ef505c",
+        "url": "https://samueli.ucla.edu/people/subramanian-iyer",
+        "observed_at": "2026-11-23T04:14:04.286519+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1db09a28cb610c532ca5f8685f6ee821c5de7f62989633fc3b01528795903cf0"
+      },
+      {
+        "id": "shared_frozen_33623dd67a4966aa03940ebe",
+        "url": "https://samueli.ucla.edu/people/sudhakar-pamarti",
+        "observed_at": "2026-11-23T04:14:04.287174+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dd009a5a9fdda7df7d0e092c1cbbcb57e2e0e8e1bd69a6c7c8b261b57dae5308"
+      },
+      {
+        "id": "shared_frozen_09f3f75d8a29fbc226f66964",
+        "url": "https://samueli.ucla.edu/people/suhas-diggavi",
+        "observed_at": "2026-11-23T04:14:04.296517+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "93d2943297936f47068e4dedc502887b3787be7685347d739a35a1f092a80e56"
+      },
+      {
+        "id": "shared_frozen_c800f511e056011f180e59ec",
+        "url": "https://samueli.ucla.edu/people/vwani-roychowdhury",
+        "observed_at": "2026-11-23T04:14:04.397549+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1161e3a7caa63832c75657b22d833141a48ff58bd77e7a257a569852b031ccdb"
+      },
+      {
+        "id": "shared_frozen_83238dbba80de814f9690e51",
+        "url": "https://samueli.ucla.edu/people/warren-mori",
+        "observed_at": "2026-11-23T04:14:04.446092+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6d0901d41e22fbb81a6bc2ba763235e823026814b326e2444fcbf6277516239a"
+      },
+      {
+        "id": "shared_frozen_75bedb89d530adf41cb0a62d",
+        "url": "https://samueli.ucla.edu/people/wentai-liu",
+        "observed_at": "2026-11-23T04:14:04.455033+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5b8682864ca93df0d784f6fdbfc6fb5c7e13942e59593dd5e0f28a4a3c96101c"
+      },
+      {
+        "id": "shared_frozen_9a6d845ce418cf8d85152d87",
+        "url": "https://samueli.ucla.edu/people/william-kaiser",
+        "observed_at": "2026-11-23T04:14:04.455339+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "545335e3885c2fb3a901b243ea2cd7d12b3856ec44fd719837a19572176cc067"
+      },
+      {
+        "id": "shared_frozen_52784f7d3a4c0192b4772b27",
+        "url": "https://samueli.ucla.edu/people/xiang-anthony-chen",
+        "observed_at": "2026-11-23T04:14:04.464085+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "487fef9dfc71c4f4bc099f79536fd515fb63df83ec8403673ed51fa63d6ba231"
+      },
+      {
+        "id": "shared_frozen_ae7a5e82abba1338edc3ee65",
+        "url": "https://samueli.ucla.edu/people/xiaofan-cui",
+        "observed_at": "2026-11-23T04:14:04.528899+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8f5b8c787510c190bee6fc1d576f2391babfea9f78d130ffa4b79c55a2796672"
+      },
+      {
+        "id": "shared_frozen_758d89049e7f9660fdd7dab2",
+        "url": "https://samueli.ucla.edu/people/yahya-rahmat-samii",
+        "observed_at": "2026-11-23T04:14:04.547639+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "eabd0f97e3eeba5c9a6e81880c7de370754777d84993dcdc209af53389ea1a97"
+      },
+      {
+        "id": "shared_frozen_2c1eb96992797ae68f7bca1a",
+        "url": "https://samueli.ucla.edu/people/yair-rivenson",
+        "observed_at": "2026-11-23T04:14:04.556505+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0e571023f0382b5d2fa0d4a3894e22f2b6692f0ae568edec8dcf50faefef745f"
+      },
+      {
+        "id": "shared_frozen_6e668685462d3ddbd7dc0a51",
+        "url": "https://samueli.ucla.edu/people/yang-zhang",
+        "observed_at": "2026-11-23T04:14:04.643912+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "165c8229e1bbc75f808ba4af6398064ca06159ba3ac06fb98209bc9d530e4c7f"
+      },
+      {
+        "id": "shared_frozen_14e3fa65bf0b1a9d38690361",
+        "url": "https://samueli.ucla.edu/people/yuan-tian",
+        "observed_at": "2026-11-23T04:14:04.672633+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2a68a2e51c4f80fc9d98609c20f2832c23583ab75bcd4a55ec7760ca117c0c22"
+      },
+      {
+        "id": "shared_frozen_bf24ecc9fd2018e08ce910b5",
+        "url": "https://samueli.ucla.edu/people/yuanxun-wang",
+        "observed_at": "2026-11-23T04:14:04.676829+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "245cfde994a9cdfee3b5fd3995c42af39d7eced2049ee5f22b6631b3206c063b"
+      },
+      {
+        "id": "shared_frozen_6d314b3405214330915e5474",
+        "url": "https://samueli.ucla.edu/people/zachary-taylor",
+        "observed_at": "2026-11-23T04:14:04.694508+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c40b74e70de565ca2a1d6e45be512bed492072b6c28e3bec72bbd070b94eb90c"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Independently enumerated the authoritative Samueli ECE directory (9 pages, 103 unique people) and the joint-ece directory (2 pages, 13 people, all also on the main ECE list); all 103 directory people are required records, no directory person is missing from the brief and no brief person is missing from the directory. The ECE and joint directories were re-fetched live on 2026-11-23 and list the same people with the same department categories as the pinned captures. Coverage is complete across the Samueli directories."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "ee.ucla.edu/albertl-faculty is an older 2020-2021 supporting page (it carries notices such as \"joining the ECE Dept. July 2021\"). It additionally lists Alyson Fletcher, Diana Huffaker, Tatsuo Itoh, Fabien Scalzo, Jason Speyer, Oscar Stafsudd, Dwight Streit and King-Ning Tu, none of whom is on the current Samueli ECE or joint-ece directories. The current Samueli directories are authoritative, so these names are not counted and the older page is not treated as confirmation of any current appointment. The ee.ucla.edu emeriti page adds no names beyond the Samueli emeriti-ece category."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_fcb74fc3057e5ae39580",
+        "description": "Ingrid Verbauwhede: listed on the authoritative Samueli ECE directory (category ece only) with profile title Professor and an ee.ucla.edu email; absent from the adjunct, lecturer, joint and emeriti lists and from the ee.ucla.edu emeriti page. Classified included/regular. Her directory card carries no core-ece sub-category, as for Bahman Gharesifard, and the card is dated 2018."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_754868bcd9dc5c24a5fe",
+        "description": "Zachary Taylor: listed on the authoritative Samueli ECE directory (category ece only) with profile title Professor; absent from adjunct, lecturer, joint and emeriti lists. His profile email is a seas.ucla.edu address (not ee.ucla.edu). Classified included/regular on the official ECE listing; no core-ece sub-category on the card."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_f19507116c8b5ff7a945",
+        "description": "Pedram Khalili: listed on the authoritative Samueli ECE directory (category ece only) with profile title Professor, a UCLA office and Device Research Laboratory link; absent from adjunct, lecturer, joint and emeriti lists. His profile email is a ucla.edu address (not ee.ucla.edu). Classified included/regular on the official ECE listing; no core-ece sub-category on the card."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_9637437b089255a8ae5c",
+        "description": "Ezio Biglieri: listed on the authoritative Samueli ECE directory (category ece only) with profile title Professor and an ee.ucla.edu email; absent from adjunct, lecturer, joint and emeriti lists and from the ee.ucla.edu emeriti page. Classified included/regular on the official ECE listing; no core-ece sub-category on the card."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c6e90cd6b42c5dc08332",
+        "description": "Corey Arnold: Samueli ECE directory categories affiliate-ece, ece, be, joint-be; profile title Professor (Bioengineering home). The official ECE affiliate-ece designation for a professor is an affiliate/below-the-line appointment, so included/affiliate_professor."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ff5dc43d430256f6b709",
+        "description": "Douglas Lichtman: listed on the official joint-ece directory with title Professor of Law; classified included/joint_secondary on the explicit official joint ECE listing, with no regular-versus-courtesy subtype established."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_af3d0eedc7525fd6b764",
+        "description": "Dan Goebel appears on the joint-ece list but his official title is Adjunct Professor (categories adjunct-ece, adjunct-mae, joint-ece, mae); the adjunct title governs and he is excluded."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_1d1443bfd0f1433ba288eb5286499c65",
+    "candidate_sha256": "b41f856a790c9e954df45fbac1bffb4d14b97f91103eebae3af8686e176834bc",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A81c1b876-7755-4b73-8b77-31cc6ed303e0%253Adelegate-task%253Av5-verify-ucsd_ucla-da80d57d:ordinal:1",
+    "model": "claude-sonnet-5-5",
+    "finished_at": "2026-11-23T10:04:05.068897+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/f2b196c85bceed93c47cc76d0d7db2daafc1e09a6edd8e185d93c96750036f23.json",
+      "sha256": "f2b196c85bceed93c47cc76d0d7db2daafc1e09a6edd8e185d93c96750036f23"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/f2b196c85bceed93c47cc76d0d7db2daafc1e09a6edd8e185d93c96750036f23.json",
+    "sha256": "f2b196c85bceed93c47cc76d0d7db2daafc1e09a6edd8e185d93c96750036f23"
+  }
+}

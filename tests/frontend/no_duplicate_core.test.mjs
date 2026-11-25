@@ -8,6 +8,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const siteDir = path.join(here, '..', '..', 'site');
 
 const CORE_ENGINE_FILES = [
+  'faculty.js',
   'rank.js',
   'comparison.js',
   'comparison.css',

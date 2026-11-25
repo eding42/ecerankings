@@ -1,0 +1,3203 @@
+{
+  "schema_version": 1,
+  "schools": {
+    "berkeley": {
+      "institution_id": "https://openalex.org/I95457486",
+      "name": "UC Berkeley",
+      "unit": "Electrical Engineering within EECS",
+      "country": "US",
+      "adapter": "berkeley",
+      "roster_url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/faculty.html",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "roster",
+          "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/faculty.html",
+          "primary": true
+        },
+        {
+          "id": "current",
+          "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/list.html",
+          "primary": false
+        },
+        {
+          "id": "ee_current",
+          "url": "https://www2.eecs.berkeley.edu/Faculty/Lists/EE/list.html",
+          "primary": false
+        }
+      ]
+    },
+    "illinois": {
+      "institution_id": "https://openalex.org/I157725225",
+      "name": "Illinois Urbana-Champaign",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "illinois",
+      "roster_url": "https://ece.illinois.edu/about/directory/faculty",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "roster",
+          "url": "https://ece.illinois.edu/about/directory/faculty",
+          "primary": true
+        },
+        {
+          "id": "core",
+          "url": "https://ece.illinois.edu/about/directory/faculty-dept",
+          "primary": false
+        }
+      ]
+    },
+    "stanford": {
+      "institution_id": "https://openalex.org/I97018004",
+      "name": "Stanford University",
+      "unit": "Electrical Engineering",
+      "country": "US",
+      "adapter": "stanford",
+      "roster_url": "https://ee.stanford.edu/people/faculty?type=all&limit=60",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "roster",
+          "url": "https://ee.stanford.edu/people/faculty?type=all&limit=60",
+          "primary": true
+        },
+        {
+          "id": "active",
+          "url": "https://ee.stanford.edu/people/faculty?type=active&limit=60",
+          "primary": false
+        }
+      ],
+      "profile_url_aliases": {
+        "https://smirc.stanford.edu/people.html": "https://profiles.stanford.edu/thomas-lee",
+        "https://biosystems.stanford.edu": "https://profiles.stanford.edu/ada-poon",
+        "https://infolab.stanford.edu/~widom": "https://profiles.stanford.edu/jennifer-widom",
+        "https://rsl.stanford.edu/kbpauly": "https://profiles.stanford.edu/kim-pauly",
+        "https://neurosurgery.stanford.edu/research/chichilnisky": "https://profiles.stanford.edu/chichilnisky",
+        "https://www-tcad.stanford.edu/tcad/bios/dutton.html": "https://profiles.stanford.edu/robert-dutton",
+        "https://profiles.stanford.edu/leonidas-j.-guibas": "https://profiles.stanford.edu/leonidas-guibas",
+        "https://rsl.stanford.edu/hargreaves": "https://profiles.stanford.edu/brian-hargreaves",
+        "https://vlf.stanford.edu": "https://profiles.stanford.edu/umran-inan",
+        "https://dna-discovery.stanford.edu": "https://profiles.stanford.edu/hanlee-ji",
+        "https://suif.stanford.edu/~lam": "https://profiles.stanford.edu/monica-lam",
+        "https://web.stanford.edu/group/dabmgroup/cgi-bin/dabm": "https://profiles.stanford.edu/david-miller",
+        "https://profiles.stanford.edu/dschus": "https://profiles.stanford.edu/david-schuster",
+        "https://stanford.edu/people/spielman": "https://profiles.stanford.edu/daniel-spielman",
+        "https://profiles.stanford.edu/bruce-lusignan": "https://ee.stanford.edu/people/faculty?type=e5f747cb-f844-4154-b62a-d728b3552c70&limit=60",
+        "https://profiles.stanford.edu/g-tyler": "https://ee.stanford.edu/people/faculty?type=e5f747cb-f844-4154-b62a-d728b3552c70&limit=60",
+        "https://www.stanford.edu/people/spielman": "https://profiles.stanford.edu/daniel-spielman"
+      },
+      "profile_alias_evidence": "Stale personal/central links are replaced by corresponding official Stanford Profiles pages; names and appointment headings checked against the EE directory. Two unavailable emeritus bios (Lusignan and Tyler) use the official named emeritus roster as a documentary fallback, not an individual profile. Preserve original profile identity and cite the actual replacement source/locator."
+    },
+    "texas": {
+      "institution_id": "https://openalex.org/I86519309",
+      "name": "University of Texas at Austin",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "texas",
+      "roster_url": "https://ece.utexas.edu/people/faculty",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "roster",
+          "url": "https://ece.utexas.edu/people/faculty",
+          "primary": true
+        },
+        {
+          "id": "core",
+          "url": "https://ece.utexas.edu/people/faculty/ece",
+          "primary": false
+        }
+      ]
+    },
+    "gatech": {
+      "institution_id": "https://openalex.org/I130701444",
+      "name": "Georgia Institute of Technology",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "gatech",
+      "roster_url": "https://ece.gatech.edu/directory/all?field_person_groups_target_id=2323",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "roster",
+          "url": "https://ece.gatech.edu/directory/all?field_person_groups_target_id=2323",
+          "primary": true
+        },
+        {
+          "id": "adjunct",
+          "url": "https://ece.gatech.edu/directory/all?field_person_groups_target_id=2330",
+          "primary": false
+        }
+      ]
+    },
+    "usc": {
+      "institution_id": "https://openalex.org/I1174212",
+      "name": "University of Southern California",
+      "unit": "Ming Hsieh Department of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "usc",
+      "roster_url": "https://viterbi.usc.edu/directory/faculty/",
+      "max_pages": 1,
+      "lists": [
+        {
+          "id": "all",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "0"
+          },
+          "primary": true
+        },
+        {
+          "id": "adjunct",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "1"
+          },
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "2"
+          },
+          "primary": false
+        },
+        {
+          "id": "joint_secondary",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "3"
+          },
+          "primary": false
+        },
+        {
+          "id": "part_time",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "4"
+          },
+          "primary": false
+        },
+        {
+          "id": "research",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "5"
+          },
+          "primary": false
+        },
+        {
+          "id": "teaching",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "6"
+          },
+          "primary": false
+        },
+        {
+          "id": "tenure_track",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "7"
+          },
+          "primary": false
+        },
+        {
+          "id": "visiting",
+          "url": "https://viterbi.usc.edu/directory/faculty/",
+          "method": "POST",
+          "form": {
+            "department[]": "Ming Hsieh Department of Electrical and Computer Engineering",
+            "faculty_type[]": "8"
+          },
+          "primary": false,
+          "allow_empty": true
+        }
+      ],
+      "supporting_urls": [
+        "https://minghsiehece.usc.edu/directory/faculty/",
+        "https://minghsiehece.usc.edu/directory/faculty/?tenured-joint",
+        "https://viterbischool.usc.edu/news/2026/10/six-new-faculty-join-usc-stevens-school-of-computing-and-ai-this-year/"
+      ],
+      "profile_url_aliases": {
+        "https://viterbi.usc.edu/directory/faculty/Moloudi/Shervin-": "https://viterbi.usc.edu/directory/faculty/Moloudi/Shervin",
+        "https://viterbi.usc.edu/directory/faculty/Ioannou/Petros": "https://minghsiehece.usc.edu/directory/faculty/profile/?fname=Petros&lname=Ioannou"
+      },
+      "profile_alias_evidence": "The directory link adds a trailing hyphen to Shervin; the corrected official profile identifies the same part-time ECE lecturer. Petros Ioannou's central URL returned 404; the ECE directory links his working departmental profile with matching full name and ECE title. Both destinations were retrieved successfully on 2026-11-23. Original links retained; appointment membership is adjudicated separately."
+    },
+    "mit": {
+      "institution_id": "https://openalex.org/I63966007",
+      "name": "Massachusetts Institute of Technology",
+      "unit": "Electrical Engineering faculty within EECS",
+      "country": "US",
+      "adapter": "mit",
+      "roster_url": "https://www.eecs.mit.edu/role/faculty-ee/",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "ee",
+          "url": "https://www.eecs.mit.edu/role/faculty-ee/",
+          "primary": true
+        }
+      ],
+      "supporting_urls": [
+        "https://www.eecs.mit.edu/role/faculty/",
+        "https://www.eecs.mit.edu/leadership/"
+      ]
+    },
+    "ucsd": {
+      "institution_id": "https://openalex.org/I36258959",
+      "name": "University of California San Diego",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ucsd",
+      "roster_url": "https://ece.ucsd.edu/people/faculty",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "core",
+          "url": "https://ece.ucsd.edu/people/faculty",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://ece.ucsd.edu/people/faculty/affiliated",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ece.ucsd.edu/people/faculty/emeritus",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [
+        "https://catalog.ucsd.edu/faculty/ECE.html"
+      ],
+      "coverage_note": "The approved affiliation metric requires the explicit affiliate faculty list. Unlinked entries retain scoped directory-entry identities, rather than invented profile URLs.",
+      "profile_url_aliases": {
+        "https://www.calit2.net/people/detail.php?id=509": "https://jacobsschool.ucsd.edu/people/profile/curt-schurgers",
+        "https://www-chem.ucsd.edu/faculty/profiles/xiong_wei.html": "https://profiles.ucsd.edu/wei.xiong"
+      },
+      "profile_alias_evidence": "ECE directory links an outdated Calit2 bio for Curt Schurgers with a certificate failure; the official Jacobs School profile names Curt Schurgers and his current ECE teaching professorship. Preserve original URL and use the explicit current university appointment.",
+      "roster_mode": "union"
+    },
+    "purdue": {
+      "institution_id": "https://openalex.org/I219193219",
+      "name": "Purdue University West Lafayette",
+      "unit": "Elmore Family School of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "purdue",
+      "roster_url": "https://engineering.purdue.edu/ECE/People/Faculty",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.purdue.edu/ECE/People/Faculty",
+          "primary": true
+        },
+        {
+          "id": "courtesy",
+          "url": "https://engineering.purdue.edu/ECE/People/Faculty?show_group=courtesy-faculty",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://engineering.purdue.edu/ECE/People/Faculty?show_group=adjunct-faculty",
+          "primary": false
+        },
+        {
+          "id": "visiting",
+          "url": "https://engineering.purdue.edu/ECE/People/Faculty?show_group=visiting-faculty",
+          "primary": false
+        },
+        {
+          "id": "retired",
+          "url": "https://engineering.purdue.edu/ECE/People/Faculty?show_group=retired-faculty",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [],
+      "roster_mode": "union",
+      "profile_url_aliases": {
+        "https://schaterji.io": "https://engineering.purdue.edu/ABE/people/ptProfile?resource_id=209081",
+        "https://www.stat.purdue.edu/people/faculty/patrick": "https://www.cs.purdue.edu/people/faculty/patrick.html"
+      },
+      "profile_alias_evidence": "The ECE courtesy directory links Somali Chaterji personal site, which returned 403. Purdue Research Foundation identifies her ABE university profile with resource_id=209081; verify the matching name and professorial rank there, retaining the original link."
+    },
+    "ucla": {
+      "institution_id": "https://openalex.org/I161318765",
+      "name": "University of California Los Angeles",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ucla",
+      "roster_url": "https://samueli.ucla.edu/seas_department/ece/",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "ece",
+          "url": "https://samueli.ucla.edu/seas_department/ece/",
+          "primary": true
+        },
+        {
+          "id": "joint",
+          "url": "https://samueli.ucla.edu/seas_department/joint-ece/",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [
+        "https://www.ee.ucla.edu/albertl-faculty/",
+        "https://www.ee.ucla.edu/emeriti-faculty/",
+        "https://www.ee.ucla.edu/ucla-electrical-engineering-at-a-glance/"
+      ],
+      "roster_mode": "union"
+    },
+    "michigan": {
+      "institution_id": "https://openalex.org/I27837315",
+      "name": "University of Michigan",
+      "unit": "Electrical and Computer Engineering within EECS",
+      "country": "US",
+      "adapter": "michigan",
+      "roster_url": "https://ece.engin.umich.edu/people/directory/faculty/",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "all",
+          "url": "https://ece.engin.umich.edu/people/directory/faculty/",
+          "primary": true
+        },
+        {
+          "id": "core",
+          "url": "https://ece.engin.umich.edu/people/directory/faculty/tenure-track-faculty/",
+          "primary": false
+        },
+        {
+          "id": "courtesy",
+          "url": "https://ece.engin.umich.edu/people/directory/faculty/courtesy-faculty/",
+          "primary": false
+        },
+        {
+          "id": "research",
+          "url": "https://ece.engin.umich.edu/people/directory/faculty/research-scientists-and-investigators/",
+          "primary": false
+        },
+        {
+          "id": "teaching",
+          "url": "https://ece.engin.umich.edu/people/directory/faculty/lecturers-and-adjuncts/",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ece.engin.umich.edu/people/directory/faculty/emeritus-faculty/",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [],
+      "roster_mode": "union",
+      "collection_note": "Official directories are available through the shared browser. Captures explicitly distinguish rendered browser DOM hashes from unavailable origin HTTP response bytes/status. Individual identities use scoped official directory entries, not invented profile URLs; all appointment title lines are preserved and EE/ECE-specific lines control classification."
+    },
+    "asu": {
+      "institution_id": "https://openalex.org/I55732556",
+      "name": "Arizona State University",
+      "unit": "School of Electrical, Computer and Energy Engineering",
+      "country": "US",
+      "adapter": "asu",
+      "roster_url": "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "ecee_api",
+          "url": "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+          "primary": true
+        }
+      ],
+      "supporting_urls": [
+        "https://faculty.engineering.asu.edu/directory/ecee/rank"
+      ],
+      "roster_mode": "union",
+      "supplemental_profiles": [
+        {
+          "name": "Michael Goryll",
+          "title": "Associate Professor | School of Electrical, Computer and Energy Engineering",
+          "profile_url": "https://faculty.engineering.asu.edu/directory/ecee/semiconductors"
+        }
+      ],
+      "public_roster_url": "https://faculty.engineering.asu.edu/directory/ecee"
+    },
+    "vt": {
+      "institution_id": "https://openalex.org/I859038795",
+      "name": "Virginia Tech",
+      "unit": "Bradley Department of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "vt",
+      "roster_url": "https://ece.vt.edu/people/faculty.html",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.vt.edu/people/faculty.html",
+          "primary": true
+        }
+      ],
+      "supporting_urls": [
+        "https://ece.vt.edu/people.html",
+        "https://catalog.vt.edu/undergraduate/college-engineering/electrical-computer-engineering/"
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Qiang Li",
+          "title": "ECE Faculty (2026-27 VT Catalog Professors list; omitted from web Alphabetical Faculty Listing)",
+          "profile_url": "https://ece.vt.edu/people/profile/li.html"
+        }
+      ],
+      "roster_mode": "union"
+    },
+    "tamu": {
+      "institution_id": "https://openalex.org/I91045830",
+      "name": "Texas A&M University",
+      "unit": "Department of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "tamu",
+      "roster_url": "https://engineering.tamu.edu/profile-data.json",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "electrical_json",
+          "url": "https://engineering.tamu.edu/profile-data.json",
+          "primary": true
+        }
+      ],
+      "supporting_urls": [
+        "https://engineering.tamu.edu/electrical/profiles/index.html",
+        "https://prod.facultyaffairs.cloud.tamu.edu/_files/documents/cas-faculty-evaluation-guidelines.pdf",
+        "https://catalog.tamu.edu/graduate/faculty/"
+      ],
+      "roster_mode": "union",
+      "public_roster_url": "https://engineering.tamu.edu/electrical/people/index.html"
+    },
+    "cmu": {
+      "institution_id": "https://openalex.org/I74973139",
+      "name": "Carnegie Mellon University",
+      "unit": "Department of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cmu",
+      "roster_url": "https://www.ece.cmu.edu/directory/faculty.html",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ece.cmu.edu/directory/faculty.html",
+          "primary": true
+        },
+        {
+          "id": "courtesy",
+          "url": "https://www.ece.cmu.edu/directory/courtesy-faculty.html",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://www.ece.cmu.edu/directory/adjunct-faculty.html",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [
+        "https://design.cmu.edu/people",
+        "https://www.cmu.edu/bme/People/Faculty/index.html",
+        "https://s3d.cmu.edu/people/core-faculty/titzer-ben.html",
+        "https://www.ece.cmu.edu/directory/bios/chi-yuejie.html",
+        "https://www.africa.engineering.cmu.edu/about/contact/directory/bios/thornburg-jesse.html",
+        "https://www.cmu.edu/policies/faculty/appointments-special-faculty.html",
+        "https://www.cmu.edu/policies/faculty/appointments-teaching-track.html",
+        "https://www.cmu.edu/policies/faculty/appointments-research-faculty.html"
+      ],
+      "roster_mode": "union"
+    },
+    "princeton": {
+      "institution_id": "https://openalex.org/I20089843",
+      "name": "Princeton University",
+      "unit": "Department of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "princeton",
+      "roster_url": "https://ece.princeton.edu/people-list/faculty",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.princeton.edu/people-list/faculty",
+          "primary": true
+        }
+      ],
+      "supporting_urls": [],
+      "roster_mode": "union",
+      "collection_note": "Official faculty directory and all 22 non-Core individual profiles (Lecturer, Senior Research Scholar, Associated Faculty, Visiting Faculty) are captured via browser_dom due to automated HTTP 403 gating; captures distinguish rendered browser DOM hashes from unavailable origin HTTP response bytes. Research Staff (/people-list/research-staff, 43 entries) and Visitors (/people-list/visitors, 47 entries) were verified via preview DOM to contain zero professorial or incoming appointments."
+    },
+    "cornell": {
+      "institution_id": "https://openalex.org/I205783295",
+      "name": "Cornell University",
+      "unit": "School of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cornell",
+      "roster_url": "https://www.duffield.cornell.edu/ece/faculty-staff/",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "faculty_staff",
+          "url": "https://www.duffield.cornell.edu/ece/faculty-staff/",
+          "primary": true
+        }
+      ],
+      "supporting_urls": [],
+      "profile_url_aliases": {
+        "https://gradschool.weill.cornell.edu/faculty/yi-wang": "https://www.duffield.cornell.edu/ece/faculty-staff/",
+        "https://radiology.weill.cornell.edu/research/biomedical-ultrasound-research-laboratory-burl/jonathan-mamou-laboratory": "https://www.duffield.cornell.edu/ece/faculty-staff/"
+      },
+      "profile_alias_evidence": "Two external Weill Cornell links on duffield.cornell.edu/ece/faculty-staff returned HTTP 404/403; the official Cornell ECE faculty-staff directory itself is used as documentary fallback preserving the original profile identity.",
+      "roster_mode": "union"
+    },
+    "columbia": {
+      "institution_id": "https://openalex.org/I78577930",
+      "name": "Columbia University",
+      "unit": "Department of Electrical Engineering",
+      "country": "US",
+      "adapter": "columbia",
+      "roster_url": "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/electrical-engineering/",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "bulletin_ee",
+          "url": "https://bulletin.columbia.edu/columbia-engineering/academic-departments-programs/electrical-engineering/",
+          "primary": true
+        },
+        {
+          "id": "bulletin_emeriti_ee",
+          "url": "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/emeriti-retired-officers-not-residence/",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [
+        "https://bulletin.columbia.edu/columbia-engineering/faculty-administration/faculty/"
+      ],
+      "roster_mode": "union",
+      "collection_note": "Compiled from official Columbia Engineering Bulletin (EE department roster, SEAS faculty appointments, and emeriti register) using scoped official directory entries."
+    },
+    "umn": {
+      "institution_id": "https://openalex.org/I130238516",
+      "name": "University of Minnesota",
+      "unit": "Department of Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "umn",
+      "roster_url": "https://cse.umn.edu/ece/ece-faculty-0",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://cse.umn.edu/ece/ece-faculty-0",
+          "primary": true
+        },
+        {
+          "id": "affiliate",
+          "url": "https://cse.umn.edu/ece/affiliate-faculty",
+          "primary": false
+        },
+        {
+          "id": "emeriti",
+          "url": "https://cse.umn.edu/ece/emeriti-1",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [],
+      "roster_mode": "union"
+    },
+    "psu": {
+      "institution_id": "https://openalex.org/I130769515",
+      "name": "Pennsylvania State University",
+      "unit": "Electrical Engineering within EECS",
+      "country": "US",
+      "adapter": "psu",
+      "roster_url": "https://www.eecs.psu.edu/departments/faculty-staff-list.aspx",
+      "max_pages": 5,
+      "lists": [
+        {
+          "id": "eecs_directory",
+          "url": "https://www.eecs.psu.edu/departments/faculty-staff-list.aspx",
+          "primary": true
+        },
+        {
+          "id": "ee_faculty",
+          "url": "https://www.eecs.psu.edu/departments/faculty-staff-list.aspx",
+          "method": "POST",
+          "form": {
+            "uc1$ddl_Class": "3|31",
+            "uc1$ddl_ResearchArea": "%"
+          },
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://www.eecs.psu.edu/departments/faculty-staff-list.aspx",
+          "method": "POST",
+          "form": {
+            "uc1$ddl_Class": "6|56",
+            "uc1$ddl_ResearchArea": "%"
+          },
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://www.eecs.psu.edu/departments/faculty-staff-list.aspx",
+          "method": "POST",
+          "form": {
+            "uc1$ddl_Class": "7|56",
+            "uc1$ddl_ResearchArea": "%"
+          },
+          "primary": false
+        }
+      ],
+      "supporting_urls": [],
+      "roster_mode": "union"
+    },
+    "maryland": {
+      "institution_id": "https://openalex.org/I66946132",
+      "name": "University of Maryland, College Park",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "maryland",
+      "roster_url": "https://ece.umd.edu/clark/facultydir",
+      "roster_mode": "union",
+      "max_pages": 20,
+      "lists": [
+        {
+          "id": "roster",
+          "url": "https://ece.umd.edu/clark/facultydir",
+          "primary": true
+        },
+        {
+          "id": "faculty",
+          "url": "https://ece.umd.edu/clark/facultydir?drfilter=1",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ece.umd.edu/clark/facultydir?drfilter=2",
+          "primary": false
+        },
+        {
+          "id": "lecturers",
+          "url": "https://ece.umd.edu/clark/facultydir?drfilter=3",
+          "primary": false
+        },
+        {
+          "id": "affiliates",
+          "url": "https://ece.umd.edu/clark/facultydir?drfilter=4",
+          "primary": false
+        },
+        {
+          "id": "research",
+          "url": "https://ece.umd.edu/clark/facultydir?drfilter=5",
+          "primary": false
+        }
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Xiaodi Wu",
+          "title": "Affiliate Assistant Professor of Electrical and Computer Engineering (graduate catalog)",
+          "profile_url": "https://ece.umd.edu/clark/faculty/1734/Xiaodi-Wu"
+        },
+        {
+          "name": "Ian Appelbaum",
+          "title": "Affiliate Associate Professor of Electrical and Computer Engineering (graduate catalog)",
+          "profile_url": "https://nanocenter.umd.edu/faculty/?u=882"
+        }
+      ],
+      "supporting_urls": [
+        "https://academiccatalog.umd.edu/graduate/programs/electrical-computer-engineering-enee/",
+        "https://ece.umd.edu/news/story/pamela-abshire-named-ece-chair-of-stony-brook-university",
+        "https://www.cs.umd.edu/people/jkatz2",
+        "https://www.cs.umd.edu/article/2026/05/ashok-agrawala-retire-after-55-years-umd-cs",
+        "https://ece.umd.edu/news/story/four-ece-faculty-retire",
+        "https://ece.umd.edu/news/story/two-new-faculty-members-welcomed-to-ece"
+      ]
+    },
+    "wisconsin": {
+      "institution_id": "https://openalex.org/I135310074",
+      "name": "University of Wisconsin\u2013Madison",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "wisconsin",
+      "roster_url": "https://engineering.wisc.edu/departments/electrical-computer-engineering/people/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "engineering_people",
+          "url": "https://engineering.wisc.edu/departments/electrical-computer-engineering/people/",
+          "primary": true
+        },
+        {
+          "id": "supplemental_directory",
+          "url": "https://directory.engr.wisc.edu/ece/",
+          "primary": false
+        }
+      ]
+    },
+    "ncstate": {
+      "institution_id": "https://openalex.org/I137902535",
+      "name": "North Carolina State University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ncstate",
+      "roster_url": "https://ece.ncsu.edu/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "primary_faculty",
+          "url": "https://ece.ncsu.edu/faculty/",
+          "primary": true
+        },
+        {
+          "id": "supporting_faculty",
+          "url": "https://ece.ncsu.edu/supporting-faculty/",
+          "primary": false
+        }
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Yuchen Liu",
+          "title": "Assistant Professor of Computer Science with courtesy appointment in Electrical and Computer Engineering",
+          "profile_url": "https://csc.ncsu.edu/people/yliu322/"
+        }
+      ]
+    },
+    "duke": {
+      "institution_id": "https://openalex.org/I170897317",
+      "name": "Duke University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "duke",
+      "roster_url": "https://ece.duke.edu/people/?group=faculty",
+      "roster_mode": "union",
+      "supplemental_profiles": [
+        {
+          "name": "Suman Datta",
+          "title": "Incoming Pierre R. Lamond Presidential Distinguished Chair in Electrical and Computer Engineering, July 15, 2027",
+          "profile_url": "https://pratt.duke.edu/news/suman-datta-lamond-presidential-distinguished-chair-ece/"
+        }
+      ],
+      "lists": [
+        {
+          "id": "ece_faculty",
+          "url": "https://ece.duke.edu/people/?group=faculty",
+          "primary": true
+        }
+      ]
+    },
+    "washington": {
+      "institution_id": "https://openalex.org/I201448701",
+      "name": "University of Washington",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "washington",
+      "roster_url": "https://www.ece.uw.edu/faculty/",
+      "roster_mode": "union",
+      "supporting_urls": [
+        "https://www.ee.washington.edu/spotlight/2024-uw-ece-welcomes-six-new-faculty/",
+        "https://peden.ece.uw.edu/academic-ops/wp-content/uploads/sites/5/2025/11/EE_517_mcd.pdf"
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Banghua Zhu",
+          "title": "Assistant Professor of Electrical and Computer Engineering; department announced a fall 2025 start",
+          "profile_url": "https://www.ece.uw.edu/people/banghua-zhu/"
+        }
+      ],
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ece.uw.edu/faculty/",
+          "primary": true
+        },
+        {
+          "id": "affiliate",
+          "url": "https://www.ece.uw.edu/affiliate/",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://www.ece.uw.edu/adjunct/",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://www.ece.uw.edu/emeritus/",
+          "primary": false
+        }
+      ]
+    },
+    "ucsb": {
+      "institution_id": "https://openalex.org/I154570441",
+      "name": "University of California, Santa Barbara",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ucsb",
+      "roster_url": "https://www.ece.ucsb.edu/people",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "directory",
+          "url": "https://www.ece.ucsb.edu/people",
+          "primary": true
+        },
+        {
+          "id": "faculty",
+          "url": "https://www.ece.ucsb.edu/people/faculty",
+          "primary": false
+        },
+        {
+          "id": "affiliate",
+          "url": "https://www.ece.ucsb.edu/people/affiliated",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://www.ece.ucsb.edu/people/adjunct",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://www.ece.ucsb.edu/people/emeriti",
+          "primary": false
+        }
+      ]
+    },
+    "ohio-state": {
+      "institution_id": "https://openalex.org/I52357470",
+      "name": "The Ohio State University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ohio-state",
+      "roster_url": "https://ece.osu.edu/directory/faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.osu.edu/directory/faculty",
+          "primary": true
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ece.osu.edu/directory/faculty-emeritus",
+          "primary": false
+        }
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Daniel Zhou",
+          "title": "Assistant Professor of Electrical and Computer Engineering; announced February 2027 start",
+          "profile_url": "https://ece.osu.edu/news/2026/09/ece-welcomes-assistant-professor-daniel-zhou"
+        },
+        {
+          "name": "Subhanshu Gupta",
+          "title": "Ohio Research Scholar and Professor, Electrical and Computer Engineering",
+          "profile_url": "https://ece.osu.edu/news/2026/10/ece-welcomes-professor-subhanshu-gupta"
+        }
+      ]
+    },
+    "ut-dallas": {
+      "institution_id": "https://openalex.org/I162577319",
+      "name": "The University of Texas at Dallas",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ut-dallas",
+      "roster_url": "https://ece.utdallas.edu/people/tenure-system-faculty/",
+      "roster_mode": "union",
+      "profile_url_aliases": {
+        "https://me.utdallas.edu/people/faculty/yue-zhou": "https://profiles.utdallas.edu/zhou"
+      },
+      "lists": [
+        {
+          "id": "tenure-system",
+          "url": "https://ece.utdallas.edu/people/tenure-system-faculty/",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://ece.utdallas.edu/people/affiliated-faculty/",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://ece.utdallas.edu/people/adjunct-faculty/",
+          "primary": false
+        },
+        {
+          "id": "instructional",
+          "url": "https://ece.utdallas.edu/people/instructional-faculty/",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ece.utdallas.edu/people/emeritus-faculty/",
+          "primary": false
+        }
+      ]
+    },
+    "uc-irvine": {
+      "institution_id": "https://openalex.org/I204250578",
+      "name": "University of California, Irvine",
+      "unit": "Electrical Engineering within Electrical Engineering and Computer Science",
+      "country": "US",
+      "adapter": "uc-irvine",
+      "roster_url": "https://engineering.uci.edu/dept/eecs/people/faculty.php",
+      "roster_mode": "union",
+      "profile_url_aliases": {
+        "https://www.math.uci.edu/people/aleksandr-figotin": "https://scholarconnect.uci.edu/afigotin"
+      },
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.uci.edu/dept/eecs/people/faculty.php",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://engineering.uci.edu/dept/eecs/people/affiliated.php",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://engineering.uci.edu/dept/eecs/people/emeritus.php",
+          "primary": false
+        }
+      ]
+    },
+    "northeastern": {
+      "institution_id": "https://openalex.org/I12912129",
+      "name": "Northeastern University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "northeastern",
+      "roster_url": "https://ece.northeastern.edu/fac/faculty-directory/?display=all&paged=1",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty-and-staff",
+          "url": "https://ece.northeastern.edu/fac/faculty-directory/?display=all&paged=1",
+          "primary": true
+        },
+        {
+          "id": "affiliated-and-part-time",
+          "url": "https://ece.northeastern.edu/fac/part-time-faculty/",
+          "primary": false
+        }
+      ]
+    },
+    "florida": {
+      "institution_id": "https://openalex.org/I33213144",
+      "name": "University of Florida",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "florida",
+      "roster_url": "https://ece.ufl.edu/people/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.ufl.edu/people/faculty/",
+          "primary": true
+        }
+      ]
+    },
+    "caltech": {
+      "institution_id": "https://openalex.org/I122411786",
+      "name": "California Institute of Technology",
+      "unit": "Electrical Engineering",
+      "country": "US",
+      "adapter": "caltech",
+      "roster_url": "https://www.ee.caltech.edu/people/faculty",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ee.caltech.edu/people/faculty",
+          "primary": true
+        }
+      ]
+    },
+    "nyu": {
+      "institution_id": "https://openalex.org/I57206974",
+      "name": "New York University",
+      "unit": "Electrical and Computer Engineering at NYU Tandon",
+      "country": "US",
+      "adapter": "nyu",
+      "roster_url": "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering/people",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.nyu.edu/academics/departments/electrical-and-computer-engineering/people",
+          "primary": true
+        }
+      ]
+    },
+    "penn": {
+      "institution_id": "https://openalex.org/I79576946",
+      "name": "University of Pennsylvania",
+      "unit": "Electrical and Systems Engineering",
+      "country": "US",
+      "adapter": "penn",
+      "roster_url": "https://directory.engineering.upenn.edu/electrical-and-systems-engineering/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://directory.engineering.upenn.edu/electrical-and-systems-engineering/",
+          "primary": true
+        }
+      ]
+    },
+    "ucf": {
+      "institution_id": "https://openalex.org/I106165777",
+      "name": "University of Central Florida",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "ucf",
+      "roster_url": "https://www.ece.ucf.edu/faculty-directory/",
+      "roster_mode": "union",
+      "profile_url_aliases": {
+        "https://www.ece.ucf.edu/person/chungyong-chan": "https://www.ece.ucf.edu/person/chung-yong-chang/",
+        "https://www.ece.ucf.edu/person/shady-elashhab": "https://www.cecs.ucf.edu/faculty/shady-elashhab/"
+      },
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ece.ucf.edu/faculty-directory/",
+          "primary": true
+        },
+        {
+          "id": "affiliates",
+          "url": "https://www.ece.ucf.edu/affiliated-faculty/",
+          "primary": false
+        }
+      ]
+    },
+    "northwestern": {
+      "institution_id": "https://openalex.org/I111979921",
+      "name": "Northwestern University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "northwestern",
+      "roster_url": "https://www.mccormick.northwestern.edu/electrical-computer/people/faculty.html",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.mccormick.northwestern.edu/electrical-computer/people/faculty.html",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://www.mccormick.northwestern.edu/electrical-computer/people/affiliated.html",
+          "primary": false
+        },
+        {
+          "id": "ee_track",
+          "url": "https://www.mccormick.northwestern.edu/electrical-computer/people/core-electrical-engineering-faculty.html",
+          "primary": false
+        },
+        {
+          "id": "ce_track",
+          "url": "https://www.mccormick.northwestern.edu/electrical-computer/people/core-computer-engineering-faculty.html",
+          "primary": false
+        }
+      ]
+    },
+    "harvard": {
+      "institution_id": "https://openalex.org/I136199984",
+      "name": "Harvard University",
+      "unit": "Electrical Engineering within SEAS",
+      "country": "US",
+      "adapter": "harvard",
+      "roster_url": "https://seas.harvard.edu/electrical-engineering/people",
+      "lists": [
+        {
+          "id": "ee_people",
+          "url": "https://seas.harvard.edu/electrical-engineering/people",
+          "primary": true
+        },
+        {
+          "id": "ee_faculty_research",
+          "url": "https://seas.harvard.edu/electrical-engineering/faculty-research",
+          "primary": false
+        }
+      ],
+      "roster_mode": "union"
+    },
+    "notre-dame": {
+      "institution_id": "https://openalex.org/I107639228",
+      "name": "University of Notre Dame",
+      "unit": "Electrical Engineering",
+      "country": "US",
+      "adapter": "notre-dame",
+      "roster_url": "https://ee.nd.edu/faculty/",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ee.nd.edu/faculty/",
+          "primary": true
+        }
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Xiaobo Sharon Hu",
+          "title": "Professor, Computer Science and Engineering; Concurrent Faculty in Electrical Engineering",
+          "profile_url": "https://cse.nd.edu/faculty/xiaobo-sharon-hu/"
+        },
+        {
+          "name": "Siddharth Joshi",
+          "title": "Associate Professor, Computer Science and Engineering; Concurrent Faculty in Electrical Engineering",
+          "profile_url": "https://cse.nd.edu/faculty/siddharth-joshi/"
+        },
+        {
+          "name": "Edward Kinzel",
+          "title": "Viola D. Hank Collegiate Professor of Aerospace and Mechanical Engineering; Concurrent Professor, Electrical Engineering",
+          "profile_url": "https://ame.nd.edu/faculty/edward-kinzel/"
+        },
+        {
+          "name": "Adam Maciej Czajka",
+          "title": "Associate Professor, Computer Science and Engineering; Concurrent Associate Professor, Electrical Engineering",
+          "profile_url": "https://cse.nd.edu/faculty/adam-czajka/"
+        }
+      ],
+      "roster_mode": "union"
+    },
+    "utah": {
+      "institution_id": "https://openalex.org/I223532165",
+      "name": "University of Utah",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "utah",
+      "roster_url": "https://www.ece.utah.edu/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ece.utah.edu/faculty/",
+          "primary": true
+        }
+      ]
+    },
+    "buffalo": {
+      "institution_id": "https://openalex.org/I63190737",
+      "name": "University at Buffalo, State University of New York",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "buffalo",
+      "roster_url": "https://engineering.buffalo.edu/electrical-and-computer-engineering/faculty/faculty_directory.html",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.buffalo.edu/electrical-and-computer-engineering/faculty/faculty_directory.html",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://engineering.buffalo.edu/electrical-and-computer-engineering/faculty/faculty_directory/affiliated.html",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://engineering.buffalo.edu/electrical-and-computer-engineering/faculty/faculty_directory/emeritus-faculty.html",
+          "primary": false
+        }
+      ]
+    },
+    "yale": {
+      "institution_id": "https://openalex.org/I32971472",
+      "name": "Yale University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "yale",
+      "roster_url": "https://engineering.yale.edu/academic-study/departments/electrical-and-computer-engineering/faculty/load_faculty/266",
+      "lists": [
+        {
+          "id": "ece_faculty",
+          "url": "https://engineering.yale.edu/academic-study/departments/electrical-and-computer-engineering/faculty/load_faculty/266",
+          "method": "POST",
+          "form": {
+            "template": "department",
+            "maxpages": "0"
+          },
+          "primary": true
+        }
+      ],
+      "roster_mode": "union",
+      "supplemental_profiles": [
+        {
+          "name": "Anna Gilbert",
+          "title": "Joint Professor of Electrical and Computer Engineering",
+          "profile_url": "https://cadmy.yale.edu/profile/anna-gilbert"
+        },
+        {
+          "name": "Na Li",
+          "title": "Paul Hudak Professor of Electrical and Computer Engineering (Starting Jan 2027)",
+          "profile_url": "https://fds.yale.edu/people/"
+        },
+        {
+          "name": "Hui Cao",
+          "title": "Professor of Applied Physics; Yale College catalog lists joint Electrical and Computer Engineering appointment",
+          "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/hui-cao"
+        },
+        {
+          "name": "Daniel Prober",
+          "title": "Yale College catalog lists joint Electrical and Computer Engineering professorial appointment",
+          "profile_url": "https://proberlab.yale.edu/people/daniel-prober"
+        },
+        {
+          "name": "Hemant Tagare",
+          "title": "Professor of Radiology and Biomedical Imaging and of Biomedical Engineering; Yale College catalog lists joint Electrical and Computer Engineering appointment",
+          "profile_url": "https://medicine.yale.edu/profile/hemant-tagare/"
+        },
+        {
+          "name": "Y. Richard Yang",
+          "title": "Professor of Computer Science; Yale College catalog lists joint Electrical and Computer Engineering appointment",
+          "profile_url": "https://engineering.yale.edu/research-and-faculty/faculty-directory/y-richard-yang"
+        },
+        {
+          "name": "J. Rimas Vai\u0161nys",
+          "title": "Professor Emeritus of Electrical and Computer Engineering",
+          "profile_url": "https://eeb.yale.edu/people/faculty-affiliated/j-rimas-vaisnys"
+        }
+      ]
+    },
+    "rice": {
+      "institution_id": "https://openalex.org/I74775410",
+      "name": "Rice University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "rice",
+      "roster_url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Professor&netid=",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "professor",
+          "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Professor&netid=",
+          "primary": true
+        },
+        {
+          "id": "associate-professor",
+          "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Associate+Professor&netid=",
+          "primary": false
+        },
+        {
+          "id": "assistant-professor",
+          "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Assistant+Professor&netid=",
+          "primary": false
+        },
+        {
+          "id": "research-faculty",
+          "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Research+Faculty&netid=",
+          "primary": false
+        },
+        {
+          "id": "teaching-faculty",
+          "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Teaching+Faculty&netid=",
+          "primary": false
+        },
+        {
+          "id": "joint",
+          "url": "https://web-api2.rice.edu/profiles/search?tag=ECE+-+Joint&netid=",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://eceweb.rice.edu/people/faculty",
+          "primary": false
+        }
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Ankit Patel",
+          "title": "Assistant Professor of Neuroscience, Baylor College of Medicine Assistant Professor, Electrical and Computer Engineering Member, Ken Kennedy Institute; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/ankit-patel"
+        },
+        {
+          "name": "John Seymour",
+          "title": "Associate Professor of Neurosurgery, McGovern School of Medicine University of Texas Health Adjunct Associate Professor of Electrical & Computer Engineering, Rice University; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/john-seymour"
+        },
+        {
+          "name": "Christy Landes",
+          "title": "Adjunct Research Professor; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/christy-landes"
+        },
+        {
+          "name": "Stephan Link",
+          "title": "Adjunct Research Professor; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/stephan-link"
+        },
+        {
+          "name": "Shiqian Ma",
+          "title": "Adjunct Professor of Computational Applied Mathematics and Operations Research; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/staff/shiqian-ma"
+        },
+        {
+          "name": "Erzs\u00e9bet Mer\u00e9nyi",
+          "title": "Research Professor of Statistics Member, Ken Kennedy Institute; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/erzsebet-merenyi"
+        },
+        {
+          "name": "Valentin Dragoi",
+          "title": "Rosemary and Daniel J. Harrison III Presidential Distinguished Chair in Neuroprosthetics, Houston Methodist Research Institute Professor of Electrical and Computer Engineering, Rice University Professor of Neuroscience, Brain and Mind Research Institute, Weill Cornell Medical College; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/valentin-dragoi"
+        },
+        {
+          "name": "Benjamin Hayden",
+          "title": "Professor of Neurosurgery, Baylor College of Medicine Adjunct Professor of Electrical and Computer Engineering and Linguistics, Rice University; ECE catalog joint listing",
+          "profile_url": "https://profiles.rice.edu/faculty/benjamin-hayden"
+        }
+      ],
+      "public_roster_url": "https://ga.rice.edu/programs-study/departments-programs/engineering/electrical-computer-engineering/"
+    },
+    "boston": {
+      "institution_id": "https://openalex.org/I111088046",
+      "name": "Boston University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "boston",
+      "roster_url": "https://www.bu.edu/eng/academics/departments-and-divisions/electrical-and-computer-engineering/people/?department=electrical-computer-engineering",
+      "lists": [
+        {
+          "id": "ece_people",
+          "url": "https://www.bu.edu/eng/academics/departments-and-divisions/electrical-and-computer-engineering/people/?department=electrical-computer-engineering",
+          "primary": true
+        }
+      ]
+    },
+    "michigan-state": {
+      "institution_id": "https://openalex.org/I87216513",
+      "name": "Michigan State University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "michigan-state",
+      "roster_url": "https://engineering.msu.edu/directory/data",
+      "lists": [
+        {
+          "id": "ece_directory",
+          "url": "https://engineering.msu.edu/directory/data",
+          "primary": true
+        }
+      ]
+    },
+    "iowa-state": {
+      "institution_id": "https://openalex.org/I173911158",
+      "name": "Iowa State University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "iowa-state",
+      "roster_url": "https://www.engineering.iastate.edu/people/wp-json/wp/v2/profile?per_page=100&department=1121",
+      "lists": [
+        {
+          "id": "ecpe_faculty",
+          "url": "https://www.engineering.iastate.edu/people/wp-json/wp/v2/profile?per_page=100&department=1121",
+          "primary": true
+        },
+        {
+          "id": "ecpe_affiliate",
+          "url": "https://www.engineering.iastate.edu/people/wp-json/wp/v2/profile?per_page=100&department=1122",
+          "primary": false
+        },
+        {
+          "id": "ecpe_adjunct",
+          "url": "https://www.engineering.iastate.edu/people/wp-json/wp/v2/profile?per_page=100&department=1123",
+          "primary": false
+        },
+        {
+          "id": "ecpe_courtesy",
+          "url": "https://www.engineering.iastate.edu/people/wp-json/wp/v2/profile?per_page=100&department=1124",
+          "primary": false
+        },
+        {
+          "id": "ecpe_emeritus",
+          "url": "https://www.engineering.iastate.edu/people/wp-json/wp/v2/profile?per_page=100&department=1259",
+          "primary": false
+        },
+        {
+          "id": "catalog_faculty",
+          "url": "https://catalog.iastate.edu/faculty/",
+          "primary": false,
+          "crosscheck_only": true
+        }
+      ],
+      "roster_mode": "union",
+      "supporting_urls": [
+        "https://catalog.iastate.edu/faculty/"
+      ],
+      "supplemental_profiles": [
+        {
+          "name": "Lizhi Wang",
+          "title": "Historical Iowa State ECE courtesy appointment; current status requires review",
+          "profile_url": "https://faculty.sites.iastate.edu/lzwang/"
+        }
+      ],
+      "public_roster_url": "https://www.ece.iastate.edu/directory/"
+    },
+    "boulder": {
+      "institution_id": "https://openalex.org/I188538660",
+      "name": "University of Colorado Boulder",
+      "unit": "Electrical, Computer and Energy Engineering",
+      "country": "US",
+      "adapter": "boulder",
+      "roster_url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=0&include=field_ucb_person_job_type",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ecee_p1",
+          "url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=0&include=field_ucb_person_job_type",
+          "primary": true
+        },
+        {
+          "id": "ecee_p2",
+          "url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=50&include=field_ucb_person_job_type",
+          "primary": false
+        },
+        {
+          "id": "ecee_p3",
+          "url": "https://www.colorado.edu/ecee/jsonapi/node/ucb_person?page[limit]=50&page[offset]=100&include=field_ucb_person_job_type",
+          "primary": false
+        }
+      ],
+      "supporting_urls": [
+        "https://catalog.colorado.edu/undergraduate/colleges-schools/engineering-applied-science/programs-study/electrical-computer-energy-engineering/"
+      ],
+      "public_roster_url": "https://www.colorado.edu/ecee/people"
+    },
+    "riverside": {
+      "institution_id": "https://openalex.org/I103635307",
+      "name": "University of California, Riverside",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "riverside",
+      "roster_url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=4108&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "tenure_track",
+          "url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=4108&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+          "primary": true
+        },
+        {
+          "id": "cooperating",
+          "url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=4035&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=4080&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+          "primary": false
+        },
+        {
+          "id": "emeriti",
+          "url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=65515&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+          "primary": false
+        },
+        {
+          "id": "lecturers",
+          "url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=135209&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+          "primary": false
+        },
+        {
+          "id": "research",
+          "url": "https://profiles.ucr.edu/api/profile?acctStruct=&groupId=22361&researchArea=&affiliationFilter=All&excludeStudentEmployees=false&excludeSecondaryDepartmentEmployees=false&excludeAffiliates=false",
+          "primary": false
+        }
+      ],
+      "public_roster_url": "https://www.ece.ucr.edu/people"
+    },
+    "rutgers": {
+      "institution_id": "https://openalex.org/I102322142",
+      "name": "Rutgers University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "rutgers",
+      "roster_url": "https://ece.rutgers.edu/full_time_faculty",
+      "lists": [
+        {
+          "id": "full_time",
+          "url": "https://ece.rutgers.edu/full_time_faculty",
+          "primary": true
+        },
+        {
+          "id": "graduate",
+          "url": "https://ece.rutgers.edu/graduate-faculty",
+          "primary": false,
+          "crosscheck_only": true
+        },
+        {
+          "id": "emeriti",
+          "url": "https://ece.rutgers.edu/faculty-emereti",
+          "primary": false,
+          "crosscheck_only": true
+        }
+      ],
+      "roster_mode": "union",
+      "supplemental_profiles": [
+        {
+          "name": "Ioannis Androulakis",
+          "title": "Professor of Biomedical Engineering; listed as ECE graduate faculty",
+          "profile_url": "https://www.bme.rutgers.edu/ioannis-yannis-p-androulakis"
+        },
+        {
+          "name": "Haim Baruh",
+          "title": "Professor of Mechanical and Aerospace Engineering; listed as ECE graduate faculty",
+          "profile_url": "https://soe.rutgers.edu/staff-directory/haim-baruh-phd"
+        },
+        {
+          "name": "Sang-Wook Cheong",
+          "title": "Professor of Physics and Astronomy; listed as ECE graduate faculty",
+          "profile_url": "https://physics.sas.rutgers.edu/people/faculty-list/faculty-profile/cheong-sang-wook"
+        },
+        {
+          "name": "Mert Gurbuzbalaban",
+          "title": "Associate Professor of Management Science and Information Systems; listed as ECE graduate faculty",
+          "profile_url": "https://statistics.rutgers.edu/people-pages/affiliated-faculty/affiliated-faculty-member/664-mert-gurbuzbalaban"
+        }
+      ]
+    },
+    "davis": {
+      "institution_id": "https://openalex.org/I84218800",
+      "name": "University of California, Davis",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "davis",
+      "directory_only": true,
+      "roster_url": "https://ece.ucdavis.edu/directory",
+      "lists": [
+        {
+          "id": "faculty_directory",
+          "url": "https://ece.ucdavis.edu/directory",
+          "primary": true
+        }
+      ]
+    },
+    "virginia": {
+      "institution_id": "https://openalex.org/I51556381",
+      "name": "University of Virginia",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "virginia",
+      "directory_only": true,
+      "roster_url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/faculty",
+      "lists": [
+        {
+          "id": "faculty_directory",
+          "url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/faculty",
+          "primary": true
+        }
+      ]
+    },
+    "rpi": {
+      "institution_id": "https://openalex.org/I165799507",
+      "name": "Rensselaer Polytechnic Institute",
+      "unit": "Electrical, Computer, and Systems Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "personbox",
+        "name": "field-title",
+        "title": "position",
+        "school_label": "RPI ECSE"
+      },
+      "roster_url": "https://ecse.rpi.edu/people",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ecse.rpi.edu/people",
+          "primary": true
+        },
+        {
+          "id": "joint",
+          "url": "https://ecse.rpi.edu/people/joint-appointment",
+          "primary": false
+        },
+        {
+          "id": "emeriti",
+          "url": "https://ecse.rpi.edu/people/emeriti",
+          "primary": false
+        }
+      ],
+      "directory_only": true
+    },
+    "uic": {
+      "institution_id": "https://openalex.org/I39422238",
+      "name": "University of Illinois Chicago",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "profile-teaser",
+        "name": "_name",
+        "title": "_academic-title",
+        "school_label": "UIC ECE"
+      },
+      "roster_url": "https://ece.uic.edu/faculty-and-staff/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.uic.edu/faculty-and-staff/faculty/",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "pitt": {
+      "institution_id": "https://openalex.org/I170201317",
+      "name": "University of Pittsburgh",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "l-grid-item",
+        "name": "h5",
+        "title": "title",
+        "heading": "h2",
+        "title_optional": true,
+        "school_label": "Pitt ECE"
+      },
+      "roster_url": "https://www.engineering.pitt.edu/departments/electrical-computer/people/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.engineering.pitt.edu/departments/electrical-computer/people/faculty/",
+          "primary": true,
+          "max_bytes": 12582912
+        }
+      ],
+      "directory_only": true
+    },
+    "houston": {
+      "institution_id": "https://openalex.org/I44461941",
+      "name": "University of Houston",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": [
+          "faculty-info",
+          "g-4"
+        ],
+        "name": "faculty-name",
+        "heading": "h3",
+        "title_optional": true,
+        "school_label": "Houston ECE"
+      },
+      "roster_url": "https://www.ece.uh.edu/faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ece.uh.edu/faculty",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "delaware": {
+      "institution_id": "https://openalex.org/I86501945",
+      "name": "University of Delaware",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card_tag": "tr",
+        "name_cell": 0,
+        "title_cell": 1,
+        "heading": "h2",
+        "school_label": "Delaware ECE"
+      },
+      "roster_url": "https://www.ece.udel.edu/people/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.ece.udel.edu/people/faculty/",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "stony-brook": {
+      "institution_id": "https://openalex.org/I59553526",
+      "name": "Stony Brook University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "dept-faculty-directory__card",
+        "name": "dept-faculty-directory__name",
+        "title": "dept-faculty-directory__title",
+        "heading": "h3",
+        "school_label": "Stony Brook ECE"
+      },
+      "roster_url": "https://www.stonybrook.edu/electrical/faculty/faculty-directory.html",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.stonybrook.edu/electrical/faculty/faculty-directory.html",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "washu": {
+      "institution_id": "https://openalex.org/I204465549",
+      "name": "Washington University in St. Louis",
+      "unit": "Preston M. Green Department of Electrical & Systems Engineering (McKelvey School of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "faculty-directory__teaser",
+        "name": "faculty-directory__teaser-name",
+        "title": "faculty-directory__teaser-title",
+        "title_optional": true,
+        "school_label": "WashU ESE",
+        "title_attrs": [
+          "data-degree"
+        ]
+      },
+      "roster_url": "https://ese.washu.edu/faculty-research/directory.html",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ese-directory",
+          "url": "https://ese.washu.edu/faculty-research/directory.html",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "umass": {
+      "institution_id": "https://openalex.org/I24603500",
+      "name": "University of Massachusetts Amherst",
+      "unit": "Department of Electrical and Computer Engineering (Riccio College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person",
+        "name": "person__title",
+        "title": "person__position-role",
+        "school_label": "umass",
+        "pages": 7
+      },
+      "roster_url": "https://www.umass.edu/engineering/about/directory?s=&field_person__department_target_id%5B296%5D=296&page=0",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "directory",
+          "url": "https://www.umass.edu/engineering/about/directory?s=&field_person__department_target_id%5B296%5D=296&page=0",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "ucsc": {
+      "institution_id": "https://openalex.org/I185103710",
+      "name": "University of California, Santa Cruz",
+      "unit": "Department of Electrical and Computer Engineering, Baskin School of Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "section-item",
+        "name": "item-name",
+        "title": "inline-list",
+        "heading": "h2",
+        "school_label": "ucsc"
+      },
+      "roster_url": "https://engineering.ucsc.edu/departments/electrical-and-computer-engineering/people/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ece-people",
+          "url": "https://engineering.ucsc.edu/departments/electrical-and-computer-engineering/people/",
+          "primary": true,
+          "max_bytes": 2000000
+        }
+      ],
+      "directory_only": true
+    },
+    "lehigh": {
+      "institution_id": "https://openalex.org/I186143895",
+      "name": "Lehigh University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "views-row",
+        "name": "views-field-title",
+        "title": "views-field-field-position",
+        "scope": "view-faculty",
+        "school_label": "Lehigh ECE"
+      },
+      "roster_url": "https://engineering.lehigh.edu/ece/faculty",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.lehigh.edu/ece/faculty",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://engineering.lehigh.edu/ece/faculty?section=affiliated",
+          "primary": false,
+          "cards": {
+            "card": "grid-template-columns",
+            "name_tag": "b",
+            "title_tag": "p",
+            "scope": "five-col-flex",
+            "title_prefix": "Affiliated Faculty",
+            "school_label": "Lehigh ECE affiliated"
+          }
+        }
+      ]
+    },
+    "stevens": {
+      "institution_id": "https://openalex.org/I108468826",
+      "name": "Stevens Institute of Technology",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "^faculty-card_c--faculty-card",
+        "name_tag": "h3",
+        "title_tag": "h4",
+        "school_label": "Stevens ECE"
+      },
+      "roster_url": "https://www.stevens.edu/school-engineering-science/departments/electrical-computer-engineering/faculty",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.stevens.edu/school-engineering-science/departments/electrical-computer-engineering/faculty",
+          "primary": true
+        }
+      ]
+    },
+    "uconn": {
+      "institution_id": "https://openalex.org/I140172145",
+      "name": "University of Connecticut",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person",
+        "name": "person-name",
+        "title": "person-title",
+        "heading": "h3",
+        "where": [
+          {
+            "class": "person-groups",
+            "contains": "Electrical and Computer Engineering"
+          },
+          {
+            "class": "person-department",
+            "contains": "Electrical"
+          }
+        ],
+        "school_label": "UConn ECE"
+      },
+      "roster_url": "https://engineering.uconn.edu/people/?group=Faculty&tag=Electrical%20and%20Computer%20Engineering",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.uconn.edu/people/?group=Faculty&tag=Electrical%20and%20Computer%20Engineering",
+          "primary": true
+        }
+      ]
+    },
+    "clemson": {
+      "institution_id": "https://openalex.org/I8078737",
+      "name": "Clemson University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "large-3",
+        "name_tag": "h3",
+        "title": "about",
+        "heading": "h2",
+        "school_label": "Clemson ECE"
+      },
+      "roster_url": "https://www.clemson.edu/cecas/departments/ece/people/index.html",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.clemson.edu/cecas/departments/ece/people/index.html",
+          "primary": true
+        },
+        {
+          "id": "tables",
+          "url": "https://www.clemson.edu/cecas/departments/ece/people/index.html?section=tables",
+          "primary": false,
+          "cards": {
+            "card_tag": "tr",
+            "name_cell": 0,
+            "title_cell": 1,
+            "heading": "caption",
+            "school_label": "Clemson ECE tables"
+          }
+        }
+      ]
+    },
+    "uncc": {
+      "institution_id": "https://openalex.org/I102149020",
+      "name": "University of North Carolina at Charlotte",
+      "unit": "Department of Electrical and Computer Engineering (William States Lee College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "component-person-card",
+        "name": "person-displayname",
+        "title": "person-title",
+        "school_label": "UNC Charlotte"
+      },
+      "roster_url": "https://engineering.charlotte.edu/academics/department/electrical-computer-engineering/faculty-staff/?0529fd-person_tag=32",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty-p1",
+          "url": "https://engineering.charlotte.edu/academics/department/electrical-computer-engineering/faculty-staff/?0529fd-person_tag=32",
+          "primary": true
+        },
+        {
+          "id": "faculty-p2",
+          "url": "https://engineering.charlotte.edu/academics/department/electrical-computer-engineering/faculty-staff/?0529fd-person_tag=32&0529fd-paged=2",
+          "primary": false
+        },
+        {
+          "id": "faculty-p3",
+          "url": "https://engineering.charlotte.edu/academics/department/electrical-computer-engineering/faculty-staff/?0529fd-person_tag=32&0529fd-paged=3",
+          "primary": false
+        },
+        {
+          "id": "faculty-p4",
+          "url": "https://engineering.charlotte.edu/academics/department/electrical-computer-engineering/faculty-staff/?0529fd-person_tag=32&0529fd-paged=4",
+          "primary": false
+        },
+        {
+          "id": "emeritus",
+          "url": "https://engineering.charlotte.edu/about/faculty-and-staff/?e99733-person_category=41&e99733-person_tag=42",
+          "primary": false,
+          "role_hint": "emeritus"
+        }
+      ],
+      "directory_only": true
+    },
+    "pnw": {
+      "institution_id": "https://openalex.org/I117015748",
+      "name": "Purdue University Northwest",
+      "unit": "Department of Electrical and Computer Engineering (College of Engineering and Sciences)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "listing__contact",
+        "name": "contact__name",
+        "title": "contact__title--alt",
+        "heading": "h3",
+        "school_label": "pnw",
+        "where": [
+          {
+            "class": "contact__title--alt",
+            "contains": "Professor"
+          },
+          {
+            "class": "contact__title--alt",
+            "contains": "Lecturer"
+          },
+          {
+            "class": "contact__title--alt",
+            "contains": "Chair"
+          }
+        ]
+      },
+      "roster_url": "https://www.pnw.edu/electrical-computer-engineering/faculty-and-staff/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.pnw.edu/electrical-computer-engineering/faculty-and-staff/",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "wpi": {
+      "institution_id": "https://openalex.org/I107077323",
+      "name": "Worcester Polytechnic Institute",
+      "unit": "Department of Electrical & Computer Engineering (WPI School of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "dw_wrapper",
+        "name": "dw__name",
+        "title": "dw__title",
+        "heading": "h2",
+        "school_label": "wpi"
+      },
+      "roster_url": "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "usf": {
+      "institution_id": "https://openalex.org/I2613432",
+      "name": "University of South Florida",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "snippetImageGrid_item",
+        "name_tag": [
+          "strong",
+          "a"
+        ],
+        "title": "media-caption",
+        "school_label": "USF ECE"
+      },
+      "roster_url": "https://www.usf.edu/engineering/ece/faculty-staff/index.aspx",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.usf.edu/engineering/ece/faculty-staff/index.aspx",
+          "primary": true
+        },
+        {
+          "id": "tables",
+          "url": "https://www.usf.edu/engineering/ece/faculty-staff/index.aspx?section=tables",
+          "primary": false,
+          "cards": {
+            "column_lists": true,
+            "school_label": "USF ECE tables"
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "mines": {
+      "institution_id": "https://openalex.org/I167576493",
+      "name": "Colorado School of Mines",
+      "unit": "Department of Electrical Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "faculty--list__item",
+        "name": "faculty--list__name",
+        "title": "faculty--list__position",
+        "scope": "faculty--list",
+        "school_label": "mines"
+      },
+      "roster_url": "https://www.mines.edu/about/faculty-directory/?departments=Electrical%20Engineering",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "directory",
+          "url": "https://www.mines.edu/about/faculty-directory/?departments=Electrical%20Engineering",
+          "primary": true
+        },
+        {
+          "id": "emeriti",
+          "url": "https://electrical.mines.edu/emeriti/",
+          "primary": false,
+          "role_hint": "emeritus",
+          "cards": {
+            "card": "et_pb_text",
+            "where": [
+              {
+                "class": "et_pb_text_inner",
+                "contains": "Emeritus"
+              },
+              {
+                "class": "et_pb_text_inner",
+                "contains": "Emerita"
+              }
+            ],
+            "name_tag": "h3",
+            "title_tag": "p",
+            "school_label": "mines"
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "uta": {
+      "institution_id": "https://openalex.org/I189196454",
+      "name": "The University of Texas at Arlington",
+      "unit": "Electrical Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "col-xl-6",
+        "name_tag": "h2",
+        "name_split_br": true,
+        "heading": "h3",
+        "school_label": "UTA EE"
+      },
+      "roster_url": "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/electrical/faculty-directory",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.uta.edu/academics/schools-colleges/engineering/academics/departments/electrical/faculty-directory",
+          "primary": true
+        }
+      ]
+    },
+    "lsu": {
+      "institution_id": "https://openalex.org/I121820613",
+      "name": "Louisiana State University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "decode_js": true,
+        "card": "fac-az-row",
+        "name": "name",
+        "title": "nrank",
+        "school_label": "LSU ECE"
+      },
+      "roster_url": "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty-az",
+          "url": "https://www.ece.lsu.edu/fac/faculty-az-insert-fierce.js",
+          "primary": true
+        }
+      ]
+    },
+    "colostate": {
+      "institution_id": "https://openalex.org/I92446798",
+      "name": "Colorado State University",
+      "unit": "Electrical and Computer Engineering",
+      "country": "US",
+      "adapter": "json_list",
+      "cards": {
+        "list_key": "list",
+        "name": "full_name",
+        "title": [
+          "alt_title",
+          "title"
+        ],
+        "link": "link",
+        "school_label": "CSU ECE"
+      },
+      "roster_url": "https://www.engr.colostate.edu/libs/directory/handler.php?h=get_dir_list",
+      "roster_mode": "union",
+      "directory_only": true,
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.engr.colostate.edu/libs/directory/handler.php?h=get_dir_list",
+          "primary": true,
+          "method": "POST",
+          "form": {
+            "dept": "1373",
+            "group": "faculty"
+          },
+          "cards": {
+            "list_key": "list",
+            "name": "full_name",
+            "title": [
+              "alt_title",
+              "title"
+            ],
+            "link": "link",
+            "title_prefix": "Faculty",
+            "school_label": "CSU ECE"
+          }
+        },
+        {
+          "id": "emeritus",
+          "url": "https://www.engr.colostate.edu/libs/directory/handler.php?h=get_dir_list",
+          "primary": false,
+          "method": "POST",
+          "form": {
+            "dept": "1373",
+            "group": "emeritus"
+          },
+          "role_hint": "emeritus",
+          "cards": {
+            "list_key": "list",
+            "name": "full_name",
+            "title": [
+              "alt_title",
+              "title"
+            ],
+            "link": "link",
+            "title_prefix": "Emeritus",
+            "school_label": "CSU ECE"
+          }
+        },
+        {
+          "id": "joint",
+          "url": "https://www.engr.colostate.edu/libs/directory/handler.php?h=get_dir_list",
+          "primary": false,
+          "method": "POST",
+          "form": {
+            "dept": "1373",
+            "group": "joint_appt"
+          },
+          "role_hint": "joint",
+          "cards": {
+            "list_key": "list",
+            "name": "full_name",
+            "title": [
+              "alt_title",
+              "title"
+            ],
+            "link": "link",
+            "title_prefix": "Joint Appointment",
+            "school_label": "CSU ECE"
+          }
+        },
+        {
+          "id": "research",
+          "url": "https://www.engr.colostate.edu/libs/directory/handler.php?h=get_dir_list",
+          "primary": false,
+          "method": "POST",
+          "form": {
+            "dept": "1373",
+            "group": "res_staff"
+          },
+          "cards": {
+            "list_key": "list",
+            "name": "full_name",
+            "title": [
+              "alt_title",
+              "title"
+            ],
+            "link": "link",
+            "title_prefix": "Research Staff",
+            "school_label": "CSU ECE"
+          }
+        }
+      ],
+      "public_roster_url": "https://www.engr.colostate.edu/ece/people/"
+    },
+    "rochester": {
+      "institution_id": "https://openalex.org/I5388228",
+      "name": "University of Rochester",
+      "unit": "Department of Electrical and Computer Engineering (Hajim School of Engineering and Applied Sciences)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person",
+        "name": "name",
+        "title": "position",
+        "school_label": "Rochester"
+      },
+      "roster_url": "https://www.hajim.rochester.edu/ece/people/faculty/index.html",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.hajim.rochester.edu/ece/people/faculty/index.html",
+          "primary": true
+        },
+        {
+          "id": "affiliated",
+          "url": "https://www.hajim.rochester.edu/ece/people/affiliated-faculty/index.html",
+          "primary": false,
+          "role_hint": "joint"
+        },
+        {
+          "id": "visiting-emeritus",
+          "url": "https://www.hajim.rochester.edu/ece/people/visiting_and_emeritus/index.html",
+          "primary": false,
+          "role_hint": "emeritus"
+        },
+        {
+          "id": "research-scientists",
+          "url": "https://www.hajim.rochester.edu/ece/people/research_scientist/index.html",
+          "primary": false
+        }
+      ],
+      "directory_only": true
+    },
+    "auburn": {
+      "institution_id": "https://openalex.org/I82497590",
+      "name": "Auburn University",
+      "unit": "Department of Electrical and Computer Engineering (Samuel Ginn College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person",
+        "name": "person-name",
+        "title": "title",
+        "school_label": "Auburn"
+      },
+      "roster_url": "https://eng.auburn.edu/ece/people/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://eng.auburn.edu/ece/people/",
+          "primary": true
+        },
+        {
+          "id": "emeritus",
+          "url": "https://eng.auburn.edu/ece/people/emeritus",
+          "primary": false,
+          "role_hint": "emeritus"
+        },
+        {
+          "id": "joint",
+          "url": "https://eng.auburn.edu/ece/people/joint",
+          "primary": false,
+          "role_hint": "joint"
+        }
+      ],
+      "directory_only": true
+    },
+    "wayne": {
+      "institution_id": "https://openalex.org/I185443292",
+      "name": "Wayne State University",
+      "unit": "Department of Electrical and Computer Engineering (James and Patricia Anderson College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "pb-6",
+        "name": "font-bold",
+        "title": "text-sm",
+        "scope": "row",
+        "school_label": "wayne"
+      },
+      "roster_url": "https://engineering.wayne.edu/electrical-computer/faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.wayne.edu/electrical-computer/faculty",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "gmu": {
+      "institution_id": "https://openalex.org/I162714631",
+      "name": "George Mason University",
+      "unit": "Department of Electrical and Computer Engineering (College of Engineering and Computing)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "profile-item",
+        "name": "view-profile-title",
+        "title": "view-profile-positions",
+        "pages": 4,
+        "school_label": "gmu"
+      },
+      "roster_url": "https://ece.gmu.edu/people/faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "primary",
+          "url": "https://ece.gmu.edu/people/faculty",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "njit": {
+      "institution_id": "https://openalex.org/I118118575",
+      "name": "New Jersey Institute of Technology",
+      "unit": "Helen and John C. Hartmann Department of Electrical and Computer Engineering (Newark College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person",
+        "name": "name",
+        "title": "title",
+        "heading": "h2",
+        "title_optional": true,
+        "school_label": "NJIT"
+      },
+      "roster_url": "https://ece.njit.edu/our-people",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "people",
+          "url": "https://ece.njit.edu/our-people",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "fiu": {
+      "institution_id": "https://openalex.org/I19700959",
+      "name": "Florida International University",
+      "unit": "Department of Electrical and Computer Engineering (College of Engineering and Computing)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "profile-card",
+        "name": "name",
+        "title": "fullTitle",
+        "where": {
+          "class": "department-or-school",
+          "contains": "Department of Electrical & Computer Engineering"
+        },
+        "school_label": "fiu"
+      },
+      "roster_url": "https://cec.fiu.edu/about/directory/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "fiu-ece-college-directory",
+          "url": "https://cec.fiu.edu/about/directory/",
+          "primary": true,
+          "max_bytes": 1048576
+        }
+      ],
+      "directory_only": true,
+      "supplemental_profiles": [
+        {
+          "name": "Anis Allagui",
+          "title": "Associate Professor | Department of Electrical & Computer Engineering",
+          "profile_url": "https://cec.fiu.edu/about/directory/profiles/anis-allagui.html"
+        },
+        {
+          "name": "Stavros Koulouridis",
+          "title": "Courtesy Faculty | Electrical & Computer Engineering",
+          "profile_url": "https://cec.fiu.edu/about/directory/profiles/stavros-koulouridis.html"
+        }
+      ]
+    },
+    "mst": {
+      "institution_id": "https://openalex.org/I20382870",
+      "name": "Missouri University of Science and Technology",
+      "unit": "Department of Electrical and Computer Engineering (College of Engineering and Computing)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "p_profile_float_item",
+        "name": "p_profile_name",
+        "title": "p_profile_title",
+        "school_label": "mst"
+      },
+      "roster_url": "https://ece.mst.edu/people/faculty-directory/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.mst.edu/people/faculty-directory/",
+          "primary": true
+        },
+        {
+          "id": "adjunct",
+          "url": "https://ece.mst.edu/people/adjunctprofessors/",
+          "primary": false,
+          "role_hint": "adjunct",
+          "cards": {
+            "card": "bio_content_item",
+            "name": "name",
+            "title": "position",
+            "school_label": "mst"
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "binghamton": {
+      "institution_id": "https://openalex.org/I123946342",
+      "name": "Binghamton University",
+      "unit": "Department of Electrical and Computer Engineering (Thomas J. Watson College of Engineering and Applied Science)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person",
+        "name": "fn",
+        "title": "title",
+        "heading": "h2",
+        "where": [
+          {
+            "class": "title",
+            "contains": "Professor"
+          },
+          {
+            "class": "title",
+            "contains": "Lecturer"
+          },
+          {
+            "class": "title",
+            "contains": "Instructor"
+          }
+        ],
+        "school_label": "Binghamton",
+        "link_exclude": [
+          "/maps",
+          "maps?id"
+        ]
+      },
+      "roster_url": "https://www.binghamton.edu/electrical-computer-engineering/people/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "people",
+          "url": "https://www.binghamton.edu/electrical-computer-engineering/people/",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "sc": {
+      "institution_id": "https://openalex.org/I155781252",
+      "name": "University of South Carolina",
+      "unit": "Department of Electrical Engineering (Molinaroli College of Engineering and Computing)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "blurb",
+        "name_tag": "h4",
+        "title_tag": "p",
+        "school_label": "USC EE"
+      },
+      "roster_url": "https://sc.edu/study/colleges_schools/engineering_and_computing/departments/electrical_engineering/our_people/index.php",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://sc.edu/study/colleges_schools/engineering_and_computing/departments/electrical_engineering/our_people/index.php",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "kentucky": {
+      "institution_id": "https://openalex.org/I143302722",
+      "name": "University of Kentucky",
+      "unit": "Department of Electrical and Computer Engineering (Stanley and Karen Pigman College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "views-field-rendered-entity",
+        "name": "people-list--name",
+        "title": "people-list--title",
+        "title_optional": true,
+        "school_label": "Kentucky ECE"
+      },
+      "roster_url": "https://ece.engr.uky.edu/people?category=1",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://ece.engr.uky.edu/people?category=1",
+          "primary": true,
+          "cards": {
+            "card": "views-field-rendered-entity",
+            "name": "people-list--name",
+            "title": "people-list--title",
+            "title_optional": true,
+            "school_label": "Kentucky ECE",
+            "title_prefix": "Faculty"
+          }
+        },
+        {
+          "id": "adjunct",
+          "url": "https://ece.engr.uky.edu/people?category=2",
+          "primary": false,
+          "role_hint": "adjunct",
+          "cards": {
+            "card": "views-field-rendered-entity",
+            "name": "people-list--name",
+            "title": "people-list--title",
+            "title_optional": true,
+            "school_label": "Kentucky ECE",
+            "title_prefix": "Adjunct"
+          }
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ece.engr.uky.edu/people?category=12",
+          "primary": false,
+          "role_hint": "emeritus",
+          "cards": {
+            "card": "views-field-rendered-entity",
+            "name": "people-list--name",
+            "title": "people-list--title",
+            "title_optional": true,
+            "school_label": "Kentucky ECE",
+            "title_prefix": "Emeritus"
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "rit": {
+      "institution_id": "https://openalex.org/I155173764",
+      "name": "Rochester Institute of Technology",
+      "unit": "Department of Electrical and Microelectronic Engineering (Kate Gleason College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "person-directory",
+        "name": "directory-name",
+        "title": "directory-text-small",
+        "school_label": "rit"
+      },
+      "roster_url": "https://www.rit.edu/engineering/directory?term_node_tid_depth=307860",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://www.rit.edu/engineering/directory?term_node_tid_depth=307860",
+          "primary": true,
+          "cards": {
+            "card": "person-directory",
+            "name": "directory-name",
+            "title": "directory-text-small",
+            "school_label": "rit",
+            "pages": 2
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "unm": {
+      "institution_id": "https://openalex.org/I169521973",
+      "name": "University of New Mexico",
+      "unit": "Department of Electrical and Computer Engineering (School of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "h4",
+        "name_tag": "a",
+        "title": "personlist-title",
+        "school_label": "UNM ECE"
+      },
+      "roster_url": "https://ece.unm.edu/faculty-staff/index.html",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "unm-ece-faculty",
+          "url": "https://ece.unm.edu/faculty-staff/index.html",
+          "primary": true
+        },
+        {
+          "id": "unm-ece-emeritus",
+          "url": "https://ece.unm.edu/faculty-staff/emeritus-profile/index.html",
+          "primary": false,
+          "role_hint": "emeritus",
+          "cards": {
+            "card": "h4",
+            "name_tag": "a",
+            "title": "personlist-title",
+            "school_label": "UNM ECE",
+            "title_prefix": "Emeritus",
+            "title_optional": true
+          }
+        },
+        {
+          "id": "unm-ece-research",
+          "url": "https://ece.unm.edu/faculty-staff/research-faculty-profiles/index.html",
+          "primary": false,
+          "cards": {
+            "card": "h4",
+            "name_tag": "a",
+            "title": "personlist-title",
+            "school_label": "UNM ECE",
+            "title_optional": true
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "utsa": {
+      "institution_id": "https://openalex.org/I45438204",
+      "name": "The University of Texas at San Antonio",
+      "unit": "Department of Electrical Engineering (formerly Electrical and Computer Engineering), Klesse College of Engineering and Integrated Design",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "profile-card",
+        "name": "profile-card-name",
+        "title": "profile-card-title",
+        "heading": "h2",
+        "school_label": "utsa"
+      },
+      "roster_url": "https://klesse.utsa.edu/electrical/faculty/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://klesse.utsa.edu/electrical/faculty/",
+          "primary": true
+        },
+        {
+          "id": "courtesy",
+          "url": "https://klesse.utsa.edu/electrical/faculty/?section=courtesy",
+          "primary": false,
+          "cards": {
+            "li_after_heading": {
+              "tag": "h3",
+              "contains": "Courtesy",
+              "title_prefix": "Courtesy Appointment"
+            },
+            "school_label": "UTSA EE courtesy"
+          }
+        }
+      ],
+      "directory_only": true
+    },
+    "unl": {
+      "institution_id": "https://openalex.org/I114395901",
+      "name": "University of Nebraska\u2013Lincoln",
+      "unit": "Department of Electrical and Computer Engineering (College of Engineering, Lincoln campus)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "unlcms-teaser-person",
+        "name": "unl-ls-h",
+        "title": "dcf-italic",
+        "heading": "h2",
+        "school_label": "UNL ECE"
+      },
+      "roster_url": "https://engineering.unl.edu/ece/about/faculty-staff/",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "faculty",
+          "url": "https://engineering.unl.edu/ece/about/faculty-staff/",
+          "primary": true
+        },
+        {
+          "id": "campus_directory",
+          "url": "https://directory.unl.edu/departments/50001063",
+          "primary": false,
+          "max_bytes": 4194304,
+          "cards": {
+            "card": "person-list-item",
+            "name": "dcf-card-link",
+            "title": "directory-search-result-job-title",
+            "where": [
+              {
+                "class": "directory-search-result-job-title",
+                "contains": "Professor"
+              },
+              {
+                "class": "directory-search-result-job-title",
+                "contains": "Lecturer"
+              },
+              {
+                "class": "directory-search-result-job-title",
+                "contains": "Adjunct"
+              },
+              {
+                "class": "directory-search-result-job-title",
+                "contains": "Affiliate"
+              },
+              {
+                "class": "directory-search-result-job-title",
+                "contains": "Faculty"
+              },
+              {
+                "class": "directory-search-result-job-title",
+                "contains": "Emerit"
+              }
+            ],
+            "school_label": "UNL ECE campus directory"
+          }
+        }
+      ],
+      "directory_only": true,
+      "union_by_name": true,
+      "name_aliases": {
+        "Eva Schubert": "Eva Franke-Schubert",
+        "Mohammad Rashedul Hasan": "M. R. Hasan",
+        "Won Jang": "Won Mee Jang",
+        "Hamid Sharif-Kashani": "Hamid Sharif",
+        "Laura Wang": "Yanan (Laura) Wang",
+        "LaMar Yang": "Lamar Yaoqing Yang",
+        "F Choobineh": "Dr. Fred Choobineh",
+        "Paul Williams": "P. Frazer Williams"
+      }
+    },
+    "vanderbilt": {
+      "institution_id": "https://openalex.org/I200719446",
+      "name": "Vanderbilt University",
+      "unit": "Department of Electrical and Computer Engineering (School of Engineering)",
+      "country": "US",
+      "adapter": "json_list",
+      "cards": {
+        "list_key": "data",
+        "name": "full_name",
+        "title": [
+          "titles",
+          "other_titles"
+        ],
+        "title_optional": true,
+        "school_label": "Vanderbilt"
+      },
+      "roster_url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=primary&option=choose-department&school=2&department=132&group=38&neighborhood=none&person=",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "tenure",
+          "url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=primary&option=choose-department&school=2&department=132&group=38&neighborhood=none&person=",
+          "primary": true
+        },
+        {
+          "id": "teaching",
+          "url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=primary&option=choose-department&school=2&department=132&group=193&neighborhood=none&person=",
+          "primary": false,
+          "role_hint": "teaching"
+        },
+        {
+          "id": "research",
+          "url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=primary&option=choose-department&school=2&department=132&group=192&neighborhood=none&person=",
+          "primary": false
+        },
+        {
+          "id": "adjunct",
+          "url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=primary&option=choose-department&school=2&department=132&group=36&neighborhood=none&person=",
+          "primary": false,
+          "role_hint": "adjunct"
+        },
+        {
+          "id": "affiliated",
+          "url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=secondary&option=choose-department&school=2&department=132&group=31&neighborhood=none&person=",
+          "primary": false,
+          "role_hint": "joint"
+        },
+        {
+          "id": "emeritus",
+          "url": "https://engineering.vanderbilt.edu/wp-content/themes/anchordown-futurevu/library/remote/peoplemanager-directory-remote-webcomm.php?showdept=false&affiliated=primary&option=choose-department&school=2&department=132&group=35&neighborhood=none&person=",
+          "primary": false,
+          "role_hint": "emeritus"
+        }
+      ],
+      "directory_only": true,
+      "union_by_name": true,
+      "public_roster_url": "https://engineering.vanderbilt.edu/eecs/people/"
+    },
+    "cwru": {
+      "institution_id": "https://openalex.org/I58956616",
+      "name": "Case Western Reserve University",
+      "unit": "Department of Electrical, Computer, and Systems Engineering (ECSE), Case School of Engineering",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "media",
+        "name": "media-heading",
+        "title": "media-title",
+        "heading": "h2",
+        "school_label": "cwru"
+      },
+      "roster_url": "https://case.edu/engineering/electrical-computer-and-systems-engineering/about/our-team",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "our-team",
+          "url": "https://case.edu/engineering/electrical-computer-and-systems-engineering/about/our-team",
+          "primary": true
+        },
+        {
+          "id": "college-directory-ecse-filter",
+          "url": "https://www.case.edu/engineering/about/faculty-and-staff-directory",
+          "primary": false,
+          "role_hint": "joint",
+          "cards": {
+            "card": "media",
+            "name": "media-heading",
+            "title": "media-title",
+            "where": {
+              "class": "media-title",
+              "contains": "Electrical, Computer, and Systems"
+            },
+            "school_label": "cwru"
+          }
+        }
+      ],
+      "directory_only": true,
+      "union_by_name": true
+    },
+    "dartmouth": {
+      "institution_id": "https://openalex.org/I107672454",
+      "name": "Dartmouth College",
+      "unit": "Electrical / Computer program area (Thayer School of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "profile-box",
+        "name_tag": "h3",
+        "title": "position",
+        "heading": "h2",
+        "only_under_heading": "Electrical",
+        "school_label": "Dartmouth ECE"
+      },
+      "roster_url": "https://engineering.dartmouth.edu/community/faculty?filter=byProgramArea",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ece-program-area",
+          "url": "https://engineering.dartmouth.edu/community/faculty?filter=byProgramArea",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "drexel": {
+      "institution_id": "https://openalex.org/I72816309",
+      "name": "Drexel University",
+      "unit": "Department of Electrical and Computer Engineering (College of Engineering)",
+      "country": "US",
+      "adapter": "json_list",
+      "cards": {
+        "list_key": "results",
+        "name": "name",
+        "title": [
+          "type",
+          "title",
+          "department"
+        ],
+        "title_join": true,
+        "link": "profileUrl",
+        "pages": 5,
+        "school_label": "Drexel"
+      },
+      "roster_url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ece-directory",
+          "url": "https://drexel.edu/du-svc/CoEDirectory/Search/faculty",
+          "primary": true,
+          "referer": "https://drexel.edu/engineering/academics/departments/electrical-computer-engineering/faculty-staff/",
+          "page_offset": 1
+        }
+      ],
+      "directory_only": true,
+      "public_roster_url": "https://drexel.edu/engineering/academics/departments/electrical-computer-engineering/faculty-staff/"
+    },
+    "gwu": {
+      "institution_id": "https://openalex.org/I193531525",
+      "name": "George Washington University",
+      "unit": "Department of Electrical and Computer Engineering (School of Engineering and Applied Science)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "pos-two",
+        "name": "testimonial-heavy",
+        "title_tag": "strong",
+        "heading": "h2",
+        "school_label": "GWU ECE"
+      },
+      "roster_url": "https://ece.engineering.gwu.edu/faculty-directory",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "gwu-ece-faculty",
+          "url": "https://ece.engineering.gwu.edu/faculty-directory",
+          "primary": true
+        },
+        {
+          "id": "gwu-ece-emeritus",
+          "url": "https://ece.engineering.gwu.edu/faculty-directory?section=emeritus",
+          "primary": false,
+          "role_hint": "emeritus",
+          "cards": {
+            "strong_lines_after_heading": {
+              "contains": "Emeritus Faculty",
+              "tag": "h2"
+            },
+            "school_label": "GWU ECE"
+          }
+        }
+      ],
+      "directory_only": true,
+      "union_by_name": true
+    },
+    "oregon-state": {
+      "institution_id": "https://openalex.org/I131249849",
+      "name": "Oregon State University",
+      "unit": "Electrical and Computer Engineering discipline (School of Electrical Engineering and Computer Science, College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "coe-brand-people-card",
+        "name": "coe-brand-people-card-name",
+        "title": "mb-4-5",
+        "title_optional": true,
+        "pages": 2,
+        "school_label": "OSU"
+      },
+      "roster_url": "https://engineering.oregonstate.edu/about/directory?title=&term_node_tid_depth=All&field_osu_organizations_target_id=All&field_c_engr_discipline_target_id=10",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ece-discipline",
+          "url": "https://engineering.oregonstate.edu/about/directory?title=&term_node_tid_depth=All&field_osu_organizations_target_id=All&field_c_engr_discipline_target_id=10",
+          "primary": true
+        }
+      ],
+      "directory_only": true
+    },
+    "iit": {
+      "institution_id": "https://openalex.org/I180949307",
+      "name": "Illinois Institute of Technology",
+      "unit": "Department of Electrical and Computer Engineering (Armour College of Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "profile-item",
+        "name": "arrow-link",
+        "title": "positions-list",
+        "pages": 3,
+        "school_label": "iit"
+      },
+      "roster_url": "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "ece-directory",
+          "url": "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+          "primary": true
+        }
+      ],
+      "directory_only": true,
+      "supplemental_profiles": [
+        {
+          "name": "Anna Barnett",
+          "title": "Department Chair; Professor of Electrical and Computer Engineering; Motorola Professor of Electrical and Computer Engineering",
+          "profile_url": "https://www.iit.edu/news/renowned-space-scientist-named-ece-department-chair"
+        }
+      ]
+    },
+    "arizona": {
+      "institution_id": "https://openalex.org/I138006243",
+      "name": "University of Arizona",
+      "unit": "School of Electrical, Computing, and Software Engineering (Electrical and Computer Engineering)",
+      "country": "US",
+      "adapter": "cards",
+      "cards": {
+        "card": "node--type-az-person",
+        "name_tag": "h3",
+        "title": "field--name-field-az-titles",
+        "title_optional": true,
+        "school_label": "UA"
+      },
+      "roster_url": "https://ecse.engineering.arizona.edu/faculty-staff/core-faculty",
+      "roster_mode": "union",
+      "lists": [
+        {
+          "id": "core",
+          "url": "https://ecse.engineering.arizona.edu/faculty-staff/core-faculty",
+          "primary": true
+        },
+        {
+          "id": "research",
+          "url": "https://ecse.engineering.arizona.edu/faculty-staff/research-faculty",
+          "primary": false
+        },
+        {
+          "id": "joint",
+          "url": "https://ecse.engineering.arizona.edu/faculty-staff/joint-faculty",
+          "primary": false,
+          "role_hint": "joint"
+        },
+        {
+          "id": "emeritus",
+          "url": "https://ecse.engineering.arizona.edu/faculty-staff/emeritus-faculty",
+          "primary": false,
+          "role_hint": "emeritus"
+        },
+        {
+          "id": "adjunct",
+          "url": "https://ecse.engineering.arizona.edu/faculty-staff/adjunct-faculty",
+          "primary": false,
+          "role_hint": "adjunct"
+        }
+      ],
+      "directory_only": true
+    },
+    "jhu": {
+      "institution_id": "https://openalex.org/I145311948",
+      "name": "Johns Hopkins University",
+      "unit": "Department of Electrical and Computer Engineering (Whiting School of Engineering)",
+      "country": "US",
+      "adapter": "json_list",
+      "cards": {
+        "list_key": "people",
+        "name": "name",
+        "title": [
+          "t",
+          "x"
+        ],
+        "title_join": true,
+        "link": "url",
+        "school_label": "JHU"
+      },
+      "roster_url": "https://engineering.jhu.edu/ece/faculty/",
+      "roster_mode": "union",
+      "union_by_name": true,
+      "lists": [
+        {
+          "id": "primary",
+          "url": "https://engineering.jhu.edu/ece/faculty/",
+          "primary": true
+        },
+        {
+          "id": "secondary",
+          "url": "https://engineering.jhu.edu/ece/people/ece-affiliates/",
+          "primary": false,
+          "role_hint": "joint"
+        },
+        {
+          "id": "research-staff",
+          "url": "https://engineering.jhu.edu/ece/research/research-staff/",
+          "primary": false
+        },
+        {
+          "id": "emeriti",
+          "url": "https://engineering.jhu.edu/ece/people/professor-emeriti/",
+          "primary": false,
+          "role_hint": "emeritus"
+        }
+      ],
+      "directory_only": true,
+      "collection_note": "The department site refuses automated requests (HTTP 403); lists are pinned browser captures (data/faculty/captures/jhu), recorded as browser_dom evidence."
+    }
+  }
+}

@@ -1,0 +1,1751 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/446824aa01ac8735caf31558a4ae242423f82ee27eb662fe82ad4537c0b1f6e3.json",
+    "sha256": "446824aa01ac8735caf31558a4ae242423f82ee27eb662fe82ad4537c0b1f6e3"
+  },
+  "brief": {
+    "file": "audits/briefs/6a4e710d50ce2665ec75e81156472b2ab6adab113640257b461f2bf131b604ac.json",
+    "sha256": "6a4e710d50ce2665ec75e81156472b2ab6adab113640257b461f2bf131b604ac"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_4bc5ed08128841ee88cbbe5b53693bf2",
+    "candidate_sha256": "02a34d47105ea4732bcf02d1385457a95eeb92eb12ed974247b79cd24c5d9f32",
+    "reviewer_id": "gpt-6.2-sol-v5-audit",
+    "reviewed_at": "2026-11-23T09:52:18.375791+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://eecs.mit.edu/people/abigail-bodner",
+        "https://eecs.mit.edu/people/ahmad-bahai",
+        "https://eecs.mit.edu/people/akintunde-akinwande",
+        "https://eecs.mit.edu/people/alan-oppenheim",
+        "https://eecs.mit.edu/people/alexandre-megretski",
+        "https://eecs.mit.edu/people/anant-agarwal",
+        "https://eecs.mit.edu/people/anantha-chandrakasan",
+        "https://eecs.mit.edu/people/asu-ozdaglar",
+        "https://eecs.mit.edu/people/cardinal-warde",
+        "https://eecs.mit.edu/people/charles-sodini",
+        "https://eecs.mit.edu/people/collin-stultz",
+        "https://eecs.mit.edu/people/daniel-sanchez-martin",
+        "https://eecs.mit.edu/people/david-perreault",
+        "https://eecs.mit.edu/people/dennis-freeman",
+        "https://eecs.mit.edu/people/dimitri-antoniadis",
+        "https://eecs.mit.edu/people/dirk-r-englund",
+        "https://eecs.mit.edu/people/duane-boning",
+        "https://eecs.mit.edu/people/elfar-adalsteinsson",
+        "https://eecs.mit.edu/people/ericmoore-jossou",
+        "https://eecs.mit.edu/people/farnaz-niroui-0",
+        "https://eecs.mit.edu/people/george-verghese",
+        "https://eecs.mit.edu/people/gerald-sussman",
+        "https://eecs.mit.edu/people/hae-seung-harry-lee",
+        "https://eecs.mit.edu/people/harryzhou",
+        "https://eecs.mit.edu/people/isaac-chuang",
+        "https://eecs.mit.edu/people/jacob-white",
+        "https://eecs.mit.edu/people/jae-lim",
+        "https://eecs.mit.edu/people/james-fujimoto",
+        "https://eecs.mit.edu/people/jeffrey-lang",
+        "https://eecs.mit.edu/people/jeffrey-shapiro",
+        "https://eecs.mit.edu/people/jelena-notaros",
+        "https://eecs.mit.edu/people/jes%c3%bas-del-alamo",
+        "https://eecs.mit.edu/people/jing-kong",
+        "https://eecs.mit.edu/people/joel-emer",
+        "https://eecs.mit.edu/people/joel-schindall",
+        "https://eecs.mit.edu/people/joel-voldman",
+        "https://eecs.mit.edu/people/jongyoon-han",
+        "https://eecs.mit.edu/people/karl-berggren",
+        "https://eecs.mit.edu/people/kevin-p-obrien",
+        "https://eecs.mit.edu/people/l-rafael-reif",
+        "https://eecs.mit.edu/people/laura-lewis",
+        "https://eecs.mit.edu/people/leslie-kolodziejski",
+        "https://eecs.mit.edu/people/lizhong-zheng",
+        "https://eecs.mit.edu/people/luca-daniel",
+        "https://eecs.mit.edu/people/luqiao-liu",
+        "https://eecs.mit.edu/people/marc-baldo",
+        "https://eecs.mit.edu/people/marija-ilic",
+        "https://eecs.mit.edu/people/mark-rau",
+        "https://eecs.mit.edu/people/martha-gray",
+        "https://eecs.mit.edu/people/munther-dahleh",
+        "https://eecs.mit.edu/people/muriel-m%c3%a9dard",
+        "https://eecs.mit.edu/people/negar-reiskarimian",
+        "https://eecs.mit.edu/people/paris-smaragdis",
+        "https://eecs.mit.edu/people/peter-hagelstein",
+        "https://eecs.mit.edu/people/priya-donti",
+        "https://eecs.mit.edu/people/qing-hu",
+        "https://eecs.mit.edu/people/rachit-nigam",
+        "https://eecs.mit.edu/people/rajeev-ram",
+        "https://eecs.mit.edu/people/ruonan-han",
+        "https://eecs.mit.edu/people/sam-coday",
+        "https://eecs.mit.edu/people/sangeeta-bhatia",
+        "https://eecs.mit.edu/people/sixian-you",
+        "https://eecs.mit.edu/people/song-han",
+        "https://eecs.mit.edu/people/stefanie-mueller",
+        "https://eecs.mit.edu/people/steven-leeb",
+        "https://eecs.mit.edu/people/suraj-cheema",
+        "https://eecs.mit.edu/people/terry-orlando",
+        "https://eecs.mit.edu/people/tess-smidt",
+        "https://eecs.mit.edu/people/thomas-heldt",
+        "https://eecs.mit.edu/people/tom%c3%a1s-palacios",
+        "https://eecs.mit.edu/people/vincent-chan",
+        "https://eecs.mit.edu/people/vivienne-sze",
+        "https://eecs.mit.edu/people/vladimir-bulovi%c4%87",
+        "https://eecs.mit.edu/people/william-d-oliver",
+        "https://eecs.mit.edu/people/yufeng-kevin-chen",
+        "https://eecs.mit.edu/people/yury-polyanskiy"
+      ],
+      "checked_list_ids": [
+        "ee"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_8d5820c7d9e655b29f5a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Eaton-Peabody Professor, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_0c6d04a9e59e194cb1f1cfb0",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_aa7f4eb22c4f5647b8c9",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “CEO, edX; Professor Post-Tenure [CS and EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_e246ad37d289ab5d5d91c8d0"
+        ]
+      },
+      {
+        "person_id": "person_907e957bc4b05efb99b5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Thomas and Gerd Perkins Professor of Electrical Engineering and Computer Science; Professor of EE, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_df157d8c20d921662be025fe"
+        ]
+      },
+      {
+        "person_id": "person_262ac18f57095b46a958",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Ray and Maria Stata Professor of Electrical Engineering and Computer Science (Professor Emeritus), [EE]”.",
+        "source_ids": [
+          "shared_frozen_7a32d6515816b02914f0245a",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7ad01f9e3c80564bad55",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of the Practice, [EE]”.",
+        "source_ids": [
+          "shared_frozen_314651e8f981e8f1254b8374",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7c5dff22cf365dd5a8b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Director, RLE; William and Emma Rogers Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_1246d39a3ddf71ba6ccfc0f1",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_96d6d0e4c66253cca5e5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Faculty Head, EE; Julius A. Stratton Professor in Electrical Engineering and Physics, [EE]”.",
+        "source_ids": [
+          "shared_frozen_9e33fe3e9b4bd15d5b21640f",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_75d3b0e536245e5b8fd7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “John and Dorothy Wilson Professor of Electrical Engineering and Computer Sciences & Health Sciences and Technology, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_23eebf4f01616e8257f59330",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_ec36b19a7f2756849442",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Henry L. Doherty Career Development Professor in Ocean Utilization; Assistant Professor [EE] Shared appointment: Earth, Atmospheric and Planetary Sciences (EAPS) and EECS”.",
+        "source_ids": [
+          "shared_frozen_5eea96146ff54e021e0174eb",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_abd4539f8bff58228b3f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “MIT Vice Provost for International Activities (VPIA); Clarence J. LeBel Professor in Electrical Engineering and Computer Science; [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_eae7669511f9ce40cd54d1b9"
+        ]
+      },
+      {
+        "person_id": "person_b9400c6faa0e5845b837",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Director, MIT.nano; Fariborz Maseeh (1990) Professor of Emerging Technology, [EE]”.",
+        "source_ids": [
+          "shared_frozen_7f88a86f247f6786ac14faf9",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_efbf7bdd2974597fb5b7",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Joan and Irwin M. (1957) Jacobs Professor, Professor Post-Tenure, [AI+D and EE]”.",
+        "source_ids": [
+          "shared_frozen_7855f377e1a78d222c6fa856",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_2823ec49210b520ca7d7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Provost; Vannevar Bush Professor of Electrical Engineering and Computer Science [EE and CS]”.",
+        "source_ids": [
+          "shared_frozen_7e49d3b5fd776b1d77b39174",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_92307f43522f50a48668",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “AMAX Career Development Professor in Materials Engineering, Assistant Professor of Materials Science and Engineering; joint appointment in EECS [EE]”.",
+        "source_ids": [
+          "shared_frozen_a5e71be8e4bc3b27eacbd1f4",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_a924728165ba5525bec5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “NBX Career Development Professor; Associate Professor, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_394f121fff9101370126935b",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_32e5b9a4db9a5225866b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Julius A. Stratton Professor in Electrical Engineering and Physics, [AI+D and EE, CS]”.",
+        "source_ids": [
+          "shared_frozen_3587ec22f9c956f2aced599b",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_31424877df15568c8b03",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Assistant Professor [EE]”.",
+        "source_ids": [
+          "shared_frozen_30bd37ac0c7d66b41f2e2087",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_b1495d4d178852b3ba6c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “William A. Coolidge Professor, [AI+D and EE]”.",
+        "source_ids": [
+          "shared_frozen_2d189ffb737f6fcadd03a106",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_44749de7aeef537a92d6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Joseph F. and Nancy P. Keithley Professor in Electrical Engineering and Computer Science, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_13fabfd10d89b5f0487bbced",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_0bbaa74d592d5a80b4f6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Donner Professor of Science, [EE]”.",
+        "source_ids": [
+          "shared_frozen_a2086e278c3575200b891287",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_e3c0e1aadea9536b81dd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Assistant Professor, [EE, AI+D]”.",
+        "source_ids": [
+          "shared_frozen_b42a5c9b3db72e0cdac85fa0",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7bbfc06fdd745f37a0f3",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of the Practice in EECS, [CS and EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_e29d5f8353c0cff6dbafefc7"
+        ]
+      },
+      {
+        "person_id": "person_2ec1e012ee7453c0a1b0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_0d7c5d3c9aee732135e60c53",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7efbf29cd6205ea58d42",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Henry Ellis Warren (1894) Professor, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_654dba928e16a563bb3aef07",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_3f7e2ca386555e839ea5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Elihu Thomson Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_4058ab0d1eedda6d43807e74",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_e9f41401b5105b1fa119",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Whitaker Professor in Biomedical Engineering, Professor of EECS, [EE]”.",
+        "source_ids": [
+          "shared_frozen_5f4f817ee2837bf1d0a5b659",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_f28b613e243553bda67b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor of EE, [EE]”.",
+        "source_ids": [
+          "shared_frozen_1dc51681e9b16e72f9b9c545",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_461b4a2c91c353ee9d9f",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of EE; Professor of Biological Engineering, Dual Appointment [EE]”.",
+        "source_ids": [
+          "shared_frozen_77a8f8db9510da22676febe2",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_44581e9c5f2e5d12ac6b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “EECS Undergraduate Laboratory Officer; Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_313257fe222c032d35c6337f",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_0f38c1c0698151f6b0d6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor, [EE and CS]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_bb7609d553a362fdd5c6cd6f"
+        ]
+      },
+      {
+        "person_id": "person_652daf781f0155f8857b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Richard J. Cohen (1976) Professor in Medicine and Biomedical Physics; Professor of EECS and in Institute for Medical Engineering and Science (IMES); Associate Director, IMES; [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_733cb22f8f3d54d3d5fee355",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_ab63273c366957a3922b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Distinguished Professor in Electrical Engineering and Computer Science, [EE]”.",
+        "source_ids": [
+          "shared_frozen_8ce06956aa911f317bd333d1",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_0cd6fd52e21a5fa2a6c8",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Adjunct Professor, [EE]; Senior Research Scientist, LIDS”.",
+        "source_ids": [
+          "shared_frozen_28535ce6abcab8108b7b7578",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7263df0c670d5ae19951",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “John Clark Hardwick (1986) Career Development Professor; Assistant Professor, [EE] (shared appointment, Nuclear Science and Engineering and EECS)”.",
+        "source_ids": [
+          "shared_frozen_501a78be93993f2c49c82c0f",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_1905b757ca9755ae8fe7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “EECS Graduate Officer; Joseph F. and Nancy P. Keithley Professor in Electrical Engineering and Computer Science, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_ddffd7be2fa468680117c361"
+        ]
+      },
+      {
+        "person_id": "person_3d120f68599354cbb9d1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Education Officer for Electrical Engineering, Jerry Mcafee (1940) Professor In Engineering, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_11b28227fcebfccf2afc4372",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7497641864b254a68a5b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Vitesse Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_88d1e821056035a3c4deb034",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_ec476df7642d5d39bfcf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Advanced Television and Signal Processing (ATSP) Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_a87e8b3182e7b1ddbfa0e541",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_5186d07645685f93babf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Emanuel E. Landsman (1958) Professor, [EE and CS]”.",
+        "source_ids": [
+          "shared_frozen_a8bc3ca5de83c9dac6a64ddc",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_abd93770397c5ebc8c4d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Athinoula A. Martinos Associate Professor; Associate Professor in EECS and in IMES, [EE]”.",
+        "source_ids": [
+          "shared_frozen_a1b593f7581d1351431a89f1",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_2d6c5d6bb7ce5c019d4d",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of EE (Post-Tenure), [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_73379d37fb530cae5cab6644",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_ececd1a558c3534381a8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of EECS, [EE]”.",
+        "source_ids": [
+          "shared_frozen_53eb466852bdaebc7f991488",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_eeed58a94a53585d93c8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “NEC Professor of Software Science and Engineering, [EE and CS, AI+D]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_df07e10bdfabb64e0a22ac90"
+        ]
+      },
+      {
+        "person_id": "person_8a408dfa7c24521484b2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of EE, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_42107c552b46c92d0b9c0c41",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7a6387aa229c588aa9eb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor [CS and EE]”.",
+        "source_ids": [
+          "shared_frozen_b45733eb046cf2e87484a66e",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_dcbde5971ac65ef2a4ad",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Douglas Ross (1954) Career Development Professor of Software Technology, Assistant Professor [CS, EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_db1a8af67229c19e6c3203ef"
+        ]
+      },
+      {
+        "person_id": "person_8d6d827c568356e9af3f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Robert J. Shillman (1974) Career Development Professor in Electrical Engineering and Computer Science, Associate Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_ce0c651f03bda45a20cc2ee2"
+        ]
+      },
+      {
+        "person_id": "person_4790c49405655491a620",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_be3c994aafdc775cdb34a196"
+        ]
+      },
+      {
+        "person_id": "person_63b1e77ab4a25c00a057",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_1e7c69717d92b1cff7654911",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_1c0c4770a3df5a40a094",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Director, RLE; Henry Ellis Warren (1894) Professor, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_b7e5ea8899866310662b91ba",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_233d0e54451257a089d9",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Ford Professor of Engineering (Post-Tenure), [EE and CS, AI+D]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_fc83da88eceeb916027b330d"
+        ]
+      },
+      {
+        "person_id": "person_d8e9ed6b71fd5bef8c17",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of EE (Post-Tenure), [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_ce79f65a67bfcf2804a854df"
+        ]
+      },
+      {
+        "person_id": "person_dfbc2a1ec5fd5a8c951d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “EECS Department Head; MIT Schwarzman College of Computing Deputy Dean of Academics; MathWorks Professor, [AI+D and EE, CS]”.",
+        "source_ids": [
+          "shared_frozen_6825c805ecaacf07ffa69ff3",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_34bfe37b5c775addbcda",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Director, MIT Institute for Soldier Nanotechnologies; Director, Microsystems Technology Laboratories (MTL); Clarence J. Lebel Professor in Electrical Engineering and Computer Science, [EE]”.",
+        "source_ids": [
+          "shared_frozen_33f21a40a20759b74eb5e9b2",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_5bf7fd370e675c49b815",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Ford Professor of Engineering, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b85d999a09df7b1ad0d93843",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_eff2aeac326f58a79df3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Leverett Howell Cutten ’07 And William King Cutten ’39 Professor, [AI+D and EE]”.",
+        "source_ids": [
+          "shared_frozen_43dcac0136df9dfd73fb7f46",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_cccaf2c34554552d99f5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Clarence J. LeBel Professor in Electrical Engineering and Computer Science, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_33c472affd3364c42b9fb529",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_87c99cb05ef651df8933",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Walter Henry Gale (1929) Career Development Professor; Assistant Professor of Electrical Engineering and Computer Science; (shared appointment, Music and Theater Arts and EECS), [EE]”.",
+        "source_ids": [
+          "shared_frozen_3b901bef1b412cdd5e045b58",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_6c15d277a6f459ae89a9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “MIT President Emeritus; Ray and Maria Stata Professor of Electrical Engineering and Computer Science, [EE]”. Emeritus describes the presidency. The faculty title is an EE professorship.",
+        "source_ids": [
+          "shared_frozen_a5d20057b55775507b89bb71",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_10f9898fb3435767b4e1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_d6f6d48014be55223aecc600"
+        ]
+      },
+      {
+        "person_id": "person_3ad32f91d0bb541ca35f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Elihu Thomson Professor of EECS, [CS and EE]”.",
+        "source_ids": [
+          "shared_frozen_2102f208ce04fe76f93b7301",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_40275bc39a4a57ab848a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Bernard M. Gordon Professor in Product Engineering in EECS (Emeritus), [EE]”.",
+        "source_ids": [
+          "shared_frozen_98f471901b1a9f76f8fde9c2",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_9e3bc9ad206750a3be44",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Julius A. Stratton Professor in EE (Post-Tenure), [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_93977e94a7c915649e375dc9",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_48311f4f74dc50e7a74a",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “John E. Burchard Professor, shared appointment with the Department of Music & Theater Arts (MTA), [EE, AI+D]”.",
+        "source_ids": [
+          "shared_frozen_92123296ae49db6dbaad12e0",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_ef485b7b66145987a15f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Associate Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_cb67ac1e265edb8a1d03eff0"
+        ]
+      },
+      {
+        "person_id": "person_bffde0969e0f500a8d89",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Founder & Co-Director, Medical Electronic Device Realization Center (MEDRC); Clarence J. LeBel Professor of Electrical Engineering (Post-Tenure), [EE]”.",
+        "source_ids": [
+          "shared_frozen_4408efa67101354736fad3c9",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_0f3785c96ee05e638882",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Nina T. and Robert H. Rubin Professor; Co-Director, Harvard-MIT Program in Health Sciences and Technology (HST); Associate Director, Institute for Medical Engineering and Science (IMES), [AI+D and EE]”.",
+        "source_ids": [
+          "shared_frozen_1827abd80d2694fd35fd75d3",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_733b2de1d2a257309628",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Panasonic Professor, (Post-Tenure) [CS and EE, AI+D]”.",
+        "source_ids": [
+          "shared_frozen_384a7dd7c7086ea1e539a856",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_b6f94f479f445ef5a0d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor, [EE and CS, AI+D]”.",
+        "source_ids": [
+          "shared_frozen_aa5ca087ee12f4c45ec9b893",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_2e5c7a8546cf55eea431",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Henry Ellis Warren (1894) Professor of Electrical and Biomedical Engineering (Post-Tenure), [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_0bdf592ae2d0db4417d7785c",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_8da1b9ee35cf52ca8593",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “William R. Brody (1965) Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_5ae808840351df28adec2435",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_7a0561b4c5e157a9a35b",
+        "decision": "excluded",
+        "category": "retired_working",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Professor of EE (Post-Tenure), [EE]”.",
+        "source_ids": [
+          "shared_frozen_ae1eb1d24b9ad9461cea3309",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_a5dbbae82b57520cb063",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Cecil H. Green Professor in Electrical Engineering and Computer Science, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_58f6a413867ca1f9b621027c",
+          "shared_frozen_b8cd9baf9cb863865e03c1f6"
+        ]
+      },
+      {
+        "person_id": "person_5d126408a3eb5d6ab80c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Bonnie and Marty (1964) Tenenbaum Career Development Professor; Associate Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_c87e72dc9d20d13a581adfda"
+        ]
+      },
+      {
+        "person_id": "person_8a75484947de524589b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Andrew (1956) and Erna Viterbi Professor; Professor of EE, [EE and AI+D]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_ddddc04cb8bbc16dab3ce738"
+        ]
+      },
+      {
+        "person_id": "person_15a2db9c24775d239602",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "MIT’s designated EE roster gives the title “Thomas D. and Virginia W. Cabot Career Development Professor, Assistant Professor, [EE]”.",
+        "source_ids": [
+          "shared_frozen_b8cd9baf9cb863865e03c1f6",
+          "shared_frozen_bb56c9a520d051a43ac3a4d0"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_0bdf592ae2d0db4417d7785c",
+        "url": "https://www.eecs.mit.edu/people/george-verghese",
+        "observed_at": "2026-11-23T04:16:43.756886+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8abf50c33dec129ffe3a032fbedf34cbe65acb2e1d5a4c861c1828f5049047da",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_0c6d04a9e59e194cb1f1cfb0",
+        "url": "https://www.eecs.mit.edu/people/elfar-adalsteinsson",
+        "observed_at": "2026-11-23T04:16:43.623474+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c2ae5a0ab625becd404ba41926c9e60fd50693cfb20d057769d96176c0a8a3a8",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_0d7c5d3c9aee732135e60c53",
+        "url": "https://www.eecs.mit.edu/people/dirk-r-englund",
+        "observed_at": "2026-11-23T04:16:43.063995+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a5e8763435d385b875e75a414a32b49ba7d405b71f300cdbb66e2f8a2b082375",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_11b28227fcebfccf2afc4372",
+        "url": "https://www.eecs.mit.edu/people/jing-kong",
+        "observed_at": "2026-11-23T04:16:45.239076+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "da6051ec94fa7e888a2987a032e6aef00b555714f4d19dd632783eebe076c1d9",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_1246d39a3ddf71ba6ccfc0f1",
+        "url": "https://www.eecs.mit.edu/people/marc-baldo",
+        "observed_at": "2026-11-23T04:16:46.740259+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dda7a3928b81d6948ab608a9c9fbeedde71be95cf3dd790767ed12b26e8bd027",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_13fabfd10d89b5f0487bbced",
+        "url": "https://www.eecs.mit.edu/people/luca-daniel",
+        "observed_at": "2026-11-23T04:16:46.678141+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a91b7b9f9aa519f8b81bd9342179cc04af23ebf8107d81d3a14f77c09bca5b25",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_1827abd80d2694fd35fd75d3",
+        "url": "https://www.eecs.mit.edu/people/collin-stultz",
+        "observed_at": "2026-11-23T04:16:42.325101+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fabdf7a8012e729af8e2efa7b6ce48a08f5f9409f0c9c1819e72b8ae2ac24865",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_1dc51681e9b16e72f9b9c545",
+        "url": "https://www.eecs.mit.edu/people/peter-hagelstein",
+        "observed_at": "2026-11-23T04:16:47.874962+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "795a7a145f18c115700a37dc5bbaa54655037485946cb93c624b99fb21564564",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_1e7c69717d92b1cff7654911",
+        "url": "https://www.eecs.mit.edu/people/kevin-p-obrien",
+        "observed_at": "2026-11-23T04:16:45.987380+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cfa05cba76182faf0fc7e989c4dcff4a630b178e9e3f9f57b5bdda509ad40700",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_2102f208ce04fe76f93b7301",
+        "url": "https://www.eecs.mit.edu/people/daniel-sanchez-martin",
+        "observed_at": "2026-11-23T04:16:42.895458+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "532cebf3a986ae0c614629f4adeae831c18c5785048e97af3ea0b064270859a2",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_23eebf4f01616e8257f59330",
+        "url": "https://www.eecs.mit.edu/people/sangeeta-bhatia",
+        "observed_at": "2026-11-23T04:16:48.713107+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "09356cd18cc25800530a98c8c6fb9fef1c9773ea17a141ad5ece5e90ade8c122",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_28535ce6abcab8108b7b7578",
+        "url": "https://www.eecs.mit.edu/people/marija-ilic",
+        "observed_at": "2026-11-23T04:16:46.864224+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "447102db402015c06ed5cf091bc4bfef9ccc28a3bb3cb2f3431962c749d1ddfe",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_2d189ffb737f6fcadd03a106",
+        "url": "https://www.eecs.mit.edu/people/munther-dahleh",
+        "observed_at": "2026-11-23T04:16:47.396021+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2d9eaac596b2805f81b925f16bc4e9c183631880c6cb94ff2ab6ec1dde19483e",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_30bd37ac0c7d66b41f2e2087",
+        "url": "https://www.eecs.mit.edu/people/sam-coday",
+        "observed_at": "2026-11-23T04:16:48.534190+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7428f7d8af68476d8a7209c5ee064ccedf2dbaaa3f6915600e68c8ba0d8e514f",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_313257fe222c032d35c6337f",
+        "url": "https://www.eecs.mit.edu/people/ruonan-han",
+        "observed_at": "2026-11-23T04:16:48.245002+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d6f58973376682779ae933bee6ba13b91c25122bda2201c5148c12524ad8b83f",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_314651e8f981e8f1254b8374",
+        "url": "https://www.eecs.mit.edu/people/ahmad-bahai",
+        "observed_at": "2026-11-23T04:16:41.454661+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b137549ab498b26712621fe40190dcd184f52fe9c33e369cb3ee8997abd85331",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_33c472affd3364c42b9fb529",
+        "url": "https://www.eecs.mit.edu/people/rajeev-ram",
+        "observed_at": "2026-11-23T04:16:48.167351+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f84de0a76cbe2a18f474794b275fd3dea751eb89dac578a8e3745a88695c63af",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_33f21a40a20759b74eb5e9b2",
+        "url": "https://www.eecs.mit.edu/people/tom%c3%a1s-palacios",
+        "observed_at": "2026-11-23T04:16:49.664800+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c3b019c1043e3228dfd3348d3c2366490f64923fdc8ad3c15223a68a635454ba",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_3587ec22f9c956f2aced599b",
+        "url": "https://www.eecs.mit.edu/people/isaac-chuang",
+        "observed_at": "2026-11-23T04:16:44.400440+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "159d61ac8af1aea17aafa727faaa4b51760061a782c7dca87a0baabd13239f25",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_384a7dd7c7086ea1e539a856",
+        "url": "https://www.eecs.mit.edu/people/gerald-sussman",
+        "observed_at": "2026-11-23T04:16:43.802011+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c86bfd4c1ea2d38cec9463b7e7b198783b99228bf3e9e49a6ea3da4885e727a5",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_394f121fff9101370126935b",
+        "url": "https://www.eecs.mit.edu/people/yufeng-kevin-chen",
+        "observed_at": "2026-11-23T04:16:50.303596+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "70bcba1772feccd5bbd22f12872c2725b8578adbf49c0f82783bc4d12eeee79f",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_3b901bef1b412cdd5e045b58",
+        "url": "https://www.eecs.mit.edu/people/mark-rau",
+        "observed_at": "2026-11-23T04:16:47.216273+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "59c1b4815a1338a545e02f587dcaa77717e11d341a6000043e912d2b8f05e0c9",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_4058ab0d1eedda6d43807e74",
+        "url": "https://www.eecs.mit.edu/people/james-fujimoto",
+        "observed_at": "2026-11-23T04:16:44.535400+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e87e816c126dc3dc1a450dda4cf3e1622d93b6c1d3abec6a0374d0c7caf675d0",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_42107c552b46c92d0b9c0c41",
+        "url": "https://www.eecs.mit.edu/people/alexandre-megretski",
+        "observed_at": "2026-11-23T04:16:41.455741+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "492e6b8d0c30f1f7d483df07455a0b89a3cc121faab9402c6dabd5ddccf0e6a5",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_43dcac0136df9dfd73fb7f46",
+        "url": "https://www.eecs.mit.edu/people/yury-polyanskiy",
+        "observed_at": "2026-11-23T04:16:50.407580+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2e19e0b640fa7be0b2ffade831548b8e6f228cffe09568250cb51508f8c510ac",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_4408efa67101354736fad3c9",
+        "url": "https://www.eecs.mit.edu/people/charles-sodini",
+        "observed_at": "2026-11-23T04:16:42.321299+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7a3a7ac86d32c19efb780ecd650011eff536d4ec64adb2e6c6d3c12b7aad696a",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_501a78be93993f2c49c82c0f",
+        "url": "https://www.eecs.mit.edu/people/ericmoore-jossou",
+        "observed_at": "2026-11-23T04:16:43.718093+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "356b8829c5a5884d952a5b1455d3853ffd0e66bfe23ab60401196afc3f254f7c",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_53eb466852bdaebc7f991488",
+        "url": "https://www.eecs.mit.edu/people/luqiao-liu",
+        "observed_at": "2026-11-23T04:16:46.734802+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dd5d9bf7f6315e97fe70b71c186e7220dc0a855cf0dc9abba03297f4d7d95da4",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_58f6a413867ca1f9b621027c",
+        "url": "https://www.eecs.mit.edu/people/jacob-white",
+        "observed_at": "2026-11-23T04:16:44.461392+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c8f42b2fa91254eb6f62989b3752051a2830164f39c80bb06fe1946e0e5798cb",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_5ae808840351df28adec2435",
+        "url": "https://www.eecs.mit.edu/people/joel-voldman",
+        "observed_at": "2026-11-23T04:16:45.717761+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0ba3accce419d1d86e1f1031b1f574477bb493946be068d99b11587b1a7073a1",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_5eea96146ff54e021e0174eb",
+        "url": "https://www.eecs.mit.edu/people/abigail-bodner",
+        "observed_at": "2026-11-23T04:16:41.454313+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "36b092aea61b6848995974f6eab53686753eb20fec4c554cfebc8c6a7a1a23a1",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_5f4f817ee2837bf1d0a5b659",
+        "url": "https://www.eecs.mit.edu/people/martha-gray",
+        "observed_at": "2026-11-23T04:16:47.303010+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7ef23db2bbdfa24e63d3630173655bcfc2b3417064149160fb5359c8a56660aa",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_654dba928e16a563bb3aef07",
+        "url": "https://www.eecs.mit.edu/people/dennis-freeman",
+        "observed_at": "2026-11-23T04:16:42.975391+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e1949e1b241adcb07f57d4c88d93c013fe4650ee19d32f93d53ef78034991a45",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_6628ea8e1a1bc3c6f78510ba",
+        "url": "https://www.eecs.mit.edu/leadership",
+        "observed_at": "2026-11-23T04:16:41.453891+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6375d6e4c710b2021a0d81ced4821678320d05e45849134fed90a524252f72d4",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_6825c805ecaacf07ffa69ff3",
+        "url": "https://www.eecs.mit.edu/people/asu-ozdaglar",
+        "observed_at": "2026-11-23T04:16:42.214302+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "de90ee4e458100550b29dee0a81c9f4110c354907831bc6b6509cc54f66059ce",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_73379d37fb530cae5cab6644",
+        "url": "https://www.eecs.mit.edu/people/jae-lim",
+        "observed_at": "2026-11-23T04:16:44.492142+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3520b338c79889028efa8cbf566e9754c01e86a4c33e643b4282ef746ff5e9d3",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_733cb22f8f3d54d3d5fee355",
+        "url": "https://www.eecs.mit.edu/people/thomas-heldt",
+        "observed_at": "2026-11-23T04:16:49.510992+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1840e367d772d955b393b4f89fb6a60f78db6b35013b884e9178377111185a11",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_77a8f8db9510da22676febe2",
+        "url": "https://www.eecs.mit.edu/people/jongyoon-han",
+        "observed_at": "2026-11-23T04:16:45.893876+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "29a208a0480895e439a08f1612f4af01f628bfd7987e0d0d3d193e1191c68117",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_7855f377e1a78d222c6fa856",
+        "url": "https://www.eecs.mit.edu/people/vincent-chan",
+        "observed_at": "2026-11-23T04:16:49.665017+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d4d8c26e0080d803e194ede4a7ceeadcb1ba780c30fb5a352449b71e6d9f4d6b",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_7a32d6515816b02914f0245a",
+        "url": "https://www.eecs.mit.edu/people/dimitri-antoniadis",
+        "observed_at": "2026-11-23T04:16:42.997859+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "152282bc849570171d89679bc5ec3fb680286607e1e306d7e776b4a936fa57d9",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_7e49d3b5fd776b1d77b39174",
+        "url": "https://www.eecs.mit.edu/people/anantha-chandrakasan",
+        "observed_at": "2026-11-23T04:16:42.137171+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "232379d6495421fc785bcfc80af49615041258370b5a9b539f074886bbd61676",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_7f88a86f247f6786ac14faf9",
+        "url": "https://www.eecs.mit.edu/people/vladimir-bulovi%c4%87",
+        "observed_at": "2026-11-23T04:16:50.195617+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4a8d74018ad1130dc6cad947b72a29a9ad8b6bcf712af88c13d3580bd53054b1",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_88d1e821056035a3c4deb034",
+        "url": "https://www.eecs.mit.edu/people/jeffrey-lang",
+        "observed_at": "2026-11-23T04:16:44.626127+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "74f6de867f18181b83f982957e559e7c5a83266f4ebc8edc671bd219b40db92d",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_8ce06956aa911f317bd333d1",
+        "url": "https://www.eecs.mit.edu/people/qing-hu",
+        "observed_at": "2026-11-23T04:16:48.054110+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ba221b924a3ec7a2ebe6589f2566fd3956c35d2d824ad9657551fa56a5f49bd1",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_92123296ae49db6dbaad12e0",
+        "url": "https://www.eecs.mit.edu/people/paris-smaragdis",
+        "observed_at": "2026-11-23T04:16:47.517561+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9d4b6f39346edb8a72cdaac04175a2fab8980d0c2e9ca0ca58f079e8cad4bb5e",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_93977e94a7c915649e375dc9",
+        "url": "https://www.eecs.mit.edu/people/jeffrey-shapiro",
+        "observed_at": "2026-11-23T04:16:45.053916+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7153d8aefdf0428cb66d59969f5920bbcfce129909af7c973cda42c4e0fe6323",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_98f471901b1a9f76f8fde9c2",
+        "url": "https://www.eecs.mit.edu/people/joel-schindall",
+        "observed_at": "2026-11-23T04:16:45.320544+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cefc5bbfea116f53dbcccf08f86f62a6004fcefc86f14dd9f5ebc6f953a2b5bd",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_9e33fe3e9b4bd15d5b21640f",
+        "url": "https://www.eecs.mit.edu/people/karl-berggren",
+        "observed_at": "2026-11-23T04:16:45.941178+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "655c1515b8abf2dbf64896bd4105d5d9b50dd48def4cb3dba315b0841bf2b26c",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_a1b593f7581d1351431a89f1",
+        "url": "https://www.eecs.mit.edu/people/laura-lewis",
+        "observed_at": "2026-11-23T04:16:46.054834+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d19d8b65873baea7939c0ed911ce01fc9f261a536718b29881c5472555d5c456",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_a2086e278c3575200b891287",
+        "url": "https://www.eecs.mit.edu/people/jes%c3%bas-del-alamo",
+        "observed_at": "2026-11-23T04:16:45.219450+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1525d4e8878818ab2aa81bde128bb6eb13e118be0698b3789a7c2742c3c1d092",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_a5d20057b55775507b89bb71",
+        "url": "https://www.eecs.mit.edu/people/l-rafael-reif",
+        "observed_at": "2026-11-23T04:16:45.994503+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cf8389b061442d8c18090c81e4999fb55162f175f044455d7ba68fd08888bad3",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_a5e71be8e4bc3b27eacbd1f4",
+        "url": "https://www.eecs.mit.edu/people/suraj-cheema",
+        "observed_at": "2026-11-23T04:16:49.305072+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "556d48299281a122c0b3d99d7ba541de2d29618abc04c99f100a00269f32676c",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_a87e8b3182e7b1ddbfa0e541",
+        "url": "https://www.eecs.mit.edu/people/hae-seung-harry-lee",
+        "observed_at": "2026-11-23T04:16:43.891713+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ca804bf2956721a5e5c9d7508e6cbbd22b782547f5c2dd54f38321a9af2eb274",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_a8bc3ca5de83c9dac6a64ddc",
+        "url": "https://www.eecs.mit.edu/people/steven-leeb",
+        "observed_at": "2026-11-23T04:16:49.011449+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "9a774ac2f163ceb52f04446260a4fe3437a251458ca80be8734c6b7088c74c42",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_aa5ca087ee12f4c45ec9b893",
+        "url": "https://www.eecs.mit.edu/people/vivienne-sze",
+        "observed_at": "2026-11-23T04:16:50.076678+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b7fdaff1d84b9e76c25a0c6a284fd8f0874b539d26b34bdf8cbb7a45e31e3d0f",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_ae1eb1d24b9ad9461cea3309",
+        "url": "https://www.eecs.mit.edu/people/cardinal-warde",
+        "observed_at": "2026-11-23T04:16:42.256569+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f694fa4de4f4badaff21b658e1f69ed700ec60e87f1b8fedd566026f46c3f2c8",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_b42a5c9b3db72e0cdac85fa0",
+        "url": "https://www.eecs.mit.edu/people/priya-donti",
+        "observed_at": "2026-11-23T04:16:47.960828+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7a6a71cecbc663586ceb1d4d6845a3a4766c43c460c9c9e109a03f27426de5b7",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_b45733eb046cf2e87484a66e",
+        "url": "https://www.eecs.mit.edu/people/stefanie-mueller",
+        "observed_at": "2026-11-23T04:16:48.909156+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dd672712d74a99992134301460237eaff1801d9189ac0d5f2ffccde5e93bb8fc",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_b7e5ea8899866310662b91ba",
+        "url": "https://www.eecs.mit.edu/people/william-d-oliver",
+        "observed_at": "2026-11-23T04:16:50.240634+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "17402249054296686fcbe7063b9ac8f71c2f02a73884ef5ebb5f0048de257fd8",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_b85d999a09df7b1ad0d93843",
+        "url": "https://www.eecs.mit.edu/people/david-perreault",
+        "observed_at": "2026-11-23T04:16:42.930109+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bef348c7dad791f025fdabd603f09887c95cd9dd0e1dc97796c0861708fd8840",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_b8cd9baf9cb863865e03c1f6",
+        "url": "https://www.eecs.mit.edu/role/faculty-ee/",
+        "observed_at": "2026-11-23T04:16:40.887660+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f83d244e993b043b16fa5162cdcf2e786732a1137267f7c99485e107d6217e14",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_bb56c9a520d051a43ac3a4d0",
+        "url": "https://www.eecs.mit.edu/people/harryzhou",
+        "observed_at": "2026-11-23T04:16:44.379569+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3432d6819220ede139336ca3da057dbe97e7431766e7ede1e362c3e204c9638d",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_bb7609d553a362fdd5c6cd6f",
+        "url": "https://www.eecs.mit.edu/people/song-han",
+        "observed_at": "2026-11-23T04:16:48.824474+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "93349c5049c1e50fef5f51d8741b579640a28d8455ea4e3d98e5b74e2b83e7fe",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_be3c994aafdc775cdb34a196",
+        "url": "https://www.eecs.mit.edu/people/jelena-notaros",
+        "observed_at": "2026-11-23T04:16:45.141391+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "471009d5bf6f7af573709215648cf833b65b28d29cafd4510be19fde1a756ed4",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_c87e72dc9d20d13a581adfda",
+        "url": "https://www.eecs.mit.edu/people/sixian-you",
+        "observed_at": "2026-11-23T04:16:48.717713+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3fefe1288c65f32dcac676bc600a664f525ce631dc8576b01800249ef7186420",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_cb67ac1e265edb8a1d03eff0",
+        "url": "https://www.eecs.mit.edu/people/tess-smidt",
+        "observed_at": "2026-11-23T04:16:49.502283+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e1c0d2fc7dabf7b6196da819cb0106626ac2d7fbea3748a5cde335f250f21717",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_ce0c651f03bda45a20cc2ee2",
+        "url": "https://www.eecs.mit.edu/people/farnaz-niroui-0",
+        "observed_at": "2026-11-23T04:16:43.734532+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d4cf2fd35e9927fe313487097b310957551b4495040a36df6974f554a41efd38",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_ce79f65a67bfcf2804a854df",
+        "url": "https://www.eecs.mit.edu/people/terry-orlando",
+        "observed_at": "2026-11-23T04:16:49.491411+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b25e73bfaebdbb107e0a8bd8309d75b08e73e8877183cba4b4e807a6fc1be4bf",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_d6f6d48014be55223aecc600",
+        "url": "https://www.eecs.mit.edu/people/negar-reiskarimian",
+        "observed_at": "2026-11-23T04:16:47.472871+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "806a1a5d8435a9bf831f7e850dc5093532982e720a5074475f5273ef89bff289",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_db1a8af67229c19e6c3203ef",
+        "url": "https://www.eecs.mit.edu/people/rachit-nigam",
+        "observed_at": "2026-11-23T04:16:48.081081+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "149fdaf893662a59f4f0b92e7fbc94c2eb32dc667f024e938b1479e7d8321e0e",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_ddddc04cb8bbc16dab3ce738",
+        "url": "https://www.eecs.mit.edu/people/lizhong-zheng",
+        "observed_at": "2026-11-23T04:16:46.537302+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fc2e029eadb513f0cf8a10109857542ea61b057ca7194e218c8e8f0f173a2d94",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_ddffd7be2fa468680117c361",
+        "url": "https://www.eecs.mit.edu/people/leslie-kolodziejski",
+        "observed_at": "2026-11-23T04:16:46.493040+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c24db22820902081aaf1ae46333c451b9c7d98baf2a009977133835f865282ef",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_df07e10bdfabb64e0a22ac90",
+        "url": "https://www.eecs.mit.edu/people/muriel-m%c3%a9dard",
+        "observed_at": "2026-11-23T04:16:47.428981+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5b1ad469b04f76ed8dab6590e125691e91b5df6be164a4ae468e021f5edb8319",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_df157d8c20d921662be025fe",
+        "url": "https://www.eecs.mit.edu/people/akintunde-akinwande",
+        "observed_at": "2026-11-23T04:16:41.454987+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c6a317c1174ecb82ea5d00ef7b744f9366292ac7149e8d70b6f0e9e03d57525c",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_e246ad37d289ab5d5d91c8d0",
+        "url": "https://www.eecs.mit.edu/people/anant-agarwal",
+        "observed_at": "2026-11-23T04:16:42.136795+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8a4493dbd43d54e673611569f8d4df4f4d6d64c3167bcb32effe3e7208228739",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_e29d5f8353c0cff6dbafefc7",
+        "url": "https://www.eecs.mit.edu/people/joel-emer",
+        "observed_at": "2026-11-23T04:16:45.316776+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "08c13bd7c7e7c4afb5e5695f2af0a349c8e711238e27913d21c9b389edd9a29b",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_eae7669511f9ce40cd54d1b9",
+        "url": "https://www.eecs.mit.edu/people/duane-boning",
+        "observed_at": "2026-11-23T04:16:43.082656+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5bddcacec2a9aa2d1f0637aaae130892baff1fda1ce58c45c40c3322904c6887",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_f2ac4ca7295ee22a5c737cb6",
+        "url": "https://www.eecs.mit.edu/role/faculty",
+        "observed_at": "2026-11-23T04:16:50.411384+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cf4a4ae8d20e53fe96ca3e43f8cdc4d7b6d6fc2f241750f278cdeff6b96f5d9a",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      },
+      {
+        "id": "shared_frozen_fc83da88eceeb916027b330d",
+        "url": "https://www.eecs.mit.edu/people/alan-oppenheim",
+        "observed_at": "2026-11-23T04:16:41.455331+00:00",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ff87d6fb386b1aef2e7207c981dbc19f5f324a34708722134a85d779a2ddc505",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "All 76 designated EE entries were found. The broader 188-person faculty list added no EE-tagged entries, and the named EE leaders were already represented. CS and AI+D labels alone do not establish EE membership."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_4bc5ed08128841ee88cbbe5b53693bf2",
+    "candidate_sha256": "02a34d47105ea4732bcf02d1385457a95eeb92eb12ed974247b79cd24c5d9f32",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A81c1b876-7755-4b73-8b77-31cc6ed303e0%253Adelegate-task%253Av5-audit-mit_ucla_ucsd-r2-f352d19c:ordinal:1",
+    "model": "gpt-6.2-sol",
+    "finished_at": "2026-11-23T09:53:53.895711+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/b1d172becb5cae1d5032e650a5c8eaa1f410fcd20fc3998d0e613d35877fedc6.json",
+      "sha256": "b1d172becb5cae1d5032e650a5c8eaa1f410fcd20fc3998d0e613d35877fedc6"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/b1d172becb5cae1d5032e650a5c8eaa1f410fcd20fc3998d0e613d35877fedc6.json",
+    "sha256": "b1d172becb5cae1d5032e650a5c8eaa1f410fcd20fc3998d0e613d35877fedc6"
+  }
+}

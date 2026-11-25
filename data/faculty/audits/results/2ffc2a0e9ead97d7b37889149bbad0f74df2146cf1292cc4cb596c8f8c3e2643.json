@@ -1,0 +1,585 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/b0685db82e9499ab59b084aa6cf8f6374095317156c2373823d0527a226577f3.json",
+    "sha256": "b0685db82e9499ab59b084aa6cf8f6374095317156c2373823d0527a226577f3"
+  },
+  "brief": {
+    "file": "audits/briefs/88f57b043e20e7ba4e24ed9222102b0322c8fe07cec9da1c546ec8ce9ba345ba.json",
+    "sha256": "88f57b043e20e7ba4e24ed9222102b0322c8fe07cec9da1c546ec8ce9ba345ba"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_d85fe8fc0ddd4468bf30e93e66af42ae",
+    "candidate_sha256": "a91db5393c45e4a574760e09a257b9f3464ab2f13b3e3d49c33918327ca2832f",
+    "reviewer_id": "haiku-audit-mines-3",
+    "reviewed_at": "2026-11-25T02:47:21+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://www.mines.edu/about/faculty-directory?departments=Electrical%20Engineering",
+        "https://electrical.mines.edu/emeriti",
+        "https://electrical.mines.edu/emeriti",
+        "https://electrical.mines.edu/emeriti",
+        "https://electrical.mines.edu/emeriti",
+        "https://electrical.mines.edu/emeriti",
+        "https://electrical.mines.edu/emeriti",
+        "https://electrical.mines.edu/emeriti"
+      ],
+      "checked_list_ids": [
+        "directory",
+        "emeriti"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_15a7283c80e05bdd957d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Directory and profile state Professor in Electrical Engineering; dean role (EMP) does not displace the EE professorial appointment stated on the official profile.",
+        "source_ids": [
+          "mines_directory_ee",
+          "mines_profile_aaen"
+        ]
+      },
+      {
+        "person_id": "person_6b374d3afde55d80a3b7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Owner determination 2026-11-25: professor, decided regular/ece/current. Directory and profile list 'Department Head'; the Sept 2026 news item names him EE department head with appointment beginning August 2026. Catalog conflict recorded in decision finding.",
+        "source_ids": [
+          "mines_directory_ee",
+          "mines_profile_arkadan",
+          "mines_news_arkadan",
+          "mines_catalog_teaching"
+        ]
+      },
+      {
+        "person_id": "person_97cf3c0dac585670aa6a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Teaching Assistant Professor' in the listed department; teaching-track title excluded under project convention.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_351cb513f1a956699ffa",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching-track title; catalog confirms Teaching Professor of Electrical Engineering.",
+        "source_ids": [
+          "mines_directory_ee",
+          "mines_catalog_teaching"
+        ]
+      },
+      {
+        "person_id": "person_ccfd501652465e708c1e",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching-track title excludes her; the dean role and the CS tag do not change this. ece membership reflects the EE tag on the official roster.",
+        "source_ids": [
+          "mines_directory_ee",
+          "mines_profile_dave",
+          "mines_catalog_teaching"
+        ]
+      },
+      {
+        "person_id": "person_6aa73ae2950d55d598c6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Professor | IEEE Life Fellow, ACES Fellow' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_6734925662295edf8d53",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Associate Professor' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_646bc0d80bec509c9084",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Adjunct-only EE roster role; excluded.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_825cc3735c8c5d1f8ed2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Professor' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_b8bc7521ee655d158cf5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Associate Professor' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_00674e1127675e4baa31",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Assistant Professor' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_12ecb6726c2855829676",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Teaching Associate Professor' in the listed department; teaching-track title excluded under project convention.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_02a1cb68855c558da31f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Assistant Professor' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_325680f66bcb53f19d0d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Assistant Professor' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_666b11bbecaa5f13915f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Teaching Associate Professor | Interim Associate Department Head' in the listed department; teaching-track title excluded under project convention.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_5e8b87da190f58198acf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Professor | NSF CAREER Winner' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_a3f9f54b53185af28f69",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Professor | NSF CAREER Winner, IEEE Fellow' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_362c9b9b03de5429b2f4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official EE roster title 'Assistant Professor | Career mentoring Fellow, APS' with Electrical Engineering tag on the official EE roster: regular professorial appointment, current.",
+        "source_ids": [
+          "mines_directory_ee"
+        ]
+      },
+      {
+        "person_id": "person_6b3f53c7039f59ae9ea2",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Emeritus Teaching Professor' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_4fa424b30f1d5cb98389",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Emeritus Professor' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_b2adda20ce035876b747",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Emeritus Teaching Professor' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_5846d254cc575395a26b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Professor Emeritus' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_c1e7ad7c9e2b5809ab8d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Emeritus Professor' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_cec5248db4125ad9a07d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Emeritus Professor' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      },
+      {
+        "person_id": "person_52f1c3a9fd3b5f10a266",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Official roster title 'Emerita Associate Professor' in the listed department; emeritus/emerita status on the official EE emeriti page; excluded as past.",
+        "source_ids": [
+          "mines_emeriti"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "mines_directory_ee",
+        "url": "https://www.mines.edu/about/faculty-directory/?departments=Electrical%20Engineering",
+        "observed_at": "2026-11-25T02:44:51+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "div.faculty--list__item a.faculty--list__link entries (18): h3.faculty--list__name, p.faculty--list__position (title), p.faculty--list__department (tags)",
+        "response_sha256": "3d4394173f0bd3463b59d550a8a39d4a7ce4eacaabd5bb57c9ad4901647d7e96"
+      },
+      {
+        "id": "mines_emeriti",
+        "url": "https://electrical.mines.edu/emeriti/",
+        "observed_at": "2026-11-25T02:44:51+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "et_pb_text cards under the 'Emeriti Faculty' heading (7): h3 name, p title line",
+        "response_sha256": "a08ac805c47be0ddf4915858b5c21bb794184f9f463f2165c6f2504a185c1833"
+      },
+      {
+        "id": "mines_profile_arkadan",
+        "url": "https://www.mines.edu/about/faculty-directory/profiles/abd-arkadan.html",
+        "observed_at": "2026-11-25T02:45:34+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (Abd Arkadan / Department Head / Dobelman Distinguished Chair, Fellow IEEE, Fellow ACES / Electrical Engineering) and Biography section",
+        "response_sha256": "0037c32c53c96312e900447901ee583b6a5b2fee62af888d292ff9ebc0e82285"
+      },
+      {
+        "id": "mines_news_arkadan",
+        "url": "https://www.mines.edu/news/all-news/2026/abd-arkadan-named-department-head-of-electrical-engineering.html",
+        "observed_at": "2026-11-25T02:45:34+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "article headline, dateline 'September 29, 2026' and first body paragraphs (named head of EE; new appointment began August 2026)",
+        "response_sha256": "c550a8faa0363c429cd84f4fd8a1995880860f1560163ad09209b95a34b4577d"
+      },
+      {
+        "id": "mines_catalog_teaching",
+        "url": "https://catalog.mines.edu/directoryoftheschool/teachingprofessors/",
+        "observed_at": "2026-11-25T02:45:34+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Teaching Professors section, entries for ABDUL-RAHMAN A. ARKADAN, CHRISTOPHER S. COULSTON and VIBHUTI DAVE; page banner '2026-2027 Academic Catalog', no page date",
+        "response_sha256": "e52a7ade7c2a085de5dac754d2eaa93f1cde69e8aca2c31b1c895996af928118"
+      },
+      {
+        "id": "mines_profile_aaen",
+        "url": "https://www.mines.edu/about/faculty-directory/profiles/peter-aaen.html",
+        "observed_at": "2026-11-25T02:45:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (Peter Aaen / Professor / Dean for the Energy and Materials Programs (EMP) / Electrical Engineering) and Biography section",
+        "response_sha256": "27c8c2da13faf6ab8d7cf8a5875ff2a5f4c79cd7d714d3426e04bd818fafebd0"
+      },
+      {
+        "id": "mines_profile_dave",
+        "url": "https://www.mines.edu/about/faculty-directory/profiles/vibhuti-dave.html",
+        "observed_at": "2026-11-25T02:45:35+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (Vibhuti Dave / Teaching Professor / Dean of Undergraduate Studies / Computer Science, Electrical Engineering)",
+        "response_sha256": "d81f645c79d144affb3dcf20ede0e833f6fbc232f5946dd67e49c159a3d51052"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "decision",
+        "person_id": "person_15a7283c80e05bdd957d",
+        "description": "Included as regular/ece/current. Directory (EE-filtered) lists 'Professor | Dean for the Energy and Materials Programs (EMP)' with Electrical Engineering tag; the Mines profile states 'Professor' and department 'Electrical Engineering'. Borderline under the dean rule: the rule requires an official page stating an ECE professorial appointment for a university dean, which the profile supplies. Outcome would change to excluded / academic_professional if the owner reads the EMP dean role as not establishing the EE professorial appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6b374d3afde55d80a3b7",
+        "description": "owner determination 2026-11-25: Abd Arkadan (Colorado School of Mines, Department Head, Dobelman Distinguished Chair): the owner states he is a professor. Decide regular / ece / current. Applied as regular/ece/current, current. Pages consulted: Mines profile (Department Head; Dobelman Distinguished Chair; biography lists earlier Professor posts at Marquette University and Rafik Hariri University); Mines news dated September 29, 2026 (named head of Electrical Engineering; Mines faculty since 2016; new appointment began August 2026). No downloaded page states his current Mines professorial rank in words; the directory entry lists only 'Department Head', so the owner determination supplies the rank. Contradicting page: the Teaching Professors page at https://catalog.mines.edu/directoryoftheschool/teachingprofessors/ lists 'ABDUL-RAHMAN A. ARKADAN ... Interim Department Head and Teaching Professor of Electrical Engineering' (page banner '2026-2027 Academic Catalog'; no page date). Teaching Professor is a teaching-track title excluded by project convention, so the catalog is a literal conflict with the owner's rank statement. The contradiction clause was not applied, for three reasons: the owner determination is the dated change authority and addresses this rank; the catalog's 'Interim Department Head' wording matches the interim role that the September 2026 news says preceded the August 2026 appointment; and the catalog carries no page date. Borderline: if the owner confirms that the Teaching Professor title is current, the outcome changes to excluded / teaching / not_in_core."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_97cf3c0dac585670aa6a",
+        "description": "Excluded as teaching: 'Teaching Assistant Professor' (teaching-track title, Electrical Engineering tag). Not counted under the policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_351cb513f1a956699ffa",
+        "description": "Excluded as teaching: 'Teaching Professor' (teaching-track title, Electrical Engineering tag). Not counted under the policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ccfd501652465e708c1e",
+        "description": "Excluded as teaching: 'Teaching Professor | Dean of Undergraduate Studies' (directory); profile and catalog say Teaching Professor of Computer Science and Electrical Engineering. Teaching-track title controls regardless of the dean role and the CS/EE tags. Membership recorded as ece only because she carries the EE tag on the EE roster; she is not counted."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6aa73ae2950d55d598c6",
+        "description": "Included as regular/ece/current: EE roster title 'Professor | IEEE Life Fellow, ACES Fellow' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6734925662295edf8d53",
+        "description": "Included as regular/ece/current: EE roster title 'Associate Professor' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_646bc0d80bec509c9084",
+        "description": "Excluded as adjunct: 'Adjunct Faculty' is the only EE-related role; adjunct-only roles are excluded."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_825cc3735c8c5d1f8ed2",
+        "description": "Included as regular/ece/current: EE roster title 'Professor' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b8bc7521ee655d158cf5",
+        "description": "Included as regular/ece/current: EE roster title 'Associate Professor' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_00674e1127675e4baa31",
+        "description": "Included as regular/ece/current: EE roster title 'Assistant Professor' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_12ecb6726c2855829676",
+        "description": "Excluded as teaching: 'Teaching Associate Professor' (teaching-track title, Electrical Engineering tag). Not counted under the policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_02a1cb68855c558da31f",
+        "description": "Included as regular/ece/current: EE roster title 'Assistant Professor' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_325680f66bcb53f19d0d",
+        "description": "Included as regular/ece/current: EE roster title 'Assistant Professor' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_666b11bbecaa5f13915f",
+        "description": "Excluded as teaching: 'Teaching Associate Professor | Interim Associate Department Head' (teaching-track title, Electrical Engineering tag). Not counted under the policy."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_5e8b87da190f58198acf",
+        "description": "Included as regular/ece/current: EE roster title 'Professor | NSF CAREER Winner' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_a3f9f54b53185af28f69",
+        "description": "Included as regular/ece/current: EE roster title 'Professor | NSF CAREER Winner, IEEE Fellow' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_362c9b9b03de5429b2f4",
+        "description": "Included as regular/ece/current: EE roster title 'Assistant Professor | Career mentoring Fellow, APS' with Electrical Engineering tag on the official directory query. Department-roster convention applied; no other-department primary appointment stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6b3f53c7039f59ae9ea2",
+        "description": "Excluded as emeritus: 'Emeritus Teaching Professor' on the official EE emeriti page. current_state past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4fa424b30f1d5cb98389",
+        "description": "Excluded as emeritus: 'Emeritus Professor' on the official EE emeriti page. current_state past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b2adda20ce035876b747",
+        "description": "Excluded as emeritus: 'Emeritus Teaching Professor' on the official EE emeriti page. current_state past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_5846d254cc575395a26b",
+        "description": "Excluded as emeritus: 'Professor Emeritus' on the official EE emeriti page. current_state past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c1e7ad7c9e2b5809ab8d",
+        "description": "Excluded as emeritus: 'Emeritus Professor' on the official EE emeriti page. current_state past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_cec5248db4125ad9a07d",
+        "description": "Excluded as emeritus: 'Emeritus Professor' on the EE emeriti page. current_state past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_52f1c3a9fd3b5f10a266",
+        "description": "Excluded as emeritus: 'Emerita Associate Professor' on the official EE emeriti page. current_state past."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Directory check: the EE-filtered Mines faculty directory (fetched 2026-11-25T02:44:51Z) returned 18 entries. All 18 names match brief.people; no omissions. Every entry was parsed for name, title and department tags."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Emeriti check: the EE emeriti page (fetched 2026-11-25T02:44:51Z) returned 7 cards under the 'Emeriti Faculty' heading. All 7 match brief.people; no omissions. The page markup splits the 'o-tilde' character of Marcelo Godoy Simoes into a separate span, so the name is displayed as 'Sim o es'; matched to the brief by name with spacing ignored."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Joint and affiliated faculty: the EE-filtered directory returns only entries tagged Electrical Engineering. Joint or affiliated faculty whose primary department is elsewhere and who lack an EE tag do not appear, and no list in this brief covers them, so they were not enumerated. Among the EE-filtered names, Vibhuti Dave is the only one with a Computer Science tag. The catalog Teaching Professors page (checked for EE names only) names EE for Arkadan, Coulston and Dave."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Profile coverage: profiles were fetched for Arkadan, Aaen and Dave (all https). The other 22 people were decided from the two list pages, which are the authoritative enumerations for this brief; their profile pages were not fetched (optional under the instructions)."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Effective dates: neither list nor the fetched profiles, news item or catalog page gives an incoming or start date for any person in scope, so effective_from_json is null for all records. No incoming appointments were found."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Retrieval: the directory and emeriti pages were downloaded 2026-11-25T02:44:51Z; the Arkadan profile, Arkadan news item and catalog page 02:45:34Z; Aaen and Dave profiles 02:45:35Z. All times are after brief.created_at (2026-11-25T02:11:12Z). Response hashes are of the downloaded bytes."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_d85fe8fc0ddd4468bf30e93e66af42ae",
+    "candidate_sha256": "a91db5393c45e4a574760e09a257b9f3464ab2f13b3e3d49c33918327ca2832f",
+    "transport": "t3",
+    "run_id": "agent_abaf83a0811022dc1",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T02:47:32.734975+00:00",
+    "exit_code": 0
+  }
+}

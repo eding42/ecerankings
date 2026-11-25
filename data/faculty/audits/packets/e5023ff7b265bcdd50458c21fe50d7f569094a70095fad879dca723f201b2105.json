@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "job_id": "audit_23d21c4b158b4166980f259d3013d635",
+  "candidate_sha256": "a9d020da23caf08debbd5396a9e69bade1a8c867e0f9fc91db2076403770ae84",
+  "created_at": "2026-11-24T12:33:50.580186+00:00",
+  "records": [
+    {
+      "id": "shared_virginia_directory",
+      "url": "https://engineering.virginia.edu/department/electrical-and-computer-engineering/faculty",
+      "observed_at": "2026-11-24T04:50:52.724Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/audits/virginia-dir.html",
+      "locator": "Official browser DOM directory capture of https://engineering.virginia.edu/department/electrical-and-computer-engineering/faculty; inspect .tmp/audits/virginia-dir.html bytes.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "6206b37477a52d57a38ec9d8bf427bd5a6a6a07b6f9ccbeefe06f61272076525",
+      "capture_tool": "T3 preview_evaluate document.querySelector(main).outerHTML"
+    }
+  ]
+}

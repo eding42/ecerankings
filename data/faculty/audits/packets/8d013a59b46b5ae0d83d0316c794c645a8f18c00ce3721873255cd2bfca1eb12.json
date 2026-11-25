@@ -1,0 +1,125 @@
+{
+  "schema_version": 1,
+  "job_id": "audit_802d438e3dc3484d9bd8334856eff357",
+  "candidate_sha256": "b642c0c33d267e0aaedc7d1615c4fe19662cc85f15665bfbf3b907f1e59f6e71",
+  "created_at": "2026-11-23T04:54:39.163510+00:00",
+  "provenance": "Independent judgment of immutable shared university captures from the candidate observation date. Source capture times are preserved and may predate this policy-only audit job. No independent download is claimed.",
+  "evidence": {
+    "https://ece.engin.umich.edu/people/directory/faculty": {
+      "file": "evidence/1944bde6d0b68893ef20513e9bad200841c6e56bde88b5de8695984b47e50aa0.json",
+      "sha256": "1944bde6d0b68893ef20513e9bad200841c6e56bde88b5de8695984b47e50aa0"
+    },
+    "https://ece.engin.umich.edu/people/directory/faculty/tenure-track-faculty": {
+      "file": "evidence/cb3335882d53417d5a7617da21ef43a94cc31d6815f9eed1c9cea66a7cef8c91.json",
+      "sha256": "cb3335882d53417d5a7617da21ef43a94cc31d6815f9eed1c9cea66a7cef8c91"
+    },
+    "https://ece.engin.umich.edu/people/directory/faculty/courtesy-faculty": {
+      "file": "evidence/0a2c86df7e222f17346411a3add8b3e5b102dd3abb9bf6049cb54331cdaedc23.json",
+      "sha256": "0a2c86df7e222f17346411a3add8b3e5b102dd3abb9bf6049cb54331cdaedc23"
+    },
+    "https://ece.engin.umich.edu/people/directory/faculty/research-scientists-and-investigators": {
+      "file": "evidence/65b6e7f088d60de6bd6cb2f1d95253756dfc050063ae1107efe2b70f4de88d9e.json",
+      "sha256": "65b6e7f088d60de6bd6cb2f1d95253756dfc050063ae1107efe2b70f4de88d9e"
+    },
+    "https://ece.engin.umich.edu/people/directory/faculty/lecturers-and-adjuncts": {
+      "file": "evidence/81d0679d79d9df797af0123f7d336be9ecde25e668a0a795f47076dd545f37e2.json",
+      "sha256": "81d0679d79d9df797af0123f7d336be9ecde25e668a0a795f47076dd545f37e2"
+    },
+    "https://ece.engin.umich.edu/people/directory/faculty/emeritus-faculty": {
+      "file": "evidence/35cccbc6ff50686a5979aac16539ad5181d2cc4fb429e9bb27a0b59cdbf2d86c.json",
+      "sha256": "35cccbc6ff50686a5979aac16539ad5181d2cc4fb429e9bb27a0b59cdbf2d86c"
+    }
+  },
+  "records": [
+    {
+      "id": "shared_frozen_39b7f8aa0414ab564abfcd86",
+      "url": "https://ece.engin.umich.edu/people/directory/faculty",
+      "observed_at": "2026-11-23T04:36:20.988Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-top10/browser/michigan/all.html",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact. Rendered DOM capture; origin HTTP bytes/status unavailable.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "29ad914a275f6b0f23111e30a334b183c162bb00052fef20cf6ed79620207767",
+      "capture_tool": "mcp__t3_code.preview_evaluate"
+    },
+    {
+      "id": "shared_frozen_fa01a05faaac56e12f64d974",
+      "url": "https://ece.engin.umich.edu/people/directory/faculty/tenure-track-faculty",
+      "observed_at": "2026-11-23T04:38:24.756Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-top10/browser/michigan/core.html",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact. Rendered DOM capture; origin HTTP bytes/status unavailable.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "a3014ec419ac5a34deca2ea31cdbb095b74656baa8978a430098dab6c85e48c6",
+      "capture_tool": "mcp__t3_code.preview_evaluate"
+    },
+    {
+      "id": "shared_frozen_61942dbda6b2ba406f8daf11",
+      "url": "https://ece.engin.umich.edu/people/directory/faculty/courtesy-faculty",
+      "observed_at": "2026-11-23T04:38:33.139Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-top10/browser/michigan/courtesy.html",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact. Rendered DOM capture; origin HTTP bytes/status unavailable.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "ff6a5b7b83037b3a3b35cd666688cc280d3f1cec9c435a2b009df63b052f1aef",
+      "capture_tool": "mcp__t3_code.preview_evaluate"
+    },
+    {
+      "id": "shared_frozen_65ac4c55064023d2967f2d01",
+      "url": "https://ece.engin.umich.edu/people/directory/faculty/research-scientists-and-investigators",
+      "observed_at": "2026-11-23T04:38:40.636Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-top10/browser/michigan/research.html",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact. Rendered DOM capture; origin HTTP bytes/status unavailable.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "52c4fd985676da0b7d190d03160dd5ce776108ea362db353d63bd5f9d266c766",
+      "capture_tool": "mcp__t3_code.preview_evaluate"
+    },
+    {
+      "id": "shared_frozen_d80c5441c104bd487aa02608",
+      "url": "https://ece.engin.umich.edu/people/directory/faculty/lecturers-and-adjuncts",
+      "observed_at": "2026-11-23T04:38:50.452Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-top10/browser/michigan/teaching.html",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact. Rendered DOM capture; origin HTTP bytes/status unavailable.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "bbef350a1ebe11ac30679cdbfb3e232d340233877c47f717371b78d438209648",
+      "capture_tool": "mcp__t3_code.preview_evaluate"
+    },
+    {
+      "id": "shared_frozen_edb06fdd92b22ba655aca4e9",
+      "url": "https://ece.engin.umich.edu/people/directory/faculty/emeritus-faculty",
+      "observed_at": "2026-11-23T04:38:57.407Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/faculty-top10/browser/michigan/emeritus.html",
+      "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact. Rendered DOM capture; origin HTTP bytes/status unavailable.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "97a86ded72caaa26f9c63f16517cd1beb81f16b8d795c5831985e757ffe6ff2d",
+      "capture_tool": "mcp__t3_code.preview_evaluate"
+    }
+  ]
+}

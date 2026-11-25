@@ -1,0 +1,3502 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/cb53869edc2d4e7a050261d24b95ca29b7e4fb9eb71d6778e267a7ac63a7d039.json",
+    "sha256": "cb53869edc2d4e7a050261d24b95ca29b7e4fb9eb71d6778e267a7ac63a7d039"
+  },
+  "brief": {
+    "file": "audits/briefs/7a4b7ca479e34d0eb6dab5ba3585eaa039b410ccd2c0a542d663710338bed469.json",
+    "sha256": "7a4b7ca479e34d0eb6dab5ba3585eaa039b410ccd2c0a542d663710338bed469"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_615942e840304e77804404661a78561e",
+    "candidate_sha256": "3bb89167f9ccdf3d542a269df29ac09d65b7db19d2ad347b4c7db1c089a2beed",
+    "reviewer_id": "gemini-4-hydrogen-v5-audit",
+    "reviewed_at": "2026-11-24T08:40:54.143562+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.umd.edu/clark/faculty/1031/Yanne-Chembo",
+        "https://ece.umd.edu/clark/faculty/1039/Luiz-Pessoa",
+        "https://ece.umd.edu/clark/faculty/1040/Michelle-Mazurek",
+        "https://ece.umd.edu/clark/faculty/1171/Daniel-Butts",
+        "https://ece.umd.edu/clark/faculty/1203/Cheng-Gong",
+        "https://ece.umd.edu/clark/faculty/1205/Ronald-Walsworth",
+        "https://ece.umd.edu/clark/faculty/1241/Christopher-Monroe",
+        "https://ece.umd.edu/clark/faculty/1242/Alicia-Koll%C3%A1r",
+        "https://ece.umd.edu/clark/faculty/1243/David-Levin",
+        "https://ece.umd.edu/clark/faculty/1267/Pratap-Tokekar",
+        "https://ece.umd.edu/clark/faculty/1279/Matt-Landreman",
+        "https://ece.umd.edu/clark/faculty/1292/Eleonora-Tubaldi",
+        "https://ece.umd.edu/clark/faculty/1314/Ming-Lin",
+        "https://ece.umd.edu/clark/faculty/1395/You-Zhou",
+        "https://ece.umd.edu/clark/faculty/1396/PoYen-Chen",
+        "https://ece.umd.edu/clark/faculty/1398/Sahil-Shah",
+        "https://ece.umd.edu/clark/faculty/1399/Abhinav-Shrivastava",
+        "https://ece.umd.edu/clark/faculty/1430/Ramani-Duraiswami",
+        "https://ece.umd.edu/clark/faculty/1431/David-Jacobs",
+        "https://ece.umd.edu/clark/faculty/1486/Carlos-A-Rios-Ocampo",
+        "https://ece.umd.edu/clark/faculty/1661/Avik-Dutt",
+        "https://ece.umd.edu/clark/faculty/1711/Sanghamitra-Dutta",
+        "https://ece.umd.edu/clark/faculty/1726/Son-T-Le",
+        "https://ece.umd.edu/clark/faculty/1727/Donald-Crouse",
+        "https://ece.umd.edu/clark/faculty/1728/Jason-Fleischer",
+        "https://ece.umd.edu/clark/faculty/1729/Jason-Moody",
+        "https://ece.umd.edu/clark/faculty/1731/Nariman-Farvardin",
+        "https://ece.umd.edu/clark/faculty/1732/Karen-Grutter",
+        "https://ece.umd.edu/clark/faculty/1733/Christopher-Metzler",
+        "https://ece.umd.edu/clark/faculty/1734/Xiaodi-Wu",
+        "https://ece.umd.edu/clark/faculty/1748/Kaiqing-Zhang",
+        "https://ece.umd.edu/clark/faculty/1749/Nestor-Tiglao",
+        "https://ece.umd.edu/clark/faculty/1755/Joseph-Mait",
+        "https://ece.umd.edu/clark/faculty/1764/Huaishu-Peng",
+        "https://ece.umd.edu/clark/faculty/1834/Cunxi-Yu",
+        "https://ece.umd.edu/clark/faculty/1839/Ang-Li",
+        "https://ece.umd.edu/clark/faculty/1843/Xin-Zan",
+        "https://ece.umd.edu/clark/faculty/1845/Yonghwi-Kwon",
+        "https://ece.umd.edu/clark/faculty/1872/Calin-Belta",
+        "https://ece.umd.edu/clark/faculty/1878/Nirupam-Roy",
+        "https://ece.umd.edu/clark/faculty/1891/Saikat-Guha",
+        "https://ece.umd.edu/clark/faculty/1901/Nan-Xu",
+        "https://ece.umd.edu/clark/faculty/1909/Zhambyl-Shaikhanov",
+        "https://ece.umd.edu/clark/faculty/1916/Aqil-Sajjad",
+        "https://ece.umd.edu/clark/faculty/1936/Heng-Huang",
+        "https://ece.umd.edu/clark/faculty/2004/Thomas-Marzetta",
+        "https://ece.umd.edu/clark/faculty/2005/Jesse-Moody",
+        "https://ece.umd.edu/clark/faculty/2022/Vikram-Manikonda",
+        "https://ece.umd.edu/clark/faculty/2024/Bahar-Asgari",
+        "https://ece.umd.edu/clark/faculty/2026/Aaron-Gilad-Kusne",
+        "https://ece.umd.edu/clark/faculty/2036/Mohamed-Kashef",
+        "https://ece.umd.edu/clark/faculty/2051/Yu-Gan",
+        "https://ece.umd.edu/clark/faculty/346/Eyad-H-Abed",
+        "https://ece.umd.edu/clark/faculty/347/Pamela-Abshire",
+        "https://ece.umd.edu/clark/faculty/350/Yiannis-Aloimonos",
+        "https://ece.umd.edu/clark/faculty/352/Thomas-M-AntonsenJr",
+        "https://ece.umd.edu/clark/faculty/356/Behtash-Babadi",
+        "https://ece.umd.edu/clark/faculty/357/John-S-Baras",
+        "https://ece.umd.edu/clark/faculty/358/David-F-Barbe",
+        "https://ece.umd.edu/clark/faculty/359/Alexander-Barg",
+        "https://ece.umd.edu/clark/faculty/361/Rajeev-Barua",
+        "https://ece.umd.edu/clark/faculty/362/Debtanu-Basu",
+        "https://ece.umd.edu/clark/faculty/365/Shuvra-S-Bhattacharyya",
+        "https://ece.umd.edu/clark/faculty/369/Rama-Chellappa",
+        "https://ece.umd.edu/clark/faculty/377/Dana-Dachman-Soled",
+        "https://ece.umd.edu/clark/faculty/378/Mario-Dagenais",
+        "https://ece.umd.edu/clark/faculty/380/Larry-Davis",
+        "https://ece.umd.edu/clark/faculty/381/LD-Davisson",
+        "https://ece.umd.edu/clark/faculty/384/Tudor-Dumitra%C8%99",
+        "https://ece.umd.edu/clark/faculty/388/Fawzi-P-Emad",
+        "https://ece.umd.edu/clark/faculty/389/Anthony-Ephremides",
+        "https://ece.umd.edu/clark/faculty/391/Carol-Espy-Wilson",
+        "https://ece.umd.edu/clark/faculty/394/Manoj-Franklin",
+        "https://ece.umd.edu/clark/faculty/395/Michael-Fu",
+        "https://ece.umd.edu/clark/faculty/396/Reza-Ghodssi",
+        "https://ece.umd.edu/clark/faculty/397/Julius-Goldhar",
+        "https://ece.umd.edu/clark/faculty/398/Neil-Goldsman",
+        "https://ece.umd.edu/clark/faculty/399/Romel-Gomez",
+        "https://ece.umd.edu/clark/faculty/400/Victor-Granatstein",
+        "https://ece.umd.edu/clark/faculty/403/Mohammad-Hafezi",
+        "https://ece.umd.edu/clark/faculty/405/Robert-O-----IN-MEMORIAM-Harger",
+        "https://ece.umd.edu/clark/faculty/406/Andrew-Harris",
+        "https://ece.umd.edu/clark/faculty/407/Bill-Hawkins",
+        "https://ece.umd.edu/clark/faculty/409/PingTong-Ho",
+        "https://ece.umd.edu/clark/faculty/410/Jeffery-Hollingsworth",
+        "https://ece.umd.edu/clark/faculty/411/Timothy-Horiuchi",
+        "https://ece.umd.edu/clark/faculty/412/Agis-Iliadis",
+        "https://ece.umd.edu/clark/faculty/415/Joseph-JaJa",
+        "https://ece.umd.edu/clark/faculty/417/Alireza-Khaligh",
+        "https://ece.umd.edu/clark/faculty/423/P-S-Krishnaprasad",
+        "https://ece.umd.edu/clark/faculty/424/Richard-J-La",
+        "https://ece.umd.edu/clark/faculty/425/Daniel-Lathrop",
+        "https://ece.umd.edu/clark/faculty/426/Wesley-Lawson",
+        "https://ece.umd.edu/clark/faculty/428/CH-Lee",
+        "https://ece.umd.edu/clark/faculty/430/William-Levine",
+        "https://ece.umd.edu/clark/faculty/433/Armand-Makowski",
+        "https://ece.umd.edu/clark/faculty/434/Steve-Marcus",
+        "https://ece.umd.edu/clark/faculty/435/Nuno-Martins",
+        "https://ece.umd.edu/clark/faculty/436/Isaak-D-Mayergoyz",
+        "https://ece.umd.edu/clark/faculty/439/John-Melngailis",
+        "https://ece.umd.edu/clark/faculty/440/Howard-Milchberg",
+        "https://ece.umd.edu/clark/faculty/441/Nicole-Mogul",
+        "https://ece.umd.edu/clark/faculty/443/Thomas-E-Murphy",
+        "https://ece.umd.edu/clark/faculty/445/Prakash-Narayan",
+        "https://ece.umd.edu/clark/faculty/446/Robert-----IN-MEMORIAM-Newcomb",
+        "https://ece.umd.edu/clark/faculty/448/Patrick-G-O%27Shea",
+        "https://ece.umd.edu/clark/faculty/450/Jon-Orloff",
+        "https://ece.umd.edu/clark/faculty/451/A-Yavuz-Oruc",
+        "https://ece.umd.edu/clark/faculty/452/Edward-Ott",
+        "https://ece.umd.edu/clark/faculty/455/Adrian-Papamarcou",
+        "https://ece.umd.edu/clark/faculty/456/Donghun-Park",
+        "https://ece.umd.edu/clark/faculty/458/Martin-Peckerar",
+        "https://ece.umd.edu/clark/faculty/463/James-Pugsley",
+        "https://ece.umd.edu/clark/faculty/464/Gang-Qu",
+        "https://ece.umd.edu/clark/faculty/466/Herbert-Rabin",
+        "https://ece.umd.edu/clark/faculty/467/Majid-Raissi-Dehkordi",
+        "https://ece.umd.edu/clark/faculty/476/Shihab-Shamma",
+        "https://ece.umd.edu/clark/faculty/477/Mark-Shayman",
+        "https://ece.umd.edu/clark/faculty/480/Charles-Silio",
+        "https://ece.umd.edu/clark/faculty/481/Jonathan-Simon",
+        "https://ece.umd.edu/clark/faculty/483/Phillip-Sprangle",
+        "https://ece.umd.edu/clark/faculty/484/Ankur-Srivastava",
+        "https://ece.umd.edu/clark/faculty/485/Charles-Striffler",
+        "https://ece.umd.edu/clark/faculty/487/Rikin-Thakker",
+        "https://ece.umd.edu/clark/faculty/488/Andr-Tits",
+        "https://ece.umd.edu/clark/faculty/489/Steven-Tretter",
+        "https://ece.umd.edu/clark/faculty/490/Sennur-Ulukus",
+        "https://ece.umd.edu/clark/faculty/491/Uzi-Vishkin",
+        "https://ece.umd.edu/clark/faculty/492/Edo-Waks",
+        "https://ece.umd.edu/clark/faculty/496/Jerry-Wu",
+        "https://ece.umd.edu/clark/faculty/497/Min-Wu",
+        "https://ece.umd.edu/clark/faculty/499/Donald-Yeung",
+        "https://ece.umd.edu/clark/faculty/501/Kawthar-Zaki",
+        "https://ece.umd.edu/clark/faculty/520/Nikhil-Chopra",
+        "https://ece.umd.edu/clark/faculty/523/Michel-Cukier",
+        "https://ece.umd.edu/clark/faculty/58/Derek-A-Paley",
+        "https://ece.umd.edu/clark/faculty/593/Elisabeth-Smela",
+        "https://ece.umd.edu/clark/faculty/701/Ray-Phaneuf",
+        "https://ece.umd.edu/clark/faculty/704/Oded-Rabin",
+        "https://ece.umd.edu/clark/faculty/709/Gary-Rubloff",
+        "https://ece.umd.edu/clark/faculty/722/Ichiro-Takeuchi",
+        "https://ece.umd.edu/clark/faculty/805/Kevin-Daniels",
+        "https://ece.umd.edu/clark/faculty/808/Mehdi-Kalantari-Khandani",
+        "https://ece.umd.edu/clark/faculty/901/Dinesh-Manocha",
+        "https://ece.umd.edu/clark/faculty/902/William-Regli",
+        "https://ece.umd.edu/clark/faculty/983/Steven-Anlage",
+        "https://ece.umd.edu/clark/faculty/984/Soheil-Feizi",
+        "https://ece.umd.edu/clark/faculty/988/Thomas-Goldstein",
+        "https://ece.umd.edu/clark/faculty/989/Furong-Huang",
+        "https://ece.umd.edu/clark/faculty/994/Danilo-Romero",
+        "https://nanocenter.umd.edu/faculty?u=882"
+      ],
+      "checked_list_ids": [
+        "roster",
+        "faculty",
+        "emeritus",
+        "lecturers",
+        "affiliates",
+        "research"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_3ac2ea3a93935243a833",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_1dd7cdf9a149"
+        ]
+      },
+      {
+        "person_id": "person_5766dc6bdd575da1863b",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Became ECE Chair at Stony Brook University and continues at UMD ECE as Adjunct/Visiting Professor.",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_b3eb81bd907b",
+          "support_3"
+        ]
+      },
+      {
+        "person_id": "person_0579a1d0aeae5a8889ca",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_roster",
+          "prof_ac1ad0bf4d78"
+        ]
+      },
+      {
+        "person_id": "person_b1786b9664ae54ccbf86",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_e09de9874c04"
+        ]
+      },
+      {
+        "person_id": "person_0245f00d34255b81a7d0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_572266732853"
+        ]
+      },
+      {
+        "person_id": "person_4e5aa573c429547c8b5c",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_c32c6b15dc28"
+        ]
+      },
+      {
+        "person_id": "person_4ea62ed49cf75fe19ba9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_4c83e6e19a0c"
+        ]
+      },
+      {
+        "person_id": "person_7feb87ee3db651e79366",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_235a2f4a42f3"
+        ]
+      },
+      {
+        "person_id": "person_e6c91fa36a09500eb9ca",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_a4f2fa30cc0e"
+        ]
+      },
+      {
+        "person_id": "person_4a727c28510f5259b37e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_9810a292bb86"
+        ]
+      },
+      {
+        "person_id": "person_3202494f147a51e7a5e9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_25544861aecf"
+        ]
+      },
+      {
+        "person_id": "person_e5a97a944bbe53669510",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "list_roster",
+          "prof_b660378a46d4"
+        ]
+      },
+      {
+        "person_id": "person_993635abd447512f9150",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_410d06f043af"
+        ]
+      },
+      {
+        "person_id": "person_b0977886a6b65af29b85",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_774f4e358f6e"
+        ]
+      },
+      {
+        "person_id": "person_c414c673e5415340a852",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_d40c5042a7bc"
+        ]
+      },
+      {
+        "person_id": "person_e383ff2773fd5348b271",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_cbb44763792d"
+        ]
+      },
+      {
+        "person_id": "person_5f37023945225d7abb63",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_c228b0db80b4"
+        ]
+      },
+      {
+        "person_id": "person_40d61e4183235f299e02",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_20eef1e8163b"
+        ]
+      },
+      {
+        "person_id": "person_acf5bb72235c5c519830",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_3f2b2e6f3518"
+        ]
+      },
+      {
+        "person_id": "person_c41dbac3cf555b50b63e",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "list_roster",
+          "prof_dd1ca388b1ce"
+        ]
+      },
+      {
+        "person_id": "person_bf0d1869094659788933",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_5cf7d421fd53"
+        ]
+      },
+      {
+        "person_id": "person_97b488d8e0c15dfd9472",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_12f4e203c1b3"
+        ]
+      },
+      {
+        "person_id": "person_34064b5be20154a8acbd",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_39120db8ba6d"
+        ]
+      },
+      {
+        "person_id": "person_0330508ba47c5185bced",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_7dd3b8b3c854"
+        ]
+      },
+      {
+        "person_id": "person_5e59c5bda45556f09e54",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "cs_only",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Professor Emeritus / Distinguished University Professor Emeritus on UMIACS (umiacs.umd.edu/people/lsd) and UMD CS (cs.umd.edu/people/faculty); ECE profile is stale.",
+        "source_ids": [
+          "list_roster",
+          "prof_283285a693b4",
+          "support_6",
+          "umiacs_lsd"
+        ]
+      },
+      {
+        "person_id": "person_b4989b57a6435eeb8942",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_a828a234cdc9"
+        ]
+      },
+      {
+        "person_id": "person_edd47d7429a6534cb2c1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_54e556a001b5"
+        ]
+      },
+      {
+        "person_id": "person_84e8d2d583655227bc63",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_fac9c097ff4e"
+        ]
+      },
+      {
+        "person_id": "person_bf8187e2eecb5edeb6ac",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_roster",
+          "prof_a75858460d0c"
+        ]
+      },
+      {
+        "person_id": "person_4d2f5bb7bd805352804e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_5c31181620f1"
+        ]
+      },
+      {
+        "person_id": "person_7cfdf39b3433528d812c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_562dcc234711"
+        ]
+      },
+      {
+        "person_id": "person_7ad3961242a055449233",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_a7c7831be5e3"
+        ]
+      },
+      {
+        "person_id": "person_1a00e2fdafd45ff3a90d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_6590d70392d4"
+        ]
+      },
+      {
+        "person_id": "person_8f107518270654129afd",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_7d118af9a193"
+        ]
+      },
+      {
+        "person_id": "person_fe072375dafe5235a824",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_roster",
+          "prof_f14a1221a65b"
+        ]
+      },
+      {
+        "person_id": "person_368eda5e911a5a44b852",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "list_roster",
+          "prof_7bbe8954d8b4"
+        ]
+      },
+      {
+        "person_id": "person_6f5150a9653d56c6a895",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_5627ac3565bf"
+        ]
+      },
+      {
+        "person_id": "person_91029138a30b51f5b682",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_0b18fcb96945"
+        ]
+      },
+      {
+        "person_id": "person_cd2da6b9cf245c2ba57b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_91326d651727"
+        ]
+      },
+      {
+        "person_id": "person_bc7dd302cf5a5677832e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_09ae22481811"
+        ]
+      },
+      {
+        "person_id": "person_2bfb77edb121568e86bf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_8f1e61c548f6"
+        ]
+      },
+      {
+        "person_id": "person_4876ec13ea7353549cc8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_3ae1885781ce"
+        ]
+      },
+      {
+        "person_id": "person_e0794022cd1b58328170",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "list_roster",
+          "prof_947000ebf225"
+        ]
+      },
+      {
+        "person_id": "person_1e11aa9e86c45ca5adb7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_7ca924be11d4"
+        ]
+      },
+      {
+        "person_id": "person_30a55346c4625dd7b9fa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_19ddd419680d"
+        ]
+      },
+      {
+        "person_id": "person_9cdbc3b157075b5e977b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "list_roster",
+          "prof_68c63e2ccb50"
+        ]
+      },
+      {
+        "person_id": "person_20e1342c59945185ae4c",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "list_roster",
+          "prof_dfb595109940"
+        ]
+      },
+      {
+        "person_id": "person_cfe041adf45a51a28e06",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "list_roster",
+          "prof_9b773da15530"
+        ]
+      },
+      {
+        "person_id": "person_2c812b980a0050febf4b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_f7735534f69c"
+        ]
+      },
+      {
+        "person_id": "person_7835d6b28320502ab7ef",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_f4308f5e1cbd"
+        ]
+      },
+      {
+        "person_id": "person_00bce869c8f351cca6b5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_821effe2310b"
+        ]
+      },
+      {
+        "person_id": "person_444a8f7dfc0958bda23e",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_afaf057246aa"
+        ]
+      },
+      {
+        "person_id": "person_ea0e001043f259a49611",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_e1bce601377b"
+        ]
+      },
+      {
+        "person_id": "person_6055fcfaffa45f9683c2",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_31a8e1ebe104"
+        ]
+      },
+      {
+        "person_id": "person_d67f739c1f645f3e9f79",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_ca3b20d991a9"
+        ]
+      },
+      {
+        "person_id": "person_4b75d5052b965846b785",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_8dd47b9e05ad"
+        ]
+      },
+      {
+        "person_id": "person_dd527c27016e5c1cb2b3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_bd37fe36ef6d"
+        ]
+      },
+      {
+        "person_id": "person_b5af7bde84c6568fbcc2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_dc6174e0bbda"
+        ]
+      },
+      {
+        "person_id": "person_a98d83f2f66a5a678471",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_b68077e01ab3"
+        ]
+      },
+      {
+        "person_id": "person_55d93ec8f00f5a53a75a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_deef647b7ad5"
+        ]
+      },
+      {
+        "person_id": "person_ad429739fda75e6fb7a7",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_3011a250397a"
+        ]
+      },
+      {
+        "person_id": "person_4023c2c7cdd65f268f65",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_cf26c2ae7af1"
+        ]
+      },
+      {
+        "person_id": "person_31c20153ff585cfbad1c",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "prof_f1f1fdc0e730"
+        ]
+      },
+      {
+        "person_id": "person_7edf61b4e8445a0ebc76",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_b01ec9091f68"
+        ]
+      },
+      {
+        "person_id": "person_f8e2d7236aed5e088ee0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_740c8fc7220e"
+        ]
+      },
+      {
+        "person_id": "person_e0fb5530c41558e4a0c2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_a7183f3cab8f"
+        ]
+      },
+      {
+        "person_id": "person_966addf045ae52e3bc3d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_a5a304e10a5a"
+        ]
+      },
+      {
+        "person_id": "person_d4293611d3b65f059764",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_aa2d5f7b0781"
+        ]
+      },
+      {
+        "person_id": "person_4bae2389800057499b40",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_f852297951c3"
+        ]
+      },
+      {
+        "person_id": "person_d32aa353acf95fe98904",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_54c012f8479b"
+        ]
+      },
+      {
+        "person_id": "person_13c83adf717758429246",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_f28cff733b89"
+        ]
+      },
+      {
+        "person_id": "person_a32bd57c33255d82a872",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "prof_b07566df056d"
+        ]
+      },
+      {
+        "person_id": "person_b2d33ade79155830b0e4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_d38726eae09c"
+        ]
+      },
+      {
+        "person_id": "person_babde2ef50995071ba23",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_d74d75c36745"
+        ]
+      },
+      {
+        "person_id": "person_227456eb57fa570e8b2e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_556cdba33092"
+        ]
+      },
+      {
+        "person_id": "person_577ea80be4d25a4aa5d6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_c3772fc37dc4"
+        ]
+      },
+      {
+        "person_id": "person_d83d044a68aa5057a21f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_9eb815bc4104"
+        ]
+      },
+      {
+        "person_id": "person_70861043f8005d5ea8bb",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_553f0e1100a1"
+        ]
+      },
+      {
+        "person_id": "person_555fd742f13b5c8d92d8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_f21b90b0c2bc"
+        ]
+      },
+      {
+        "person_id": "person_a9a53a72dc3b55139724",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_faculty",
+          "list_lecturers",
+          "prof_c610785efafc"
+        ]
+      },
+      {
+        "person_id": "person_e80fb7cfb08e5492af46",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_e20996178330"
+        ]
+      },
+      {
+        "person_id": "person_436aee0966b155948cfd",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_785e76a555fb"
+        ]
+      },
+      {
+        "person_id": "person_bd1e11284fad5869bdcf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_ff89a403efb5"
+        ]
+      },
+      {
+        "person_id": "person_deb64182c8565dfca18c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_5dbee4bd22cf"
+        ]
+      },
+      {
+        "person_id": "person_fc4acda1b23950f088c6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_d8fd9a8168de"
+        ]
+      },
+      {
+        "person_id": "person_b7a0e5273cb2514caf35",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_7ebcb156787f"
+        ]
+      },
+      {
+        "person_id": "person_d0f69023631758249699",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_6e65fbfd614a"
+        ]
+      },
+      {
+        "person_id": "person_54e2175cd1c655b58b1c",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_0afdf038b7ed"
+        ]
+      },
+      {
+        "person_id": "person_d0b951fb7b0756b19ccb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_1cdfe696856d"
+        ]
+      },
+      {
+        "person_id": "person_3842a86f651055a7b793",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_88128c6261da"
+        ]
+      },
+      {
+        "person_id": "person_e55431880aa25fa2b858",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_ebbbcbe1e5ff"
+        ]
+      },
+      {
+        "person_id": "person_752442b66dbd5537b46e",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "prof_1586f449f2e0"
+        ]
+      },
+      {
+        "person_id": "person_9efb9cd316db5943b326",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_97b447684d08"
+        ]
+      },
+      {
+        "person_id": "person_2f532d186b3a5cc98ba8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_ae4cfc45c0f3"
+        ]
+      },
+      {
+        "person_id": "person_5fba4e6f11975e4ab321",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_d2c868e069fb"
+        ]
+      },
+      {
+        "person_id": "person_46bd1d6432865bb4b284",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_1d88ec1c4bd9"
+        ]
+      },
+      {
+        "person_id": "person_5b3c28ce5e295a059694",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_15b167200abd"
+        ]
+      },
+      {
+        "person_id": "person_033ad604861757febfb8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_f43defe0c781"
+        ]
+      },
+      {
+        "person_id": "person_8f5098cc49a05340ac87",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_0e37ff263b80"
+        ]
+      },
+      {
+        "person_id": "person_d5479e6265c75193a2c6",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_b10745a131c2"
+        ]
+      },
+      {
+        "person_id": "person_af6c5857197c5ff8a76b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_b29a58194a2e"
+        ]
+      },
+      {
+        "person_id": "person_119913d4dd7c5d9da66e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_65400461301a"
+        ]
+      },
+      {
+        "person_id": "person_6a71b8ff039b5a5db045",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "list_research",
+          "prof_e0674b78d85c"
+        ]
+      },
+      {
+        "person_id": "person_a7a6ee09ed0253448097",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_29520b855dfc"
+        ]
+      },
+      {
+        "person_id": "person_0ee50be328ac529bbf3f",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_8c6e9f3e850d"
+        ]
+      },
+      {
+        "person_id": "person_55218dfa6caa5292a867",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_84b4e793dfcc"
+        ]
+      },
+      {
+        "person_id": "person_172d41612f225254af7c",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_a39e3f810980"
+        ]
+      },
+      {
+        "person_id": "person_933a6762fe8c54178222",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_10a8182ab0dc"
+        ]
+      },
+      {
+        "person_id": "person_d5d91e89872852c7b3eb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_86f1e812dc3d"
+        ]
+      },
+      {
+        "person_id": "person_e1479327c12c5718ba5b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_93240381cc1d"
+        ]
+      },
+      {
+        "person_id": "person_d2a003471df05f79a8b2",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_fd026df6acdd"
+        ]
+      },
+      {
+        "person_id": "person_1121482a88845959a0f9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_345b82fc7730"
+        ]
+      },
+      {
+        "person_id": "person_e49fcb57a0f85de1b9f9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_ebeb80ce47b2"
+        ]
+      },
+      {
+        "person_id": "person_fe3ecc9178515d548051",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_7e040263237b"
+        ]
+      },
+      {
+        "person_id": "person_8a4db35c7a5252cf8b17",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_33f60512b1c4"
+        ]
+      },
+      {
+        "person_id": "person_3825f07a07f054f7ae90",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_cf749a9a1e55"
+        ]
+      },
+      {
+        "person_id": "person_45f2ab7a2385566d8a5b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_b89cf0d1aa9c"
+        ]
+      },
+      {
+        "person_id": "person_f943a819c5dd5034b9a3",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Research-only appointment (research list).",
+        "source_ids": [
+          "list_research",
+          "prof_726f8bbfd73f"
+        ]
+      },
+      {
+        "person_id": "person_932faeef544954fa8013",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_d10f0f42256c"
+        ]
+      },
+      {
+        "person_id": "person_3793f742fd3458e594f9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "list_faculty",
+          "prof_1adb82463f3c"
+        ]
+      },
+      {
+        "person_id": "person_63e80e4884d951838345",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_6e2e2a011163"
+        ]
+      },
+      {
+        "person_id": "person_7426457a5dcd5da58d2d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_e629bd653b3d"
+        ]
+      },
+      {
+        "person_id": "person_46ef97a013095f2c99a5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_4001d9baa3f2"
+        ]
+      },
+      {
+        "person_id": "person_da64e19884915f80b6be",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_27e9641c1c56"
+        ]
+      },
+      {
+        "person_id": "person_a9790f5b84265583a85a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_ec0992737501"
+        ]
+      },
+      {
+        "person_id": "person_1b45091ffd6651579705",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_e844006f1620"
+        ]
+      },
+      {
+        "person_id": "person_9aaaf6bc306c555b87ef",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_ec3cae7842c6"
+        ]
+      },
+      {
+        "person_id": "person_cc41262f0fca52cfa5bf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_e92657fa9469"
+        ]
+      },
+      {
+        "person_id": "person_ede79e0caa97576bb07f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_d045643f244a"
+        ]
+      },
+      {
+        "person_id": "person_c06c5305fcc25f87ab69",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_91a78986733a"
+        ]
+      },
+      {
+        "person_id": "person_5a4c5b1e3d785b82965b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_c84143e69106"
+        ]
+      },
+      {
+        "person_id": "person_d677380671b952d98f6b",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_0f989f546d97"
+        ]
+      },
+      {
+        "person_id": "person_e70399c5ae6654ed9a03",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_bf276b85206c"
+        ]
+      },
+      {
+        "person_id": "person_38e6d15cd5c85c2c94f0",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_250cc39c212a"
+        ]
+      },
+      {
+        "person_id": "person_9e399e6a26d45366bcf9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_d75d48a3e595"
+        ]
+      },
+      {
+        "person_id": "person_afcb0b6d241a57f4b6bf",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_a55cddfeffa9"
+        ]
+      },
+      {
+        "person_id": "person_78c3f60db41b5eba86f1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_7e3febaf2af5"
+        ]
+      },
+      {
+        "person_id": "person_18b6591f087c5a59bea3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_08bf35406049"
+        ]
+      },
+      {
+        "person_id": "person_1dd65f036afa5758b9b4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_d6d69d9343d1"
+        ]
+      },
+      {
+        "person_id": "person_91c3c361c747567fae2b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_42ceefca47aa"
+        ]
+      },
+      {
+        "person_id": "person_52d4caf7142251f6806a",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Teaching/lecturer appointment (lecturers list).",
+        "source_ids": [
+          "list_lecturers",
+          "prof_1f05bc2fa6ab"
+        ]
+      },
+      {
+        "person_id": "person_3a3c41b000675dcb9014",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_fb3f7cae1543"
+        ]
+      },
+      {
+        "person_id": "person_e8d953d25cfc5a7cb53a",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_ad91e703fe83"
+        ]
+      },
+      {
+        "person_id": "person_6820cf5eea5551c1b56c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_a3958b8157d3"
+        ]
+      },
+      {
+        "person_id": "person_aab2a66e7f3f59b79b08",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_64e632874a99"
+        ]
+      },
+      {
+        "person_id": "person_2ade48bed0745a418f63",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as Emeritus/Retired (emeritus list).",
+        "source_ids": [
+          "list_emeritus",
+          "prof_4d32c7ef6c50"
+        ]
+      },
+      {
+        "person_id": "person_746203ef253b5bdd89ff",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_ded24c6ac005"
+        ]
+      },
+      {
+        "person_id": "person_060220e5f1515a73b0eb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_163f81ad559e"
+        ]
+      },
+      {
+        "person_id": "person_3496fd121f88574bbb19",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Official ECE affiliate professorial appointment (affiliates list).",
+        "source_ids": [
+          "list_affiliates",
+          "prof_0e3a01eb48e6"
+        ]
+      },
+      {
+        "person_id": "person_977d962dd6d25d9096dc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Current ECE professorial faculty (ECE profile).",
+        "source_ids": [
+          "prof_5bfcf0433385"
+        ]
+      },
+      {
+        "person_id": "person_460c4e75292c5097bfd7",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "outside_ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "UMD Physics faculty (6/09-) with only a former non-UMD ECE appointment (Univ of Delaware 9/04-12/08); absent from ece.umd.edu/clark/facultydir.",
+        "source_ids": [
+          "prof_79bb78397510"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "list_roster",
+        "url": "https://ece.umd.edu/clark/facultydir",
+        "observed_at": "2026-11-24T08:40:03.306786+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ece.umd.edu directory list (roster)",
+        "response_sha256": "90f30b844cf26dcd2afb964cc2494e2be11b26e2ca9db7dcf7aa2fc65f8946c1"
+      },
+      {
+        "id": "list_faculty",
+        "url": "https://ece.umd.edu/clark/facultydir?drfilter=1",
+        "observed_at": "2026-11-24T08:40:03.302419+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ece.umd.edu directory list (faculty)",
+        "response_sha256": "0475084c366fcb9d9f4eef7dba9d661aa753a08e772d1570a24ee9e9b05ca147"
+      },
+      {
+        "id": "list_emeritus",
+        "url": "https://ece.umd.edu/clark/facultydir?drfilter=2",
+        "observed_at": "2026-11-24T08:40:03.240812+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ece.umd.edu directory list (emeritus)",
+        "response_sha256": "34dc78e9c6212156a749db191425b8ef29f91d4adb7bfeecee05ecd9ddcaed1e"
+      },
+      {
+        "id": "list_lecturers",
+        "url": "https://ece.umd.edu/clark/facultydir?drfilter=3",
+        "observed_at": "2026-11-24T08:40:03.252831+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ece.umd.edu directory list (lecturers)",
+        "response_sha256": "9d293bc8ca47bc76eb92bf98e728e0648a6686bcf23585411671be9d95775f77"
+      },
+      {
+        "id": "list_affiliates",
+        "url": "https://ece.umd.edu/clark/facultydir?drfilter=4",
+        "observed_at": "2026-11-24T08:40:03.246454+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ece.umd.edu directory list (affiliates)",
+        "response_sha256": "968dc2a17c7ab7184c43429b106d7bafb65aefca1aaf459d79d8a2be83c8fcba"
+      },
+      {
+        "id": "list_research",
+        "url": "https://ece.umd.edu/clark/facultydir?drfilter=5",
+        "observed_at": "2026-11-24T08:40:03.234735+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ece.umd.edu directory list (research)",
+        "response_sha256": "59d3a7eda601121812df25949b0a95500775113b34de4cd602b36c2ffe09c5ab"
+      },
+      {
+        "id": "support_1",
+        "url": "https://academiccatalog.umd.edu/graduate/programs/electrical-computer-engineering-enee/",
+        "observed_at": "2026-11-24T08:40:03.214863+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "570af1a709a826ee8dd64249e008ae4ceff8559c1fafdea3d77e64b4470da081"
+      },
+      {
+        "id": "support_2",
+        "url": "https://ece.umd.edu/news/story/four-ece-faculty-retire",
+        "observed_at": "2026-11-24T08:40:03.823386+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "b79f10e48ecedc25e5b29cae2d47fda9c8a9e5339b703c6987fe856f26230fbd"
+      },
+      {
+        "id": "support_3",
+        "url": "https://ece.umd.edu/news/story/pamela-abshire-named-ece-chair-of-stony-brook-university",
+        "observed_at": "2026-11-24T08:40:03.772266+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "27595b3b1f046564571a02b3e3bb69b898e6b9da9e1e02756cc000de84c9c206"
+      },
+      {
+        "id": "support_4",
+        "url": "https://ece.umd.edu/news/story/two-new-faculty-members-welcomed-to-ece",
+        "observed_at": "2026-11-24T08:40:03.790946+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "fefd945c5f97e42e02a71de60ad5211713e201b6be5dc84894c8909f39d24aa0"
+      },
+      {
+        "id": "support_5",
+        "url": "https://www.cs.umd.edu/article/2026/05/ashok-agrawala-retire-after-55-years-umd-cs",
+        "observed_at": "2026-11-24T08:40:03.230772+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "7c821cd192d9d2c038095350ca5e96ca83ae1c67fde0b564fe0102645a685a23"
+      },
+      {
+        "id": "support_6",
+        "url": "https://www.cs.umd.edu/people/faculty",
+        "observed_at": "2026-11-24T08:40:03.286965+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "52a4eac5d4f2ccc17e7a4f9330b807c60059d1562213c56db3316eca7b9d9c7f"
+      },
+      {
+        "id": "support_7",
+        "url": "https://www.cs.umd.edu/people/jkatz2",
+        "observed_at": "2026-11-24T08:40:03.575364+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "supporting_url",
+        "response_sha256": "83000cc7657da35bb8b9450e0da2d8ba58695ef34aa9e8c2362c76e8ec880172"
+      },
+      {
+        "id": "prof_1dd7cdf9a149",
+        "url": "https://ece.umd.edu/clark/faculty/346/Eyad-H-Abed",
+        "observed_at": "2026-11-24T08:40:03.689096+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "4bdbaa683fbb8a43c3807be779cb9a1934bb94f752905a6e66182b4816002e77"
+      },
+      {
+        "id": "prof_b3eb81bd907b",
+        "url": "https://ece.umd.edu/clark/faculty/347/Pamela-Abshire",
+        "observed_at": "2026-11-24T08:40:03.679893+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "1123ad3ffc5fcee2cca62761b84b41c80b6823ef9791909a2861b064a3ade1c3"
+      },
+      {
+        "id": "prof_ac1ad0bf4d78",
+        "url": "https://ece.umd.edu/clark/faculty/350/Yiannis-Aloimonos",
+        "observed_at": "2026-11-24T08:40:03.693671+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "5b3e508b5cc6927dbbfb40031b30390e22cbd48290c9fa4365b28cef8b8adb5e"
+      },
+      {
+        "id": "prof_e09de9874c04",
+        "url": "https://ece.umd.edu/clark/faculty/983/Steven-Anlage",
+        "observed_at": "2026-11-24T08:40:03.615956+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a35a467678021b9393e0514937172db5f3ea21051ea7e778da9b424dd62467df"
+      },
+      {
+        "id": "prof_572266732853",
+        "url": "https://ece.umd.edu/clark/faculty/352/Thomas-M-AntonsenJr",
+        "observed_at": "2026-11-24T08:40:03.621524+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c73f65139f08b028841f81877e810ec21bd4db432b9b47c107f7c2ba81f3fd59"
+      },
+      {
+        "id": "prof_c32c6b15dc28",
+        "url": "https://ece.umd.edu/clark/faculty/2024/Bahar-Asgari",
+        "observed_at": "2026-11-24T08:40:03.643213+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f37575899e7ca3f009073b5c47e9ab3f29d0988616c654959aaf5f83b84ab3b3"
+      },
+      {
+        "id": "prof_4c83e6e19a0c",
+        "url": "https://ece.umd.edu/clark/faculty/356/Behtash-Babadi",
+        "observed_at": "2026-11-24T08:40:03.739650+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "26756f7eb8937b333f57f52a2d2486fff163f93fc58893ec0b6cd5e9e081bf1a"
+      },
+      {
+        "id": "prof_235a2f4a42f3",
+        "url": "https://ece.umd.edu/clark/faculty/357/John-S-Baras",
+        "observed_at": "2026-11-24T08:40:03.739931+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "0e06a0ebedb42de25da45ec45eea04f08b82a7e9d46b4b1f0b77d882e1ff53fb"
+      },
+      {
+        "id": "prof_a4f2fa30cc0e",
+        "url": "https://ece.umd.edu/clark/faculty/358/David-F-Barbe",
+        "observed_at": "2026-11-24T08:40:03.955110+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "3e74fbe00f6fb934b85932360853f78315dbb8ba8b338ca7db0325995855ca71"
+      },
+      {
+        "id": "prof_9810a292bb86",
+        "url": "https://ece.umd.edu/clark/faculty/359/Alexander-Barg",
+        "observed_at": "2026-11-24T08:40:03.992598+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "d1b623283b0a0ae020e724731377919627dd899e13efe9b3934e92eb8706629d"
+      },
+      {
+        "id": "prof_25544861aecf",
+        "url": "https://ece.umd.edu/clark/faculty/361/Rajeev-Barua",
+        "observed_at": "2026-11-24T08:40:03.974896+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "1551953322bf777bd30f72a76f0d6a6e8b3585a4bb03995c98deba19fe369a9e"
+      },
+      {
+        "id": "prof_b660378a46d4",
+        "url": "https://ece.umd.edu/clark/faculty/362/Debtanu-Basu",
+        "observed_at": "2026-11-24T08:40:04.020472+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "0ec56b50cb00d95470291fb3b5b62ddfa40de26989034a105ff8f038e3bd16c4"
+      },
+      {
+        "id": "prof_410d06f043af",
+        "url": "https://ece.umd.edu/clark/faculty/1872/Calin-Belta",
+        "observed_at": "2026-11-24T08:40:04.053966+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "301cd93c02242210add885c47125aa7303d254b1e45e28ae63ab024877f91036"
+      },
+      {
+        "id": "prof_774f4e358f6e",
+        "url": "https://ece.umd.edu/clark/faculty/365/Shuvra-S-Bhattacharyya",
+        "observed_at": "2026-11-24T08:40:04.120014+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "034f0de903959afd3eec7ea7e0be130ec0e6a68c2f2be8911591dadbeec7ace0"
+      },
+      {
+        "id": "prof_d40c5042a7bc",
+        "url": "https://ece.umd.edu/clark/faculty/1171/Daniel-Butts",
+        "observed_at": "2026-11-24T08:40:04.474084+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "dd6597560b235a5925b72c340fbc5b048175cab7cbc6e5feb21f49b4ebd72477"
+      },
+      {
+        "id": "prof_cbb44763792d",
+        "url": "https://ece.umd.edu/clark/faculty/369/Rama-Chellappa",
+        "observed_at": "2026-11-24T08:40:04.172416+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "e554c435a629592f6fc0d75f80992d3ab3517a228a248577249fa3ac36962c3f"
+      },
+      {
+        "id": "prof_c228b0db80b4",
+        "url": "https://ece.umd.edu/clark/faculty/1031/Yanne-Chembo",
+        "observed_at": "2026-11-24T08:40:04.183435+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "4b7aee26f2de06a2f2f6106f10f397fe6b9f185eedc0a0b2b76c56bafcb0410c"
+      },
+      {
+        "id": "prof_20eef1e8163b",
+        "url": "https://ece.umd.edu/clark/faculty/1396/PoYen-Chen",
+        "observed_at": "2026-11-24T08:40:04.240925+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "3f8f871142b48f6c4675611a49ca330d7aca5e771c70d2548e0501afdf2e56a0"
+      },
+      {
+        "id": "prof_3f2b2e6f3518",
+        "url": "https://ece.umd.edu/clark/faculty/520/Nikhil-Chopra",
+        "observed_at": "2026-11-24T08:40:04.203923+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c979079e2605c4714ff7c7b6a5e928f3ba722c425d9f659a517d98e725631972"
+      },
+      {
+        "id": "prof_dd1ca388b1ce",
+        "url": "https://ece.umd.edu/clark/faculty/1727/Donald-Crouse",
+        "observed_at": "2026-11-24T08:40:04.195630+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "d6cb4e17cdd0b16d6c487b273b83a3baf66940a329b774e5912a25dfa2137693"
+      },
+      {
+        "id": "prof_5cf7d421fd53",
+        "url": "https://ece.umd.edu/clark/faculty/523/Michel-Cukier",
+        "observed_at": "2026-11-24T08:40:04.436821+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "e5b1ac5566d6e910d2cd61a497d0a368fbede96ed208fa9d34ecf3c3ae391b0e"
+      },
+      {
+        "id": "prof_12f4e203c1b3",
+        "url": "https://ece.umd.edu/clark/faculty/377/Dana-Dachman-Soled",
+        "observed_at": "2026-11-24T08:40:04.418349+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "2ec2eeed71edd44c7dba7ab0808e61ef9d90d4914fe86bab0fef68bd7f9f18ca"
+      },
+      {
+        "id": "prof_39120db8ba6d",
+        "url": "https://ece.umd.edu/clark/faculty/378/Mario-Dagenais",
+        "observed_at": "2026-11-24T08:40:04.447424+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "021068ab2a64e5a043c6f76bc184e68aec8d79853fe3e50d5d570e66c630b9ea"
+      },
+      {
+        "id": "prof_7dd3b8b3c854",
+        "url": "https://ece.umd.edu/clark/faculty/805/Kevin-Daniels",
+        "observed_at": "2026-11-24T08:40:04.461081+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "fb4f1ca990766e8d1a578959aace1c47d5f4b30fa9fdf5043d8eab6221eed805"
+      },
+      {
+        "id": "prof_283285a693b4",
+        "url": "https://ece.umd.edu/clark/faculty/380/Larry-Davis",
+        "observed_at": "2026-11-24T08:40:05.437453+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "2310fc231e287fa8de1c812a2804cdfa2521bc3b2deebec2ab628f8d23e51b92"
+      },
+      {
+        "id": "prof_a828a234cdc9",
+        "url": "https://ece.umd.edu/clark/faculty/381/LD-Davisson",
+        "observed_at": "2026-11-24T08:40:04.491714+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "7e2eaac32684505038f0ed2f33aa2d85895fddf5a21360640b988fe024c9641c"
+      },
+      {
+        "id": "prof_54e556a001b5",
+        "url": "https://ece.umd.edu/clark/faculty/384/Tudor-Dumitra%C8%99",
+        "observed_at": "2026-11-24T08:40:04.559962+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "6a9195088918be8d96aff6fa4694923e49eead008a80ef8e101f95ecf843628c"
+      },
+      {
+        "id": "prof_fac9c097ff4e",
+        "url": "https://ece.umd.edu/clark/faculty/1430/Ramani-Duraiswami",
+        "observed_at": "2026-11-24T08:40:04.606882+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "bcc33e5da9f1c17bad30f5b78fec3b56a6f5acce9327443985cd26d08609d0fe"
+      },
+      {
+        "id": "prof_a75858460d0c",
+        "url": "https://ece.umd.edu/clark/faculty/1661/Avik-Dutt",
+        "observed_at": "2026-11-24T08:40:04.631977+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "969532b822d4b32ae0e4d892b5f9beecf4ed94fcb4c4b11196be12f4d3ece249"
+      },
+      {
+        "id": "prof_5c31181620f1",
+        "url": "https://ece.umd.edu/clark/faculty/1711/Sanghamitra-Dutta",
+        "observed_at": "2026-11-24T08:40:04.633275+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f4d566cf6a35abf2a43ab33730f9ebb39411dd04bfbc382083727ba578d2ce53"
+      },
+      {
+        "id": "prof_562dcc234711",
+        "url": "https://ece.umd.edu/clark/faculty/388/Fawzi-P-Emad",
+        "observed_at": "2026-11-24T08:40:04.712347+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "ab80dc2211b24db12ae0453be6333895dd3314f1f7b5603423e2d8f573ba4add"
+      },
+      {
+        "id": "prof_a7c7831be5e3",
+        "url": "https://ece.umd.edu/clark/faculty/389/Anthony-Ephremides",
+        "observed_at": "2026-11-24T08:40:04.859356+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "8b6675f9149a028bf169778ede12a889ec2a08893aa1eab086d77af8ff862fb2"
+      },
+      {
+        "id": "prof_6590d70392d4",
+        "url": "https://ece.umd.edu/clark/faculty/391/Carol-Espy-Wilson",
+        "observed_at": "2026-11-24T08:40:04.884698+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "e341f190f122db6adf68822d6a9d941d6b92a5406b7eeb15b88d60f52c026488"
+      },
+      {
+        "id": "prof_7d118af9a193",
+        "url": "https://ece.umd.edu/clark/faculty/1731/Nariman-Farvardin",
+        "observed_at": "2026-11-24T08:40:04.812809+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c21a9117c70ea0de83d9340ed7c75f5722dca22794beff027910a8dbc9ef5fa0"
+      },
+      {
+        "id": "prof_f14a1221a65b",
+        "url": "https://ece.umd.edu/clark/faculty/984/Soheil-Feizi",
+        "observed_at": "2026-11-24T08:40:04.835720+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "38f9ce11a1c764584349085820bb7f30c215f97cece7da5483b3021e63987020"
+      },
+      {
+        "id": "prof_7bbe8954d8b4",
+        "url": "https://ece.umd.edu/clark/faculty/1728/Jason-Fleischer",
+        "observed_at": "2026-11-24T08:40:04.829231+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "bd82e5c2662b17bcef2bbbb864903dd1e4c83c89f30de320b3a9028b174ebf92"
+      },
+      {
+        "id": "prof_5627ac3565bf",
+        "url": "https://ece.umd.edu/clark/faculty/394/Manoj-Franklin",
+        "observed_at": "2026-11-24T08:40:04.903263+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "df3ee7fd7a615902fa846c62eef74747294e0970f72bbbf225c5008d38e51f52"
+      },
+      {
+        "id": "prof_0b18fcb96945",
+        "url": "https://ece.umd.edu/clark/faculty/395/Michael-Fu",
+        "observed_at": "2026-11-24T08:40:04.966056+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "2fee515c623a42c0a3566f59ea753f61afb87fa45d7981cf7312b8ce7fd2eb39"
+      },
+      {
+        "id": "prof_91326d651727",
+        "url": "https://ece.umd.edu/clark/faculty/2051/Yu-Gan",
+        "observed_at": "2026-11-24T08:40:05.418151+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "cc33db9b6ddb59f7a14f0c7b42844d46a711745879d26068e913a6675e5a16a1"
+      },
+      {
+        "id": "prof_09ae22481811",
+        "url": "https://ece.umd.edu/clark/faculty/396/Reza-Ghodssi",
+        "observed_at": "2026-11-24T08:40:05.136804+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f346957d965b8ccedb9f56842440f501c3012debf4e99313f0f6fd2682ad1d25"
+      },
+      {
+        "id": "prof_8f1e61c548f6",
+        "url": "https://ece.umd.edu/clark/faculty/397/Julius-Goldhar",
+        "observed_at": "2026-11-24T08:40:04.981899+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "14965b458e11bb93b39fe1f7d00d7fc080446dead2f87b8e367ea0cc63896cc6"
+      },
+      {
+        "id": "prof_3ae1885781ce",
+        "url": "https://ece.umd.edu/clark/faculty/398/Neil-Goldsman",
+        "observed_at": "2026-11-24T08:40:05.100930+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "7157d385bed442a2ade2a5902aba6e3d3f7a9eac7aefb9790d41e350507d0f26"
+      },
+      {
+        "id": "prof_947000ebf225",
+        "url": "https://ece.umd.edu/clark/faculty/988/Thomas-Goldstein",
+        "observed_at": "2026-11-24T08:40:05.165158+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "726cd552d2842eeb120d8821de7c8748651b005eebb0f160720fc9d10538c0ec"
+      },
+      {
+        "id": "prof_7ca924be11d4",
+        "url": "https://ece.umd.edu/clark/faculty/399/Romel-Gomez",
+        "observed_at": "2026-11-24T08:40:05.254212+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "6b2f1f65d9da17141a220d8d3df7d1a68979e6e33d486db515fa82f968bf557e"
+      },
+      {
+        "id": "prof_19ddd419680d",
+        "url": "https://ece.umd.edu/clark/faculty/1203/Cheng-Gong",
+        "observed_at": "2026-11-24T08:40:05.264160+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "3a783f810371ec27519da966344a9f93df220c5a70abc66721b8fa72d11ac3b6"
+      },
+      {
+        "id": "prof_68c63e2ccb50",
+        "url": "https://ece.umd.edu/clark/faculty/400/Victor-Granatstein",
+        "observed_at": "2026-11-24T08:40:05.264471+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "1ba131d2d16e71e8dd697ea5bf0eea799e7574fe03425d51ee2b090afb46093c"
+      },
+      {
+        "id": "prof_dfb595109940",
+        "url": "https://ece.umd.edu/clark/faculty/1732/Karen-Grutter",
+        "observed_at": "2026-11-24T08:40:05.251981+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "9af7460edd1ceba312b8713a7f7a0be541baf44163f3472db25b171c5bab1301"
+      },
+      {
+        "id": "prof_9b773da15530",
+        "url": "https://ece.umd.edu/clark/faculty/1891/Saikat-Guha",
+        "observed_at": "2026-11-24T08:40:05.337915+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "514903c0673afe6b3fb0c06d096424929da44a26f6885cb218689946eaa68272"
+      },
+      {
+        "id": "prof_f7735534f69c",
+        "url": "https://ece.umd.edu/clark/faculty/403/Mohammad-Hafezi",
+        "observed_at": "2026-11-24T08:40:05.337134+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "4259f25d8386e032f9106e01c8a96e0d627edf6ca5671b605495fb87c8a40ba5"
+      },
+      {
+        "id": "prof_f4308f5e1cbd",
+        "url": "https://ece.umd.edu/clark/faculty/405/Robert-O-----IN-MEMORIAM-Harger",
+        "observed_at": "2026-11-24T08:40:05.720538+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a538cf51ec58b97e6a0cf4151467b0615d101277f61a003b62009618b427b616"
+      },
+      {
+        "id": "prof_821effe2310b",
+        "url": "https://ece.umd.edu/clark/faculty/406/Andrew-Harris",
+        "observed_at": "2026-11-24T08:40:05.463855+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "63228f794b958536597d709cc1629e56ff3679f0426ebec6ee1a5760477bc296"
+      },
+      {
+        "id": "prof_afaf057246aa",
+        "url": "https://ece.umd.edu/clark/faculty/407/Bill-Hawkins",
+        "observed_at": "2026-11-24T08:40:05.508159+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "32d3155333bec445816ed24349fc6e49aa544c825e4bb8a940885a144c5fdbbd"
+      },
+      {
+        "id": "prof_e1bce601377b",
+        "url": "https://ece.umd.edu/clark/faculty/409/PingTong-Ho",
+        "observed_at": "2026-11-24T08:40:05.546897+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f19e5b45648f8f746bdc6673da1c219fc5dcb02f0a672e657e75a14284ce8a19"
+      },
+      {
+        "id": "prof_31a8e1ebe104",
+        "url": "https://ece.umd.edu/clark/faculty/410/Jeffery-Hollingsworth",
+        "observed_at": "2026-11-24T08:40:07.447244+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "ea8d6ba39f7ef80c95d548507fc7ef063eb1576a6ea0eb8bd1970f44618af55e"
+      },
+      {
+        "id": "prof_ca3b20d991a9",
+        "url": "https://ece.umd.edu/clark/faculty/411/Timothy-Horiuchi",
+        "observed_at": "2026-11-24T08:40:05.733708+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "992d4a0ae81f8c4dbcba4003304defe4abcdc272c2dff786163690c42c6142a7"
+      },
+      {
+        "id": "prof_8dd47b9e05ad",
+        "url": "https://ece.umd.edu/clark/faculty/989/Furong-Huang",
+        "observed_at": "2026-11-24T08:40:05.640827+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "e34deab65d51f73271a16fd5eaf71d2ea8c3b7f8d2e0701b323c14b5c1d85dda"
+      },
+      {
+        "id": "prof_bd37fe36ef6d",
+        "url": "https://ece.umd.edu/clark/faculty/1936/Heng-Huang",
+        "observed_at": "2026-11-24T08:40:05.640424+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "44ec5c632a4d7dd316895f29a87c392e88538c59e505403589be8c30da3dd49b"
+      },
+      {
+        "id": "prof_dc6174e0bbda",
+        "url": "https://ece.umd.edu/clark/faculty/412/Agis-Iliadis",
+        "observed_at": "2026-11-24T08:40:05.751878+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "6cb7f7632213876b110d8b0126262b0806f8c7ad0c9d80ee3578434d44bb3b6a"
+      },
+      {
+        "id": "prof_b68077e01ab3",
+        "url": "https://ece.umd.edu/clark/faculty/1431/David-Jacobs",
+        "observed_at": "2026-11-24T08:40:08.015028+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "56f0ada91cb8f8277d6cf57bc2855682272d5145c3dbd819990fd18dffe169fc"
+      },
+      {
+        "id": "prof_deef647b7ad5",
+        "url": "https://ece.umd.edu/clark/faculty/415/Joseph-JaJa",
+        "observed_at": "2026-11-24T08:40:05.751650+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "9a943745cd7c6daeb56429c1b9d1958765a7d3846686ed28d80f6ab7f6ded8b3"
+      },
+      {
+        "id": "prof_3011a250397a",
+        "url": "https://ece.umd.edu/clark/faculty/2036/Mohamed-Kashef",
+        "observed_at": "2026-11-24T08:40:08.142662+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "14fcfaf919eab323ab4fa73e2dd58a74db8593fbab672cb5c3157955a37ced75"
+      },
+      {
+        "id": "prof_cf26c2ae7af1",
+        "url": "https://ece.umd.edu/clark/faculty/417/Alireza-Khaligh",
+        "observed_at": "2026-11-24T08:40:05.892728+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "5bfcf99252d1aeeefab4865791f17b4d18908a07de9152fb51da74193aca7f5f"
+      },
+      {
+        "id": "prof_f1f1fdc0e730",
+        "url": "https://ece.umd.edu/clark/faculty/808/Mehdi-Kalantari-Khandani",
+        "observed_at": "2026-11-24T08:40:08.063558+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "adc6c32c96c3327f5a6134126d919c2784d11af577ae3824f99bf21a62e74961"
+      },
+      {
+        "id": "prof_b01ec9091f68",
+        "url": "https://ece.umd.edu/clark/faculty/1242/Alicia-Koll%C3%A1r",
+        "observed_at": "2026-11-24T08:40:05.935173+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "d219422135c7718a87d04503f06317b50719957114f22fca29e613eb46a2f1c2"
+      },
+      {
+        "id": "prof_740c8fc7220e",
+        "url": "https://ece.umd.edu/clark/faculty/423/P-S-Krishnaprasad",
+        "observed_at": "2026-11-24T08:40:06.078240+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "fe531214fe44f65c6a91da58abf535b6c2339cb60374f9ade7cb882d7d0a9a79"
+      },
+      {
+        "id": "prof_a7183f3cab8f",
+        "url": "https://ece.umd.edu/clark/faculty/2026/Aaron-Gilad-Kusne",
+        "observed_at": "2026-11-24T08:40:05.995368+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "3af82e71bedb2336160f9b429c6e250bf313b117888b39b974677d1ad3b748d7"
+      },
+      {
+        "id": "prof_a5a304e10a5a",
+        "url": "https://ece.umd.edu/clark/faculty/1845/Yonghwi-Kwon",
+        "observed_at": "2026-11-24T08:40:06.066320+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a4474318abd6f4d057bf8bef9f19e195529af6bb31591018a61be06e347d73ba"
+      },
+      {
+        "id": "prof_aa2d5f7b0781",
+        "url": "https://ece.umd.edu/clark/faculty/424/Richard-J-La",
+        "observed_at": "2026-11-24T08:40:06.080348+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "2ba659cbd4a4e641b2aa55a4fb5fc5da7679941d2152bd82bbe1286ab8f46855"
+      },
+      {
+        "id": "prof_f852297951c3",
+        "url": "https://ece.umd.edu/clark/faculty/1279/Matt-Landreman",
+        "observed_at": "2026-11-24T08:40:08.762843+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "b6a1b38aed86f525afcfe3a698bde7c7d5771ec4b78b3ff63136d1fb39cfdc0a"
+      },
+      {
+        "id": "prof_54c012f8479b",
+        "url": "https://ece.umd.edu/clark/faculty/425/Daniel-Lathrop",
+        "observed_at": "2026-11-24T08:40:06.121532+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "e58f825de769c22e7a37f786122f61ed743e32a1719f0f151b72071e46d26969"
+      },
+      {
+        "id": "prof_f28cff733b89",
+        "url": "https://ece.umd.edu/clark/faculty/426/Wesley-Lawson",
+        "observed_at": "2026-11-24T08:40:06.262121+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "348603556cac6c1802a03b556fbe8386d7d00900ae7c9e88388377fecda7ecc8"
+      },
+      {
+        "id": "prof_b07566df056d",
+        "url": "https://ece.umd.edu/clark/faculty/1726/Son-T-Le",
+        "observed_at": "2026-11-24T08:40:09.502756+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "db168f804b71c5bc154bc8822f37dc9ed0c15e16b03955c20e66a012dcdd1f7c"
+      },
+      {
+        "id": "prof_d38726eae09c",
+        "url": "https://ece.umd.edu/clark/faculty/428/CH-Lee",
+        "observed_at": "2026-11-24T08:40:06.347365+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "1ce5de112aaa8f7c972fb2019523143f32516a97a94ccdc36a1df6d29e1260fb"
+      },
+      {
+        "id": "prof_d74d75c36745",
+        "url": "https://ece.umd.edu/clark/faculty/1243/David-Levin",
+        "observed_at": "2026-11-24T08:40:08.867285+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c58ccfb3c0a44db633b7a2f308fbac7e4ad242c7fde9b7ee44537145df3f5c8e"
+      },
+      {
+        "id": "prof_556cdba33092",
+        "url": "https://ece.umd.edu/clark/faculty/430/William-Levine",
+        "observed_at": "2026-11-24T08:40:06.518424+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "6ba2788d93d213db32ff355b085e1414f52a5699500e307e3678eaf2e2bf025e"
+      },
+      {
+        "id": "prof_c3772fc37dc4",
+        "url": "https://ece.umd.edu/clark/faculty/1839/Ang-Li",
+        "observed_at": "2026-11-24T08:40:06.430779+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "4c062e913ff8a95cc3a3440f824c378c55038f7e84bb27e98fe9b3972e36ae88"
+      },
+      {
+        "id": "prof_9eb815bc4104",
+        "url": "https://ece.umd.edu/clark/faculty/1314/Ming-Lin",
+        "observed_at": "2026-11-24T08:40:06.534608+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "85277ab27b913bdb1fa6b0aca7b536b40554686813ed6fc3ee6e7d86d09ca9b1"
+      },
+      {
+        "id": "prof_553f0e1100a1",
+        "url": "https://ece.umd.edu/clark/faculty/1755/Joseph-Mait",
+        "observed_at": "2026-11-24T08:40:06.614379+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "5aca970b15f3e08016c58a90883d203b0e075c0f4c48aa875375cd88ce20822e"
+      },
+      {
+        "id": "prof_f21b90b0c2bc",
+        "url": "https://ece.umd.edu/clark/faculty/433/Armand-Makowski",
+        "observed_at": "2026-11-24T08:40:06.716068+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "10ee6269a0ed1ecac25ca92f8d52c06ff54faa583e548e0ac426e3a84c4ed041"
+      },
+      {
+        "id": "prof_c610785efafc",
+        "url": "https://ece.umd.edu/clark/faculty/2022/Vikram-Manikonda",
+        "observed_at": "2026-11-24T08:40:06.836672+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "926c9032bfe6978029565e392bab7080529adb073626c655d3ca768b3f72f930"
+      },
+      {
+        "id": "prof_e20996178330",
+        "url": "https://ece.umd.edu/clark/faculty/901/Dinesh-Manocha",
+        "observed_at": "2026-11-24T08:40:06.992932+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "18f998d74aaed7e0b2c255a7f93771eb45497a20a281fdbe4fa0a0d0ec310768"
+      },
+      {
+        "id": "prof_785e76a555fb",
+        "url": "https://ece.umd.edu/clark/faculty/434/Steve-Marcus",
+        "observed_at": "2026-11-24T08:40:06.975208+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "d33507bba2b38a0c111d0c6eaeb76c191917c886ad8cf516b67b215c738615fe"
+      },
+      {
+        "id": "prof_ff89a403efb5",
+        "url": "https://ece.umd.edu/clark/faculty/435/Nuno-Martins",
+        "observed_at": "2026-11-24T08:40:06.989953+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "130b893f093ce0362cedc4d09f738eae344311151f119eea6377a89d06dd27af"
+      },
+      {
+        "id": "prof_5dbee4bd22cf",
+        "url": "https://ece.umd.edu/clark/faculty/2004/Thomas-Marzetta",
+        "observed_at": "2026-11-24T08:40:07.062418+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "8008c732aa19d6f9801c616a52886f7564a962dcb331127c15d7cf8d1395dc45"
+      },
+      {
+        "id": "prof_d8fd9a8168de",
+        "url": "https://ece.umd.edu/clark/faculty/436/Isaak-D-Mayergoyz",
+        "observed_at": "2026-11-24T08:40:10.190499+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a1753b5cc5d74863221703a6f5f1a7750dcc01a1f3adfeeb623211ba0ec64910"
+      },
+      {
+        "id": "prof_7ebcb156787f",
+        "url": "https://ece.umd.edu/clark/faculty/1040/Michelle-Mazurek",
+        "observed_at": "2026-11-24T08:40:07.364063+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "24593e2fc15849a4b7fc55ff5beca8eb4a9e8dbd15938f5da3ddf3a0ab5b9fb3"
+      },
+      {
+        "id": "prof_6e65fbfd614a",
+        "url": "https://ece.umd.edu/clark/faculty/439/John-Melngailis",
+        "observed_at": "2026-11-24T08:40:07.350580+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "916a4a2aa5f2a1f193f3299b6bdb8272c2739b1353d74f54f3a7ddfa8c0b4525"
+      },
+      {
+        "id": "prof_0afdf038b7ed",
+        "url": "https://ece.umd.edu/clark/faculty/1733/Christopher-Metzler",
+        "observed_at": "2026-11-24T08:40:07.362659+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c8e44c85e23fe1ead9847ba65c989c5813f648bfc7b1c8e4efe3798dcc75893c"
+      },
+      {
+        "id": "prof_1cdfe696856d",
+        "url": "https://ece.umd.edu/clark/faculty/440/Howard-Milchberg",
+        "observed_at": "2026-11-24T08:40:07.441540+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "1ab190d7f8db2e50fc83c4fa07d333abe466ddb71db2ea8188ffc51bd0512788"
+      },
+      {
+        "id": "prof_88128c6261da",
+        "url": "https://ece.umd.edu/clark/faculty/441/Nicole-Mogul",
+        "observed_at": "2026-11-24T08:40:07.696323+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "0a1bdb85c110dc4e077fe21d9202dfb11bb7ad5d9b261413c64eba8701be1bfc"
+      },
+      {
+        "id": "prof_ebbbcbe1e5ff",
+        "url": "https://ece.umd.edu/clark/faculty/1241/Christopher-Monroe",
+        "observed_at": "2026-11-24T08:40:07.769348+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c43e37e1107c5ce2df382421078c2b9376ebc5ff24eab8c7d05d2907fe629a61"
+      },
+      {
+        "id": "prof_1586f449f2e0",
+        "url": "https://ece.umd.edu/clark/faculty/1729/Jason-Moody",
+        "observed_at": "2026-11-24T08:40:10.267914+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "37cc4f86bcc05e95d807ed6ef433ffa99d020b8463f7e786653663df2dc09156"
+      },
+      {
+        "id": "prof_97b447684d08",
+        "url": "https://ece.umd.edu/clark/faculty/2005/Jesse-Moody",
+        "observed_at": "2026-11-24T08:40:10.306157+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a6e28ae07b7f08fc53f28d689628c8ffc8daba75c001f29b0800ee78df41a28d"
+      },
+      {
+        "id": "prof_ae4cfc45c0f3",
+        "url": "https://ece.umd.edu/clark/faculty/443/Thomas-E-Murphy",
+        "observed_at": "2026-11-24T08:40:07.856116+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "fb06031997e735e4b4e5b0efdf8fc707dbced35b71dba167b83d834e75ef0ad8"
+      },
+      {
+        "id": "prof_d2c868e069fb",
+        "url": "https://ece.umd.edu/clark/faculty/445/Prakash-Narayan",
+        "observed_at": "2026-11-24T08:40:08.045145+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f8495a3dfdb41cb054ab17ec5b0ea17f2df7e82169a62221a8c7437608582dbf"
+      },
+      {
+        "id": "prof_1d88ec1c4bd9",
+        "url": "https://ece.umd.edu/clark/faculty/446/Robert-----IN-MEMORIAM-Newcomb",
+        "observed_at": "2026-11-24T08:40:10.838303+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "b08457307f5f45ddea5f58700804f215a030b5aab09b9a985ef9d0838f02eade"
+      },
+      {
+        "id": "prof_15b167200abd",
+        "url": "https://ece.umd.edu/clark/faculty/448/Patrick-G-O%27Shea",
+        "observed_at": "2026-11-24T08:40:08.610827+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "47127e8d52d640835806e84e86ccd8dec7bf57d5996ea6d932c906723e6c3eec"
+      },
+      {
+        "id": "prof_f43defe0c781",
+        "url": "https://ece.umd.edu/clark/faculty/450/Jon-Orloff",
+        "observed_at": "2026-11-24T08:40:10.732348+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "74e15a115ce524d64373dde6e0db86326ae7c735459f6b237ec45f457c50fabe"
+      },
+      {
+        "id": "prof_0e37ff263b80",
+        "url": "https://ece.umd.edu/clark/faculty/451/A-Yavuz-Oruc",
+        "observed_at": "2026-11-24T08:40:08.396758+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a3469da6176454dc3af6865f87bcf5d1bda5d15816df4862da0cfbbfc832e407"
+      },
+      {
+        "id": "prof_b10745a131c2",
+        "url": "https://ece.umd.edu/clark/faculty/452/Edward-Ott",
+        "observed_at": "2026-11-24T08:40:08.494108+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "0a4496d39d79553e920e06aea0c8d5df7e789072281e3dbbde40394e59ed092d"
+      },
+      {
+        "id": "prof_b29a58194a2e",
+        "url": "https://ece.umd.edu/clark/faculty/58/Derek-A-Paley",
+        "observed_at": "2026-11-24T08:40:08.567892+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "ed69f6b07519453de2609683808b63b3d7e04e5ab4f2adb46f392b753423863e"
+      },
+      {
+        "id": "prof_65400461301a",
+        "url": "https://ece.umd.edu/clark/faculty/455/Adrian-Papamarcou",
+        "observed_at": "2026-11-24T08:40:08.770907+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "c9e9678852266b9f775ecc0313675613dc4f42b651946f9bb965b426d32f7fe8"
+      },
+      {
+        "id": "prof_e0674b78d85c",
+        "url": "https://ece.umd.edu/clark/faculty/456/Donghun-Park",
+        "observed_at": "2026-11-24T08:40:11.523699+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "173e3e1179fc9942e2ba84a2d7293ede16360b01c86f3c92c2c6445613071f09"
+      },
+      {
+        "id": "prof_29520b855dfc",
+        "url": "https://ece.umd.edu/clark/faculty/458/Martin-Peckerar",
+        "observed_at": "2026-11-24T08:40:08.970787+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "75eac684742e5acacee84d64abc5956adb39357733dd69c302c5beb45f5feb60"
+      },
+      {
+        "id": "prof_8c6e9f3e850d",
+        "url": "https://ece.umd.edu/clark/faculty/1764/Huaishu-Peng",
+        "observed_at": "2026-11-24T08:40:09.009233+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "ba26b91d441ec1a403e91f3dcb0901141d3a418d47da35e7c656f3b22ff32415"
+      },
+      {
+        "id": "prof_84b4e793dfcc",
+        "url": "https://ece.umd.edu/clark/faculty/1039/Luiz-Pessoa",
+        "observed_at": "2026-11-24T08:40:12.152779+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "5ae912c5636b44504a8263a5d66a7b41ae425884c54263da5d758aa3e9dd093e"
+      },
+      {
+        "id": "prof_a39e3f810980",
+        "url": "https://ece.umd.edu/clark/faculty/701/Ray-Phaneuf",
+        "observed_at": "2026-11-24T08:40:09.178427+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "64cbd140b7fe1582ab4e663b6a7e414eb844c750aa05a303a3f26f0f1ae8be3c"
+      },
+      {
+        "id": "prof_10a8182ab0dc",
+        "url": "https://ece.umd.edu/clark/faculty/463/James-Pugsley",
+        "observed_at": "2026-11-24T08:40:12.547318+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "8372a6dd52b8acefeae3ba68215403d9b9811e42390cba11fb7fc6831ba0f8b0"
+      },
+      {
+        "id": "prof_86f1e812dc3d",
+        "url": "https://ece.umd.edu/clark/faculty/464/Gang-Qu",
+        "observed_at": "2026-11-24T08:40:09.379314+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "898432006d8c19edf1a71a1d2481f35cf4ac4a5f6febb276a63e70f84657ba4d"
+      },
+      {
+        "id": "prof_93240381cc1d",
+        "url": "https://ece.umd.edu/clark/faculty/466/Herbert-Rabin",
+        "observed_at": "2026-11-24T08:40:09.359401+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "65ebda35db9900ebbcebc7701363c1dfc65e534f7e2b7f6861a5678782a1fc9e"
+      },
+      {
+        "id": "prof_fd026df6acdd",
+        "url": "https://ece.umd.edu/clark/faculty/704/Oded-Rabin",
+        "observed_at": "2026-11-24T08:40:09.619633+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "265f0801e227e1ada580df80b16ba7130a4fd9d2678a696d3515c6ae207d4996"
+      },
+      {
+        "id": "prof_345b82fc7730",
+        "url": "https://ece.umd.edu/clark/faculty/467/Majid-Raissi-Dehkordi",
+        "observed_at": "2026-11-24T08:40:09.716762+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "5647b50b55e57176f45c8bc02ac717e45d5ef17d3c6153acc39bb4debaad544a"
+      },
+      {
+        "id": "prof_ebeb80ce47b2",
+        "url": "https://ece.umd.edu/clark/faculty/902/William-Regli",
+        "observed_at": "2026-11-24T08:40:09.804954+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "9970fa285f6cecf8e82d540775b8d5676a3b8fbb0020587b6a73dda0945cfc0c"
+      },
+      {
+        "id": "prof_7e040263237b",
+        "url": "https://ece.umd.edu/clark/faculty/1486/Carlos-A-Rios-Ocampo",
+        "observed_at": "2026-11-24T08:40:09.918655+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "78a887f95c548971316194521426f15a95b64601f32df9c62a65df7c86630833"
+      },
+      {
+        "id": "prof_33f60512b1c4",
+        "url": "https://ece.umd.edu/clark/faculty/994/Danilo-Romero",
+        "observed_at": "2026-11-24T08:40:09.969143+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "ce2380bf7ec71c8080d3c422695f93a2b36c52ebed0c2883af551465eac2a4ac"
+      },
+      {
+        "id": "prof_cf749a9a1e55",
+        "url": "https://ece.umd.edu/clark/faculty/1878/Nirupam-Roy",
+        "observed_at": "2026-11-24T08:40:10.081327+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "656e58ca6421dd34ba8ba2d2b1c9479a3158b776e726a2cc4ee77c54fe2dfda4"
+      },
+      {
+        "id": "prof_b89cf0d1aa9c",
+        "url": "https://ece.umd.edu/clark/faculty/709/Gary-Rubloff",
+        "observed_at": "2026-11-24T08:40:13.035736+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "282c660c36885f6462e20a87d0dbba39cd56d06f857cdd1b19c369ca644ba7a3"
+      },
+      {
+        "id": "prof_726f8bbfd73f",
+        "url": "https://ece.umd.edu/clark/faculty/1916/Aqil-Sajjad",
+        "observed_at": "2026-11-24T08:40:13.205859+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "03b448f495ebc8c5997afae00dadf8d8e4a16f4c45a4fe7c0fd58898184fd109"
+      },
+      {
+        "id": "prof_d10f0f42256c",
+        "url": "https://ece.umd.edu/clark/faculty/1398/Sahil-Shah",
+        "observed_at": "2026-11-24T08:40:10.349755+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f3d101ee71ba0c2fa8abdeccae42230c8da72367af90d735836955b6e0d8e9d6"
+      },
+      {
+        "id": "prof_1adb82463f3c",
+        "url": "https://ece.umd.edu/clark/faculty/1909/Zhambyl-Shaikhanov",
+        "observed_at": "2026-11-24T08:40:10.463869+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "80ab8f7975214af22c3e43d175731fddf6b87e1660a5f2d8c86cd52fd5566b65"
+      },
+      {
+        "id": "prof_6e2e2a011163",
+        "url": "https://ece.umd.edu/clark/faculty/476/Shihab-Shamma",
+        "observed_at": "2026-11-24T08:40:10.633106+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "19608582b3304c1ecdb727438ad11dfbaa44a9c0d052fdad56827d7ae7ab9343"
+      },
+      {
+        "id": "prof_e629bd653b3d",
+        "url": "https://ece.umd.edu/clark/faculty/477/Mark-Shayman",
+        "observed_at": "2026-11-24T08:40:10.635002+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "26532191b238f6a582729546dc5d7ca5cb2f5099b9290dd6557a9a72fefe6a27"
+      },
+      {
+        "id": "prof_4001d9baa3f2",
+        "url": "https://ece.umd.edu/clark/faculty/1399/Abhinav-Shrivastava",
+        "observed_at": "2026-11-24T08:40:10.641665+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "20f7f01d58a1a5fc798574ee730f707986b6a295035d6f5506cae207d767cbf9"
+      },
+      {
+        "id": "prof_27e9641c1c56",
+        "url": "https://ece.umd.edu/clark/faculty/480/Charles-Silio",
+        "observed_at": "2026-11-24T08:40:10.695052+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a6c41351b5bad2feb4fadcfa298fdbbcad24f994f843808be22e7f24e5e9f02d"
+      },
+      {
+        "id": "prof_ec0992737501",
+        "url": "https://ece.umd.edu/clark/faculty/481/Jonathan-Simon",
+        "observed_at": "2026-11-24T08:40:10.997602+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a9114a81dd6800cc226357bb34e7ef7359ebd618c8f8f1243596a935e7c7b20c"
+      },
+      {
+        "id": "prof_e844006f1620",
+        "url": "https://ece.umd.edu/clark/faculty/593/Elisabeth-Smela",
+        "observed_at": "2026-11-24T08:40:10.982090+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "19a5e0dfec09861e3d5b74c2f7492f0deeb1fe53d1444ec6c4888ac817280b1a"
+      },
+      {
+        "id": "prof_ec3cae7842c6",
+        "url": "https://ece.umd.edu/clark/faculty/483/Phillip-Sprangle",
+        "observed_at": "2026-11-24T08:40:10.978614+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "8b23a200fdd0de702322d88fff61dba074296b92be175deb69280e614804abc6"
+      },
+      {
+        "id": "prof_e92657fa9469",
+        "url": "https://ece.umd.edu/clark/faculty/484/Ankur-Srivastava",
+        "observed_at": "2026-11-24T08:40:10.983202+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "fdd42eb7c2cae151255500826085bd9b54392e47b8476ebc3985bb7488dec6cc"
+      },
+      {
+        "id": "prof_d045643f244a",
+        "url": "https://ece.umd.edu/clark/faculty/485/Charles-Striffler",
+        "observed_at": "2026-11-24T08:40:13.945524+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "80d2ff81fbf982f9844364a3ca999fa22e833c2745e1e911272d241a18a50d4b"
+      },
+      {
+        "id": "prof_91a78986733a",
+        "url": "https://ece.umd.edu/clark/faculty/722/Ichiro-Takeuchi",
+        "observed_at": "2026-11-24T08:40:14.522341+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "66aed0320ec661dfa30162f62706ebeccd09d33278e395f486c2965c524d0cfc"
+      },
+      {
+        "id": "prof_c84143e69106",
+        "url": "https://ece.umd.edu/clark/faculty/487/Rikin-Thakker",
+        "observed_at": "2026-11-24T08:40:13.642835+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "76c06ef5dc1a6d5ea05cd0d09e50a96a0e199c4a18379844f2c84d23540a2073"
+      },
+      {
+        "id": "prof_0f989f546d97",
+        "url": "https://ece.umd.edu/clark/faculty/1749/Nestor-Tiglao",
+        "observed_at": "2026-11-24T08:40:11.315375+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "bbf7a663483e70b94f24a2f575995d7fcf465e3be6705687d7b3ca78facef6c4"
+      },
+      {
+        "id": "prof_bf276b85206c",
+        "url": "https://ece.umd.edu/clark/faculty/488/Andr-Tits",
+        "observed_at": "2026-11-24T08:40:11.399577+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a9695f611725954caf11d4f891e5d9c997deebc75ccc2184e1946f05714d899f"
+      },
+      {
+        "id": "prof_250cc39c212a",
+        "url": "https://ece.umd.edu/clark/faculty/1267/Pratap-Tokekar",
+        "observed_at": "2026-11-24T08:40:11.343030+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "8578ff11251186c88f72c9655b3a274e015ae8d80de3e54612c510141f1fd227"
+      },
+      {
+        "id": "prof_d75d48a3e595",
+        "url": "https://ece.umd.edu/clark/faculty/489/Steven-Tretter",
+        "observed_at": "2026-11-24T08:40:11.334081+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "5574ccb9c3d8aa4f89f0debc9f13b91a17977883813ca023f1674361fa78dd32"
+      },
+      {
+        "id": "prof_a55cddfeffa9",
+        "url": "https://ece.umd.edu/clark/faculty/1292/Eleonora-Tubaldi",
+        "observed_at": "2026-11-24T08:40:14.824263+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "51135987c31daeb6f47097f0d26b47fdc460522732d98cd60acc3d7399104cd6"
+      },
+      {
+        "id": "prof_7e3febaf2af5",
+        "url": "https://ece.umd.edu/clark/faculty/490/Sennur-Ulukus",
+        "observed_at": "2026-11-24T08:40:11.766822+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "7a79868d092c5804549d9ff12c7581d2d8f4a7314159f2dc9c5b11d6aeba17df"
+      },
+      {
+        "id": "prof_08bf35406049",
+        "url": "https://ece.umd.edu/clark/faculty/491/Uzi-Vishkin",
+        "observed_at": "2026-11-24T08:40:11.760902+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "4c5295bb6b6466ee9ae2e330199265ca1f38a7a1a07dd102da6ff18e0e1b258c"
+      },
+      {
+        "id": "prof_d6d69d9343d1",
+        "url": "https://ece.umd.edu/clark/faculty/492/Edo-Waks",
+        "observed_at": "2026-11-24T08:40:11.802733+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "00d0a493112f5d9037e173a99878d61878cd71960fd55fe2ae69c88803f89c47"
+      },
+      {
+        "id": "prof_42ceefca47aa",
+        "url": "https://ece.umd.edu/clark/faculty/1205/Ronald-Walsworth",
+        "observed_at": "2026-11-24T08:40:11.866399+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "a4e549f66901e3cdb57064eec105b968bb2377a690f0225d14fe2d90b8a8e4b8"
+      },
+      {
+        "id": "prof_1f05bc2fa6ab",
+        "url": "https://ece.umd.edu/clark/faculty/496/Jerry-Wu",
+        "observed_at": "2026-11-24T08:40:12.174214+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "804cca23a637bead1968443761508da06a7ba05b007fa116d67299828e9ed8de"
+      },
+      {
+        "id": "prof_fb3f7cae1543",
+        "url": "https://ece.umd.edu/clark/faculty/497/Min-Wu",
+        "observed_at": "2026-11-24T08:40:12.176781+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "3ee7d5e0317947a86d6b574b748c17869572e948dc9ba8ff5b1ea06a456a4a94"
+      },
+      {
+        "id": "prof_ad91e703fe83",
+        "url": "https://ece.umd.edu/clark/faculty/1901/Nan-Xu",
+        "observed_at": "2026-11-24T08:40:15.117492+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "8492b144539e5a3bcf9b132fd5b1ba2dd8ada41f55fdc85dd5ef2264bdd71f00"
+      },
+      {
+        "id": "prof_a3958b8157d3",
+        "url": "https://ece.umd.edu/clark/faculty/499/Donald-Yeung",
+        "observed_at": "2026-11-24T08:40:12.255897+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "1aa9a5ef33b4a0d4f71c4185b73cd4ca8a19924dccefbcf7922b5a95c0dba322"
+      },
+      {
+        "id": "prof_64e632874a99",
+        "url": "https://ece.umd.edu/clark/faculty/1834/Cunxi-Yu",
+        "observed_at": "2026-11-24T08:40:12.484077+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "fb8d8bb6b6fd85f5398fda325ad0df03681285afffb21ab6a28dc5c57ef566eb"
+      },
+      {
+        "id": "prof_4d32c7ef6c50",
+        "url": "https://ece.umd.edu/clark/faculty/501/Kawthar-Zaki",
+        "observed_at": "2026-11-24T08:40:15.181666+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "4b83a51bf8d2146185199bc3462575c87ef87fb5a29a82103b3b3f7c902ecb2a"
+      },
+      {
+        "id": "prof_ded24c6ac005",
+        "url": "https://ece.umd.edu/clark/faculty/1843/Xin-Zan",
+        "observed_at": "2026-11-24T08:40:15.413413+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "f3670498c2f62b75b4f97caf3d1e923402bb2a4c7256559ed358d5fc3e1f822e"
+      },
+      {
+        "id": "prof_163f81ad559e",
+        "url": "https://ece.umd.edu/clark/faculty/1748/Kaiqing-Zhang",
+        "observed_at": "2026-11-24T08:40:12.698759+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "88e13950c7dfe051ae06f0ef8c713327849a7070ed19289af008ef7d525c13de"
+      },
+      {
+        "id": "prof_0e3a01eb48e6",
+        "url": "https://ece.umd.edu/clark/faculty/1395/You-Zhou",
+        "observed_at": "2026-11-24T08:40:15.469182+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "386addfd87f1383ad956fa35aeb5912bb89131ac4c7dbfcdc156ba5ccda7b248"
+      },
+      {
+        "id": "prof_5bfcf0433385",
+        "url": "https://ece.umd.edu/clark/faculty/1734/Xiaodi-Wu",
+        "observed_at": "2026-11-24T08:40:15.385087+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "92c29a2a066265474f206c44aeb148a7d6fefffb924ed7b4927aabd7c3810e6e"
+      },
+      {
+        "id": "prof_79bb78397510",
+        "url": "https://nanocenter.umd.edu/faculty?u=882",
+        "observed_at": "2026-11-24T08:40:14.825879+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "faculty_profile",
+        "response_sha256": "0e43bb18aae034644ad05a266d8bae9603f44e789dc85b03f12935648074c644"
+      },
+      {
+        "id": "umiacs_lsd",
+        "url": "https://www.umiacs.umd.edu/people/lsd",
+        "observed_at": "2026-11-24T08:42:49.022214+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "umiacs_profile",
+        "response_sha256": "80debca2080a1bb34f6c3caa4497593a01d466be8e5a4dcce4ec88bcc45ce5d7"
+      }
+    ],
+    "findings": []
+  },
+  "receipt": {
+    "job_id": "audit_615942e840304e77804404661a78561e",
+    "candidate_sha256": "3bb89167f9ccdf3d542a269df29ac09d65b7db19d2ad347b4c7db1c089a2beed",
+    "transport": "t3",
+    "run_id": "audit-md-v5-h",
+    "model": "gemini-4-hydrogen",
+    "finished_at": "2026-11-24T08:40:54.143562+00:00",
+    "exit_code": 0
+  }
+}

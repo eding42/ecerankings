@@ -1,0 +1,683 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/73db660b8e2b357fc840ef0170a14570b47a257e50be7e83b816a01397409758.json",
+    "sha256": "73db660b8e2b357fc840ef0170a14570b47a257e50be7e83b816a01397409758"
+  },
+  "brief": {
+    "file": "audits/briefs/687c43b1da8d2bca1e4c49f606c020e4cf0db2eb5250d36c99f157ce713c55f8.json",
+    "sha256": "687c43b1da8d2bca1e4c49f606c020e4cf0db2eb5250d36c99f157ce713c55f8"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_49bf105dec12427ab25fe4c80f27f947",
+    "candidate_sha256": "f19adf9afc7b0f30c4545715e947bf91ba0beac44fd616e9873a8cbc852d3901",
+    "reviewer_id": "haiku-audit-gmu",
+    "reviewed_at": "2026-11-25T02:26:06+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=1",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=2",
+        "https://ece.gmu.edu/people/faculty?page=3",
+        "https://ece.gmu.edu/people/faculty?page=3",
+        "https://ece.gmu.edu/people/faculty?page=3",
+        "https://ece.gmu.edu/people/faculty?page=3",
+        "https://ece.gmu.edu/people/faculty?page=3",
+        "https://ece.gmu.edu/people/faculty?page=3"
+      ],
+      "checked_list_ids": [
+        "primary"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_9ee1acef17355b368b2d",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Official list title 'Professor of Practice, Department of Electrical and Computer Engineering' (profile says the same). Practice-track title -> academic_professional, excluded. The brief also reports an adjunct listing; that would exclude him too, so the outcome does not depend on it. List entry: 'Professor of Practice, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0",
+          "gmu-profile-madamiak"
+        ]
+      },
+      {
+        "person_id": "person_3667c09f3cb05bc4b77a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'; profile says the same. The image alt text reads 'Computer Science Associate Professor', but the official ECE listing and profile govern; the alt text is not an appointment statement. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0",
+          "gmu-profile-eahn7"
+        ]
+      },
+      {
+        "person_id": "person_883bddcece795d4daf20",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'; regular professorial rank on the main faculty list. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0"
+        ]
+      },
+      {
+        "person_id": "person_4cce4dcb5e8d5ec6bceb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Assistant Professor, Department of Electrical and Computer Engineering'; regular professorial rank on the main faculty list. List entry: 'Assistant Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0"
+        ]
+      },
+      {
+        "person_id": "person_09676e42b9e1515d92e0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title omits the department ('Professor and Director of Mason Autonomy and Robotics Center (MARC); First American Bank Chair'). Her profile states she holds faculty appointments in ME, ECE and CS, and she is on the ECE main faculty list at professor rank, so regular ECE. The endowed chair does not change the category. If the school designates ECE as a secondary appointment it would be joint_secondary; still included, count unchanged. List entry: 'Professor and Director of Mason Autonomy and Robotics Center (MARC); First American Bank Chair'.",
+        "source_ids": [
+          "gmu-list-p0",
+          "gmu-profile-cummings"
+        ]
+      },
+      {
+        "person_id": "person_5f1531e89f0f5ccc8306",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor and Associate Chair for Graduate Studies, Department of Electrical and Computer Engineering'; professorial rank on the main list. List entry: 'Professor and Associate Chair for Graduate Studies, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0"
+        ]
+      },
+      {
+        "person_id": "person_95218644c6c05144a424",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor and research faculty, Department of Electrical and Computer Engineering'; his profile title is the same and his image caption reads 'research professor'. The specific appointment type (research faculty) takes precedence over the generic rank 'Professor', so research_only, excluded. Would change to regular if the school states a regular professorial appointment for him. List entry: 'Professor and research faculty, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0",
+          "gmu-profile-hayes"
+        ]
+      },
+      {
+        "person_id": "person_e94e250659235edfbf0b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'; 'Dominion Energy Faculty Fellow' is a fellowship designation, not a separate appointment category. List entry: 'Associate Professor, Department of Electrical and Computer Engineering | Dominion Energy Faculty Fellow'.",
+        "source_ids": [
+          "gmu-list-p0"
+        ]
+      },
+      {
+        "person_id": "person_6a41482f5ed35c9892a1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0"
+        ]
+      },
+      {
+        "person_id": "person_8b8c2228123359e7818b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p0"
+        ]
+      },
+      {
+        "person_id": "person_bba59b3a699f53469567",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_db1d82b0a07457f7af5e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'; profile says the same. The brief reports a DFOR listing (not retrieved here). A regular ECE appointment with a title in another unit stays regular ECE under the project convention. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1",
+          "gmu-profile-jjonesu"
+        ]
+      },
+      {
+        "person_id": "person_4585504d1a94511db386",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering and Department of Cyber Security Engineering': an official joint professorial appointment with the regular-versus-courtesy subtype not stated, so joint_secondary (not guessed as regular or courtesy). The profile URL returned 404, so the list title is the only evidence. Would change to regular if an official source designates ECE as the primary appointment; included either way. List entry: 'Associate Professor, Department of Electrical and Computer Engineering and Department of Cyber Security Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_330b4a722a5c56639207",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Assistant Professor, Department of Electrical and Computer Engineering'. List entry: 'Assistant Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_8e1b3ca4e968586bbd8f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor and Associate Chair, Department of Electrical and Computer Engineering'; professorial rank on the main list. List entry: 'Professor and Associate Chair, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_ae2b4e03c43e57abb4cb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_404aaffc9ad3560ba917",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Term Associate Professor, Department of Electrical and Computer Engineering'; profile says the same. The term qualifier is not a teaching-track designation and no official source states one, so regular by rank on the main list. Would change to teaching if the school designates this as a teaching-track term appointment. The profile's adjunct history is past and not a current appointment. List entry: 'Term Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1",
+          "gmu-profile-clorie"
+        ]
+      },
+      {
+        "person_id": "person_084b5da3305550be9cf0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_bf75d0ee2b495b129666",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_696317508d73509fbc81",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Electrical and Computer Engineering; Associate Dean, Undergraduate Programs in the CEC'. The administrative role does not replace the professorial appointment in the ECE listing. List entry: 'Professor, Electrical and Computer Engineering; Associate Dean, Undergraduate Programs in the CEC'.",
+        "source_ids": [
+          "gmu-list-p1"
+        ]
+      },
+      {
+        "person_id": "person_db210f09943956959427",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_4af021400a6a5bd8b62b",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "List title 'Director of Digital Forensics and Interim Director for TCOM, Instructional Professor; Department of Electrical and Computer Engineering'. 'Instructional Professor' is an instruction-track title (parallel to Professor of Instruction) -> academic_professional, excluded. Teaching would also exclude, so the outcome is unaffected. The profile URL returned 404; the list title is the only evidence. He also appears on a DFOR list per the brief (not retrieved). List entry: 'Director of Digital Forensics and Interim Director for TCOM, Instructional Professor; Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_a762e0f5e6c6506bb96f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_32cf0e0e3aff5c839b08",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_8add2550f82852caaae6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Tenure-Track Assistant Professor, Department of Electrical and Computer Engineering; CEIE Affiliate Faculty'; profile says the same. Regular ECE professorial appointment; the CEIE affiliate note is an adjunct-style title in another unit and does not change the ECE category. List entry: 'Tenure-Track Assistant Professor, Department of Electrical and Computer Engineering; CEIE Affiliate Faculty'.",
+        "source_ids": [
+          "gmu-list-p2",
+          "gmu-profile-mparsa"
+        ]
+      },
+      {
+        "person_id": "person_fff6f4c38bf85322881a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering; Affiliate Faculty in Bioengineering'; profile says the same. Regular ECE professorial appointment; the Bioengineering affiliate note does not change the ECE category. List entry: 'Associate Professor, Department of Electrical and Computer Engineering; Affiliate Faculty in Bioengineering'.",
+        "source_ids": [
+          "gmu-list-p2",
+          "gmu-profile-npeixoto"
+        ]
+      },
+      {
+        "person_id": "person_7fe56d89c5d654a197be",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Associate Professor, Department of Electrical and Computer Engineering'. List entry: 'Associate Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_18b1e0cc8479579db033",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_00e262f125215400a2aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor and Chair, Department of Electrical and Computer Engineering'; department chair at professorial rank. List entry: 'Professor and Chair, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_fec23f47f2f75c828310",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p2"
+        ]
+      },
+      {
+        "person_id": "person_c242fdf06987546aaeb7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Assistant Professor, Department of Electrical and Computer Engineering'. List entry: 'Assistant Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_15e36aa26d6f595689cc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_f3c5eb6623c15ce2bde5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Assistant Professor, Department of Electrical and Computer Engineering'. List entry: 'Assistant Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_0ccb5853290250b6ad43",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Assistant Professor, Department of Electrical and Computer Engineering'. List entry: 'Assistant Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_a0072046d6fe5a90902a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Professor, Department of Electrical and Computer Engineering'. List entry: 'Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p3"
+        ]
+      },
+      {
+        "person_id": "person_efe706a99fb4563e8457",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "List title 'Assistant Professor, Department of Electrical and Computer Engineering'. List entry: 'Assistant Professor, Department of Electrical and Computer Engineering'.",
+        "source_ids": [
+          "gmu-list-p3"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "gmu-list-p0",
+        "url": "https://ece.gmu.edu/people/faculty",
+        "observed_at": "2026-11-25T02:24:08+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Primary Faculty list (all entries on this page)",
+        "response_sha256": "53344f5c945d1da7a4ab53670327c84e6d3628cd3b59136662d62f8f04097254"
+      },
+      {
+        "id": "gmu-list-p1",
+        "url": "https://ece.gmu.edu/people/faculty?page=1",
+        "observed_at": "2026-11-25T02:24:08+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Primary Faculty list (all entries on this page)",
+        "response_sha256": "5054e49bba8fc3e1db5278e4fe13fa6081f3b32cd9bec73403fee648c7e9f25b"
+      },
+      {
+        "id": "gmu-list-p2",
+        "url": "https://ece.gmu.edu/people/faculty?page=2",
+        "observed_at": "2026-11-25T02:24:08+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Primary Faculty list (all entries on this page)",
+        "response_sha256": "88e3c9d93d5c9eabf5d7e024f644cea3dadc375e1d8cdf98ba46d5eb4e281151"
+      },
+      {
+        "id": "gmu-list-p3",
+        "url": "https://ece.gmu.edu/people/faculty?page=3",
+        "observed_at": "2026-11-25T02:24:08+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Primary Faculty list (all entries on this page)",
+        "response_sha256": "56ea9a4a883c68c188f97b71cb80888afb5afd6268cfe77dd92c8782b546b6ae"
+      },
+      {
+        "id": "gmu-profile-cummings",
+        "url": "https://ece.gmu.edu/profiles/cummings",
+        "observed_at": "2026-11-25T02:24:46+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "8ce407899ad751a0a553c4f0454d82ed08576a8cf5586642040334954f9daf11"
+      },
+      {
+        "id": "gmu-profile-hayes",
+        "url": "https://ece.gmu.edu/profiles/hayes",
+        "observed_at": "2026-11-25T02:24:47+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "a1ab5aa76c3f7978379183500cc8cacf87ad79278154d1da7196a3c203627b54"
+      },
+      {
+        "id": "gmu-profile-mparsa",
+        "url": "https://ece.gmu.edu/profiles/mparsa",
+        "observed_at": "2026-11-25T02:24:48+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "3381707133fbe634e01a42f9052c545674ca05b0fe82d959efc01d63017be403"
+      },
+      {
+        "id": "gmu-profile-npeixoto",
+        "url": "https://ece.gmu.edu/profiles/npeixoto",
+        "observed_at": "2026-11-25T02:24:48+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "9b5d52d5b19eb4909eace124951cdc43a18c0b9ce738d10f7e7b4b0cc9fc3c23"
+      },
+      {
+        "id": "gmu-profile-madamiak",
+        "url": "https://ece.gmu.edu/profiles/madamiak",
+        "observed_at": "2026-11-25T02:24:49+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "665fbd785d226d2d52f2762f89b6a0e05987c67a4c6e8564fd10282f1ae72d90"
+      },
+      {
+        "id": "gmu-profile-clorie",
+        "url": "https://ece.gmu.edu/profiles/clorie",
+        "observed_at": "2026-11-25T02:24:50+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "4a78ab65ef5d60cebb0cbdcb27b9e022250142ed1891fc224af2c2b4b83f7d0d"
+      },
+      {
+        "id": "gmu-profile-jjonesu",
+        "url": "https://ece.gmu.edu/profiles/jjonesu",
+        "observed_at": "2026-11-25T02:24:50+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "851780397315d0128c5e2d8e15e4dcca3b7a157ae4198aca34b023daac1b3afd"
+      },
+      {
+        "id": "gmu-profile-eahn7",
+        "url": "https://ece.gmu.edu/profiles/eahn7",
+        "observed_at": "2026-11-25T02:25:20+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Titles and Organizations section",
+        "response_sha256": "a823e788f5d5503db7623d68ab7724b99a7ef814a8ccc80bed5079da0110da10"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "decision",
+        "person_id": "person_9ee1acef17355b368b2d",
+        "description": "Mark Adamiak: excluded, academic_professional. Official list title 'Professor of Practice, Department of Electrical and Computer Engineering' (profile says the same). Practice-track title -> academic_professional, excluded. The brief also reports an adjunct listing; that would exclude him too, so the outcome does not depend on it."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_3667c09f3cb05bc4b77a",
+        "description": "Ethan Ahn: included, regular. List title 'Associate Professor, Department of Electrical and Computer Engineering'; profile says the same. The image alt text reads 'Computer Science Associate Professor', but the official ECE listing and profile govern; the alt text is not an appointment statement."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_09676e42b9e1515d92e0",
+        "description": "Missy Cummings: included, regular. List title omits the department ('Professor and Director of Mason Autonomy and Robotics Center (MARC); First American Bank Chair'). Her profile states she holds faculty appointments in ME, ECE and CS, and she is on the ECE main faculty list at professor rank, so regular ECE. The endowed chair does not change the category. If the school designates ECE as a secondary appointment it would be joint_secondary; still included, count unchanged."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_95218644c6c05144a424",
+        "description": "Monson Hayes: excluded, research_only. List title 'Professor and research faculty, Department of Electrical and Computer Engineering'; his profile title is the same and his image caption reads 'research professor'. The specific appointment type (research faculty) takes precedence over the generic rank 'Professor', so research_only, excluded. Would change to regular if the school states a regular professorial appointment for him."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4585504d1a94511db386",
+        "description": "Jens-Peter Kaps: included, joint_secondary. List title 'Associate Professor, Department of Electrical and Computer Engineering and Department of Cyber Security Engineering': an official joint professorial appointment with the regular-versus-courtesy subtype not stated, so joint_secondary (not guessed as regular or courtesy). The profile URL returned 404, so the list title is the only evidence. Would change to regular if an official source designates ECE as the primary appointment; included either way."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4af021400a6a5bd8b62b",
+        "description": "Robert Osgood: excluded, academic_professional. List title 'Director of Digital Forensics and Interim Director for TCOM, Instructional Professor; Department of Electrical and Computer Engineering'. 'Instructional Professor' is an instruction-track title (parallel to Professor of Instruction) -> academic_professional, excluded. Teaching would also exclude, so the outcome is unaffected. The profile URL returned 404; the list title is the only evidence. He also appears on a DFOR list per the brief (not retrieved)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_404aaffc9ad3560ba917",
+        "description": "Craig Lorie: included, regular. List title 'Term Associate Professor, Department of Electrical and Computer Engineering'; profile says the same. The term qualifier is not a teaching-track designation and no official source states one, so regular by rank on the main list. Would change to teaching if the school designates this as a teaching-track term appointment. The profile's adjunct history is past and not a current appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_db1d82b0a07457f7af5e",
+        "description": "Jim Jones: included, regular. List title 'Associate Professor, Department of Electrical and Computer Engineering'; profile says the same. The brief reports a DFOR listing (not retrieved here). A regular ECE appointment with a title in another unit stays regular ECE under the project convention."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_8add2550f82852caaae6",
+        "description": "Maryam Parsa: included, regular. List title 'Tenure-Track Assistant Professor, Department of Electrical and Computer Engineering; CEIE Affiliate Faculty'; profile says the same. Regular ECE professorial appointment; the CEIE affiliate note is an adjunct-style title in another unit and does not change the ECE category."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_fff6f4c38bf85322881a",
+        "description": "Nathalia Peixoto: included, regular. List title 'Associate Professor, Department of Electrical and Computer Engineering; Affiliate Faculty in Bioengineering'; profile says the same. Regular ECE professorial appointment; the Bioengineering affiliate note does not change the ECE category."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "All four list pages (primary URL plus page=1, page=2, page=3) downloaded and parsed: 36 entries total (10, 10, 10, 6), every entry under a single 'Primary Faculty' heading. The 36 names match brief.people exactly; no omissions and no page-assignment mismatches against the brief's profile_urls. No source failures."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Profile fetch: ece.gmu.edu/profiles/osgood and /profiles/kaps returned HTTP 404 (not cited). Eight profiles were fetched and cited (cummings, hayes, mparsa, npeixoto, madamiak, clorie, jjonesu, eahn7); each decision rests on the list title plus the profile where cited."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Other ECE site pages visible in the page navigation (not retrieved or enumerated, not records): Adjunct Faculty, DFOR Faculty, Research Faculty and Emeritus/Retired Faculty. These are excluded categories under the policy (adjunct, research_only/research_staff, emeritus/retired_working, and DFOR-related listings); no records were created for them and they are not omissions."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No officially announced incoming ECE professors appear on the four primary list pages, so the included set has no incoming records and effective_from_json is null for all 36 people."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_49bf105dec12427ab25fe4c80f27f947",
+    "candidate_sha256": "f19adf9afc7b0f30c4545715e947bf91ba0beac44fd616e9873a8cbc852d3901",
+    "transport": "t3",
+    "run_id": "agent_afaec9499cd66feb4",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T02:26:30.871837+00:00",
+    "exit_code": 0
+  }
+}

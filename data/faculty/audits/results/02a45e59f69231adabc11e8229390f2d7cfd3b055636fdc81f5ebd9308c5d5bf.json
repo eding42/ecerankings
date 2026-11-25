@@ -1,0 +1,2129 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/d4ea5f86699871d74fa27c330d5cd50da64d3ef33376ae01f87b98599bb96163.json",
+    "sha256": "d4ea5f86699871d74fa27c330d5cd50da64d3ef33376ae01f87b98599bb96163"
+  },
+  "brief": {
+    "file": "audits/briefs/8b4f9824d64b31b37e1e1d540b18c2166062b3a204f6b88b5dfd99de7b0ae725.json",
+    "sha256": "8b4f9824d64b31b37e1e1d540b18c2166062b3a204f6b88b5dfd99de7b0ae725"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_ec0f0da011eb4a87b00f3e1c8beab11d",
+    "candidate_sha256": "04c517b8bd7288d231713f652d9e64d5da70983ef96c1f1a55b0da30a131fb00",
+    "reviewer_id": "claude-haiku-asu-audit",
+    "reviewed_at": "2026-11-25T08:12:59+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "https://faculty.engineering.asu.edu/directory/ecee/semiconductors"
+      ],
+      "checked_list_ids": [
+        "ecee_api"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_f545b189621e5897be5b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_e6d4a49123ee5f06a163",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR='Research Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Research professor title ( Research Assistant Professor): research_only.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_2c4a18c6bf6e5f6ca50a",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Affiliation \"Courtesy Affiliate\", no title. Official bio describes his ASU graduate study, TA and research-associate roles; no professorial appointment is stated. Generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_5d2873a5b1c158b78c37",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_e12029503931576f8791",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d93d99e5635d5f309e88",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_fe2628dcd5235dc98661",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Matched to Fulton directory card under a variant spelling. PT='Center Director and Professor' HR='Professor' PD='Biodesign Center for Bioelectronics and Biosensors' AFF='Employee'. Primary appointment is the Biodesign Center (dept 1911). Official bio: \"a professor in the School of Electrical, Computer, and Energy Engineering\"; ECEE dept 1663 is a secondary listing. Joint/secondary professorial EE appointment; regular vs courtesy not stated.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_fae757747e955e658b00",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_22d48febdda35f378da8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Emeritus designation on the ECEE record (title \"SUM/WTR Faculty Research; Professor Emeritus; Distinguished Global Futures Scientist\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_30e49e57bb2d5de39e5d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_5ddebe82cece5fd78857",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_aa7a10e74ed15354ac2a",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_b43e70d5658f5c23aa6c",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_f9bb2bfb38b6524b9056",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_2deccdbed9a150cb96cf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_0805e73c1f8e5834b3c8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_064a30aeb0e05086a134",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Director and Professor' HR='Professor' PD='The GAME School' AFF='Employee'. Primary department The GAME School. Official bio: \"They hold a Joint Professor appointment between The GAME School and Electrical Engineering (ECEE)\". Joint/secondary professorial appointment; subtype not stated.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_23deb962d5bb5dbeb888",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_108649c2ff3251589a3f",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Instructional Professional' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate; Employee'. Teaching-track or instructional title (Faculty Associate Instructional Professional): teaching.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_fbfd935e65025c129cf6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ff16b9211ed75aa095b2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d4a9fc61dbf9521f9117",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_93896c8f37135695ab57",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_4d4881e257da533f83f2",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_43687cc044c85b1e8da5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_883387a1f854523784c4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Emeritus designation on the ECEE record (title \"Regents' Professor Emeritus; Emeritus Professor\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_de9719244cf3547bbf79",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d122719f424158e89c24",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_2c1265ad084a5ae5b1ee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_408c64f781395ac09077",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR='Postdoctoral Research Scholar' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Non-professorial research role ( Postdoctoral Research Scholar): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_9f8bf35238665537b0c3",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ab8c6550db7057978504",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_932283e1d47a5c9180a0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_f7c553e24d1c5073a5a1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d057041bb6645de3b967",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_5a584dc6d11d556c954d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a4651f0617e0581ca0cc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_3d8bc9b3e68b5ec18e4e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c360618d24a5522babf3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_6f07837f615755368384",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d4479a11c6fd54c2a690",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='Emeritus College' AFF='Courtesy Affiliate'. Emeritus designation on the ECEE record (title \"Professor Emeritus; Professor Emeritus\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_e333c4ec56b15ef7a53f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_6b77eaa9adbb56279d28",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ef4f2be8d9d95bd09ff3",
+        "decision": "excluded",
+        "category": "departed",
+        "membership": "outside_ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Affiliation \"Courtesy Affiliate\" but no professorial title on the record. Official bio says he \"joined UAH in August 2015 as Professor and Department Chair\" after ASU service 1987-2015, so he is a former ECEE member. Excluded as departed; membership outside_ece. Would change only with an official current ECEE professorial appointment.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_1d56623857715645a140",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_942d4face2585fc5b11a",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor of Practice' HR='Professor of Practice' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professor of Practice is a practice-track title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c4bc123ea6af5513a503",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ea22855524405de28898",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. University staff role with no professorial appointment: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ae290400638c5b30a68a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Matched to Fulton directory card under a variant spelling. PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_4d53778aa0165f289dc1",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT='Research Professor' HR='Research Professor' PD='School of Mathematical and Statistical Sciences' AFF='Courtesy Affiliate; Employee'. Title \"Professor Emeritus\"; official bio: \"a Research Professor in the School of Mathematical and Statistical Sciences and an Emeritus Professor in the School of Electrical, Computer and Energy Engineering\". Emeritus (also excluded as research_only elsewhere); the Courtesy Affiliate flag does not establish a professorial courtesy appointment.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_f32e976c6f915378882e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Matched to Fulton directory card under a variant spelling. PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_2811a5da889e5cd9a75d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_f2459092075955788459",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_82ee899cf57b5b17b2df",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c10e4fa22321508ebdab",
+        "decision": "included",
+        "category": "courtesy",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Affiliation \"Courtesy Affiliate\" on the ECEE record (explicit courtesy designation). Official bio, present tense: \"is an associate professor in the School of Electrical, Computer and Energy Engineering\". Courtesy with professorial rank.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_6789a417077052bab530",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_eab073e254f15c868312",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_00e5bf0ed6b650d38d83",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Research Technologist' HR='Assistant Research Technologist' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Non-professorial research role (Assistant Research Technologist Assistant Research Technologist): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_99f008c918f05a5aba52",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor of Practice' HR='Professor of Practice' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professor of Practice is a practice-track title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_4184b09052785288a252",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_957dd7c2100c55b39532",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Affiliation \"Courtesy Affiliate\", no title. Official bio begins \"Research Professor, Department of Electrical Engineering\". Research professor titles are excluded as research_only.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c217ea1ca421568ebf9e",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='Fulton Schools of Engineering' AFF='Employee'. Primary department is the Fulton Schools dean's office (dept 1405); ECEE dept 1663 secondary. Official bio: \"a joint appointment in the School of Electrical Computer and Energy engineering and the College of Health Solutions\"; professorial rank Professor. Joint/secondary; the dean clause is treated as met by the official ECE joint appointment statement.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_9a17a3e3998b57ad9032",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='Emeritus College' AFF='Courtesy Affiliate'. Title \"Emeritus Professor\"; official bio: \"She is currently an Emerita Professor at ASU (2020-present)\". Emeritus, past.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_1e19efab0b5b50bf8c0f",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Affiliation \"Courtesy Affiliate\", no current title. Official bio says only that he \"joined the faculty ... in 1995 as a professor\". No current professorial rank is stated, so courtesy is not established; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_8b39ff900bbb5a7ca8b2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_fca27c2c265258b08cdf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Emeritus designation on the ECEE record (title \"Professor Emeritus (FSC); Professor Emeritus (FSC)\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_e5bd04ec7b9b583e9654",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_cd76717c1f3b5123abf0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Primary ECEE; title \"School Dir (ACD) & Professor\"; home rank Professor. Director addition does not change regular rank.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_5d9b42c61a3953719e62",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c36b3e513d21536a9e10",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Teaching Professor' HR='Associate Teaching Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Teaching-track or instructional title (Associate Teaching Professor Associate Teaching Professor): teaching.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_64cfbde96c135cd68792",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d9aa0a64665356458ca4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_9b222b6a724b5e8eb33a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d29e699defba55dc8f5a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_5ab2b5f88af3591cbf46",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_004b7a26d40d56589395",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_be19d079af065b1a832b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_dddd4c5f8fe950a081fc",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Sr. Associate Dean of Faculty Affairs and Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Primary department ECEE (dept 1663); professorial title \"Sr. Associate Dean of Faculty Affairs and Professor\" with home rank Professor. The \"Incoming Senior Associate Dean\" text is the administrative role, not an incoming professorial appointment; no start date is stated, so effective_from_json is null.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_68b7160ab3fd58569dee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a911fb3747e65b37b141",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ae0778de392e59d5b814",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor Emeritus' HR='Professor Emeritus' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee; Courtesy Affiliate'. Primary title \"Professor Emeritus\" (also on the Fulton semiconductors directory card). The undated biography still names the Ferry chair; the specific emeritus appointment type takes precedence over an undated biography.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a48697d1109256408c0f",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. University staff role with no professorial appointment: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_be148055e64151fea60d",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Vice Dean and Professor' HR='Professor' PD='Fulton Schools of Engineering' AFF='Employee'. Primary department Fulton Schools (dept 1405); ECEE dept 1663 secondary. Official bio: \"Vice Dean for Research and Innovation ... as well as a Professor in the School of Electrical, Computer, and Energy Engineering\". Professorial ECE appointment is stated officially, so the dean clause is met; joint/secondary.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_6944100a9518539fbca4",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Research Assistant Professor' HR='Research Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Research professor title (Research Assistant Professor Research Assistant Professor): research_only.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_b9458264081359139342",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Research Scientist' HR='Research Scientist' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Non-professorial research role (Research Scientist Research Scientist): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_b8497dd91e505a5db5a2",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_27df21fe33115c8b9cd4",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Research Scientist' HR='Associate Research Scientist' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Non-professorial research role (Associate Research Scientist Associate Research Scientist): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_95dd022aa52d5090b108",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_500cd0f5ba2d5d619f05",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_9df8c2b01690516fbbd0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a8bc93c7ee7655288982",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_aa45428694e55b028201",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor Emeritus' HR='Professor Emeritus' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate; Employee'. Emeritus designation on the ECEE record (title \"Professor Emeritus\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d10f71b3382a56dcbc0f",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate; Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_1da6df6b8a435edcbf76",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_7b6387e7bc3a5fa2b9cf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_49c7e64a22e05d099def",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_2f8a1751e0d75e37b473",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a5803f69afe5562ca33d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Regents Professor' HR='Regents’ Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Regents Professor Regents’ Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_1b3eade3f1325fecaa37",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate; Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_b15fb5cf2ba85eee8ffa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_2db4d9fe228759cb8122",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Research Scientist' HR='Assistant Research Scientist' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Non-professorial research role (Assistant Research Scientist Assistant Research Scientist): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_de7b2c7fb2e35f69ac34",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Research Scientist' HR='Associate Research Scientist' PD='Cntr/Solid State Electronics' AFF='Employee'. Non-professorial research role (Associate Research Scientist Associate Research Scientist): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_894e402d2f7059f687f5",
+        "decision": "excluded",
+        "category": "research_only",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Research Assistant Professor' HR='Research Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Research professor title (Research Assistant Professor Research Assistant Professor): research_only.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_457246b738ab56e1b3d1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c958165288cc53919367",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee; Student'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a1971519c2595f88821f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Regents Professor' HR='Regents’ Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Regents Professor Regents’ Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_c4a1f4f6dd755cd3aa04",
+        "decision": "included",
+        "category": "joint_secondary",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='The GAME School' AFF='Student; Employee'. Primary department The GAME School. Official bio: \"an associate professor jointly between the departments of Games, Arts, Media and Engineering ... and Electrical, Computer, and Energy Engineering (ECEE)\". Joint/secondary professorial appointment; subtype not stated.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_880b3a1d80e654ec8a8d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_821264268799525b9c1c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_61901edaa5fd59e89fc3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_cf979df181c356daa25c",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. University staff role with no professorial appointment: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_707edd99e68355448143",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_3ca0f7d83df6516fa739",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d3f187af1204530984f3",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Courtesy Affiliate listing with no professorial title in the official record; generic affiliation is insufficient.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_21d16fad1c5f5680b5c8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_db6a13e6f7e35e7c9145",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_f4bb0fefa8595eca9cfb",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_a0f7cbaf48f252f988ec",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ea3b24c011685dc394ec",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_70326d29ee2d5033a045",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor Emeritus' HR='Associate Professor Emeritus' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate; Employee'. Emeritus designation on the ECEE record (title \"Associate Professor Emeritus\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_e02c67a858055448a35b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_0231b5cb0dfc562c8ec6",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_d601e43d09bb515c9821",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_39496408673854dba770",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Professor Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_fdb0208c04cf5e8b93ca",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR='Research Scientist' PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Non-professorial research role ( Research Scientist): research_staff.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_0dd71c4fe26e56cd9d71",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Emeritus designation on the ECEE record (title \"Regents' Professor Emeritus; Emeritus Professor\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_8890585f7a845eedbe54",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_e41f8ac78fbb5efcb329",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. No title field; official bio: \"is an Emeritus Professor in the School of Electrical, Computer and Energy Engineering\". Emeritus, past.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_00e8097888cc5dc984e9",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Assistant Professor' HR='Assistant Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Assistant Professor Assistant Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_b49d3696e89d5450b88c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_146c8cb5c7d75cb79a87",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor of Practice' HR='Professor of Practice' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professor of Practice is a practice-track title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_cb9825757e0f5ed78565",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Faculty Associate' HR='Faculty Associate' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Faculty Associate is a non-professorial title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ac40245e79bc5d56beac",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='Associate Professor' HR='Associate Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professorial rank (Associate Professor Associate Professor) on the ECEE department roster with ECEE as primary department.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_7f1202ae0b96515b9034",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. Emeritus designation on the ECEE record (title \"Emeritus Professor\").",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_962d9d5b00b15c509433",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "PT='School Director and Professor' HR='Professor' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Primary ECEE; title \"School Director and Professor\" (Truet B. Thompson Professor); home rank Professor.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_ca04e7faf8f052afb2a5",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT='Professor of Practice' HR='Professor of Practice' PD='School of Electrical, Computer and Energy Engineering' AFF='Employee'. Professor of Practice is a practice-track title: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_9b48664e2ad65b388e96",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "PT=None HR=None PD='School of Electrical, Computer and Energy Engineering' AFF='Courtesy Affiliate'. University staff role with no professorial appointment: academic_professional.",
+        "source_ids": [
+          "asu-webdir-api-dept1663"
+        ]
+      },
+      {
+        "person_id": "person_8093ab7bde6d5537b881",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Not in the ECEE web-directory API (sits under a dean's-office unit). Official Fulton ECEE directory pages (semiconductors, nanoelectronics, quantum-engineering, renewable-energy) list him as \"Associate Professor, School of Electrical, Computer and Energy Engineering\". Regular, current; owner-cited brief source; no start date stated.",
+        "source_ids": [
+          "asu-ecee-semiconductors",
+          "asu-ecee-nanoelectronics",
+          "asu-ecee-quantum-engineering",
+          "asu-ecee-renewable-energy"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "asu-webdir-api-dept1663",
+        "url": "https://search.asu.edu/api/v1/webdir-profiles/faculty-staff/filtered?dept_ids=1663&size=200",
+        "observed_at": "2026-11-25T08:07:28+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "results[] matched by display_name; primary_title, working_title, home_rank_description, primary_empl_class, affiliations, titles, primary_department, deptids, bio",
+        "response_sha256": "af6326e6f932f73344a92f808d49329be5ec3d3285f8dc1318ad1b7e54c094a6"
+      },
+      {
+        "id": "asu-ecee-rank",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/rank",
+        "observed_at": "2026-11-25T08:07:29+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty by Rank page; no person entries in the static HTML (cross-check only)",
+        "response_sha256": "eb9239c2de4f995ca042d99fb1bd958b98132216d52854d3f25578462f16ee6f"
+      },
+      {
+        "id": "asu-ecee-ai-machine-learning",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/ai-machine-learning",
+        "observed_at": "2026-11-25T08:08:03+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "6d7ed1a53ebb188057889d322196684b317664007c4e55f86d356bae7e984ae8"
+      },
+      {
+        "id": "asu-ecee-electric-vehicles",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/electric-vehicles",
+        "observed_at": "2026-11-25T08:08:03+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "f7140cf5a5510cde039eeb5af7d339e093b7131e2e63f21b7d9644a82f6002df"
+      },
+      {
+        "id": "asu-ecee-electromagnetics",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/electromagnetics",
+        "observed_at": "2026-11-25T08:08:03+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "72b3711710e0094c404942804a61135d23c3064a3d2869cee44bc5bd339e9fda"
+      },
+      {
+        "id": "asu-ecee-electronic-communications",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/electronic-communications",
+        "observed_at": "2026-11-25T08:08:04+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "1bb322c904c2581a86addc0ecddae8ffe096c1af86f6a318d18c2be284eedb2c"
+      },
+      {
+        "id": "asu-ecee-electronic-design-automation",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/electronic-design-automation",
+        "observed_at": "2026-11-25T08:08:04+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "28f02482ff777880d74bb0ee0afe44db15df5774d9e022406b8510590ceb2027"
+      },
+      {
+        "id": "asu-ecee-information-theory",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/information-theory",
+        "observed_at": "2026-11-25T08:08:04+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "86c90800c9fc97ce59d888845697e37392a6147a61b03949ee14114431154f88"
+      },
+      {
+        "id": "asu-ecee-integrated-circuits",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/integrated-circuits",
+        "observed_at": "2026-11-25T08:08:04+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "55aa2d32619441d065d56cb7478d2fb974cdd0131b579b939ef41878e7dca0c7"
+      },
+      {
+        "id": "asu-ecee-media-engineering",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/media-engineering",
+        "observed_at": "2026-11-25T08:08:05+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "baa39c377f43dc8762e1a342d1f9af03d0950749fc7d5fcd88d94b96517bf8cf"
+      },
+      {
+        "id": "asu-ecee-nanoelectronics",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/nanoelectronics",
+        "observed_at": "2026-11-25T08:08:05+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "e03d8b8f720bc5530d20f9de83dc318109057680ec49cf6ff3a1cab24516af3d"
+      },
+      {
+        "id": "asu-ecee-power-grid-engineering",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/power-grid-engineering",
+        "observed_at": "2026-11-25T08:08:05+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "add4e675d08fa97b8398b1680d9b93c3c913f336c3150470f91f3deb26d6d17b"
+      },
+      {
+        "id": "asu-ecee-quantum-engineering",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/quantum-engineering",
+        "observed_at": "2026-11-25T08:08:05+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "1a81693f9bcb9d16d5351429acf7af1ffb9d0895ff6b102458a1e62be37b1bde"
+      },
+      {
+        "id": "asu-ecee-radiation-effects",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/radiation-effects",
+        "observed_at": "2026-11-25T08:08:05+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "a5b4685e9db4f01eb2a505ba8bb47c2067bb843d749fbd75cfa7de271aad4a7d"
+      },
+      {
+        "id": "asu-ecee-renewable-energy",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/renewable-energy",
+        "observed_at": "2026-11-25T08:08:06+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "5c80282118c1ae861b31d4d052207828583f3e87e1fab140cf81596d6459d427"
+      },
+      {
+        "id": "asu-ecee-signal-processing",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/signal-processing",
+        "observed_at": "2026-11-25T08:08:06+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "8e51db019a9dcb91429c56a1754b1aa39f2ca2e54178cf6062477970f87552a9"
+      },
+      {
+        "id": "asu-ecee-semiconductors",
+        "url": "https://faculty.engineering.asu.edu/directory/ecee/semiconductors",
+        "observed_at": "2026-11-25T08:07:29+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory cards: name line followed by title line",
+        "response_sha256": "f930a3b0ebb6d86b38ea87e1be7757e745b99e94aec0040fff6bf638256d109d"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Primary list asu-webdir-api-dept1663 (dept_ids=1663, size=200) returned 188 records on one page (meta.total_pages=1, total_results=188). All 137 faculty-class records are in the brief; 51 other records are University Staff, graduate or student-worker roles with no professorial title and are not counted."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Fulton ECEE rank page (asu-ecee-rank) has no person entries in static HTML. Cross-check used the 14 ECEE discipline directory pages (all cited). Every name on those pages matches a brief person after name variants (Ying-Chen Chen, Zhaoyang Fan, Joshua Hihath, Jun Zhang); no omissions. Michael Goryll is on the Fulton pages and is not in the API, as the brief states."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "No owner determinations for ASU other than the brief text (Goryll; Jeff Zhang / Jun Zhang identity). No source failures: the list and all cross-check pages were fetched with curl (exit 0) and hashed as the bytes received."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_2c4a18c6bf6e5f6ca50a",
+        "description": "Revak Tyagi: excluded (affiliate). Affiliation \"Courtesy Affiliate\", no title. Official bio describes his ASU graduate study, TA and research-associate roles; no professorial appointment is stated. Generic affiliation is insufficient."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_fe2628dcd5235dc98661",
+        "description": "Josh Hihath: included (joint_secondary). Primary appointment is the Biodesign Center (dept 1911). Official bio: \"a professor in the School of Electrical, Computer, and Energy Engineering\"; ECEE dept 1663 is a secondary listing. Joint/secondary professorial EE appointment; regular vs courtesy not stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_fae757747e955e658b00",
+        "description": "Stephan Rein: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_aa7a10e74ed15354ac2a",
+        "description": "Mahesh Banavar: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_b43e70d5658f5c23aa6c",
+        "description": "Wen-Hsi Lee: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_2deccdbed9a150cb96cf",
+        "description": "Jeff Zhang = Jun Zhang on the Fulton semiconductors/AI directory cards (same person, asurite jzhan640). Assistant Professor, ECEE primary: regular."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_064a30aeb0e05086a134",
+        "description": "Pavan Turaga: included (joint_secondary). Primary department The GAME School. Official bio: \"They hold a Joint Professor appointment between The GAME School and Electrical Engineering (ECEE)\". Joint/secondary professorial appointment; subtype not stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4d4881e257da533f83f2",
+        "description": "Venkatraman Nolastname: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_de9719244cf3547bbf79",
+        "description": "Rajasekhar Anguluri: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ab8c6550db7057978504",
+        "description": "Akhilesh Thyagaturu: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6f07837f615755368384",
+        "description": "Elisabeth Graffy: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ef4f2be8d9d95bd09ff3",
+        "description": "Ravi Gorur: excluded (departed). Affiliation \"Courtesy Affiliate\" but no professorial title on the record. Official bio says he \"joined UAH in August 2015 as Professor and Department Chair\" after ASU service 1987-2015, so he is a former ECEE member. Excluded as departed; membership outside_ece. Would change only with an official current ECEE professorial appointment."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_c4bc123ea6af5513a503",
+        "description": "Brief name carries a title suffix \"(Assoc Prof)\" that is part of the API display name; matched exactly. Title Associate Professor (bio: promoted 2022): regular."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_4d53778aa0165f289dc1",
+        "description": "Douglas Cochran: excluded (emeritus). Title \"Professor Emeritus\"; official bio: \"a Research Professor in the School of Mathematical and Statistical Sciences and an Emeritus Professor in the School of Electrical, Computer and Energy Engineering\". Emeritus (also excluded as research_only elsewhere); the Courtesy Affiliate flag does not establish a professorial courtesy appointment."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c10e4fa22321508ebdab",
+        "description": "Daniel Tylavsky: included (courtesy). Affiliation \"Courtesy Affiliate\" on the ECEE record (explicit courtesy designation). Official bio, present tense: \"is an associate professor in the School of Electrical, Computer and Energy Engineering\". Courtesy with professorial rank."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_957dd7c2100c55b39532",
+        "description": "Jun Shen: excluded (research_only). Affiliation \"Courtesy Affiliate\", no title. Official bio begins \"Research Professor, Department of Electrical Engineering\". Research professor titles are excluded as research_only."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c217ea1ca421568ebf9e",
+        "description": "Visar Berisha: included (joint_secondary). Primary department is the Fulton Schools dean's office (dept 1405); ECEE dept 1663 secondary. Official bio: \"a joint appointment in the School of Electrical Computer and Energy engineering and the College of Health Solutions\"; professorial rank Professor. Joint/secondary; the dean clause is treated as met by the official ECE joint appointment statement."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_9a17a3e3998b57ad9032",
+        "description": "Lina Karam: excluded (emeritus). Title \"Emeritus Professor\"; official bio: \"She is currently an Emerita Professor at ASU (2020-present)\". Emeritus, past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_1e19efab0b5b50bf8c0f",
+        "description": "George Pan: excluded (affiliate). Affiliation \"Courtesy Affiliate\", no current title. Official bio says only that he \"joined the faculty ... in 1995 as a professor\". No current professorial rank is stated, so courtesy is not established; generic affiliation is insufficient."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_cd76717c1f3b5123abf0",
+        "description": "Stephen Phillips: included (regular). Primary ECEE; title \"School Dir (ACD) & Professor\"; home rank Professor. Director addition does not change regular rank."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_dddd4c5f8fe950a081fc",
+        "description": "Marco Saraniti: included (regular). Primary department ECEE (dept 1663); professorial title \"Sr. Associate Dean of Faculty Affairs and Professor\" with home rank Professor. The \"Incoming Senior Associate Dean\" text is the administrative role, not an incoming professorial appointment; no start date is stated, so effective_from_json is null."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ae0778de392e59d5b814",
+        "description": "Stephen Goodnick: excluded (emeritus). Primary title \"Professor Emeritus\" (also on the Fulton semiconductors directory card). The undated biography still names the Ferry chair; the specific emeritus appointment type takes precedence over an undated biography."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_be148055e64151fea60d",
+        "description": "Zachary Holman: included (joint_secondary). Primary department Fulton Schools (dept 1405); ECEE dept 1663 secondary. Official bio: \"Vice Dean for Research and Innovation ... as well as a Professor in the School of Electrical, Computer, and Energy Engineering\". Professorial ECE appointment is stated officially, so the dean clause is met; joint/secondary."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_c4a1f4f6dd755cd3aa04",
+        "description": "Suren Jayasuriya: included (joint_secondary). Primary department The GAME School. Official bio: \"an associate professor jointly between the departments of Games, Arts, Media and Engineering ... and Electrical, Computer, and Energy Engineering (ECEE)\". Joint/secondary professorial appointment; subtype not stated."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_d3f187af1204530984f3",
+        "description": "Katerina Raleva: excluded as affiliate on the present record. Would change if an official current ECEE professorial rank were published; no such statement was found in the API record (title, home rank, bio all empty)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_e41f8ac78fbb5efcb329",
+        "description": "Yu Hui: excluded (emeritus). No title field; official bio: \"is an Emeritus Professor in the School of Electrical, Computer and Energy Engineering\". Emeritus, past."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_962d9d5b00b15c509433",
+        "description": "Bruno Sinopoli: included (regular). Primary ECEE; title \"School Director and Professor\" (Truet B. Thompson Professor); home rank Professor."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_8093ab7bde6d5537b881",
+        "description": "Michael Goryll: regular ECEE Associate Professor per official Fulton ECEE directory pages; not an omission (absent from the ECEE API). No start date stated."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_ec0f0da011eb4a87b00f3e1c8beab11d",
+    "candidate_sha256": "04c517b8bd7288d231713f652d9e64d5da70983ef96c1f1a55b0da30a131fb00",
+    "transport": "t3",
+    "run_id": "agent_ab4fec5f1e68a3c11",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T08:13:26.537973+00:00",
+    "exit_code": 0
+  }
+}

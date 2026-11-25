@@ -34,9 +34,10 @@ Each paper is credited to the institutions its authors listed **on that paper**.
 This measures output realized under an institution's banner when it happened.
 CSRankings instead credits a person's whole career to their current institution,
 which measures the current roster. Neither is more correct; we publish the
-first. A "current faculty" mode (OpenAlex `last_known_institutions`, filtered
-for one-year stints) is a possible later toggle. Current author profiles never
-supply historical credit.
+first. A "current faculty" attribution mode is deferred: it would require
+reviewed official appointments, and OpenAlex `last_known_institutions` can only
+discover candidates. Current author profiles never supply historical credit.
+Current faculty headcounts exist only as context (see Faculty context enrichment).
 
 ## Affiliation credit rules
 
@@ -108,3 +109,42 @@ Consequences:
 - **Corrections intake**: no public submission path.
 - **Biology clinical medicine** (JAMA, Lancet, NEJM families): deferred; see
   [biologyrankings-roadmap.md](biologyrankings-roadmap.md).
+
+## Faculty context enrichment
+
+Current US **ECE-affiliated faculty** counts are a separate enrichment, governed by
+[`docs/faculty-vision-roadmap.md`](docs/faculty-vision-roadmap.md) and
+[`docs/faculty-software-architecture.md`](docs/faculty-software-architecture.md).
+Official university EE/ECE rosters and appointment categories establish the
+population, including an explicit EE boundary in combined EECS departments.
+Include regular, in-residence, officially affiliated/below-the-line, courtesy and joint/secondary professorial
+EE/ECE appointments, counting each person once per school. Preserve an explicit
+courtesy designation; an unspecified regular-versus-courtesy subtype can remain
+`joint_secondary` without blocking the affiliation count. Generic lab affiliations,
+CS-only, adjunct, teaching/practice, research-only and emeritus roles remain outside
+this scope. Include officially announced incoming professors in eligible categories
+while retaining incoming status, announced start dates and a separate
+incoming subtotal. Inclusion does not imply that an appointment has started.
+CS-only publication contributors do not enter this faculty roster. Historical
+school faculty snapshots are a later phase; the first count is current and does
+not vary with publication filters. The existing institution-level score and
+publication-time attribution remain unchanged. Any future Current Faculty mode
+requires verified appointments; OpenAlex's latest publication affiliation alone
+does not establish faculty employment. Policy `us-ece-affiliated-v5` records the
+user's approval of this broader metric. Preserve earlier narrower observations
+under their pinned policies; recheck courtesy coverage and reconcile a fresh
+independent audit before exporting their replacement counts.
+
+```
+pipeline outputs (checked into repo, served statically):
+
+inst-area-year.csv     institution_id, area, year, pub_count, adjusted_count
+author-info.csv        author_id, name, institution_id, area, year, adjusted_count
+institutions.csv       institution_id, display_name, country, region, homepage, type
+areas.json             area -> { name, venues: [ {openalex_source_ids | title_patterns,
+                                                  type, notes} ] }
+overrides/             manual corrections: venue-id fixes, institution merges,
+                       author aliases, exclusions
+```
+
+## Phases

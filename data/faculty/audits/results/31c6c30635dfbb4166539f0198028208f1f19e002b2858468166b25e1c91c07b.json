@@ -1,0 +1,773 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/983c9d5ae6ebf4f68db4629216985e346220acd99e8169ddec07f17974daf7ee.json",
+    "sha256": "983c9d5ae6ebf4f68db4629216985e346220acd99e8169ddec07f17974daf7ee"
+  },
+  "brief": {
+    "file": "audits/briefs/0b546e695bf8af72105a112c40840125b25dd82d3e0c08ee1b84ca1e39c150d0.json",
+    "sha256": "0b546e695bf8af72105a112c40840125b25dd82d3e0c08ee1b84ca1e39c150d0"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_2bf225ff9f104998b3e836abf4e090ee",
+    "candidate_sha256": "b39907997a499b46d9531d48bdd49503ffb1e3d9a1718ba70927aea16810f7bd",
+    "reviewer_id": "haiku-audit-wpi",
+    "reviewed_at": "2026-11-25T02:14:51.141196+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty"
+      ],
+      "checked_list_ids": [
+        "faculty"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_8eb985003b245c6697ec",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor & Department Head'; profile title 'Professor & Department Head'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-drb"
+        ]
+      },
+      {
+        "person_id": "person_9ba1fe8637205bbc9119",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor and Associate Head'; profile title 'Professor and Associate Head'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-ludwig"
+        ]
+      },
+      {
+        "person_id": "person_4ccc5be1c3105ef48270",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Teaching Professor'; profile title 'Assistant Teaching Professor'. Teaching-track title -> excluded (teaching). No courtesy, joint, affiliate or other EE/ECE professorial designation on the profile.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-masheghan"
+        ]
+      },
+      {
+        "person_id": "person_8d41e06f56cc5c70a590",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Associate Teaching Professor'; profile title 'Associate Teaching Professor'. Teaching-track title -> excluded (teaching). No courtesy, joint, affiliate or other EE/ECE professorial designation on the profile.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-say"
+        ]
+      },
+      {
+        "person_id": "person_1054a6d9e9db54c1b1c0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor'; profile title 'Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-ted"
+        ]
+      },
+      {
+        "person_id": "person_2565edc9e2bf5f3783c1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Associate Professor'; profile title 'Associate Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-fganji"
+        ]
+      },
+      {
+        "person_id": "person_278c5df8192f5e3cb6b5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Associate Professor'; profile title 'Associate Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-uguler"
+        ]
+      },
+      {
+        "person_id": "person_1013300aa807537ba224",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor'; profile title 'Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-xhuang"
+        ]
+      },
+      {
+        "person_id": "person_e6a2f6da198d5e628329",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Affiliate Assistant Professor, Electrical & Computer Engineering'. Profile title block 'Electrical & Computer Engineering / Affiliate Assistant Professor' and 'Affiliated Department or Office: Electrical and Computer Engineering / Assistant Professor'. Explicit ECE-designated affiliate with a professorial rank -> affiliate_professor, ece, current.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-bislam"
+        ]
+      },
+      {
+        "person_id": "person_44d92f3756a2529fabe6",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor'; profile title 'Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-snmakaroff"
+        ]
+      },
+      {
+        "person_id": "person_a38986c23d105b679454",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor of Practice & Director, Systems Engineering Program'; profile title identical, with 'Affiliated Department or Office: Systems Engineering'. Professor of Practice -> academic_professional (excluded). No ECE affiliate designation with a professorial rank.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-lmallak"
+        ]
+      },
+      {
+        "person_id": "person_2b648725c24152f18a22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor'; profile title 'Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-mcneill"
+        ]
+      },
+      {
+        "person_id": "person_156cf0cc475259748cd6",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Teaching Professor-Engineering'; profile title 'Teaching Professor-Engineering'. Teaching-track title -> excluded (teaching). The profile's generic 'Affiliated Department or Office' block names Electrical and Computer Engineering, but no professorial affiliate or joint designation is stated; the rank is teaching-track. See decision finding.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-jmonat"
+        ]
+      },
+      {
+        "person_id": "person_c2f7533499b05ea69ac2",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Professor of Teaching'; profile title 'Assistant Professor of Teaching'. Teaching-track title -> excluded (teaching). No courtesy, joint, affiliate or other EE/ECE professorial designation on the profile.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-kmus"
+        ]
+      },
+      {
+        "person_id": "person_f6f5d0cef3605a1d8d67",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Teaching Professor'; profile title 'Assistant Teaching Professor'. Teaching-track title -> excluded (teaching). No courtesy, joint, affiliate or other EE/ECE professorial designation on the profile.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-gregn"
+        ]
+      },
+      {
+        "person_id": "person_f605de91f7445713b243",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor'; profile title 'Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-pschaumont"
+        ]
+      },
+      {
+        "person_id": "person_3c70876a73de5f488686",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Adjunct Teaching Professor'; profile title identical. Only ECE-related role is adjunct -> excluded (adjunct).",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-jstander"
+        ]
+      },
+      {
+        "person_id": "person_94f94c9aef355e95b9c8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Professor'; profile title 'Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-sunar"
+        ]
+      },
+      {
+        "person_id": "person_e79f5e07b5915b5b927d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Professor'; profile title 'Assistant Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-stajik"
+        ]
+      },
+      {
+        "person_id": "person_d0d6b72ee37158749701",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Associate Professor'; profile title 'Associate Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-btang1"
+        ]
+      },
+      {
+        "person_id": "person_5395f7f2f40953d58814",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Professor'; profile title 'Assistant Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-cthomas2"
+        ]
+      },
+      {
+        "person_id": "person_eb8b0a5b7e1b50ddb30e",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Teaching Professor'; profile title 'Assistant Teaching Professor'. Teaching-track title -> excluded (teaching). No courtesy, joint, affiliate or other EE/ECE professorial designation on the profile.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-euzunovic"
+        ]
+      },
+      {
+        "person_id": "person_78a345ee8feb5e779c1c",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Assistant Teaching Professor'; profile title 'Assistant Teaching Professor'. Teaching-track title -> excluded (teaching). No courtesy, joint, affiliate or other EE/ECE professorial designation on the profile.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-zweissman"
+        ]
+      },
+      {
+        "person_id": "person_dfd9ca25bc1c555bb9a4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed in the ECE Faculty section only as 'Associate Dean of Graduate Studies' (administrative title, no rank). Profile lists Electrical & Computer Engineering as his department with the same title; its 'Affiliated Department or Office' units are non-ECE. WPI's official appointment announcement states he is 'professor of Electrical Engineering and Robotics Engineering'. Per the dean rule (professorial ECE/EE appointment on an official page) he qualifies as regular, ece, current. No explicit start date for the professorship; effective_from_json null.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-alexw",
+          "src-news-wyglinski-appointment"
+        ]
+      },
+      {
+        "person_id": "person_3a3c7113616755f3a3e8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE main faculty list (Faculty section) title 'Associate Professor'; profile title 'Associate Professor'. Regular professorial rank in the department's main faculty list -> regular, ece, current. No other EE/ECE designation needed.",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-zzhang15"
+        ]
+      },
+      {
+        "person_id": "person_44f0eb0a8f805a42b7c6",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff section of ECE list, title 'Electronics Technician III'; profile title 'Electronics Technician III'. Staff/technician/administrative role with no professorial appointment -> academic_professional (excluded).",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-wlappleyard"
+        ]
+      },
+      {
+        "person_id": "person_3981db575cf85a4fba47",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff section of ECE list, title 'Learning Support Technician'; profile title 'Learning Support Technician'. Staff/technician/administrative role with no professorial appointment -> academic_professional (excluded).",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-rkuhlwein"
+        ]
+      },
+      {
+        "person_id": "person_0f86cbef83cf56d79fd9",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed under the ECE 'Staff' heading (URL path /people/faculty/orourke) with title 'Electrical Engineer Manager'; profile title identical. Non-professorial staff role -> academic_professional (excluded).",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-orourke"
+        ]
+      },
+      {
+        "person_id": "person_aa4a72aa1cfa583793bb",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff section of ECE list, title 'Department Coordinator'; profile title 'Department Coordinator'. Staff/technician/administrative role with no professorial appointment -> academic_professional (excluded).",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-kgallo"
+        ]
+      },
+      {
+        "person_id": "person_fb974f70208e528784ef",
+        "decision": "excluded",
+        "category": "academic_professional",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Staff section of ECE list, title 'Administrative Associate'; profile title 'Administrative Associate'. Staff/technician/administrative role with no professorial appointment -> academic_professional (excluded).",
+        "source_ids": [
+          "src-list-faculty",
+          "src-profile-sweeney"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "src-list-faculty",
+        "url": "https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty",
+        "observed_at": "2026-11-25T02:11:54.900456+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "ECE faculty list: h2 'Faculty' (25 article.dw_wrapper cards), h2 'Staff' (5 cards), table under h2 'Faculty Emeriti' (6 rows)",
+        "response_sha256": "c8f7b5e3c717bf538fc22db669fc842a3c391884204c2a885a457a1d886f0be1"
+      },
+      {
+        "id": "src-news-wyglinski-appointment",
+        "url": "https://www.wpi.edu/news/alex-wyglinski-appointed-associate-dean-graduate-studies",
+        "observed_at": "2026-11-25T02:13:17.974414+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "article body: 'WPI has appointed Professor Alex Wyglinski ... to associate dean of graduate studies' and 'professor of Electrical Engineering and Robotics Engineering'",
+        "response_sha256": "4c6d97dfdd2cf5fdffee827c169aec52e6303a5e0c119ff0c8fcaa09d8bc3494"
+      },
+      {
+        "id": "src-profile-drb",
+        "url": "https://www.wpi.edu/people/faculty/drb",
+        "observed_at": "2026-11-25T02:12:21.600325+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "e83db7787bdf710d73d5c2b9d47db208f91e58e26576f6e314c1cfb9747094ec"
+      },
+      {
+        "id": "src-profile-ludwig",
+        "url": "https://www.wpi.edu/people/faculty/ludwig",
+        "observed_at": "2026-11-25T02:12:21.591329+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "b3d6dd708ff7e8f50680c26d8d43e08135a2cc6beb6bc785222029300ebfe563"
+      },
+      {
+        "id": "src-profile-masheghan",
+        "url": "https://www.wpi.edu/people/faculty/masheghan",
+        "observed_at": "2026-11-25T02:12:23.850435+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "fbb6749959945882faf1be992a2e47e740e8d23ed9c7c1c38a331a0c3052d341"
+      },
+      {
+        "id": "src-profile-say",
+        "url": "https://www.wpi.edu/people/faculty/say",
+        "observed_at": "2026-11-25T02:12:24.311418+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "2171addd44f251035f2ae8d359dd8813b5976e888f1f2a6c5af2edb087e31566"
+      },
+      {
+        "id": "src-profile-ted",
+        "url": "https://www.wpi.edu/people/faculty/ted",
+        "observed_at": "2026-11-25T02:12:24.823961+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "5c9b43e4f267508cdd733657bd4734e2c8734a287d692d87ca875d5b597442e1"
+      },
+      {
+        "id": "src-profile-fganji",
+        "url": "https://www.wpi.edu/people/faculty/fganji",
+        "observed_at": "2026-11-25T02:12:25.321859+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "94e7d66b29db99e023f41fe47f8be5b18a4e894390cf7c8f96cbda7b2debd387"
+      },
+      {
+        "id": "src-profile-uguler",
+        "url": "https://www.wpi.edu/people/faculty/uguler",
+        "observed_at": "2026-11-25T02:12:25.823681+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "89719de4cadd5a78b797a99b59afb096d17227e352ea4980001557e8f1117698"
+      },
+      {
+        "id": "src-profile-xhuang",
+        "url": "https://www.wpi.edu/people/faculty/xhuang",
+        "observed_at": "2026-11-25T02:12:26.348095+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "f04d16b66e2fedaac24af1425e55abc54da0aa5a442225d715ecc059cc1e2da6"
+      },
+      {
+        "id": "src-profile-bislam",
+        "url": "https://www.wpi.edu/people/faculty/bislam",
+        "observed_at": "2026-11-25T02:12:26.881898+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "a8939b628a70167d2011e44f56dadd071c4c4ab53f5d2ef80365f27f1c375578"
+      },
+      {
+        "id": "src-profile-snmakaroff",
+        "url": "https://www.wpi.edu/people/faculty/snmakaroff",
+        "observed_at": "2026-11-25T02:12:27.409761+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "04424f28f301d5d03d081cd46d7e7dea295a59c25173754a992f4dff80081fa9"
+      },
+      {
+        "id": "src-profile-lmallak",
+        "url": "https://www.wpi.edu/people/faculty/lmallak",
+        "observed_at": "2026-11-25T02:12:27.866812+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "50d4ffbf8ebc66938c22c3be7746ded30186473c64645ceefda6a870f0f785ce"
+      },
+      {
+        "id": "src-profile-mcneill",
+        "url": "https://www.wpi.edu/people/faculty/mcneill",
+        "observed_at": "2026-11-25T02:12:28.393718+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "3948db99b73eb38c4886a0407ff4b924e20f65f55eb00d767937a7080610ab68"
+      },
+      {
+        "id": "src-profile-jmonat",
+        "url": "https://www.wpi.edu/people/faculty/jmonat",
+        "observed_at": "2026-11-25T02:12:28.948209+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "90339380909894dbd371724127ef4b25320ffc14e140ad6d1ebff6c312457ee2"
+      },
+      {
+        "id": "src-profile-kmus",
+        "url": "https://www.wpi.edu/people/faculty/kmus",
+        "observed_at": "2026-11-25T02:12:29.483063+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "9ef423a217589a51449fbb10b4e5316d061c31836b973834ea3657cd8e917a90"
+      },
+      {
+        "id": "src-profile-gregn",
+        "url": "https://www.wpi.edu/people/faculty/gregn",
+        "observed_at": "2026-11-25T02:12:30.874832+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "d6e06571f18a148588060746e9d8abd2177ce0d1aa785f5e450c5bbae2b40acb"
+      },
+      {
+        "id": "src-profile-pschaumont",
+        "url": "https://www.wpi.edu/people/faculty/pschaumont",
+        "observed_at": "2026-11-25T02:12:30.509465+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "8216664cb7c3c67bff07c819b9c4efaf912313d17d3ac4cef3de5ce58c0b7d68"
+      },
+      {
+        "id": "src-profile-jstander",
+        "url": "https://www.wpi.edu/people/faculty/jstander",
+        "observed_at": "2026-11-25T02:12:31.995184+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "2ffc1c38c764b76781914f60521c3693ce0e55f6a97a290e624b2e681104dbad"
+      },
+      {
+        "id": "src-profile-sunar",
+        "url": "https://www.wpi.edu/people/faculty/sunar",
+        "observed_at": "2026-11-25T02:12:31.444880+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "2a613505be08412a130cfd4d991cede6d3a6687c22fabfbee21b2a8fbba5e5bb"
+      },
+      {
+        "id": "src-profile-stajik",
+        "url": "https://www.wpi.edu/people/faculty/stajik",
+        "observed_at": "2026-11-25T02:12:31.995168+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "a6ff98282f0776faddd9c52446a4cf1e68e9b6713cf8254b03ae854bbf0b1410"
+      },
+      {
+        "id": "src-profile-btang1",
+        "url": "https://www.wpi.edu/people/faculty/btang1",
+        "observed_at": "2026-11-25T02:12:32.500862+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "e57b832d3923a1c7f6b27231e82c3dd6347720fb83eddffe28a1dcfb8d33dadf"
+      },
+      {
+        "id": "src-profile-cthomas2",
+        "url": "https://www.wpi.edu/people/faculty/cthomas2",
+        "observed_at": "2026-11-25T02:12:33.532998+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "f15e6175215dda8293ea0e14606ee9e65e4baa73eccb90992f2602dfe90e91ac"
+      },
+      {
+        "id": "src-profile-euzunovic",
+        "url": "https://www.wpi.edu/people/faculty/euzunovic",
+        "observed_at": "2026-11-25T02:12:33.565781+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "d6a540e0cdc4fe5edf74201fd86b3a788cee8dbf1844fae5aeea9e8d9b9b3acb"
+      },
+      {
+        "id": "src-profile-zweissman",
+        "url": "https://www.wpi.edu/people/faculty/zweissman",
+        "observed_at": "2026-11-25T02:12:34.138844+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "e1f6bf85623d56f7de95dfddc50988a08c954978d870861b7824b75316b49df2"
+      },
+      {
+        "id": "src-profile-alexw",
+        "url": "https://www.wpi.edu/people/faculty/alexw",
+        "observed_at": "2026-11-25T02:12:34.507576+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "97b2c4130826a6aeba1b5f2188e05f0aef8790d4e68b61d691af5013fbf21fda"
+      },
+      {
+        "id": "src-profile-zzhang15",
+        "url": "https://www.wpi.edu/people/faculty/zzhang15",
+        "observed_at": "2026-11-25T02:12:35.332427+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "f2a5763c088b430cafa2a48ddc3e7f6b29952cc5d3606a01f18e76a9ceda3845"
+      },
+      {
+        "id": "src-profile-wlappleyard",
+        "url": "https://www.wpi.edu/people/staff/wlappleyard",
+        "observed_at": "2026-11-25T02:12:35.511688+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "d0a228a1b3bf9a8ab6b731ef4cce9fdbb799f2e32b7a54f4fbcb24bfbd39ca4d"
+      },
+      {
+        "id": "src-profile-rkuhlwein",
+        "url": "https://www.wpi.edu/people/staff/rkuhlwein",
+        "observed_at": "2026-11-25T02:12:36.694949+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "1e3383f521969b17cd6e4417dabe8b39d04a7d4b8a42f992295362c9f8f9f736"
+      },
+      {
+        "id": "src-profile-orourke",
+        "url": "https://www.wpi.edu/people/faculty/orourke",
+        "observed_at": "2026-11-25T02:12:37.148936+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "4c7dcffee0a801db26dc0b28d92b1bc7e20389d00e9e4cbd126e5795dff3ffbf"
+      },
+      {
+        "id": "src-profile-kgallo",
+        "url": "https://www.wpi.edu/people/staff/kgallo",
+        "observed_at": "2026-11-25T02:12:37.607745+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "31a53aa55fec13a8588faa31ff51b462ef9b7d71427e070b50419e68e017d121"
+      },
+      {
+        "id": "src-profile-sweeney",
+        "url": "https://www.wpi.edu/people/staff/sweeney",
+        "observed_at": "2026-11-25T02:12:38.796268+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "profile title block (name, department, title) and 'Affiliated Department or Office' block",
+        "response_sha256": "a9d829f07f7614ad8659500c2adedfce440f55c9102f26728fe9daffc2cd0b2f"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "List page https://www.wpi.edu/academics/departments/electrical-computer-engineering/faculty downloaded (HTTP 200, sha256 in sources). Enumerated 30 cards: 25 under 'Faculty' and 5 under 'Staff' (O'Rourke's card sits under Staff with a /people/faculty/ URL). All 30 names match brief.people (apostrophe in O'Rourke is HTML-escaped on the page only). No omissions and no source failures. All 30 official profile pages were downloaded (HTTP 200)."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Faculty Emeriti table on the same list page (outside the brief, per the task): six people with title 'Professor Emeritus': Kevin Clements, James Duckworth, John Orr, Peder Pederson, David Cyganski, Fred J. Looft. They would be excluded as emeritus (past). No records were created for them and they are not treated as omissions."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_dfd9ca25bc1c555bb9a4",
+        "description": "Wyglinski: the list title is only 'Associate Dean of Graduate Studies' (an administrative title), so the dean rule applies. The official WPI appointment announcement (linked from his profile) states 'Professor Alex Wyglinski ... professor of Electrical Engineering and Robotics Engineering', which supplies an EE professorial appointment. Decided included/regular/ece/current. This would change to excluded (academic_professional) if that official statement were absent or contradicted; the press mentions of him in Scientific American and Forbes were not relied on."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_e6a2f6da198d5e628329",
+        "description": "Islam: title 'Affiliate Assistant Professor' on the ECE department faculty list, and her profile's 'Affiliated Department or Office' block reads 'Electrical and Computer Engineering / Assistant Professor'. Included as affiliate_professor (explicit ECE affiliate with professorial rank), current. Would move to excluded only if the department's affiliate designation were withdrawn."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_a38986c23d105b679454",
+        "description": "Mallak: 'Professor of Practice & Director, Systems Engineering Program' is a practice-track title, excluded as academic_professional under project convention even though he appears on the ECE list. The profile's affiliated unit is Systems Engineering, not a professorial ECE affiliation. Would change only if the department officially designated him as an affiliate or joint professor with a non-practice professorial rank."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_156cf0cc475259748cd6",
+        "description": "Monat: title 'Teaching Professor-Engineering' (teaching-track, excluded). His profile's generic 'Affiliated Department or Office' block lists 'Electrical and Computer Engineering' alongside Systems Engineering and The Business School. Because no affiliate or joint designation with a professorial rank is stated, he is excluded as teaching. Would change only with an explicit official ECE affiliate or joint professorial designation."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_3c70876a73de5f488686",
+        "description": "Stander: 'Adjunct Teaching Professor' is the only ECE-related role shown on the list and profile; excluded as adjunct per the adjunct rule."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_0f86cbef83cf56d79fd9",
+        "description": "O'Rourke: listed under the 'Staff' heading with title 'Electrical Engineer Manager' despite a /people/faculty/ URL. Non-professorial staff role; excluded as academic_professional. Would change only with an official EE/ECE professorial appointment, which no source states."
+      },
+      {
+        "kind": "decision",
+        "person_id": "",
+        "description": "Teaching-track titles excluded as teaching: Mostafa Asheghan (Assistant Teaching Professor), Suat Ay (Associate Teaching Professor), Jamie Monat (Teaching Professor-Engineering), Koksal Mus (Assistant Professor of Teaching), Gregory Noetscher (Assistant Teaching Professor), Edvina Uzunovic (Assistant Teaching Professor), Zane Weissman (Assistant Teaching Professor). No courtesy, joint or affiliate designation appears on their profiles, apart from the Monat note above."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Profile scan of all 30 pages for courtesy, joint, secondary, affiliate, adjunct, visiting, emeritus and incoming terms: no courtesy or joint/secondary designation found for any listed person. The only affiliate designation with a professorial rank is Islam's. No announced incoming ECE professors were found on the list or profiles, so there are no incoming records."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Scope check: the brief's 30 required_person_ids match the 30 people enumerated on the list page and the 30 brief.people entries. Staff profiles were fetched from /people/staff/ paths; O'Rourke was fetched from /people/faculty/orourke, as the brief lists it."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_2bf225ff9f104998b3e836abf4e090ee",
+    "candidate_sha256": "b39907997a499b46d9531d48bdd49503ffb1e3d9a1718ba70927aea16810f7bd",
+    "transport": "t3",
+    "run_id": "agent_ab0d0edfd9a2356f4",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T02:15:32.307962+00:00",
+    "exit_code": 0
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "schema_version": 1,
+  "job_id": "audit_5483f17285e14adfbdef489125ca0be8",
+  "candidate_sha256": "da7772f6b7291e16219d4ed66a70e3479085f10afc1914299e156cfde20d2837",
+  "created_at": "2026-11-24T12:33:50.298781+00:00",
+  "records": [
+    {
+      "id": "shared_davis_directory",
+      "url": "https://ece.ucdavis.edu/directory",
+      "observed_at": "2026-11-24T04:49:23.218Z",
+      "response_sha256": null,
+      "request": {
+        "method": "GET",
+        "form": {}
+      },
+      "raw_file": ".tmp/audits/davis-dir.html",
+      "locator": "Official browser DOM directory capture of https://ece.ucdavis.edu/directory; inspect .tmp/audits/davis-dir.html bytes.",
+      "capture_format": "browser_dom",
+      "capture_sha256": "864291cc878e6b6ee5c717336125a12d90fa0590ebff6d606e12660eae3047d0",
+      "capture_tool": "T3 preview_evaluate document.documentElement.outerHTML"
+    }
+  ]
+}

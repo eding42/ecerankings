@@ -1,0 +1,2658 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/3374f807aaa9b117a2f9737885f1cbb706ce8c49ae5540741c06ec396318c519.json",
+    "sha256": "3374f807aaa9b117a2f9737885f1cbb706ce8c49ae5540741c06ec396318c519"
+  },
+  "brief": {
+    "file": "audits/briefs/9901bbb87eb3f968dccaa81020e8fcfa07038dc5e3396acad734ae55c81e781f.json",
+    "sha256": "9901bbb87eb3f968dccaa81020e8fcfa07038dc5e3396acad734ae55c81e781f"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_a5b119b654614973a8343da7dfd522ca",
+    "candidate_sha256": "3ebfb957c05595136f20c01d3b56128e8078e67191de0725e6b5d06b78f41754",
+    "reviewer_id": "claude-sonnet-5-5-v5-verify",
+    "reviewed_at": "2026-11-23T10:01:49.396315+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://calit2.net/people/detail.php?id=509",
+        "https://datascience.ucsd.edu/people/arya-mazumdar",
+        "https://datascience.ucsd.edu/people/gal-mishne",
+        "https://ece.ucsd.edu/people/faculty/affiliated",
+        "https://ece.ucsd.edu/people/faculty/emeritus",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=176",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=184",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=185",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=189",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=209",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=211",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=23",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=233",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=237",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=238",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=239",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=24",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=240",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=25",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=252",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=257",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=260",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=27",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=276",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=28",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=30",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=303",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=305",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=314",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=319",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=323",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=33",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=34",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=343",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=344",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=346",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=35",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=351",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=359",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=36",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=370",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=38",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=387",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=39",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=392",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=393",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=394",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=401",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=402",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=407",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=409",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=41",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=411",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=42",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=433",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=44",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=440",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=452",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=46",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=47",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=471",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=484",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=490",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=501",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=54",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=55",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=56",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=57",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=58",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=6",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=61",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=68",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=75",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=79",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=80",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=81",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=83",
+        "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=91",
+        "https://jacobsschool.ucsd.edu/faculty/nae-members",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=282",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=390",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=487",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=524",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=525",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=526",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=528",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=529",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=530",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=531",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=532",
+        "https://jacobsschool.ucsd.edu/faculty/profile?id=94",
+        "https://jacobsschool.ucsd.edu/node/3248",
+        "https://jacobsschool.ucsd.edu/node/3570",
+        "https://jacobsschool.ucsd.edu/people/profile/abdoulaye-ndao",
+        "https://jacobsschool.ucsd.edu/people/profile/jun-kun-wang",
+        "https://jacobsschool.ucsd.edu/people/profile/lisa-poulikakos",
+        "https://jacobsschool.ucsd.edu/people/profile/miroslav-krstic",
+        "https://jacobsschool.ucsd.edu/people/profile/nambirajan-seshadri",
+        "https://jacobsschool.ucsd.edu/people/profile/noah-rubin",
+        "https://jacobsschool.ucsd.edu/people/profile/nuria-gonzalez-prelcic",
+        "https://jacobsschool.ucsd.edu/people/profile/parinaz-naghizadeh",
+        "https://jacobsschool.ucsd.edu/people/profile/rahul-parhi",
+        "https://jacobsschool.ucsd.edu/people/profile/rajeev-sahay",
+        "https://jacobsschool.ucsd.edu/people/profile/robert-w-heath-jr",
+        "https://laro.lanl.gov/esploro/profile/tri_tran/overview",
+        "https://linkedin.com/in/sanjay-jha-a91240b9",
+        "https://poveda.ucsd.edu",
+        "https://providers.ucsd.edu/details/22203/pain-management-neurology",
+        "https://sites.google.com/ucsd.edu/nasibeh-rahimi",
+        "https://www-chem.ucsd.edu/faculty/profiles/xiong_wei.html"
+      ],
+      "checked_list_ids": [
+        "core",
+        "affiliated",
+        "emeritus"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_393baa200ce1551ba4b2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_6a08a32033f8b5af1cee6139"
+        ]
+      },
+      {
+        "person_id": "person_690403d110ba533fa945",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Calit2.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_2240e5fbe6df328a213222fc"
+        ]
+      },
+      {
+        "person_id": "person_dfc64ecdf5f95981a025",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Core ECE directory and profile title Associate Teaching Professor; teaching-track appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_1c2b5b8b6525796bddef33e0"
+        ]
+      },
+      {
+        "person_id": "person_8145dad203d75344bc88",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_ed28728b1d83d97f745e9675"
+        ]
+      },
+      {
+        "person_id": "person_638b73aeaac05485a01f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Chair, Department of ECE Distinguished Professor\"; profile: Professor and Chair, ECE / Jack Keil Wolf Endowed Chair in Electrical Engineering.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_934665bc91c3dfa258938bf3"
+        ]
+      },
+      {
+        "person_id": "person_9ac7449aa2615039b6b8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Translational neurotechnology built on semiconductor rigor..",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_52e89fdea6b1cccebb93a018"
+        ]
+      },
+      {
+        "person_id": "person_f17327b9a96551d7b7c4",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE / Director, Institute for the Global Entrepreneur (IGE).",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_7ab6ddbf174334a4a0619121"
+        ]
+      },
+      {
+        "person_id": "person_2375062033815bf9a6df",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE / Faculty-Affiliate, Calit2.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_d62cc1b2a3501e6543e0b5ab"
+        ]
+      },
+      {
+        "person_id": "person_dd341a107b895ff59e78",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Faculty-Affiliate, Calit2.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_5961d27ae4eae330e47b14ef"
+        ]
+      },
+      {
+        "person_id": "person_20fb979bd47251b4894f",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE / Faculty, NENG.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_cb860c68197715a3c8af4915"
+        ]
+      },
+      {
+        "person_id": "person_f68b4001ebc45393ae25",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE / Faculty-Affiliate, Calit2.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_9d5d9d10147999acd15f77f0"
+        ]
+      },
+      {
+        "person_id": "person_a01e29a490045ad4b7d7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_46c80a9a7a492ef168e9d35d"
+        ]
+      },
+      {
+        "person_id": "person_dbe18c7ff55259f0a203",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Faculty-Affiliate, BENG.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_fb5b09cdf7cc1cc30f277079"
+        ]
+      },
+      {
+        "person_id": "person_80055782250657e4b797",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_7770c4bda6bbc5a724804df1"
+        ]
+      },
+      {
+        "person_id": "person_61efe453553c58c9993d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_bc8b2a1b16a2a529e2c34c98"
+        ]
+      },
+      {
+        "person_id": "person_7f2a138c9ead5d89b936",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Faculty, Calit2.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_580e456a216b62e850294dd5"
+        ]
+      },
+      {
+        "person_id": "person_a5621d966d5452379bf0",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Distinguished Professor, CSE / Distinguished Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_f536f30d2b965683f6599e1d"
+        ]
+      },
+      {
+        "person_id": "person_f409d5a5c4b0534a8781",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_7baee4af69f67c3579372fda"
+        ]
+      },
+      {
+        "person_id": "person_b14b1b01df405906b3a1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Chancellor, UC San Diego Distinguished Professor\"; the ECE catalog lists him under Professors (Chancellor). Administrative role (dean/chancellor/provost) does not change the core professorial listing.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_84d3a906de13fed4a4c03668",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_95cb85a2b0eb5b56a877",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Koushanfar's research contributions include.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_c4b1533d5d9cba5e8da75b83"
+        ]
+      },
+      {
+        "person_id": "person_80fb04d84f8957779572",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_bec445d8015f503534483694"
+        ]
+      },
+      {
+        "person_id": "person_27d8d454820a53fc8a22",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_fb32ea1e7727fc7edd4b113f"
+        ]
+      },
+      {
+        "person_id": "person_b9ed02f45fc15a12b265",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor Associate Dean for Research\"; profile: Professor, ECE / Associate Dean for Research.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_2edf41f26012e8fe418c354f"
+        ]
+      },
+      {
+        "person_id": "person_1cde10e8fbd2520e8561",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_a3606ce731337585beb333ec"
+        ]
+      },
+      {
+        "person_id": "person_21d0e88c8ca051ce817d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_c0b84ab55426517ab833f27d"
+        ]
+      },
+      {
+        "person_id": "person_2aff676e19b25cafac96",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Director, CMRR.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_badf6129eb4ef253512e495b"
+        ]
+      },
+      {
+        "person_id": "person_d4f71365d0f3582c9af8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory as \"Professor\" (ymakris@ucsd.edu) and in the ECE catalog without an emeritus note. His linked Jacobs bio page is the generic faculty index, so the decision rests on the core directory row; he shares that URL with Stojan Radic, who is on the emeritus list.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_d4b60f477537f38805738943",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_b532e3c3304f5b7b883e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_f7ab077b22a139fe88da2afd"
+        ]
+      },
+      {
+        "person_id": "person_9d3fe2e89a255dc6834d",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_38b17a1bc351310b156e30a8"
+        ]
+      },
+      {
+        "person_id": "person_eabbb9318a205bd7b0c1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_d943a4d1e0708a3ebf2396f3"
+        ]
+      },
+      {
+        "person_id": "person_955d89a43a7956c6b4e8",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Photonics, nonlinear optics, quantum photonics, nanotechnology. / Mookherjea and the Micro/Nano-Photonics group (.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_c965ca2d8bb32f4cda40dd41"
+        ]
+      },
+      {
+        "person_id": "person_018c7bbd45a05698b6a4",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Core ECE directory and profile title Associate Teaching Professor; teaching-track appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_a8c0dd972b81cdc012caa729"
+        ]
+      },
+      {
+        "person_id": "person_723f15da9db55087bc3b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_b507766654282b0ca42c59dc"
+        ]
+      },
+      {
+        "person_id": "person_587c69a0529c5a06a226",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Assistant Professor, Electrical and Computer Engineering / NDAO Lab: N.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_e4576f4e5da8be0f39ce9c90"
+        ]
+      },
+      {
+        "person_id": "person_ada1092f29eb5f949d80",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Printed electronics, flexible sensing systems.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_6c203aff8018250d057e0295"
+        ]
+      },
+      {
+        "person_id": "person_beb5b002790d538dba69",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_67d9c916b3d99b828ca2566c"
+        ]
+      },
+      {
+        "person_id": "person_7b64f6819460506bba92",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_8b7efda13e063645e3cc6159"
+        ]
+      },
+      {
+        "person_id": "person_4748e4d76c2e53338343",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE / Faculty, CSE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_192b0031119c14e3e8710cbb"
+        ]
+      },
+      {
+        "person_id": "person_c57249cf69705242aa1b",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_285ce86aa881668dd9b11567"
+        ]
+      },
+      {
+        "person_id": "person_de37823d0b3f5f268e62",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_16dbe04d452f7e149c05a126"
+        ]
+      },
+      {
+        "person_id": "person_32baf16b5c5f5ad1bc1e",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Dean, Jacobs School of Engineering Distinguished Professor\"; profile: Dean, Jacobs School of Engineering / Special Adviser to the Chancellor for Campus Strategic Initiatives / Professor, MAE. Administrative role (dean/chancellor/provost) does not change the core professorial listing.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_f6ba6ba3766e383736365259"
+        ]
+      },
+      {
+        "person_id": "person_a4a2fda9e31053b5b2da",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\". His linked lab site states he is an Associate Professor in the ECE Department.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_de35b38d212164147bad979f"
+        ]
+      },
+      {
+        "person_id": "person_32eb95c8c97052269140",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Director, Calit2 / Faculty, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_90b3c1c26fa8a69aa87abfb8"
+        ]
+      },
+      {
+        "person_id": "person_cf227c369ddb573fa7bf",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_be6c74fefff3b0559ffc16d4"
+        ]
+      },
+      {
+        "person_id": "person_956771a2bee65bfcac39",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, Electrical and Computer Engineering / Applied optics and photonics, diffractive optics, and nanophotonics.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_d802aab5da98b0436c6e51f2"
+        ]
+      },
+      {
+        "person_id": "person_b82136c3356f50b6a704",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Core ECE directory and profile title Assistant Teaching Professor; teaching-track appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_2cc4db4519639a69ed757b13"
+        ]
+      },
+      {
+        "person_id": "person_1a039e80791a5c61b765",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Core ECE directory, Jacobs profile and ECE catalog (Teaching Professor) agree; teaching-track appointments are excluded.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_aaafedb81889ef37ae6c1a8d",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_aac55a41c593536c881c",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_7a8eed8e2fec98ab42a81072"
+        ]
+      },
+      {
+        "person_id": "person_9dec5ccc65965bbb82c2",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Distinguished Professor\"; profile: Professor, CMRR / Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_438ea8f4074144bb736d2ec0"
+        ]
+      },
+      {
+        "person_id": "person_20f3ea340e855cb39e16",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_c19d6fd44b49dbc3e473db8d"
+        ]
+      },
+      {
+        "person_id": "person_75840f2b158f5df9b149",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, ECE / Computer architecture, Computational biology.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_1ee49a7ef552f3cb92739f21"
+        ]
+      },
+      {
+        "person_id": "person_4114c80e17fb5fd6a322",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_0866df421d8aadca515e8faa"
+        ]
+      },
+      {
+        "person_id": "person_7a9b93f4194d5a248f67",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE / Calit2.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_0874fc4693306b0c6e0e4f86"
+        ]
+      },
+      {
+        "person_id": "person_24b86e83d466593f81d3",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, Electrical and Computer Engineering.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_4e6aba0509a67f2f8e143f13"
+        ]
+      },
+      {
+        "person_id": "person_65cb0b7e2a2a5b588a70",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_1d40b7cb182c069f6530e5be"
+        ]
+      },
+      {
+        "person_id": "person_b862e3450e825cf4b1a7",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Associate Professor\"; profile: Associate Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_86d0375efc46eb746294507f"
+        ]
+      },
+      {
+        "person_id": "person_684fe64c768850018654",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_69fd4c9d3c5d0ba05200eeca"
+        ]
+      },
+      {
+        "person_id": "person_5fe14559ae7f53f69423",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Provost, Revelle College Distinguished Professor\"; profile: Professor, ECE. Administrative role (dean/chancellor/provost) does not change the core professorial listing.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_12f0fbae454eae93f49408a5"
+        ]
+      },
+      {
+        "person_id": "person_6bb662aa4bde56a08a54",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_4782850d682a6378d0e99786"
+        ]
+      },
+      {
+        "person_id": "person_7d356a6c77975286a0aa",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Professor Director, Center for Wireless Communications\"; profile: Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_bd5027ee6ba2d196971f3fec"
+        ]
+      },
+      {
+        "person_id": "person_4e9b06d39f445f099b16",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE core Faculty directory with title \"Assistant Professor\"; profile: Assistant Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_0150d728b97e3d3672e4d95c",
+          "shared_frozen_09bfbbe7dcf2f47b5735ea2e"
+        ]
+      },
+      {
+        "person_id": "person_1c9539142a9754e8a079",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Mechanical and Aerospace Engineering); profile/catalog title: Professor, MAE / ECE Affiliate Professor. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_ee94aff86ca842dc6e292b7a"
+        ]
+      },
+      {
+        "person_id": "person_13f9b70ed33b55df9938",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Bioengineering); profile/catalog title: Distinguished Professor, BENG / Faculty-Affiliate, ECE. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_94186ff49cf753e28077d2e2"
+        ]
+      },
+      {
+        "person_id": "person_09c7569e9c6c5a0e91ca",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Chemical and Nano Engineering); profile/catalog title: Professor, Chemical and Nano Engineering. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_f5a9c090089937db582469e4"
+        ]
+      },
+      {
+        "person_id": "person_1852313350375de691ba",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Chemical and Nano Engineering); profile/catalog title: Professor, Chemical and Nano Engineering. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_33f2adb93bbf6c9f1793ea27"
+        ]
+      },
+      {
+        "person_id": "person_e0410d04d14e5db09591",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Mechanical and Aerospace Engineering); profile/catalog title: Associate Professor, MAE / Faculty-Affiliate, CSE / Faculty-Affiliate, ECE. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_a787044c96699e170236b58a"
+        ]
+      },
+      {
+        "person_id": "person_56ea49cb1cf25c869bb1",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list gives only generic \"Affiliate Faculty\" with no UCSD professorial title; the linked Jacobs page is a generic NAE list and does not establish a professorship. Generic affiliate remains excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_ecf078a3ddc0d6fbc5335cc9"
+        ]
+      },
+      {
+        "person_id": "person_abda72f5753450ddb9eb",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list gives \"Affiliate Faculty from GlobalFoundries\" (industry); no UCSD professorial appointment is shown and the linked LinkedIn capture is a sign-in wall. Generic affiliate, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_b2c2eafad11e8def0f142cfd"
+        ]
+      },
+      {
+        "person_id": "person_11f905fad93b5700b15e",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Structural Engineering); profile/catalog title: Professor, SE / Faculty-Affiliate, ECE / Faculty-Affiliate, MAE. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_a449ecaaeaf1713a32f72ae1"
+        ]
+      },
+      {
+        "person_id": "person_b0da2bfbe02c5a7b95bc",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Mechanical and Aerospace Engineering); profile/catalog title: Distinguished Professor, Mechanical and Aerospace Engineering / Senior Associate Vice Chancellor for Research. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_ce03bd701c0efbc6b38b98d5"
+        ]
+      },
+      {
+        "person_id": "person_a6287bc91bca5fec9d07",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list shows Affiliate Faculty from the Department of Anesthesiology and the ECE catalog lists Imanuel Lerman, MD, Associate Clinical Professor, Anesthesiology. A professor officially designated as ECE affiliate faculty qualifies as affiliate_professor under the policy.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_7bab74f762f702dff82847a4",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_1925f72bd79753298cf9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Mechanical and Aerospace Engineering); profile/catalog title: Associate Professor, Mechanical and Aerospace Engineering. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_2d40fc55b1d7ca21d65ae50d"
+        ]
+      },
+      {
+        "person_id": "person_3335bab6178b5048bcb9",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Mechanical and Aerospace Engineering); profile/catalog title: Professor, MAE / Faculty-Affiliate, ECE. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_2e11607e9c7dc0d59ea260e3"
+        ]
+      },
+      {
+        "person_id": "person_5243c59559cd56869dbc",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Halıcıoğlu Data Science Institute); profile/catalog title: Professor, TILOS; Deputy Director and HDSI Endowed Chair (HDSI page). Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_9053d0e96fc597caae2cd4f0",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_7337ec829f475fa8a08b",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Halıcıoğlu Data Science Institute); profile/catalog title: Associate Professor (HDSI page). Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_825eca67f3720be7b70e4ad1",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_6ba206c42f7251238086",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list shows Affiliate Faculty from the Design Lab; his Jacobs profile says professor emeritus of psychology/cognitive science and ECE and the catalog lists Emeritus, Cognitive Science. Emeritus, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_45a3b85a53d9afe76fdf3d18",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_6e3d3ee402525e4b8a51",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list shows Affiliate Faculty from Calit2; the Jacobs profile says \"Faculty-Affiliate, ECE\" and that he joined as an Adjunct Professor in ECE (spring 2006), and he is a Qualcomm executive. Adjunct, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_25cabb4e6cc1441d6e9aebed",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_ec2f7bbfc1d356d9a1d3",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list shows Affiliate Faculty from Calit2; the Jacobs profile says \"Faculty-Affiliate, ECE\" and that he retains the title Professor Emeritus at Northeastern; the catalog lists him as Professor, Northeastern University. No UCSD professorial rank is established, so he is a generic affiliate, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_ba5aed42201d0ebc989c99cc",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_67934f2d89b457eb90d7",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list says \"Research Scientist from Qualcomm Institute\"; her personal site says she is a Research Scientist affiliated with ECE. Research staff, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_bbd6d5fbb4eed7405533680a"
+        ]
+      },
+      {
+        "person_id": "person_43bc562d628458f8a537",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Computer and Science Engineering); profile/catalog title: Professor, CSE / Director, Center for Visual Computing / Faculty-Affiliate, ECE. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_59b5f3ea526b15eb13dc7057",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_a6bf33acdab357f99ad2",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jacobs profile titles him Professor of Practice, Electrical and Computer Engineering and the catalog lists him under Professors of Practice; non-ladder practice professorships are excluded as teaching.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_3d9ceb94d22eb20a064edcfa",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_381a4ddaa6fe59978db1",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Bioengineering); profile/catalog title: Associate Professor, BENG / Faculty-Affiliate, ECE. Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_186d338bbbeff3a797a201ff"
+        ]
+      },
+      {
+        "person_id": "person_8b65f2319ffc584a8440",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list gives \"Affiliate Faculty from Los Alamos National Laboratory\" (national lab); the pinned LANL profile capture is an empty portal shell and shows no professorship. Generic affiliate, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_375447477d3d4ad95762c283"
+        ]
+      },
+      {
+        "person_id": "person_c2e0c39e38125f36bae6",
+        "decision": "excluded",
+        "category": "affiliate",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "ECE affiliated list gives \"Affiliate Faculty from Sony Interactive Entertainment\" (industry) with no professorial title. Generic affiliate, excluded.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748"
+        ]
+      },
+      {
+        "person_id": "person_9aced5313b405e4db2f8",
+        "decision": "included",
+        "category": "affiliate_professor",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Affiliated Faculty directory (Affiliate Faculty from the Department of Chemistry and BioChemistry); profile/catalog title: Professor, Chemistry and Biochemistry (UCSD Profiles). Professorial rank outside ECE with an official ECE affiliate designation qualifies as affiliate_professor.",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_3b0c751b27bbbc24f7b2b963",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_3f00e95361cb51669cdc",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Jacobs profile titles him \"Adjunct Professor, NENG; Faculty-Affiliate, BENG; Faculty-Affiliate, ECE\" and the ECE affiliated list shows Affiliate Faculty from Chemical and Nano Engineering. The official profile gives an adjunct title, so he is excluded as adjunct (the older catalog entry says Assistant Professor, NanoEngineering, Bioengineering).",
+        "source_ids": [
+          "shared_frozen_89e170e429692d8378a91748",
+          "shared_frozen_5c44efa6a8e26aeadf9979d0",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_c11c30e5a8db5a11b18e",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_d6995fd278c4c700080058bd"
+        ]
+      },
+      {
+        "person_id": "person_2b4a60bdf688520681a8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_356f86357005ec7761bc56ee"
+        ]
+      },
+      {
+        "person_id": "person_a88ce4dd8cb45f65ad58",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emertius, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_387ae10a4a26fd5b8e567152"
+        ]
+      },
+      {
+        "person_id": "person_edca5445711c541296b8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_ae73e45d8328610ab6a683e5"
+        ]
+      },
+      {
+        "person_id": "person_d118f4bebfbf54a88c48",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_c0d7418e738c37723d6f86ea"
+        ]
+      },
+      {
+        "person_id": "person_6c5c115b4f4c55b4b67f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Associate Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_876c881fb8ece56e35f146b2"
+        ]
+      },
+      {
+        "person_id": "person_aef2761d6c3650ab83c8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Distinguished Professor\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_0823e11adb90ca42fee4651d"
+        ]
+      },
+      {
+        "person_id": "person_485296a2f33a551ea4d4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_61dd55b87d85b9ea01ba9443"
+        ]
+      },
+      {
+        "person_id": "person_9cd5df948bc25c908b92",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_79b4f9a0ec0d23da0a48341e"
+        ]
+      },
+      {
+        "person_id": "person_64f548db88e95557bc86",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_0708617d8f1267e009cb6918"
+        ]
+      },
+      {
+        "person_id": "person_b91be16b18b556e9bac4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_6e4ae528fc50e115f3f9456c"
+        ]
+      },
+      {
+        "person_id": "person_21bfda02554d51f9b204",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE / Electronic materials Science and Technology.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_fce3547b4673b09c7b63c7aa"
+        ]
+      },
+      {
+        "person_id": "person_58b7baad73145385a14b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE / Applied Optics and Optical Engineering.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_ec7b55f55b373b957b801e4b"
+        ]
+      },
+      {
+        "person_id": "person_497e1575fdb25a12b880",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"). Profile capture is the emeritus list itself.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b"
+        ]
+      },
+      {
+        "person_id": "person_762bfe94b58c5e92834d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_2188c5e9ccded3ea6cb4d36d"
+        ]
+      },
+      {
+        "person_id": "person_e527cb8475d05929bf9c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE / Solar system physics, cometary physics, physics of dusty plasmas.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_2dba499e7d0de0bf2d788e18"
+        ]
+      },
+      {
+        "person_id": "person_0bddb4a9f5075b279056",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Distinguished Professor\"); Jacobs profile: Emeritus Professor, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_06f4f2d5496630ae1cca69c0"
+        ]
+      },
+      {
+        "person_id": "person_e5f2cbe6df3a5bc89f4f",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_067563ef3e7c14445920c62e"
+        ]
+      },
+      {
+        "person_id": "person_034af05536235a618c3d",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_4bc3333461a98ab3d323bddd"
+        ]
+      },
+      {
+        "person_id": "person_8c5c4aaac21f5a63ab8c",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_2d51a4cf725cccefb1f81aa7"
+        ]
+      },
+      {
+        "person_id": "person_33c52f7f095f5f039af7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Distinguished Professor\").",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_468f2c80f7c5c967c0c24777"
+        ]
+      },
+      {
+        "person_id": "person_227f8da62f3655f59e01",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE / Radio astronomy, electromagnetic waves, and space science..",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_5479745f3a0ce2e9a604a17a"
+        ]
+      },
+      {
+        "person_id": "person_0bb43b0d0aa75362a2d9",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE / Update your profile / Email:.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_c38b3b74daf5befa4c690c0c"
+        ]
+      },
+      {
+        "person_id": "person_3bbeaa55dc3d52978d02",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_9f636f4680f96ae02113e219"
+        ]
+      },
+      {
+        "person_id": "person_52aa7d48c3425addabae",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_8109243d7d02c92c3423059e"
+        ]
+      },
+      {
+        "person_id": "person_006ab339691757da99c3",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Distinguished Professor\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_9ebc55562694a6c9627f1e4d"
+        ]
+      },
+      {
+        "person_id": "person_cd73dff130dd5ce5bbae",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown \"Distinguished Professor\"); the ECE catalog marks Mohan Trivedi Emeritus. The undated Jacobs profile still reads \"Professor, ECE\", but the specific emeritus designation takes precedence. Emeritus, excluded.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_4d37560ee464d75c24433690",
+          "shared_frozen_7ad955c78d9b64f6a181ae6a"
+        ]
+      },
+      {
+        "person_id": "person_ccf6d969498e58d6ae00",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"); Jacobs profile: Professor Emeritus, ECE.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_1f31124c9cbca7603ee08a49"
+        ]
+      },
+      {
+        "person_id": "person_245460c1e7e75452925a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Professor Emeritus\"). Profile capture is the emeritus list itself.",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b"
+        ]
+      },
+      {
+        "person_id": "person_70bdb1f78d1f5673baa7",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed on the official ECE Emeritus Faculty directory (title shown: \"Associate Professor Emeritus\").",
+        "source_ids": [
+          "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+          "shared_frozen_6cc3249a073f64c1257f59a9"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "shared_frozen_0150d728b97e3d3672e4d95c",
+        "url": "https://ece.ucsd.edu/people/faculty",
+        "observed_at": "2026-11-23T04:19:36.753489+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5918681545e391731da28a419a5c985335a6db6289da94e1cba531a98c469ddf"
+      },
+      {
+        "id": "shared_frozen_89e170e429692d8378a91748",
+        "url": "https://ece.ucsd.edu/people/faculty/affiliated",
+        "observed_at": "2026-11-23T04:19:36.844628+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "09eabd8160dd979d4b72d15deda6dbeecd78f5cae980d43ae1b038dcb13133c5"
+      },
+      {
+        "id": "shared_frozen_d4f6ce5df6cfc26bcdc2b70b",
+        "url": "https://ece.ucsd.edu/people/faculty/emeritus",
+        "observed_at": "2026-11-23T04:19:36.845034+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ae94bd48fd4d4d98f54ffdd90e36088a829b8d2eeb1eb50053e5ad49cf25a97f"
+      },
+      {
+        "id": "shared_frozen_7ad955c78d9b64f6a181ae6a",
+        "url": "https://catalog.ucsd.edu/faculty/ECE.html",
+        "observed_at": "2026-11-23T04:19:36.844182+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "351e9eaa9e76f3b6596dfae004320e6123f4855f5a8949696c01779deabc02db"
+      },
+      {
+        "id": "shared_frozen_9053d0e96fc597caae2cd4f0",
+        "url": "https://datascience.ucsd.edu/people/arya-mazumdar",
+        "observed_at": "2026-11-23T04:53:39.018419+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4fbf33eafc61645a5fe55779a66404320acb0373bf3632aabc111fbf9b2b1462"
+      },
+      {
+        "id": "shared_frozen_825eca67f3720be7b70e4ad1",
+        "url": "https://datascience.ucsd.edu/people/gal-mishne",
+        "observed_at": "2026-11-23T04:53:39.019430+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6dfe10644d64ac186cacfb1cc06fbfcb3db74d71d1692cf08fe1be77186f42a2"
+      },
+      {
+        "id": "shared_frozen_d4b60f477537f38805738943",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios",
+        "observed_at": "2026-11-23T04:19:36.845360+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "499a6fbd53fc7a5bc63f04e1816a15c7a74e38baeb116ab606c173e51b3ad5f3"
+      },
+      {
+        "id": "shared_frozen_9ebc55562694a6c9627f1e4d",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=176",
+        "observed_at": "2026-11-23T04:53:39.020865+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "34de8f1750e5ba68e317079cfa618ed9c996e8ef161f2ce364a5c3b1b359785b"
+      },
+      {
+        "id": "shared_frozen_4bc3333461a98ab3d323bddd",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=184",
+        "observed_at": "2026-11-23T04:53:39.021361+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f04165f966d00608fd8629d29b469095290dbb9c799e6b8c87ff989caab5fd4d"
+      },
+      {
+        "id": "shared_frozen_c0d7418e738c37723d6f86ea",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=185",
+        "observed_at": "2026-11-23T04:53:39.021838+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5b6cfd44958d29077b06bac01f66e1f8b9fa512e482357268a57b20560279e29"
+      },
+      {
+        "id": "shared_frozen_0866df421d8aadca515e8faa",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=189",
+        "observed_at": "2026-11-23T04:19:36.845696+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f01733c009b8bcb7683526a768847a7542a5eca7fc42e1d12855cf66bf10094b"
+      },
+      {
+        "id": "shared_frozen_c965ca2d8bb32f4cda40dd41",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=209",
+        "observed_at": "2026-11-23T04:19:36.846033+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ae94ff7722d1bdd1567f9f7ba0134af1cd22ba70bbf8b79759c7aa56c33255c2"
+      },
+      {
+        "id": "shared_frozen_ee94aff86ca842dc6e292b7a",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=211",
+        "observed_at": "2026-11-23T04:53:39.032468+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ad744769645b4b14f79fa08222ecf856957a161e39a97fa202eac22668e2eced"
+      },
+      {
+        "id": "shared_frozen_d6995fd278c4c700080058bd",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=23",
+        "observed_at": "2026-11-23T04:53:39.176008+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3e7997353a1ab5d987d8d269ffaf2ceaa06d9f05bd5668d97ffc95cbcc1d0a68"
+      },
+      {
+        "id": "shared_frozen_5961d27ae4eae330e47b14ef",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=233",
+        "observed_at": "2026-11-23T04:19:36.931220+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "bc1e854e5f7a434a7f1815a03785709eee9afe865fd18a1f541f9b893020f58c"
+      },
+      {
+        "id": "shared_frozen_580e456a216b62e850294dd5",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=237",
+        "observed_at": "2026-11-23T04:19:36.934991+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1b52fecc24c4b97a46c0051a99b83c2b6e138666b04af49439c8df54efa841f0"
+      },
+      {
+        "id": "shared_frozen_be6c74fefff3b0559ffc16d4",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=238",
+        "observed_at": "2026-11-23T04:19:36.938926+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "488afe69889f7d83614643605c945f8b471ec51545be46eb43557cd2703505c3"
+      },
+      {
+        "id": "shared_frozen_2e11607e9c7dc0d59ea260e3",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=239",
+        "observed_at": "2026-11-23T04:53:39.176821+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b6addb5cdcbda758da131be82299d7f670527c4e90ad818a5ff802ddd6705ce6"
+      },
+      {
+        "id": "shared_frozen_356f86357005ec7761bc56ee",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=24",
+        "observed_at": "2026-11-23T04:53:39.283209+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "08b0e7f8b7520be4b99fbca03ff4e70d4b9652ab9cf4e2fb391014b067ecfd96"
+      },
+      {
+        "id": "shared_frozen_badf6129eb4ef253512e495b",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=240",
+        "observed_at": "2026-11-23T04:19:37.014132+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "40b16dd0cf962f49d419da7cce579f0202dc96023d02c4e511868f97efbe4834"
+      },
+      {
+        "id": "shared_frozen_387ae10a4a26fd5b8e567152",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=25",
+        "observed_at": "2026-11-23T04:53:39.361906+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "147f7b76375bc9f9ad1c355c7c20df7b4b11c44a19420ec256c87d6e1a73c0f8"
+      },
+      {
+        "id": "shared_frozen_79b4f9a0ec0d23da0a48341e",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=252",
+        "observed_at": "2026-11-23T04:53:39.371268+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8a405a8ec1a6d9d477158e02368fd9a803a4de9e74e64fbf999c4ee1c2ef8fba"
+      },
+      {
+        "id": "shared_frozen_25cabb4e6cc1441d6e9aebed",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=257",
+        "observed_at": "2026-11-23T04:53:39.380794+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "467df88be083799976ade6b88f3110a4e8f61e6a924c0369db57e839ed72c5cd"
+      },
+      {
+        "id": "shared_frozen_cb860c68197715a3c8af4915",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=260",
+        "observed_at": "2026-11-23T04:19:37.018794+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "33e03d0f6ecf9db3a4f982c83031f6364bfe16834a23d4e7e6053ac541e3c2ba"
+      },
+      {
+        "id": "shared_frozen_ae73e45d8328610ab6a683e5",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=27",
+        "observed_at": "2026-11-23T04:53:39.391781+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2b1cf41b55c4e7441dddb9ceeaaf7fbb9154a3e3b41ecfe75d22134617bb87a4"
+      },
+      {
+        "id": "shared_frozen_a3606ce731337585beb333ec",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=276",
+        "observed_at": "2026-11-23T04:19:37.019087+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1f5e5e9aa70981920b664492bd706e9f8dbe8644ba14d5bcaa9de0dfb323de6d"
+      },
+      {
+        "id": "shared_frozen_934665bc91c3dfa258938bf3",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=28",
+        "observed_at": "2026-11-23T04:19:37.036830+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f0c98165433c81a2c05afb7282c3af97a4e1ef56ed31eb689d4446023957103e"
+      },
+      {
+        "id": "shared_frozen_7ab6ddbf174334a4a0619121",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=30",
+        "observed_at": "2026-11-23T04:19:37.059416+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ce7f7273534b6a51acf2a070391573913d8d12db8ae0e6866c482a5cb79efdfc"
+      },
+      {
+        "id": "shared_frozen_61dd55b87d85b9ea01ba9443",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=303",
+        "observed_at": "2026-11-23T04:53:39.471127+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f515d7ec8027fe3a049d43c1aa36a62395aa822dbb83cfed27018daedca1d9da"
+      },
+      {
+        "id": "shared_frozen_ec7b55f55b373b957b801e4b",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=305",
+        "observed_at": "2026-11-23T04:53:39.474525+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f9c8305e5d50a373078253f13c17146eddfe20f26e9f092cbacbb8106635ad8e"
+      },
+      {
+        "id": "shared_frozen_1f31124c9cbca7603ee08a49",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=314",
+        "observed_at": "2026-11-23T04:53:39.505929+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7dac60644bd14bf16b2158ee4ed079a09d82b8f06a079f0ade186d2a547e7d51"
+      },
+      {
+        "id": "shared_frozen_c19d6fd44b49dbc3e473db8d",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=319",
+        "observed_at": "2026-11-23T04:19:37.066433+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e3af0d768998a6ecbd0d5db3a388360c736f4f786f45ff2079d0b03cbd4c41e1"
+      },
+      {
+        "id": "shared_frozen_d62cc1b2a3501e6543e0b5ab",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=32",
+        "observed_at": "2026-11-23T04:19:37.125020+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "87bcd07864ce73d7fa8dda85ff9954bab23b3b8f9ae0e8fcb6679469b00b8109"
+      },
+      {
+        "id": "shared_frozen_c38b3b74daf5befa4c690c0c",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=323",
+        "observed_at": "2026-11-23T04:53:39.548864+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4660f0d4a54b6bf09a5917b7d2711b69f9b6e2d2020cb281a21fd5f8c6673743"
+      },
+      {
+        "id": "shared_frozen_9d5d9d10147999acd15f77f0",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=33",
+        "observed_at": "2026-11-23T04:19:37.130424+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ab9ce2553a3a9c507a9f8e34245cd7f556b4337d90990fd1938c50fd50caecbe"
+      },
+      {
+        "id": "shared_frozen_876c881fb8ece56e35f146b2",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=34",
+        "observed_at": "2026-11-23T04:53:39.586956+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b8f22fc3796e4ed089c271e022c3930bf751353e80891741c3646fee4abd6e89"
+      },
+      {
+        "id": "shared_frozen_f7ab077b22a139fe88da2afd",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=343",
+        "observed_at": "2026-11-23T04:19:37.135457+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8ee0b6245a0a8bd426bef5d4b3d0af2a60389143a69aa0e102f79848fd45c6e3"
+      },
+      {
+        "id": "shared_frozen_fb5b09cdf7cc1cc30f277079",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=344",
+        "observed_at": "2026-11-23T04:19:37.135670+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "8113cd2148c9ed54b20e40edbebfe0a6689330035d70e648e1af434edc5587b0"
+      },
+      {
+        "id": "shared_frozen_84d3a906de13fed4a4c03668",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=346",
+        "observed_at": "2026-11-23T04:19:37.165411+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "a07d64aeb0d28157f119af98c23d7d0dbe441223865eb6de8b297cfddf692f98"
+      },
+      {
+        "id": "shared_frozen_f536f30d2b965683f6599e1d",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=35",
+        "observed_at": "2026-11-23T04:19:37.165619+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c053291470a68b8955e450db48f5537ddfcb681975e22c2a00d26aa17b4f17d6"
+      },
+      {
+        "id": "shared_frozen_52e89fdea6b1cccebb93a018",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=351",
+        "observed_at": "2026-11-23T04:19:37.220682+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7942d3fe391d1f34378446bef120db16a7b20f8d951938ebf6d3a284cb84e5f6"
+      },
+      {
+        "id": "shared_frozen_f6ba6ba3766e383736365259",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=359",
+        "observed_at": "2026-11-23T04:19:37.224704+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6b434251f31e106ef1cd48487e8e638492af4d91aacfb7d5eddd77595bfa92e3"
+      },
+      {
+        "id": "shared_frozen_0708617d8f1267e009cb6918",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=36",
+        "observed_at": "2026-11-23T04:53:39.681477+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "41552561008dbc73a783894541f7c9d8b8f0fbbe3b8acaf67af66636f446b9cf"
+      },
+      {
+        "id": "shared_frozen_59b5f3ea526b15eb13dc7057",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=370",
+        "observed_at": "2026-11-23T04:53:39.761673+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f97d8389cf737eff6791b721f6bd35f218b45fd7546f4a392bd18eb26ff6aff8"
+      },
+      {
+        "id": "shared_frozen_6e4ae528fc50e115f3f9456c",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=38",
+        "observed_at": "2026-11-23T04:53:39.765660+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1d7e3836a79e14e1e69e476eed2f8d8df7ac8d1b72d46389733ec597323e9d68"
+      },
+      {
+        "id": "shared_frozen_5c44efa6a8e26aeadf9979d0",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=387",
+        "observed_at": "2026-11-23T04:53:39.769489+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d5b27bfb04007481c5cc49c96e8df7019f237783d101feb64c79bfdf817c0a17"
+      },
+      {
+        "id": "shared_frozen_fce3547b4673b09c7b63c7aa",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=39",
+        "observed_at": "2026-11-23T04:53:39.841882+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "80ace38203723388fc5a5579d41f4a7dbb29ff45cb56bd262c6993bc8d98f739"
+      },
+      {
+        "id": "shared_frozen_d943a4d1e0708a3ebf2396f3",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=392",
+        "observed_at": "2026-11-23T04:19:37.229014+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0bca1fc825677211d427fae080990bd4c3d4ede1a9efce22ccaee707429b8061"
+      },
+      {
+        "id": "shared_frozen_bec445d8015f503534483694",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=393",
+        "observed_at": "2026-11-23T04:19:37.233881+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c66f2dac47d2bcbd470c971e45f8c38325ca2ffafb4437a980fded047322fa9b"
+      },
+      {
+        "id": "shared_frozen_6c203aff8018250d057e0295",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=394",
+        "observed_at": "2026-11-23T04:19:37.259174+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5e2b7932141b723e45e540eb1dbbf193891bd84697f4957c0fae7052f22b2459"
+      },
+      {
+        "id": "shared_frozen_69fd4c9d3c5d0ba05200eeca",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=401",
+        "observed_at": "2026-11-23T04:19:37.259696+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c94b18a45755a2bd595f1199fddaf476f3f0c41042de85341a77e92db322e234"
+      },
+      {
+        "id": "shared_frozen_45a3b85a53d9afe76fdf3d18",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=402",
+        "observed_at": "2026-11-23T04:53:39.874465+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b9154f7c6dce73703403bfe0d28fdb25f9aecb0a53c59d9777103d595eaa6943"
+      },
+      {
+        "id": "shared_frozen_c4b1533d5d9cba5e8da75b83",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=407",
+        "observed_at": "2026-11-23T04:19:37.322024+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cd0f3de0b36f55c79e67cbbadf305c7275a724387f50ec3ca2559c9f283131b2"
+      },
+      {
+        "id": "shared_frozen_2240e5fbe6df328a213222fc",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=409",
+        "observed_at": "2026-11-23T04:19:37.326572+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c025eb3a89c024232882627e204b6cf5f8773cda370ae88894780e5a07a33584"
+      },
+      {
+        "id": "shared_frozen_2edf41f26012e8fe418c354f",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=41",
+        "observed_at": "2026-11-23T04:19:37.329360+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "62e6490617672f3d34ceb996c1f0019f664c58d561d0afcecad1905a87ec9630"
+      },
+      {
+        "id": "shared_frozen_285ce86aa881668dd9b11567",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=411",
+        "observed_at": "2026-11-23T04:19:37.333301+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0a848f29bce469e97bc4c78c095eebc4b610f2a68dd656755a9afca991091654"
+      },
+      {
+        "id": "shared_frozen_c0b84ab55426517ab833f27d",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=42",
+        "observed_at": "2026-11-23T04:19:37.360808+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e94d8138fc01026552c3cb2667636ef69d5021e3ce805087c86d09dad2fc501e"
+      },
+      {
+        "id": "shared_frozen_ed28728b1d83d97f745e9675",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=433",
+        "observed_at": "2026-11-23T04:19:37.364198+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "b7a83299108ddad52aa93022c8666878ad4827ac781153ad6ede1016f71b0c08"
+      },
+      {
+        "id": "shared_frozen_2188c5e9ccded3ea6cb4d36d",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=44",
+        "observed_at": "2026-11-23T04:53:39.879267+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "236c77aaf3c320447d118c9160450967ae7b9e24f1680163f149930cc7e9ec6b"
+      },
+      {
+        "id": "shared_frozen_bd5027ee6ba2d196971f3fec",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=440",
+        "observed_at": "2026-11-23T04:19:37.408448+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "789617aace70f030c62c7edcd335fa1c092e09abb0faafec31050a8dc927809f"
+      },
+      {
+        "id": "shared_frozen_1c2b5b8b6525796bddef33e0",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=452",
+        "observed_at": "2026-11-23T04:19:37.424236+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "85e774aa75a7fba08372664a66dfc727dbdf65707d47b47e51d7595e63886d0f"
+      },
+      {
+        "id": "shared_frozen_06f4f2d5496630ae1cca69c0",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=46",
+        "observed_at": "2026-11-23T04:53:39.879704+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f7fef883f1d439de9e477eee27150d3c132f293965d81bba06564d785fc7255e"
+      },
+      {
+        "id": "shared_frozen_067563ef3e7c14445920c62e",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=47",
+        "observed_at": "2026-11-23T04:53:39.920937+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "708796a6b5a79c6412512f0d17e1707ab264295da82d724ad0b43707d01cae65"
+      },
+      {
+        "id": "shared_frozen_bc8b2a1b16a2a529e2c34c98",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=471",
+        "observed_at": "2026-11-23T04:19:37.427878+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1ca5df4a9583dc711507435b120d476427c08686f19f30189c62c01cb1fa4647"
+      },
+      {
+        "id": "shared_frozen_67d9c916b3d99b828ca2566c",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=48",
+        "observed_at": "2026-11-23T04:19:37.433812+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2338dcf19acfae413b7d4c1d418a24eafdb597a6602347c823e1d83de97bd85c"
+      },
+      {
+        "id": "shared_frozen_8b7efda13e063645e3cc6159",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=484",
+        "observed_at": "2026-11-23T04:19:37.456325+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "dfa7aab0a90745be69545494ad3acdc525817b8efb2b1e0983daaf9351e7928f"
+      },
+      {
+        "id": "shared_frozen_fb32ea1e7727fc7edd4b113f",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=490",
+        "observed_at": "2026-11-23T04:19:37.456510+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "86a379f9757740d6541108df3edfda6660bc494bab8da9def52e7058509d062d"
+      },
+      {
+        "id": "shared_frozen_38b17a1bc351310b156e30a8",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=501",
+        "observed_at": "2026-11-23T04:19:37.494747+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "64dcf7846018a11906cb38155ec20b4877f34e6e50c517d572c365cb6e61a285"
+      },
+      {
+        "id": "shared_frozen_192b0031119c14e3e8710cbb",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=54",
+        "observed_at": "2026-11-23T04:19:37.518548+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "807a67cba8b524e1b745c2a5d5349cce93ee30c4b00d2b607e3d2ed9b66ffded"
+      },
+      {
+        "id": "shared_frozen_2d51a4cf725cccefb1f81aa7",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=55",
+        "observed_at": "2026-11-23T04:53:39.963247+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "70b1dd382cc35862c17f8bdf58e310d09b75e582b145eb350ee6004f56314605"
+      },
+      {
+        "id": "shared_frozen_468f2c80f7c5c967c0c24777",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=56",
+        "observed_at": "2026-11-23T04:53:39.966155+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "c90799a8fc3b60beb777ebd968f9cb6e024f8fe579281498448e05a2b5ca0769"
+      },
+      {
+        "id": "shared_frozen_90b3c1c26fa8a69aa87abfb8",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=57",
+        "observed_at": "2026-11-23T04:19:37.522476+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "50d35612a0cffc1679c01a9e3cf87ec0c4b9bb3b962424dd0f8373437ae721df"
+      },
+      {
+        "id": "shared_frozen_5479745f3a0ce2e9a604a17a",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=58",
+        "observed_at": "2026-11-23T04:53:40.003981+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "914984f50f7ae2b1acd27cff7e9fc811bde2d4077d68b283584fc6d1f984d037"
+      },
+      {
+        "id": "shared_frozen_438ea8f4074144bb736d2ec0",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=6",
+        "observed_at": "2026-11-23T04:19:37.530738+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0cf15ff995b9131226efe04199564489a33a498a7b626ddce2c7673b35537ec8"
+      },
+      {
+        "id": "shared_frozen_9f636f4680f96ae02113e219",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=61",
+        "observed_at": "2026-11-23T04:53:40.026304+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cf00b86862cca0c9cff0b951f3e33ec71bd335a686173c1725e243766ddeb1df"
+      },
+      {
+        "id": "shared_frozen_4d37560ee464d75c24433690",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=68",
+        "observed_at": "2026-11-23T04:53:40.058094+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "cdcc62d7708c35450722dffb1ae1d05c5427b59730e7622d42734d17ead9eca0"
+      },
+      {
+        "id": "shared_frozen_8109243d7d02c92c3423059e",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=75",
+        "observed_at": "2026-11-23T04:53:40.110674+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7957d5735310ba6268d836574b59fae56e4e51cd7721ef74f5f4e99c40026bd6"
+      },
+      {
+        "id": "shared_frozen_12f0fbae454eae93f49408a5",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=79",
+        "observed_at": "2026-11-23T04:19:37.549247+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "65ac74ae8cbb1e31e23ed748619d4aecfa08e67b6a0263d27491d7b966843eef"
+      },
+      {
+        "id": "shared_frozen_6cc3249a073f64c1257f59a9",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=80",
+        "observed_at": "2026-11-23T04:53:40.119046+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ffba9e0179ed8a8310fe2417b98474c17680c7caf31071bf45825d369f426fbc"
+      },
+      {
+        "id": "shared_frozen_4782850d682a6378d0e99786",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=81",
+        "observed_at": "2026-11-23T04:19:37.558171+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "77472d30dd69385dc8668b31511c86a38ac8125b39e0285abbe3fb1c9561a56f"
+      },
+      {
+        "id": "shared_frozen_2dba499e7d0de0bf2d788e18",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=83",
+        "observed_at": "2026-11-23T04:53:40.144818+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "af1352861e3033c93b3823742fe26c11ee42a79e61e00c18a10b3c0336a17de1"
+      },
+      {
+        "id": "shared_frozen_0823e11adb90ca42fee4651d",
+        "url": "https://jacobsschool.ucsd.edu/faculty/faculty_bios/index.sfe?fmp_recid=91",
+        "observed_at": "2026-11-23T04:53:40.193616+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "64d45de0f5cbadb07f7e363732b9705fdca33ee283cf20ab56d5f354a861cf28"
+      },
+      {
+        "id": "shared_frozen_ecf078a3ddc0d6fbc5335cc9",
+        "url": "https://jacobsschool.ucsd.edu/faculty/nae-members",
+        "observed_at": "2026-11-23T04:53:40.202101+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "3bff76183b7759b44988f060891d5f6af40dde22c70dd705b0c0c2cecafacd57"
+      },
+      {
+        "id": "shared_frozen_94186ff49cf753e28077d2e2",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=282",
+        "observed_at": "2026-11-23T04:53:40.260867+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5a1f9f56daf31cb1a3311860e654a4e0c8eb836586d86d7cb7e4e3552be3987a"
+      },
+      {
+        "id": "shared_frozen_a449ecaaeaf1713a32f72ae1",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=390",
+        "observed_at": "2026-11-23T04:53:40.277044+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "66359245780354eb99e0e794a80c5e43defdf964538257fdaa3e023256fc533e"
+      },
+      {
+        "id": "shared_frozen_186d338bbbeff3a797a201ff",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=487",
+        "observed_at": "2026-11-23T04:53:40.293360+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "eb206e4faf420672b9beb6ae0ec907d28adf621eccf32f6a917361644e377f67"
+      },
+      {
+        "id": "shared_frozen_0874fc4693306b0c6e0e4f86",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=489",
+        "observed_at": "2026-11-23T04:19:37.584380+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f782ab56d6df4440ef10b6fb6769df25d68a1675f79a39d829bbc95ac401f027"
+      },
+      {
+        "id": "shared_frozen_a787044c96699e170236b58a",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=516",
+        "observed_at": "2026-11-23T04:53:40.317959+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f4f1458323d45acc1153c412b56357e20ffcb12b284fa914c23d65d263e98110"
+      },
+      {
+        "id": "shared_frozen_7baee4af69f67c3579372fda",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=524",
+        "observed_at": "2026-11-23T04:19:37.628833+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "35907e475f60cf6a34aed57692d94eba7a707c829e840567b8e4d900e08b11af"
+      },
+      {
+        "id": "shared_frozen_6a08a32033f8b5af1cee6139",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=525",
+        "observed_at": "2026-11-23T04:19:37.636410+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1249e131b238b1a9dba7f47f08013f4b93117b32cdcc0b6f0657ba5e30b399f0"
+      },
+      {
+        "id": "shared_frozen_a8c0dd972b81cdc012caa729",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=526",
+        "observed_at": "2026-11-23T04:19:37.636626+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "296c6b94ead511a3bfa9e1d328ea7b51e97d2613310efae828b00cf782cd467a"
+      },
+      {
+        "id": "shared_frozen_1ee49a7ef552f3cb92739f21",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=528",
+        "observed_at": "2026-11-23T04:19:37.640892+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "335d7c59238305d204594fcb01a0a02ba3efdcdfcca39c078fb929111a762e7e"
+      },
+      {
+        "id": "shared_frozen_7a8eed8e2fec98ab42a81072",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=529",
+        "observed_at": "2026-11-23T04:19:37.661273+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "fa046dd711d9a7b8bbf583939c6f1d32e6ca24adbc9d5797210e74e8c1ac10d8"
+      },
+      {
+        "id": "shared_frozen_09bfbbe7dcf2f47b5735ea2e",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=530",
+        "observed_at": "2026-11-23T04:19:37.661756+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "ff9f13e22717c932e1d7ea14f4a270ab8ed71a89e184615bae52c4eadfc084da"
+      },
+      {
+        "id": "shared_frozen_1d40b7cb182c069f6530e5be",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=531",
+        "observed_at": "2026-11-23T04:19:37.703255+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "520ce99a0be87c907d62069b3e5f6d7d7320567fd0fdbc2b10405183ec643998"
+      },
+      {
+        "id": "shared_frozen_86d0375efc46eb746294507f",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=532",
+        "observed_at": "2026-11-23T04:19:37.703499+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "1af4b2e7d668d4f9b2bcd1cbedba14f84feccc03b40cc44e5b699a1f23d748ca"
+      },
+      {
+        "id": "shared_frozen_ba5aed42201d0ebc989c99cc",
+        "url": "https://jacobsschool.ucsd.edu/faculty/profile?id=94",
+        "observed_at": "2026-11-23T04:53:40.333288+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "07269b18926a477a31e382089a6c4c4607d5c42dec105fc4a9722ea97f13f628"
+      },
+      {
+        "id": "shared_frozen_f5a9c090089937db582469e4",
+        "url": "https://jacobsschool.ucsd.edu/node/3248",
+        "observed_at": "2026-11-23T04:53:40.349300+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4f748d0681a51b6872bb0c2e28e964b02d55cc5ec800b972dc3b75ee4737a535"
+      },
+      {
+        "id": "shared_frozen_33f2adb93bbf6c9f1793ea27",
+        "url": "https://jacobsschool.ucsd.edu/node/3570",
+        "observed_at": "2026-11-23T04:53:40.353087+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7a7af0fb59055ed1f3ddf86b4e8f558dd9e2d278ca23059245a6fcef2874db28"
+      },
+      {
+        "id": "shared_frozen_e4576f4e5da8be0f39ce9c90",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/abdoulaye-ndao",
+        "observed_at": "2026-11-23T04:19:37.703670+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d8d46fa64c115bb35bac788587f3754e75fdb63a4149cae5d77a0b43fe740c0f"
+      },
+      {
+        "id": "shared_frozen_aaafedb81889ef37ae6c1a8d",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/curt-schurgers",
+        "observed_at": "2026-11-23T04:19:37.707878+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0bfa1436a2bb972d7d185c9a58b0d5c410280419219fa5b8a6c5b6c12dfffdc8"
+      },
+      {
+        "id": "shared_frozen_4e6aba0509a67f2f8e143f13",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/jun-kun-wang",
+        "observed_at": "2026-11-23T04:19:37.734628+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "2d63576bc945fedd1f05b604844fb6ad9bd6a286b8a8d783d2d45a65eeea1557"
+      },
+      {
+        "id": "shared_frozen_2d40fc55b1d7ca21d65ae50d",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/lisa-poulikakos",
+        "observed_at": "2026-11-23T04:53:40.372037+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "d2815ca7a75950960cdf81cc2655a15c8e26f4851b1d30c293168239dde30c5d"
+      },
+      {
+        "id": "shared_frozen_ce03bd701c0efbc6b38b98d5",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/miroslav-krstic",
+        "observed_at": "2026-11-23T04:53:40.389474+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4afc36f353985a673dde5cf5ea05eba60db4d5d59f951fa3f4156c1f90ebcab8"
+      },
+      {
+        "id": "shared_frozen_3d9ceb94d22eb20a064edcfa",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/nambirajan-seshadri",
+        "observed_at": "2026-11-23T04:53:40.410918+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "e00e0cc74909a6a4f4722bef45156725ad424ad82b58895475d089aeb9765204"
+      },
+      {
+        "id": "shared_frozen_d802aab5da98b0436c6e51f2",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/noah-rubin",
+        "observed_at": "2026-11-23T04:19:37.734774+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "143de9b68f0fe300ae78b1470a9b5debbf69ed572e0f6fe054b81ec7c72110a2"
+      },
+      {
+        "id": "shared_frozen_46c80a9a7a492ef168e9d35d",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/nuria-gonzalez-prelcic",
+        "observed_at": "2026-11-23T04:19:37.767252+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f5a14d07cee6a90324245b39a87ed1383ff0c3abd71a9dfc434bee0ca2beb6df"
+      },
+      {
+        "id": "shared_frozen_b507766654282b0ca42c59dc",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/parinaz-naghizadeh",
+        "observed_at": "2026-11-23T04:19:37.771135+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6c53a9980cb070fb23e6b120c744bdacbfb4b211545538b66a2fc29f88a89d54"
+      },
+      {
+        "id": "shared_frozen_16dbe04d452f7e149c05a126",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/rahul-parhi",
+        "observed_at": "2026-11-23T04:19:37.771307+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "7fc3b01ea15f4da2f670c4db5fe545014df73f27c831b817ae0e24b8edbcdfab"
+      },
+      {
+        "id": "shared_frozen_2cc4db4519639a69ed757b13",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/rajeev-sahay",
+        "observed_at": "2026-11-23T04:19:37.771431+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "f5e19710babdc330a2053068a1e40931bd175b1e93a3bfd045a8651a897fc0e4"
+      },
+      {
+        "id": "shared_frozen_7770c4bda6bbc5a724804df1",
+        "url": "https://jacobsschool.ucsd.edu/people/profile/robert-w-heath-jr",
+        "observed_at": "2026-11-23T04:19:37.802017+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "6674c8b25915a88d61412fc24e691ef7a38b9a2352a54c2671f52c791cc13866"
+      },
+      {
+        "id": "shared_frozen_375447477d3d4ad95762c283",
+        "url": "https://laro.lanl.gov/esploro/profile/tri_tran/overview",
+        "observed_at": "2026-11-23T04:53:40.426682+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "0bf2cb7491c80152dbf68b7b7ce3193dc2bb64b75bcc7991e5ba47205e15501e"
+      },
+      {
+        "id": "shared_frozen_de35b38d212164147bad979f",
+        "url": "https://poveda.ucsd.edu",
+        "observed_at": "2026-11-23T04:19:37.802269+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "20b38d6d8567fe5484c48ee5747b11e5ccc12007e2422d74c4cd1330077aaaf6"
+      },
+      {
+        "id": "shared_frozen_3b0c751b27bbbc24f7b2b963",
+        "url": "https://profiles.ucsd.edu/wei.xiong",
+        "observed_at": "2026-11-23T05:00:24.277561+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "4a367ce542fce531f51c0c1e86d3874e89313d65a9dccf4d47c73682d1874b65"
+      },
+      {
+        "id": "shared_frozen_7bab74f762f702dff82847a4",
+        "url": "https://providers.ucsd.edu/details/22203/pain-management-neurology",
+        "observed_at": "2026-11-23T04:53:40.434542+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "981a3ac7927bc5468276ef294cd2b7fb720823b3ad0ded15925858a38c9ac08c"
+      },
+      {
+        "id": "shared_frozen_bbd6d5fbb4eed7405533680a",
+        "url": "https://sites.google.com/ucsd.edu/nasibeh-rahimi",
+        "observed_at": "2026-11-23T04:53:40.442716+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "aaff7fa40b3a9e740d0197288e17ef496c238385f3f8628e68aeea10b6550980"
+      },
+      {
+        "id": "shared_frozen_b2c2eafad11e8def0f142cfd",
+        "url": "https://www.linkedin.com/in/sanjay-jha-a91240b9",
+        "observed_at": "2026-11-23T04:53:40.688555+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Named directory entry or explicit university academic appointment field; inspect captured bytes to locate the cited fact.",
+        "response_sha256": "5175c7962af07c9936862ce84067bb9d68c159fd19a7b3977ebe2c160cadb6f6"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "The core list names Yiorgos Makris (Professor) and the emeritus list separately names Stojan Radic (Professor Emeritus). Both link to the same generic Jacobs faculty_bios index page, so roster_mode=\"union\" deduplicated 117 named directory rows (core 61, affiliated 25, emeritus 31) to 116 records. Makris is classified from his named core row; Radic has no separate required record and needs its own identity in any roster correction (ECE catalog lists both without further qualification; the emeritus list marks Radic Professor Emeritus)."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "catalog.ucsd.edu/faculty/ECE.html retains historical or departed names absent from the authoritative current ece.ucsd.edu/people/faculty/affiliated roster, including Todd Coleman, Ying S. Meng, Ryan Orosco, Gustaf Arrhenius, Pankaj Das and Nasser Peyghambarian, plus older emeriti (Robert Lugannani, M. Lea Rudee). The current ECE rosters are treated as authoritative; none of these names is counted. All four primary list pages and the catalog were re-fetched live on 2026-11-23 and are byte-identical to the pinned captures."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "The legacy profile URLs for Curt Schurgers (Calit2) and Wei Xiong (Chemistry) are covered by the brief profile_url_aliases; the pinned Jacobs/UCSD Profiles aliases were used (Schurgers: Teaching Professor; Xiong: Professor, Chemistry and Biochemistry)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_3f00e95361cb51669cdc",
+        "description": "Sheng Xu: Jacobs profile reads \"Adjunct Professor, NENG; Faculty-Affiliate, BENG; Faculty-Affiliate, ECE\", so the specific adjunct title governs and he is excluded/adjunct. The older catalog line (\"Assistant Professor, NanoEngineering, Bioengineering\") is generic and does not override it."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_ec2f7bbfc1d356d9a1d3",
+        "description": "John Proakis: ECE affiliated roster lists him as Affiliate Faculty from Calit2; his Jacobs profile says Faculty-Affiliate, ECE, with the title Professor Emeritus at Northeastern and no UCSD professorial rank, so he is excluded/affiliate (the retired/emeritus status would also exclude him)."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_a6287bc91bca5fec9d07",
+        "description": "Imanuel Lerman: the ECE affiliated roster shows only \"Affiliate Faculty from the Department of Anesthesiology\" and the providers page shows no rank. The ECE catalog gives Associate Clinical Professor, Anesthesiology. Classified included/affiliate_professor because a professor is officially listed by the ECE department as affiliate faculty; if the clinical-series title is judged non-professorial for this policy the decision becomes excluded/affiliate."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_cd73dff130dd5ce5bbae",
+        "description": "Mohan Trivedi appears on the official ECE Emeritus Faculty list (title \"Distinguished Professor\") and the catalog marks him Emeritus, while the undated Jacobs profile reads \"Professor, ECE\"; classified emeritus per the specific official designation."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_a5b119b654614973a8343da7dfd522ca",
+    "candidate_sha256": "3ebfb957c05595136f20c01d3b56128e8078e67191de0725e6b5d06b78f41754",
+    "transport": "t3",
+    "run_id": "run:thread:thread%3Adelegated-task%3Acommand%253Amcp%253A81c1b876-7755-4b73-8b77-31cc6ed303e0%253Adelegate-task%253Av5-verify-ucsd_ucla-da80d57d:ordinal:1",
+    "model": "claude-sonnet-5-5",
+    "finished_at": "2026-11-23T10:04:04.928413+00:00",
+    "exit_code": 0,
+    "review_mode": "independent_judgment_of_shared_captures",
+    "capture_packet": {
+      "file": "audits/packets/c00673bd3584a16601f1548052254545da43bf7315cd32e687c3a9ce398a8d43.json",
+      "sha256": "c00673bd3584a16601f1548052254545da43bf7315cd32e687c3a9ce398a8d43"
+    }
+  },
+  "capture_packet": {
+    "file": "audits/packets/c00673bd3584a16601f1548052254545da43bf7315cd32e687c3a9ce398a8d43.json",
+    "sha256": "c00673bd3584a16601f1548052254545da43bf7315cd32e687c3a9ce398a8d43"
+  }
+}

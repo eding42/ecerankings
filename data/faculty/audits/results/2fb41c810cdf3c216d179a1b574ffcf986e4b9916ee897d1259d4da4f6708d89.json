@@ -1,0 +1,517 @@
+{
+  "schema_version": 1,
+  "job": {
+    "file": "audits/jobs/c23e2dea1868c3edaa6e28a6d458a949435411a94010390767dc4721731dd644.json",
+    "sha256": "c23e2dea1868c3edaa6e28a6d458a949435411a94010390767dc4721731dd644"
+  },
+  "brief": {
+    "file": "audits/briefs/76232d74ffef32e1ae246fae354c52d8c7d0d5a5c981076518e6e09adc67ff19.json",
+    "sha256": "76232d74ffef32e1ae246fae354c52d8c7d0d5a5c981076518e6e09adc67ff19"
+  },
+  "result": {
+    "schema_version": 1,
+    "job_id": "audit_077e1357d4df417aa48a359f87610b9d",
+    "candidate_sha256": "3a9485aa477a90eeca39efadf06329f8fb3d738dbdd862b19ba09e8e25660e12",
+    "reviewer_id": "claude-haiku-iit-audit",
+    "reviewed_at": "2026-11-25T08:05:07+00:00",
+    "coverage": {
+      "complete": true,
+      "enumerated_profile_urls": [
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "https://www.iit.edu/news/renowned-space-scientist-named-ece-department-chair"
+      ],
+      "checked_list_ids": [
+        "ece-directory"
+      ]
+    },
+    "records": [
+      {
+        "person_id": "person_59de4c01b9ec5ca29aaf",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Associate Professor Emeritus of Electrical and Computer Engineering\"; emeritus status is excluded.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_0f42b62203735c4daea2",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Only title on the ECE-filtered listing is \"Adjunct Faculty\"; no regular, courtesy or joint professorial ECE appointment is shown. Adjunct is excluded.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_1c661d11181b53048565",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Teaching Professor Emeritus of Electrical and Computer Engineering\"; emeritus status is excluded (the teaching rank itself is also excluded).",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_ce707ee6d89154a8861a",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor of Electrical and Computer Engineering\" (plus \"Professor of Biomedical Engineering\"); the ECE professorial appointment is regular. The BME title does not change ECE membership.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_78ca25651cd250c4a70b",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Electrical and Computer Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_3d9569f5e0bb56deb599",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emerita of Electrical and Computer Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_a4a456707f465b198958",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Electrical and Computer Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_ee76a88846745acd9170",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor of Electrical and Computer Engineering\" on the ECE-filtered directory; regular.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_35493efaa3ac58a7b2d1",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Associate Professor of Electrical and Computer Engineering\" on the ECE-filtered directory; regular.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_899214c7770d58cd83ee",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor\" with \"Grainger Endowed Chair in Electrical and Power Engineering\" on the ECE-filtered directory; a professorial rank with an ECE endowed chair is regular. Associate Director title is administrative.",
+        "source_ids": [
+          "iit-dir-base"
+        ]
+      },
+      {
+        "person_id": "person_16ca33d2fd035adfac9e",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Only title on the ECE-filtered listing is \"Adjunct Faculty\"; adjunct is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_dc0e32fe152b55a6994a",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus\" on the ECE-filtered directory; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_b151f0205c5a5348b912",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Electrical and Computer Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_5c046fc6764355698b56",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Research Associate\" (non-professorial research role); research_staff is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_95bf4a7741035d19a640",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Owner determination 2026-11-25: primary ECE endowed chair stays regular. Card lists \"Robert W. Galvin Electricity Innovation Endowed Chair\" with no rank text; the official profile (iit.edu/directory/people/mohammad-shahidehpour) states he is a University Distinguished Professor and Galvin Chair Professor in the Electrical and Computer Engineering department. \"Affiliate Professor, Stuart School of Business\" is a secondary title and is not used as the category.",
+        "source_ids": [
+          "iit-dir-page1",
+          "iit-profile-shahidehpour"
+        ]
+      },
+      {
+        "person_id": "person_38c9cde82d1256119611",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Teaching Professor of Electrical and Computer Engineering\"; teaching-track title is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_e9f7e99de4dd5762b45a",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Only title on the ECE-filtered listing is \"Adjunct Faculty\"; adjunct is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_2ebb8c01e92c56f79ca5",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Only title on the ECE-filtered listing is \"Adjunct Faculty\"; adjunct is excluded.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_5a8f18683c7d5db6b458",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Associate Professor of Electrical and Computer Engineering\" on the ECE-filtered directory; regular.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_dddc65c1750a5d89affe",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Assistant Professor of Electrical and Computer Engineering\" on the ECE-filtered directory; regular. No start date is shown, so effective_from_json is null.",
+        "source_ids": [
+          "iit-dir-page1"
+        ]
+      },
+      {
+        "person_id": "person_99434681646f56268ed8",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "outside_ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Biomedical Engineering\" on the ECE-filtered directory. Its title names BME, so membership is recorded as outside_ece; emeritus excludes him regardless, so the count is unaffected.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_bda3b1224bb75cfa9484",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Electrical and Computer Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_0612f093291d575593ea",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Electrical and Computer Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_0f4c77a604685ec69d69",
+        "decision": "excluded",
+        "category": "research_staff",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Senior Research Associate\" (non-professorial research role); research_staff is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_6032e0cc389e55bab201",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus of Electrical and Computer Engineering and Biomedical Engineering\"; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_66b8128a385352ce88b1",
+        "decision": "excluded",
+        "category": "teaching",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Associate Teaching Professor of Electrical and Computer Engineering\"; teaching-track title is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_21b51030b58c5fb58090",
+        "decision": "excluded",
+        "category": "adjunct",
+        "membership": "ece",
+        "current_state": "not_in_core",
+        "effective_from_json": "null",
+        "rationale": "Only title on the ECE-filtered listing is \"Adjunct Faculty\"; adjunct is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_ae103bfd9d445010a3f4",
+        "decision": "excluded",
+        "category": "emeritus",
+        "membership": "ece",
+        "current_state": "past",
+        "effective_from_json": "null",
+        "rationale": "Listed as \"Professor Emeritus\" on the ECE-filtered directory; emeritus is excluded.",
+        "source_ids": [
+          "iit-dir-page2"
+        ]
+      },
+      {
+        "person_id": "person_29485412eee15ddb9df5",
+        "decision": "included",
+        "category": "regular",
+        "membership": "ece",
+        "current_state": "current",
+        "effective_from_json": "null",
+        "rationale": "Owner determination 2026-11-25. Not in the ECE-filtered directory (her profile returns 403 to automated requests). The official IIT news page (dated 08/16/2024) says Armour College hired her as ECE department chair, professor of electrical and computer engineering and endowed Motorola Professor of Electrical and Computer Engineering. The page gives no start date, so effective_from_json is null.",
+        "source_ids": [
+          "iit-news-barnett"
+        ]
+      }
+    ],
+    "sources": [
+      {
+        "id": "iit-dir-base",
+        "url": "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All",
+        "observed_at": "2026-11-25T08:03:13+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Faculty directory listing filtered to organization 2271 (Electrical and Computer Engineering), first 10 cards (surnames A to L); name in h3, titles in positions-list",
+        "response_sha256": "c62ea998535d3728ae3e5b6896164b51a302217d6bc6feb1eb617140142da683"
+      },
+      {
+        "id": "iit-dir-page1",
+        "url": "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=1",
+        "observed_at": "2026-11-25T08:03:13+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Same filtered directory listing, page=1: 10 cards (surnames Liao to Wang, Ren); name in h3, titles in positions-list",
+        "response_sha256": "b969b3cda28275134eeb65fbc5366f10cc79320173ce106199fe59c3126cf988"
+      },
+      {
+        "id": "iit-dir-page2",
+        "url": "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=2",
+        "observed_at": "2026-11-25T08:03:13+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Same filtered directory listing, page=2: 8 cards (surnames Wernick to Zhong); name in h3, titles in positions-list",
+        "response_sha256": "f2d0923f0d039da34ecebfa403e3503f648e5cdeadb770f9c1c8a58761db17e6"
+      },
+      {
+        "id": "iit-dir-page3",
+        "url": "https://www.iit.edu/directory/people?school=All&profile_type=All&organization=2271&faculty_type=All&expertise=All&location=All&page=3",
+        "observed_at": "2026-11-25T08:03:14+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Same filtered directory listing, page=3: zero person cards (end of paging)",
+        "response_sha256": "25268b78b0fc7516c8d36eb9d8697c0bcec05f6ae04ae2302d3092a5f5534ea5"
+      },
+      {
+        "id": "iit-news-barnett",
+        "url": "https://www.iit.edu/news/renowned-space-scientist-named-ece-department-chair",
+        "observed_at": "2026-11-25T08:03:14+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Article body, paragraph 1: Armour College hired Anna Barnett as ECE department chair, professor of electrical and computer engineering and endowed Motorola Professor of ECE (dated 08/16/2024)",
+        "response_sha256": "6d29d61fd8f949789b6314f22c8b6ebce1d4844e968f2e8c2fd66e7f7ed76ee7"
+      },
+      {
+        "id": "iit-profile-shahidehpour",
+        "url": "https://www.iit.edu/directory/people/mohammad-shahidehpour",
+        "observed_at": "2026-11-25T08:03:43+00:00",
+        "request_json": "{\"method\":\"GET\",\"form\":{}}",
+        "locator": "Profile title block (Robert W. Galvin Electricity Innovation Endowed Chair; Affiliate Professor, Stuart School of Business) and biography (presently a University Distinguished Professor; Galvin Chair Professor), department line Electrical and Computer Engineering",
+        "response_sha256": "11fd2b0ec6a02d485a6c47b3fd8be097f52d7793e73abce63547426e47bd4a1b"
+      }
+    ],
+    "findings": [
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Directory paging: the unparameterized filtered URL (page 0) returned 10 cards, page=1 returned 10 different cards, page=2 returned 8 cards, and page=3 returned zero cards. Total 28 cards, all with unique names, matching the 28 directory-listed people in the brief. The unparameterized URL is not a duplicate of page=1. Source: iit-dir-base, iit-dir-page1, iit-dir-page2, iit-dir-page3."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Name cross-check: all 28 names on the three directory pages match brief.people exactly. No omissions: no person appears on the listing and is missing from the brief, and no brief person (other than Anna Barnett, per owner determination) is absent from the listing."
+      },
+      {
+        "kind": "info",
+        "person_id": "",
+        "description": "Only one directory profile page (Mohammad Shahidehpour) was fetched as optional evidence; the other listed people' titles come from the listing cards, which are official university pages. Their profile pages were not fetched."
+      },
+      {
+        "kind": "info",
+        "person_id": "person_29485412eee15ddb9df5",
+        "description": "Anna Barnett directory profile (https://www.iit.edu/directory/people/anna-barnett) returned HTTP 403 to an automated request, retrieved 2026-11-25; she is not on the ECE-filtered directory. This is an info note, not an omission."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_95bf4a7741035d19a640",
+        "description": "Owner determination 2026-11-25 applied: primary ECE endowed chair stays regular. The listing card has no rank text, but the official profile (iit-profile-shahidehpour) states University Distinguished Professor and Galvin Chair Professor in ECE. \"Affiliate Professor, Stuart School of Business\" is secondary and does not make him affiliate_professor. Would change to excluded only if an official page stated he is not a professor in ECE."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_29485412eee15ddb9df5",
+        "description": "Owner determination 2026-11-25 applied: Anna Barnett is regular / ece / current per the official IIT news page iit-news-barnett (ECE department chair, professor of electrical and computer engineering, endowed Motorola Professor of ECE, dated 16 Aug 2024). Her absence from the directory is not an omission (her directory profile returned HTTP 403 to an automated request). effective_from_json is null because the page gives no start date."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_6032e0cc389e55bab201",
+        "description": "Decision not borderline: Yongyi Yang is listed as Professor Emeritus of ECE and BME, so excluded as emeritus. Would change only if an official page showed active (non-emeritus) professorial status."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_99434681646f56268ed8",
+        "description": "Borderline membership: Miles Wernick appears on the ECE-filtered listing, but his title is Professor Emeritus of Biomedical Engineering. He is excluded as emeritus either way; membership is recorded as outside_ece, and the count is unaffected."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_899214c7770d58cd83ee",
+        "description": "Listing titles \"Professor\" with \"Grainger Endowed Chair in Electrical and Power Engineering\" (plus Associate Director of the Galvin Center, an administrative role). Decided regular / ece / current because the professorial rank and ECE-listed endowed chair are explicit. Would change only if an official source placed him outside ECE."
+      },
+      {
+        "kind": "decision",
+        "person_id": "person_16ca33d2fd035adfac9e",
+        "description": "Adjunct excluded. Listed on the ECE-filtered directory only as \"Adjunct Faculty\"; no professorial ECE appointment is shown on the page."
+      }
+    ]
+  },
+  "receipt": {
+    "job_id": "audit_077e1357d4df417aa48a359f87610b9d",
+    "candidate_sha256": "3a9485aa477a90eeca39efadf06329f8fb3d738dbdd862b19ba09e8e25660e12",
+    "transport": "t3",
+    "run_id": "agent_aeddd43aa2898816c",
+    "model": "claude-haiku (effort high)",
+    "finished_at": "2026-11-25T08:05:44.348177+00:00",
+    "exit_code": 0
+  }
+}
