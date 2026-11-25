@@ -144,8 +144,8 @@ export async function build(siteDir = path.join(ROOT, 'site')) {
   const manifestHash = createHash('sha256').update(manifestBytes).digest('hex');
   const to = Number(manifest.latest_complete_year);
   if (!Number.isInteger(to)) throw new Error('manifest.json: latest_complete_year is missing');
-  const generated = String(manifest.generated_at || '').slice(0, 10);
-  if (!/^\d{4}-\d{2}-\d{2}$/.test(generated)) throw new Error('manifest.json: generated_at is missing');
+  const generated = String(manifest.generated_at || '');
+  if (!/^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/.test(generated)) throw new Error('manifest.json: generated_at is missing');
 
   const registry = json('data/areas.json');
   const allAreas = R.listAreas(registry);
@@ -158,8 +158,8 @@ export async function build(siteDir = path.join(ROOT, 'site')) {
   if (rows.length < PAGE_SIZE) throw new Error(`Only ${rows.length} institutions ranked`);
   const extent = R.yearExtent(new Map(allAreas.map((a) => [a.id, json(`data/${a.id}.json`)])));
 
-  const updated = new Date(`${generated}T00:00:00Z`)
-    .toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
+  const updated = new Date(generated)
+    .toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', timeZoneName: 'short', timeZone: 'UTC' });
   const description = 'Institutions ranked by papers in selective electrical and computer engineering journals and conferences, ' +
     'by research area and year. Each paper is worth 1, split evenly among its authors and credited to the institutions they listed.';
   const graph = [
