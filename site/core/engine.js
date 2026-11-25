@@ -254,11 +254,11 @@ function applyManifest(m) {
   const y = Number(m.latest_complete_year);
   if (Number.isInteger(y) && y > 1900 && y <= CURRENT_YEAR) app.latestComplete = y;
   const stamp = [m.generated_at, m.generated, m.built_at].find(
-    (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}/.test(v),
+    (v) => typeof v === 'string' && /^\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}/.test(v),
   );
   if (stamp) {
-    const date = new Date(`${stamp.slice(0, 10)}T00:00:00Z`);
-    $('data-stamp').textContent = `Updated ${date.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric', timeZone: 'UTC' })}`;
+    const date = new Date(stamp);
+    $('data-stamp').textContent = `Updated ${date.toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', timeZoneName: 'short', timeZone: 'America/Los_Angeles' })}`;
   }
 }
 
