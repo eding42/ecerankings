@@ -159,7 +159,7 @@ export async function build(siteDir = path.join(ROOT, 'site')) {
   const extent = R.yearExtent(new Map(allAreas.map((a) => [a.id, json(`data/${a.id}.json`)])));
 
   const updated = new Date(generated)
-    .toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', timeZoneName: 'short', timeZone: 'UTC' });
+    .toLocaleString('en-US', { month: 'long', day: 'numeric', year: 'numeric', hour: 'numeric', minute: 'numeric', timeZoneName: 'short', timeZone: 'America/Los_Angeles' });
   const description = 'Institutions ranked by papers in selective electrical and computer engineering journals and conferences, ' +
     'by research area and year. Each paper is worth 1, split evenly among its authors and credited to the institutions they listed.';
   const graph = [
