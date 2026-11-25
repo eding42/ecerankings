@@ -2,14 +2,14 @@
   "schema_version": 1,
   "field": "ece",
   "description": "Institutions ranked by peer-reviewed research papers in selective Electrical and Computer Engineering conferences and journals.",
-  "generated_at": "2026-11-24T12:45:07.376922+00:00",
-  "source_revision": "dfd27b52b33bcc8398edf5b478e1fa23d6831807",
+  "generated_at": "2026-11-24T23:52:37.827707+00:00",
+  "source_revision": "bb92567bee6ab99b2fc2a843a4232d48fd629aaa",
   "source_tree_dirty": true,
   "source_tree_status": "available",
   "source_revision_meaning": "Git baseline at build time; code_hashes identify the actual working-tree files, including uncommitted changes.",
   "code_hashes": {
     "pipeline/aggregate.py": "3d42b1d689fff74b06dca334e044df36a4211146ae4905b85dfdc85017fff6db",
-    "pipeline/aggregate_biosciences.py": "6aaec2e732530f37ccfec92d5178111fd8059237e92504ad31a2efcb34ad3d16",
+    "pipeline/aggregate_biosciences.py": "e8d1e55760dcfbd2f0901bc9b5af9acfcbb9e153ece77235a7c1fa6cf8e458b8",
     "pipeline/aggregation_runtime.py": "b5dbb4cd338969fa8a8954d9653cf57bb03b2eaf1acc21ad4dffee63c43baa59",
     "pipeline/fields.py": "b34c92cae0100af1c1dc1e7d4e7a607dde984ae32a7f16bb886feda99989a419",
     "pipeline/workkey.py": "639e71f64299af09b346e6983a60af2cf928d08732fd851adc8266a5e2cee538",
@@ -21,361 +21,361 @@
   "aggregation": {
     "executor": "processes",
     "workers": 16,
-    "cache_hits": 67,
-    "cache_misses": 0,
+    "cache_hits": 0,
+    "cache_misses": 67,
     "venues": [
       {
         "venue": "asplos",
-        "fingerprint": "1d961ca386b1bc19d46b43d17d61e74a3d897cf41d1bfc6420514ab2b5e198e4",
-        "cache_hit": true
+        "fingerprint": "e8efb9d5ec439cc32bb0dc6b6552e23e22aaf7b72b73e58166f6566f9d29f949",
+        "cache_hit": false
       },
       {
         "venue": "automatica",
-        "fingerprint": "b1c46493e1962fcaf92a8058466e816309ea4cdbb1102d322117c4f0ba3b0fc8",
-        "cache_hit": true
+        "fingerprint": "f519013e77337b926f84d02e92c5e76adedaad1f0750450e2a81c9aeda563484",
+        "cache_hit": false
       },
       {
         "venue": "cdc",
-        "fingerprint": "8b0ff73bf1c0f9a88470d955d352ffc9720458b22dff591026d7ecb6534fc4d7",
-        "cache_hit": true
+        "fingerprint": "4ba2e4e422731b9d15607b761e7c3e175dda65840ee9cb6c8d5ca424b8c466ca",
+        "cache_hit": false
       },
       {
         "venue": "cleo",
-        "fingerprint": "49f4ba349dc6a709440aee849b9016dfa874b4f9c70445fee2de4d0c07795e3c",
-        "cache_hit": true
+        "fingerprint": "e12195d3a2b28a4e422ea98f9bdfafe1680c3de94eaa4eb8d1f8c6ae86977e04",
+        "cache_hit": false
       },
       {
         "venue": "cvpr",
-        "fingerprint": "ecc9ff126b4b2dad39a665fbaef11b501e6d269b24d4341c1ecd3bf5b46d7e77",
-        "cache_hit": true
+        "fingerprint": "b041056aae1f94d5fcc89064fac23d94c09a31ebb950fb9b1503f88709e09069",
+        "cache_hit": false
       },
       {
         "venue": "dac",
-        "fingerprint": "7d393ae4fef4e1215d258ba4394d10be897085263e12df0e7dac3f317ef792b2",
-        "cache_hit": true
+        "fingerprint": "a8959a6813ab1155588a7773934c361822475a0f9c7516e84668a984bd55a866",
+        "cache_hit": false
       },
       {
         "venue": "ecce",
-        "fingerprint": "4f82c7ae8aa4903e165a6fe832c7508bee8fdbb259026d06cce424b17d84b899",
-        "cache_hit": true
+        "fingerprint": "d7bfda15cb71aedfc505ba64ccf6ce1d79328c9c21fe1ee8b236706897b356d7",
+        "cache_hit": false
       },
       {
         "venue": "edl",
-        "fingerprint": "183dab0ecea77e9016bdd8585db1ac60e3fff8021a990f051b8bc4df4d6a5256",
-        "cache_hit": true
+        "fingerprint": "7abd626cb0091ba5ea746bc13cee039dda41380d2d72cf37f7eee49cef84e6f6",
+        "cache_hit": false
       },
       {
         "venue": "emsoft",
-        "fingerprint": "42c33fdc6dc0a79cb86780c8f24cc62e30754af5e9b3042c5f33976d280d7908",
-        "cache_hit": true
+        "fingerprint": "3ef2e2a75b494fc848f267eee45c73bc986111a11f797314efa46d36448c437b",
+        "cache_hit": false
       },
       {
         "venue": "hpca",
-        "fingerprint": "75b74f675217ad5afd1466833c16b294947c9c20bd45843e7ba3d5ed812b1485",
-        "cache_hit": true
+        "fingerprint": "29885328ec7d78f39b79a5d0e43e176f773b9e1f1274e50c04df8765913a9c6b",
+        "cache_hit": false
       },
       {
         "venue": "icassp",
-        "fingerprint": "0c25d8660369cc450f1e4861cc97a6f6666a7061013200efce692c01c94c4364",
-        "cache_hit": true
+        "fingerprint": "b2eb5fc2b05f0d38fcbd3c4a103760ec71503860ff7e5c412981f6c088061c45",
+        "cache_hit": false
       },
       {
         "venue": "iccad",
-        "fingerprint": "a21eb4e9a545a56c695c254f092fe4645a066555edc69683056aa7a2120eea03",
-        "cache_hit": true
+        "fingerprint": "a511ff7fa8fc4e569c2a6e07a600c8293aeccbd70624b017179b94f12f225763",
+        "cache_hit": false
       },
       {
         "venue": "iccv",
-        "fingerprint": "bdd5acf8fa2dcecf1a5c3a12afd4483ee2cf5d56e65aa09a8d7d38989d51b2b0",
-        "cache_hit": true
+        "fingerprint": "6b6d84b9e82e94a0398b7003311af99788eff2a66e9961d2df478a5e772679a7",
+        "cache_hit": false
       },
       {
         "venue": "iclr",
-        "fingerprint": "3ca2151aba1d330efef05a2370e1998dc38414ec96d130ed86d6c5b406daeebb",
-        "cache_hit": true
+        "fingerprint": "5a14c7994c00493a0f14f03662dd2b10e8c9d2a8a0629665a1427545ea5f9a5c",
+        "cache_hit": false
       },
       {
         "venue": "icml",
-        "fingerprint": "a2607d8956dac6e1558da9bed21e677fb267e9c794e51d137687baafbf19bbaa",
-        "cache_hit": true
+        "fingerprint": "42d7a4e23335a62ca4aa5024405676bdb56f0e01e80e7fbcb0764734a26a82a7",
+        "cache_hit": false
       },
       {
         "venue": "icra",
-        "fingerprint": "869f229022749badda5064c9664f08e1c99327c99861e0980894495c29713cd2",
-        "cache_hit": true
+        "fingerprint": "b3e5e4bf0906403b6f25fe3e21648047224a6616bfa93b3eebb43abd372ff5f6",
+        "cache_hit": false
       },
       {
         "venue": "iedm",
-        "fingerprint": "dfd9761b2f948854d464817300fdd49613f68d6bcb4418e2ece9af288770162d",
-        "cache_hit": true
+        "fingerprint": "a030cb99a25443e56e395070960dc17b2611b78af49ce2c7076860dc255ef091",
+        "cache_hit": false
       },
       {
         "venue": "ims",
-        "fingerprint": "8aada8f7ffc9f72b0a9c7c4e99eb47176d410181bd16f6807b3e4cd884bfe280",
-        "cache_hit": true
+        "fingerprint": "324d1c0a3bc1035c47390cc293c88b26782dcde98278dcfd595689c42ca53e73",
+        "cache_hit": false
       },
       {
         "venue": "infocom",
-        "fingerprint": "843d55aede6b7bfb25ee260efa8d204b4b367cd5e6e894ba569e639d7fe2231f",
-        "cache_hit": true
+        "fingerprint": "9cba7f15613859adccdadab13476dff9c70d282f4eed31ecedd1a73b44a0e9cd",
+        "cache_hit": false
       },
       {
         "venue": "isca",
-        "fingerprint": "615cb94de90e726a933dc2f2c4b8d3d21056af7cf96b18c9bb345eab4d97306c",
-        "cache_hit": true
+        "fingerprint": "0fbfedef7220e870bfc07a20fb3c71b5cd091363e96950798968bb6c78cd2b5e",
+        "cache_hit": false
       },
       {
         "venue": "isit",
-        "fingerprint": "865e4989a77f354ed92750c0a2f3d77d83642d18c43bfe11cf067d5119172b6b",
-        "cache_hit": true
+        "fingerprint": "1909fa9dd7171c7ca0b5a0628537e81ee75841bff6bc57c43b8a2133733a2279",
+        "cache_hit": false
       },
       {
         "venue": "isscc",
-        "fingerprint": "aaae8c217fe35b655373a714dbbe9da6490f1e43f9b3a7ce47729208c4e32b52",
-        "cache_hit": true
+        "fingerprint": "a4f35bbc7fab48c560ba37672749803666ba203ca41ff172f5ed9ac6c3a0e414",
+        "cache_hit": false
       },
       {
         "venue": "jlt",
-        "fingerprint": "b70c782be2458e739e02bee746e94202e4e611d3427d36bb37b155b742b57f9b",
-        "cache_hit": true
+        "fingerprint": "38d2ad75980bc567c97c2673f1420cb07030f0055e3ec98963b6f13baa216899",
+        "cache_hit": false
       },
       {
         "venue": "jsac",
-        "fingerprint": "e5bb6a7caaca36daf32d1702b9323d8cf8c809f0d25463302ed76ff05eff8b7b",
-        "cache_hit": true
+        "fingerprint": "8ba9393379247b3734ffd61b012040c3b64d09c2570dbd8523c97a9d9d8e1f83",
+        "cache_hit": false
       },
       {
         "venue": "jssc",
-        "fingerprint": "16436a9e215ead14e3c8d0772664267b0082563884dee4803ef56b7a1204def7",
-        "cache_hit": true
+        "fingerprint": "ec21921bba29cbff3af7d633e3753b4ba8d87e99647f3507653bfdfafa296b5f",
+        "cache_hit": false
       },
       {
         "venue": "jstsp",
-        "fingerprint": "c4bde291677255d7ea0846022bf40354e1122f2c13db70467d6e3d4947c5718f",
-        "cache_hit": true
+        "fingerprint": "5b805d4f6d2e2d4757dde407a7c510944522fd93ebdccc5896147a580c6ee30e",
+        "cache_hit": false
       },
       {
         "venue": "light-sa",
-        "fingerprint": "806861c439dde46864bf11ad9c1bc8144301b60ea699491ee1d3c2da204533e3",
-        "cache_hit": true
+        "fingerprint": "5a746a11aa8564719ec850df0530dc959aac3f66fc8bda34e5e0131176055b15",
+        "cache_hit": false
       },
       {
         "venue": "micro",
-        "fingerprint": "7089f3a10739dc959b346f31cdf2def9c69759e37b34f5511d0ea1a68d2fe7ae",
-        "cache_hit": true
+        "fingerprint": "f5c4fb4dba31289cdfa3311b888461f24d348eb6764a358da3cf50a7404006a7",
+        "cache_hit": false
       },
       {
         "venue": "nat-comms",
-        "fingerprint": "239703244f389419f5948a25c580f4e96de9a63c01ffb118e2dd92924bedebd7",
-        "cache_hit": true
+        "fingerprint": "cd0d8056c12817ed2903821cefc49a591c75022898a620bfe65bba80aa035efb",
+        "cache_hit": false
       },
       {
         "venue": "nat-electronics",
-        "fingerprint": "3eb354faaf45c69b169afb524b4ddff4ea9a4ecc37f2bcf2905b132e47336d50",
-        "cache_hit": true
+        "fingerprint": "92b31a6740c7473199366499f4137f5c51ae4173f538c53d159897590bb82322",
+        "cache_hit": false
       },
       {
         "venue": "nat-photonics",
-        "fingerprint": "69ca85a134577fbb3c03a86da97cb204c7dfbaebd1c9d124575546661ef1e77d",
-        "cache_hit": true
+        "fingerprint": "880b45532be0d1de9e0c93fbc0742922e8fcfaf16f4aef2db8e04e196b0ba04b",
+        "cache_hit": false
       },
       {
         "venue": "nat-phys",
-        "fingerprint": "c05993343f681d90151cce12e83ed064b03b445fffe8eb4a0dc09a52d204142e",
-        "cache_hit": true
+        "fingerprint": "c7f27c0db79bb6e98a14c8be668e605817be3ca5ae8950aae2f0740cbfa917ca",
+        "cache_hit": false
       },
       {
         "venue": "nature",
-        "fingerprint": "dc6e9f5cb157e53b4a8ce84cff02f5e128488b75fb59e2463d1ca1da41280f37",
-        "cache_hit": true
+        "fingerprint": "549c834f36f184d934e6d10b7d000abee5735b30451b9c03fe449d4ea264b962",
+        "cache_hit": false
       },
       {
         "venue": "neurips",
-        "fingerprint": "c0175bb64d003d612a5da0672031f701aafa2c1a963439c236d134d93c276c62",
-        "cache_hit": true
+        "fingerprint": "0e571663c3506bd5fa62568d776ee593be966a965214d848d2fd546bc25c5696",
+        "cache_hit": false
       },
       {
         "venue": "npjqi",
-        "fingerprint": "539901e8c097829edc0b9dac7b22d10a1aa2c6f4a3d3d9bc274e93da1cc7c8d4",
-        "cache_hit": true
+        "fingerprint": "fb7a8818235e875cd865dfa659a41a4f12674fb8c8d29e7ae2891b11cba612d8",
+        "cache_hit": false
       },
       {
         "venue": "optica",
-        "fingerprint": "6ec8c5edc49f36fdf80b1d6c11b50c57d2242ab175d503df1a7901d01c56e02b",
-        "cache_hit": true
+        "fingerprint": "a2ea7d75aac2c0c130455dbed30842fa01f82d658c0032fe2cfd10416486b660",
+        "cache_hit": false
       },
       {
         "venue": "pnas",
-        "fingerprint": "8575adb7f604a794d5ca96300691cd410a4b1da44b6796be7725e37628b1c7d7",
-        "cache_hit": true
+        "fingerprint": "08bd982bbfe2f56c06c713ce00186511724eeab7585ec1f67f48652018f73fdd",
+        "cache_hit": false
       },
       {
         "venue": "prl",
-        "fingerprint": "58ba6cd1c544a78976a9c3ec3573403f4bcac056a161f2dc61cf34caccfdd560",
-        "cache_hit": true
+        "fingerprint": "1940c2036abdb88b050a16df02bd55858a6f7d607cac42e7208177395da7a050",
+        "cache_hit": false
       },
       {
         "venue": "prx",
-        "fingerprint": "ef60463d00fef735fe4d12ef154cb55664d6d09c501b6b456a0e3dc4c07d2cd3",
-        "cache_hit": true
+        "fingerprint": "f13e0b3e28866b7d06be721481ff609f2f048f24bf7faa88a6c9a33a1329dac7",
+        "cache_hit": false
       },
       {
         "venue": "prxquantum",
-        "fingerprint": "abfadae2fae0d2097100c6c77b05563a36c9d5b5787e511eb424c49b9be1228c",
-        "cache_hit": true
+        "fingerprint": "51165f625939b42296d47f41e8b464f82f4820c74e062f57790978c73b57b3fc",
+        "cache_hit": false
       },
       {
         "venue": "qst",
-        "fingerprint": "cbbc770a1e11600ab31bc4937737ab735708445fafbcae5133b54a7117ba2f65",
-        "cache_hit": true
+        "fingerprint": "ceb1fd8fe88a15c2f3b8ff7ec250e3302c4ec559545e3e39ab2c6589d7c6fd0c",
+        "cache_hit": false
       },
       {
         "venue": "ral",
-        "fingerprint": "457c8266b475294fa6b71c127aab00bc1d26e31b4fd5fcb1ac68d797363b94d0",
-        "cache_hit": true
+        "fingerprint": "a6b25ff921975825287d5cd33d20baf2bf9c35cac4038b9ab71ca51cf54a661d",
+        "cache_hit": false
       },
       {
         "venue": "rtas",
-        "fingerprint": "0562b3261f64887e11a9bdecb126567d68bf2c0c3980ca56cfc96261ecaeaa4c",
-        "cache_hit": true
+        "fingerprint": "68361b31b3f4ca9120a91af2488634a742c67e6c3cac39815a1c8790cd8bb1c1",
+        "cache_hit": false
       },
       {
         "venue": "rtss",
-        "fingerprint": "e8c743ed30b2287b77d35a28a6ead4bb22759f7221398455ed4c21579ee9673c",
-        "cache_hit": true
+        "fingerprint": "bd84b6abce49c6a09570318888389f00689c73d8766967b648b9d9936d0f88aa",
+        "cache_hit": false
       },
       {
         "venue": "sci-adv",
-        "fingerprint": "3da3ee287a7dfa9bbfbfc99063a4c57bfa920c892b58c536faf4ed1c7e1779ff",
-        "cache_hit": true
+        "fingerprint": "ddc5fff60c1e8032547c311f62dc33156b42cd8ff340bbd0592a77990dae0fc9",
+        "cache_hit": false
       },
       {
         "venue": "science",
-        "fingerprint": "8eef079db912ca89967f900de693ee634dd5a91f99c865f751526403e996e6e7",
-        "cache_hit": true
+        "fingerprint": "76cb6d819ecc72dc8af563480db6c0f8602a9213f43d8db19a5a02d6d1bae7b2",
+        "cache_hit": false
       },
       {
         "venue": "scirobotics",
-        "fingerprint": "1d5bd4aead078bfa35f2ca90bfb094ed4a2e5573e20d05603980bd818d129fbb",
-        "cache_hit": true
+        "fingerprint": "e21aaeaf9b0f3f48728c99e991def0a6d2a474d72debeb87323ef601a254e9f3",
+        "cache_hit": false
       },
       {
         "venue": "sigcomm",
-        "fingerprint": "988f5d1fd1bd760a0bbeb265b6e601560df2d375e0554ad1b29b0d1e6941917d",
-        "cache_hit": true
+        "fingerprint": "9409d3c49a3e43ff23bcf5112f40855dff180a2529dc32eeee6b26fdffeeb735",
+        "cache_hit": false
       },
       {
         "venue": "tac",
-        "fingerprint": "56dba7b91b43e63eb939eff270aae6c85bff907dc7c4378f29d2f84dcc882e84",
-        "cache_hit": true
+        "fingerprint": "39485036d60bde2cdab7b7c9bdface8a35c96634df41f2cc0e545e36a024c2b9",
+        "cache_hit": false
       },
       {
         "venue": "tap",
-        "fingerprint": "dc6ad704922aca08f8d29d8990a5ef617a130c9a1f460e7f7b672b1918fc0467",
-        "cache_hit": true
+        "fingerprint": "606ddcdcf7fe1e8f906187cb4aa87ec5c8fa548ddd01c88c09eafe93fea818f7",
+        "cache_hit": false
       },
       {
         "venue": "tbme",
-        "fingerprint": "e89cd487431e7d6ce6431ea9ff7b58d7f10950fed7e8b597c28a91fb0412d5c7",
-        "cache_hit": true
+        "fingerprint": "9bc1e05058356ea49270426cf2e66e8de8c4e3b97a6cdd9c2f9dcaa8f73e9885",
+        "cache_hit": false
       },
       {
         "venue": "tcad",
-        "fingerprint": "d0281bbbb7c29df1899785fbd87d15a390e9e58df8379f5b37066679298ad69e",
-        "cache_hit": true
+        "fingerprint": "9e560d80c648275d103fa21d49141a1204ebebf44880a5856a8ac32491c7fdeb",
+        "cache_hit": false
       },
       {
         "venue": "tcom",
-        "fingerprint": "86169c7ba44426a62bb9b2e3b024ac395908de066caf2c94e1b13298c03d4f92",
-        "cache_hit": true
+        "fingerprint": "a718b1a6709f70f9d9fadb6ffec35ebf5e6f2db13795811e10366841442b6c1d",
+        "cache_hit": false
       },
       {
         "venue": "tecs",
-        "fingerprint": "cadce66401945a8240251f44806b5876feb5e3053a5629a70781f0997a0b3815",
-        "cache_hit": true
+        "fingerprint": "87603f000f02548c223240db40f69cc07e368567fbb0373c09c94f456ca22ce7",
+        "cache_hit": false
       },
       {
         "venue": "ted",
-        "fingerprint": "86a42c4aa57a75ef95dab1a2ce431e27e4b777229bd18f6bb60e3777e7b90419",
-        "cache_hit": true
+        "fingerprint": "7e8ab8ed9b07058df3a28af5dbb1dca061f190008b0dd66faef0d0c0328959a0",
+        "cache_hit": false
       },
       {
         "venue": "tip",
-        "fingerprint": "8983a80125737fba00eef5f9e0bb5f7f8866b4920e20f0bee7730a771c631f1a",
-        "cache_hit": true
+        "fingerprint": "85486939015ee6e98f716fa94c701e2e4d8cc2020e700b34cdb1416dff4a9e7b",
+        "cache_hit": false
       },
       {
         "venue": "tit",
-        "fingerprint": "e810d41d1de42758555f8011820ce64bb5e643e6080baf4bf03f1bc590aca7b0",
-        "cache_hit": true
+        "fingerprint": "cc4a417019ce38cbfaf962da131db70514c658f559eb9400bef939541b2ca6f4",
+        "cache_hit": false
       },
       {
         "venue": "tmtt",
-        "fingerprint": "93836c16d8c72c82454b8db072bd58275b50a691f81e47878a4387c8f85fc962",
-        "cache_hit": true
+        "fingerprint": "a86e122405a99d36a732c8b9206795490dfc811c0a56f18049b34a52c50265ec",
+        "cache_hit": false
       },
       {
         "venue": "ton",
-        "fingerprint": "c8d15e1b111b23190274851f3ab56f6b06cef46c929711dacb0ef797e9968206",
-        "cache_hit": true
+        "fingerprint": "dd84fac440f6d4331eba90ef0798e806693454c1176d5a68983b639daaec3f82",
+        "cache_hit": false
       },
       {
         "venue": "tpami",
-        "fingerprint": "0117e775c4a35741ff076907066043516ed6c5163b59547530fac558d521f509",
-        "cache_hit": true
+        "fingerprint": "5d230b9162d710c95671d0f1d57d7ea3a2e0dc60e29b61bc15fd27fb7c00c44c",
+        "cache_hit": false
       },
       {
         "venue": "tpel",
-        "fingerprint": "750a6747755a4dc79259f2c09b01e468eb2c17236e332ae91f769c8562df598e",
-        "cache_hit": true
+        "fingerprint": "3e55b3df8e1307dcd0817d629708a1b749c474a751d3d482a3d695140350869e",
+        "cache_hit": false
       },
       {
         "venue": "tpwrs",
-        "fingerprint": "981073e52f9d252b34fbffd18eef6020933a0ed62e4663373afd36242140fa54",
-        "cache_hit": true
+        "fingerprint": "2df21e73a25729e93d4f83c2161cd3fccdbd2b4045e895bfb9df24d328b5e5d7",
+        "cache_hit": false
       },
       {
         "venue": "tro",
-        "fingerprint": "fff8211c62defb8fdb93816119b2b96f4246da9f4ca15710209c436709e3552a",
-        "cache_hit": true
+        "fingerprint": "96c22e8ca450e16edaadb6d58722cc94786b76435d054581616760374ce20f5b",
+        "cache_hit": false
       },
       {
         "venue": "tsp",
-        "fingerprint": "3e5524d64087e722799bc58c5ca3cdf6ba56110d3582437e6da30a46b75fc72d",
-        "cache_hit": true
+        "fingerprint": "85775ea200d5d7b58468e70ca8122ae7061a4a8695dec9dbc9b70284cd9617b2",
+        "cache_hit": false
       },
       {
         "venue": "twc",
-        "fingerprint": "3d0d9b001465803630241f5b1b099cae810b6a6b71cbb2e2fa7a399402093c8a",
-        "cache_hit": true
+        "fingerprint": "718be5232fc38050319466dbb75142b8c0d253d87e754233b30509988c302862",
+        "cache_hit": false
       },
       {
         "venue": "vlsi-circuits",
-        "fingerprint": "31ce92b97a957d386f37c1ef5836567090243c6bf7556444bdb73116e9521491",
-        "cache_hit": true
+        "fingerprint": "aab1fe652136e5bf1d669ce9f4adc54a875be26df4f4efb171f82e600b20267c",
+        "cache_hit": false
       },
       {
         "venue": "vlsi-tech",
-        "fingerprint": "79b7164aae2a36a7b02fdfeca375311b3ca848f93f8eb21e4c93b5167e89875d",
-        "cache_hit": true
+        "fingerprint": "c05d44dae1cea34add94b89be87447c6ebcff347ef4368675088f65bcf844596",
+        "cache_hit": false
       }
     ],
     "runtime": {
       "version": "3.14.9 | packaged by Anaconda, Inc. | (main, Oct 23 2026, 01:11:11) [GCC 14.3.0]",
       "gil_disabled": false
     },
-    "fingerprint": "45ff7ca6fc3f89c200da444b2f11c55813986bce5e590c14dbbcc1661e1759b1",
-    "table_cache_hit": true,
+    "fingerprint": "24c74d9a5f10b286fadde575e0774c235a3d701f70c2fc537fa25733b202d24a",
+    "table_cache_hit": false,
+    "aggregation_seconds": 15.597621742010233,
     "metrics": {
-      "works": 785408,
-      "authorships": 4368142,
-      "dropped_no_education": 1133437,
+      "works": 784385,
+      "authorships": 4367119,
+      "dropped_no_education": 1133028,
       "crossref_resolved": 419744,
-      "multi_institution_authors": 259234,
-      "excluded_works": 760,
+      "multi_institution_authors": 259195,
+      "excluded_works": 1783,
       "nonresearch_works": 19960
-    },
-    "aggregation_seconds": 2.8314833210024517
+    }
   },
   "latest_complete_year": 2025,
   "latest_complete_year_meaning": "Last completed calendar year; publisher coverage may still be incomplete.",
@@ -387,7 +387,7 @@
     "registry": "8c8d8c8ff3e210a329e9e5caa5b9c4443052ef74d8ae5f69bbc066a9adce6e6d",
     "affiliation_map": "e42af98878e6c2acb093b2838216af6907fd4b7167c2192bd07f4dce3a51a77b",
     "institution_aliases": "6212b67b32a68f418bf133f5571c0032d77f708f0f8fbea4bdb65508a6140f02",
-    "excluded_works": "196a012aaa34df355910c9dd550fb8c466f51503819c5dca9d45991cf904b148",
+    "excluded_works": "17d6b5d6020be221b5f1aec94fd7616a6ee3b4ae37c7ea769abe54004c44741d",
     "institution_metadata_corrections": "5cb48aef600283dbc4a821e7c722fd27282866e8abb76d3fa01c48b533725bb4",
     "institution_metadata_snapshot": "31eb5f1a179964306ab85233df1e59f49c62b795cec9b30a1de7c01c8cc4edb3",
     "institution_metadata_refresh": "5b7f84011a6016dae7390cdc191d1401b4b7032ea786d91801010413650dbf9b"
@@ -418,8 +418,8 @@
       "bytes": 128649
     },
     "author-info.csv": {
-      "sha256": "c0a29c084abbe1268b6d321e51247fd95a94b042f8e130b6e2f584acb151526f",
-      "bytes": 340200036
+      "sha256": "c24fcfc88a147209290a1c983bfdabe3d8720eeb7263415ad5facfd07c296ca3",
+      "bytes": 340141202
     },
     "biomed/tbme.json": {
       "sha256": "6efe6a1ed32e5bc53c3e07324ef4ee902557bf14c8094501ccf3f1865d4c6cc5",
@@ -562,12 +562,12 @@
       "bytes": 347343
     },
     "flagship/nature.json": {
-      "sha256": "431fe8b80da645f8fa9f40a241f1f4707e994761b703217eae2d75374ace62c6",
-      "bytes": 1306732
+      "sha256": "599b5ff396f64f04de53ab6326ea91c802872aa003af726d55c8f1b463af0c4a",
+      "bytes": 1304777
     },
     "flagship/pnas.json": {
-      "sha256": "d83d7662023af68c3847093d644737cd7963ff9b0b8f8b51e2c3446a5a0ed59f",
-      "bytes": 1586269
+      "sha256": "0fa67a7d66190c47345d80cd3a75f0f1059450dd3f555faf99b740b1ff047113",
+      "bytes": 1584843
     },
     "flagship/prl.json": {
       "sha256": "184bb18493d1cdddc34bce82baccdf93ab43055ff7e455aa6782fbc591677de7",
@@ -582,12 +582,12 @@
       "bytes": 1199256
     },
     "flagship/science.json": {
-      "sha256": "7556437f4967b1f317547e1aa8479d6b4a34286634e7efa2caf54d35827d966b",
-      "bytes": 1109619
+      "sha256": "120bdc8876b1b0ef6e09f1c46903b666a6471e055685e37c91bf74141e240c7b",
+      "bytes": 1109409
     },
     "flagship.json": {
-      "sha256": "2344b64a2c6a0800e526ec20bc362febb1eb8e800a3faaf72439dbab34f0dd9f",
-      "bytes": 3494886
+      "sha256": "03c05eb7d03ec69544c1ab69af60075268a516b6ef1ee1308731fdc0607c63d6",
+      "bytes": 3493510
     },
     "image/cvpr.json": {
       "sha256": "b0125672d29ddda5f80c820fb6d91dc0ee01917aef517cf63162ae67dd91a033",
@@ -622,12 +622,12 @@
       "bytes": 907651
     },
     "inst-area-year.csv": {
-      "sha256": "0688390b64491c2372323e8c28da144a8dd6088b0524219b1ed2b1e97bc4f73d",
-      "bytes": 17143453
+      "sha256": "96774dfd7bd200b54d67f30890194bab8f1e263bb7da1523f1d0a4375907d281",
+      "bytes": 17142304
     },
     "inst-venue-year.csv": {
-      "sha256": "b6faee5927d7e4f02b92d575ece79ac847315107e1892c5dc71d6e7df7fddc68",
-      "bytes": 31623000
+      "sha256": "4934e8f90a51fa7026110f02d89300ac0a7a5666241b2f3c91528fc6fcb5fcc2",
+      "bytes": 31619793
     },
     "institutions.json": {
       "sha256": "1c96a4e1ed57d7d04d0a55f3941e264dc80595020f1ab2eb36c9ea769f717627",
@@ -770,7 +770,7 @@
       "author-to-area credit reconciliation within declared rounding bound",
       "nonempty default-on areas"
     ],
-    "aggregate_rows": 205717,
+    "aggregate_rows": 205703,
     "institutions": 9325,
     "year_min": 1987,
     "year_max": 2026,
@@ -793,7 +793,7 @@
       "ml": 39048.62722,
       "biomed": 6091.31514,
       "quantum": 3171.02931,
-      "flagship": 147762.55934
+      "flagship": 147148.55936
     },
     "venues_without_credit": [],
     "institutions_without_country": 5

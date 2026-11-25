@@ -25,9 +25,10 @@ REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 from fields import add_field_argument, get_field  # noqa: E402
 from aggregate import (  # noqa: E402
-    canonical_aliases, institution_id, load_affiliation_map, load_aliases,
+    canonical_aliases, institution_id, load_affiliation_map, load_aliases, load_exclusions,
     prepare_affiliation_map, resolve_raw_affiliations, type_corrections,
 )
+from workkey import work_key  # noqa: E402
 CACHE_DIR = os.path.join(REPO_ROOT, "cache_biosciences")
 AREAS_JSON = os.path.join(REPO_ROOT, "data", "areas_biosciences.json")
 OUT_DIR = os.path.join(REPO_ROOT, "data", "biosciences_aggregates")
@@ -191,6 +192,8 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
     registry = load_registry(areas_path)
     affiliation_map = prepare_affiliation_map(load_affiliation_map())
     aliases = canonical_aliases(load_aliases())
+    # The same curated non-research exclusions every field uses.
+    excluded = load_exclusions()
     with open(os.path.join(REPO_ROOT, "data", "institutions.json"), encoding="utf-8") as f:
         institution_metadata = json.load(f)["by_id"]
 
@@ -218,7 +221,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
     if venues:
         target_venues = [v for v in venues if os.path.isdir(os.path.join(cache_dir, v))]
     else:
-        target_venues = sorted(os.listdir(cache_dir))
+        target_venues = sorted(venue_to_areas)
     year_filter = {int(y) for y in years} if years is not None else None
     for v in target_venues:
         vdir = os.path.join(cache_dir, v)
@@ -245,7 +248,7 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
                     w = json.loads(line)
                     total_works += 1
 
-                    if not is_research_article(w, v):
+                    if not is_research_article(w, v) or work_key(w, v, ystr) in excluded:
                         continue
                     research_works += 1
 

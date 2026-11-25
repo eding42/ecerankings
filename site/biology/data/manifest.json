@@ -2,14 +2,14 @@
   "schema_version": 1,
   "field": "biology",
   "description": "Institutions ranked by peer-reviewed research papers in selective life sciences and biomedical journals.",
-  "generated_at": "2026-11-24T12:42:12.403721+00:00",
-  "source_revision": "dfd27b52b33bcc8398edf5b478e1fa23d6831807",
+  "generated_at": "2026-11-24T23:42:01.270588+00:00",
+  "source_revision": "bb92567bee6ab99b2fc2a843a4232d48fd629aaa",
   "source_tree_dirty": true,
   "source_tree_status": "available",
   "source_revision_meaning": "Git baseline at build time; code_hashes identify the actual working-tree files, including uncommitted changes.",
   "code_hashes": {
     "pipeline/aggregate.py": "3d42b1d689fff74b06dca334e044df36a4211146ae4905b85dfdc85017fff6db",
-    "pipeline/aggregate_biosciences.py": "6aaec2e732530f37ccfec92d5178111fd8059237e92504ad31a2efcb34ad3d16",
+    "pipeline/aggregate_biosciences.py": "e8d1e55760dcfbd2f0901bc9b5af9acfcbb9e153ece77235a7c1fa6cf8e458b8",
     "pipeline/aggregation_runtime.py": "b5dbb4cd338969fa8a8954d9653cf57bb03b2eaf1acc21ad4dffee63c43baa59",
     "pipeline/fields.py": "b34c92cae0100af1c1dc1e7d4e7a607dde984ae32a7f16bb886feda99989a419",
     "pipeline/workkey.py": "639e71f64299af09b346e6983a60af2cf928d08732fd851adc8266a5e2cee538",
@@ -26,222 +26,222 @@
   "default_end_year": 2025,
   "methodology": "Equal 1/N author credit, split between the unique credited institutions (education) each author lists; geometric mean of 1+area counts minus 1.",
   "input_hashes": {
-    "registry": "7150838c9e0a6f03494e1ed7f5a74e49501834dc2948080cf6beb17816339114",
+    "registry": "77b375c0dbd333cec09fd3c823544e415acfc8855ce8983f58a26112675a0383",
     "affiliation_map": "e42af98878e6c2acb093b2838216af6907fd4b7167c2192bd07f4dce3a51a77b",
     "institution_aliases": "6212b67b32a68f418bf133f5571c0032d77f708f0f8fbea4bdb65508a6140f02",
-    "excluded_works": "196a012aaa34df355910c9dd550fb8c466f51503819c5dca9d45991cf904b148",
+    "excluded_works": "17d6b5d6020be221b5f1aec94fd7616a6ee3b4ae37c7ea769abe54004c44741d",
     "institution_metadata_corrections": "5cb48aef600283dbc4a821e7c722fd27282866e8abb76d3fa01c48b533725bb4",
     "institution_metadata_snapshot": "31eb5f1a179964306ab85233df1e59f49c62b795cec9b30a1de7c01c8cc4edb3",
     "institution_metadata_refresh": "5b7f84011a6016dae7390cdc191d1401b4b7032ea786d91801010413650dbf9b"
   },
   "artifacts": {
     "areas.json": {
-      "sha256": "7150838c9e0a6f03494e1ed7f5a74e49501834dc2948080cf6beb17816339114",
-      "bytes": 17094
+      "sha256": "77b375c0dbd333cec09fd3c823544e415acfc8855ce8983f58a26112675a0383",
+      "bytes": 17552
     },
     "biochem-struct/mol-cell.json": {
-      "sha256": "3e7a4c873ddd15c6dfd22f7c223270887e264ec9731409b36dc93b9fbaf07c6a",
-      "bytes": 555214
+      "sha256": "b12bbf567e935c75fa75f3e193aeaab00b795872e49719bc5a663c4cfe7bd6f7",
+      "bytes": 552245
     },
     "biochem-struct/nar.json": {
-      "sha256": "468d48a5038d091e7d6931e40f4e0b8b3af7271b309731556263c0107820b81d",
-      "bytes": 1450605
+      "sha256": "1808a799c5a778bdb42d5f12bf1f2cb62d4d442fce0eb154dd989b942b1622d0",
+      "bytes": 1450640
     },
     "biochem-struct/nsmb.json": {
-      "sha256": "51dbd4df8a35aaa1865ffaa5f665820e1417fc522f9e2f22a2c198ec3a05ae26",
-      "bytes": 372664
+      "sha256": "b651bf5a24e2526e8625e3aa45fcda89c6797383c23090b8fa3b09156c120e2e",
+      "bytes": 364718
     },
     "biochem-struct/structure.json": {
-      "sha256": "37a1f5bc04df88645578ccde961b953cfaa7b9367572806a13fe4ffaed9d3a02",
-      "bytes": 410184
+      "sha256": "e0166ba21ab0b922cf39bec6df20b173db245e5061b701e3bcaca04ea7424e2d",
+      "bytes": 400346
     },
     "biochem-struct.json": {
-      "sha256": "d139636606a864ac16c10eefa60ce9a2192713bd29dac9ccc7e6d472c7ac6496",
-      "bytes": 1661327
+      "sha256": "d756147803376768d908d3192bc1dc9de32260edb3425ba7618e6489aa6bce28",
+      "bytes": 1657049
     },
     "bioeng-biotech/nat-biomed-eng.json": {
-      "sha256": "f49a0057332e0065173906a0c75e3c7fdea082955b38788a4e0681fecda93dda",
-      "bytes": 154682
+      "sha256": "6756a69ff41798872ff7f4c7040a25a6577cc5d73d8dae745d701f0504e5323e",
+      "bytes": 153976
     },
     "bioeng-biotech/nat-biotech.json": {
-      "sha256": "4083294a1fbbe8c6a562a869b524162c7ce2e5f33bd08be3f5afd08d2a701c8a",
-      "bytes": 450947
+      "sha256": "3ab346724bc7818b9c0aa731be74768307a8e2a7431835aae00365b5986b50ca",
+      "bytes": 439331
     },
     "bioeng-biotech.json": {
-      "sha256": "b7c26dbbe4a468e7b3c5f02356ec64a75032df74b7055357d202dd37a77844ea",
-      "bytes": 529588
+      "sha256": "a666d9db9e95916d548447b8a9d767ec9840d0c13ed2bd90b33d49b88a2ad36e",
+      "bytes": 517731
     },
     "cancer-transl/cancer-cell.json": {
-      "sha256": "798b05d9a9bb461df66c04aeb2695d3011199cc0168147e04e2c19abf2e7306b",
-      "bytes": 359810
+      "sha256": "1052663fd2b74f57890c2d222a406045f33223c568b28936a29a53358f241763",
+      "bytes": 357243
     },
     "cancer-transl/jci.json": {
-      "sha256": "80de9732df67437ff155ff1ab4194d2507f64663fb231683f92a8e3ffdb88724",
-      "bytes": 800649
+      "sha256": "3a8246cbf643b40e713ed6dc87bcd8ae521db6c851a6706a3d2ec2115f384540",
+      "bytes": 796620
     },
     "cancer-transl/sci-transl-med.json": {
-      "sha256": "697824e89820a9ec779f6160993d70edb25c2e79f1971a71feba2ff4fac9f1a9",
-      "bytes": 498766
+      "sha256": "0a9ffe2c236f5caa7ffce83289cc1e0c05f874a90de48447ff668abf30f1a844",
+      "bytes": 497557
     },
     "cancer-transl.json": {
-      "sha256": "ac021d727aa1681b22bbb0f2133857d5330c39a03c50e45e7ef215d3cb0ed3a8",
-      "bytes": 1065403
+      "sha256": "f08f1ce38e94d5cb40b98b611acaedd3c242007f440cd46756f35f8fb34947ee",
+      "bytes": 1061588
     },
     "comp-bio/bioinformatics.json": {
-      "sha256": "59d421f591bb1cb1aa3eaa463371667e4ebb6a18a9ee637b3751d926c37a1980",
-      "bytes": 1063812
+      "sha256": "1e80a9c55e6ddb5395570c7741f5a8d34afb1ad1bfc6fd02fc8b0bee678de6c8",
+      "bytes": 1063501
     },
     "comp-bio/cell-systems.json": {
-      "sha256": "388139634f217cc3d3cfdb0443049bd826b27e28bb1308df920135d74fff7866",
-      "bytes": 132412
+      "sha256": "691d5e702af248a106bed3340d092f6ffd65a716b2c8005ca7289f6ab0cf9bdd",
+      "bytes": 131275
     },
     "comp-bio/plos-comp-bio.json": {
-      "sha256": "39674d67d04800004931df8057baa0e8fa612ca86be45355ed1b8c7e9dcd6da3",
-      "bytes": 897794
+      "sha256": "6054b8fb97c173380dc35326da27ba91e2ff375ebe8c5fb471ded1f9d48e68d8",
+      "bytes": 897672
     },
     "comp-bio.json": {
-      "sha256": "e64ac580be44d7262a694e11964c910b432e5c20c715f8d3ca2bb965c6c386c1",
-      "bytes": 1489973
+      "sha256": "6b74079bf2ba3d2d7bfe4be1d39abbbe17b1c2e3e02366f8bd030eff5a6871ef",
+      "bytes": 1489161
     },
     "ecology-evol/nat-ecol-evol.json": {
-      "sha256": "1f4fe73c5c6e9d3e41d56fef3ea40072258d5ccbf729da6da3023bbe1dca4eb1",
-      "bytes": 485411
+      "sha256": "023705d64002203e4e9f64db02a1216b753d0360acc726b02b74fa910196def4",
+      "bytes": 483993
     },
     "ecology-evol.json": {
-      "sha256": "1f4fe73c5c6e9d3e41d56fef3ea40072258d5ccbf729da6da3023bbe1dca4eb1",
-      "bytes": 485411
+      "sha256": "023705d64002203e4e9f64db02a1216b753d0360acc726b02b74fa910196def4",
+      "bytes": 483993
     },
     "elite_bio/cell.json": {
-      "sha256": "0b9e9465c141f7e91b252099c0355ef6980c36e0432b0c0d6f1244f17558bf05",
-      "bytes": 738897
+      "sha256": "a1dc449afc83b5f17d8d0136c988659ccd5afe5a44804cb4643fbc3200a66ae3",
+      "bytes": 733276
     },
     "elite_bio/nature.json": {
-      "sha256": "e48930c27813b8a423e3c25ac023d9fa4fc2cdb3eec0e9024ec3c421ea9d63f0",
-      "bytes": 1443701
+      "sha256": "e0a8e3d0cffb37acc93f0f12da7073e889c538d0769f4c71e114ef87c14596d4",
+      "bytes": 1427422
     },
     "elite_bio/pnas.json": {
-      "sha256": "eec0e9a1ef7456ad4d7c1bf5f6eda8b607d34e5214ca0a57ebceae24d720b254",
-      "bytes": 2263835
+      "sha256": "65c24a8d33e9d5b4b400254a679175dda6fa09667e07947a4a706ce60a7557cf",
+      "bytes": 2259129
     },
     "elite_bio/science.json": {
-      "sha256": "0d8b229e1a93b046b5d87221e2723dd43999d2299201dd7d7e5fce960b006393",
-      "bytes": 1085235
+      "sha256": "8eb4a3d8f86359902d609bfec6027de830da8974653df9ed807a7bebab535de8",
+      "bytes": 1082642
     },
     "elite_bio.json": {
-      "sha256": "46f9a9491dd3182476d24a858413a9461b668a075924be44a20aecc79f082f33",
-      "bytes": 2957442
+      "sha256": "6e468887a3f22024a16e17a81133d98f7667280a8354c9569d2a9191ff3888e2",
+      "bytes": 2949338
     },
     "genetics/genome-bio.json": {
-      "sha256": "dd685130dbf548613de3e1f1a92c5b59d09a1cc44d59988f73a5ce09bbf997fc",
-      "bytes": 616553
+      "sha256": "dbe7cf35588cd0ecf381aa6bcfc3902f4849732d232e2029688ba209ce16f31a",
+      "bytes": 614499
     },
     "genetics/genome-res.json": {
-      "sha256": "69ece5c41a4905f4112fcfbe4b14519ea8dd640a82b5642cd0c1af68b895f47b",
-      "bytes": 435647
+      "sha256": "fca7f0b8ab8ace6908cb4159a3d6a9ddce5d56d2ea10821e2cbc861b68295a48",
+      "bytes": 435643
     },
     "genetics/nat-genetics.json": {
-      "sha256": "7496adb94cba6f7c5db8798ad432d5a449c992e0a069bdcd2369d12aebc9b413",
-      "bytes": 937642
+      "sha256": "a6745b83b55d257cb8a7e75689d719436ba267f8fbef505b78d7af0703546798",
+      "bytes": 933543
     },
     "genetics.json": {
-      "sha256": "fdbe7415d6304a1413f2dc12bb613ba23cec953fe24c32b53d97d9c19d54eb4b",
-      "bytes": 1299396
+      "sha256": "6b8bf695dbe3e82887f88a81989620788c4305c27f48fcb8c545909a27d0d949",
+      "bytes": 1296677
     },
     "immuno-micro/cell-host-microbe.json": {
-      "sha256": "b0ad42928d0827c1aefca9e0ae827a13ea9a7c61ace0ce7a328debc50ff7e85b",
-      "bytes": 355511
+      "sha256": "f6a8ea33ab110e2bfdcdb44c3c47b47f7f316fffefd26fcd5f3e848cb9505eb3",
+      "bytes": 349169
     },
     "immuno-micro/immunity.json": {
-      "sha256": "e8c1b6fe5a8642080bd581e4ca49e9969d55e7635560b1e7cee911365047e0f7",
-      "bytes": 409891
+      "sha256": "edccf2cca49660514559dd5013b100f34a75598b7538167908b66023873f05ad",
+      "bytes": 405604
     },
     "immuno-micro/jem.json": {
-      "sha256": "596b5a1b76d1a35196073c798255f23eb4683e75f617b156465f64a217c4420a",
-      "bytes": 521527
+      "sha256": "f6c076d6785c6dec4b4ea1083e0fc2cdc7ff4e4ac026c4cec8764c2654f57abc",
+      "bytes": 519785
     },
     "immuno-micro/nat-immunol.json": {
-      "sha256": "5429f2430459d1b44b2492498fc2036503d851dfb9e0b8b84215d4653fb900a2",
-      "bytes": 393775
+      "sha256": "9c761ae18cdc33458d0f98f01d664059a67b93b45db87c99c7f9d4c0082e1fe0",
+      "bytes": 388015
     },
     "immuno-micro/nat-microbiol.json": {
-      "sha256": "5537a159d12e64e8c42daae38310e2cff37e85c0228cf8bda023ab6756fb1cf5",
-      "bytes": 343501
+      "sha256": "6f398f25c6c39f082dfc8dd13b5c390422208864bb30262c56a8bb2e36de3bd5",
+      "bytes": 342378
     },
     "immuno-micro/sci-immunol.json": {
-      "sha256": "07d51d42a110ec5055cd917e768f461a1199da67c2e1a551361d99f46369fd26",
-      "bytes": 183331
+      "sha256": "3a2e8e0297fa6f0ef29240684b3af5298fdf5ccc954e7c11e68ae8b94118b7cf",
+      "bytes": 182947
     },
     "immuno-micro.json": {
-      "sha256": "e07fa5c8e370f536dc15c7e9a81bb21f1a2666e4fe26cb2267daf8054a5b6ea0",
-      "bytes": 1093239
+      "sha256": "5d37368381c4de8e219d93c29e47b7fb98421cc00f3d78429b650438c1341a93",
+      "bytes": 1088023
     },
     "inst-area-year.csv": {
-      "sha256": "2325c6d7351e204a62cbf265c796596b4c74ee3109e5204b26107516e419dc0b",
-      "bytes": 13469723
+      "sha256": "45388b4e11dfdbb26b82f105b1201a47709b0c05c5145a86e009402726bc2b9e",
+      "bytes": 13413598
     },
     "inst-venue-year.csv": {
-      "sha256": "9415430b0b78e621c3c4bcb6a2f1c2a382c64aec48239949e65eb5ec54244767",
-      "bytes": 23536308
+      "sha256": "131e7c0fb771a4c1c44ece79e0929a217c6ef87fb9ecbec7dd8b344b43c00052",
+      "bytes": 23389730
     },
     "institutions.json": {
-      "sha256": "be39f69eb842652ec332810ef57bd98840ce9ab0b8632704da0146bfa7bbd7a7",
-      "bytes": 638891
+      "sha256": "2759b99c680a50b84d12991b56687a0f56dff20327ddd11734314b6cebfedea2",
+      "bytes": 638086
     },
     "metabolism-physiol/cell-metab.json": {
-      "sha256": "fb15b1c75bbf510809b94845a77f50caecb14d6f8ec644e063c19ad8a522d022",
-      "bytes": 419945
+      "sha256": "b1c5282f5fa4bede224ac67bc3412e7537f3b9189a455e0ff5c14787923cad5b",
+      "bytes": 414627
     },
     "metabolism-physiol/nat-metab.json": {
-      "sha256": "582c555952b8399beb1ac5ea4608c3b31e383076e97d244650acc3805242616b",
-      "bytes": 182596
+      "sha256": "d85e726960bb60ac23b8efd088b7a0a2db60b111bcbbcbe049d3dc3d55430d96",
+      "bytes": 182506
     },
     "metabolism-physiol.json": {
-      "sha256": "0279897bcc9d2d48f5e78d0f1acdc70b03d7530663996b55ba373015374cd7a4",
-      "bytes": 515155
+      "sha256": "0d8677b16b61154279820e1cc6026716fb0e60a7b671f3f2c017a10d9e86c209",
+      "bytes": 510501
     },
     "mol-cell/dev-cell.json": {
-      "sha256": "ac817a0766e7b3c3d2c41e8e1c47ae6e95297a01064d1c457612e7b65db72713",
-      "bytes": 451741
+      "sha256": "e110d3a446c65e567bb587dc7c69f890452de3ebbadf81a8e2614f8631904173",
+      "bytes": 446117
     },
     "mol-cell/embo-j.json": {
-      "sha256": "39c024c791784a3590f30a0f4e47af057589b6c30b1ce4b68677a14ee3729bb7",
-      "bytes": 641934
+      "sha256": "2abe1520e1852267918cc9bfe76df5d63b0a5b3828bb7706880432416413d157",
+      "bytes": 639803
     },
     "mol-cell/jcb.json": {
-      "sha256": "fc755fd959edc3630fa3fc2a81a6ce8085f153b2b7fe19e816a728145a8eac06",
-      "bytes": 545826
+      "sha256": "d1d8e78bae9720e5b2c93e124ddab84307fc12ac5c9b964733f01964e3f0a104",
+      "bytes": 541546
     },
     "mol-cell/nat-cell-bio.json": {
-      "sha256": "92ef50cfc1615d22ddadf8b049e2db4981108776d137e973c42f38ab803e25c6",
-      "bytes": 413732
+      "sha256": "911f16be9c344adfb9d1df24756e27edc4f89f4acd458ce067336067809185fd",
+      "bytes": 408160
     },
     "mol-cell.json": {
-      "sha256": "3596674c0aaf775a4c4f4e07a7df9d2cecf06af69bd149eea1370cc1f0d1900b",
-      "bytes": 1114963
+      "sha256": "be60ccffb209c83447dd976167a7e0f852d75cb6c2024924f0c51d5eb86aab51",
+      "bytes": 1109235
     },
     "neuro/nat-neurosci.json": {
-      "sha256": "f6aa59a281dd1df7cc83e20b62d4667d2dabeac948863e404b69e7b628bb10e0",
-      "bytes": 492670
+      "sha256": "cc981fc2761fdf98d132acb988f938d9c58cbcfa3d16e53ac96ab671627b49ab",
+      "bytes": 488550
     },
     "neuro/neuron.json": {
-      "sha256": "e9d873f64362c99e1d18c8e9b31c3ab04ff19f80b495e1d2faabe1793cd6046f",
-      "bytes": 542289
+      "sha256": "05eafa4ab45c1ecd164bf18a8c61bb5db23b73dc8874dff4acb01d33a7948d7f",
+      "bytes": 536695
     },
     "neuro.json": {
-      "sha256": "b8e566680c3672a716d5a352dfc4e62cc0307374f7536faad7e558d73b7ab20b",
-      "bytes": 760975
+      "sha256": "21872ed98c11af36be9a5028b7740cef6be4d93560fe1159652b55e190d94d48",
+      "bytes": 755202
     },
     "plant-bio/nat-plants.json": {
-      "sha256": "74951cddd4c0ce6c9a0589a36a929f40da02041db1b2293f8a31f86e7a6afbbe",
-      "bytes": 292968
+      "sha256": "8f33fc12d052d3ba22f1d11bbb4ae10c918b64cec88fa0fa032b778493f884df",
+      "bytes": 292886
     },
     "plant-bio/plant-cell.json": {
-      "sha256": "1cee946bb500cc1b8bf2a48ff5810a94bbecf5843dd55a66d3559e6da8beb9ab",
-      "bytes": 506244
+      "sha256": "931db8bb219ab07cb2d74c5eb5b28c3049f16da2d32d6cca3bd7e601abd3eaa4",
+      "bytes": 503508
     },
     "plant-bio.json": {
-      "sha256": "c7c04f5329c8a449bcce1b6cbf8ea9430bbd02432b8f755063ebf1e48f26ed75",
-      "bytes": 676482
+      "sha256": "d0b8787e42453d0777d654185d97cc7c14a8b9e1d0a748c2b3822eacfcae5b7b",
+      "bytes": 674619
     }
   },
   "validation": {
@@ -255,23 +255,23 @@
       "complete institution metadata keys",
       "nonempty default-on areas"
     ],
-    "aggregate_rows": 134522,
-    "institutions": 5808,
+    "aggregate_rows": 133952,
+    "institutions": 5801,
     "year_min": 2005,
     "year_max": 2025,
     "adjusted_count_by_area": {
-      "elite_bio": 72586.442,
-      "mol-cell": 16404.30349,
-      "biochem-struct": 32090.82493,
-      "metabolism-physiol": 3447.56342,
-      "genetics": 9885.71739,
-      "neuro": 10230.09044,
-      "immuno-micro": 13778.23867,
-      "ecology-evol": 1457.53437,
-      "plant-bio": 5320.65277,
-      "comp-bio": 23539.53048,
-      "bioeng-biotech": 3467.04189,
-      "cancer-transl": 11692.43688
+      "elite_bio": 69664.23752,
+      "mol-cell": 15807.29476,
+      "biochem-struct": 31541.90638,
+      "metabolism-physiol": 3282.55185,
+      "genetics": 9500.48032,
+      "neuro": 9650.86263,
+      "immuno-micro": 12979.43304,
+      "ecology-evol": 1397.53629,
+      "plant-bio": 5014.7348,
+      "comp-bio": 23489.26816,
+      "bioeng-biotech": 3181.47669,
+      "cancer-transl": 11087.95263
     },
     "venues_without_credit": [],
     "institutions_without_country": 0
@@ -287,44 +287,44 @@
       {
         "venue": "bioinformatics",
         "year": "2006",
-        "bytes": 1596280,
-        "sha256": "1dd5fd088a451335d5f3f5eaf7bf90dc2e63df8c8275a31b742b4715bd3e36ca"
+        "bytes": 1525508,
+        "sha256": "fe5a0a0b9162711599391fe1d34fe3f455b332c993299cbc587534e9c80a1d6d"
       },
       {
         "venue": "bioinformatics",
         "year": "2007",
-        "bytes": 2607039,
-        "sha256": "e4c24a2e93ba9816cf9194c74aceb666ebbfc0a291144b0c71f9bca5e78fd6b2"
+        "bytes": 2501845,
+        "sha256": "790cebd10d1663a59d0544cf790b5d15c1440045ca2b2ed4c4b08880b4c941ba"
       },
       {
         "venue": "bioinformatics",
         "year": "2008",
-        "bytes": 2637450,
-        "sha256": "d27de2020c072eaa7952b07c585a77703b566d50dfbe8d162225a28a28d7f6a4"
+        "bytes": 2533613,
+        "sha256": "635bdc1ae5f5202d64e5d5df4706021d7d85d44b6dc826a1fb4b09e70b05e17e"
       },
       {
         "venue": "bioinformatics",
         "year": "2009",
-        "bytes": 2915899,
-        "sha256": "e4fa060db43eb17aa67bf3f1c9ea9a9eebce904a841d11727e0332bf5904a083"
+        "bytes": 2801328,
+        "sha256": "97d58183f02964a089aa2f6ea868d6c2db6b8a5dddb5d1f5fe49118447565463"
       },
       {
         "venue": "bioinformatics",
         "year": "2010",
-        "bytes": 3192982,
-        "sha256": "49bd069451d7300b337a2cc3a02559b32649286b1c9ff7c61246210676efa3c6"
+        "bytes": 3069770,
+        "sha256": "7e0fdc8d7081bb37d2aa85346b56170d8d7903fdd59908629afce8037ead24d3"
       },
       {
         "venue": "bioinformatics",
         "year": "2011",
-        "bytes": 3353785,
-        "sha256": "336abbce3d4825a2bc718cb790f148ac2925fa4e6b6144c6bc36dd7b4f78abfd"
+        "bytes": 3224325,
+        "sha256": "e0eb8cce9fd1979e40f1f833e39fce73bdbcebf857621eeaf867c9febb69dcd5"
       },
       {
         "venue": "bioinformatics",
         "year": "2012",
-        "bytes": 3665816,
-        "sha256": "b2de1fef39c58c48313cfd53ee83f9943a4130cb59452ba03705b26a703d1e6b"
+        "bytes": 3530247,
+        "sha256": "74ccd1f425c1b053a1d7471d43c32cb8eb730d68728e7347b3a703f9cdc48479"
       },
       {
         "venue": "bioinformatics",
@@ -335,44 +335,44 @@
       {
         "venue": "bioinformatics",
         "year": "2014",
-        "bytes": 5150149,
-        "sha256": "92c37f6827795244f05104f49f47866f651783dd5207b4bc8c9cfecf541a479a"
+        "bytes": 4961420,
+        "sha256": "4ecec4168424ebc682a197a722cdb9d9ae3582f5ae9b86926fb64b8a7061d335"
       },
       {
         "venue": "bioinformatics",
         "year": "2015",
-        "bytes": 2871247,
-        "sha256": "b6bc659934c46ccb01c3dd2c78b853d3c1df5e193fad631131c6065dcdcd8475"
+        "bytes": 2753018,
+        "sha256": "776e8abc04dee2c0563c6c3ef8463354e53319e3046d6be9e3092b3854f45455"
       },
       {
         "venue": "bioinformatics",
         "year": "2016",
-        "bytes": 2458831,
-        "sha256": "12145243b64b0e4181c96cfe8712816f769a72f3aef6f6da5ffdf80b42888ce5"
+        "bytes": 2351096,
+        "sha256": "96ffe078c3e4f70c7684b329b7401bfe532d9de0520b50e7d4b14c6f9129ada2"
       },
       {
         "venue": "bioinformatics",
         "year": "2017",
-        "bytes": 2853813,
-        "sha256": "9a377abe58cb19a190d660a566a2c614515dd3a253b6c2d2d61bff5ab08a19fa"
+        "bytes": 2719109,
+        "sha256": "b733bf92774ddcd5285dcc9f3a665eead452dbd5b9f4f62caef6c85be57b5199"
       },
       {
         "venue": "bioinformatics",
         "year": "2018",
-        "bytes": 3488683,
-        "sha256": "18068c0a4b4319d13f38f1545a9335d3c2c5ac2128ab567e9fda668a4437d4f8"
+        "bytes": 3338170,
+        "sha256": "370875909bd8fd96f237fe68c6aa982245b4817f4bbb242f1a4d4889d5e779ed"
       },
       {
         "venue": "bioinformatics",
         "year": "2019",
-        "bytes": 3494770,
-        "sha256": "300501cf350bfeea27446e73ada208460f5ad13a04d578c312a461b5e9dbf64d"
+        "bytes": 3343448,
+        "sha256": "e56d3f08d14775bb52fb621d4a1bdf3118c82e4967b8130213197ee820fb0a5a"
       },
       {
         "venue": "bioinformatics",
         "year": "2020",
-        "bytes": 3311081,
-        "sha256": "3377ae5aa00c5b2414cdddfd68f881cdb7f2e494f64a2919a7d02cb681088b26"
+        "bytes": 3151185,
+        "sha256": "78f991ff463c8d1dc8f511f7b75e7e5c267c747bbe816bd3c8559d6706521bc3"
       },
       {
         "venue": "bioinformatics",
@@ -383,26 +383,26 @@
       {
         "venue": "bioinformatics",
         "year": "2022",
-        "bytes": 2910574,
-        "sha256": "7d05688a2b8d7f61de7d66d2a1680ef3217e3784d54de5bcb31a535e594ba8c5"
+        "bytes": 2784337,
+        "sha256": "0906d8109ad1b726b8c6c8f5873464ba7a02f2c3efa71f1fcf2c34a513f58dc1"
       },
       {
         "venue": "bioinformatics",
         "year": "2023",
-        "bytes": 2710556,
-        "sha256": "5f8a4d07931903cb341ae61ef1961269685fdc41bf07c3745e4d2e37da3f753e"
+        "bytes": 2597043,
+        "sha256": "d9e56382b9c038b6c6932d89593e20367a1cd18fc4696e26d2387bc9a42f8e3c"
       },
       {
         "venue": "bioinformatics",
         "year": "2024",
-        "bytes": 3059104,
-        "sha256": "afe2a525659593742ee705ff6956f027fc22067c97945b29752cb42486ef98de"
+        "bytes": 2921987,
+        "sha256": "c1b40fb6600545cd61ffe3ec2f546e23dade1c8d38fca6ac3978e0606c404914"
       },
       {
         "venue": "bioinformatics",
         "year": "2025",
-        "bytes": 2787610,
-        "sha256": "60158d2d0e81b0aee69746b7bd7556489510c322da3ec8bf8f9f0dfa16037dda"
+        "bytes": 2667346,
+        "sha256": "7eb23f72c96455af4b8509b36b120f31649b36d321b0dc75e341da236f3e29e0"
       },
       {
         "venue": "cancer-cell",
@@ -419,8 +419,8 @@
       {
         "venue": "cancer-cell",
         "year": "2007",
-        "bytes": 616482,
-        "sha256": "ade0a357be820760bfda453e707b095e02df37ccb0cc05b92104c234addf463d"
+        "bytes": 589261,
+        "sha256": "8abc2467e40eff626d31ae2b2ae5f302ff21510dd673c8543d3ed2b2ac7e610e"
       },
       {
         "venue": "cancer-cell",
@@ -443,8 +443,8 @@
       {
         "venue": "cancer-cell",
         "year": "2011",
-        "bytes": 1099369,
-        "sha256": "75a787eb0ca27d60b85cadd89881511f30f5e94b29750891db8f153707df1d5a"
+        "bytes": 1053227,
+        "sha256": "4412e448399c0fd367fe2eb2cc9c127c85c4be88508346a3a99765809ebe2c74"
       },
       {
         "venue": "cancer-cell",
@@ -461,74 +461,74 @@
       {
         "venue": "cancer-cell",
         "year": "2014",
-        "bytes": 1611400,
-        "sha256": "f7848992df2f1c2e4042d375244489730bde7d1af286aca16f7bde7ea2ed4c17"
+        "bytes": 1528928,
+        "sha256": "ec5a12b01f078645a9e7cc0e0e1111851350517a418a7945146ec38d0fabb914"
       },
       {
         "venue": "cancer-cell",
         "year": "2015",
-        "bytes": 1488029,
-        "sha256": "bea9076ea275acea47fe39e004471be254435f0a32694e75897a25dad1fdf124"
+        "bytes": 1430491,
+        "sha256": "dd9196bc63d8173100a134d46851fea2e1dd16e9158fe08ffe841e01112d56bc"
       },
       {
         "venue": "cancer-cell",
         "year": "2016",
-        "bytes": 2178882,
-        "sha256": "68cbcf6a99526406a8a5b39572fd42efcbf8fa3ee121881ea5200917129c0853"
+        "bytes": 2060104,
+        "sha256": "f7257af6d3d226dc192594d66561f3a9fac0cebae1557e3315da68bbe1af2521"
       },
       {
         "venue": "cancer-cell",
         "year": "2017",
-        "bytes": 1761644,
-        "sha256": "8529efb41174e3cba12e4a4511e56bba46e704a16150a86857a17e7acbc4accb"
+        "bytes": 1652590,
+        "sha256": "0ac0efea15c14a83f1997c750bcad6dd8f212a22179e746abb6c8c5e3cce6444"
       },
       {
         "venue": "cancer-cell",
         "year": "2018",
-        "bytes": 2731715,
-        "sha256": "50131e2cc9e030a1fda11c946d743fe4f09f9f582c87e72471c3a6f4f89edffd"
+        "bytes": 2596743,
+        "sha256": "5f0fc1974a315574c55f8c8da525a4eaf4848f608836548cad4d5f093a535fd2"
       },
       {
         "venue": "cancer-cell",
         "year": "2019",
-        "bytes": 1773233,
-        "sha256": "b340d70f49fb30b82da9afec0eea768e67690eaf4b81335820821eb67b23cbf7"
+        "bytes": 1704899,
+        "sha256": "252f97489c0db40789ff74b64fba7d709d2fdd42fd38a7609c19eafe548a1c11"
       },
       {
         "venue": "cancer-cell",
         "year": "2020",
-        "bytes": 1815250,
-        "sha256": "68272e6a885e18e41b9010c15ade6b79804b989075ca906de06346e239efa7e0"
+        "bytes": 1744518,
+        "sha256": "4d00f4d838ec0aebeb1b47aafca916cded3d23099d161c9bdfd375e91ea2f8ca"
       },
       {
         "venue": "cancer-cell",
         "year": "2021",
-        "bytes": 1939221,
-        "sha256": "331479f1e9a4b0628b36d0da3837dc9d10ea76325878cc7ad3943e8bd22a9674"
+        "bytes": 1863228,
+        "sha256": "4f3ffa5bde604b4b8b3418c0206c7149d8c3e2af57d358fcd195075b8968ad57"
       },
       {
         "venue": "cancer-cell",
         "year": "2022",
-        "bytes": 2246490,
-        "sha256": "ad8e6f39d10ab35d180f56638fe58f88597581e6198e757292812e4f71774f03"
+        "bytes": 2164479,
+        "sha256": "8955fe01c3f9068049d4cd68510a73065b60f5dd1c70d3dea2a42cbfa615f186"
       },
       {
         "venue": "cancer-cell",
         "year": "2023",
-        "bytes": 2069674,
-        "sha256": "ace83c196c56749a27e2eef024a060ebefa792581b50167f752f05c149bc1bb2"
+        "bytes": 1971506,
+        "sha256": "655dc88d84befdd14484db9e869bd42c6d540785064e9559a9fc3fbd61b7aecf"
       },
       {
         "venue": "cancer-cell",
         "year": "2024",
-        "bytes": 2171372,
-        "sha256": "614d7d9f585a1776ebf7aaf81ceb6ff40bfe9b71a80a1a04fc6bd1886a5231d4"
+        "bytes": 2086762,
+        "sha256": "921547b55ce8b438e731dc9d1d20ea2d1351a116d15d6f72172812ec3071448f"
       },
       {
         "venue": "cancer-cell",
         "year": "2025",
-        "bytes": 2617544,
-        "sha256": "7e0a0d67fd67beac9c5b782371bd1b79f40c0b36e77aa22a944e4db3ace36a90"
+        "bytes": 2506148,
+        "sha256": "ab2074d38eab6f12ab29b69591ae42972ba9569037e16f252a3702a8ca51e1c5"
       },
       {
         "venue": "cell",
@@ -575,86 +575,86 @@
       {
         "venue": "cell",
         "year": "2012",
-        "bytes": 2982485,
-        "sha256": "d8e71ce0e603d7de2ca4c491d881fbe59953cf52e9bf0f76a1fb11df031544f5"
+        "bytes": 2857733,
+        "sha256": "04cc65b660083b7f0e795f9f3ec1eba62c8309e572fdc38bd2fd267efcc3b5b1"
       },
       {
         "venue": "cell",
         "year": "2013",
-        "bytes": 3132030,
-        "sha256": "48f13bf6c2d0a8748fec2eb7701081399f75b2ae4ac4f6d87978aa811e041e4d"
+        "bytes": 2978007,
+        "sha256": "7ea3cbd9e2b75cf51b1a3e53eef7b3f2e01bcaa387dc3eff3fc862d46c13bb82"
       },
       {
         "venue": "cell",
         "year": "2014",
-        "bytes": 3778967,
-        "sha256": "d7b54af11c35bc01c6718b9a9b77534da8d85f6c5308c4d53ab2a424021a303f"
+        "bytes": 3633086,
+        "sha256": "bf70b1984180d1941dc1551a1bfb377acb0e9d2a2ece87863770bf932607cdb1"
       },
       {
         "venue": "cell",
         "year": "2015",
-        "bytes": 4145613,
-        "sha256": "d863c9cdb06e5282f6ff71c36d45c198008c27a3cebe148ec8f117610ebccc55"
+        "bytes": 3977842,
+        "sha256": "d9a001a5eb2d566c07c38eb4e8b2db281352000138283588c9a1b66bfde08465"
       },
       {
         "venue": "cell",
         "year": "2016",
-        "bytes": 4869370,
-        "sha256": "932f1e525153777f33781c2608ddab1fcb3af9916d2eb464b56578e088b09c25"
+        "bytes": 4661271,
+        "sha256": "b8812d54bfa3f3a92fccd2d4d0326dbb09febd6eb14afd0acef48928943e5df5"
       },
       {
         "venue": "cell",
         "year": "2017",
-        "bytes": 4075044,
-        "sha256": "f12be2886c3ba5ffde7e76efadade0ef44bdb5e34f3fc86ff9a856d01ab881cd"
+        "bytes": 3880803,
+        "sha256": "1725bc8cadb514bcd1f1a041b4432bfd24cdfcbe9464944ccc76bd7c3cdff0f0"
       },
       {
         "venue": "cell",
         "year": "2018",
-        "bytes": 6206650,
-        "sha256": "eedaa8efd8c1afb31c79f5be029a4eb1f6cf28d4e045f4d9907cb640bb30e728"
+        "bytes": 5905000,
+        "sha256": "31c86b107a9ca31a4b45e09239e058c988898193cdcbd498f9c6f4be9b47ddf0"
       },
       {
         "venue": "cell",
         "year": "2019",
-        "bytes": 5393020,
-        "sha256": "40d0154a5971bda424c25b982824a3e32416fd0a2e4451ec1cff04b4ff7764ed"
+        "bytes": 5152774,
+        "sha256": "96c5fafd185bce4a49ab7a33277555e2208a467b84b0f31e2a4b469dea7321be"
       },
       {
         "venue": "cell",
         "year": "2020",
-        "bytes": 6760075,
-        "sha256": "30131e6eba2c543761342f660fe8ff22a1016beece56eac5259da75b2a758fe3"
+        "bytes": 6482229,
+        "sha256": "323f8d5eb4ff58a8eda2520550ad87b671e881bdb7e6869944ca944fd96e18e9"
       },
       {
         "venue": "cell",
         "year": "2021",
-        "bytes": 5712876,
-        "sha256": "8b9dc3788526e41a6df78948abe7373a08f49949022a5344857af1c1f0a28f76"
+        "bytes": 5463062,
+        "sha256": "8409d23feb34c03811897181a6eccccfdb545c49cae8afb50ee4e4d02d497352"
       },
       {
         "venue": "cell",
         "year": "2022",
-        "bytes": 4288957,
-        "sha256": "696598c8a3613a5a4037c9160e77ff7f1142373d3682cb41fa9d3c5ad813c717"
+        "bytes": 4096300,
+        "sha256": "882752972669f44c364b9b3b95053cecfe168fe5680c5c698e5c18ad912eb6d5"
       },
       {
         "venue": "cell",
         "year": "2023",
-        "bytes": 4911840,
-        "sha256": "c466f2eff61f31878d80fbefb9ff798a0090767989ebc54e120d4dfc4af6ba61"
+        "bytes": 4721357,
+        "sha256": "f21bb4052292ef4e7ab08278b184fabef572395272345d7ddd64472d643829df"
       },
       {
         "venue": "cell",
         "year": "2024",
-        "bytes": 6204459,
-        "sha256": "53b23292568cd4e84c347e4d37f9d1ec19adbc913816e4707874be21575ed91f"
+        "bytes": 5955626,
+        "sha256": "65685faf2ba45bc857745d50b8d0e2abd22665938be14b492b156fe2e41cbec4"
       },
       {
         "venue": "cell",
         "year": "2025",
-        "bytes": 5768335,
-        "sha256": "a87bf23a21a11e97e64cd50e96b3af702e95d0cd7d7cd7904b6760b2b0df40a0"
+        "bytes": 5538192,
+        "sha256": "8fefefdd96c3c7cb4b6cfdaf861a424d1a8ebcc103d6aee20be2c97bfe86ea0b"
       },
       {
         "venue": "cell-host-microbe",
@@ -677,8 +677,8 @@
       {
         "venue": "cell-host-microbe",
         "year": "2008",
-        "bytes": 447946,
-        "sha256": "ecfa1dba6680bd5416d910b70a280728ad534ad84f368254a964f87dbe853d32"
+        "bytes": 428551,
+        "sha256": "6274375d78943cf71d8289e2a9772bf92ad50dc9d0f504a91dfb052b6a9873e8"
       },
       {
         "venue": "cell-host-microbe",
@@ -707,8 +707,8 @@
       {
         "venue": "cell-host-microbe",
         "year": "2013",
-        "bytes": 760515,
-        "sha256": "acbeb57ed68c2e106b852d27258a50f2f121b6642388fb854151e8a58f75517c"
+        "bytes": 761485,
+        "sha256": "3181a94209ec8691e34940e55598cda82564db65295786521f245058764f11e2"
       },
       {
         "venue": "cell-host-microbe",
@@ -719,8 +719,8 @@
       {
         "venue": "cell-host-microbe",
         "year": "2015",
-        "bytes": 1019177,
-        "sha256": "95152c1fbc23e36903c4a92c77f0f7662a4760ded078a54fd713b24b76f2f69f"
+        "bytes": 979182,
+        "sha256": "42ae2689ba280f27975e88403c5a8d4c5b32987bbc9a60b3ae5bb77aa4247aeb"
       },
       {
         "venue": "cell-host-microbe",
@@ -737,32 +737,32 @@
       {
         "venue": "cell-host-microbe",
         "year": "2018",
-        "bytes": 1278208,
-        "sha256": "75a94c0676716a28867b5c5208ba762ddc1fd60706c9fccc53cc330c2bb01cdf"
+        "bytes": 1230202,
+        "sha256": "20cea433d223806f59a20ba2b7917eb0eb73fb7fd7ccefb0eec027307e763ab0"
       },
       {
         "venue": "cell-host-microbe",
         "year": "2019",
-        "bytes": 1149136,
-        "sha256": "fbf578495c3b7462e1685da07ed62ddd7159d4179cb58c9477dd3c40319e2be8"
+        "bytes": 1104607,
+        "sha256": "8172fe5843e839433ce075551fef9ccec57af0bc7f3e6fd73154a447d99edc00"
       },
       {
         "venue": "cell-host-microbe",
         "year": "2020",
-        "bytes": 1591523,
-        "sha256": "8d8eefca0a788bcd615171e518c9b0f7ba07f6fc7b99865a4c324c23b0e880c6"
+        "bytes": 1531440,
+        "sha256": "63c959057ab49a2918a42baa577fe6d0273129ff0308ea9c8df5ac3989534edc"
       },
       {
         "venue": "cell-host-microbe",
         "year": "2021",
-        "bytes": 1406799,
-        "sha256": "6d3421bd608ef29c4d1c6047649171819b5b4a54b5f404d82325a818eab1d8f2"
+        "bytes": 1354185,
+        "sha256": "5b63e1888c3274f3b980bd4c9250125e2cea738ab37d34fe2665be9529d282c6"
       },
       {
         "venue": "cell-host-microbe",
         "year": "2022",
-        "bytes": 1380164,
-        "sha256": "f32e931cf27b40de7be2c5f9474abf228f2113accb335c59ad66fa4be97c7cf4"
+        "bytes": 1329063,
+        "sha256": "651fab63d0ebc7fc4df2ee4e9abbb35dceace96a83832e2dd6a288bf45b2321e"
       },
       {
         "venue": "cell-host-microbe",
@@ -773,14 +773,14 @@
       {
         "venue": "cell-host-microbe",
         "year": "2024",
-        "bytes": 1625741,
-        "sha256": "a1be98a1714b0b4a5c58288effe08a17a6f32c829e01a99216b36d976e7278b4"
+        "bytes": 1565311,
+        "sha256": "cdfc728bec81b6ba38692d8c4d73d63ff24ebc5dccacd96629e9d656e436c70c"
       },
       {
         "venue": "cell-host-microbe",
         "year": "2025",
-        "bytes": 1258504,
-        "sha256": "a22ce1000278db232d577b64e2cd0b9bbaac516d837341f4a89ee13a20c8831e"
+        "bytes": 1208421,
+        "sha256": "65fd19dff4faeda1a351bdfb83569c16a1af4de1ac70a8f99689a02f4ed27ba0"
       },
       {
         "venue": "cell-metab",
@@ -797,8 +797,8 @@
       {
         "venue": "cell-metab",
         "year": "2007",
-        "bytes": 498958,
-        "sha256": "5c6a76357b35b0a6ce95c171ec546191c010bd7b23f501e0d3c76d87569d24e7"
+        "bytes": 476970,
+        "sha256": "e15968606a10da55e6d24636af819579485c64707520edd8cedacc97c2cb3b2d"
       },
       {
         "venue": "cell-metab",
@@ -833,14 +833,14 @@
       {
         "venue": "cell-metab",
         "year": "2013",
-        "bytes": 1089740,
-        "sha256": "76359be88f6b3ffc22c9434537f06d7b27a3714a15a0797c865c0b4241492631"
+        "bytes": 1045703,
+        "sha256": "fe9be84f13a13e779f971dfb0401bd034558d7c7158528815eff970e54541988"
       },
       {
         "venue": "cell-metab",
         "year": "2014",
-        "bytes": 1286306,
-        "sha256": "8c2c9783eed1f2539d09c05339929493f62d90304642c49562758302754df50e"
+        "bytes": 1237927,
+        "sha256": "efc80117646b838921214da94a4c7544357736f16887b23467c425721fad16f3"
       },
       {
         "venue": "cell-metab",
@@ -851,8 +851,8 @@
       {
         "venue": "cell-metab",
         "year": "2016",
-        "bytes": 1485513,
-        "sha256": "a85934736a0328fb8758a75bad5075f5a9b6f81dde7068de692096ffa45ced30"
+        "bytes": 1428948,
+        "sha256": "8397d76ad656c1aee9822c27f231cd29cfa49007fdb5bdb67109f0a92a0bb051"
       },
       {
         "venue": "cell-metab",
@@ -863,8 +863,8 @@
       {
         "venue": "cell-metab",
         "year": "2018",
-        "bytes": 2056581,
-        "sha256": "837204f663fefe2be0d9fa3ead505bd67082ff5c15924eed5a4fbbd42ae464d7"
+        "bytes": 1978778,
+        "sha256": "b7963146482fca687efa796fc0e2c7b146b3667933b98af32abbd73408a144aa"
       },
       {
         "venue": "cell-metab",
@@ -875,14 +875,14 @@
       {
         "venue": "cell-metab",
         "year": "2020",
-        "bytes": 1895290,
-        "sha256": "aa082a40e5463563d58b782bc80b946aeda2f1ef92761b9deb87b84cf01e84c5"
+        "bytes": 1822981,
+        "sha256": "2183e40bb6df3fbdd768b9a5a1e9df5f01a83fce8578cf56f06038bd82125f5b"
       },
       {
         "venue": "cell-metab",
         "year": "2021",
-        "bytes": 1544405,
-        "sha256": "da9147ac5b867a3c7fdbac3506be95854dbaba35e6254c069f6d708e76a7e97b"
+        "bytes": 1484965,
+        "sha256": "ee3578d10a076be867ae66e993cabef9de1b7ae720fb484b251c4638433ba73f"
       },
       {
         "venue": "cell-metab",
@@ -893,20 +893,20 @@
       {
         "venue": "cell-metab",
         "year": "2023",
-        "bytes": 1706070,
-        "sha256": "1881d8c02cdaa94ee9854f768a53e6030a2c242b871f962949ca80d3f1d004aa"
+        "bytes": 1626474,
+        "sha256": "b08265754010edbdb8888160c712be197b1d42af831c3f4cc5f698a846ac8dd3"
       },
       {
         "venue": "cell-metab",
         "year": "2024",
-        "bytes": 2029036,
-        "sha256": "315d52bdd16ac3b3b25ca6b4bb8b1a6ae20cdbe5692fcfa0578a86b4f15317e3"
+        "bytes": 1954949,
+        "sha256": "71cb2689b74352065363700573926defd01930c6f2e618895ccf91fcc8b43790"
       },
       {
         "venue": "cell-metab",
         "year": "2025",
-        "bytes": 1847643,
-        "sha256": "05ee0ead0be387bcedd8c92a973b67e8eb386c93363084d738a5542e6c2d7ec4"
+        "bytes": 1773350,
+        "sha256": "ccb3e10c7d27b127d20cfa7e21fa951b2eb5df7fa480305060e03804c2004272"
       },
       {
         "venue": "cell-systems",
@@ -983,14 +983,14 @@
       {
         "venue": "cell-systems",
         "year": "2017",
-        "bytes": 746988,
-        "sha256": "6613c2ed83964803298e59fbf84657c38269851b072d55a121d591007f4caabd"
+        "bytes": 693392,
+        "sha256": "e7e9edfcae2cc38a7bc14f781843ed0d8e7ffe82fd8df7b8b5be660aa8e7c344"
       },
       {
         "venue": "cell-systems",
         "year": "2018",
-        "bytes": 1161297,
-        "sha256": "1f3cb9a2ff16111f2c5d4093258cf20c50c9cd129bee31e80ec6736efd10f8dc"
+        "bytes": 1097335,
+        "sha256": "7b0f337b02ed27a8f552e949ed9b5921dcb8ab3bbfa3795e856ad45fab055b70"
       },
       {
         "venue": "cell-systems",
@@ -1001,14 +1001,14 @@
       {
         "venue": "cell-systems",
         "year": "2020",
-        "bytes": 667869,
-        "sha256": "8de03377ac509db8c2f88d967af3b0061ed1669b9a3abdf5310e82bd6fc797af"
+        "bytes": 640703,
+        "sha256": "0e10b5c919e79fd9cec35dd6eeb4b6d6a96ac9b0ea003fac7c74eae92a17b6d9"
       },
       {
         "venue": "cell-systems",
         "year": "2021",
-        "bytes": 522088,
-        "sha256": "68b95331347e87dfb885071ca7c5900a7af2827f4e1b6ba960455470d247b0a6"
+        "bytes": 502947,
+        "sha256": "1aa57c207c6b8ab9276dc87f9d58eff403fa83297f5cafacd041d0e98e2cf304"
       },
       {
         "venue": "cell-systems",
@@ -1019,8 +1019,8 @@
       {
         "venue": "cell-systems",
         "year": "2023",
-        "bytes": 486198,
-        "sha256": "0cbd38bff6122437008f07798d0ce47e1b4d34c7dd5f7868d09c9d1d1cae2cd6"
+        "bytes": 486602,
+        "sha256": "aced0599a56730917578991ecb984ef0a35b1f1bafbf4d5ff1e62c6791306182"
       },
       {
         "venue": "cell-systems",
@@ -1043,20 +1043,20 @@
       {
         "venue": "dev-cell",
         "year": "2006",
-        "bytes": 642479,
-        "sha256": "9d2e06879ef2aadc97d64de969b31aab8b2483db9dca7b573819369d1d69f611"
+        "bytes": 615314,
+        "sha256": "d1d017616db81ca82996de8c333d9853a8713b620bede48351a3fb7ee896bc0d"
       },
       {
         "venue": "dev-cell",
         "year": "2007",
-        "bytes": 615236,
-        "sha256": "9f4dc9a9c0ceb82ecc55007596597e73e2018d0511e99156af12afacd5823ecb"
+        "bytes": 588441,
+        "sha256": "9c44ebf1970ae1c78f6ca795a6e6221a8cf88f1644ec1004826d24ababf65a91"
       },
       {
         "venue": "dev-cell",
         "year": "2008",
-        "bytes": 693239,
-        "sha256": "f5d4816eab5782f67f5d2444fe29f714af00f3068cdcf82ba0fac06fd06e9317"
+        "bytes": 663950,
+        "sha256": "ade5204b34266412573fe7d20abcfa2e2f3ce8d93602ae067d08c29d0ac2e76a"
       },
       {
         "venue": "dev-cell",
@@ -1085,8 +1085,8 @@
       {
         "venue": "dev-cell",
         "year": "2013",
-        "bytes": 1180888,
-        "sha256": "32a6d8a8e8aa24a2b3aaf7fdd3f13261d36e35ded5edb75c8e270e3069de2709"
+        "bytes": 1132169,
+        "sha256": "c4e1ec1e527e12a8f6ecff78a4c59506bea40f552d7b0ee0af9822e2687f08bc"
       },
       {
         "venue": "dev-cell",
@@ -1097,8 +1097,8 @@
       {
         "venue": "dev-cell",
         "year": "2015",
-        "bytes": 1357732,
-        "sha256": "9ffdc908d2042141cfa72a509ffd09e35c094eb110a47c4cb201ee78daf0f677"
+        "bytes": 1305079,
+        "sha256": "03a4b043d1eac1ff807fc80902b4d6e687c057811de92608a328ff98ba510ae4"
       },
       {
         "venue": "dev-cell",
@@ -1115,8 +1115,8 @@
       {
         "venue": "dev-cell",
         "year": "2018",
-        "bytes": 1689487,
-        "sha256": "a88c314c326a8086754cebd848316e8da08782ce0c5ae268bfa5a85f01008a1f"
+        "bytes": 1625009,
+        "sha256": "2b6461450c34cbe05a4ec3d1fe6795e04c311eb176aad5c58cab932db04d4e4e"
       },
       {
         "venue": "dev-cell",
@@ -1133,8 +1133,8 @@
       {
         "venue": "dev-cell",
         "year": "2021",
-        "bytes": 1596851,
-        "sha256": "a3949ba5b1d8f3a795f98e69ede39a0429c6337e87233f50d3473cb0732b96c1"
+        "bytes": 1597970,
+        "sha256": "aa488779879932b7ee0c406f5954760250201a12934f7353aec3f82496eaedde"
       },
       {
         "venue": "dev-cell",
@@ -1145,20 +1145,20 @@
       {
         "venue": "dev-cell",
         "year": "2023",
-        "bytes": 1853874,
-        "sha256": "8afea3b8671120f7e4fcb5bda42dc415475c1c736aa6a3408e2d8058228a95d7"
+        "bytes": 1785683,
+        "sha256": "3abe56940ff08131af63814005064625ff1487b7ef3e07ee9d6ab18bcd343fad"
       },
       {
         "venue": "dev-cell",
         "year": "2024",
-        "bytes": 2375703,
-        "sha256": "31ded3ad04a120f789947960663dc89a7fb8fc6eb9adccc19701bee4770f68c1"
+        "bytes": 2285160,
+        "sha256": "1d4857a24a155a7a2f337dd86291860d9477a0b7f7ffc71a867a12ab631e141f"
       },
       {
         "venue": "dev-cell",
         "year": "2025",
-        "bytes": 1619554,
-        "sha256": "0f2b207e4de8248b6179cd422222b14fb5c2b12b92dd54d16d4f3a8b8f72a670"
+        "bytes": 1551807,
+        "sha256": "e06769a0214e65067050dd3a906af4e5dea0ddc1adfc3a55c5b291af66f0f6b4"
       },
       {
         "venue": "embo-j",
@@ -1169,8 +1169,8 @@
       {
         "venue": "embo-j",
         "year": "2006",
-        "bytes": 2282195,
-        "sha256": "9a3a9883d3475267fe488a925dd3f71fc391b719ce1a600e108c37c18044d596"
+        "bytes": 2183827,
+        "sha256": "d735fa233e289f40b4c035599c3443cfd2102405415ec10b34bc171a0e6ee82a"
       },
       {
         "venue": "embo-j",
@@ -1217,8 +1217,8 @@
       {
         "venue": "embo-j",
         "year": "2014",
-        "bytes": 1399263,
-        "sha256": "8def75c8a1380b3b71cf85997b2e342314787c4d386a52769a3fe8481334903c"
+        "bytes": 1341730,
+        "sha256": "be615ef2bfc4a6e8631125e4c1e17a6a33e46605515c54d56a711d043b4f5961"
       },
       {
         "venue": "embo-j",
@@ -1235,8 +1235,8 @@
       {
         "venue": "embo-j",
         "year": "2017",
-        "bytes": 1592345,
-        "sha256": "674f21b3c9aa6fe043b2415840e20dabf4cbbf1dd0b64077f3cbf5e7398c2b48"
+        "bytes": 1525962,
+        "sha256": "ecf760e09f942fab9413551fa71eff363e04abf45099e3d493d4665abe685e9f"
       },
       {
         "venue": "embo-j",
@@ -1259,8 +1259,8 @@
       {
         "venue": "embo-j",
         "year": "2021",
-        "bytes": 1982900,
-        "sha256": "6cc357152ebe3f6b657ba05236e1706d88a8446daa1b8c6c5365d007477ba8a4"
+        "bytes": 1901345,
+        "sha256": "1c2feb3dd8c36711415890ea8d9ab0608d49db01adc5e23124af93c4932fdc86"
       },
       {
         "venue": "embo-j",
@@ -1271,8 +1271,8 @@
       {
         "venue": "embo-j",
         "year": "2023",
-        "bytes": 2117910,
-        "sha256": "85abb0f7a7bc4e1e64ad332b04da85276552d867cb91319f52f0dc84d663655e"
+        "bytes": 2032218,
+        "sha256": "fe324e7c0d2449f1f3470a270e07c891200d2531ce38b825e71ab9669fa843a5"
       },
       {
         "venue": "embo-j",
@@ -1283,8 +1283,8 @@
       {
         "venue": "embo-j",
         "year": "2025",
-        "bytes": 2302514,
-        "sha256": "8e3e896de2843083a6afa0e6555955ea574a7c3797189739830db52eafe5276a"
+        "bytes": 2210780,
+        "sha256": "34436361e7e70b802b7a925636c621b82ddab14a70ef88a5d23d0dab9e2ff988"
       },
       {
         "venue": "genome-bio",
@@ -1307,8 +1307,8 @@
       {
         "venue": "genome-bio",
         "year": "2008",
-        "bytes": 1244681,
-        "sha256": "a84377690dac56bddd339d2fa19c8e468419dee96a493996e1b98a7d45304934"
+        "bytes": 1194762,
+        "sha256": "a882af7a454da81b334bb713fbfe786e54cbc8be05d315d051ca47d29b6fc1a2"
       },
       {
         "venue": "genome-bio",
@@ -1319,98 +1319,98 @@
       {
         "venue": "genome-bio",
         "year": "2010",
-        "bytes": 920757,
-        "sha256": "6b51846f386c519689d7120898d8f9d7d3e6ac25a6933831aa607ae5bfb7c2ea"
+        "bytes": 884684,
+        "sha256": "128066ae958fbb79df8cc5831d1bee1e1fec8fc518c6a6a89691c419860a03ff"
       },
       {
         "venue": "genome-bio",
         "year": "2011",
-        "bytes": 1298748,
-        "sha256": "c06cf88dfeb2bd6efb6597f71f1536064076a9d20bc87ac8aafa6b17925fb3d2"
+        "bytes": 1247302,
+        "sha256": "685ce0de74f7e594c30d9f09321fd30ba438526e37425ba42849f568888440ea"
       },
       {
         "venue": "genome-bio",
         "year": "2012",
-        "bytes": 1035651,
-        "sha256": "041368c5fb739f95cba32220f6132d302cfb04e83a0d07119792117023c5d760"
+        "bytes": 995252,
+        "sha256": "9be032fbd0baed9a875b095d1797cadd77c48eb041f7530943086793da34aa28"
       },
       {
         "venue": "genome-bio",
         "year": "2013",
-        "bytes": 1279903,
-        "sha256": "6a8f76483cb74fd478750005e93c9d6ef2a1fcffe07a30160b444ef290be0566"
+        "bytes": 1228216,
+        "sha256": "42d4c4bbc31aefac81be8bcedbad511ee467150dab09db010bfdd29ce1cb97ff"
       },
       {
         "venue": "genome-bio",
         "year": "2014",
-        "bytes": 1652707,
-        "sha256": "6777ad2ac348c4e906a6bde78bf3f7ffbeaad22c86c9875099cbdc91dcce74c8"
+        "bytes": 1583803,
+        "sha256": "940847bc98edfbcfdde6483818e6ac5c6b3bf7905c08510078d3db9c6fcc59ad"
       },
       {
         "venue": "genome-bio",
         "year": "2015",
-        "bytes": 1818025,
-        "sha256": "fe8c6e751c385b5249b458696acb8d67b559c0f3b0bb703b0be40d95dc82fe86"
+        "bytes": 1749636,
+        "sha256": "db3b7895a884f18fe053e27264ef9c3dae7611200f98f1d33a44f5597e6764e7"
       },
       {
         "venue": "genome-bio",
         "year": "2016",
-        "bytes": 1593548,
-        "sha256": "5f36b115f5bc484cc40d3f92a4361c53ae17c0d50f64925c171f68f9f805e718"
+        "bytes": 1529335,
+        "sha256": "641836d16b62fd20ff11f2a95b32697defa90bb1fa7da8b6cf73176448f89a85"
       },
       {
         "venue": "genome-bio",
         "year": "2017",
-        "bytes": 1634794,
-        "sha256": "d2f6ea1df4aed06a47ae2f92067bb87143c78edc9eda46576039f87358cb6a6f"
+        "bytes": 1570301,
+        "sha256": "2b23f6cc5ddadde6dce2f0a8f64d008318f13dfd8d59aa777d70d5166bcf59f3"
       },
       {
         "venue": "genome-bio",
         "year": "2018",
-        "bytes": 1371658,
-        "sha256": "02e009ac971a94cd476bd385f02e45b98e7343e3c6481bb8b0c4fca3b8e0d100"
+        "bytes": 1317398,
+        "sha256": "0f0cedb29ec876f872e7ed811f0fa66f8919d27a28a09133735e7db7480bf678"
       },
       {
         "venue": "genome-bio",
         "year": "2019",
-        "bytes": 1892144,
-        "sha256": "64c1bb0617b1f1a29cb385fbd3f21165e47f55cdf3d7b2a8613c660dc36242f5"
+        "bytes": 1816099,
+        "sha256": "4e3c839bb8985e91e56cc78b24e419d078adc6609ba9d640756a877ac7ce9ab0"
       },
       {
         "venue": "genome-bio",
         "year": "2020",
-        "bytes": 2104394,
-        "sha256": "664881e6a990bb04c8046fe5626a58ddcae48f4a6a483dd6b40813c8dd82b3a5"
+        "bytes": 2003833,
+        "sha256": "e8fc35b7b66b180041359bea3e050688863b886f2a98fb4946d427b0627e0e5a"
       },
       {
         "venue": "genome-bio",
         "year": "2021",
-        "bytes": 2403718,
-        "sha256": "7f3e6f2e4bea9a25a9cf97335c37da153119dd8c862d1501fcd3ef0d9390702d"
+        "bytes": 2300666,
+        "sha256": "f5cab439f37546f0541eb147d5a810c0d1ea7fda938ae051f84c4fc64fe41bf8"
       },
       {
         "venue": "genome-bio",
         "year": "2022",
-        "bytes": 2052002,
-        "sha256": "9b4ea17dc406b0b7256fb99af2c5f82a15330a5af6339638823691b2ac917bd4"
+        "bytes": 1970495,
+        "sha256": "0de675c44778b41b5dec28124c2050680d949c20157924d85cdf60f399e03e46"
       },
       {
         "venue": "genome-bio",
         "year": "2023",
-        "bytes": 2261642,
-        "sha256": "af9b51f800abb50b5ed533abc1c322e6390ec757e43c5b90aec2ff9c32444184"
+        "bytes": 2165176,
+        "sha256": "d168788d6224f344358ac8cec41b18721c7322bb506919e4c347ff68108186cf"
       },
       {
         "venue": "genome-bio",
         "year": "2024",
-        "bytes": 2223172,
-        "sha256": "4f1009c18b598219cb6188d089957a03ca7d0834a055f62dff0ba9440219f9e8"
+        "bytes": 2134240,
+        "sha256": "b256603d68ee533c95bf2ce8149e03587492e154fc7d372c64f9e92bc31e18f9"
       },
       {
         "venue": "genome-bio",
         "year": "2025",
-        "bytes": 3050405,
-        "sha256": "f28bce4af1c534e0510c2e024284f01f97fe5e9950e8355466e2f45d1651bc60"
+        "bytes": 2930680,
+        "sha256": "3556bf3fd1872678bcb037e9725102360b722c413ddf137753dab1b7bd447022"
       },
       {
         "venue": "genome-res",
@@ -1421,8 +1421,8 @@
       {
         "venue": "genome-res",
         "year": "2006",
-        "bytes": 698562,
-        "sha256": "fbe1af952006f5ec76fe34bc9a823e29c2fcaa3f91f5099766121659805340b5"
+        "bytes": 669235,
+        "sha256": "bfd191dee756dbbb180c941d7c13c4f564205d6b8a175792f7d139cabeafd068"
       },
       {
         "venue": "genome-res",
@@ -1481,8 +1481,8 @@
       {
         "venue": "genome-res",
         "year": "2016",
-        "bytes": 1168779,
-        "sha256": "2fb70106f6c144931c676699909657db0a3dab4b2763153d4d7e25cbfd4e6f3f"
+        "bytes": 1126228,
+        "sha256": "0607a19dc6bf38da33a49d2d70cd254fa1931078d7169c11641f22f09322e305"
       },
       {
         "venue": "genome-res",
@@ -1505,20 +1505,20 @@
       {
         "venue": "genome-res",
         "year": "2020",
-        "bytes": 1330792,
-        "sha256": "dad5d737d45964e5d1f78f9195f00567848ae94d40c21a1308cc1523d1f9ae62"
+        "bytes": 1278097,
+        "sha256": "9dd87a49dbdfeb25a7b489e9b6e96e3eb184ed9191ac9098f60114a00ab06da7"
       },
       {
         "venue": "genome-res",
         "year": "2021",
-        "bytes": 1413096,
-        "sha256": "3167b6b025494ba4d61e23fc2822c30c7d20c2ab932b4c787ce69637c57f4800"
+        "bytes": 1361865,
+        "sha256": "132d8c056a483f0d39c2f834afc15ab8ac5625c5a78fa628e5d297e464ecf531"
       },
       {
         "venue": "genome-res",
         "year": "2022",
-        "bytes": 1007009,
-        "sha256": "43510b9b721ceb11767705156eea4d5868cd52d35dc4e9e8557b017bee94a020"
+        "bytes": 970315,
+        "sha256": "a5a6bc771c36b9431a2f481da108d23ea6788c2efaf5faa6833fdc3e48523b57"
       },
       {
         "venue": "genome-res",
@@ -1589,14 +1589,14 @@
       {
         "venue": "immunity",
         "year": "2013",
-        "bytes": 1307755,
-        "sha256": "953bdc33fc85575add4371868861c41bdedcf7a394554ac93fee670296f2561a"
+        "bytes": 1252292,
+        "sha256": "e940a18a09aa2c630ac4e12a96ab9ddc0c59eb31e557643ec96a009c8b2b5ff4"
       },
       {
         "venue": "immunity",
         "year": "2014",
-        "bytes": 1335064,
-        "sha256": "5951322eaa7ef85d9af96141900623152029883b86695f0936ccebd6707357ab"
+        "bytes": 1281146,
+        "sha256": "baefbe8f7ec90253a20ed7d9c76c2af41cfd0b41534bff79930063eeb28f5ef6"
       },
       {
         "venue": "immunity",
@@ -1607,50 +1607,50 @@
       {
         "venue": "immunity",
         "year": "2016",
-        "bytes": 1996316,
-        "sha256": "16ea55666dc16d287d075ad9498b6bd00256814496a1ef9e276a2c907bfbf180"
+        "bytes": 1921906,
+        "sha256": "582ab77d0ff101ae837a7a3bc0f71bb95da63b41380f7e35e525c925c193e0c8"
       },
       {
         "venue": "immunity",
         "year": "2017",
-        "bytes": 1626902,
-        "sha256": "18f94ec9b492683c14450af1793578101de7ea0bc79967c180295cf4ad217b3d"
+        "bytes": 1563671,
+        "sha256": "3bf45d2fcf97867ac3b9cc69cfef499e1990d24085844047d037b44271b726dd"
       },
       {
         "venue": "immunity",
         "year": "2018",
-        "bytes": 1869033,
-        "sha256": "7ab67a8164230324a5b37624a98ed4d541609d3b799c244b1937e43eb1ba3996"
+        "bytes": 1786520,
+        "sha256": "3c50c036ac2e3c70e68af7349ee2044b41af697400174598e20f0886da574029"
       },
       {
         "venue": "immunity",
         "year": "2019",
-        "bytes": 2049000,
-        "sha256": "3b86cc95d4a1f3081a42e9b6a30613affb1916ca8ee4fbce29ae160284a6b30f"
+        "bytes": 1960812,
+        "sha256": "03b12ff0336ac1d26990de4923bcb3c3a9a7a3afdd0de459574cad11e0d8bb7a"
       },
       {
         "venue": "immunity",
         "year": "2020",
-        "bytes": 2104406,
-        "sha256": "a58fc10a61c29a64c2dd7fdcd0e203ef58d4767705c5f31d584435c803e18835"
+        "bytes": 2024838,
+        "sha256": "4596dd713794c5d57d2d70f55694a3ec0470ef50ca6b9b350d89762911b19141"
       },
       {
         "venue": "immunity",
         "year": "2021",
-        "bytes": 2381967,
-        "sha256": "73f2656fb109c6c6aabf2cb52077717d5d6caabeb4c9654232bdb0a88c471969"
+        "bytes": 2292164,
+        "sha256": "981568c3f01ad8bddded0d28060b55cde7d5a33ad0c5f398cfd3229659f1462a"
       },
       {
         "venue": "immunity",
         "year": "2022",
-        "bytes": 1847367,
-        "sha256": "2002cdabbef03a2492c7a3f645cb8912311b324c655fa83c5c516f58807a5c10"
+        "bytes": 1780580,
+        "sha256": "911d97d27b178d834a8bc34fd4f69b8f5537b5c2d9764b1aa7df5f1aa821cbc9"
       },
       {
         "venue": "immunity",
         "year": "2023",
-        "bytes": 2248349,
-        "sha256": "6672c05f82e129dc4ac7bcf14028fa04dcbd4cb3f987ee463305ec5887013b36"
+        "bytes": 2167009,
+        "sha256": "f7278cced0ced781de717dd9caf54d2c80999015bfa0bbf4c4b9680d3c4a3a82"
       },
       {
         "venue": "immunity",
@@ -1661,14 +1661,14 @@
       {
         "venue": "immunity",
         "year": "2025",
-        "bytes": 2096211,
-        "sha256": "643317ec1f98beca1b057be00de4dfc1714f5fafefe26de1bd3ccceb5c83303e"
+        "bytes": 2010811,
+        "sha256": "ca04e4e1b00a8ef138ddcba9ab248e066fff75c3203c15cd3a1ae6e57437882c"
       },
       {
         "venue": "jcb",
         "year": "2005",
-        "bytes": 1479821,
-        "sha256": "abab5a57d348ef5ca0385e5056cc12f6c9b9ff45fcbdc27543f4a2e5c3979309"
+        "bytes": 1412473,
+        "sha256": "c5b9a5892327219d2b605c10cbd23be96bcb944e6ede6d842eb12f101890fbb4"
       },
       {
         "venue": "jcb",
@@ -1679,8 +1679,8 @@
       {
         "venue": "jcb",
         "year": "2007",
-        "bytes": 1788291,
-        "sha256": "216fc9cc12349357ab2544b5f06e7d5001fbf576c481599437f29e3e0253c8a8"
+        "bytes": 1707535,
+        "sha256": "6245c3dde5b498716ded240ff5a48b86b3c1becb83f4cd00995c091aabb52aa9"
       },
       {
         "venue": "jcb",
@@ -1709,14 +1709,14 @@
       {
         "venue": "jcb",
         "year": "2012",
-        "bytes": 1534955,
-        "sha256": "700b02652a2b78373139046a50861d11dab912e8afa2c94fbf2cb312031601b9"
+        "bytes": 1470734,
+        "sha256": "d546c627f9dc15ee168bdd4ecf98172b52db2389f2a0e0807063c2ea14ece2b2"
       },
       {
         "venue": "jcb",
         "year": "2013",
-        "bytes": 1630697,
-        "sha256": "891ae4ad30d5ae5c7dcf818a2eba4c9cefe14cf30a171870d19e634da523787f"
+        "bytes": 1562666,
+        "sha256": "bd121de5cbc4a1732cf86e7caf568d2324019e9656afc78bb83f120aa5139fee"
       },
       {
         "venue": "jcb",
@@ -1733,8 +1733,8 @@
       {
         "venue": "jcb",
         "year": "2016",
-        "bytes": 1380899,
-        "sha256": "1e2ebaf5a76cb0e86c0a32bfd4838d0cda8496a2d34f7465ecf429f87cbbf684"
+        "bytes": 1320572,
+        "sha256": "d11a57336253dbf6cc141d34b8271686b3d6964026248b83cae871b0b147c04c"
       },
       {
         "venue": "jcb",
@@ -1775,8 +1775,8 @@
       {
         "venue": "jcb",
         "year": "2023",
-        "bytes": 1354680,
-        "sha256": "d1cf1662602dcddc6275eab07605c3df1c640bcaf727eb05e11e31d7a4b828a8"
+        "bytes": 1301789,
+        "sha256": "a62d152ea2e663501005cc602a87c59d854b0b74e6173a2b0321f8306ed67a21"
       },
       {
         "venue": "jcb",
@@ -1793,8 +1793,8 @@
       {
         "venue": "jci",
         "year": "2005",
-        "bytes": 1483243,
-        "sha256": "718425ca7dd52ea64ea353df3d409f697cd31ada8a16327e4f17909d9eebccb0"
+        "bytes": 1413867,
+        "sha256": "052ad72e3268c767b16566ae7c72486d9588e2b01d1a7e3515c6c93aabd86e76"
       },
       {
         "venue": "jci",
@@ -1805,8 +1805,8 @@
       {
         "venue": "jci",
         "year": "2007",
-        "bytes": 2033703,
-        "sha256": "ad584d6dbd0581da6bde2ca3541fdb57daf661511b56c17df5d9e15a28360bc0"
+        "bytes": 1945636,
+        "sha256": "ce0c1147c30177da674443edbee5786d77d27f1df3949bcb578260d0de30a307"
       },
       {
         "venue": "jci",
@@ -1817,14 +1817,14 @@
       {
         "venue": "jci",
         "year": "2009",
-        "bytes": 1802837,
-        "sha256": "db953f2d42cfcdc140cb7d25832caa33aa7d1d2d848c9a194bd0a6813a1b02e3"
+        "bytes": 1723099,
+        "sha256": "46bc193290ed9dc5e51143fec049c099db3e9730803ea7ba74c743dccd6a4e11"
       },
       {
         "venue": "jci",
         "year": "2010",
-        "bytes": 2387234,
-        "sha256": "611545a1083d6af30090fefb040a479346dde1a934ca90bd3d907a37eaf753a5"
+        "bytes": 2282010,
+        "sha256": "ce8df37237635f78e3d3706447c80f31b2f19eb948d8ff39aa30a9f5dc80cbbf"
       },
       {
         "venue": "jci",
@@ -1835,86 +1835,86 @@
       {
         "venue": "jci",
         "year": "2012",
-        "bytes": 2484613,
-        "sha256": "b6f82a9f55f43573e1f8fcdfadbd02e828783577370f3d5e15c643b60dc77d73"
+        "bytes": 2375404,
+        "sha256": "fc7daf88c1cab9f7c3a9f7b0ee83bffc36d1d0a0aee07310ca602510f445e074"
       },
       {
         "venue": "jci",
         "year": "2013",
-        "bytes": 2949558,
-        "sha256": "a46c88fd1931242dc6eb998778c2b0cdbffe61ad9beb6c40eba381a1d7389392"
+        "bytes": 2961559,
+        "sha256": "6c1d43b4dd6c47334db3c7022609f7f7c303dc226227e28ee07c48a9170d520e"
       },
       {
         "venue": "jci",
         "year": "2014",
-        "bytes": 3146436,
-        "sha256": "c7c3720aab5c1390f6c4803bea3f6a8eef4e69d80b3fefe71617dbdd34930258"
+        "bytes": 3214623,
+        "sha256": "20f8013f0f4121ed5830acbf69f697fee7be128385b2478f97880e6ff7c5a982"
       },
       {
         "venue": "jci",
         "year": "2015",
-        "bytes": 2688571,
-        "sha256": "5b5a9bc4babe1b6869f3675b145ec0a643f169ae6487f28afc2843e306137a2c"
+        "bytes": 2584497,
+        "sha256": "ae0c9fc18015a5ed64cd755b23270e5faf4206f2a6db9e619c25ca3877530e5f"
       },
       {
         "venue": "jci",
         "year": "2016",
-        "bytes": 2704017,
-        "sha256": "8a1dddc12f22df2f37907492584b7f37aec7e12bed6c8034d9b751ffc82e5800"
+        "bytes": 2712721,
+        "sha256": "54a13644fea1a90a81ff60d6758e168391f11c3a5e01053c863227855d980a73"
       },
       {
         "venue": "jci",
         "year": "2017",
-        "bytes": 2896766,
-        "sha256": "ad36de20224fb6715064e6f5f9d9abde5e0c2f648fe02d8e8379c5ebcbb240db"
+        "bytes": 2906817,
+        "sha256": "04397686cd3091e7718b9a08ae23ac252b92268f431d3387e58c8ec3080e62a8"
       },
       {
         "venue": "jci",
         "year": "2018",
-        "bytes": 3628669,
-        "sha256": "8a6723ae8384d569ece7d1db4bac0fc534292417bc2175b0a6eaca9ef8b21a9d"
+        "bytes": 3478306,
+        "sha256": "72986841151e15f91467cf1b726e99c8be57cc3aaa9eb3824a1716dc4c76c334"
       },
       {
         "venue": "jci",
         "year": "2019",
-        "bytes": 3524106,
-        "sha256": "f72ece44ac8a5ff5ce2c6c558063419688f63723e5062ddf1d199ed7519eb853"
+        "bytes": 3531353,
+        "sha256": "804abfd925a3331ac1a85339e8f198b1f69bea86d55b11525217bb127f9839da"
       },
       {
         "venue": "jci",
         "year": "2020",
-        "bytes": 4456057,
-        "sha256": "43e395ed0f934b16e6a8e878c49bc3d71ed818cba8d8f910b6985e01389b56c3"
+        "bytes": 4283245,
+        "sha256": "1cc9cb8568e64b36f4a260a216b775137edd1b8c7f7178adfab88aec8ae0b766"
       },
       {
         "venue": "jci",
         "year": "2021",
-        "bytes": 4344253,
-        "sha256": "8217eb8ff58641f299668cf5d7601d6807ea494422733dd3492790a185889baa"
+        "bytes": 4178123,
+        "sha256": "70b46f9bd18f4ec190879038420717c215ccce90998ed7514c106aabce92d102"
       },
       {
         "venue": "jci",
         "year": "2022",
-        "bytes": 3862227,
-        "sha256": "d48b6acc7b6c17d24d9819d6cf5896a118fb537d455e98d08a1d3face207114a"
+        "bytes": 3699696,
+        "sha256": "2782674a4e8d9530248f1de01e239200e9f1c5f0a4d079b0c89f08ee8da12a89"
       },
       {
         "venue": "jci",
         "year": "2023",
-        "bytes": 4582886,
-        "sha256": "62be85fc9c16752ca786232f3984b30b7109cd06b6f2208686edb1ccfcf56bf1"
+        "bytes": 4402509,
+        "sha256": "7f2a4a09aaf35f6354655652436df84f595997bf479d84fb6484699e354a855a"
       },
       {
         "venue": "jci",
         "year": "2024",
-        "bytes": 5362627,
-        "sha256": "faac2a542599630d92d39c206328d63300b2c77a19d3f75fcd7f576d0ea99dcd"
+        "bytes": 5151264,
+        "sha256": "b24b34a948803e9875121db0dfb46df15e43fec4ca2055adfe5acdf98f060c01"
       },
       {
         "venue": "jci",
         "year": "2025",
-        "bytes": 6523762,
-        "sha256": "3e90520f04de0f87f6050a71e9fb08e6e294bcdffd7eaa05d9325a5a6cb7effc"
+        "bytes": 6268589,
+        "sha256": "7fb80ac963d9d153ce25593be124220889bec4801479aefb5f58f4a51d4d9be8"
       },
       {
         "venue": "jem",
@@ -1931,14 +1931,14 @@
       {
         "venue": "jem",
         "year": "2007",
-        "bytes": 1474503,
-        "sha256": "66a9c96e8b41d41bf73fb250c0b843882a149ae2a883657549dd853e55419d42"
+        "bytes": 1408874,
+        "sha256": "a4e01c834806d3778873a5bd0b8bc10c8d67b22f0428413774e1721030238fb5"
       },
       {
         "venue": "jem",
         "year": "2008",
-        "bytes": 1452870,
-        "sha256": "60f8ffebc6e294e6dfb278509d1582e9ac70890bfc60197e6f75c33a011ec29b"
+        "bytes": 1389541,
+        "sha256": "c0070821ad5d89cf61ef8289310c7328b885f2bdbeeb8e9cec5fc84cce9b0730"
       },
       {
         "venue": "jem",
@@ -1961,8 +1961,8 @@
       {
         "venue": "jem",
         "year": "2012",
-        "bytes": 1752237,
-        "sha256": "afb6baba6ca54f19fe681156aef5ee3068edcac6094b7c5d5f21f07d468c66f0"
+        "bytes": 1684018,
+        "sha256": "7b80815511502b902fcdbdec9665c18dc0290e58829a77111fa3d5dfd6eb93c5"
       },
       {
         "venue": "jem",
@@ -2003,56 +2003,56 @@
       {
         "venue": "jem",
         "year": "2019",
-        "bytes": 1911534,
-        "sha256": "e3f12b9db908bff2c594b196fde8d3d4013a067fdc2cc2c48845ff97bbfc1525"
+        "bytes": 1832724,
+        "sha256": "c2f63423abd10cf4663f2eab215d9cfb631677107a87e6225990ad1550a6c8fa"
       },
       {
         "venue": "jem",
         "year": "2020",
-        "bytes": 2333689,
-        "sha256": "b99e5e29a807808cef53d56b69af5d54943302fee1e7be5b29bf45376c37fc68"
+        "bytes": 2236919,
+        "sha256": "574f7185be37c141be1151a3c3a55403b2d3b0421648291d622941af6a0898d9"
       },
       {
         "venue": "jem",
         "year": "2021",
-        "bytes": 2621505,
-        "sha256": "33e6ffe4b5a5e56ea1e1b7beb9a4e77165fb192760f202a058c1b05b77dbc9a7"
+        "bytes": 2505965,
+        "sha256": "f7ecb533fbbf34b0bbe4603437896050f2101664b66c01828a2775c6c5d815e7"
       },
       {
         "venue": "jem",
         "year": "2022",
-        "bytes": 2452521,
-        "sha256": "90dcc317614bcd85f880c71caf9c037fe24ca2ddf661bbf05b5546a74f5f10c1"
+        "bytes": 2326154,
+        "sha256": "21346ee28e00e9a9128914788983a31742fab92a5c747561454fffb2650bdcb5"
       },
       {
         "venue": "jem",
         "year": "2023",
-        "bytes": 2007984,
-        "sha256": "7676744baad493f74a80bec4abca4aca0de15bda128769c5f24652492df4697f"
+        "bytes": 1888657,
+        "sha256": "4b1bd16ee918735d922f40d3327bd91325bdd589c0401a767415cdb4b8d41023"
       },
       {
         "venue": "jem",
         "year": "2024",
-        "bytes": 2489940,
-        "sha256": "fee46f051874504ba310d3edcef95bf01a7d1b4cda9d006f493bea24d281f0e6"
+        "bytes": 2348644,
+        "sha256": "65cbf4de16ea438aa89862c7cfb49d69fc885409e15528f8eb92c534403070cb"
       },
       {
         "venue": "jem",
         "year": "2025",
-        "bytes": 1774422,
-        "sha256": "59734ed2ba4cd6812796fa39c480b0ae1fb30ac6b059d53ca03d1913aaf9067d"
+        "bytes": 1694892,
+        "sha256": "92c25d9e0450427a691d56feac8c40409880a7f2c871451263c253d60c593ede"
       },
       {
         "venue": "mol-cell",
         "year": "2005",
-        "bytes": 1190404,
-        "sha256": "e16369d23acab6224e6ec460f25a32d8435083fc93510f7de645b9f3bdcaf32b"
+        "bytes": 1140737,
+        "sha256": "5f97129835202c74f7174bc9bdd29082d7ca8b40e163b788fb6b75bc5593ff3c"
       },
       {
         "venue": "mol-cell",
         "year": "2006",
-        "bytes": 1303485,
-        "sha256": "72cf1466022d4a6f71fc4f8dac1869d755c105975eda59a53257548a10ee6e97"
+        "bytes": 1249926,
+        "sha256": "c34b173520cff130fe3aebb49f786f1ad93c847f28416abf23c857c268a92994"
       },
       {
         "venue": "mol-cell",
@@ -2105,26 +2105,26 @@
       {
         "venue": "mol-cell",
         "year": "2015",
-        "bytes": 2170162,
-        "sha256": "3f7d2156406b9ff39d523f0d461511ef3bad6f7e33b59121f11d1091b38d0f99"
+        "bytes": 2086940,
+        "sha256": "e59598b37c6e739de0cca24f71c5e54e6cf4fdcf4c1450014f5a004ae74a6fbb"
       },
       {
         "venue": "mol-cell",
         "year": "2016",
-        "bytes": 2288736,
-        "sha256": "bcfd50c6d985bd4c08bcee5d01aafd2c7ab40be42e3fe39ba766ef81fb72451b"
+        "bytes": 2200888,
+        "sha256": "67d4cf5121f37799f1dd6fb7513117a8fe3895bb1dea4b049df88cb49588fe45"
       },
       {
         "venue": "mol-cell",
         "year": "2017",
-        "bytes": 2290324,
-        "sha256": "def8ed4017f381f713a3e8e9538dc3dc5522c925173d75ebefb1ede88fdcf84d"
+        "bytes": 2203880,
+        "sha256": "6cea822df2d279666c533feaa5a58cf2b88e0c3638ee3d3701f35be41f112655"
       },
       {
         "venue": "mol-cell",
         "year": "2018",
-        "bytes": 2749065,
-        "sha256": "087676b2c44dcee0a581616568872d5d02e52d8863d9fa9ba399bf36000fa889"
+        "bytes": 2643943,
+        "sha256": "9e7f909d989967e21b1a0ea969af0c7bd986feeede78479568ee53bfd76de5bb"
       },
       {
         "venue": "mol-cell",
@@ -2135,164 +2135,164 @@
       {
         "venue": "mol-cell",
         "year": "2020",
-        "bytes": 2753536,
-        "sha256": "f3c7dd65bb12de4d430142767247f750664c0ecf55d1bbce972abbe25d54a7ef"
+        "bytes": 2650770,
+        "sha256": "0522252f06708d4767836d2b8d58ae444305d33e853c8f247cd0f1c0648d36d5"
       },
       {
         "venue": "mol-cell",
         "year": "2021",
-        "bytes": 2553810,
-        "sha256": "84e1e220d95985e7c704e6311c2e0c9a8818256187aae7a70bb12feb97ae228d"
+        "bytes": 2555809,
+        "sha256": "4a0e9fc0e75565a1fed0932ef87f150a0f526f7fbc2654786b4e3f734740bea2"
       },
       {
         "venue": "mol-cell",
         "year": "2022",
-        "bytes": 2321211,
-        "sha256": "cbfa072223b4f850b7dd3e0936d31e4f2abae4b665e26034e910f92f12dd2706"
+        "bytes": 2232954,
+        "sha256": "1d444063c5b50076f8a9a5fc1fa89b401809211923dac4640ed2e2ebf6b4b709"
       },
       {
         "venue": "mol-cell",
         "year": "2023",
-        "bytes": 2404394,
-        "sha256": "e34eeb0cd0e68b43b003f532cd27d05321b3cdcb5dc9958c022910b1b11209f4"
+        "bytes": 2405356,
+        "sha256": "61802d861e002d9dce592306dbca4e33153fdc82c7d8e8921038bbf079548c84"
       },
       {
         "venue": "mol-cell",
         "year": "2024",
-        "bytes": 2700062,
-        "sha256": "9afc46dcb837f64d8f88cad3ab55bc3b93deb1d69d3ea3c4decd127d8e66c8c5"
+        "bytes": 2595470,
+        "sha256": "ecb64515fdf9526d81c7afda6f202d9aaaae7ed8aaa7e9355201b4a429b52ab6"
       },
       {
         "venue": "mol-cell",
         "year": "2025",
-        "bytes": 2057498,
-        "sha256": "d50524b76de22c450633c707a0ae66bea54f9d7739c7fc5c2925026af0a86a1c"
+        "bytes": 1975980,
+        "sha256": "036f7d9e1e5800724ef26ec7f9798b20cbe522f0951b86a47da3777c36c2ca27"
       },
       {
         "venue": "nar",
         "year": "2005",
-        "bytes": 2303544,
-        "sha256": "31160e3b6adbc049b9ec1f1a59c542fbf7dff8f64fd93df1ec9b86777860e298"
+        "bytes": 2187308,
+        "sha256": "0447e88d34b13ccf5a75e5f9e974398b81909c0aaab08fc0d0e96bed15d0bdb9"
       },
       {
         "venue": "nar",
         "year": "2006",
-        "bytes": 3572540,
-        "sha256": "e674541e3d2c8f2623b3c4f94ed75f8e06f9ba66b8af8ff05eca4e6fd489be02"
+        "bytes": 3416788,
+        "sha256": "3de8d247a6f9c9273eab90791b44c4215b4ae07f4a25f909e872fdbbf45b6c02"
       },
       {
         "venue": "nar",
         "year": "2007",
-        "bytes": 7100890,
-        "sha256": "23493332612d4b12c78d105a48d1eeaebb3a21e9a30233c33292816786489370"
+        "bytes": 6830518,
+        "sha256": "d8effae4c6fe55e88e81529f42dc66d3ecb2ab010fd64d463811724a8cc933d2"
       },
       {
         "venue": "nar",
         "year": "2008",
-        "bytes": 6594529,
-        "sha256": "c067bde678848c19aba91a7f140cfd3d9a7971d4737be36551897adfe5e2d701"
+        "bytes": 6343002,
+        "sha256": "a28f9f34f172357fdbf8b42370cf8703f424992749737d155907b511f2cd817d"
       },
       {
         "venue": "nar",
         "year": "2009",
-        "bytes": 7646528,
-        "sha256": "2802b5edcf7d75cd0b1fd2450e01066e0a8b2e4b5441face2e938268b465bf14"
+        "bytes": 7362976,
+        "sha256": "25307f227c7d8f80a295d4c45b54078e38ff13a29354e3a7531909353c198e1b"
       },
       {
         "venue": "nar",
         "year": "2010",
-        "bytes": 8563595,
-        "sha256": "f80420b16bb32aa29db332d053b78d09a12063aea0111fbae9947fe9226bb902"
+        "bytes": 8245318,
+        "sha256": "9fd5803611d70d0d484fe3678da0c7ca881602f3b7ceea555f7a9b49608509ac"
       },
       {
         "venue": "nar",
         "year": "2011",
-        "bytes": 10048388,
-        "sha256": "f5ee63b2e9d231f3c2f2bdc421a76a4593f5132020a72184c1210454de125544"
+        "bytes": 9673225,
+        "sha256": "097cf19f5efdd7f008f84b67b740add17ca5506c642eac93eaac25c6dcbcf6bb"
       },
       {
         "venue": "nar",
         "year": "2012",
-        "bytes": 9497897,
-        "sha256": "04b0d940802389127bb66b30c4331cbc760affc45fd87d33289d92331d412c42"
+        "bytes": 9146870,
+        "sha256": "2c8c6bbb1661eca44eb3b079667d8c11074d84ad5ad7a564cb7679f3167871a4"
       },
       {
         "venue": "nar",
         "year": "2013",
-        "bytes": 12214148,
-        "sha256": "7269e245bb9bcd306fef137ba3adb621b246cd6e1d41b7bd4d5774bf631dfbb8"
+        "bytes": 11780144,
+        "sha256": "faee2798a7013fc14beaa932b8c7f0ab72751ef2f117484da6106e782316449d"
       },
       {
         "venue": "nar",
         "year": "2014",
-        "bytes": 7117934,
-        "sha256": "cfa0006d1f2b649a6c75a0619af9b8f7c0ce64b76864230fd41745487d266fdb"
+        "bytes": 6845076,
+        "sha256": "4b0ccc3e9d3cf929329b4c811d1a480b6f96533faa7edefd2dcb5c89348be774"
       },
       {
         "venue": "nar",
         "year": "2015",
-        "bytes": 7169780,
-        "sha256": "65030a17bccfc0f1f759d19c098a247f37694a530eb1a117136bcf3395d8b38f"
+        "bytes": 6893548,
+        "sha256": "639a3d17addd984880d47668387c3075549e3574903fe0acee3227bc3e203f95"
       },
       {
         "venue": "nar",
         "year": "2016",
-        "bytes": 7135873,
-        "sha256": "fc87e401c7f8051ec72e5bef2e57e7b38f651d925eb625c01b551986b45753b5"
+        "bytes": 6854577,
+        "sha256": "5cae3ad1c136a064e532fbc3fafae8b8e1e2fe51328cbb4bb5ad0c5dceb03f23"
       },
       {
         "venue": "nar",
         "year": "2017",
-        "bytes": 6720714,
-        "sha256": "1dba14bbd908d366a2c7afd7f9cc29de955b3071bd6bf41ce9610803f08f3f44"
+        "bytes": 6430955,
+        "sha256": "ebf36f05ae061cb14bb8e2c475a9c60818334ba48951df7b1e73f839de273417"
       },
       {
         "venue": "nar",
         "year": "2018",
-        "bytes": 7043663,
-        "sha256": "06056c62f19fe95e3daa701745d6dd4408c39c6fa69e98412c66f8efcd355118"
+        "bytes": 6733056,
+        "sha256": "af99bf53b5f3765d2b8def1b8c05b9b269fb86b8eaac06a4c6cca8793858c453"
       },
       {
         "venue": "nar",
         "year": "2019",
-        "bytes": 6840037,
-        "sha256": "5eedaf914fc97cb4e49e23972251ee91bb7f4a559b209ea607a34d69aa4c1e9e"
+        "bytes": 6546653,
+        "sha256": "3dade25415eb058e78079f194cfdf38f64b225ee1c82c49c1f6683923d0058a7"
       },
       {
         "venue": "nar",
         "year": "2020",
-        "bytes": 7341810,
-        "sha256": "404e6e9235ff42e62b2306b7d5cdceff2ad6701ef0f193013d8a30b6a6dfa42e"
+        "bytes": 7026696,
+        "sha256": "970e0f6db58b1568e74a4848485a55bf24833c544d73e379445f4df937acb7c1"
       },
       {
         "venue": "nar",
         "year": "2021",
-        "bytes": 7392376,
-        "sha256": "cf321930b1e0aa429d9b844db96cc8a7a46648ac08a54b6861e48d0cedca56e0"
+        "bytes": 7076136,
+        "sha256": "e769d83235a2d1f1ee8286c207843b80966658c537cda993e4d1096da2e1000e"
       },
       {
         "venue": "nar",
         "year": "2022",
-        "bytes": 7514591,
-        "sha256": "d45a1651c6a44a27d0655afcfd12ba5b98be8c2941f1152db3b2fa6577d59ceb"
+        "bytes": 7196928,
+        "sha256": "1407f8c47bdec83dccf9b6765d0cacb6c892875889c166822710b78f47c92955"
       },
       {
         "venue": "nar",
         "year": "2023",
-        "bytes": 7674528,
-        "sha256": "5a327f1acee1ce6c563852926b229909d554062e9c54adca9cc71856bd0e4787"
+        "bytes": 7354842,
+        "sha256": "212d5ca7e21711a6313174c104032b566a163c15b349c88bfec8978e66b8d33d"
       },
       {
         "venue": "nar",
         "year": "2024",
-        "bytes": 7872713,
-        "sha256": "31dedb7029145f905e35935df27cb70cdc1f49c645ca501f281cdf302893008a"
+        "bytes": 7558788,
+        "sha256": "ce38616644656b60f3ac882b1f9b69dfa215bd7f5cc37dd301a98186381d3f18"
       },
       {
         "venue": "nar",
         "year": "2025",
-        "bytes": 9680367,
-        "sha256": "0e8e456bcc8d1fb8c3d6c5a1da6731f3959023aba9ed7a1a30c158c4fdf67f72"
+        "bytes": 9293539,
+        "sha256": "84f93d0a449e925c0564bba90b0d693dd667ae8cd743c3d6463d9d73a512b411"
       },
       {
         "venue": "nat-biomed-eng",
@@ -2375,8 +2375,8 @@
       {
         "venue": "nat-biomed-eng",
         "year": "2018",
-        "bytes": 668848,
-        "sha256": "11c38791c893111340da16a03d74813eeeb2f1c4b6da391243fed060982b2e75"
+        "bytes": 641895,
+        "sha256": "a77462d39a163ff23bde2859ae91fcbbf71b3586ce784f93810aa81e9e66dda7"
       },
       {
         "venue": "nat-biomed-eng",
@@ -2387,14 +2387,14 @@
       {
         "venue": "nat-biomed-eng",
         "year": "2020",
-        "bytes": 893675,
-        "sha256": "5dcfc1e12cd2ff6e0af54b246f2c90fb4b19e290a7655ce2785ce7ccf1fdc61a"
+        "bytes": 857156,
+        "sha256": "54085a867d6c711a61a439d254d1c488ba3b990222e6cc4c6bd124a37fa9ca54"
       },
       {
         "venue": "nat-biomed-eng",
         "year": "2021",
-        "bytes": 1045441,
-        "sha256": "3ca9f16333754e68954296f11ea40c6893c3c38ac71f25b3b5090292d1dac2f0"
+        "bytes": 1003225,
+        "sha256": "4dd119c2e963b49e622acc217ad2cfd94b585037093605c823c2dd38a98f3e87"
       },
       {
         "venue": "nat-biomed-eng",
@@ -2405,32 +2405,32 @@
       {
         "venue": "nat-biomed-eng",
         "year": "2023",
-        "bytes": 1104977,
-        "sha256": "62153328a0c1ce40487ebaa71d740312e6839b1854d8cd26dd56822c254aa14f"
+        "bytes": 1060748,
+        "sha256": "843f0636207f8b7653b180daa8500f6efe4b076fc28c0f17e2cbb09ed6c03e77"
       },
       {
         "venue": "nat-biomed-eng",
         "year": "2024",
-        "bytes": 1030688,
-        "sha256": "5834d1c4fd51d10cfcdfcdeb60e75998deab1d245d73ee964b7cc0049663ea18"
+        "bytes": 989004,
+        "sha256": "47b24c54059412a2f382ee218f537e8fa9d1f4d63dca477598f5bf360540e7b7"
       },
       {
         "venue": "nat-biomed-eng",
         "year": "2025",
-        "bytes": 1986602,
-        "sha256": "1387fdb44a13340b59451ecd3a73009d311345835264c10a12f92cf0f5711030"
+        "bytes": 1906628,
+        "sha256": "7aa492d879dccb7f911319016da0d3e2b6f5bca971089d0cd882886c8bc96fd3"
       },
       {
         "venue": "nat-biotech",
         "year": "2005",
-        "bytes": 645433,
-        "sha256": "3f7c2534e03c40591261d5a88c6ceeccef72b3546745d657658993070a536934"
+        "bytes": 617969,
+        "sha256": "0f73433412030adb2464c62b38627ea8e8c1df6327a2b5efc83b3dafb8b71c23"
       },
       {
         "venue": "nat-biotech",
         "year": "2006",
-        "bytes": 881225,
-        "sha256": "43c4cf8b3c20ec9b824c05696304524e0552c01ea4ba1bd5497961c51baa0540"
+        "bytes": 844001,
+        "sha256": "803b6e32cfd9d884b58ee30f2fb8fcb7b1597e35f03e8bc175909bdb0f310f25"
       },
       {
         "venue": "nat-biotech",
@@ -2459,20 +2459,20 @@
       {
         "venue": "nat-biotech",
         "year": "2011",
-        "bytes": 936718,
-        "sha256": "03c7fed9d5f8b26ea25d1189ae742496e2551cee26af51e2293c7ed54522537f"
+        "bytes": 895926,
+        "sha256": "b803145758962e516477daff980189fa807455be6f55e55357bdb5fb4e697de1"
       },
       {
         "venue": "nat-biotech",
         "year": "2012",
-        "bytes": 863671,
-        "sha256": "6cddabbefd6cae10023c777a39e92fbefa2bfe25f69ce4fdc80fcb4c2ed77f01"
+        "bytes": 825744,
+        "sha256": "8025aa402448b051f804e57dfc5736077d20bfc7eb0bacad4fa10b6c4efdcc01"
       },
       {
         "venue": "nat-biotech",
         "year": "2013",
-        "bytes": 901220,
-        "sha256": "3ae72c4594c8298d2badc8a14b6b7dbe16368eb2b874cfceeee7af91c385d80c"
+        "bytes": 863255,
+        "sha256": "37bc47a6f66160978a97dde865199f34165a8b4dd8164a7776eb46d777c0705f"
       },
       {
         "venue": "nat-biotech",
@@ -2483,8 +2483,8 @@
       {
         "venue": "nat-biotech",
         "year": "2015",
-        "bytes": 1154076,
-        "sha256": "cae162600355058d3c7bb181e71ebecca27167fb8270290c06741f9b2c6759d8"
+        "bytes": 1105751,
+        "sha256": "3550a8953c5af999c07c6b7b0819765995ae5d3415f0370ead78ea0d0bccf486"
       },
       {
         "venue": "nat-biotech",
@@ -2513,38 +2513,38 @@
       {
         "venue": "nat-biotech",
         "year": "2020",
-        "bytes": 3449655,
-        "sha256": "86c477971bec813bdd2df469b1c06b417e04d5370448705b0f792e5178ea819a"
+        "bytes": 3227256,
+        "sha256": "b990e8b4e27fc99fd76e35b52c108a51863e6d6363585624a16aa15e89766d3b"
       },
       {
         "venue": "nat-biotech",
         "year": "2021",
-        "bytes": 1719484,
-        "sha256": "681d7aca6efb162e440261a2f3ca0484cbe9e6df707313deb75568ba31374527"
+        "bytes": 1629937,
+        "sha256": "f6b9ecee62210f26eab8b50d6f13fecc0b9d72a28a0025f313862b7979e719fb"
       },
       {
         "venue": "nat-biotech",
         "year": "2022",
-        "bytes": 1790789,
-        "sha256": "6bd5ea05bea8cc5568a597a3c11558d4683919518f22d530a45a8e6bc902b21f"
+        "bytes": 1713602,
+        "sha256": "938ed86b7e2feb27de7eb5e3bc4872dc4e19933f8e90cb93b00f8d8ebab2cb8e"
       },
       {
         "venue": "nat-biotech",
         "year": "2023",
-        "bytes": 2003277,
-        "sha256": "849aa2c39fff977a2c5810c0311dc23cc3e1773accd29f108f8c59433ccc6f7a"
+        "bytes": 1915471,
+        "sha256": "5bd1f8b5121e10a9e341b7cbd30c24085595cd9f9cc831916b2335411deae351"
       },
       {
         "venue": "nat-biotech",
         "year": "2024",
-        "bytes": 1914081,
-        "sha256": "e4faec5c16468cb9badc90adba5e62e9b11345a8b651d8e651c470efee322eca"
+        "bytes": 1819523,
+        "sha256": "8ddd41f286a59ce56e63106a73694932597145b485699f486743de3cf11eff83"
       },
       {
         "venue": "nat-biotech",
         "year": "2025",
-        "bytes": 1588069,
-        "sha256": "b56c95c7ad03d6f26b70f28077ff8be3034284a2b9066399f4237a5dc5394830"
+        "bytes": 1518377,
+        "sha256": "f134849f5ef7220ed3705caffb292b336db8107fdd5336f5ac668f034af5713e"
       },
       {
         "venue": "nat-cell-bio",
@@ -2555,8 +2555,8 @@
       {
         "venue": "nat-cell-bio",
         "year": "2006",
-        "bytes": 852216,
-        "sha256": "092e8d537702c87cff7ea36f3eb84e973b9bebf2790bbdedf6cd0ec0906d9294"
+        "bytes": 817340,
+        "sha256": "c34cd1e4dbe697264a2140aa4098a494307180b64836af6bfd3639aa7c997b05"
       },
       {
         "venue": "nat-cell-bio",
@@ -2573,8 +2573,8 @@
       {
         "venue": "nat-cell-bio",
         "year": "2009",
-        "bytes": 1057065,
-        "sha256": "e88f0364e5e454c12c0953e433f6f30e4350a1768e53d9c2284ae5580e0fdd6d"
+        "bytes": 1014582,
+        "sha256": "6b70322357bd456a7cae27dbba83e6dc68c0a6e7bcf1b51fd9841637df109964"
       },
       {
         "venue": "nat-cell-bio",
@@ -2585,8 +2585,8 @@
       {
         "venue": "nat-cell-bio",
         "year": "2011",
-        "bytes": 941932,
-        "sha256": "6807d544bd3b767c6922071f4def7b8ad597aed8326dc8907ef8995d7a8fb5f0"
+        "bytes": 942970,
+        "sha256": "4cd3606142f73fd74786148f6b59c3005f88e540891cec6d0a672c560aa1c39a"
       },
       {
         "venue": "nat-cell-bio",
@@ -2609,8 +2609,8 @@
       {
         "venue": "nat-cell-bio",
         "year": "2015",
-        "bytes": 1216971,
-        "sha256": "ff0323450ce1d7a241de5a0a62fcd4178027716efc55301e2b284105bf2251e2"
+        "bytes": 1168126,
+        "sha256": "b06d0c55f45254d3fa3e4bccac2f01f098947f5d3876fe22ce6d95aa9c16e66a"
       },
       {
         "venue": "nat-cell-bio",
@@ -2621,14 +2621,14 @@
       {
         "venue": "nat-cell-bio",
         "year": "2017",
-        "bytes": 1080246,
-        "sha256": "f0fa505611d004954f4d29ad20b578de7fcadb95271f64ef9e408503eb35c6e6"
+        "bytes": 1035905,
+        "sha256": "7733601fca9cae25be95efad80ad37b4acb0ce3b1e2de060979cd4005c7e0156"
       },
       {
         "venue": "nat-cell-bio",
         "year": "2018",
-        "bytes": 1048258,
-        "sha256": "e08000d6c2e679597ed005535bbcb9947778062228e949fe2e223af98e8f3efa"
+        "bytes": 1005162,
+        "sha256": "54e11396db466a8441770e818f8e856d0bc1970724a3c1c40ff648391e65a550"
       },
       {
         "venue": "nat-cell-bio",
@@ -2639,14 +2639,14 @@
       {
         "venue": "nat-cell-bio",
         "year": "2020",
-        "bytes": 1242463,
-        "sha256": "73218fdd548397953b645cab6f52b41516b1d8305c7c5ef4449565e6c786584e"
+        "bytes": 1192692,
+        "sha256": "c77841d3a9ee5bb799b19f3b8fe80dad25180c9c07a597913a19fd1ea4513fac"
       },
       {
         "venue": "nat-cell-bio",
         "year": "2021",
-        "bytes": 1050553,
-        "sha256": "0d1ae3c79e21baf090c35010baa619685f2dd96c8f0f6ca045a048d1f2d29428"
+        "bytes": 1007941,
+        "sha256": "aa4f78c0a0e2bf16d0eb67c3cf93b7fe87948a5448bf301222beb32571062b89"
       },
       {
         "venue": "nat-cell-bio",
@@ -2663,14 +2663,14 @@
       {
         "venue": "nat-cell-bio",
         "year": "2024",
-        "bytes": 1628309,
-        "sha256": "a86ef84923c8dad9ad275b13d156179f0228934aa69f4382b0297f3be0ac77b9"
+        "bytes": 1560403,
+        "sha256": "478971fcb3fbe1ff7aba44761ea7533cf94b853b32006d433be7c3a91678a318"
       },
       {
         "venue": "nat-cell-bio",
         "year": "2025",
-        "bytes": 1707438,
-        "sha256": "dbe5cca23b9ecbf7b29e20b49b4c8120c6eac3b061ac9e89a97d2c6b95a3456f"
+        "bytes": 1638284,
+        "sha256": "ab90dffdfba9e4905d616a8af4859dc767380718d8dca708bfbc01f1ce0c7643"
       },
       {
         "venue": "nat-ecol-evol",
@@ -2753,14 +2753,14 @@
       {
         "venue": "nat-ecol-evol",
         "year": "2018",
-        "bytes": 1578475,
-        "sha256": "6a371bd9b8e26c483a10c2fbd9958a49c94f3776aa01d7c76ab1f4d70c1ebdeb"
+        "bytes": 1508228,
+        "sha256": "74a2f0441be31ad4e06e6e2b8ccae03db620b573d65f2101f8b9ab43e5c9c551"
       },
       {
         "venue": "nat-ecol-evol",
         "year": "2019",
-        "bytes": 1218138,
-        "sha256": "65209144f411bb843873e9e1e852f8e7493fae56029f316ebbb4cdb3473c9ab3"
+        "bytes": 1166931,
+        "sha256": "2a95090743cd378abbb49af6d20ac1b23946dd1299ff55102b9a9202fccf6edf"
       },
       {
         "venue": "nat-ecol-evol",
@@ -2771,32 +2771,32 @@
       {
         "venue": "nat-ecol-evol",
         "year": "2021",
-        "bytes": 1088160,
-        "sha256": "ec1da3f49dd0e49651195188ede18b3d6fbe951aa80371b4242495c3af9485fe"
+        "bytes": 1040557,
+        "sha256": "8d44838a57208def72a6970896b03148028268c68b4ad35c0567fc3efc0d562e"
       },
       {
         "venue": "nat-ecol-evol",
         "year": "2022",
-        "bytes": 1388024,
-        "sha256": "01099cc74a1255a39c0236808238016514d250b43bff0a4a6b2a0abc0ed24b15"
+        "bytes": 1329904,
+        "sha256": "16dee0f9336f1c3990eb7befaf36b1ea1a6c502cf02a5a7b6f4460543955f196"
       },
       {
         "venue": "nat-ecol-evol",
         "year": "2023",
-        "bytes": 1383324,
-        "sha256": "7bd1a6095ec3b13d13b38f4386bc2dc70c8a4a4eb190bd12b9af1f72dd377caa"
+        "bytes": 1326607,
+        "sha256": "322d2e031bc28895766a273350723b3d5c3e95e574805c76ba8f51a48851bf7c"
       },
       {
         "venue": "nat-ecol-evol",
         "year": "2024",
-        "bytes": 2000176,
-        "sha256": "8072aeb6d4366c626bc368b5078929e4b6f41ec156abfa5fb9668de7f954e9b0"
+        "bytes": 1915126,
+        "sha256": "3f06634e063f10a37c5f3c8ecb1471029c5a92afa5497f72f898ebfb6119e716"
       },
       {
         "venue": "nat-ecol-evol",
         "year": "2025",
-        "bytes": 1535029,
-        "sha256": "2bfcbd2b9bdacf5808a1741a89eef23b035c4850fbfa9bfda4014268ad523317"
+        "bytes": 1469871,
+        "sha256": "8cca863e93b96764cc026bb00368eb791ac152095c171adf1b670c016923b8c2"
       },
       {
         "venue": "nat-genetics",
@@ -2819,110 +2819,110 @@
       {
         "venue": "nat-genetics",
         "year": "2008",
-        "bytes": 2893631,
-        "sha256": "92014a5380bf36f0ee2df8587c9ab40ba6c70aa9ba12137462923fbd75e862fd"
+        "bytes": 2777730,
+        "sha256": "f2fa6726d846825880e229af53f1f75e9717783089a23f974135d39c300051fd"
       },
       {
         "venue": "nat-genetics",
         "year": "2009",
-        "bytes": 3730867,
-        "sha256": "940519b870d274f7e7e26bbc8112e31e0d897b0d5ac65130ad2376041e3367b8"
+        "bytes": 3574518,
+        "sha256": "e422c7fcc3ae2c5416cc38316a6025dc01b0ff53095150186ebc2ae4b19b9860"
       },
       {
         "venue": "nat-genetics",
         "year": "2010",
-        "bytes": 4532068,
-        "sha256": "c9bf4ad00195f0119dff3d937862083a3d929bf8559dc7bf485ec6b2861fc70b"
+        "bytes": 4344921,
+        "sha256": "b1858ef7274deb4216326d97e90a2c4b4407d994a778e7ffaa165e7134002124"
       },
       {
         "venue": "nat-genetics",
         "year": "2011",
-        "bytes": 3635802,
-        "sha256": "d93c1d086e1a42db9b6d62ac91fa7161211bdbc667b3806f5b0a5a26177fd862"
+        "bytes": 3483560,
+        "sha256": "7500beaa88053042366f4bb8db5d05d5c0ae58cec102dd3f82328237ac10e0ba"
       },
       {
         "venue": "nat-genetics",
         "year": "2012",
-        "bytes": 4214629,
-        "sha256": "1ca84a41d1a3d9199d4f2984f809a56e234908829a775d94aca06b3d9e25fa12"
+        "bytes": 4028766,
+        "sha256": "e854bb468d686d8332b16150649e4bc73d622c62e16d979d9e739c427edf3061"
       },
       {
         "venue": "nat-genetics",
         "year": "2013",
-        "bytes": 6163376,
-        "sha256": "a8719d29f916646e86ac667ac0f3c4450dd7a2cf95ed1f71daa0b4bc10c13d47"
+        "bytes": 5910848,
+        "sha256": "69c8dc37c8cc464f02e5f353c687b34679b4601095b4bcd88139658ce6b086f1"
       },
       {
         "venue": "nat-genetics",
         "year": "2014",
-        "bytes": 3557013,
-        "sha256": "ec01d7302ab961ce17c7aba7f39bbc0153e07525a24b79791512e19420d86a1f"
+        "bytes": 3415684,
+        "sha256": "329b562f4c2032420e9918f11ca35e8b3bb7b9af30dc8aa6426c7a2f7345bd73"
       },
       {
         "venue": "nat-genetics",
         "year": "2015",
-        "bytes": 4965546,
-        "sha256": "dba9c3091278fa66d075578c03d628790eb2f56555b15530fbe27c96744cae98"
+        "bytes": 4758316,
+        "sha256": "647c3071c6f87270d412cc4d974e837fa7c0db9b90192783b413b31d51c8f1d0"
       },
       {
         "venue": "nat-genetics",
         "year": "2016",
-        "bytes": 3970017,
-        "sha256": "e0f5c4fefa8dbaf4918de6a4a0c111762d572d3955fa9f28bf88c5d822397c5f"
+        "bytes": 3802073,
+        "sha256": "bf1d7ddf27dc1363a957c069eaeab74aa33abc9d9426c310ca727310b49a023c"
       },
       {
         "venue": "nat-genetics",
         "year": "2017",
-        "bytes": 5194540,
-        "sha256": "161b55e356ed0aada7a3dde10d35b52800eac3aa161e6fa3decee189c57588ae"
+        "bytes": 4972588,
+        "sha256": "98a919c0b12e3f4694f055082ba86115f6582c893be58145b1fe4c2cad7222a0"
       },
       {
         "venue": "nat-genetics",
         "year": "2018",
-        "bytes": 3618262,
-        "sha256": "fc14603108f55de06235445e85d7991f98beb3409a8da5fb2cd0acdac7dc76f5"
+        "bytes": 3471859,
+        "sha256": "2c4eaa8545c18640f499a6b590b9d734d9db7c039faec8171840c1470ee7dc6e"
       },
       {
         "venue": "nat-genetics",
         "year": "2019",
-        "bytes": 3122605,
-        "sha256": "8ecd65645596518fb1dc0784d5cd62da258d387b746017726def0f5b6d8a2c48"
+        "bytes": 2980311,
+        "sha256": "109afbdd0bc1c3103a3c1386b1b2432f29053030e901856abfd6ad9a9125512d"
       },
       {
         "venue": "nat-genetics",
         "year": "2020",
-        "bytes": 5863019,
-        "sha256": "54a847b6e9ebb3048dfad0ed33092007e3d6c6964ca58319511ce9bb0edaf2a8"
+        "bytes": 5422009,
+        "sha256": "e643801e100913397c373c0b443775aa021780a29559c6bb9ce2145d1afbb095"
       },
       {
         "venue": "nat-genetics",
         "year": "2021",
-        "bytes": 3605242,
-        "sha256": "bb5e29d20529f66305901c711473d6f7c70b71b4ff997dca9480fda4ac5b9bf9"
+        "bytes": 3421357,
+        "sha256": "532347978d85da87454111f6d050bebd1d447a609f495d2309b19ac9ffa901e3"
       },
       {
         "venue": "nat-genetics",
         "year": "2022",
-        "bytes": 4571796,
-        "sha256": "165ce3af71583f04767588e09cde3ed4dfd6602480725c1a1a80fcf017032af2"
+        "bytes": 4300119,
+        "sha256": "7eb85e15d65b55b9b6934a64936dec0279e821edfb1aaad66d65692355d28e5f"
       },
       {
         "venue": "nat-genetics",
         "year": "2023",
-        "bytes": 4016877,
-        "sha256": "d117aa867153b5c27e131256fa9d797357c45ee664b7ec65696065fa38ea1a3f"
+        "bytes": 3830810,
+        "sha256": "c69ad55e407ad46b12479fe175339b885b112ce2a1ea82d725846521a052d8ea"
       },
       {
         "venue": "nat-genetics",
         "year": "2024",
-        "bytes": 4787483,
-        "sha256": "d16fcac59f02157864c68ba088aae9b98772366243b4e50c16a46a6b4aa18255"
+        "bytes": 4511409,
+        "sha256": "e547ed72db6b835206afa2671ef94c4b3052a1e6d647cfa96843c7c6354f2d0d"
       },
       {
         "venue": "nat-genetics",
         "year": "2025",
-        "bytes": 5698792,
-        "sha256": "475bb50c8547989413799c157f2f5d69cef8784c70a7a8dd1ec2177d3b08ed42"
+        "bytes": 5440057,
+        "sha256": "6cd3dd890d23655f5a398c98b2af63f5c5438d68a6e061b4ca4b585b5edd7fb8"
       },
       {
         "venue": "nat-immunol",
@@ -2993,8 +2993,8 @@
       {
         "venue": "nat-immunol",
         "year": "2016",
-        "bytes": 1356304,
-        "sha256": "53a234fdf075b87280042935630e3b432197b07fb2ece3d0c1c6b8395d234c68"
+        "bytes": 1299901,
+        "sha256": "dd67d25c9cd8f17bf29dc71171815ad2b37c793b6558f9dcae7f6dceabb0b396"
       },
       {
         "venue": "nat-immunol",
@@ -3005,8 +3005,8 @@
       {
         "venue": "nat-immunol",
         "year": "2018",
-        "bytes": 1126576,
-        "sha256": "41ee271a5de975923551e49a31f1c673efb17e174f10bae7331c874a8c66462f"
+        "bytes": 1079351,
+        "sha256": "29bce0663d8acb57310616a5acd727bbdf100a98ae7a2dfc42847bffeb34516c"
       },
       {
         "venue": "nat-immunol",
@@ -3017,38 +3017,38 @@
       {
         "venue": "nat-immunol",
         "year": "2020",
-        "bytes": 1606902,
-        "sha256": "83390b20859db7fd12f09c826ddf42343f941386b6131d59c1fd5568cec043c6"
+        "bytes": 1525353,
+        "sha256": "f7b4a9a8095f53f10d3d95c07c9fb449a58724e233445f4d871da743d3220d47"
       },
       {
         "venue": "nat-immunol",
         "year": "2021",
-        "bytes": 1669429,
-        "sha256": "e17aa0f833c130544a40921fe7a3adff8be720cbad65920452c2924fabb94d29"
+        "bytes": 1593688,
+        "sha256": "cb8bf6e676d14aec68f9e147afcaaa5338044933de5aed92e0d0824a03c16ab4"
       },
       {
         "venue": "nat-immunol",
         "year": "2022",
-        "bytes": 1430782,
-        "sha256": "a5f85846d15cfea58d98709b01682dcb0ebd0aaf562ab1969930e1a42e7fb3c4"
+        "bytes": 1368728,
+        "sha256": "58bd99f0de2dfca52c427b9e71c331951e661edec334cde9e0129b6f55d34eb9"
       },
       {
         "venue": "nat-immunol",
         "year": "2023",
-        "bytes": 1703532,
-        "sha256": "1302f3987b10478a3699427c53750632621581e1dca0e242af15de4f166fe80e"
+        "bytes": 1634585,
+        "sha256": "950244ef507f10fdd1e2c88f569fc661c6567aa0d740ae3b47a94a7f36ad6a32"
       },
       {
         "venue": "nat-immunol",
         "year": "2024",
-        "bytes": 3344298,
-        "sha256": "6157753e6c49ccd27922df8b1f02b6fb266620fad4111d682e4f2e82f34d3854"
+        "bytes": 3175133,
+        "sha256": "20b16c5c260f511503e09159015d4014fd2124c1b521a849c2dc4ae82320c6c3"
       },
       {
         "venue": "nat-immunol",
         "year": "2025",
-        "bytes": 2169808,
-        "sha256": "686a42b6c983be62913691a21ff4cda61a493d2440238fb937d179713df4a882"
+        "bytes": 2077277,
+        "sha256": "cd88bd146e421666ad05b4cceadfd9149900eb3b3fdb9c5c1ad4ab9171cd74af"
       },
       {
         "venue": "nat-metab",
@@ -3143,8 +3143,8 @@
       {
         "venue": "nat-metab",
         "year": "2020",
-        "bytes": 1122578,
-        "sha256": "dbbe664d69930660b9e829243e47088c55cc68dc77bc617e713bc240db21671e"
+        "bytes": 1076935,
+        "sha256": "31525f800cd1925c98e1fa051bc9673f45e3f1caeb95d90c7a7b7e43457e9573"
       },
       {
         "venue": "nat-metab",
@@ -3155,26 +3155,26 @@
       {
         "venue": "nat-metab",
         "year": "2022",
-        "bytes": 1336491,
-        "sha256": "175b16533e1b1a7468d6999120be3cd7ad687ff8538c85e1e5301eeaab08609c"
+        "bytes": 1265936,
+        "sha256": "0212164fdfa193ff0b4f9fd1dd609aa69b2399c61449e4e48521a82e8ecb9a01"
       },
       {
         "venue": "nat-metab",
         "year": "2023",
-        "bytes": 1473964,
-        "sha256": "2503d11235c778c74d44a9e93e3e550914abf14394da833728978170b55518f8"
+        "bytes": 1413223,
+        "sha256": "2cdebc1e7c0f383de20fa81f82ffc829978b2c2a388536dd72e463511d4d86d8"
       },
       {
         "venue": "nat-metab",
         "year": "2024",
-        "bytes": 1721803,
-        "sha256": "97ae6100757b0aa6becf092b43535f29e3bed1b830727fdd0b72e62f02fc32c1"
+        "bytes": 1638348,
+        "sha256": "d038b553d8ffc63767f3fb66351a3301fcb06864e37922921742d8aa1175d5bc"
       },
       {
         "venue": "nat-metab",
         "year": "2025",
-        "bytes": 1855272,
-        "sha256": "67c7cdcbb11085675dd69a86016aef601448e8f9efc3fa9b55cc6d834e40e3d0"
+        "bytes": 1780579,
+        "sha256": "7109ed58a5e544bcb1f2d92f8f96b0bbb40d6cca88b2886a812203c2dd6fda6f"
       },
       {
         "venue": "nat-microbiol",
@@ -3245,26 +3245,26 @@
       {
         "venue": "nat-microbiol",
         "year": "2016",
-        "bytes": 1543580,
-        "sha256": "66acf1c50f7ded3a2d1b0da289c9843fe6bdc0dbf90f70d19541b8d7299f916b"
+        "bytes": 1485223,
+        "sha256": "c12b169c4225c4f3a36b1ef9e877724d487dda5bfe49daf16da72894614e387b"
       },
       {
         "venue": "nat-microbiol",
         "year": "2017",
-        "bytes": 1141828,
-        "sha256": "fcee6f3312f7944de2db132dbe8571e862303753face79fb2f57d7a01b1d6ae5"
+        "bytes": 1097572,
+        "sha256": "6244d3f8d67ac56bb3f69e06dcd2d2c24e342adf70a303fafcf2fecf20a01552"
       },
       {
         "venue": "nat-microbiol",
         "year": "2018",
-        "bytes": 1314408,
-        "sha256": "7141d8435da284e5b714b1b64c51b42cfe5446cd760827d6b0d922c58f54a522"
+        "bytes": 1261240,
+        "sha256": "28f1f0da476f15d03e86eff83b7f7e4611623cb16e9ef33a4e99167bd3abb921"
       },
       {
         "venue": "nat-microbiol",
         "year": "2019",
-        "bytes": 2067558,
-        "sha256": "aabacc9086d30dec98faa8a82fa6782a782b8f968034ec2afab6e4582d0c326c"
+        "bytes": 1954794,
+        "sha256": "64851670281c95d80e248bf3eb5ffe11015e0ae36a2c3c11c9b52f8e9c97aa52"
       },
       {
         "venue": "nat-microbiol",
@@ -3281,8 +3281,8 @@
       {
         "venue": "nat-microbiol",
         "year": "2022",
-        "bytes": 1855087,
-        "sha256": "3177668b4a9c68f71daf89e5d2b6143986b5918f7b5bb9401ed26b791d6f0b1c"
+        "bytes": 1765529,
+        "sha256": "ab26c9d81b2c427bf90b818cbb10fd09341a63837b826138b5276b3f54212a8b"
       },
       {
         "venue": "nat-microbiol",
@@ -3293,14 +3293,14 @@
       {
         "venue": "nat-microbiol",
         "year": "2024",
-        "bytes": 2301657,
-        "sha256": "5f234f2c38ce5446fc89ff54c079126a123c48aa9964247a0f13703c56ff78d2"
+        "bytes": 2208741,
+        "sha256": "7a2d7c8c82ad4ac96515d3b4c7842e0bcee371133b4598a527fbeb8040e4c300"
       },
       {
         "venue": "nat-microbiol",
         "year": "2025",
-        "bytes": 2359339,
-        "sha256": "168045d8e9e22f502597a88c0c5f525d15fd860c6beab57e1f17b17a08eea508"
+        "bytes": 2262869,
+        "sha256": "3b25ef087fdbb15fe8d90f572e6a4fc638fdc46d153077ee9349b28524500595"
       },
       {
         "venue": "nat-neurosci",
@@ -3329,8 +3329,8 @@
       {
         "venue": "nat-neurosci",
         "year": "2009",
-        "bytes": 989014,
-        "sha256": "60cad66de5906f98a7ebd096de5e47fdfa8581f2ad01ddbd61880ba8ba9391d5"
+        "bytes": 948452,
+        "sha256": "e4539abf95f2a6db51fa398f86767e5764ae56432e7281739fbd0aec635fd0de"
       },
       {
         "venue": "nat-neurosci",
@@ -3371,8 +3371,8 @@
       {
         "venue": "nat-neurosci",
         "year": "2016",
-        "bytes": 1400516,
-        "sha256": "28fbfb9d98c80e7d237c4e82c93f694a951b565122065ab58c1616209bfe126c"
+        "bytes": 1343837,
+        "sha256": "1ba40e0859aef06fb2b3f302569073cc92a2dd920ce6165f604a4dc2b056c28c"
       },
       {
         "venue": "nat-neurosci",
@@ -3401,32 +3401,32 @@
       {
         "venue": "nat-neurosci",
         "year": "2021",
-        "bytes": 1265554,
-        "sha256": "94fd8364cfd4d68360aa2de7636d4d9e45c7299f6bd5f3b9a2da0f936dfcc963"
+        "bytes": 1207800,
+        "sha256": "16a9d47d6d9e281acd37703b550446b7890990c92a5c55b90629eac0b948dd13"
       },
       {
         "venue": "nat-neurosci",
         "year": "2022",
-        "bytes": 1433449,
-        "sha256": "e6a319a6a5c6f6f6eb4a2849eb66cc08ca68569b62ae572e5eeda1b00c611574"
+        "bytes": 1364880,
+        "sha256": "c9b3759fc808945af28bfb4625b721d8fd84073f4b38c28187533dfd90cbcbe8"
       },
       {
         "venue": "nat-neurosci",
         "year": "2023",
-        "bytes": 1468591,
-        "sha256": "25f208b057e63dd8e53b4ed8465af79c7aa712f1e1e23a4f37a4a12b13a1b962"
+        "bytes": 1401101,
+        "sha256": "63ac9e4a58d41b9f807c2cf36217d2cb26d22e4879ffe260eb581deee4ed9b7b"
       },
       {
         "venue": "nat-neurosci",
         "year": "2024",
-        "bytes": 1904575,
-        "sha256": "0e28eecfcc32d5270c92c49c3533be3416698e1755f528a6f95d52c5f3cbf05c"
+        "bytes": 1826178,
+        "sha256": "251eed7c05869a0117b385c7331a4ef09ce088f7957680c64342177f03fd4643"
       },
       {
         "venue": "nat-neurosci",
         "year": "2025",
-        "bytes": 2959573,
-        "sha256": "ed904996f0e816af000092da93c2d9a56713d4f86c91ec44283c756b487d504d"
+        "bytes": 2822703,
+        "sha256": "ca5dc3570d01ae7ec6c4f0e563f55d995632e3ab9d16cdb9a3cde1076d2fbb09"
       },
       {
         "venue": "nat-plants",
@@ -3497,8 +3497,8 @@
       {
         "venue": "nat-plants",
         "year": "2016",
-        "bytes": 705326,
-        "sha256": "67dcce87df42c8900b7a7cdff2cb626ab78ba7bbf7353a915b5fd41aebe74bcb"
+        "bytes": 675763,
+        "sha256": "7bbe6ad9a3cbb7089cf33baef4532b2ade56c4847ca8f3b03d257f2b60046c91"
       },
       {
         "venue": "nat-plants",
@@ -3515,170 +3515,170 @@
       {
         "venue": "nat-plants",
         "year": "2019",
-        "bytes": 968582,
-        "sha256": "c86b65b48553d438dd072ec21e352aabd101db26db9f50f6117d9ef12e710d1e"
+        "bytes": 926452,
+        "sha256": "8f3df82df2f278dee7b4fcd52bd060c9bdb91f945d433ce9f6e5679f6a61f797"
       },
       {
         "venue": "nat-plants",
         "year": "2020",
-        "bytes": 888950,
-        "sha256": "c4941517745b5df7770c99d6b0e03b898327ba8bddc8e7fbbfadf98e532e41f6"
+        "bytes": 852244,
+        "sha256": "f10fd60c4487062af159eab36f9ed46ce966d6e5374c2fd0f1e3c0f3a9b443c9"
       },
       {
         "venue": "nat-plants",
         "year": "2021",
-        "bytes": 981355,
-        "sha256": "9cae8a71a33ecfac75b18454e75812572e7831188cbd55065320b314fe4ce387"
+        "bytes": 940816,
+        "sha256": "d36a1a966a1830a47066f9288a8ab67d2484a77220660bc2ab00d339ce5e35d8"
       },
       {
         "venue": "nat-plants",
         "year": "2022",
-        "bytes": 971930,
-        "sha256": "8d553abf63d91e3c7def5286028ee74a8e104b2d998ac74efb6bacaffd5b3420"
+        "bytes": 930457,
+        "sha256": "dea6ba7416609ddab297a1d299039c52bfb2e4499ca3dbd7e7409739657e5138"
       },
       {
         "venue": "nat-plants",
         "year": "2023",
-        "bytes": 1457394,
-        "sha256": "00219c78e29fc091b4ae05ac04a87a2be2562378f504b2ebd6f77e920f828431"
+        "bytes": 1397913,
+        "sha256": "688c36d2860cc7c6492ddf21b342b40934ba67ebfad4a2acc3aa1882eb531471"
       },
       {
         "venue": "nat-plants",
         "year": "2024",
-        "bytes": 1313216,
-        "sha256": "7135f505c7154e3c0edc9f657e09c96eddde2014d4ebf928be4815c6d84722c8"
+        "bytes": 1259936,
+        "sha256": "a18aed25087eddce683c7c649c2ca4d4aa251d5df569b241ee20b250d4779c11"
       },
       {
         "venue": "nat-plants",
         "year": "2025",
-        "bytes": 1469863,
-        "sha256": "83010f251d1064ee7b811038b886e50ca6b93f1fdf3a3b94838dd6960a536723"
+        "bytes": 1407170,
+        "sha256": "32f7eb48331fa5ae366e3fabcd8bf7eb0b348e05747ef06039b8270bd887008c"
       },
       {
         "venue": "nature",
         "year": "2005",
-        "bytes": 3340430,
-        "sha256": "e33366ff303705d267b0ce0215af7ac190c518149c18c497d17ad220c533e4f4"
+        "bytes": 3203857,
+        "sha256": "2af2354d1ac7c35c607a608e91ea96156eaff596aaa82efa26c6657468ffe70f"
       },
       {
         "venue": "nature",
         "year": "2006",
-        "bytes": 3484079,
-        "sha256": "fe39e3b2248ac2b297321b4741f6f0895e00b92fdb6a9dc9a44cf514f63d5e84"
+        "bytes": 3340840,
+        "sha256": "857f63213ddd278f12358ba7d7bcdc82c594044cb5ab3427c89b945274092499"
       },
       {
         "venue": "nature",
         "year": "2007",
-        "bytes": 3896872,
-        "sha256": "2729bdcb4ae4c205e8d88335f1e166b95889b5ba3f283ce02ad900671369da11"
+        "bytes": 3706240,
+        "sha256": "1664f8f09c3855753d507b68a2cebd55c5426941c1d29603fceacd18d49ed0a9"
       },
       {
         "venue": "nature",
         "year": "2008",
-        "bytes": 4234106,
-        "sha256": "1613f66df0467ecd38354a829916c1a0affb2bc6ba828fbc5ca0d9a1db11f840"
+        "bytes": 4047302,
+        "sha256": "d028a4d979364da2c7d780a13cb5a4bde8472ce1011f3154c8b432ca73bca54e"
       },
       {
         "venue": "nature",
         "year": "2009",
-        "bytes": 3479678,
-        "sha256": "29e42ac33ca632ba1629bec7ab8f2b5b48ba00c469d8349f36b29b9131bbc143"
+        "bytes": 3327507,
+        "sha256": "ab52ae793d964e9cdadb16c63b557555386a9afcfa319a74e1c0447bee7bc10d"
       },
       {
         "venue": "nature",
         "year": "2010",
-        "bytes": 5427219,
-        "sha256": "3b7c95b8df54b37fd55f9f3b00df6fc056a79b173dc6af94a7aaa41096d635a7"
+        "bytes": 5199493,
+        "sha256": "de4cda78c7f15826180763767084f947e1204537f77785ed91cdfdb1281d2fb1"
       },
       {
         "venue": "nature",
         "year": "2011",
-        "bytes": 5674884,
-        "sha256": "235d444cee0c9bdb022d394a32c5f38cbc88352688f5dd368f105c87d34cf435"
+        "bytes": 5437777,
+        "sha256": "e98649ea4692d4235eaae4d47003c90a55943b1f7c58a8459358a43c009d9d54"
       },
       {
         "venue": "nature",
         "year": "2012",
-        "bytes": 7119443,
-        "sha256": "cabbb2d56e5169a1ee5f462f1a3a06bdb89de262ae32c6ca1862e6d13e7904aa"
+        "bytes": 6820941,
+        "sha256": "f6f2211ff86a629f11c86a1e7c599d88dbeed7985cc758f05e6666a38975bd36"
       },
       {
         "venue": "nature",
         "year": "2013",
-        "bytes": 6029218,
-        "sha256": "246534359c9955dcdc1c075edf54abf5549f3c92859f23f040cbc221efa7d810"
+        "bytes": 5773415,
+        "sha256": "e7d720583565332dec79a1f00deede8295ea3d8b1170ea5eb5a45e8580357644"
       },
       {
         "venue": "nature",
         "year": "2014",
-        "bytes": 8074606,
-        "sha256": "60ca2ca33704614de6470981e80a2be5cf5debab2b34f8362da8df453d3c87f2"
+        "bytes": 7756105,
+        "sha256": "76403e9a73fa0a34b31334a5f49aa36928dfb9aaf1101d24b5e0a48012729ecc"
       },
       {
         "venue": "nature",
         "year": "2015",
-        "bytes": 7375460,
-        "sha256": "e3ad6123f8c15d2d57889257af676feae5cc6eaca17ac45b7311198bea978ba9"
+        "bytes": 6974627,
+        "sha256": "36cc81d8ea9f4a36ef42e8736feffca139473a557eb7a60be048fd5f1e7cc654"
       },
       {
         "venue": "nature",
         "year": "2016",
-        "bytes": 7330591,
-        "sha256": "9f0ded9d54329db0fa37229ed0285183781f2f3904bc06f424012afa34f58c2f"
+        "bytes": 7040179,
+        "sha256": "277c02e3f72615e626fbe8defba067a98d1e83400d09a0cd52389c456523a330"
       },
       {
         "venue": "nature",
         "year": "2017",
-        "bytes": 7519140,
-        "sha256": "5b1b4fa8835ca063602574e1fce991afc8f68fe7365cab776c405c55d0c66a48"
+        "bytes": 7219705,
+        "sha256": "7f1b914a60d503b9f0c1ebf01a71d466de20b9204da423ca67a290672fe260b6"
       },
       {
         "venue": "nature",
         "year": "2018",
-        "bytes": 6719750,
-        "sha256": "10dcc148791b9df3ee97fbcd5bdba2b1d318aae2c64af3540321aa5f91f1b6d2"
+        "bytes": 6432279,
+        "sha256": "447b8bc9085e8cb279f38d059b872b8e085690f3081729291ca78b31de6e25aa"
       },
       {
         "venue": "nature",
         "year": "2019",
-        "bytes": 7373085,
-        "sha256": "2c6c2d7b12f67698ce4c9354605f3aad222465806b66bfdd524c982aba5dfaf4"
+        "bytes": 7007283,
+        "sha256": "18892ab797ce9d870840a07b7aa86d342fb5e70fd41bfb38d7b0e3525292ab6f"
       },
       {
         "venue": "nature",
         "year": "2020",
-        "bytes": 19553076,
-        "sha256": "1799fed1fc93aa1362ee48e2e38840bebdb3b88c8a06646833fa7993dd09ed5f"
+        "bytes": 18273678,
+        "sha256": "a5df06545d3ce7293825e42f258ef8133e9e2281b22f7a9845cdef0ff5514065"
       },
       {
         "venue": "nature",
         "year": "2021",
-        "bytes": 11851475,
-        "sha256": "4cf976fab50943a4e54a1589f61e9e5f53d9193353610aced08e32b782d35cbf"
+        "bytes": 11247942,
+        "sha256": "f930343b02f4eb2d9bea8ac511387aa9f53c54cf73ece8b2121df60ffecf9c87"
       },
       {
         "venue": "nature",
         "year": "2022",
-        "bytes": 11501386,
-        "sha256": "c55f6a809520e130a0f1cc05b073022449d814c3273726faa08e1cda5425499c"
+        "bytes": 10957798,
+        "sha256": "1d816d18afd9e7cb6caa77fc7c411f858107acbc3f4b63cd72ed87ef77b22cc1"
       },
       {
         "venue": "nature",
         "year": "2023",
-        "bytes": 12554095,
-        "sha256": "d690380a9b340064a27a78c93ab87e5f06fbac8ce6ce1fa2b65c9668d4add539"
+        "bytes": 11940144,
+        "sha256": "23eb562ccaae8bd67fc187e7b4a3aaaf0bf642f770aa8d0b0dc516f58eb6400c"
       },
       {
         "venue": "nature",
         "year": "2024",
-        "bytes": 11048789,
-        "sha256": "fc21f42b04676d8241f654d472c49b82464cf7380519c1289160021f7557a2ca"
+        "bytes": 10574286,
+        "sha256": "6a24ca0e3c8e872d2b7901f8e42a5d9459c7a28663d408e9b4767e2859e74ce0"
       },
       {
         "venue": "nature",
         "year": "2025",
-        "bytes": 13075676,
-        "sha256": "4976d7b0ce16ba4224d37c383b333ae0f4f51540ab2bd73577206f6ad5e4815c"
+        "bytes": 12496647,
+        "sha256": "19711dc70bfb39c2128cce2bd8927710c273cd039f193f4e06f3564b82812b4e"
       },
       {
         "venue": "neuron",
@@ -3707,8 +3707,8 @@
       {
         "venue": "neuron",
         "year": "2009",
-        "bytes": 1102335,
-        "sha256": "a0dece8c69fb06ab1ec1b808e7223ab66e91057155a656dc341fea3d9fafde75"
+        "bytes": 1055395,
+        "sha256": "c41fc7e008fc7f61f42ca370c8aa020c637576a8f1586be7b5a6847a3f6ef457"
       },
       {
         "venue": "neuron",
@@ -3725,8 +3725,8 @@
       {
         "venue": "neuron",
         "year": "2012",
-        "bytes": 1512096,
-        "sha256": "5c434ce43068e3daf558f93dea79dcb2b7fd4ef047dd5eac87cfb950b9f0e4bd"
+        "bytes": 1449003,
+        "sha256": "dd988fd6ab80c18aab589cba9b7251c518c7cff2ff90da394ef111ad1ef48ea0"
       },
       {
         "venue": "neuron",
@@ -3743,8 +3743,8 @@
       {
         "venue": "neuron",
         "year": "2015",
-        "bytes": 2090259,
-        "sha256": "3d285f7c2f541588817a381fce61daa16c3dc2c02b1d03ec41db5311188d6683"
+        "bytes": 2008381,
+        "sha256": "4502ec1371e5d83fec17cd57e65d736b7d9420be5bf3d8213e81a6e955f7c8a3"
       },
       {
         "venue": "neuron",
@@ -3755,14 +3755,14 @@
       {
         "venue": "neuron",
         "year": "2017",
-        "bytes": 2348190,
-        "sha256": "eacf01dab7fce9515831aa6dcef4b943ba9f143be5b99c81abbb08a847920a32"
+        "bytes": 2253212,
+        "sha256": "e40fb3355a6c9747f4f27fdcab7debc89711bf30d2c757da8fad538f00dff458"
       },
       {
         "venue": "neuron",
         "year": "2018",
-        "bytes": 3017097,
-        "sha256": "457cad01d2fb700953bbf9e997ae6c40ff99298990e600d3fa6133f35212b9f3"
+        "bytes": 2856106,
+        "sha256": "f51161aaca6cf93e4787d0b75b9b1dd7920330acc865ea754f9613e6298610bc"
       },
       {
         "venue": "neuron",
@@ -3773,38 +3773,38 @@
       {
         "venue": "neuron",
         "year": "2020",
-        "bytes": 2574185,
-        "sha256": "5d36771d02729e9a0c519b453896a37af6f4efad32421394756a9bcaba81cc6a"
+        "bytes": 2473288,
+        "sha256": "9434c8ff691727d97a94f07f5a07cb02c88228c29c8bab607a821d6cc0ee9590"
       },
       {
         "venue": "neuron",
         "year": "2021",
-        "bytes": 2126045,
-        "sha256": "a92b75ec2f407c56506ddc5b929d0289bc6b0011c99a5d6b920ad33ea2f4db0b"
+        "bytes": 2044917,
+        "sha256": "f51cd8c82e14b24b49875e21ecbc1ae1beb4ab5bea9472177a50059effba2132"
       },
       {
         "venue": "neuron",
         "year": "2022",
-        "bytes": 1899154,
-        "sha256": "00752767d8c0abb19894367b77e513f56bae237e62e83f8960f2f4ba7c2fd082"
+        "bytes": 1828387,
+        "sha256": "e273f6d3ea4b25c7fec0ea73a448c3991934ca54e21e6c5cba56a8e940329225"
       },
       {
         "venue": "neuron",
         "year": "2023",
-        "bytes": 2183726,
-        "sha256": "065cc295fd12d301e472bbb6e10aeb3dc9d27760e52cb3e44520a18a632fb6fb"
+        "bytes": 2099054,
+        "sha256": "98781c0d9be8d59cabba720e6f480500e524831885538db5b9f4dd76419f615a"
       },
       {
         "venue": "neuron",
         "year": "2024",
-        "bytes": 2189424,
-        "sha256": "2ad2a188d086470d6d17d68327fe76d2fc941d10e2ccd9a65188e4bbe782fbe4"
+        "bytes": 2106816,
+        "sha256": "a301195a10f6392d6d7c050854bec30392eb2ae2b80fe91b01306e33d2edf4b7"
       },
       {
         "venue": "neuron",
         "year": "2025",
-        "bytes": 2239606,
-        "sha256": "cc0bc892b9d69b591f4382d156eb23a256e5bd8b10f86c51ead466fe843258f5"
+        "bytes": 2143811,
+        "sha256": "3d044f4d1e3cc5803db2087e29b9fe55b0757eadefa2f43b8ecf921171352130"
       },
       {
         "venue": "nsmb",
@@ -3857,8 +3857,8 @@
       {
         "venue": "nsmb",
         "year": "2013",
-        "bytes": 964401,
-        "sha256": "d67d2dd54852ca0174735475e57fae2eebcd5f739ff7cef985bc928735a538c5"
+        "bytes": 923809,
+        "sha256": "6ea1100702b53b49456d5eccfcd314d5579ccccc5c9a1785b91ae52363d97a8b"
       },
       {
         "venue": "nsmb",
@@ -3875,8 +3875,8 @@
       {
         "venue": "nsmb",
         "year": "2016",
-        "bytes": 834786,
-        "sha256": "8f7fa14e2736b3e07cf2d04ec6568e9c6b18444736f7c56860edd5ab06647915"
+        "bytes": 799894,
+        "sha256": "088b07cd2281d2075ffb0f3b2313ee24e9a056f74bb271d2a5efc7e55d133ed2"
       },
       {
         "venue": "nsmb",
@@ -3917,14 +3917,14 @@
       {
         "venue": "nsmb",
         "year": "2023",
-        "bytes": 1201221,
-        "sha256": "5780474d088fae6e243183f9620ca587762a98e879edbefb63f24b65ea2eed13"
+        "bytes": 1151946,
+        "sha256": "7ba897f4e58877ef9c92b3d9f5109b23668d6f727a43f7da4a6ae76f5db4a18d"
       },
       {
         "venue": "nsmb",
         "year": "2024",
-        "bytes": 1618079,
-        "sha256": "9ca7e628133fea7f826bb049ece733bc2809e4bf80fa267523fe008ceda52949"
+        "bytes": 1551531,
+        "sha256": "43265aafaaad9d50737e85cd945c74aa9175af13a87212aa9978f66d67d85dd1"
       },
       {
         "venue": "nsmb",
@@ -3965,8 +3965,8 @@
       {
         "venue": "plant-cell",
         "year": "2010",
-        "bytes": 1373910,
-        "sha256": "9699311136656c1cc57dbd8462fab5b43b7a706f29709479579c57abd5dbf84c"
+        "bytes": 1318063,
+        "sha256": "646f3a26026b82ea9e3c6f55aae60a859ba7ae457ee51c77f937b7a39165de34"
       },
       {
         "venue": "plant-cell",
@@ -3977,8 +3977,8 @@
       {
         "venue": "plant-cell",
         "year": "2012",
-        "bytes": 1925095,
-        "sha256": "78363a3eb0b6eedd8942c1c4724b4e105e2919294779924cf4db6a988ed5ee80"
+        "bytes": 1849705,
+        "sha256": "e5d59f9732e2406dfece3695b478d53130fdbfd3fd5f1d0c27b8f8c7ce9a5456"
       },
       {
         "venue": "plant-cell",
@@ -3989,8 +3989,8 @@
       {
         "venue": "plant-cell",
         "year": "2014",
-        "bytes": 1865520,
-        "sha256": "f833c1a5f2d7c7ecd841ced08544e9fa94c5e6dfd9cb0bd3c20ca8a979d87a62"
+        "bytes": 1791971,
+        "sha256": "558315a64cc04b06f5ebbaf4767ac78a926246ca70dda68819bc256c1179c83d"
       },
       {
         "venue": "plant-cell",
@@ -4013,8 +4013,8 @@
       {
         "venue": "plant-cell",
         "year": "2018",
-        "bytes": 1234355,
-        "sha256": "96cb70b5ead3b9e2c869047b702ee41c563957a87f7a01821566da9fa5955f8e"
+        "bytes": 1188099,
+        "sha256": "8c842b7834615b0233635f78b39f47fb49ef113f5d1be63bd318d67cb6efa443"
       },
       {
         "venue": "plant-cell",
@@ -4031,8 +4031,8 @@
       {
         "venue": "plant-cell",
         "year": "2021",
-        "bytes": 1321455,
-        "sha256": "5ebe079976e3f4a8377c16503ea7c2535a778b77f11019c44948fea9b4c05c42"
+        "bytes": 1264388,
+        "sha256": "bf5e153f4221b2d4277e386b5777f8757c1c8d7d42398248e14fca304d49e45c"
       },
       {
         "venue": "plant-cell",
@@ -4043,26 +4043,26 @@
       {
         "venue": "plant-cell",
         "year": "2023",
-        "bytes": 1665229,
-        "sha256": "333919a4e33da001b100648c7b5b51df5d30f49b552e60f82e9b38cfead1cd47"
+        "bytes": 1597837,
+        "sha256": "a683c8ea61aa8b9021f029e2e76772ca24e45c4124d2de3fe70af2549da2a102"
       },
       {
         "venue": "plant-cell",
         "year": "2024",
-        "bytes": 1863031,
-        "sha256": "8b67ada8b4299dbd6575efc9831280e4e96403f3c5ff5722870716cd162e8347"
+        "bytes": 1790994,
+        "sha256": "c02bc7c0bce0517d679b8ce69b2b9fd6435fd3ae47ae9716c9b36c2af1487f04"
       },
       {
         "venue": "plant-cell",
         "year": "2025",
-        "bytes": 1524567,
-        "sha256": "5366ec214b9bfcf407c3ee4c5e04fdfdbb3686d4ee3a597cafeeefb0f991caab"
+        "bytes": 1468844,
+        "sha256": "c134ce043693cb211bb1dc2bc93dc2c654cdbf0050d4359810079ff2c3d450b5"
       },
       {
         "venue": "plos-comp-bio",
         "year": "2005",
-        "bytes": 799598,
-        "sha256": "2e7e0912eda794f5d7505908207c3a45b59d88c2cd2670a5f72ac3dac4a40010"
+        "bytes": 770381,
+        "sha256": "2bffe14b7832c88127359e0f17e1c88262f16d3dbafcf693714bd3e6a093af43"
       },
       {
         "venue": "plos-comp-bio",
@@ -4085,8 +4085,8 @@
       {
         "venue": "plos-comp-bio",
         "year": "2009",
-        "bytes": 1079517,
-        "sha256": "4e86313f91dc7b6c0647cfcce074471ea077b11d4aace12f3bedc0eb1ce8bc8e"
+        "bytes": 1035058,
+        "sha256": "69615c9be312f47688456046c6787d6a14e72b48cca7dcfaadf78443944ab4de"
       },
       {
         "venue": "plos-comp-bio",
@@ -4121,14 +4121,14 @@
       {
         "venue": "plos-comp-bio",
         "year": "2015",
-        "bytes": 2149371,
-        "sha256": "c564ff7a47104bcfe8dc54ce0d550ad38181a0d0842c1331a78a2eed49c7229c"
+        "bytes": 2065384,
+        "sha256": "037c7e0017256e0580eaaa06601b45faacf252c15ed616e96f2cce27242914bc"
       },
       {
         "venue": "plos-comp-bio",
         "year": "2016",
-        "bytes": 1870801,
-        "sha256": "091c99c179199468a972868962c7903cfeaf2b5d376300e6384f5a9c7b010082"
+        "bytes": 1792247,
+        "sha256": "e5a07dac44e81010b8c781f69974a54f655504926bc616036b63d1f219f8df49"
       },
       {
         "venue": "plos-comp-bio",
@@ -4145,8 +4145,8 @@
       {
         "venue": "plos-comp-bio",
         "year": "2019",
-        "bytes": 2365193,
-        "sha256": "e2896e9a6e926c473451fb45a34031cabc1112b5fe12148d771dee070b174de6"
+        "bytes": 2269023,
+        "sha256": "bdc564b87272e967278dda0a897ba1d3214b277eced0ec4c945a1f22d309496a"
       },
       {
         "venue": "plos-comp-bio",
@@ -4157,158 +4157,158 @@
       {
         "venue": "plos-comp-bio",
         "year": "2021",
-        "bytes": 3935477,
-        "sha256": "d72157d6c387321907b8673bd1917b946686b3eb510d649e40ac5498553e1c41"
+        "bytes": 3778677,
+        "sha256": "fbc27c02f18bfb1da77168c8363bf854bea69809672b584a1f5eab5c77de6b2c"
       },
       {
         "venue": "plos-comp-bio",
         "year": "2022",
-        "bytes": 3240994,
-        "sha256": "298d3efb383a2d70de517713a3c9b20c0d39069b6777751275dfff1a482568f3"
+        "bytes": 3110930,
+        "sha256": "9134be8ca27d9a99945670bf90cc89a274a7251cef86939dc1bd8640bb06eda9"
       },
       {
         "venue": "plos-comp-bio",
         "year": "2023",
-        "bytes": 2801381,
-        "sha256": "8b64ab156dd865d224ed29f8610c15ed8744f1216ebc57285fdfa2e3db7c7b32"
+        "bytes": 2686408,
+        "sha256": "d40cffe2ee6505692b136be2679b757295a8ca9135cdf3021cbeeb648a82e688"
       },
       {
         "venue": "plos-comp-bio",
         "year": "2024",
-        "bytes": 3160386,
-        "sha256": "ed8fa3e8e78ab6e463547d99d7bc26caa1635b623d6cb424d2b074f5045533ba"
+        "bytes": 3033908,
+        "sha256": "8569cf8ff7ef25a6e629f0bd55621540ce7d339c1827c6d913c6f3cccf2b09e9"
       },
       {
         "venue": "plos-comp-bio",
         "year": "2025",
-        "bytes": 3384246,
-        "sha256": "2caa17849ca6d213fdaf34184259856933d5904ee214e1f170e42248a777278d"
+        "bytes": 3246035,
+        "sha256": "a089cf70830cfd08c861e67902219fc1fe9f14b1ea4c206dea106daee83e605f"
       },
       {
         "venue": "pnas",
         "year": "2005",
-        "bytes": 20195916,
-        "sha256": "300678bc8d94fc19841b925954e54ef4cb75e92a761286b6ded7903cb4f0dee1"
+        "bytes": 19435371,
+        "sha256": "d5da8a72c96b41f4410a94fb4b45736f51efae316036bb8531a60359e061c6fe"
       },
       {
         "venue": "pnas",
         "year": "2006",
-        "bytes": 12437076,
-        "sha256": "6815cbfe621e1b59cc1d048c3559bd9fbea68b2508a4a45d914c002751302abe"
+        "bytes": 11920868,
+        "sha256": "907a74d1cb5e4204d8f29fa46a8beac4e272af8b751f113657015c083c7498fc"
       },
       {
         "venue": "pnas",
         "year": "2007",
-        "bytes": 12594679,
-        "sha256": "69bc8b6c07192239249cbf44fbbb42e43430bdf7c08d263dca66d8358f129af4"
+        "bytes": 12065545,
+        "sha256": "607d5928edb0e49ad515ca8b2d364ce7139515aa0aafaf7178419e01ddf95e1f"
       },
       {
         "venue": "pnas",
         "year": "2008",
-        "bytes": 12875754,
-        "sha256": "d5dd5d47a2e833001c4b37ac83f4437abe759b87045a4ab6965785c0e00bfc98"
+        "bytes": 12335569,
+        "sha256": "6821995cffc51f707ffbdb6d2b6cf3dcac6892d2cab5c377f15af9daa0e012b5"
       },
       {
         "venue": "pnas",
         "year": "2009",
-        "bytes": 14650449,
-        "sha256": "b95b3e57d1cb8b8839e14d0d0bea7e2ec8d39d251ad5b459d6a90c34d5e1cff2"
+        "bytes": 14036279,
+        "sha256": "b8f4232100446b52c0b9331ba8c5cbcc6a560bd23bf90c3d46560ec72235afae"
       },
       {
         "venue": "pnas",
         "year": "2010",
-        "bytes": 14559897,
-        "sha256": "617fc5bfb35840f6f393347da2d16d604f7690015232b45f6e501c0f902f898d"
+        "bytes": 13937570,
+        "sha256": "87c2946ac4301241aaa549dd9a24150b1c908c6e7ecf98d3c00ac2f70f9d0611"
       },
       {
         "venue": "pnas",
         "year": "2011",
-        "bytes": 14234232,
-        "sha256": "064eef06209ef0fed11999827dbe9ea48761d1c881709f741c4baa32c7c07bd3"
+        "bytes": 13619070,
+        "sha256": "ed54b202588578eb2603b48ce90e198c341e20d1183513a3c53d5d7344d5f1ce"
       },
       {
         "venue": "pnas",
         "year": "2012",
-        "bytes": 15586995,
-        "sha256": "1a2a4c046b35c6c9beeecdf65a49bdbaf0577dddab76e6a341da0fe0e462716b"
+        "bytes": 14923905,
+        "sha256": "37c699775da6c9627c88a30739f90b2590a50d7b62b8bd6a251b7a41efcc195e"
       },
       {
         "venue": "pnas",
         "year": "2013",
-        "bytes": 16636409,
-        "sha256": "fbfd7641b48c68cf1b980125c827b9a88cf33709ff14c298549889b7c7ade8ba"
+        "bytes": 15958203,
+        "sha256": "fdf0d1a108476802b2da22888b6115e2b64f87639a752182f6139b98156df533"
       },
       {
         "venue": "pnas",
         "year": "2014",
-        "bytes": 15095572,
-        "sha256": "87660322f1c89431595d9d0d5a61360469cb9053bb3ffbfa77f489375e3be1a3"
+        "bytes": 14454229,
+        "sha256": "f368ebad5f245d94eabd82fbc85a8582d812aff23e4388bb079b653aca187dd2"
       },
       {
         "venue": "pnas",
         "year": "2015",
-        "bytes": 14678251,
-        "sha256": "421d8c5c9b159676cf37d36c5131e03c0227f97f1e01d376f979dd0e0c2794d1"
+        "bytes": 14015316,
+        "sha256": "ede7df07c6db22c4b775509c3c37f41b263609b169ee11c59a4fce4fd05a5d30"
       },
       {
         "venue": "pnas",
         "year": "2016",
-        "bytes": 14348050,
-        "sha256": "04b465f316334b519a03294e072c544b54fabeff4f925bb270b6ab91ee466acd"
+        "bytes": 13690143,
+        "sha256": "84f01affa69469c75f78c23d98185d735f3822cf10b3f3864ba2ea387e024dc7"
       },
       {
         "venue": "pnas",
         "year": "2017",
-        "bytes": 14756047,
-        "sha256": "5dbdd822450b1665b8984754fde2e5787d0fd837a6efbda37555d192da4d6f0d"
+        "bytes": 14140466,
+        "sha256": "4588e706d836966bada67d399fc8297e4d84adfe38ec33c17c4c6b26b1924fc9"
       },
       {
         "venue": "pnas",
         "year": "2018",
-        "bytes": 14796655,
-        "sha256": "2083484068b4a51a20521e2abead4a93814980439e3c5130e3b9d9ef60a36c89"
+        "bytes": 14172402,
+        "sha256": "f5cb197f49643353156b426d652836fd7cee2056069df6d91a51f190f129cc63"
       },
       {
         "venue": "pnas",
         "year": "2019",
-        "bytes": 15567954,
-        "sha256": "2858c4d0ca20fcab6df667d4eec030fa48c7d4256046be96d5fa9d1a33c60ca0"
+        "bytes": 14912325,
+        "sha256": "7514392ca15ff1d54798e6450cd1f4f0ab8b5faf955e73df72d8665d2945c51c"
       },
       {
         "venue": "pnas",
         "year": "2020",
-        "bytes": 16067847,
-        "sha256": "da84ba856522d29650a26587e11edfc1547ae9b62c60d97ddee3b8d8af914594"
+        "bytes": 15352042,
+        "sha256": "8f5cb5d583fe4b3bea709596d45fb90e50328d64652b0b62417e5785753538a8"
       },
       {
         "venue": "pnas",
         "year": "2021",
-        "bytes": 15539270,
-        "sha256": "07465a89ccebe8d04ceafa07efa6c46616ad2315c86fd810d03f184df4f85ef4"
+        "bytes": 14884784,
+        "sha256": "80240bc09daf0ddc2e23f555f44b01f3b2943ee78258d1ca7d92e4926193e732"
       },
       {
         "venue": "pnas",
         "year": "2022",
-        "bytes": 16126149,
-        "sha256": "139b4401e0cad942c94157ddddbb629c0fd5fc5460a3b8d1600817e2d5afa788"
+        "bytes": 15353564,
+        "sha256": "bf1c79412a97a704c3ef5c23d85873a396f67e2b14e4d524ff6dfcc50aea3c80"
       },
       {
         "venue": "pnas",
         "year": "2023",
-        "bytes": 14602078,
-        "sha256": "be77da16dce9cee1215d0a01e4f228a104bd2e314a082fc13c55df65ad19ee1d"
+        "bytes": 13845372,
+        "sha256": "5a35e933ba5232e4362eef43b17829ddccb63a0ac1c20f51e6c016cc77ee7fff"
       },
       {
         "venue": "pnas",
         "year": "2024",
-        "bytes": 14519519,
-        "sha256": "b3a4a204e53bbbdff86580c0a8733750f76309442bbc516af8bcdf441c124318"
+        "bytes": 13908829,
+        "sha256": "8d19de094fc26e4fdc8c593d472493a10cd3296410d907802263cb79c76eb1fe"
       },
       {
         "venue": "pnas",
         "year": "2025",
-        "bytes": 18323666,
-        "sha256": "dc81774d5dc9c1a08dd8bdd106485f7b4c79186f1aba42545c7d68a7c39df785"
+        "bytes": 17596440,
+        "sha256": "0acbad0a5ab3c155d15ff7a13c582b2d77c2b71815f5d35fc41ad7c3b0c930db"
       },
       {
         "venue": "sci-immunol",
@@ -4391,8 +4391,8 @@
       {
         "venue": "sci-immunol",
         "year": "2018",
-        "bytes": 700966,
-        "sha256": "e5c833f75f063e2b5ff3a3d0659632c9bcc567b33848df3750ce029d6ce61111"
+        "bytes": 671712,
+        "sha256": "3a4adcdf3508db0ef45104d025833f6789a02f0dc13e1e45afad15b052990b5a"
       },
       {
         "venue": "sci-immunol",
@@ -4403,26 +4403,26 @@
       {
         "venue": "sci-immunol",
         "year": "2020",
-        "bytes": 1057639,
-        "sha256": "b552bb2c05aec85488ab8631e3e8f35d2cb77a92934ca52e191752df45ef880c"
+        "bytes": 1003907,
+        "sha256": "2ab491e22207e75cdfb6a330d8e6f765499ef70b6f60390d6db0a9baaf1e96b0"
       },
       {
         "venue": "sci-immunol",
         "year": "2021",
-        "bytes": 2310026,
-        "sha256": "cfd5e53627112a0cdbca0c3fe0d62379514e2abc628f4cbb955bf566b25e31d9"
+        "bytes": 2203495,
+        "sha256": "fad0364d49efd9acf2a034d8131ff40bf5521b893c67c6d69366f4b1bcc1bae8"
       },
       {
         "venue": "sci-immunol",
         "year": "2022",
-        "bytes": 1760964,
-        "sha256": "b6d566d7e5de977f8d42ce6925f6bd8a43516d2aa6bae5f41491a7aedac64db3"
+        "bytes": 1688980,
+        "sha256": "028e3d49de9ce1e9b0c16c8c767dfebea04ac4c4d5d97b7da6054b73fa2b6881"
       },
       {
         "venue": "sci-immunol",
         "year": "2023",
-        "bytes": 1466204,
-        "sha256": "d7dcedcdb9eb1af12375724e349ab4f2dec6bff42f9793fd62f05a777fd94fa7"
+        "bytes": 1405780,
+        "sha256": "878281ebdf6d01a09f8fe8dd9b12e324fcca0fd4f7c36e685db01bbcae7af5a1"
       },
       {
         "venue": "sci-immunol",
@@ -4481,14 +4481,14 @@
       {
         "venue": "sci-transl-med",
         "year": "2012",
-        "bytes": 1591115,
-        "sha256": "4fde20c1e70f5c413264a18d2dfc4df99683c58ad104737f125bfeed2eb306d1"
+        "bytes": 1524574,
+        "sha256": "fc68fd4dfaade673a36e4a7f249d86e09c3c4e3f61b32a5865b433665e25ac5c"
       },
       {
         "venue": "sci-transl-med",
         "year": "2013",
-        "bytes": 1621715,
-        "sha256": "86d36a847feaea34a29a6ae5f03971519cac6d2de6c323ca489543e778c9c9f9"
+        "bytes": 1554257,
+        "sha256": "aa05df35e6523b27d8b6370ca4e3c1cb222e28295c19844cc0edfa433e46fd7e"
       },
       {
         "venue": "sci-transl-med",
@@ -4499,68 +4499,68 @@
       {
         "venue": "sci-transl-med",
         "year": "2015",
-        "bytes": 2221788,
-        "sha256": "07b5453d9c49ef7c326996496687dba08fcc1486cde352bae6da8f35b413c6bc"
+        "bytes": 2129393,
+        "sha256": "88affdbe782c01641ba70078a0d5eee5d3fe464945e0a82090b503936687fa10"
       },
       {
         "venue": "sci-transl-med",
         "year": "2016",
-        "bytes": 2198026,
-        "sha256": "4493ac7504397f9e12e59eef97bb898dbb8a3e23a26c56f8f05c11851c3fa4e5"
+        "bytes": 2107586,
+        "sha256": "eec478660db4bbfae88ae38ab0417f9b5525a98b52426ce72dce8a58a7f98112"
       },
       {
         "venue": "sci-transl-med",
         "year": "2017",
-        "bytes": 2577403,
-        "sha256": "79a0b063cc2a6ba40c0777798a106aaf73e21ea28db10e05ccf06addfc454d3d"
+        "bytes": 2471731,
+        "sha256": "57fd4019110668be52c5084d71fffc596165a079df553fb3d8dff31d171bad07"
       },
       {
         "venue": "sci-transl-med",
         "year": "2018",
-        "bytes": 2555404,
-        "sha256": "f3fc904d71262ec2cf883c915cedf8e80283babefe72245b4154f22125da278d"
+        "bytes": 2450593,
+        "sha256": "174e97fa5a136c322c5d3552c087b75bb89dd5c03b4ce599a304666271a6cca9"
       },
       {
         "venue": "sci-transl-med",
         "year": "2019",
-        "bytes": 3046620,
-        "sha256": "0f086477aada700c2e1ea3d82642e295c236bea81373367323e0d0040a37f66a"
+        "bytes": 2922007,
+        "sha256": "df43adab6a2fd61d7742add71c959b662811bf3582d9ec391397f40e70029aa6"
       },
       {
         "venue": "sci-transl-med",
         "year": "2020",
-        "bytes": 3444165,
-        "sha256": "b1485f72f52d05430cedb9144ebccedba41940025fcddc8d467afebb49a772d0"
+        "bytes": 3303472,
+        "sha256": "b60e56b99a38769fb21f315f475f2ac7b97d8ad0798fc2bf73cc137625572dd1"
       },
       {
         "venue": "sci-transl-med",
         "year": "2021",
-        "bytes": 4579479,
-        "sha256": "81d1930def2348632d7837aa808bee1964a71237ff3a0ecb97305fa4a3b31b5b"
+        "bytes": 4393305,
+        "sha256": "8a01738a2bf2edd888dae13c110e8361a96da42002381c2d7205bb54c2089b0f"
       },
       {
         "venue": "sci-transl-med",
         "year": "2022",
-        "bytes": 4016390,
-        "sha256": "2cdaa4ea50ced2755dbafd0694bc2eeea2d037085f1f5cce2acbc0ac820302f6"
+        "bytes": 3853087,
+        "sha256": "3ca4613f62adcebf6128638c39114fe4f39a53c3d3ba1a238af2de0c1db0fda1"
       },
       {
         "venue": "sci-transl-med",
         "year": "2023",
-        "bytes": 3183747,
-        "sha256": "702785f3454109f45ff24987b2e8121caea154f6b2ef06cf18415aaf561a93b7"
+        "bytes": 3054797,
+        "sha256": "f99af41d0f26879cc04b4637de71eb4723aa928b3a89027fa3c6e3b3ffff8cfc"
       },
       {
         "venue": "sci-transl-med",
         "year": "2024",
-        "bytes": 3851344,
-        "sha256": "a04a8ea040b27602b17fe4c039895dd08e77f6ee2c519de5681d6f3b53965172"
+        "bytes": 3692522,
+        "sha256": "8917da62d52375f63e5d198843944f17264498fad5efd085155e55b219360c9d"
       },
       {
         "venue": "sci-transl-med",
         "year": "2025",
-        "bytes": 4291853,
-        "sha256": "60619108b2c1ed73047e44c621193c2a356c04e5a2efd2a51f199da4c85f437b"
+        "bytes": 4113814,
+        "sha256": "1e05500bfbf5894aae13ae17f80596d79f2a53b0c08d6c4c1051384c59590be8"
       },
       {
         "venue": "science",
@@ -4571,8 +4571,8 @@
       {
         "venue": "science",
         "year": "2006",
-        "bytes": 5650518,
-        "sha256": "77097e3cff41cc8c13537e685bb15611423642e4b4e657e36572bae6e659f9ce"
+        "bytes": 5650878,
+        "sha256": "b8dc669f31738e67692e94b68b3b86f458297f0b965c88ec526780c25e28d4b5"
       },
       {
         "venue": "science",
@@ -4589,104 +4589,104 @@
       {
         "venue": "science",
         "year": "2009",
-        "bytes": 4128602,
-        "sha256": "c3172d9b3afcd7d3ce707ef3809c0183dd22ba221b654422713b6d814b0d3c6e"
+        "bytes": 3951876,
+        "sha256": "358e3e16baaffbc3b4a90e150259b44a4eb3c2f7d40cd1d0fc23e0da8cac5543"
       },
       {
         "venue": "science",
         "year": "2010",
-        "bytes": 3203510,
-        "sha256": "daff9bbcf4aa9d98ad2cedefde7e560cef35f7307d6ed6a6ea12dd198ab74054"
+        "bytes": 3062417,
+        "sha256": "083345332644e8b699207d4acd7bde901574016c18c293711f2122b71ac8d610"
       },
       {
         "venue": "science",
         "year": "2011",
-        "bytes": 3036997,
-        "sha256": "5f3c8691769edbca4cb004e43fcaf025f16a8f6b163591825d5cc3a1cd2ee14e"
+        "bytes": 3037304,
+        "sha256": "36ce8f445554c54adbde1242e57f0a10b0daca1b346d9916a319d84f611f8b75"
       },
       {
         "venue": "science",
         "year": "2012",
-        "bytes": 3217098,
-        "sha256": "2209b943cbd24f52b742f158bc46d8cfbd3ab1a2beedf0bec6a2f67995eeecad"
+        "bytes": 3076420,
+        "sha256": "1ae912af0d593c9b56917991f4cb12a335794aefcd028e5dd159ddd573a711bd"
       },
       {
         "venue": "science",
         "year": "2013",
-        "bytes": 3416330,
-        "sha256": "d7041f7f330aff32ab78ff433dec111e12d782e4f1dcfbec877f20edd9d3abcf"
+        "bytes": 3260372,
+        "sha256": "ba3970ad0f92d80c01da113c7c5afc75e1c794c6ad57ec6119bffeac9499df6e"
       },
       {
         "venue": "science",
         "year": "2014",
-        "bytes": 4081228,
-        "sha256": "26c364a1c7f5584716f0dc7864cda81252358238d807dd6d44f6358ebbea96fe"
+        "bytes": 3901111,
+        "sha256": "14d52ddf8cab81cc0937610a88e945f71358ffb9276a375cc004cf367da651c0"
       },
       {
         "venue": "science",
         "year": "2015",
-        "bytes": 4494299,
-        "sha256": "a472055b19dfe160e1ed8c28d6bcea274d3f7e0b00a68e279aae1d7927201027"
+        "bytes": 4271354,
+        "sha256": "ed4393d544cdf4ae3e210970b3a0240bd1b60d6f174edc8fbee9a81b621bfd31"
       },
       {
         "venue": "science",
         "year": "2016",
-        "bytes": 4247494,
-        "sha256": "1a11bb520b07e1df8c8eaa09c4fa7e65d5d206598db69f26d4bfbc2f6eb32538"
+        "bytes": 4053939,
+        "sha256": "55ad2eb4d6acda7fe69f19fa1a8b3fb953407da84d1f2e31ae94a02a7ec2985f"
       },
       {
         "venue": "science",
         "year": "2017",
-        "bytes": 4075305,
-        "sha256": "f39a0cc149474dad6bf0bc3a9549aa62ee8f5ca543727b7a55c098de3b3b0606"
+        "bytes": 3896304,
+        "sha256": "f4226988a06ccbe8606d9d396ad8b9adc08a970800f7d566a9d342bc14742440"
       },
       {
         "venue": "science",
         "year": "2018",
-        "bytes": 5284260,
-        "sha256": "996b7e4a2ab07c1a233a4e9c516c5b3569d5b85611a57093cd55483b5196b10b"
+        "bytes": 5005166,
+        "sha256": "75748924e882f31f995218d3df70f36870e0379e0e86a30995b68ea3f1978aeb"
       },
       {
         "venue": "science",
         "year": "2019",
-        "bytes": 5109814,
-        "sha256": "fe0e4d5a883e38e870c1a9c824f4b9346e74a1a81039359b9743fa9faa032ffe"
+        "bytes": 4854498,
+        "sha256": "8cb181ccaa4c171df6647478b773a3da6f1bbb5639f7215b152d143481d19810"
       },
       {
         "venue": "science",
         "year": "2020",
-        "bytes": 6679650,
-        "sha256": "4d71a6d20477fd47a0c6445ff8a2135a2105a943188129661ee06d167707b2d0"
+        "bytes": 6201728,
+        "sha256": "8c6ee4d2fac81c5e3f3d39ba05bc77cdaa3eca2103db20251f6b411bb9312f2b"
       },
       {
         "venue": "science",
         "year": "2021",
-        "bytes": 5713088,
-        "sha256": "5fe037d39b29b5d1ef7875dda6bd0da2e0192e38a1352c225d4a2859a484790f"
+        "bytes": 5435341,
+        "sha256": "da4f06716a3d688fbfd897ad79a2208cbb9178b28759c17362d806aa5affbcbf"
       },
       {
         "venue": "science",
         "year": "2022",
-        "bytes": 6480412,
-        "sha256": "05fcc52e8b533dc23eb1bfe3d5bb00a824f23af558dc6905a55b345b5bd793dd"
+        "bytes": 6148801,
+        "sha256": "9f19f8a502f97cf6dbe52d0125ddaa8ba0e34cf4c43fc5742a51eaee741d72a5"
       },
       {
         "venue": "science",
         "year": "2023",
-        "bytes": 4737882,
-        "sha256": "ef46e699a6f30543593a93c88cd416d68c66fb4342a2fe712630a500e5d05939"
+        "bytes": 4472752,
+        "sha256": "7e5a8adf46c67783302726cd4ff87b2ab484c55c6161441e4e9f668c170c5091"
       },
       {
         "venue": "science",
         "year": "2024",
-        "bytes": 5086284,
-        "sha256": "d2f1fdeab27d86c4247ba5cba4af1634f177265f28d54056a79e83a540fe23a9"
+        "bytes": 4853516,
+        "sha256": "4fd28cf88f786b9ab2754cbc64d86882f117e20317473968c734615faf446da2"
       },
       {
         "venue": "science",
         "year": "2025",
-        "bytes": 5944237,
-        "sha256": "3933de0fbf1d51808a6df2b04d51b4b20258306027885ee328d1cd42c79df2bd"
+        "bytes": 5697617,
+        "sha256": "2a6340697fedd46496ab2e9e71c088425a2e553761a643402f92e53f0dd932b9"
       },
       {
         "venue": "structure",
@@ -4781,8 +4781,8 @@
       {
         "venue": "structure",
         "year": "2020",
-        "bytes": 830573,
-        "sha256": "74561eea250d6cd0119d1c3254dd144faa2e93dd94b2601609011094dd406c58"
+        "bytes": 798969,
+        "sha256": "5fafc4232d100067b3c81b7f1e105c63211d5f8fc359c2b145a4ed1043e1cd32"
       },
       {
         "venue": "structure",
@@ -4805,8 +4805,8 @@
       {
         "venue": "structure",
         "year": "2024",
-        "bytes": 1213992,
-        "sha256": "c02ce4e841db9e5d351c5d3c0b7c6726617e4e32307738ae81bbd111e7fee713"
+        "bytes": 1166479,
+        "sha256": "cc2ecb25342b75bb15909a44dadd1c91d5dba607f9cb4a6dcdd36667b69eeb5d"
       },
       {
         "venue": "structure",
