@@ -150,7 +150,27 @@ def load_index(path=None):
     corrections = ROOT / "data/institution-metadata-corrections.json"
     if path.resolve() == (ROOT / "data/institutions.json").resolve() and corrections.exists():
         index = apply_metadata_corrections(index, json.loads(corrections.read_text()))
+    # Newly evidenced institutions need not require editing the local snapshot.
+    # The release builder already consumes this hashed, curated metadata file.
+    overrides = ROOT / 'data/institution-metadata-overrides.json'
+    if path.resolve() == (ROOT / 'data/institutions.json').resolve() and overrides.exists():
+        index = supplement_index(index, json.loads(overrides.read_text()))
     return index
+
+
+def supplement_index(index, overrides):
+    result = dict(index)
+    for iid, row in overrides.items():
+        if iid in result:
+            continue
+        if (not re.fullmatch(r'https://openalex.org/I\d+', iid)
+                or not row.get('name') or not row.get('country')
+                or row.get('type') not in TYPES or not row.get('source_url')
+                or not row.get('evidence')):
+            raise ValueError('New institution override requires exact identity and source evidence')
+        result[iid] = {'id': iid, 'display_name': row['name'], 'country_code': row['country'],
+                       'type': row['type'], 'lineage': [iid], 'acronyms': [], 'alternatives': []}
+    return result
 
 
 def read_ledger(path=None):

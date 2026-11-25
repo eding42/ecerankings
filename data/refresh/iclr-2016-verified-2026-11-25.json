@@ -1,0 +1,198 @@
+{
+  "provider": "harvest_ml.py",
+  "supersedes_scope": {
+    "manifest": "data/refresh/ml-works-2026-10-28.json",
+    "venue": "iclr",
+    "year": 2016
+  },
+  "results": [
+    {
+      "gates": {
+        "byline_integrity": {
+          "documented_authorless_papers": 0,
+          "empty_bylines": 0,
+          "papers_without_evidence_due_to_byline_mismatch": 10,
+          "pass": true,
+          "pdf_author_slots_not_found": 0,
+          "pdf_byline_discrepancy_papers": 0
+        },
+        "institution_resolution": {
+          "note": "PDF strings resolve only after normalize_semantic.py adds them to data/affiliation-map.csv.",
+          "pass": true,
+          "pdf_slots": 299,
+          "pdf_slots_resolved": 295,
+          "rate": 0.9866,
+          "resolved_via_affiliation_map": 222,
+          "slots_resolved_or_classified_noncredit": 295,
+          "slots_with_affiliation": 299,
+          "slots_with_education_institution": 173,
+          "slots_with_institution": 222,
+          "threshold": 0.95
+        },
+        "membership": {
+          "anchored": true,
+          "anchors": [
+            {
+              "count": 80,
+              "diff": 0,
+              "have": 80,
+              "note": "Senior program chair's opening slides, conference track (slide 2).",
+              "rel_diff": 0.0,
+              "scope": "included",
+              "source": "https://iclr.cc/archive/www/lib/exe/fetch.php%3Fmedia%3Diclr2016%3Aopening.pdf"
+            }
+          ],
+          "note": null,
+          "pass": true,
+          "rows_without_membership_or_allowed_track": 0
+        },
+        "paper_specific_affiliations": {
+          "author_slots": 300,
+          "papers": 80,
+          "papers_any_coverage": 80,
+          "papers_fully_covered": 79,
+          "pass": true,
+          "rate": 0.9967,
+          "slots_with_affiliation": 299,
+          "threshold": 0.9
+        },
+        "pdf_evidence": {
+          "confidence": {
+            "high": 59,
+            "none": 3,
+            "partial": 18
+          },
+          "credited_confidence_levels": [
+            "high"
+          ],
+          "papers_extracted": 80,
+          "pass": true,
+          "pdf_openalex_conflict_slots": 0,
+          "prefer_pdf": true,
+          "review_queue": 21,
+          "review_queue_path": "/tmp/iclr-2016/iclr/2016/pdf-review.jsonl",
+          "slots_from_image": 104,
+          "source_discrepancy_papers": 0
+        },
+        "pdf_verification": {
+          "conflict_papers_checked": 1,
+          "extractor_accuracy": 1.0,
+          "extractor_slots_correct": 192,
+          "extractor_slots_wrong": 0,
+          "judge_model": [
+            "claude-haiku-5-5"
+          ],
+          "note": null,
+          "pass": true,
+          "review_papers_read_from_image": 21,
+          "sample_complete": true,
+          "sample_papers_checked": 58,
+          "sample_papers_expected": 58,
+          "threshold": 0.98
+        },
+        "profile_leakage": {
+          "author_slots_with_profile_or_unknown_source": 0,
+          "pass": true
+        },
+        "scope_purity": {
+          "audit_sample": "/tmp/iclr-2016/iclr/2016/audit-sample.jsonl",
+          "duplicate_work_keys": 0,
+          "pass": true
+        }
+      },
+      "gates_passed": true,
+      "http_last_run": {},
+      "include_tracks": [
+        "Conference"
+      ],
+      "membership_source": "https://iclr.cc/archive/www/2016.html",
+      "path": "/tmp/iclr-2016/cache/iclr/2016/works.jsonl",
+      "sha256": "e8dde3d0c2f52368f86c17b92a791ba3a58b2037fd2984dd6311d0e9275eed46",
+      "stages": {
+        "build": {
+          "counts": {
+            "duplicate_work_keys": 0,
+            "evidence:none": 11,
+            "evidence:openalex-arxiv-doi": 68,
+            "evidence:openalex-title-match": 1,
+            "excluded_track_rows": 0,
+            "pdf_openalex_conflict_slots": 0,
+            "rejected_candidates": 11,
+            "slot_source:none": 1,
+            "slot_source:publisher-pdf": 195,
+            "slot_source:publisher-pdf-image": 104,
+            "works": 80
+          },
+          "done": true,
+          "finished_at": "2026-11-24T21:56:19Z",
+          "input_sha256": "76cdbbdbf0bbab3ee7c1478745f8c73359de65c8e2a590815ddfdfef1414ffb9:b9a6d270845eced01f226b928eca292a04ac2c85d9e91260caac47c5b1650908:3f4947bf235a994bf93fe65725c717579776f7ea541988d96d7f0446677fca92:a710cca9aedfc0612c0b9b093ce39ac7c619d4e68023e9c2d3f527353e335c1d:37f9c24d3711b61e7610cb00c0e91424bcba5b9af47ea693e8671c1ec66d38b2:89c1b622a689059dab184416254821a6e874b05466d0e2b9e39c3b78178bd0fe:849477c22ec959c000e9ab1b57c646a1bc0bd195b33f6a0f830ccf30b7264663:prefer_pdf=True",
+          "sha256": "e8dde3d0c2f52368f86c17b92a791ba3a58b2037fd2984dd6311d0e9275eed46"
+        },
+        "discover": {
+          "counts": {
+            "already_resolved": 80,
+            "openalex_title_calls": 0,
+            "papers": 80,
+            "with_identifier": 80
+          },
+          "done": true,
+          "finished_at": "2026-11-24T12:52:55Z",
+          "input_sha256": "76cdbbdbf0bbab3ee7c1478745f8c73359de65c8e2a590815ddfdfef1414ffb9"
+        },
+        "enrich": {
+          "counts": {
+            "dois_already_queried": 52,
+            "dois_wanted": 52,
+            "list_calls": 0,
+            "retries": 0,
+            "singleton_calls": 0
+          },
+          "done": true,
+          "finished_at": "2026-11-24T12:53:00Z",
+          "input_sha256": "76cdbbdbf0bbab3ee7c1478745f8c73359de65c8e2a590815ddfdfef1414ffb9:b9a6d270845eced01f226b928eca292a04ac2c85d9e91260caac47c5b1650908"
+        },
+        "gates": {
+          "counts": {
+            "passed": 1
+          },
+          "done": true,
+          "finished_at": "2026-11-25T02:23:04Z",
+          "gates_passed": true,
+          "input_sha256": "e8dde3d0c2f52368f86c17b92a791ba3a58b2037fd2984dd6311d0e9275eed46"
+        },
+        "membership": {
+          "counts": {
+            "included": 80,
+            "publisher_doi": 0,
+            "rows": 80,
+            "track:Conference": 80
+          },
+          "done": true,
+          "finished_at": "2026-11-24T12:52:49Z",
+          "input_sha256": "ccf9eebe27cffc3ebd67d6b43cfd58c69d9498826bb4628c5108aa587a1cb98f"
+        },
+        "pdf": {
+          "counts": {
+            "already_fetched": 73,
+            "confidence:high": 59,
+            "confidence:none": 3,
+            "confidence:partial": 18,
+            "extracted": 80,
+            "fetched_local": 7,
+            "layout:columns": 66,
+            "layout:markers": 14,
+            "papers": 80,
+            "review_queue": 21
+          },
+          "done": true,
+          "finished_at": "2026-11-24T21:40:34Z",
+          "input_sha256": "76cdbbdbf0bbab3ee7c1478745f8c73359de65c8e2a590815ddfdfef1414ffb9:extractor-v11"
+        }
+      },
+      "status": "complete",
+      "venue": "iclr",
+      "works": 80,
+      "year": 2016
+    }
+  ]
+}

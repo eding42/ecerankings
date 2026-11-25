@@ -65,6 +65,33 @@ by default; the semantic normalizer is optional and should run separately.
 Adjudicate new raw strings, replay prior decisions after normalization, and run
 `pipeline/adjudication.py check`. Do not accept author-profile affiliations.
 
+Publication-specific corrections to native OpenAlex institutions are recorded in
+`data/refresh/authorship-corrections-2026-11-25.jsonl`. Replay them into the ECE
+candidate before generating its refresh manifest:
+
+```sh
+python3 pipeline/apply_authorship_corrections.py --cache-dir <candidate-cache> \
+  --decisions data/refresh/authorship-corrections-2026-11-25.jsonl
+python3 pipeline/apply_authorship_corrections.py --cache-dir <candidate-cache> \
+  --decisions data/refresh/authorship-corrections-2026-11-25.jsonl --apply
+```
+
+The first command validates without writing. Each correction requires publisher
+evidence, an exact complete byline and author position, and the expected prior
+institution set. A mismatch requires renewed review; never relax those guards.
+The original affiliations remain in the corrected authorship. The tool refuses
+to apply directly to the published ECE cache. This path does not change the
+normal precedence of native institutions and the raw-affiliation map.
+
+`audit_credit_paths.py --cache-dir <candidate-cache> --seed <seed> --out <new-dir>`
+samples the production resolver's credited authorships. Its blind file contains
+publisher-deposited affiliations only when the full name uniquely matches at
+the same position in a complete byline. The sealed file records the credited
+targets. Judge the blind file first, then compare; report missing source
+evidence separately. Curated, evidenced records for institutions missing from
+the local index can be added to `institution-metadata-overrides.json`, which is
+hashed by the release builder and also supplements adjudication's local index.
+
 Affiliation credit policy (user rulings, 2026-11-23):
 - A university's own hospital or medical centre credits the university; an
   independent medical centre with no university named credits nobody.
@@ -94,6 +121,16 @@ Affiliation credit policy (user rulings, 2026-11-23):
 - A CUHK unit placed in Shenzhen (School of Data Science, School of Science and
   Engineering, SRIBD, AIRS, FNii, "(Shenzhen)") credits CUHK-Shenzhen; CUHK's
   own Shenzhen Research Institute credits CUHK. (Agent defaults, 2026-11-24.)
+
+Preserve explicit prior adjudication rulings when auditing: the user rule dated
+2026-11-20 in `data/adjudication-traps.csv` assigns the full bare name
+"Northeastern University" to the US institution. This is an exception to the
+general homonym rule, not country evidence. Report it as a policy-based
+resolution. A missing country is otherwise unresolved when the same full name
+identifies distinct institutions in different countries. The existing Purdue
+University trap retains its flagship resolution, also used in the adjudication
+skill's example; distinguish that full name from the bare fragment "Purdue".
+An unqualified University of Maryland string needs campus evidence.
 
 ## 2. Build an isolated candidate
 

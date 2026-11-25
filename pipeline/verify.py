@@ -564,7 +564,7 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
                 sample = next((r for r in rows if r.get("institution_id") == iid), None)
                 name = (sample.get("institution_name", "") if sample else "")[:40]
                 flags["high"].append(
-                    f"[{iid.split('/')[-1]}] {name} has conflicting country codes: {ccs}"
+                    f"[{iid.split('/')[-1]}] {name} has conflicting country codes: {sorted(ccs)}"
                 )
     if country_conflicts > 10:
         flags["high"].append(f"... and {country_conflicts - 10} more institutions with conflicting country codes")
