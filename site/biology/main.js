@@ -9,7 +9,7 @@ initRankingsApp({
   name: 'BiologyRankings',
   exportPrefix: 'biorankings',
   methodologyHref: '../methodology.html',
-  hasHospitalRollup: true,
+  hasHospitalRollup: false,
   hasSectorFilter: false,
   hasPrerenderedTable: false,
 });

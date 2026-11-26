@@ -16,9 +16,23 @@ release is in [refresh-runbook.md](refresh-runbook.md).
   which rewards breadth and resists single-area dominance.
 - **No citations.** Publication counts at selective venues only.
 - **Whole institutions**, not departments or faculty rosters. OpenAlex
-  institutions are used as reported, with no rollup to a parent. Duplicate IDs
-  are folded through `data/institution-aliases.csv` only when name and country
-  both match.
+  institutions are used as reported, with no rollup to a parent, except for the
+  Biology medical schools below. Duplicate IDs are folded through
+  `data/institution-aliases.csv` only when name and country both match.
+- **Biology medical schools and hospitals.** The separately recorded medical
+  schools in `MEDICAL_SCHOOLS` (`pipeline/aggregate_biosciences.py`) count
+  toward their one parent university. The list is not exhaustive. A hospital,
+  medical center or health system is never rolled up: an authorship tagged only with
+  one credits no university, whoever owns it. Standalone and university-system
+  medical schools, jointly run schools, foreign branch campuses, and schools
+  that were independent for most of the ranked years stay separate. The
+  affiliation map rules below still apply to authorships with no native
+  OpenAlex institution.
+  Deferred: some university medical centers that OpenAlex types as healthcare
+  (for example Columbia University Irving Medical Center, Erasmus MC and Leiden
+  University Medical Center) may contain the medical school. Their authors get
+  no university credit unless a university is also listed. Counting any of them
+  needs a source-checked decision for each center.
 - **Credited institution types** are set per field in `data/fields.json`:
   education only for ECE and Biology; education, facility, government and
   nonprofit for Earth & Space, where national labs and observatories do much of

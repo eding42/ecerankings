@@ -95,7 +95,7 @@ DEFAULT_FIELDS_DATA = {
         "default_start_year": 2016,
         "default_end_year": 2025,
         "capabilities": {
-            "has_hospital_rollup": True,
+            "has_hospital_rollup": False,
             "has_sector_filter": False,
             "has_all_insts_mode": True,
             "strict_manifest_checksums": True,

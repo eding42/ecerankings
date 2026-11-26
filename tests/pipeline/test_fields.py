@@ -82,7 +82,7 @@ class TestFields(unittest.TestCase):
         self.assertFalse(ece.has_capability("has_hospital_rollup"))
 
         bio = get_field("biology")
-        self.assertTrue(bio.has_capability("has_hospital_rollup"))
+        self.assertFalse(bio.has_capability("has_hospital_rollup"))
         self.assertTrue(bio.has_capability("has_all_insts_mode"))
         self.assertTrue(bio.has_capability("strict_manifest_checksums"))
 
