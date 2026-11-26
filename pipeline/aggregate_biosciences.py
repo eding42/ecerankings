@@ -3,7 +3,7 @@
 
 Supports:
 1. Academic-only mode (type == "education", plus accredited degree grantors like UT Southwestern)
-2. Institutional rollups for university hospital health systems (MGH/BWH -> Harvard, Stanford Med -> Stanford)
+2. A university's separately recorded medical school counts toward the university; hospitals are not rolled up
 3. Comprehensive mode (all research institutions, crediting HHMI, Broad, NIH, Inserm, CAS)
 4. Front-matter / news / preview filtering (Nature d41586, Science news, Cell 1-page intros)
 5. Outputs inst-area-year.csv, inst-venue-year.csv, and summary rankings.
@@ -33,18 +33,42 @@ CACHE_DIR = os.path.join(REPO_ROOT, "cache_biosciences")
 AREAS_JSON = os.path.join(REPO_ROOT, "data", "areas_biosciences.json")
 OUT_DIR = os.path.join(REPO_ROOT, "data", "biosciences_aggregates")
 
-# Health system and teaching hospital rollups to parent universities
+# Medical schools that OpenAlex records separately from their one parent
+# university. Only schools are merged: a hospital or health system listed
+# without the university credits nobody. Also left separate: standalone and
+# university-system medical schools, schools run jointly by two universities,
+# foreign branch campuses, and schools that were independent institutions for
+# most of the ranked years (UT Health San Antonio, until September 2025).
+# Every ID is pinned to its OpenAlex name in tests/test_biology_institution_ids.py.
+# (university ID, university name, ((school ID, school name), ...))
+MEDICAL_SCHOOLS = (
+    ('I205783295', 'Cornell University', (('I4387153466', 'Weill Cornell Medicine'),)),
+    ('I24943067', 'Fudan University', (('I133868755', 'Shanghai Medical College of Fudan University'),)),
+    ('I592451', 'Indiana University', (('I4394709130', 'Indiana University School of Medicine'),)),
+    ('I102322142', 'Rutgers, The State University of New Jersey',
+     (('I4402554120', 'Rutgers New Jersey Medical School'),)),
+    ('I91045830', 'Texas A&M University', (('I125029298', 'Texas A&M Health Science Center'),)),
+    ('I139290212', 'Hofstra University',
+     (('I4210106353', 'Donald & Barbara Zucker School of Medicine at Hofstra/Northwell'),)),
+    ('I44265643', 'Rowan University', (('I4210089330', 'Cooper Medical School of Rowan University'),)),
+    ('I164861460', 'Manipal Academy of Higher Education',
+     (('I76414455', 'Kasturba Medical College, Manipal'),
+      ('I4387153400', 'Kasturba Medical College, Mangalore'))),
+    ('I91357014', 'Banaras Hindu University', (('I51317819', 'Institute of Medical Sciences'),)),
+    ('I3019271933', 'Nicolaus Copernicus University', (('I4210148386', 'Collegium Medicum in Bydgoszcz'),)),
+    ('I63596082', 'Tunis El Manar University', (('I4403386600', 'Faculté de médecine de Tunis'),)),
+    ('I169521973', 'University of New Mexico', (('I4405255059', 'University of New Mexico Health Sciences Center'),)),
+    ('I180726961', 'Shenzhen University', (('I4210145292', 'Shenzhen University Health Science Center'),)),
+    ('I32574673', 'Shantou University', (('I4210120522', 'Shantou University Medical College'),)),
+    ('I138006243', 'University of Arizona', (('I4405259572', 'University of Arizona College of Medicine- Phoenix'),)),
+    ('I126744593', 'University of Maryland, Baltimore', (('I4405257352', 'University of Maryland School of Medicine'),)),
+    ('I33213144', 'University of Florida', (('I61515104', 'University of Florida Health Science Center'),)),
+    ('I150149174', 'Mercer University', (('I2801518522', 'Mercer University Health Sciences Center'),)),
+)
+
 INSTITUTION_ROLLUP = {
-    # Harvard teaching hospitals
-    "https://openalex.org/I4210087915": "https://openalex.org/I136199984",  # Massachusetts General Hospital -> Harvard
-    "https://openalex.org/I1283280774": "https://openalex.org/I136199984",  # Brigham and Women's Hospital -> Harvard
-    "https://openalex.org/I4210117453": "https://openalex.org/I136199984",  # Dana-Farber Cancer Institute -> Harvard
-    "https://openalex.org/I1288882113": "https://openalex.org/I136199984",  # Boston Children's Hospital -> Harvard
-    "https://openalex.org/I48633490":   "https://openalex.org/I136199984",  # Mass General Brigham -> Harvard
-    # Stanford Medicine
-    "https://openalex.org/I4210137306": "https://openalex.org/I97018004",   # Stanford Medicine -> Stanford University
-    # Johns Hopkins Medicine
-    "https://openalex.org/I2799853436": "https://openalex.org/I145311948",  # Johns Hopkins Medicine -> Johns Hopkins University
+    f'https://openalex.org/{school}': f'https://openalex.org/{university}'
+    for university, _, schools in MEDICAL_SCHOOLS for school, _ in schools
 }
 
 # Accredited degree-granting medical institutions / graduate schools misclassified by OpenAlex
@@ -55,12 +79,9 @@ ACADEMIC_ALLOWLIST = {
     "https://openalex.org/I123431417": "Scripps Research Institute",
 }
 
-# Display names for the rollup targets. Every ID in these three tables is pinned
-# to its OpenAlex name by tests/test_biology_institution_ids.py.
+# A merged school's authorships take the university's name, not the school's.
 CANONICAL_NAMES = {
-    "https://openalex.org/I136199984": "Harvard University",
-    "https://openalex.org/I97018004": "Stanford University",
-    "https://openalex.org/I145311948": "Johns Hopkins University",
+    f'https://openalex.org/{university}': name for university, name, _ in MEDICAL_SCHOOLS
 }
 
 def load_registry(path):
@@ -108,7 +129,7 @@ def is_research_article(w, vkey):
 
 def resolve_authorship(author, include_non_education=False, *, affiliation_map=None,
                        aliases=None, institution_metadata=None):
-    """Shared Biology resolution, including established hospital rollups."""
+    """Shared Biology resolution, including the medical school merges."""
     insts = author.get("institutions") or []
     if not insts and affiliation_map:
         raw = author.get("raw_affiliations") or author.get("raw_affiliation_strings") or []
@@ -164,10 +185,6 @@ def run_aggregation(cache_dir, areas_path, out_dir, include_non_education=False,
     # (inst_id, venue, year) -> {pub_count, adj_count}
     inst_venue_year = defaultdict(lambda: {"pub_count": 0, "adjusted_count": 0.0})
     inst_meta = {}
-
-    # Seed canonical names and types
-    for cid, cname in CANONICAL_NAMES.items():
-        inst_meta[cid] = {"name": cname, "country": "US", "type": "education"}
 
     total_works = 0
     research_works = 0
