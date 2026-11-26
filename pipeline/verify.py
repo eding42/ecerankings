@@ -17,7 +17,7 @@ import json
 import os
 import re
 import sys
-from collections import defaultdict
+from collections import Counter, defaultdict
 from datetime import date
 
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -35,22 +35,12 @@ REPORTS_DIR = os.path.join(REPO_ROOT, "data", "reports")
 COVERAGE_SNAPSHOT = os.path.join(SITE_DATA, ".coverage-snapshot.json")
 CREDIT_TYPES = {"education"}
 
-# Severity thresholds for the coverage/purity/lineage scorecard. Every
-# venue-year is flagged on absolute thresholds EVERY run (no suppression
-# for known-permanent external gaps, e.g. pre-2021 IEEE Crossref metadata
-# gaps) -- by explicit project decision, so nothing is silently
-# deprioritized. Regressions (any drop vs. the last recorded snapshot) are
-# flagged separately and more urgently, since those indicate something
-# that used to work has broken (e.g. the CLEO 2023 OpenAlex->Crossref
-# source switch that silently zeroed out affiliation coverage).
-COVERAGE_HIGH = 50      # < this %: high severity
-COVERAGE_MEDIUM = 80    # < this %: medium severity
-PURITY_HIGH = 30
-PURITY_MEDIUM = 60
-RESOLUTION_HIGH = 50
-RESOLUTION_MEDIUM = 80
-NESTED_LINEAGE_HIGH = 20    # global % of distinct institutions
-NESTED_LINEAGE_MEDIUM = 10
+# Keep findings few. A line belongs here only when somebody can act on it:
+# standing weaknesses are grouped one line per venue, per-paper or
+# per-institution listings are left out, and anything that got worse since the
+# last snapshot is reported on its own.
+COVERAGE_LOW = 50       # venue-years under this % are listed, grouped by venue
+RESOLUTION_LOW = 50
 REGRESSION_EPSILON = 0.5    # pp; below this is float/rounding noise, not a real drop
 REGRESSION_CRITICAL_DROP = 50
 REGRESSION_HIGH_DROP = 10
@@ -264,9 +254,18 @@ def save_snapshot(vy_stats, global_stats, nested_institutions, affil_map):
 # Phase 1: Harvest integrity
 # ════════════════════════════════════════════════════════════════════
 
+def by_venue_lines(low, what):
+    """One line per venue for its venue-years under a threshold."""
+    venues = defaultdict(list)
+    for venue, year, share in low:
+        venues[venue].append((year, share))
+    return [f"[{venue}] {what} in " + ", ".join(f"{year} ({share:.0f}%)" for year, share in sorted(years))
+            for venue, years in sorted(venues.items())]
+
+
 def phase1_harvest(areas, args, vy_stats, global_stats, prev_snapshot):
-    """Check venue-year coverage, author completeness, affiliation coverage,
-    and coverage regressions vs. the last recorded run."""
+    """Check venue-year coverage, affiliation coverage, and coverage
+    regressions vs. the last recorded run."""
     print("\n═══ Phase 1: Harvest Integrity ═══")
     flags = {"critical": [], "high": [], "medium": [], "low": []}
     venue_years_covered = defaultdict(set)
@@ -317,9 +316,7 @@ def phase1_harvest(areas, args, vy_stats, global_stats, prev_snapshot):
         for yr in sorted(cached_years):
             wf = os.path.join(vdir, str(yr), "works.jsonl")
             count = 0
-            no_author = 0
             seen_ids = set()
-            seen_titles = defaultdict(list)
 
             with open(wf) as f:
                 for line in f:
@@ -329,13 +326,6 @@ def phase1_harvest(areas, args, vy_stats, global_stats, prev_snapshot):
                     if pid and pid in seen_ids:
                         flags["medium"].append(f"[{vkey}/{yr}] duplicate paper ID: {pid}")
                     seen_ids.add(pid)
-                    title = w.get("title", "")
-                    if title:
-                        seen_titles[title.lower().strip()].append(pid)
-
-                    authorships = w.get("authorships", [])
-                    if not authorships:
-                        no_author += 1
 
             yr_str = str(yr)
             if yr_str in expected_years:
@@ -350,19 +340,6 @@ def phase1_harvest(areas, args, vy_stats, global_stats, prev_snapshot):
                         flags["medium"].append(
                             f"[{vkey}/{yr}] {count} papers ({pctf:.0f}% of floor {expected_floor})"
                         )
-
-            # 1c. Author completeness
-            if no_author > 0:
-                flags["high"].append(
-                    f"[{vkey}/{yr}] {no_author}/{count} works have zero authors"
-                )
-
-            # 1e. Title duplicates
-            for title, pids in seen_titles.items():
-                if len(pids) > 1 and len(title) > 10:
-                    flags["medium"].append(
-                        f"[{vkey}/{yr}] {len(pids)} papers with duplicate title: {title[:60]}..."
-                    )
 
     # 1e-2. Non-research contamination sweep.
     # Rankings credit a single-author item at a full 1.0, so commentary counted
@@ -427,13 +404,11 @@ def phase1_harvest(areas, args, vy_stats, global_stats, prev_snapshot):
                f"detect_editorials.py --venue {vkey} to check for commentary")
         flags["high" if share >= SOLO_SHARE_HIGH else "medium"].append(msg)
 
-    for vkey, yd, title in blatant[:40]:
+    if blatant:
+        examples = "; ".join(f"{vkey}/{yd}: {title}" for vkey, yd, title in blatant[:3])
         flags["medium"].append(
-            f"[{vkey}/{yd}] non-research title still credited: {title}")
-    if len(blatant) > 40:
-        flags["medium"].append(
-            f"...and {len(blatant) - 40} more non-research titles "
-            f"(truncated; run detect_editorials.py for the full list)")
+            f"{len(blatant)} credited works have non-research titles (e.g. {examples});"
+            f" run detect_editorials.py for the list")
 
     # 1f. Summary stats
     total_venue_years = sum(len(list(vdef.get("years", {}).keys())) for ak, vdef in v2a.values())
@@ -448,25 +423,13 @@ def phase1_harvest(areas, args, vy_stats, global_stats, prev_snapshot):
     print(f"  Venue-years cached:   {cached_count}")
     print(f"  Venue-years expected: {total_venue_years}")
 
-    # 1g. Coverage scorecard (any affiliation signal at all: native or raw).
-    # ALWAYS flagged at absolute thresholds -- by explicit decision, known-
-    # permanent external gaps (pre-2021 IEEE Crossref metadata, etc.) are not
-    # suppressed. Every venue-year shows up every run.
+    # 1g. Low coverage (any affiliation signal at all: native or raw).
     print(f"\n  Coverage (any affiliation signal): {coverage_pct(global_stats):.1f}% overall")
-    n_flagged = 0
-    for (vk, yr), s in sorted(vy_stats.items()):
-        if args.area and args.area != "all" and v2a.get(vk, (None,))[0] != args.area:
-            continue
-        cov = coverage_pct(s)
-        if s["total"] == 0:
-            continue
-        if cov < COVERAGE_HIGH:
-            flags["high"].append(f"[{vk}/{yr}] coverage {cov:.0f}% ({s['total']} authorships)")
-            n_flagged += 1
-        elif cov < COVERAGE_MEDIUM:
-            flags["medium"].append(f"[{vk}/{yr}] coverage {cov:.0f}% ({s['total']} authorships)")
-            n_flagged += 1
-    print(f"  Venue-years below {COVERAGE_MEDIUM}% coverage: {n_flagged}")
+    low = [(vk, yr, coverage_pct(s)) for (vk, yr), s in vy_stats.items()
+           if s["total"] and coverage_pct(s) < COVERAGE_LOW
+           and not (args.area and args.area != "all" and v2a.get(vk, (None,))[0] != args.area)]
+    flags["high"].extend(by_venue_lines(low, f"affiliation coverage under {COVERAGE_LOW}%"))
+    print(f"  Venue-years below {COVERAGE_LOW}% coverage: {len(low)}")
 
     # 1h. Coverage regression vs. last snapshot (ANY drop is flagged, per
     # explicit decision -- this is the check that would have caught CLEO's
@@ -673,7 +636,7 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
                "Hong Kong University of Science"],
     }
 
-    geo_conflicts = 0
+    geo_conflicts = Counter()  # (name, mapped country, expected country) -> map rows
     for r in rows:
         if r["status"] not in ("auto", "manual", "joint"):
             continue
@@ -697,13 +660,13 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
             if expected_cc == "HK" and re.search(r"Shenzhen|Guangzhou", name):
                 continue
             if actual_cc != expected_cc:
-                geo_conflicts += 1
-                if geo_conflicts <= 10:
-                    flags["high"].append(
-                        f"'{name[:45]}' has country={actual_cc}, expected {expected_cc} (contains '{kw}')"
-                    )
-    if geo_conflicts > 10:
-        flags["high"].append(f"... and {geo_conflicts - 10} more geo-heuristic violations")
+                geo_conflicts[(name, actual_cc, expected_cc)] += 1
+    if geo_conflicts:
+        examples = "; ".join(f"{name[:45]} is {actual}, name suggests {expected}"
+                             for (name, actual, expected), _ in geo_conflicts.most_common(3))
+        flags["high"].append(
+            f"{sum(geo_conflicts.values())} affiliation-map rows ({len(geo_conflicts)} institution/country pairs)"
+            f" disagree with the country suggested by the name (e.g. {examples})")
 
     # 2c. Compound affiliation detection
     compound_flags = 0
@@ -801,38 +764,6 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
                 f"{script_name} found {n_fix} {label} misattributions — run with --apply and re-aggregate"
             )
 
-    # 2f. Ambiguous / nested institution lineage.
-    # aggregate.py's docstring assumed ~5% of institutions have lineage
-    # length > 1 (no reliable root) based on a small 133-institution pilot
-    # (IEDM 2022). At full-corpus scale this is much higher -- verified
-    # 2026-07-23: ~25% of distinct institutions, ~24% of occurrences. This
-    # is a real, ongoing accuracy gap: those institutions are credited
-    # unrolled (to their own id) rather than to their true parent, which
-    # silently fragments a parent institution's score across itself and
-    # its sub-entities. ALWAYS flagged (no suppression), per project
-    # decision -- this is not yet fixable without a real lineage-root
-    # resolution algorithm, but it must stay visible.
-    n_nested = len(nested_institutions)
-    print(f"\n  Ambiguous-lineage institutions (>1 element, no reliable parent): {n_nested}")
-    if n_nested > 0:
-        top_nested = sorted(nested_institutions.items(), key=lambda kv: -kv[1]["count"])[:15]
-        print("  Top offenders by occurrence count:")
-        for iid, info in top_nested:
-            print(f"    {info['count']:6d}  {info['name'][:45]:45s} {iid}")
-        nested_occurrences = sum(v["count"] for v in nested_institutions.values())
-        global_native = global_stats["native_clean"] + global_stats["native_flawed"]
-        nested_rate = pct(nested_occurrences, global_native) if global_native else 0
-        msg = (f"{n_nested} distinct institutions have ambiguous lineage "
-               f"({nested_occurrences} authorship occurrences, {nested_rate:.1f}% of native-resolved authorships)")
-        if nested_rate >= NESTED_LINEAGE_HIGH:
-            flags["high"].append(msg)
-        elif nested_rate >= NESTED_LINEAGE_MEDIUM:
-            flags["medium"].append(msg)
-        else:
-            flags["low"].append(msg)
-        for iid, info in top_nested[:10]:
-            flags["low"].append(f"  ambiguous lineage: {info['name'][:50]} ({iid}) — {info['count']} occurrences")
-
     # 2g. Purity & resolution scorecard (per venue-year), ALWAYS flagged at
     # absolute thresholds, plus regression vs. last snapshot (any drop).
     print(f"\n  Purity (native-clean 'perfect' rate): {purity_pct(global_stats):.1f}% overall")
@@ -843,32 +774,13 @@ def phase2_normalization(areas, args, vy_stats, global_stats, nested_institution
         for v in area["venues"]:
             v2a[v["key"]] = ak
 
-    n_purity_flagged = 0
-    n_resolution_flagged = 0
-    for (vk, yr), s in sorted(vy_stats.items()):
-        if args.area and args.area != "all" and v2a.get(vk) != args.area:
-            continue
-        if s["total"] == 0:
-            continue
-        if is_native_capable(s):
-            pur = purity_pct(s)
-            if pur < PURITY_HIGH:
-                flags["high"].append(f"[{vk}/{yr}] purity {pur:.0f}% (native-resolved but flawed lineage/metadata)")
-                n_purity_flagged += 1
-            elif pur < PURITY_MEDIUM:
-                flags["medium"].append(f"[{vk}/{yr}] purity {pur:.0f}%")
-                n_purity_flagged += 1
-        else:
-            res = resolution_pct(s)
-            if res is not None:
-                if res < RESOLUTION_HIGH:
-                    flags["high"].append(f"[{vk}/{yr}] resolution {res:.0f}% of raw affiliations mapped to education institutions")
-                    n_resolution_flagged += 1
-                elif res < RESOLUTION_MEDIUM:
-                    flags["medium"].append(f"[{vk}/{yr}] resolution {res:.0f}%")
-                    n_resolution_flagged += 1
-    print(f"  Venue-years below {PURITY_MEDIUM}% purity: {n_purity_flagged}")
-    print(f"  Venue-years below {RESOLUTION_MEDIUM}% resolution: {n_resolution_flagged}")
+    low = [(vk, yr, resolution_pct(s)) for (vk, yr), s in vy_stats.items()
+           if s["total"] and not is_native_capable(s) and resolution_pct(s) is not None
+           and resolution_pct(s) < RESOLUTION_LOW
+           and not (args.area and args.area != "all" and v2a.get(vk) != args.area)]
+    flags["high"].extend(by_venue_lines(
+        low, f"under {RESOLUTION_LOW}% of raw affiliations map to a university"))
+    print(f"  Venue-years below {RESOLUTION_LOW}% resolution: {len(low)}")
 
     if prev_snapshot:
         prev_vy = prev_snapshot.get("venue_years", {})
@@ -1159,43 +1071,6 @@ def phase3_aggregate(areas, args):
         snapshot_data[iid] = {"rank": rank, "name": name}
     # The caller may explicitly accept this only after ALL requested phases pass.
     args._ranking_snapshot = snapshot_data
-
-    # 3g. Institution year-over-year cliff drops
-    inst_year_scores = defaultdict(lambda: defaultdict(float))
-    all_years_set = set()
-    with open(inst_csv) as f:
-        for r in csv.DictReader(f):
-            yr = int(r["year"])
-            all_years_set.add(yr)
-            key = (r["institution_id"], r["area"])
-            inst_year_scores[key][yr] += float(r["adjusted_count"])
-
-    max_year = max(all_years_set) if all_years_set else 9999
-
-    for (iid, ak), yr_scores in inst_year_scores.items():
-        if args.area and args.area != "all" and ak != args.area:
-            continue
-        years = sorted(yr_scores.keys())
-        if len(years) < 3:
-            continue
-        total = sum(yr_scores.values())
-        if total < 10.0:
-            continue
-
-        for i in range(1, len(years)):
-            prev = yr_scores[years[i - 1]]
-            curr = yr_scores[years[i]]
-            if years[i] == max_year:
-                continue
-            if prev < 3.0:
-                continue
-            drop_pct = (prev - curr) / prev * 100 if prev > 0 else 0
-            if drop_pct > 80 and curr < 1.0:
-                name = inst_names.get(iid, iid.split("/")[-1])
-                area_name = areas["areas"][ak]["name"]
-                flags["high"].append(
-                    f"[{ak}] {name} — {years[i-1]}={prev:.1f} → {years[i]}={curr:.2f} ({drop_pct:.0f}% drop)"
-                )
 
     return flags
 

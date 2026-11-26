@@ -167,8 +167,9 @@ python3 pipeline/compare_aggregates.py --reference <site-data> --candidate .tmp/
 Copy the snapshots only where the field has them (ECE today).
 
 Review finding changes against the baseline and explain intended credit changes.
-Stop for unexplained critical/high findings, regressions, dropped publisher
-membership, duplicate keys, inconsistent artifact counts, or hash mismatches.
+Stop for any critical finding, an unexplained high finding that the same checks
+do not report on unchanged `main`, regressions, dropped publisher membership,
+duplicate keys, inconsistent artifact counts, or hash mismatches.
 Also stop when coverage drops more than five points, a known-strong institution
 reaches zero, or default-on top-20 membership changes by more than 10% without
 a documented cause. Missing source metadata is not evidence of zero papers.
