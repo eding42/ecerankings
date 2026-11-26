@@ -277,7 +277,12 @@ def api_works(venue_key, year, entry, venue, key, state, raw_cache_root=None):
     if entry.get('source')!='crossref': return [], {'provider':entry.get('source'),'expected_count':0,'api_count':0,'status':'no-source'}
     prefix=entry.get('doi_prefix'); explicit=entry.get('dois')
     if explicit:
-        dois=list(explicit); works=[]
+        dois=[norm_doi(doi) for doi in explicit]
+        if any(not doi for doi in dois) or len(set(dois))!=len(dois):
+            raise RefreshError(f'{venue_key}/{year}: invalid or duplicate DOI in proceedings list')
+        if entry.get('count') is not None and entry['count']!=len(dois):
+            raise RefreshError(f'{venue_key}/{year}: registered count differs from proceedings DOI list')
+        works=[]
         for doi in dois:
             item=crossref_page({'filter':'doi:'+doi,'rows':'1'},state)['message']['items']
             matches=[x for x in item if norm_doi(x.get('DOI'))==norm_doi(doi)]
