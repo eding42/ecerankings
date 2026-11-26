@@ -75,7 +75,7 @@ class CheckTests(unittest.TestCase):
         years = {y: 900 for y in range(2016, 2026) if y != 2022}
         flags = G.empty_flags()
         G.check_missing_years(flags, self.registry(), self.stats(years), (2016, 2025), {})
-        self.assertIn('no papers for 2022', flags['high'][0])
+        self.assertIn('no papers, or almost none, for 2022', flags['high'][0])
         flags = G.empty_flags()
         G.check_missing_years(flags, self.registry(years={'2022': {'source': 'none'}}), self.stats(years), (2016, 2025), {})
         self.assertEqual(flags['high'], [])
@@ -85,6 +85,25 @@ class CheckTests(unittest.TestCase):
         flags = G.empty_flags()
         G.check_missing_years(flags, self.registry(), self.stats({2010: 5}), (2016, 2025), {})
         self.assertIn('no papers in 2016–2025', flags['critical'][0])
+
+    def test_run_of_nearly_empty_years_is_one_finding_even_before_the_window(self):
+        papers = {2005: 200, **{y: 5 for y in range(2006, 2013)}, **{y: 130 for y in range(2013, 2026)}}
+        del papers[2016]
+        flags = G.empty_flags()
+        G.check_missing_years(flags, self.registry(), self.stats(papers), (2016, 2025), {})
+        self.assertEqual(len(flags['high']), 1)
+        self.assertIn('for 2006–2012, 2016;', flags['high'][0])
+
+    def test_growth_and_declared_gaps_before_the_window_stay_quiet(self):
+        growth = {2005: 5, 2006: 12, 2007: 30, 2008: 90, **{y: 400 for y in range(2009, 2026)}}
+        flags = G.empty_flags()
+        G.check_missing_years(flags, self.registry(), self.stats(growth), (2016, 2025), {})
+        self.assertEqual(flags['high'], [])
+        cancelled = {y: 100 for y in range(2005, 2026) if y != 2007}
+        flags = G.empty_flags()
+        G.check_missing_years(flags, self.registry(years={'2007': {'source': 'none'}}), self.stats(cancelled),
+                              (2016, 2025), {})
+        self.assertEqual(flags['high'], [])
 
     def test_first_year_of_a_new_venue_is_not_a_gap(self):
         flags = G.empty_flags()

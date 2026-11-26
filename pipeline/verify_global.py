@@ -15,7 +15,8 @@ live in the published data while phases 1-3 either missed them or buried them:
   G2  a company string credited to a university through a city name
       (Sony ..., Kanagawa -> Kanagawa University);
   G3  a venue with no data for a year inside the default ranking window
-      (ICRA 2022, CDC 2025);
+      (ICRA 2022, CDC 2025), or with no or almost no papers in any year that
+      has far larger years on both sides (ICCAD 2006-2012);
   G4  a venue-year whose credited share collapses against the venue's own
       norm (CLEO 2025 at 8% against ~80%);
   G5  a venue-year whose paper count is far off its neighbours (ICASSP 2005
@@ -66,6 +67,12 @@ EXCLUDED_CSV = os.path.join(REPO_ROOT, "data", "excluded-works.csv")
 FIRST_YEARS_JSON = os.path.join(REPO_ROOT, "data", "source-first-years.json")
 
 WINDOW_YEARS = 10            # the site's default range ends at the latest complete year
+
+# G3: a year is a hole when a year on EACH side, within reach, holds both this
+# many papers and this many times as many as it does.
+HOLE_MIN_NEIGHBOUR = 20
+HOLE_RATIO = 5
+HOLE_REACH = 8
 
 # G1/G2: approximate credits moved to one institution before it is worth a line.
 MISMAP_CRITICAL = 25.0
@@ -236,8 +243,23 @@ def is_biennial(years):
         b - a == 2 for a, b in zip(years, years[1:]))
 
 
+def find_holes(have, last):
+    """Years with no papers, or almost none, between much larger ones.
+
+    `have` maps year to paper count. Looking several years each way keeps a run
+    of empty years from making each other look normal, and requiring both sides
+    leaves a venue's small early years alone."""
+    holes = []
+    for year in range(min(have), min(max(have), last) + 1):
+        need = max(HOLE_MIN_NEIGHBOUR, HOLE_RATIO * have.get(year, 0))
+        if all(any(have.get(year + side * step, 0) >= need for step in range(1, HOLE_REACH + 1))
+               for side in (-1, 1)):
+            holes.append(year)
+    return holes
+
+
 def check_missing_years(flags, registry, stats, window, first_years):
-    """G3: a default-on venue with no data for a year inside the window."""
+    """G3: a venue with no data for a year inside the window, or a hole in any year."""
     start, end = window
     for area_key, area in registry["areas"].items():
         default_on = area.get("default_on") is True
@@ -253,11 +275,13 @@ def check_missing_years(flags, registry, stats, window, first_years):
                 continue
             declared = venue.get("years") or {}
             first = max(start, int(first_years.get(key, start)))
-            missing = [y for y in range(first, end + 1) if y not in have
-                       and (declared.get(str(y)) or {}).get("source") != "none"]
+            counts = {y: stats[(key, y)]["papers"] for y in have}
+            gaps = {y for y in range(first, end + 1) if y not in have}
+            gaps.update(find_holes(counts, end))
+            missing = sorted(y for y in gaps if (declared.get(str(y)) or {}).get("source") != "none")
             if missing:
                 flags["high" if default_on else "medium"].append(
-                    f"[{area_key}/{key}] no papers for {_ranges(missing)} (default window {start}–{end});"
+                    f"[{area_key}/{key}] no papers, or almost none, for {_ranges(missing)};"
                     f" harvest them or mark the gap in data/areas.json with source \"none\"")
 
 

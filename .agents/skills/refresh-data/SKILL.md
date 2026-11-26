@@ -22,8 +22,9 @@ gates and the regression baseline.
   from an up-to-date, clean `main` checkout. Never deploy a feature branch.
 - Merging to `main` deploys automatically through GitHub Actions; a manual
   Wrangler deploy is only a fallback.
-- Stop on any critical/high `verify.py` flag, a coverage drop over 5
-  percentage points, or an artifact hash mismatch. Report; do not promote.
+- Stop on any critical `verify.py` finding, an unexplained high finding that
+  unchanged `main` does not have, a coverage drop over 5 percentage points, or
+  an artifact hash mismatch. Report; do not promote.
 - Use explicit `git add` paths; never `git add -A`.
 - Never stage `.env`, `.tmp/`, `data/institutions.json`, or `data/reports/`.
 - Do not run `normalize_semantic.py` in an automated refresh; it is

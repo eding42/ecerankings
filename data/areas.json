@@ -426,6 +426,10 @@
           ],
           "notes": "No usable OpenAlex source (only candidate is junk catch-all S4306417705, 16 works scattered 1800/1988-2019). All years 2016-2026 confirmed via ACM DOIs on Crossref, identity validated per proceedings-level DOI (ISBN+event.acronym+title). Multi-volume since 2023 (4 vols 2023-24, 3 vols 2025, 2 vols 2026) -- doi_prefix is comma-separated multi-value for those years. Affiliation: 2025 Vol.1 spot-check, 95.3% coverage, top insts Google/UIUC/UW/Microsoft/CMU/UCLA/Berkeley/NUS. NOTE for harvest_crossref.py: Crossref type=proceedings-article includes 'Session details:' front-matter entries (17 in 2017, 24 in 2019) -- must filter by title pattern not just DOI-prefix+type. Per-year counts are best-effort from fuzzy search; exact match on 6/9 spot-checked years, discrepancies on 2016/2018/2025 attributed to search-recall limits, not identity/coverage failure -- treat as approximate until exhaustive harvest.",
           "years": {
+            "2007": {
+              "source": "none",
+              "note": "No ASPLOS was held in 2007: ASPLOS XII was in October 2006 and XIII in March 2008."
+            },
             "2016": {
               "source": "crossref",
               "doi_prefix": "10.1145/2872362",

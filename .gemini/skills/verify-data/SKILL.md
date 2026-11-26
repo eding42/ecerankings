@@ -56,20 +56,20 @@ Run `verify.py` read-only by default.
 **Phase 1: harvest** (`cache/*/*/works.jsonl`)
 - zero-work venues (critical); missing registered years; counts versus `expected_per_year`;
 - author completeness; per-venue-year affiliation coverage and regression versus snapshot;
-- duplicate IDs and titles; solo-author share; titles that look non-research but are still credited.
+- duplicate IDs; solo-author share; a count of titles that look non-research but are still credited.
 
 **Phase 2: normalization** (`data/affiliation-map.csv`)
 - resolution rate and type mix; one institution ID with conflicting countries; geo-heuristic mismatches;
-- compound strings; acronym and campus checks; ambiguous lineage; per-area affiliation gap; purity and resolution scorecards.
+- compound strings; acronym and campus checks; per-area affiliation gap; low resolution (one line per venue); coverage, purity and resolution regressions.
 
 **Phase 3: aggregate** (`site/data`)
 - `known-strong` zero audit; venues contributing zero credit; under-collected areas;
-- top-50 ranking regression; top-5 per area; authors at several institutions in one area-year; year-over-year outliers; institution cliff drops.
+- top-50 ranking regression; top-5 per area; authors at several institutions in one area-year; year-over-year outliers.
 
 **Phase 4: global audit.** Read this first; its critical and high lines print above the others. Each line is one venue or institution, ranked by credit.
 - `[map/country]`: a raw string naming one country, mapped to an institution in another (Southeast University, Nanjing, credited to Southeast University in Bangladesh);
 - `[map/company]`: a company string credited to a university through a city name;
-- a default-window venue with no papers for a year; a venue-year whose credited share collapses against the venue's own median; a paper count far off its neighbours; single-author items carrying large credit; front matter with authors; years only a few venues cover;
+- a default-window venue with no papers for a year, or any year with no or almost no papers between much larger ones; a venue-year whose credited share collapses against the venue's own median; a paper count far off its neighbours; single-author items carrying large credit; front matter with authors; years only a few venues cover;
 - reference lists that cannot fail (`known-strong` IDs found nowhere, a missing or empty trap file);
 - `[drop/retyped]`, `[drop/untyped]`: institutions whose credit is dropped because a map row is typed as a non-credit type, or OpenAlex gave no type, while the index says education (UC Riverside stored as "other");
 - `[drop/no-affiliation]`, `[drop/stale]`: venues where most authors carry no affiliation anywhere, and works nothing ever retried.
@@ -133,7 +133,7 @@ To repair, run `python3 pipeline/refresh_openalex_affiliations.py --pilot 200`, 
 
 ## How to read a run
 
-1. **Compare against the previous run, not against zero.** A healthy corpus still has hundreds of open findings, because known external gaps are flagged on every run by design (see "Always-flag"). What matters: new or changed findings, regressions versus the snapshot, and any critical finding.
+1. **Compare with unchanged `main`, not against zero.** Run the same command on a clean checkout of `origin/main` and compare. What matters: findings that are new or changed, regressions versus the snapshot, and any critical finding.
 2. **Check magnitude, not just order.** A run that writes correct data which `aggregate.py` then discards looks healthy. On 2026-07-25 a backfill wrote 49,554 works whose institutions lacked `type`, aggregation silently dropped them, and `verify.py` returned a byte-identical finding set. So compare adjusted-count totals per area against the last release, use low-gap areas (`comms`, `inftheory`) as a control that should barely move, and read `dropped_credit.py` for the reasons credit is lost.
 3. **Treat tripwires as data bugs until proven otherwise.** A `known-strong.json` institution at zero is a bug, not a ranking insight. The list only asserts non-zero; it cannot detect under-collection.
 4. **A drop is not always a bug.** 5% of default-on credit goes to company and hospital authors, correctly. `[drop/retyped]` and `[drop/untyped]` are bugs; `openalex_noncredit` is a judgement call; `no_affiliation` is a collection question.
@@ -142,13 +142,18 @@ To repair, run `python3 pipeline/refresh_openalex_affiliations.py --pilot 200`, 
 ## Severity
 
 - **Critical, fix now:** a registered venue or venue-year with no data; a verified venue with zero credit; a `known-strong` institution at zero; a coverage, purity, or resolution regression of 50 points or more; an `adjudication.py check` trap failure or no traps loaded; 25 or more credits mapped across a country or to a company string; a venue-year under 40% of its venue's credited-share median; 50 or more works cut at the author cap; 25 or more credits lost to duplicate or group-name authors; 25 or more credits dropped to a retyped row.
-- **High, before the next aggregate:** a venue-year below 70% of its expected floor; coverage under 50%, purity under 30%, or resolution under 50%; a regression of 10-50 points; country conflicts; geo violations; 10 or more works cut at the author cap; an author-less spike; 20 or more garbled names in a venue; a venue with 25% or more of its credit unaffiliated.
+- **High, before the next aggregate:** a venue-year below 70% of its expected floor; venue-years under 50% coverage or resolution (one line per venue); a missing or nearly empty year; a regression of 10-50 points; country conflicts; geo violations; 10 or more works cut at the author cap; an author-less spike; 20 or more garbled names in a venue; a venue with 25% or more of its credit unaffiliated.
 - **Medium, investigate:** threshold bands below those; outliers; ranking moves of 10 or more positions; compound strings; the stale-works and affiliation-spread lines.
 - **Low:** informational and within tolerance, including the `[drop/summary]` and `[authors/summary]` lines.
 
-## Always-flag
+## Keep findings few
 
-Coverage, purity, resolution, and lineage findings are never suppressed for "known, unfixable" gaps such as pre-2021 IEEE Crossref metadata. This is an explicit project decision: suppression would let a new regression hide inside accepted red. Expect long output. The signal is the diff and the regressions, not the length.
+A finding is worth printing only when somebody can act on it. When adding or changing a check:
+- report one line per problem or per venue, never one per paper, institution, or venue-year;
+- leave out normal variation, such as a school's credit moving between years or a few works without authors;
+- leave out standing weaknesses nobody can fix yet; print a scorecard number instead;
+- keep anything that got worse (a regression) or that would put wrong credit on the site;
+- test it on current `main` and on a known failure before adding it.
 
 ## Known blind spots
 
@@ -161,7 +166,7 @@ Coverage, purity, resolution, and lineage findings are never suppressed for "kno
 
 All of these, on the candidate, in this order:
 
-1. `verify.py --all --cache-dir <candidate cache> --data-dir <candidate data>`: no unexplained critical or high.
+1. `verify.py --all --cache-dir <candidate cache> --data-dir <candidate data>`: no critical, and no unexplained high that unchanged `main` does not have.
 2. `adjudication.py check`: every trap passes.
 3. `audit_map_sample.py` with a fresh seed: credit-weighted error rate within 3%.
 4. `audit_bylines.py`: mismatched bylines within 5%.
