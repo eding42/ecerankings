@@ -2,11 +2,44 @@ import unittest
 from unittest.mock import patch
 import json
 from pathlib import Path
+from tempfile import TemporaryDirectory
 
+from pipeline import harvest_crossref
 from pipeline import refresh_conferences as rc
 
 
 class RefreshConferencesTests(unittest.TestCase):
+    def test_legacy_harvest_respects_proceedings_dois_and_keeps_cache_on_failure(self):
+        entry = {
+            "source": "crossref",
+            "doi_prefix": "10.1145/123",
+            "dois": ["10.1145/123.1", "10.1145/123.2"],
+            "count": 2,
+        }
+
+        def lookup(params, _state):
+            doi = params["filter"].removeprefix("doi:")
+            return {"message": {"items": [{"DOI": doi, "title": ["Paper"]}]}}
+
+        with TemporaryDirectory() as directory:
+            with patch.object(harvest_crossref, "CACHE_DIR", directory):
+                path = Path(directory) / "test" / "2005" / "works.jsonl"
+                with patch.object(rc, "crossref_page", side_effect=lookup) as fetch:
+                    harvest_crossref.harvest_year("test", "Test", 2005, entry)
+                    harvest_crossref.harvest_year("test", "Test", 2005, entry)
+                    self.assertEqual(fetch.call_count, 2)
+                published = path.read_text()
+                self.assertEqual(
+                    [rc.norm_doi(json.loads(line)["doi"]) for line in published.splitlines()],
+                    entry["dois"],
+                )
+
+                incomplete = {**entry, "dois": entry["dois"] + ["10.1145/123.3"], "count": 3}
+                with patch.object(rc, "crossref_page", return_value={"message": {"items": []}}):
+                    with self.assertRaises(rc.RefreshError):
+                        harvest_crossref.harvest_year("test", "Test", 2005, incomplete)
+                self.assertEqual(path.read_text(), published)
+
     def test_norm_doi_normalizes_resolver_and_case(self):
         self.assertEqual(rc.norm_doi('HTTPS://DOI.ORG/10.1109/ABC.2024.1'),'10.1109/abc.2024.1')
 

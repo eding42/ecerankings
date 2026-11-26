@@ -73,6 +73,12 @@ import unicodedata
 import urllib.error
 import urllib.parse
 import urllib.request
+from pathlib import Path
+
+if __package__:
+    from . import refresh_conferences
+else:
+    import refresh_conferences
 
 REPO_ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 AREAS_JSON = os.path.join(REPO_ROOT, "data", "areas.json")
@@ -228,6 +234,22 @@ def trim_work(item, edition_year):
 
 
 def harvest_year(venue_key, venue_display, year, entry, dry_run=False, venue_kind="conference"):
+    if entry.get("dois"):
+        count = len(entry["dois"])
+        print(f"  [{venue_key}/{year}] {count} registered proceedings DOIs")
+        if dry_run:
+            return
+        path = Path(CACHE_DIR) / venue_key / str(year) / "works.jsonl"
+        if refresh_conferences.load_cached_edition(path, venue_key, year, entry):
+            print(f"  [{venue_key}/{year}] already complete ({count} works). Skipping.")
+            return
+        works, _ = refresh_conferences.api_works(
+            venue_key, year, entry, {}, None, {"crossref_calls": 0}
+        )
+        refresh_conferences.write_atomic(path, works)
+        print(f"  [{venue_key}/{year}] done, {len(works)} works written to {path}")
+        return
+
     doi_prefix = entry.get("doi_prefix")
     container_title = entry.get("container_title")
     discovered = False
