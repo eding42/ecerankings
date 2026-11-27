@@ -557,3 +557,18 @@ table.breakdown tr.zero { color: var(--faint); }
   .site-brand-tab { display: none; }
   .site-switch { display: block; }
 }
+
+/* ---- Data coverage grid ---- */
+.cov-scroll { overflow-x: auto; margin: 0 0 10px; }
+.cov { border-collapse: separate; border-spacing: 2px; font-size: 13px; }
+.cov th[scope="row"] { position: sticky; left: 0; padding-right: 10px; background: var(--bg); text-align: left; font-weight: normal; white-space: nowrap; }
+.cov td { padding: 0; line-height: 0; }
+.cov-year { position: relative; width: 14px; height: 16px; padding: 0; font-size: 11px; font-weight: normal; color: var(--muted); }
+.cov-year span:not(.visually-hidden) { position: absolute; left: 0; bottom: 0; }
+.cov-key { display: inline-block; width: 14px; height: 14px; border-radius: 2px; }
+.cov-ok { background: var(--link); }
+.cov-none { box-shadow: inset 0 0 0 2px var(--rule-strong); }
+.cov-absent { background: var(--rule-soft); }
+.cov-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
+.cov-legend .cov-key { margin-right: 4px; vertical-align: middle; }
+.cov-journals { margin: 4px 0 0; font-size: 13px; }

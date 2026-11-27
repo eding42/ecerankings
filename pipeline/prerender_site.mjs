@@ -132,6 +132,30 @@ function yearChart(history, name) {
     `<text class="v now" x="${f(x(lastI) + 8)}" y="${f(y(history[lastI].rank) + 4)}">#${history[lastI].rank}</text></svg>`;
 }
 
+// Which years each venue has credit for in the published data, for the coverage
+// page. It reads the data files, so it cannot claim a year the rankings lack.
+// A year the registry marks `source: "none"` (no edition, or merged) says why.
+export const COVERAGE_FROM = 2005;
+export function coverageSummary(registry, rowsFor, last) {
+  const inRange = (y) => y >= COVERAGE_FROM && y <= last;
+  return {
+    first: COVERAGE_FROM,
+    last,
+    areas: Object.entries(registry.areas).map(([id, area]) => ({
+      name: area.name,
+      default_on: area.default_on === true,
+      venues: (area.venues || []).map((v) => {
+        const years = [...new Set(rowsFor(id, v.key).filter((r) => r.a > 0).map((r) => r.y))]
+          .filter(inRange).sort((a, b) => a - b);
+        const none = Object.fromEntries(Object.entries(v.years || {})
+          .filter(([y, entry]) => entry.source === 'none' && inRange(+y) && !years.includes(+y))
+          .map(([y, entry]) => [y, entry.note || 'No edition']));
+        return { name: v.display || v.key, kind: v.kind, years, none };
+      }),
+    })),
+  };
+}
+
 export async function build(siteDir = path.join(ROOT, 'site')) {
   const read = (rel) => readFileSync(path.join(siteDir, rel));
   const json = (rel) => JSON.parse(read(rel).toString('utf8'));
@@ -194,6 +218,9 @@ export async function build(siteDir = path.join(ROOT, 'site')) {
   html = replaceOnce(html, /<tbody id="ranking-body"[^>]*>[\s\S]*?<\/tbody>/,
     `<tbody id="ranking-body" data-prerender="${manifestHash}">\n${rows.map(rowHtml).join('\n')}\n</tbody>`, 'ranking body');
   const files = new Map([['index.html', html]]);
+  const venueRows = (area, venue) => (existsSync(path.join(siteDir, 'data', area, `${venue}.json`))
+    ? json(`data/${area}/${venue}.json`) : []);
+  files.set('coverage-data.json', `${JSON.stringify(coverageSummary(registry, venueRows, to))}\n`);
 
   // ---- One page per ranked institution ----
   const header = rooted(/<header class="site-header">[\s\S]*?<\/header>/.exec(html)[0]);
