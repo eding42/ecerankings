@@ -65,9 +65,9 @@ by default; the semantic normalizer is optional and should run separately.
 Adjudicate new raw strings, replay prior decisions after normalization, and run
 `pipeline/adjudication.py check`. Do not accept author-profile affiliations.
 
-Publication-specific corrections to native OpenAlex institutions are recorded in
-`data/refresh/authorship-corrections-2026-11-25.jsonl`. Replay them into the ECE
-candidate before generating its refresh manifest:
+Publication-specific affiliation corrections are recorded in
+`data/refresh/authorship-corrections-*.jsonl`. Replay each file into the ECE
+candidate before generating its refresh manifest (the commands show one file):
 
 ```sh
 python3 pipeline/apply_authorship_corrections.py --cache-dir <candidate-cache> \
@@ -75,6 +75,12 @@ python3 pipeline/apply_authorship_corrections.py --cache-dir <candidate-cache> \
 python3 pipeline/apply_authorship_corrections.py --cache-dir <candidate-cache> \
   --decisions data/refresh/authorship-corrections-2026-11-25.jsonl --apply
 ```
+
+`authorship-corrections-northwestern-2026-11-26.jsonl` credits authors whose
+affiliation is a bare "Northwestern University" where page 1 of that paper also
+prints a northwestern.edu address. The bare name itself stays unmapped, because
+other universities share it. A paper without a DOI is matched by its exact
+cached record id.
 
 The first command validates without writing. Each correction requires publisher
 evidence, an exact complete byline and author position, and the expected prior

@@ -21,9 +21,16 @@ except ImportError:
     from workkey import norm_doi
 
 
+def same_paper(work, decision):
+    """Match by DOI, or by the exact cached record id for a paper without one."""
+    if decision.get('doi'):
+        return norm_doi(work.get('doi')) == norm_doi(decision['doi'])
+    return bool(decision.get('work_id')) and work.get('id') == decision['work_id'] and not work.get('doi')
+
+
 def correct(work, decision, index):
-    if norm_doi(work.get('doi')) != norm_doi(decision['doi']):
-        raise ValueError('DOI does not match correction')
+    if not same_paper(work, decision):
+        raise ValueError('DOI or record id does not match correction')
     authors = work.get('authorships') or []
     if [a.get('author_name') for a in authors] != decision['author_names']:
         raise ValueError('Complete author list or order changed')
@@ -77,7 +84,7 @@ def main():
         if path not in pending:
             pending[path] = [json.loads(line) for line in path.read_text().splitlines()]
         rows = pending[path]
-        matches = [i for i, w in enumerate(rows) if norm_doi(w.get('doi')) == norm_doi(decision['doi'])]
+        matches = [i for i, w in enumerate(rows) if same_paper(w, decision)]
         if len(matches) != 1:
             raise ValueError('Correction must match exactly one cached paper')
         i = matches[0]

@@ -26,6 +26,17 @@ class AuthorshipCorrectionTest(unittest.TestCase):
             with self.subTest(delta=delta), self.assertRaises(ValueError):
                 correct(self.work, dict(self.decision, **delta), self.index)
 
+    def test_a_paper_without_a_doi_matches_only_its_exact_record_id(self):
+        work = {'id': 'abc', 'doi': None, 'authorships': self.work['authorships']}
+        decision = dict(self.decision, doi=None, work_id='abc')
+        self.assertTrue(correct(work, decision, self.index)[1])
+        for bad in (dict(decision, work_id='abd'), dict(decision, work_id=None), self.decision):
+            with self.subTest(bad=bad), self.assertRaises(ValueError):
+                correct(work, bad, self.index)
+        # A record that has a DOI must be identified by it.
+        with self.assertRaises(ValueError):
+            correct(dict(work, doi='10.1/y'), decision, self.index)
+
     def test_supplement_requires_evidence_and_never_overwrites_known_identity(self):
         iid = 'https://openalex.org/I2'
         record = {'name': 'University Two', 'country': 'US', 'type': 'education', 'source_url': 'https://example.edu', 'evidence': 'Exact API institution record'}
