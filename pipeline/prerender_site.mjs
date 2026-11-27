@@ -289,7 +289,7 @@ ${areaRows}
       <section>
         <h2>US rank by year</h2>
         ${yearChart(history, r.name)}
-        <p class="inst-open"><a href="/#open=${esc(r.id.replace('https://openalex.org/', ''))}">Open in the rankings table</a> to change the region, years or areas.</p>
+        <p class="inst-open"><a href="/#open=${esc(r.id.replace('https://openalex.org/', ''))}">Open in the rankings table</a></p>
         <nav class="inst-nears" aria-label="Ranked next to it">${card(i - 1, 'prev')}${card(i + 1, 'next')}</nav>
       </section>
     </div>

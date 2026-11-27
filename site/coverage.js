@@ -7,7 +7,7 @@ export const shortName = (name) => /\(([^()]+)\)\s*$/.exec(name)?.[1] || name;
 export function cellState(venue, year) {
   if (venue.years.includes(year)) return { cls: 'cov-ok', label: `${year}: in the rankings` };
   if (venue.none[year]) return { cls: 'cov-none', label: `${year}: ${venue.none[year]}` };
-  return { cls: 'cov-absent', label: `${year}: nothing in the rankings` };
+  return { cls: 'cov-absent', label: `${year}: no papers` };
 }
 
 export function renderCoverage({ first, last, areas }) {
@@ -35,8 +35,8 @@ async function init() {
     const res = await fetch('coverage-data.json');
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
-    document.getElementById('summary').textContent = `Conference years, ${data.first}–${data.last}.`;
     out.innerHTML = renderCoverage(data);
+    document.getElementById('legend-absent').hidden = !out.querySelector('.cov-absent');
   } catch {
     out.innerHTML = '<p class="error">Could not load the venue list.</p>';
   }

@@ -41,7 +41,7 @@ function renderFacultyCount(school) {
   if (!school || !Object.values(METRICS).includes(school.metric_id)) return '';
   const date = new Date(`${school.observed_on}T00:00:00Z`).toLocaleDateString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
-  return `<a href="${escapeHtml(school.roster_url)}" target="_blank" rel="noopener noreferrer" title="University roster, as of ${escapeHtml(date)}">${school.headcount}</a>`;
+  return `<a href="${escapeHtml(school.roster_url)}" target="_blank" rel="noopener noreferrer" title="Checked ${escapeHtml(date)}">${school.headcount}</a>`;
 }
 
 // What the loaded counts include. One export carries a single metric.
@@ -49,7 +49,7 @@ function facultyDefinition(index) {
   const school = [...index.values()].find(Boolean);
   if (!school) return '';
   return school.metric_id === 'ece_affiliated_faculty'
-    ? 'ECE-affiliated faculty, including affiliated, joint and courtesy professors.'
+    ? 'Includes affiliated, joint, courtesy and announced incoming professors.'
     : 'EE/ECE regular and in-residence appointments; courtesy excluded.';
 }
 

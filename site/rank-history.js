@@ -48,7 +48,7 @@ export function renderRankHistory(history, institutionName, scope = 'selected ar
   const yearRange = history.length === 1 ? history[0].year : `${history[0].year}–${history.at(-1).year}`;
   let html = `<section class="rank-trend" aria-label="Annual ranking history">
     <span class="rank-trend-caption">Annual rank</span>
-    <p class="rank-trend-sr-only">Each year ranked separately using the ${escapeHTML(scope)}. Gaps mean no ranked output.</p>`;
+    <p class="rank-trend-sr-only">Each year ranked separately using the ${escapeHTML(scope)}.</p>`;
 
   if (ranked.length) {
     const width = 260, height = 60;
@@ -96,7 +96,7 @@ export function renderRankHistory(history, institutionName, scope = 'selected ar
     }
     html += '</svg>';
   } else {
-    html += '<p class="rank-trend-empty">No ranked output in these years.</p>';
+    html += '<p class="rank-trend-empty">Not ranked in these years.</p>';
   }
   html += '<dl class="rank-trend-data rank-trend-sr-only" aria-label="Year-by-year ranks">';
   for (const point of history) {

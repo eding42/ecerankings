@@ -105,7 +105,7 @@ test('single-year, constant-rank and unranked charts render without invalid geom
     const html = history.renderRankHistory(points, 'Example');
     assert.doesNotMatch(html, /NaN|Infinity/);
     assert.match(html, /Year-by-year ranks/);
-    if (points[0].rank === null) assert.match(html, /No ranked output/);
+    if (points[0].rank === null) assert.match(html, /Not ranked in these years/);
     else assert.match(html, /tabindex="0"/);
   }
   assert.equal(history.renderRankHistory([], 'Example'), '');
@@ -153,7 +153,7 @@ test('expanded faculty count remains current while the displayed publication win
     const before = JSON.stringify(app.state.result.rows);
     const html = app.context.detailRow(school, 'test-faculty');
     // The count sits with the other totals and links to its roster.
-    assert.match(html, /<dl class="institution-totals"(?:(?!<\/dl>).)*as of Nov 22, 2026">12<\/a><\/dd>/);
+    assert.match(html, /<dl class="institution-totals"(?:(?!<\/dl>).)*Checked Nov 22, 2026">12<\/a><\/dd>/);
     assert.equal(JSON.stringify(app.state.result.rows), before);
     const unsupported = app.state.result.rows.find(row => row.id === 'b');
     assert.doesNotMatch(app.context.detailRow(unsupported, 'unsupported'), /Faculty/);

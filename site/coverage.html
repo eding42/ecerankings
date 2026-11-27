@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Data coverage · ECERankings</title>
-  <meta name="description" content="The journals and conferences ECERankings counts in each research area, with the years covered for each.">
+  <meta name="description" content="The journals and conferences ECERankings counts in each research area.">
   <link rel="canonical" href="https://ecerankings.eding.dev/coverage">
   <meta name="color-scheme" content="light dark">
   <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
@@ -12,7 +12,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css?v=compare7">
-  <script type="module" src="coverage.js?v=grid1"></script>
+  <script type="module" src="coverage.js?v=grid2"></script>
 </head>
 <body>
   <header class="site-header">
@@ -37,11 +37,10 @@
 
   <main class="wrap">
     <h1>Data coverage</h1>
-    <p class="muted" id="summary"></p>
     <ul class="cov-legend">
-      <li><i class="cov-key cov-ok"></i> In the rankings (not necessarily every paper)</li>
+      <li><i class="cov-key cov-ok"></i> In the rankings</li>
       <li><i class="cov-key cov-none"></i> No edition, or part of another conference</li>
-      <li><i class="cov-key cov-absent"></i> Nothing in the rankings</li>
+      <li id="legend-absent" hidden><i class="cov-key cov-absent"></i> No papers</li>
     </ul>
     <div id="venues"></div>
     <noscript><p>The venue list needs JavaScript.</p></noscript>
