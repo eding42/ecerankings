@@ -111,7 +111,7 @@ function comparisonRow(id, values, name, selected, names, extra = '') {
   const total = values.reduce((a, b) => a + b, 0), max = Math.max(...values);
   const track = total > 0
     ? values.map((v, k) => `<i class="compare-seg${v > 0 ? '' : ' zero'}" style="flex-grow:${v.toFixed(4)};${series(k)}"></i>`).join('')
-    : '<span>No output</span>';
+    : '<span>No papers</span>';
   const title = `${name}: ${names.map((n, k) => `${n} ${fmt.format(values[k])}`).join(', ')}`;
   return `<button type="button" class="compare-area${extra}${selected ? ' selected' : ''}" data-compare-area="${esc(id)}" aria-pressed="${selected}" title="${esc(title)}">
     <span class="compare-area-name">${esc(name)}</span><span class="compare-track${total > 0 ? '' : ' compare-no-output'}${values.length === 2 ? ' pair' : ''}" aria-hidden="true">${track}</span>${values.map(v => `<span class="compare-value${v > 0 && v === max ? ' lead' : ''}">${fmt.format(v)}</span>`).join('')}</button>`;

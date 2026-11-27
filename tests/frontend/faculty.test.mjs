@@ -26,11 +26,11 @@ test('verified counts keep their observation date across publication filters', (
   const school = index.values().next().value;
   const html = renderFacultyCount(school);
   assert.match(html, /<a href="https:\/\/university\.edu\/faculty"[^>]*>12<\/a>/);
-  assert.match(html, /title="University roster, as of Nov 22, 2026"/);
+  assert.match(html, /title="Checked Nov 22, 2026"/);
   // Incoming faculty are part of the one total, with no separate note.
   assert.match(html, />12<\/a>$/);
   assert.doesNotMatch(html, /incoming/);
-  assert.match(facultyDefinition(index), /^ECE-affiliated faculty/);
+  assert.match(facultyDefinition(index), /^Includes affiliated/);
   app.sel = { from: 2016, to: 2020 };
   assert.equal(renderFacultyCount(school), html);
   app.sel = { from: 2025, to: 2025 };

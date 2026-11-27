@@ -17,11 +17,6 @@ const shortId = (id) => id.replace('https://openalex.org/', '');
 const fullId = (id) => (id.startsWith('https://openalex.org/') ? id : `https://openalex.org/${id}`);
 const CURRENT_YEAR = new Date().getFullYear();
 
-// Caveat shown beside an area that is off by default.
-const AREA_NOTES = {
-  ml: 'Coverage not fully verified.',
-};
-
 const TYPE_LABELS = {
   facility: { label: 'Facility', title: 'Research facility / observatory' },
   government: { label: 'Gov', title: 'Government agency / survey' },
@@ -337,15 +332,13 @@ function renderAreaGroups() {
       ` <span class="group-actions"><button type="button" class="link" data-group="${gi}" data-on="1" aria-label="Select all ${esc(cluster)} areas">all</button>` +
       ` · <button type="button" class="link" data-group="${gi}" data-on="0" aria-label="Clear all ${esc(cluster)} areas">none</button></span></legend>`;
     for (const a of areas) {
-      const note = !a.defaultOn ? (AREA_NOTES[a.id] || '') : '';
-      const noteId = note ? ` aria-describedby="note-${esc(a.id)}"` : '';
       const venues = a.venues || [];
       const isOpen = app.openVenues.has(a.id);
       const vListId = `venues-${esc(a.id)}`;
 
       html += `<div class="area-row${a.defaultOn ? '' : ' off-default'}">` +
         `<div class="area-header">` +
-        `<input type="checkbox" id="area-${esc(a.id)}" value="${esc(a.id)}" data-group="${gi}"${noteId}>` +
+        `<input type="checkbox" id="area-${esc(a.id)}" value="${esc(a.id)}" data-group="${gi}">` +
         `<label for="area-${esc(a.id)}">${esc(a.name)}</label>`;
 
       if (venues.length > 0) {
@@ -370,9 +363,6 @@ function renderAreaGroups() {
           `</ul>`;
       }
 
-      if (note) {
-        html += `<p class="area-note" id="note-${esc(a.id)}">${esc(note)}</p>`;
-      }
       html += `</div>`;
     }
     html += `</fieldset>`;
@@ -955,10 +945,7 @@ function clearTable() {
 function hideError() { $('error').hidden = true; $('error').innerHTML = ''; }
 
 function showAreaError(failed) {
-  const names = failed.map((f) => {
-    const reason = f.r.reason?.message;
-    return reason ? `${esc(app.areaById.get(f.id)?.name || f.id)} <span class="muted">(${esc(reason)})</span>` : esc(app.areaById.get(f.id)?.name || f.id);
-  });
+  const names = failed.map((f) => esc(app.areaById.get(f.id)?.name || f.id));
   setStatus('');
   $('error').innerHTML =
     `<p><strong>Could not load data for ${failed.length === 1 ? 'one selected area' : `${failed.length} selected areas`}:</strong></p>` +
@@ -991,7 +978,7 @@ function renderTable() {
   const rows = filteredRows();
   const visible = rows.slice(0, app.shown);
   let status;
-  if (!all.length) status = 'No institutions with credit.';
+  if (!all.length) status = 'No institutions have papers for these filters.';
   else if (app.query) status = `${fmtInt.format(rows.length)} of ${fmtInt.format(all.length)} institutions`;
   else status = `${fmtInt.format(all.length)} institutions`;
   setStatus(status);
@@ -1129,7 +1116,7 @@ function comparisonAction(row) {
   const disabled = app.compare.ids.length >= COMPARE_MAX && !selected;
   const label = `${selected ? 'Remove' : 'Add'} ${row.name} ${selected ? 'from' : 'to'} comparison`;
   const icon = selected ? '<path d="m3 7 3 3 5-6"/>' : '<rect x="2" y="5" width="7" height="7" rx="1"/><path d="M5 5V2h7v7H9"/>';
-  return `<button type="button" class="inst-compare${selected ? ' selected' : ''}" data-compare-id="${esc(row.id)}" aria-pressed="${selected}" aria-label="${esc(label)}" title="${disabled ? `Compare holds ${COMPARE_MAX} schools` : esc(label)}"${disabled ? ' disabled' : ''}><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">${icon}</svg><span>${selected ? 'Added' : 'Compare'}</span></button>`;
+  return `<button type="button" class="inst-compare${selected ? ' selected' : ''}" data-compare-id="${esc(row.id)}" aria-pressed="${selected}" aria-label="${esc(label)}" title="${disabled ? `Compare up to ${COMPARE_MAX} schools` : esc(label)}"${disabled ? ' disabled' : ''}><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">${icon}</svg><span>${selected ? 'Added' : 'Compare'}</span></button>`;
 }
 
 // Phones hide the optional columns. The faculty column exists only once counts load.
@@ -1538,7 +1525,6 @@ export {
   shortId,
   fullId,
   CURRENT_YEAR,
-  AREA_NOTES,
   TYPE_LABELS,
   instTypeBadge,
   $,
