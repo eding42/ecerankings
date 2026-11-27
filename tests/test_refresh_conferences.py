@@ -40,6 +40,12 @@ class RefreshConferencesTests(unittest.TestCase):
                         harvest_crossref.harvest_year("test", "Test", 2005, incomplete)
                 self.assertEqual(path.read_text(), published)
 
+    def test_refresh_leaves_cached_and_unheld_years_alone(self):
+        registry = {"areas": {"eda": {"venues": [{"key": "conf", "kind": "conference", "years": {
+            "2016": {"source": "cached"}, "2017": {"source": "none"},
+            "2018": {"source": "crossref", "doi_prefix": "10.1/x"}}}]}}}
+        self.assertEqual([row[3] for row in rc.conferences(registry, (2005, 2026))], [2018])
+
     def test_norm_doi_normalizes_resolver_and_case(self):
         self.assertEqual(rc.norm_doi('HTTPS://DOI.ORG/10.1109/ABC.2024.1'),'10.1109/abc.2024.1')
 
