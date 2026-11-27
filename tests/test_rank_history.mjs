@@ -152,10 +152,10 @@ test('expanded faculty count remains current while the displayed publication win
     const school = app.state.result.rows.find(row => row.id === 'a');
     const before = JSON.stringify(app.state.result.rows);
     const html = app.context.detailRow(school, 'test-faculty');
-    assert.match(html, /<strong>12<\/strong> ECE-affiliated faculty \(2 incoming\)/);
-    assert.match(html, /Observed Nov 22, 2026/);
+    // The count sits with the other totals and links to its roster.
+    assert.match(html, /<dl class="institution-totals"(?:(?!<\/dl>).)*as of Nov 22, 2026">12<\/a><\/dd>/);
     assert.equal(JSON.stringify(app.state.result.rows), before);
     const unsupported = app.state.result.rows.find(row => row.id === 'b');
-    assert.doesNotMatch(app.context.detailRow(unsupported, 'unsupported'), /faculty-context/);
+    assert.doesNotMatch(app.context.detailRow(unsupported, 'unsupported'), /Faculty/);
   }
 });

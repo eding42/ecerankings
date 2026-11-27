@@ -1,7 +1,7 @@
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
-import { facultyIndex, renderFacultyContext } from '../../site/core/faculty.js';
+import { facultyIndex, renderFacultyCount, facultyDefinition } from '../../site/core/faculty.js';
 import { app, DEFAULT_CONFIG, loadFacultyContext } from '../../site/core/engine.js';
 
 const exported = JSON.parse(readFileSync(new URL('../../site/faculty/current.json', import.meta.url)));
@@ -24,15 +24,19 @@ test('verified counts keep their observation date across publication filters', (
   const index = facultyIndex(data, 'ece');
   assert.equal(index.size, 1);
   const school = index.values().next().value;
-  const html = renderFacultyContext(school);
-  assert.match(html, /ECE-affiliated faculty/);
-  assert.match(html, /\(2 incoming\)/);
-  assert.match(html, /Observed Nov 22, 2026/);
+  const html = renderFacultyCount(school);
+  assert.match(html, /<a href="https:\/\/university\.edu\/faculty"[^>]*>12<\/a>/);
+  assert.match(html, /title="University roster, as of Nov 22, 2026"/);
+  // Incoming faculty are part of the one total, with no separate note.
+  assert.match(html, />12<\/a>$/);
+  assert.doesNotMatch(html, /incoming/);
+  assert.match(facultyDefinition(index), /^ECE-affiliated faculty/);
   app.sel = { from: 2016, to: 2020 };
-  assert.equal(renderFacultyContext(school), html);
+  assert.equal(renderFacultyCount(school), html);
   app.sel = { from: 2025, to: 2025 };
-  assert.equal(renderFacultyContext(school), html);
-  assert.equal(renderFacultyContext(index.get('unsupported')), '');
+  assert.equal(renderFacultyCount(school), html);
+  assert.equal(renderFacultyCount(index.get('unsupported')), '');
+  assert.equal(facultyDefinition(new Map()), '');
 });
 
 test('unknown counts, invalid dates, unsafe links, duplicates and wrong policies are omitted', () => {
@@ -44,7 +48,7 @@ test('unknown counts, invalid dates, unsafe links, duplicates and wrong policies
     assert.equal(facultyIndex(payload, 'ece').size, 0);
   }
   const duplicate = { ...data, schools: [data.schools[0], data.schools[0]] };
-  assert.equal(renderFacultyContext(facultyIndex(duplicate, 'ece').get(data.schools[0].institution_id)), '');
+  assert.equal(renderFacultyCount(facultyIndex(duplicate, 'ece').get(data.schools[0].institution_id)), '');
   assert.equal(facultyIndex({ ...data, schools: [null, data.schools[0]] }, 'ece').size, 1);
 });
 
@@ -77,9 +81,9 @@ test('legacy counts retain their narrower label and cannot be relabeled as affil
   legacy.schools[0].policy_id = legacy.policy_id;
   assert.equal(facultyIndex(legacy, 'ece').size, 0);
   delete legacy.metric_id;
-  const html = renderFacultyContext(facultyIndex(legacy, 'ece').values().next().value);
-  assert.match(html, /courtesy excluded/);
-  assert.doesNotMatch(html, /ECE-affiliated faculty/);
+  const definition = facultyDefinition(facultyIndex(legacy, 'ece'));
+  assert.match(definition, /courtesy excluded/);
+  assert.doesNotMatch(definition, /ECE-affiliated faculty/);
   assert.equal(facultyIndex({ ...data, metric_id: undefined }, 'ece').size, 0);
 });
 
