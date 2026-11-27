@@ -31,3 +31,12 @@ removed (`affiliation_correction` on that row).
 A harvest rerun that finds a valid cached edition keeps it. A forced re-harvest
 writes Crossref records only, so the OpenAlex affiliations would need to be
 added again.
+
+## ICCAD 2005
+
+The edition keeps the 147 rows under the 2005 DOI prefix that have authors,
+unchanged from before. Removed: 46 rows without authors, six 1993 records, and
+seven rows without a 2005 IEEE DOI (unrelated records and one ACM Digital Library
+copy of a paper already among the 147). This list was not checked against a
+contents list.
+
