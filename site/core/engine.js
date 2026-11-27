@@ -9,7 +9,7 @@ import {
 import { computeAnnualRanks, institutionHistory, renderRankHistory } from './rank-history.js';
 import { renderComparison, compareSchools, ALL_AREAS } from './comparison.js';
 import { createYearStrip, denseStart } from './year-strip.js';
-import { facultyIndex, renderFacultyContext } from './faculty.js';
+import { facultyIndex, renderFacultyCount, facultyDefinition } from './faculty.js';
 
 const PAGE_SIZE = 100;
 const COMPARE_MAX = 4;
@@ -771,7 +771,7 @@ function bindStaticEvents() {
   const compact = window.matchMedia('(max-width: 600px)');
   compact.addEventListener('change', () => {
     document.querySelectorAll('tr.detail > td').forEach((cell) => {
-      cell.colSpan = compact.matches ? 3 : 6;
+      cell.colSpan = tableColumns(compact.matches);
     });
   });
 }
@@ -996,6 +996,8 @@ function renderTable() {
   else status = `${fmtInt.format(all.length)} institutions`;
   setStatus(status);
 
+  syncFacultyColumn();
+  const hasFaculty = Boolean(facultyDefinition(app.faculty));
   let html = '';
   for (const r of visible) {
     const open = app.expanded.has(r.id);
@@ -1010,6 +1012,7 @@ function renderTable() {
       `<td class="num score">${fmt2.format(r.score)}</td>` +
       `<td class="num opt">${fmt1.format(r.adjTotal)}</td>` +
       `<td class="num opt">${fmtInt.format(r.pubTotal)}</td>` +
+      (hasFaculty ? `<td class="num opt faculty-cell">${renderFacultyCount(app.faculty.get(r.id)) || '—'}</td>` : '') +
       `<td class="num opt trend-cell">${trendCell(r, app.result)}</td></tr>`;
     if (open) html += detailRow(r, did);
   }
@@ -1129,8 +1132,35 @@ function comparisonAction(row) {
   return `<button type="button" class="inst-compare${selected ? ' selected' : ''}" data-compare-id="${esc(row.id)}" aria-pressed="${selected}" aria-label="${esc(label)}" title="${disabled ? `Compare holds ${COMPARE_MAX} schools` : esc(label)}"${disabled ? ' disabled' : ''}><svg width="13" height="13" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.3" aria-hidden="true">${icon}</svg><span>${selected ? 'Added' : 'Compare'}</span></button>`;
 }
 
+// Phones hide the optional columns. The faculty column exists only once counts load.
+function tableColumns(compact) {
+  if (compact) return 3;
+  return facultyDefinition(app.faculty) ? 7 : 6;
+}
+
+// Added by script, so fields without counts and the prerendered table keep six columns.
+function syncFacultyColumn() {
+  const row = document.querySelector('#ranking-table thead tr');
+  if (!row) return;
+  const definition = facultyDefinition(app.faculty);
+  const existing = row.querySelector('th.faculty-cell');
+  if (!definition) { existing?.remove(); return; }
+  if (existing) return;
+  const th = document.createElement('th');
+  th.scope = 'col';
+  th.className = 'num opt faculty-cell';
+  th.innerHTML = `<abbr tabindex="0" title="${esc(definition)}">Faculty</abbr>`;
+  row.insertBefore(th, row.querySelector('th.trend-cell'));
+}
+
+function facultyTotal(id) {
+  const count = renderFacultyCount(app.faculty.get(id));
+  if (!count) return '';
+  return `<div><dt><abbr tabindex="0" title="${esc(facultyDefinition(app.faculty))}">Faculty</abbr></dt><dd>${count}</dd></div>`;
+}
+
 function detailRow(r, did) {
-  const columns = typeof matchMedia === 'function' && matchMedia('(max-width: 600px)').matches ? 3 : 6;
+  const columns = tableColumns(typeof matchMedia === 'function' && matchMedia('(max-width: 600px)').matches);
   const result = app.result;
   ensureAnnualRanks(result);
   const trend = renderRankHistory(
@@ -1151,8 +1181,7 @@ function detailRow(r, did) {
     `${trend}` +
     `<dl class="institution-totals" aria-label="Institution totals">` +
     `<div><dt><abbr data-metric="adj-count" tabindex="0" title="Each paper is worth 1, split evenly among its authors and their institutions.">Adjusted count</abbr></dt><dd>${fmt1.format(r.adjTotal)}</dd></div>` +
-    `<div><dt><abbr data-metric="papers" tabindex="0" title="Distinct papers with at least one author at this institution.">Papers</abbr></dt><dd>${fmtInt.format(r.pubTotal)}</dd></div></dl>` +
-    renderFacultyContext(app.faculty.get(r.id)) +
+    `<div><dt><abbr data-metric="papers" tabindex="0" title="Distinct papers with at least one author at this institution.">Papers</abbr></dt><dd>${fmtInt.format(r.pubTotal)}</dd></div>${facultyTotal(r.id)}</dl>` +
     `<table class="breakdown"><caption>Credit by research area</caption>` +
     `<thead><tr><th scope="col">Area</th><th scope="col" class="num">Rank</th><th scope="col" class="num"><abbr data-metric="adj-count" tabindex="0" title="Each paper is worth 1, split evenly among its authors and their institutions.">Adj. count</abbr></th><th scope="col" class="num"><abbr data-metric="papers" tabindex="0" title="Distinct papers with at least one author at this institution.">Papers</abbr></th></tr></thead>` +
     `<tbody>${body}</tbody></table></td></tr>`;

@@ -36,15 +36,21 @@ function facultyIndex(payload, fieldId) {
   return records;
 }
 
-function renderFacultyContext(school) {
+// The count links to the roster it was taken from; the link title gives the date it was read.
+function renderFacultyCount(school) {
   if (!school || !Object.values(METRICS).includes(school.metric_id)) return '';
-  const affiliated = school.metric_id === 'ece_affiliated_faculty';
   const date = new Date(`${school.observed_on}T00:00:00Z`).toLocaleDateString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric', timeZone: 'UTC' });
-  return `<aside class="faculty-context" aria-label="Current faculty">` +
-    `<p><strong>${school.headcount}</strong> ${affiliated ? 'ECE-affiliated faculty' : 'EE/ECE faculty'}${school.incoming_headcount ? ` (${school.incoming_headcount} incoming)` : ''}</p>` +
-    `<p class="faculty-source">${affiliated ? 'Includes affiliated, joint and courtesy professors' : 'Regular and in-residence appointments; courtesy excluded'} · Observed ${escapeHtml(date)} · ` +
-    `<a href="${escapeHtml(school.roster_url)}" target="_blank" rel="noopener noreferrer">University roster</a></p></aside>`;
+  return `<a href="${escapeHtml(school.roster_url)}" target="_blank" rel="noopener noreferrer" title="University roster, as of ${escapeHtml(date)}">${school.headcount}</a>`;
 }
 
-export { facultyIndex, renderFacultyContext };
+// What the loaded counts include. One export carries a single metric.
+function facultyDefinition(index) {
+  const school = [...index.values()].find(Boolean);
+  if (!school) return '';
+  return school.metric_id === 'ece_affiliated_faculty'
+    ? 'ECE-affiliated faculty, including affiliated, joint and courtesy professors.'
+    : 'EE/ECE regular and in-residence appointments; courtesy excluded.';
+}
+
+export { facultyIndex, renderFacultyCount, facultyDefinition };
