@@ -12,7 +12,7 @@
   <link rel="icon" href="favicon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="stylesheet" href="styles.css?v=compare7">
-  <script type="module" src="coverage.js?v=compare4"></script>
+  <script type="module" src="coverage.js?v=grid1"></script>
 </head>
 <body>
   <header class="site-header">
@@ -37,7 +37,13 @@
 
   <main class="wrap">
     <h1>Data coverage</h1>
-    <div class="venues" id="venues"></div>
+    <p class="muted" id="summary"></p>
+    <ul class="cov-legend">
+      <li><i class="cov-key cov-ok"></i> In the rankings (not necessarily every paper)</li>
+      <li><i class="cov-key cov-none"></i> No edition, or part of another conference</li>
+      <li><i class="cov-key cov-absent"></i> Nothing in the rankings</li>
+    </ul>
+    <div id="venues"></div>
     <noscript><p>The venue list needs JavaScript.</p></noscript>
   </main>
 </body>
