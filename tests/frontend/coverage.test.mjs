@@ -22,7 +22,8 @@ test('coverage comes from published credit, not from the venue list', () => {
   assert.equal(cellState(conf, 2007).label, '2007: Not held');
   const html = renderCoverage(summary);
   assert.match(html, />EXC<\/th>/);
-  assert.match(html, /Journals:<\/span> Example Journal/);
+  assert.match(html, />Journals<\/th>.*>Example Journal<\/th>/);
+  assert.equal(html.match(/class="cov-key /g).length, 2 * (2010 - 2005 + 1));
 });
 
 test('short names use the trailing acronym', () => {

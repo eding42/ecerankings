@@ -553,16 +553,27 @@ table.breakdown tr.zero { color: var(--faint); }
 }
 
 /* ---- Data coverage grid ---- */
-.cov-scroll { overflow-x: auto; margin: 0 0 10px; }
-.cov { border-collapse: separate; border-spacing: 2px; font-size: 13px; }
-.cov th[scope="row"] { position: sticky; left: 0; padding-right: 10px; background: var(--bg); text-align: left; font-weight: normal; white-space: nowrap; }
-.cov td { padding: 0; line-height: 0; }
+.cov { border-collapse: separate; border-spacing: 2px; margin: 0 0 10px -2px; font-size: 13px; }
+.cov th[scope="row"] { width: 280px; min-width: 280px; max-width: 280px; padding: 0 10px 0 0; text-align: left; font-weight: normal; line-height: 1.3; }
+.cov-group th { padding: 6px 0 0; text-align: left; font-size: 12px; font-weight: normal; color: var(--muted); }
+.cov td { position: relative; padding: 0; line-height: 0; }
 .cov-year { position: relative; width: 14px; height: 16px; padding: 0; font-size: 11px; font-weight: normal; color: var(--muted); }
 .cov-year span:not(.visually-hidden) { position: absolute; left: 0; bottom: 0; }
 .cov-key { display: inline-block; width: 14px; height: 14px; border-radius: 2px; }
 .cov-ok { background: var(--link); }
 .cov-none { box-shadow: inset 0 0 0 2px var(--rule-strong); }
-.cov-absent { background: var(--rule-soft); }
+.cov-absent { background: var(--rule); }
 .cov-legend { display: flex; flex-wrap: wrap; gap: 6px 18px; margin: 0 0 8px; padding: 0; list-style: none; font-size: 13px; color: var(--muted); }
 .cov-legend .cov-key { margin-right: 4px; vertical-align: middle; }
-.cov-journals { margin: 4px 0 0; font-size: 13px; }
+/* Narrow screens: the name sits above its years so every year fits. */
+@media (max-width: 700px) {
+  .cov, .cov thead, .cov tbody { display: block; margin-left: 0; }
+  .cov tr { display: grid; grid-template-columns: repeat(var(--cov-years), minmax(0, 1fr)); column-gap: 2px; }
+  .cov thead td { display: none; }
+  .cov th[scope="row"], .cov-group th { grid-column: 1 / -1; width: auto; min-width: 0; max-width: none; }
+  .cov th[scope="row"] { padding: 6px 0 2px; }
+  .cov-year { width: auto; }
+  .cov thead th:last-child span:not(.visually-hidden) { right: 0; left: auto; }
+  .cov td .cov-key { display: block; width: 100%; }
+  .cov-none { box-shadow: inset 0 0 0 1px var(--rule-strong); }
+}
