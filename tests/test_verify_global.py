@@ -148,6 +148,27 @@ class CheckTests(unittest.TestCase):
 
 
 class ScanTests(unittest.TestCase):
+    def test_repeated_papers_are_flagged_once_per_venue_year(self):
+        def paper(i, doi, authors=('Ada Lovelace', 'Alan Turing')):
+            return {'doi': doi, 'title': f'A sufficiently long paper title number {i}', 'type': 'article',
+                    'authorships': [{'author_name': n, 'institutions': []} for n in authors]}
+
+        with tempfile.TemporaryDirectory() as tmp:
+            year = Path(tmp) / 'icra' / '2020'
+            year.mkdir(parents=True)
+            works = [paper(i, f'10.1/a{i}') for i in range(30)] + [paper(i, f'10.2/b{i}') for i in range(25)]
+            works.append(paper(1, '10.3/c1', authors=('Grace Hopper',)))  # same title, other authors
+            (year / 'works.jsonl').write_text(''.join(json.dumps(w) + '\n' for w in works))
+            stats, _ = G.scan_cache(tmp, ['icra'], {}, set())
+            self.assertEqual(stats[('icra', 2020)]['repeats'], 25)
+            registry = {'areas': {'robotics': {'default_on': True, 'venues': [{'key': 'icra'}]}}}
+            flags = G.empty_flags()
+            G.check_repeated_papers(flags, registry, stats, (2016, 2025))
+            self.assertEqual(len(flags['high']), 1)
+            self.assertIn('25 of 56', flags['high'][0])
+            clean, _ = G.scan_cache(tmp, ['icra'], {}, {f'doi:10.2/b{i}' for i in range(25)})
+            self.assertEqual(clean[('icra', 2020)]['repeats'], 0)
+
     def test_biology_global_audit_uses_biology_research_filter(self):
         from aggregate_biosciences import is_research_article
 

@@ -47,6 +47,7 @@ import os
 import re
 import statistics
 import sys
+import unicodedata
 from collections import Counter, defaultdict
 from datetime import date
 
@@ -73,6 +74,10 @@ WINDOW_YEARS = 10            # the site's default range ends at the latest compl
 HOLE_MIN_NEIGHBOUR = 20
 HOLE_RATIO = 5
 HOLE_REACH = 8
+# Repeated papers: same title and same author surnames within one venue-year.
+REPEAT_MIN_TITLE = 25
+REPEAT_MIN_COUNT = 20
+REPEAT_MIN_SHARE = 0.02
 
 # G1/G2: approximate credits moved to one institution before it is worth a line.
 MISMAP_CRITICAL = 25.0
@@ -139,6 +144,16 @@ def accepted_education(row):
         and bool(row.get("institution_id"))
 
 
+def paper_signature(work):
+    """Title and author surnames, or None when the title is too short to tell papers apart."""
+    def plain(text):
+        return unicodedata.normalize("NFKD", text or "").encode("ascii", "ignore").decode().lower()
+
+    title = re.sub(r"\W+", "", plain(re.sub(r"<[^>]+>", "", work.get("title") or "")))
+    surnames = tuple((plain(a.get("author_name")).split() or [""])[-1] for a in work.get("authorships") or [])
+    return (title, surnames) if len(title) >= REPEAT_MIN_TITLE and all(surnames) and surnames else None
+
+
 def scan_cache(cache_dir, venues, affil_map, excluded, *, research_filter=None):
     """One pass over the cache. Returns per-venue-year stats and map usage."""
     stats = {}                      # (venue, year) -> Counter
@@ -154,6 +169,7 @@ def scan_cache(cache_dir, venues, affil_map, excluded, *, research_filter=None):
                 continue
             year = int(entry)
             c = Counter()
+            signatures = set()
             with open(path) as handle:
                 for line in handle:
                     work = json.loads(line)
@@ -174,6 +190,10 @@ def scan_cache(cache_dir, venues, affil_map, excluded, *, research_filter=None):
                     if not authors:
                         continue
                     c["papers"] += 1
+                    signature = paper_signature(work)
+                    if signature:
+                        c["repeats"] += signature in signatures
+                        signatures.add(signature)
                     weight = 1.0 / len(authors)
                     credited = 0.0
                     for author in authors:
@@ -295,6 +315,20 @@ def _ranges(years):
             run = [y, y]
     out.append(run)
     return ", ".join(str(a) if a == b else f"{a}–{b}" for a, b in out)
+
+
+def check_repeated_papers(flags, registry, stats, window):
+    """G6: one paper stored twice under different identifiers is counted twice."""
+    start, end = window
+    default_venues = {v["key"] for a in registry["areas"].values() if a.get("default_on") is True
+                      for v in a["venues"]}
+    for (venue, year), c in sorted(stats.items()):
+        repeats, papers = c["repeats"], c["papers"]
+        if repeats >= REPEAT_MIN_COUNT and repeats >= REPEAT_MIN_SHARE * papers:
+            severity = "high" if venue in default_venues and start <= year <= end else "medium"
+            flags[severity].append(
+                f"[{venue}/{year}] {repeats} of {papers} papers repeat another's title and authors;"
+                f" confirm and list the extra copies in data/excluded-works.csv")
 
 
 def check_venue_years(flags, registry, stats, window):
@@ -509,6 +543,7 @@ def run(registry, cache_dir=None, data_dir=None, area=None, *, research_filter=N
     print(f"\n── Phase 4: Global audit (window {window[0]}–{window[1]}) ──")
     check_mismapped(flags, affil_map, usage)
     check_missing_years(flags, registry, stats, window, first_years)
+    check_repeated_papers(flags, registry, stats, window)
     check_venue_years(flags, registry, stats, window)
     check_nonresearch(flags, registry, stats, window)
     check_aggregate_years(flags, registry, data_dir, window)
