@@ -95,6 +95,11 @@ If no source reaches 99%, the venue stays `candidate`, and you report the best c
   You merge all returned entries in one pass. A missing or malformed result leaves that venue untouched and is noted.
 - Never invent IDs. Never mark `verified` without running every check.
 
+A year entry with `"source": "cached"` describes data collected before the entry
+was written: its source and membership are unchecked, and harvest and refresh
+tools leave the file alone. When you verify such a year, replace the entry with
+its real source.
+
 **Report:** write `data/reports/<scope>-<YYYY-MM-DD>.md` with these sections:
 - **Summary:** window, authority per venue, confidence.
 - **Venues table:** sources, membership authority, official vs observed count, years covered, affiliation coverage (labelled sampled or measured), status.
